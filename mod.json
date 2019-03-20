@@ -1,7 +1,9 @@
 {
 	"name": "community_maps",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"label": "Community Maps",
 	"description": "A collection of maps made by players and fans of 0 A.D. and shared publicly.",
-	"dependencies": ["0ad=0.0.23"]
+	"dependencies": ["0ad=0.0.23"],
+	"url": "https://github.com/cwrtl/community_maps",
+	"type": "maps"
 }
