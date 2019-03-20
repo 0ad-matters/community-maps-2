@@ -78,7 +78,7 @@
       }
     }
   ],
-  "Preview": "community_maps.png",
+  "Preview": "coastline.png",
   "RevealMap": false,
   "VictoryConditions": [
     "conquest"

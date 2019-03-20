@@ -55,7 +55,7 @@
       "Civ": "cart"
     }
   ],
-  "Preview": "continent.png",
+  "Preview": "city_vs_city.png",
   "RevealMap": false,
   "Script": "continent.js",
   "Seed": 8996,

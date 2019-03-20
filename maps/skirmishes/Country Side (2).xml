@@ -77,7 +77,7 @@
       }
     }
   ],
-  "Preview": "country_side_png",
+  "Preview": "country_side.png",
   "RevealMap": false,
   "VictoryConditions": [
     "conquest"
