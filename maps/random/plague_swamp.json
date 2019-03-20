@@ -1,0 +1,14 @@
+{
+	"settings" : {
+		"Name" : "Plague Swamp",
+		"Script" : "plague_swamp.js",
+		"Description" : "[color=\"red\"]IMPORTANT NOTE: EXPECT RANDOM UNITS TO DIE AFTER A CERTAIN TIME. [/color]\n Players start in the midst of a disease-ridden swampland with little territory to build on. When illness strikes with lightning speed out of the festering pools, will you be able to stand its onslaught?",
+		"TriggerScripts" : [
+			"scripts/TriggerHelper.js",
+			"random/plague_swamp_triggers.js"
+		],
+		"Keywords": ["community"],
+		"Preview" : "plague_swamp.png",
+		"CircularMap" : true
+	}
+}

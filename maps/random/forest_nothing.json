@@ -1,0 +1,11 @@
+{
+	"settings" : {
+		"Name" : "Forest Nothing",
+		"Script" : "forest_nothing.js",
+		"Description" : "A map with only trees.",
+		"Preview" : "forest_nothing.png",
+		"SupportedBiomes": "generic/",
+		"Keywords": ["community"],
+		"CircularMap" : true
+	}
+}

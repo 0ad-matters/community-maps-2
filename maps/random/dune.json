@@ -1,0 +1,13 @@
+{
+	"settings":
+	{
+		"Name": "Dune",
+		"Script": "dune.js",
+		"Description": "Travel the dry hot desert. You can try conquering the center of the map brimming with resources or use the vast dunes zones for trading and treasure hunt.",
+		"Preview": "dune.png",
+		"SupportedBiomes": "generic/desert",
+		"CircularMap": true,
+		"Keywords": ["new", "community"],
+		"Version": "0.3"
+	}
+}

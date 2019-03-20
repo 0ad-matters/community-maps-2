@@ -1,0 +1,13 @@
+{
+	"settings":
+	{
+		"Name": "Riverway",
+		"Script": "riverway.js",
+		"Description": "Wide river with little depth surrounded by bluffs plenty of wood, metal and stone in the riverside.",
+		"Preview": "riverway.png",
+		"SupportedBiomes": "generic/",
+		"CircularMap": true,
+		"Keywords": ["new", "community"],
+		"Version": "0.1"
+	}
+}

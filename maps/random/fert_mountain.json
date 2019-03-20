@@ -1,0 +1,17 @@
+{
+	"settings":
+	{
+		"Name": "Fert Mountain",
+		"Script": "fert_mountain.js",
+		"Description": "King of the hill type map with spiral mountain in the center with a wonder placed on top.\n[color=\"red\"]Wonder and walls disabled.\nWonder win condition needs to be enabled to work.[/color]",
+		"Preview": "fert_mountain.png",
+		"SupportedBiomes": "generic/",
+		"CircularMap": true,
+		"Keywords": ["new", "trigger", "community"],
+		"TriggerScripts": [
+			"scripts/TriggerHelper.js",
+			"random/fert_triggers.js"
+		],
+		"Version": "0.1.5"
+	}
+}
