@@ -1,6 +1,6 @@
 # 0 A.D. Community Maps
 
-This mod contains 35 maps (6 random maps, 13 skirmishes and 16 scenarios) collected from the [Wildfire Games (0 A.D.) Forum](https://wildfiregames.com/forum/). The maps can be easily accessed in game with the filter "Community Maps".
+This mod contains 36 maps (6 random maps, 14 skirmishes and 16 scenarios) collected from the [Wildfire Games (0 A.D.) Forum](https://wildfiregames.com/forum/). The maps can be easily accessed in game with the filter "Community Maps".
 
 ## Random Maps
 
@@ -17,6 +17,7 @@ This mod contains 35 maps (6 random maps, 13 skirmishes and 16 scenarios) collec
 
 | Map Name | Author | Status | Link | Publication Date |
 |----------|--------|--------|------|------------------|
+| Four Cities Meet (4) | [coworotel](https://wildfiregames.com/forum/index.php?/profile/22499-coworotel/) | Generating Successfully | [Forum](https://wildfiregames.com/forum/index.php?/topic/25560-skirmish-map-four-cities-meet-4/) | 28-03-2019 |
 | Italian Peninsula (6) | [Bigtiger](https://wildfiregames.com/forum/index.php?/profile/26958-bigtiger/) | Generating Successfully | [Forum](https://wildfiregames.com/forum/index.php?/topic/25008-skirmish-map-italian-peninsula-6/) | 26-10-2018 |
 | Country Side (2) | [Bigtiger](https://wildfiregames.com/forum/index.php?/profile/26958-bigtiger/) | Generating Successfully | [Forum](https://wildfiregames.com/forum/index.php?/topic/25003-skirmish-map-country-side-2/) | 25-10-2018 |
 | City VS City (2) | [Imperator Ferrum Princeps I](https://wildfiregames.com/forum/index.php?/profile/27583-imperator-ferrum-princeps-i/) | Generating Successfully | [Forum](https://wildfiregames.com/forum/index.php?/topic/24921-city-vs-city-2/) | 02-10-2018 |
