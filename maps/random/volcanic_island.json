@@ -1,0 +1,11 @@
+{
+	"settings" : {
+		"Name" : "Volcanic Island",
+		"Script" : "volcanic_island.js",
+		"Description" : "A typical volcanic island.",
+		"SupportedBiomes": "generic/",
+		"Preview" : "volcanic_island.png",
+		"CircularMap" : true,
+		"Author" : "nani"
+	}
+}

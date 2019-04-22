@@ -1,11 +1,12 @@
 # 0 A.D. Community Maps
 
-This mod contains 36 maps (6 random maps, 14 skirmishes and 16 scenarios) collected from the [Wildfire Games (0 A.D.) Forum](https://wildfiregames.com/forum/). The maps can be easily accessed in game with the filter "Community Maps".
+This mod contains 39 maps (7 random maps, 16 skirmishes and 16 scenarios) collected from the [Wildfire Games (0 A.D.) Forum](https://wildfiregames.com/forum/). The maps can be easily accessed in game with the filter "Community Maps".
 
 ## Random Maps
 
 | Map Name | Author | Status | Link | Publication Date |
 |----------|--------|--------|------|------------------|
+| Volcanic Island | [nani](https://wildfiregames.com/forum/index.php?/profile/27866-nani/) | Generating Successfully | [Forum](https://wildfiregames.com/forum/index.php?/topic/25695-random-map-volcanic-island/) | 18-04-2019 |
 | Dune | [nani](https://wildfiregames.com/forum/index.php?/profile/27866-nani/) | Generating Successfully | [Forum](https://wildfiregames.com/forum/index.php?/topic/24638-random-map-dune-desert/) | 25-08-2018 |
 | Fert | [nani](https://wildfiregames.com/forum/index.php?/profile/27866-nani/) | Generating Successfully | [Forum](https://wildfiregames.com/forum/index.php?/topic/24621-random-map-fert-king-of-the-hill-variant/) | 25-08-2018 |
 | Fert Mountain | [nani](https://wildfiregames.com/forum/index.php?/profile/27866-nani/) | Generating Successfully | [Forum](https://wildfiregames.com/forum/index.php?/topic/24621-random-map-fert-king-of-the-hill-variant/) | 25-08-2018 |
@@ -17,6 +18,8 @@ This mod contains 36 maps (6 random maps, 14 skirmishes and 16 scenarios) collec
 
 | Map Name | Author | Status | Link | Publication Date |
 |----------|--------|--------|------|------------------|
+| Northern Islands (4) | [Scarecrow](https://wildfiregames.com/forum/index.php?/profile/29189-scarecrow/) | Generating Successfully | [Forum](https://wildfiregames.com/forum/index.php?/topic/25698-atlas-map-northern-islands-4/) | 18-04-2019 |
+| Arabia (4) | [coworotel](https://wildfiregames.com/forum/index.php?/profile/22499-coworotel/) | Generating Successfully | [Forum](https://wildfiregames.com/forum/index.php?/topic/25570-new-skirmish-map-arabia-4/) | 30-03-2019 |
 | Four Cities Meet (4) | [coworotel](https://wildfiregames.com/forum/index.php?/profile/22499-coworotel/) | Generating Successfully | [Forum](https://wildfiregames.com/forum/index.php?/topic/25560-skirmish-map-four-cities-meet-4/) | 28-03-2019 |
 | Italian Peninsula (6) | [Bigtiger](https://wildfiregames.com/forum/index.php?/profile/26958-bigtiger/) | Generating Successfully | [Forum](https://wildfiregames.com/forum/index.php?/topic/25008-skirmish-map-italian-peninsula-6/) | 26-10-2018 |
 | Country Side (2) | [Bigtiger](https://wildfiregames.com/forum/index.php?/profile/26958-bigtiger/) | Generating Successfully | [Forum](https://wildfiregames.com/forum/index.php?/topic/25003-skirmish-map-country-side-2/) | 25-10-2018 |
