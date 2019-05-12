@@ -49,12 +49,12 @@ function quadRast(v0, v1, v2, v3, h0, h1, h2, h3, setCondition)
 /**
  * Makes an arc
  * @param {Function} shaper - Returns the height of that point.
- * Is feeded (unitaryAngle,unitaryRadius) as arguments.
+ * Is feeded (normalizedAngle, normalizedRadius) as arguemnts.
  * @param {Function} [setCondition] - Returns whether wether place
  * or not that height at the position. Is feeded (point,pointHeight)
  * as arguemnts.
  */
-function arcRast(center, startRadius, endRadius, startAngle, endAngle, shaper, setCondition)
+function arcRast(center, minRadius, maxRadius, minAngle, maxAngle, shaper, setCondition)
 {
     let nAngles = 40;
     let nRadius = 40;
@@ -65,14 +65,14 @@ function arcRast(center, startRadius, endRadius, startAngle, endAngle, shaper, s
     {
         let uAngle = iAngle / nAngles;
         let uAngleNext = (iAngle + 1) / nAngles;
-        let angle = startAngle + uAngle * (endAngle - startAngle);
-        let angleNext = startAngle + uAngleNext * (endAngle - startAngle);
+        let angle = minAngle + uAngle * (maxAngle - minAngle);
+        let angleNext = minAngle + uAngleNext * (maxAngle - minAngle);
         for (let iRadius = 0; iRadius < nRadius; ++iRadius)
         {
             let uRadius = iRadius / nRadius;
             let uRadiusNext = (iRadius + 1) / nRadius;
-            let radius = startRadius + uRadius * (endRadius - startRadius);
-            let radiusNext = startRadius + uRadiusNext * (endRadius - startRadius);
+            let radius = minRadius + uRadius * (maxRadius - minRadius);
+            let radiusNext = minRadius + uRadiusNext * (maxRadius - minRadius);
             let points = points_rect(angle, angleNext, radius, radiusNext);
             let heights = heights_rect(uAngle, uAngleNext, uRadius, uRadiusNext)
             quadRast(...points, ...heights, setCondition);

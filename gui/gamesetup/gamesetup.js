@@ -1,3 +1,6 @@
+/* This file was added to the mod just to include the new map type 
+ * Filter "Community Maps" */
+
 const g_MatchSettings_SP = "config/matchsettings.json";
 const g_MatchSettings_MP = "config/matchsettings.mp.json";
 

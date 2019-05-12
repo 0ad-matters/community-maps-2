@@ -221,7 +221,7 @@ var g_IslandArea9 = new createArea(
 );
 
 placePlayerBases({
-	"PlayerPlacement": playerPlacementCircle(volcano.maxRadius * 0.9),
+	"PlayerPlacement": playerPlacementCircle(volcano.maxRadius * 0.80),
 	"PlayerTileClass": clPlayer,
 	"BaseResourceClass": clBaseResource,
 	"CityPatch": {
@@ -346,28 +346,16 @@ createDecoration(
 
 Engine.SetProgress(70);
 
-// createFood(
-// 	[
-// 		[new SimpleObject(oMainHuntableAnimal, 5, 7, 0, 4)],
-// 		[new SimpleObject(oSecondaryHuntableAnimal, 2, 3, 0, 2)]
-// 	],
-// 	[
-// 		3 * numPlayers,
-// 		3 * numPlayers
-// 	],
-// 	avoidClasses(clForest, 0, clPlayer, 20, clHill, 1, clMetal, 4, clRock, 4, clFood, 20),
-// 	clFood);
-
 createFood(
 	[
 		[new SimpleObject(oFish, 2, 3, 0, 2)]
 	],
 	[
-		25 * numPlayers
+		30 * numPlayers
 	],
 	[
 		new avoidClasses(clFood, 20),
-		new HeightConstraint(-Infinity, -0.5)
+		new HeightConstraint(-Infinity, -1.5)
 	],
 	clFood);
 

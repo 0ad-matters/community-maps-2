@@ -2,7 +2,7 @@
 	"settings" : {
 		"Name" : "Forest Nothing",
 		"Script" : "forest_nothing.js",
-		"Description" : "A map with only trees.",
+		"Description" : "[color=\"red\"]WARNING: MAPS WITH SIZE LARGER THAN 'SMALL' MAY FAIL TO GENERATE. FOR BETTER PERFORMANCE USE SIZE 'TINY' OR 'SMALL'. [/color]\n A map with only trees.",
 		"Preview" : "forest_nothing.png",
 		"SupportedBiomes": "generic/",
 		"Keywords": ["community"],
