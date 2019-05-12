@@ -1,6 +1,6 @@
 # 0 A.D. Community Maps
 
-This mod contains 39 maps (7 random maps, 16 skirmishes and 16 scenarios) collected from the [Wildfire Games (0 A.D.) Forum](https://wildfiregames.com/forum/). The maps can be easily accessed in game with the filter "Community Maps".
+This mod contains 41 maps (7 random maps, 16 skirmishes and 18 scenarios) collected from the [Wildfire Games (0 A.D.) Forum](https://wildfiregames.com/forum/). The maps can be easily accessed in game with the filter "Community Maps".
 
 ## Random Maps
 
@@ -39,6 +39,8 @@ This mod contains 39 maps (7 random maps, 16 skirmishes and 16 scenarios) collec
 
 | Map Name | Author | Status | Link | Publication Date |
 |----------|--------|--------|------|------------------|
+| Asian Campaign III a.C. | [imperium](https://wildfiregames.com/forum/index.php?/profile/21662-imperium/) | Generating Successfully | [Forum](https://wildfiregames.com/forum/index.php?/topic/25958-new-map-20-asia/) | 12-05-2019 |
+| Mappa Europea III Secolo a.C. | [imperium](https://wildfiregames.com/forum/index.php?/profile/21662-imperium/) | Generating Successfully | [Forum](https://wildfiregames.com/forum/index.php?/topic/25413-new-map-europe/) | 26-02-2019 |
 | Paradise valley | [Nevar](https://wildfiregames.com/forum/index.php?/profile/28458-nevar/) | Generating Successfully | [Forum](https://wildfiregames.com/forum/index.php?/topic/25087-skirmish-paradise-valley-4/) | 23-11-2018 |
 | Halicarnassus | [Skhorn](https://wildfiregames.com/forum/index.php?/profile/16493-skhorn/) | Generating w/ Errors | [Github](https://github.com/Skhorn/0AD-map-pack) | 19-05-2018 |
 | Constantinople: Midnight Assault | [Skhorn](https://wildfiregames.com/forum/index.php?/profile/16493-skhorn/) | Generating w/ Errors | [Github](https://github.com/Skhorn/0AD-map-pack) | 16-05-2018 |
