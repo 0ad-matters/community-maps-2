@@ -1,6 +1,6 @@
 # 0 A.D. Community Maps
 
-This mod contains 41 maps (7 random maps, 16 skirmishes and 18 scenarios) collected from the [Wildfire Games (0 A.D.) Forum](https://wildfiregames.com/forum/). The maps can be easily accessed in game with the filter "Community Maps".
+This mod contains 44 maps (7 random maps, 18 skirmishes and 19 scenarios) collected from the [Wildfire Games (0 A.D.) Forum](https://wildfiregames.com/forum/). The maps can be easily accessed in game with the filter "Community Maps".
 
 ## Random Maps
 
@@ -18,6 +18,8 @@ This mod contains 41 maps (7 random maps, 16 skirmishes and 18 scenarios) collec
 
 | Map Name | Author | Status | Link | Publication Date |
 |----------|--------|--------|------|------------------|
+|Caribbean Island (6)|[Marcus Brutus Bombastus](https://wildfiregames.com/forum/index.php?/profile/30405-marcus-brutus-bombastus/)|Generating Successfully|[Forum](https://wildfiregames.com/forum/index.php?/topic/27363-first-try-caribbean-island/)|17-12-2019|
+|Lonely Mountain (4)|[MarcusAureliu#s](https://wildfiregames.com/forum/index.php?/profile/28269-marcusaurelius/)|Generating Successfully|[Forum](https://wildfiregames.com/forum/index.php?/topic/26299-the-lonely-mountain-my-first-try-at-map-design/)|19-06-2019|
 | Northern Islands (4) | [Scarecrow](https://wildfiregames.com/forum/index.php?/profile/29189-scarecrow/) | Generating Successfully | [Forum](https://wildfiregames.com/forum/index.php?/topic/25698-atlas-map-northern-islands-4/) | 18-04-2019 |
 | Arabia (4) | [coworotel](https://wildfiregames.com/forum/index.php?/profile/22499-coworotel/) | Generating Successfully | [Forum](https://wildfiregames.com/forum/index.php?/topic/25570-new-skirmish-map-arabia-4/) | 30-03-2019 |
 | Four Cities Meet (4) | [coworotel](https://wildfiregames.com/forum/index.php?/profile/22499-coworotel/) | Generating Successfully | [Forum](https://wildfiregames.com/forum/index.php?/topic/25560-skirmish-map-four-cities-meet-4/) | 28-03-2019 |
@@ -39,6 +41,7 @@ This mod contains 41 maps (7 random maps, 16 skirmishes and 18 scenarios) collec
 
 | Map Name | Author | Status | Link | Publication Date |
 |----------|--------|--------|------|------------------|
+|South East Asia (6)|[crazy_Baboon](https://wildfiregames.com/forum/index.php?/profile/29330-crazy_baboon/)|Generating w/ Errors|[Forum](https://wildfiregames.com/forum/index.php?/topic/26199-how-to-contribute-a-new-map/)|09-06-2019|
 | Asian Campaign III a.C. | [imperium](https://wildfiregames.com/forum/index.php?/profile/21662-imperium/) | Generating Successfully | [Forum](https://wildfiregames.com/forum/index.php?/topic/25958-new-map-20-asia/) | 12-05-2019 |
 | Mappa Europea III Secolo a.C. | [imperium](https://wildfiregames.com/forum/index.php?/profile/21662-imperium/) | Generating Successfully | [Forum](https://wildfiregames.com/forum/index.php?/topic/25413-new-map-europe/) | 26-02-2019 |
 | Paradise valley | [Nevar](https://wildfiregames.com/forum/index.php?/profile/28458-nevar/) | Generating Successfully | [Forum](https://wildfiregames.com/forum/index.php?/topic/25087-skirmish-paradise-valley-4/) | 23-11-2018 |

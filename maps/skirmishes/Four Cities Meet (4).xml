@@ -48,18 +48,17 @@
   "LockTeams": false,
   "Name": "Four Cities Meet (4)",
   "PlayerData": [
-    null,
     {
-      "Civ": "athen"
+      "Name": "Player 1"
     },
     {
-      "Civ": "cart"
+      "Name": "Player 2"
     },
     {
-      "Civ": "gaul"
+      "Name": "Player 3"
     },
     {
-      "Civ": "iber"
+      "Name": "Player 4"
     }
   ],
   "Preview": "four_cities_meet.png",

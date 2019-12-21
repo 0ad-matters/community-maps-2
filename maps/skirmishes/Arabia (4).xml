@@ -46,18 +46,17 @@
   "LockTeams": false,
   "Name": "Arabia (4)",
   "PlayerData": [
-    null,
     {
-      "Civ": "athen"
+      "Name": "Player 1"
     },
     {
-      "Civ": "cart"
+      "Name": "Player 2"
     },
     {
-      "Civ": "gaul"
+      "Name": "Player 3"
     },
     {
-      "Civ": "iber"
+      "Name": "Player 4"
     }
   ],
   "Preview": "arabia.png",
