@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<Scenario version="6">
+<Scenario version="7">
 	<Environment>
 		<SkySet>overcast</SkySet>
 		<SunColor r="0.831373" g="0.831373" b="0.831373"/>
 		<SunElevation angle="0.622796"/>
 		<SunRotation angle="-1.70579"/>
-		<TerrainAmbientColor r="0.364706" g="0.364706" b="0.364706"/>
-		<UnitsAmbientColor r="0.537255" g="0.537255" b="0.537255"/>
+		<AmbientColor r="0.537255" g="0.537255" b="0.537255"/>
 		<Fog>
 			<FogFactor>0.00189453</FogFactor>
 			<FogThickness>0.237305</FogThickness>
@@ -807,203 +806,203 @@
 			<Actor seed="38070"/>
 		</Entity>
 		<Entity uid="147">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="219.95975" z="214.07328"/>
 			<Orientation y="-2.87172"/>
 			<Actor seed="15384"/>
 		</Entity>
 		<Entity uid="148">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="249.69397" z="183.4965"/>
 			<Orientation y="-1.23053"/>
 			<Actor seed="40778"/>
 		</Entity>
 		<Entity uid="149">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="228.39255" z="182.97965"/>
 			<Orientation y="2.70907"/>
 			<Actor seed="39572"/>
 		</Entity>
 		<Entity uid="150">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="207.56067" z="188.74256"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="47614"/>
 		</Entity>
 		<Entity uid="151">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="192.54047" z="182.83545"/>
 			<Orientation y="0.77266"/>
 			<Actor seed="10320"/>
 		</Entity>
 		<Entity uid="152">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="196.81421" z="188.86411"/>
 			<Orientation y="0.77355"/>
 			<Actor seed="63108"/>
 		</Entity>
 		<Entity uid="153">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="203.61783" z="198.05417"/>
 			<Orientation y="0.93722"/>
 			<Actor seed="17356"/>
 		</Entity>
 		<Entity uid="154">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="227.27424" z="185.56623"/>
 			<Orientation y="-1.20585"/>
 			<Actor seed="43560"/>
 		</Entity>
 		<Entity uid="155">
-			<Template>gaia/geology_stone_temperate</Template>
+			<Template>gaia/rock/temperate_small</Template>
 			<Player>0</Player>
 			<Position x="216.98081" z="206.9832"/>
 			<Orientation y="1.6494"/>
 			<Actor seed="12892"/>
 		</Entity>
 		<Entity uid="156">
-			<Template>gaia/geology_stone_temperate</Template>
+			<Template>gaia/rock/temperate_small</Template>
 			<Player>0</Player>
 			<Position x="220.83222" z="186.56885"/>
 			<Orientation y="0.81916"/>
 			<Actor seed="4206"/>
 		</Entity>
 		<Entity uid="157">
-			<Template>gaia/geology_stone_temperate</Template>
+			<Template>gaia/rock/temperate_small</Template>
 			<Player>0</Player>
 			<Position x="198.97522" z="185.85367"/>
 			<Orientation y="1.07003"/>
 			<Actor seed="25652"/>
 		</Entity>
 		<Entity uid="158">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="217.92176" z="190.03956"/>
 			<Orientation y="0.88646"/>
 			<Actor seed="50038"/>
 		</Entity>
 		<Entity uid="159">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="209.43119" z="199.32337"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="35284"/>
 		</Entity>
 		<Entity uid="162">
-			<Template>gaia/flora_bush_badlands</Template>
+			<Template>gaia/tree/bush_badlands</Template>
 			<Player>0</Player>
 			<Position x="227.60914" z="206.59021"/>
 			<Orientation y="2.57451"/>
 			<Actor seed="10772"/>
 		</Entity>
 		<Entity uid="163">
-			<Template>gaia/flora_bush_badlands</Template>
+			<Template>gaia/tree/bush_badlands</Template>
 			<Player>0</Player>
 			<Position x="232.6023" z="199.99454"/>
 			<Orientation y="-0.24561"/>
 			<Actor seed="44952"/>
 		</Entity>
 		<Entity uid="164">
-			<Template>gaia/flora_bush_badlands</Template>
+			<Template>gaia/tree/bush_badlands</Template>
 			<Player>0</Player>
 			<Position x="257.21042" z="185.52894"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="11942"/>
 		</Entity>
 		<Entity uid="165">
-			<Template>gaia/flora_bush_badlands</Template>
+			<Template>gaia/tree/bush_badlands</Template>
 			<Player>0</Player>
 			<Position x="209.0069" z="186.12342"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="45974"/>
 		</Entity>
 		<Entity uid="166">
-			<Template>gaia/flora_bush_badlands</Template>
+			<Template>gaia/tree/bush_badlands</Template>
 			<Player>0</Player>
 			<Position x="211.03632" z="192.04441"/>
 			<Orientation y="0.99097"/>
 			<Actor seed="3026"/>
 		</Entity>
 		<Entity uid="167">
-			<Template>gaia/flora_bush_badlands</Template>
+			<Template>gaia/tree/bush_badlands</Template>
 			<Player>0</Player>
 			<Position x="216.11475" z="195.08957"/>
 			<Orientation y="2.42818"/>
 			<Actor seed="1500"/>
 		</Entity>
 		<Entity uid="168">
-			<Template>gaia/flora_bush_badlands</Template>
+			<Template>gaia/tree/bush_badlands</Template>
 			<Player>0</Player>
 			<Position x="221.3448" z="192.8191"/>
 			<Orientation y="-0.80605"/>
 			<Actor seed="26604"/>
 		</Entity>
 		<Entity uid="169">
-			<Template>gaia/flora_bush_badlands</Template>
+			<Template>gaia/tree/bush_badlands</Template>
 			<Player>0</Player>
 			<Position x="215.81632" z="196.7118"/>
 			<Orientation y="2.31768"/>
 			<Actor seed="51214"/>
 		</Entity>
 		<Entity uid="170">
-			<Template>gaia/flora_bush_badlands</Template>
+			<Template>gaia/tree/bush_badlands</Template>
 			<Player>0</Player>
 			<Position x="217.85984" z="193.31931"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="12312"/>
 		</Entity>
 		<Entity uid="171">
-			<Template>gaia/flora_bush_badlands</Template>
+			<Template>gaia/tree/bush_badlands</Template>
 			<Player>0</Player>
 			<Position x="221.01523" z="196.45249"/>
 			<Orientation y="2.16774"/>
 			<Actor seed="35972"/>
 		</Entity>
 		<Entity uid="172">
-			<Template>gaia/flora_bush_badlands</Template>
+			<Template>gaia/tree/bush_badlands</Template>
 			<Player>0</Player>
 			<Position x="223.97013" z="192.1132"/>
 			<Orientation y="1.73194"/>
 			<Actor seed="45056"/>
 		</Entity>
 		<Entity uid="173">
-			<Template>gaia/flora_bush_badlands</Template>
+			<Template>gaia/tree/bush_badlands</Template>
 			<Player>0</Player>
 			<Position x="230.41434" z="190.0405"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="14378"/>
 		</Entity>
 		<Entity uid="174">
-			<Template>gaia/flora_bush_badlands</Template>
+			<Template>gaia/tree/bush_badlands</Template>
 			<Player>0</Player>
 			<Position x="250.1847" z="185.91956"/>
 			<Orientation y="-1.14621"/>
 			<Actor seed="28984"/>
 		</Entity>
 		<Entity uid="175">
-			<Template>other/fence_stone</Template>
+			<Template>structures/fence_stone</Template>
 			<Player>0</Player>
 			<Position x="241.54984" z="182.32932"/>
 			<Orientation y="1.55008"/>
 			<Actor seed="12206"/>
 		</Entity>
 		<Entity uid="177">
-			<Template>other/fence_short</Template>
+			<Template>structures/fence_short</Template>
 			<Player>0</Player>
 			<Position x="336.89136" z="161.01316"/>
 			<Orientation y="-1.76995"/>
 			<Actor seed="23666"/>
 		</Entity>
 		<Entity uid="178">
-			<Template>other/fence_short</Template>
+			<Template>structures/fence_short</Template>
 			<Player>0</Player>
 			<Position x="345.74015" z="161.4068"/>
 			<Orientation y="-1.57671"/>
@@ -1089,35 +1088,35 @@
 			<Actor seed="65525"/>
 		</Entity>
 		<Entity uid="196">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="232.73667" z="148.47593"/>
 			<Orientation y="1.55021"/>
 			<Actor seed="52440"/>
 		</Entity>
 		<Entity uid="197">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="229.95722" z="145.20102"/>
 			<Orientation y="-1.07744"/>
 			<Actor seed="58098"/>
 		</Entity>
 		<Entity uid="198">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="214.97638" z="145.92237"/>
 			<Orientation y="1.85964"/>
 			<Actor seed="61826"/>
 		</Entity>
 		<Entity uid="199">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="223.89798" z="144.78815"/>
 			<Orientation y="-2.01322"/>
 			<Actor seed="59964"/>
 		</Entity>
 		<Entity uid="200">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="336.10325" z="156.66388"/>
 			<Orientation y="2.35621"/>
@@ -1304,259 +1303,259 @@
 			<Actor seed="35888"/>
 		</Entity>
 		<Entity uid="237">
-			<Template>gaia/flora_tree_olive</Template>
+			<Template>gaia/fruit/olive</Template>
 			<Player>0</Player>
 			<Position x="138.33307" z="139.88279"/>
 			<Orientation y="-1.86048"/>
 			<Actor seed="39126"/>
 		</Entity>
 		<Entity uid="238">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="138.19272" z="109.93798"/>
 			<Orientation y="1.47037"/>
 			<Actor seed="14530"/>
 		</Entity>
 		<Entity uid="239">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="169.20694" z="100.3782"/>
 			<Orientation y="-1.50867"/>
 			<Actor seed="42170"/>
 		</Entity>
 		<Entity uid="240">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="98.26435" z="88.77672"/>
 			<Orientation y="1.06412"/>
 			<Actor seed="33178"/>
 		</Entity>
 		<Entity uid="241">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="195.0453" z="69.21113"/>
 			<Orientation y="1.40645"/>
 			<Actor seed="57864"/>
 		</Entity>
 		<Entity uid="242">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="283.8025" z="12.31585"/>
 			<Orientation y="1.25341"/>
 			<Actor seed="20344"/>
 		</Entity>
 		<Entity uid="243">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="253.62888" z="39.41848"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="32594"/>
 		</Entity>
 		<Entity uid="244">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="184.09043" z="86.41274"/>
 			<Orientation y="0.32531"/>
 			<Actor seed="31868"/>
 		</Entity>
 		<Entity uid="245">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="184.31022" z="91.49854"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="51766"/>
 		</Entity>
 		<Entity uid="246">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="111.96314" z="99.90506"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="45102"/>
 		</Entity>
 		<Entity uid="247">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="284.68677" z="18.05742"/>
 			<Orientation y="0.50647"/>
 			<Actor seed="9782"/>
 		</Entity>
 		<Entity uid="248">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="282.6605" z="22.56701"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="3122"/>
 		</Entity>
 		<Entity uid="249">
-			<Template>gaia/flora_tree_acacia</Template>
+			<Template>gaia/tree/acacia</Template>
 			<Player>0</Player>
 			<Position x="156.65613" z="107.21908"/>
 			<Orientation y="0.77826"/>
 			<Actor seed="9810"/>
 		</Entity>
 		<Entity uid="250">
-			<Template>gaia/flora_tree_acacia</Template>
+			<Template>gaia/tree/acacia</Template>
 			<Player>0</Player>
 			<Position x="101.6293" z="93.06853"/>
 			<Orientation y="0.62784"/>
 			<Actor seed="43630"/>
 		</Entity>
 		<Entity uid="251">
-			<Template>gaia/flora_tree_acacia</Template>
+			<Template>gaia/tree/acacia</Template>
 			<Player>0</Player>
 			<Position x="235.00605" z="46.35616"/>
 			<Orientation y="-0.16"/>
 			<Actor seed="50206"/>
 		</Entity>
 		<Entity uid="252">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="172.33854" z="101.73908"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="42368"/>
 		</Entity>
 		<Entity uid="253">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="157.55814" z="109.0756"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="20686"/>
 		</Entity>
 		<Entity uid="254">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="115.79204" z="100.84061"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="1456"/>
 		</Entity>
 		<Entity uid="256">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="108.36464" z="96.08268"/>
 			<Orientation y="-0.97091"/>
 			<Actor seed="20360"/>
 		</Entity>
 		<Entity uid="257">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="95.12916" z="89.3427"/>
 			<Orientation y="-2.30236"/>
 			<Actor seed="63900"/>
 		</Entity>
 		<Entity uid="258">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="106.75844" z="99.93805"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="60002"/>
 		</Entity>
 		<Entity uid="259">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="96.5687" z="95.35801"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="55396"/>
 		</Entity>
 		<Entity uid="260">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="194.64301" z="73.72486"/>
 			<Orientation y="1.81983"/>
 			<Actor seed="42306"/>
 		</Entity>
 		<Entity uid="261">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="215.49131" z="55.15105"/>
 			<Orientation y="1.89208"/>
 			<Actor seed="29280"/>
 		</Entity>
 		<Entity uid="262">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="218.67685" z="56.22374"/>
 			<Orientation y="2.17923"/>
 			<Actor seed="1728"/>
 		</Entity>
 		<Entity uid="263">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="225.20463" z="52.48974"/>
 			<Orientation y="1.4534"/>
 			<Actor seed="4570"/>
 		</Entity>
 		<Entity uid="264">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="279.13428" z="18.39745"/>
 			<Orientation y="1.25869"/>
 			<Actor seed="58814"/>
 		</Entity>
 		<Entity uid="265">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="279.2035" z="24.92354"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="8408"/>
 		</Entity>
 		<Entity uid="266">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="270.56247" z="25.8056"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="2060"/>
 		</Entity>
 		<Entity uid="267">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="137.46747" z="104.1309"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="53836"/>
 		</Entity>
 		<Entity uid="268">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="127.26627" z="105.07609"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="38884"/>
 		</Entity>
 		<Entity uid="269">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="119.54706" z="104.57914"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="28270"/>
 		</Entity>
 		<Entity uid="270">
-			<Template>gaia/flora_bush_berry</Template>
+			<Template>gaia/fruit/berry_01</Template>
 			<Player>0</Player>
 			<Position x="114.72426" z="104.77454"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="13808"/>
 		</Entity>
 		<Entity uid="271">
-			<Template>gaia/flora_bush_berry</Template>
+			<Template>gaia/fruit/berry_01</Template>
 			<Player>0</Player>
 			<Position x="102.66517" z="100.48485"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="21644"/>
 		</Entity>
 		<Entity uid="272">
-			<Template>gaia/flora_bush_berry</Template>
+			<Template>gaia/fruit/berry_01</Template>
 			<Player>0</Player>
 			<Position x="93.15835" z="92.54937"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="61724"/>
 		</Entity>
 		<Entity uid="273">
-			<Template>gaia/geology_metal_mediterranean_slabs</Template>
+			<Template>gaia/ore/mediterranean_large</Template>
 			<Player>0</Player>
 			<Position x="204.67334" z="65.49695"/>
 			<Orientation y="0.05495"/>
 			<Actor seed="55412"/>
 		</Entity>
 		<Entity uid="274">
-			<Template>gaia/geology_stone_mediterranean</Template>
+			<Template>gaia/rock/mediterranean_small</Template>
 			<Player>0</Player>
 			<Position x="131.16242" z="110.5196"/>
 			<Orientation y="2.35621"/>
@@ -1587,119 +1586,119 @@
 			<Actor seed="27026"/>
 		</Entity>
 		<Entity uid="280">
-			<Template>gaia/geology_stone_greek</Template>
+			<Template>gaia/rock/greece_small</Template>
 			<Player>0</Player>
 			<Position x="312.40943" z="40.10123"/>
 			<Orientation y="-1.87543"/>
 			<Actor seed="12876"/>
 		</Entity>
 		<Entity uid="281">
-			<Template>gaia/geology_stone_greek</Template>
+			<Template>gaia/rock/greece_small</Template>
 			<Player>0</Player>
 			<Position x="287.60798" z="28.64368"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="63258"/>
 		</Entity>
 		<Entity uid="282">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="311.50437" z="36.86323"/>
 			<Orientation y="2.19376"/>
 			<Actor seed="4468"/>
 		</Entity>
 		<Entity uid="283">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="317.38138" z="38.06611"/>
 			<Orientation y="-0.327"/>
 			<Actor seed="34712"/>
 		</Entity>
 		<Entity uid="284">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="297.32932" z="16.70397"/>
 			<Orientation y="0.25846"/>
 			<Actor seed="6376"/>
 		</Entity>
 		<Entity uid="285">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="296.30817" z="20.95267"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="51234"/>
 		</Entity>
 		<Entity uid="286">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="305.68119" z="40.44655"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="1980"/>
 		</Entity>
 		<Entity uid="287">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="301.52149" z="18.15268"/>
 			<Orientation y="-1.3563"/>
 			<Actor seed="27274"/>
 		</Entity>
 		<Entity uid="288">
-			<Template>gaia/flora_tree_acacia</Template>
+			<Template>gaia/tree/acacia</Template>
 			<Player>0</Player>
 			<Position x="282.98658" z="34.66532"/>
 			<Orientation y="-1.41758"/>
 			<Actor seed="27490"/>
 		</Entity>
 		<Entity uid="289">
-			<Template>gaia/flora_tree_acacia</Template>
+			<Template>gaia/tree/acacia</Template>
 			<Player>0</Player>
 			<Position x="327.09348" z="29.55686"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="51376"/>
 		</Entity>
 		<Entity uid="290">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="268.1579" z="36.74531"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="14540"/>
 		</Entity>
 		<Entity uid="291">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="316.94275" z="25.27961"/>
 			<Orientation y="-2.88094"/>
 			<Actor seed="57680"/>
 		</Entity>
 		<Entity uid="292">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="311.53306" z="18.51612"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="41406"/>
 		</Entity>
 		<Entity uid="293">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="307.58564" z="21.1135"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="23528"/>
 		</Entity>
 		<Entity uid="294">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="310.4567" z="23.95847"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="16122"/>
 		</Entity>
 		<Entity uid="295">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="292.43528" z="24.33129"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="54638"/>
 		</Entity>
 		<Entity uid="296">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="292.87241" z="29.2059"/>
 			<Orientation y="2.35621"/>
@@ -1712,7 +1711,7 @@
 			<Actor seed="40502"/>
 		</Entity>
 		<Entity uid="298">
-			<Template>gaia/geology_stone_greek</Template>
+			<Template>gaia/rock/greece_small</Template>
 			<Player>0</Player>
 			<Position x="203.83927" z="112.31026"/>
 			<Orientation y="2.35621"/>
@@ -2008,364 +2007,364 @@
 			<Actor seed="34734"/>
 		</Entity>
 		<Entity uid="349">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="74.04014" z="241.8151"/>
 			<Orientation y="5.3013"/>
 			<Actor seed="40204"/>
 		</Entity>
 		<Entity uid="350">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="66.91198" z="254.74146"/>
 			<Orientation y="6.54673"/>
 			<Actor seed="36034"/>
 		</Entity>
 		<Entity uid="351">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="72.82741" z="269.70539"/>
 			<Orientation y="6.93947"/>
 			<Actor seed="49684"/>
 		</Entity>
 		<Entity uid="352">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="76.73232" z="239.11918"/>
 			<Orientation y="2.82314"/>
 			<Actor seed="57804"/>
 		</Entity>
 		<Entity uid="353">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="71.56057" z="263.5488"/>
 			<Orientation y="5.89473"/>
 			<Actor seed="5564"/>
 		</Entity>
 		<Entity uid="354">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="81.02433" z="287.22053"/>
 			<Orientation y="6.93947"/>
 			<Actor seed="27132"/>
 		</Entity>
 		<Entity uid="355">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="77.9831" z="241.23182"/>
 			<Orientation y="6.18691"/>
 			<Actor seed="22796"/>
 		</Entity>
 		<Entity uid="356">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="76.68136" z="275.43915"/>
 			<Orientation y="6.93947"/>
 			<Actor seed="34884"/>
 		</Entity>
 		<Entity uid="357">
-			<Template>gaia/flora_tree_acacia</Template>
+			<Template>gaia/tree/acacia</Template>
 			<Player>0</Player>
 			<Position x="71.96102" z="248.66611"/>
 			<Orientation y="5.15897"/>
 			<Actor seed="58290"/>
 		</Entity>
 		<Entity uid="358">
-			<Template>gaia/flora_tree_acacia</Template>
+			<Template>gaia/tree/acacia</Template>
 			<Player>0</Player>
 			<Position x="69.86414" z="279.94413"/>
 			<Orientation y="4.63855"/>
 			<Actor seed="31798"/>
 		</Entity>
 		<Entity uid="359">
-			<Template>gaia/geology_stone_greek</Template>
+			<Template>gaia/rock/greece_small</Template>
 			<Player>0</Player>
 			<Position x="77.84337" z="246.32166"/>
 			<Orientation y="6.18691"/>
 			<Actor seed="56302"/>
 		</Entity>
 		<Entity uid="360">
-			<Template>gaia/geology_metal_greek</Template>
+			<Template>gaia/ore/greece_small</Template>
 			<Player>0</Player>
 			<Position x="82.00771" z="281.29072"/>
 			<Orientation y="6.93947"/>
 			<Actor seed="12856"/>
 		</Entity>
 		<Entity uid="361">
-			<Template>gaia/geology_metal_greek</Template>
+			<Template>gaia/ore/greece_small</Template>
 			<Player>0</Player>
 			<Position x="84.13846" z="401.1179"/>
 			<Orientation y="7.45292"/>
 			<Actor seed="12856"/>
 		</Entity>
 		<Entity uid="362">
-			<Template>gaia/geology_stone_greek</Template>
+			<Template>gaia/rock/greece_small</Template>
 			<Player>0</Player>
 			<Position x="62.06252" z="388.03602"/>
 			<Orientation y="7.45292"/>
 			<Actor seed="56302"/>
 		</Entity>
 		<Entity uid="363">
-			<Template>gaia/flora_tree_acacia</Template>
+			<Template>gaia/tree/acacia</Template>
 			<Player>0</Player>
 			<Position x="78.63447" z="399.39228"/>
 			<Orientation y="5.15201"/>
 			<Actor seed="31798"/>
 		</Entity>
 		<Entity uid="364">
-			<Template>gaia/flora_tree_acacia</Template>
+			<Template>gaia/tree/acacia</Template>
 			<Player>0</Player>
 			<Position x="62.53365" z="394.3508"/>
 			<Orientation y="6.425"/>
 			<Actor seed="58290"/>
 		</Entity>
 		<Entity uid="365">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="82.35985" z="392.1197"/>
 			<Orientation y="7.45292"/>
 			<Actor seed="34884"/>
 		</Entity>
 		<Entity uid="366">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="57.24923" z="386.37531"/>
 			<Orientation y="7.45292"/>
 			<Actor seed="22796"/>
 		</Entity>
 		<Entity uid="367">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="90.67923" z="388.08463"/>
 			<Orientation y="7.45292"/>
 			<Actor seed="27132"/>
 		</Entity>
 		<Entity uid="368">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="74.31434" z="394.81601"/>
 			<Orientation y="7.45292"/>
 			<Actor seed="5564"/>
 		</Entity>
 		<Entity uid="369">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="54.85856" z="386.93445"/>
 			<Orientation y="4.08916"/>
 			<Actor seed="57804"/>
 		</Entity>
 		<Entity uid="370">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="88.14373" z="392.91117"/>
 			<Orientation y="7.45292"/>
 			<Actor seed="49684"/>
 		</Entity>
 		<Entity uid="371">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="66.81383" z="400.99027"/>
 			<Orientation y="7.81273"/>
 			<Actor seed="36034"/>
 		</Entity>
 		<Entity uid="372">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="56.62237" z="390.31159"/>
 			<Orientation y="6.5673"/>
 			<Actor seed="40204"/>
 		</Entity>
 		<Entity uid="374">
-			<Template>gaia/geology_stone_greek</Template>
+			<Template>gaia/rock/greece_small</Template>
 			<Player>0</Player>
 			<Position x="67.41773" z="114.60485"/>
 			<Orientation y="5.55481"/>
 			<Actor seed="56302"/>
 		</Entity>
 		<Entity uid="375">
-			<Template>gaia/flora_tree_acacia</Template>
+			<Template>gaia/tree/acacia</Template>
 			<Player>0</Player>
 			<Position x="48.18244" z="147.92594"/>
 			<Orientation y="3.25391"/>
 			<Actor seed="31798"/>
 		</Entity>
 		<Entity uid="376">
-			<Template>gaia/flora_tree_acacia</Template>
+			<Template>gaia/tree/acacia</Template>
 			<Player>0</Player>
 			<Position x="86.06911" z="131.10325"/>
 			<Orientation y="7.37104"/>
 			<Actor seed="58290"/>
 		</Entity>
 		<Entity uid="377">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="56.75937" z="169.62739"/>
 			<Orientation y="5.55481"/>
 			<Actor seed="34884"/>
 		</Entity>
 		<Entity uid="378">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="69.73722" z="122.73031"/>
 			<Orientation y="5.55481"/>
 			<Actor seed="22796"/>
 		</Entity>
 		<Entity uid="379">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="31.5067" z="207.1714"/>
 			<Orientation y="5.55481"/>
 			<Actor seed="27132"/>
 		</Entity>
 		<Entity uid="380">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="58.71264" z="163.99927"/>
 			<Orientation y="5.55481"/>
 			<Actor seed="5564"/>
 		</Entity>
 		<Entity uid="381">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="69.97632" z="120.28672"/>
 			<Orientation y="2.19106"/>
 			<Actor seed="57804"/>
 		</Entity>
 		<Entity uid="382">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="58.72857" z="134.90806"/>
 			<Orientation y="5.55481"/>
 			<Actor seed="49684"/>
 		</Entity>
 		<Entity uid="383">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="32.79299" z="199.17399"/>
 			<Orientation y="5.91463"/>
 			<Actor seed="36034"/>
 		</Entity>
 		<Entity uid="384">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="66.21143" z="120.87124"/>
 			<Orientation y="4.6692"/>
 			<Actor seed="40204"/>
 		</Entity>
 		<Entity uid="387">
-			<Template>gaia/flora_tree_acacia</Template>
+			<Template>gaia/tree/acacia</Template>
 			<Player>0</Player>
 			<Position x="146.93213" z="216.25821"/>
 			<Orientation y="1.75687"/>
 			<Actor seed="31798"/>
 		</Entity>
 		<Entity uid="388">
-			<Template>gaia/flora_tree_acacia</Template>
+			<Template>gaia/tree/acacia</Template>
 			<Player>0</Player>
 			<Position x="122.09203" z="247.28284"/>
 			<Orientation y="5.60143"/>
 			<Actor seed="58290"/>
 		</Entity>
 		<Entity uid="389">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="135.97748" z="251.03052"/>
 			<Orientation y="4.05777"/>
 			<Actor seed="34884"/>
 		</Entity>
 		<Entity uid="390">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="149.14905" z="237.8808"/>
 			<Orientation y="6.62937"/>
 			<Actor seed="22796"/>
 		</Entity>
 		<Entity uid="391">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="146.22504" z="237.68204"/>
 			<Orientation y="4.05777"/>
 			<Actor seed="27132"/>
 		</Entity>
 		<Entity uid="392">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="149.96631" z="221.7718"/>
 			<Orientation y="4.05777"/>
 			<Actor seed="5564"/>
 		</Entity>
 		<Entity uid="393">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="122.31537" z="236.4448"/>
 			<Orientation y="3.2656"/>
 			<Actor seed="57804"/>
 		</Entity>
 		<Entity uid="394">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="136.10126" z="220.14689"/>
 			<Orientation y="4.05777"/>
 			<Actor seed="49684"/>
 		</Entity>
 		<Entity uid="395">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="120.13048" z="254.935"/>
 			<Orientation y="6.9892"/>
 			<Actor seed="36034"/>
 		</Entity>
 		<Entity uid="396">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="121.03748" z="240.20136"/>
 			<Orientation y="5.74376"/>
 			<Actor seed="40204"/>
 		</Entity>
 		<Entity uid="397">
-			<Template>gaia/geology_stonemine_temperate_quarry</Template>
+			<Template>gaia/rock/temperate_large</Template>
 			<Player>0</Player>
 			<Position x="126.27349" z="278.36545"/>
 			<Orientation y="-2.67333"/>
 			<Actor seed="11324"/>
 		</Entity>
 		<Entity uid="398">
-			<Template>gaia/geology_stone_greek</Template>
+			<Template>gaia/rock/greece_small</Template>
 			<Player>0</Player>
 			<Position x="31.17194" z="315.07337"/>
 			<Orientation y="0.83342"/>
 			<Actor seed="56302"/>
 		</Entity>
 		<Entity uid="399">
-			<Template>gaia/flora_tree_acacia</Template>
+			<Template>gaia/tree/acacia</Template>
 			<Player>0</Player>
 			<Position x="29.53281" z="321.18989"/>
 			<Orientation y="-0.19452"/>
 			<Actor seed="58290"/>
 		</Entity>
 		<Entity uid="400">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="27.17632" z="311.9173"/>
 			<Orientation y="0.83342"/>
 			<Actor seed="22796"/>
 		</Entity>
 		<Entity uid="401">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="24.73511" z="311.65622"/>
 			<Orientation y="-2.53035"/>
 			<Actor seed="57804"/>
 		</Entity>
 		<Entity uid="402">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="31.38215" z="328.86991"/>
 			<Orientation y="1.19326"/>
 			<Actor seed="36034"/>
 		</Entity>
 		<Entity uid="403">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="25.28559" z="315.42618"/>
 			<Orientation y="-0.0522"/>
@@ -2442,13 +2441,13 @@
 			<Actor seed="36844"/>
 		</Entity>
 		<Entity uid="414">
-			<Template>gaia/fauna_hawk</Template>
+			<Template>birds/buzzard</Template>
 			<Position x="29.64518" z="352.1749"/>
 			<Orientation y="1.68244"/>
 			<Actor seed="36022"/>
 		</Entity>
 		<Entity uid="415">
-			<Template>gaia/fauna_hawk</Template>
+			<Template>birds/buzzard</Template>
 			<Position x="203.48017" z="40.76128"/>
 			<Orientation y="0.55582"/>
 			<Actor seed="32338"/>
@@ -2719,21 +2718,21 @@
 			<Actor seed="13388"/>
 		</Entity>
 		<Entity uid="460">
-			<Template>gaia/flora_bush_grapes</Template>
+			<Template>gaia/fruit/grapes</Template>
 			<Player>0</Player>
 			<Position x="118.99785" z="195.86622"/>
 			<Orientation y="0.8519"/>
 			<Actor seed="48636"/>
 		</Entity>
 		<Entity uid="461">
-			<Template>gaia/flora_bush_grapes</Template>
+			<Template>gaia/fruit/grapes</Template>
 			<Player>0</Player>
 			<Position x="110.64937" z="202.08783"/>
 			<Orientation y="0.6238"/>
 			<Actor seed="57710"/>
 		</Entity>
 		<Entity uid="462">
-			<Template>gaia/flora_bush_grapes</Template>
+			<Template>gaia/fruit/grapes</Template>
 			<Player>0</Player>
 			<Position x="100.7661" z="210.60969"/>
 			<Orientation y="0.50492"/>
@@ -2817,322 +2816,322 @@
 			<Actor seed="55706"/>
 		</Entity>
 		<Entity uid="474">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="147.54203" z="317.92515"/>
 			<Orientation y="2.2372"/>
 			<Actor seed="40204"/>
 		</Entity>
 		<Entity uid="475">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="166.5456" z="266.08213"/>
 			<Orientation y="3.48264"/>
 			<Actor seed="36034"/>
 		</Entity>
 		<Entity uid="476">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="145.00751" z="320.97818"/>
 			<Orientation y="-0.24097"/>
 			<Actor seed="57804"/>
 		</Entity>
 		<Entity uid="477">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="137.45109" z="302.47693"/>
 			<Orientation y="0.55121"/>
 			<Actor seed="34884"/>
 		</Entity>
 		<Entity uid="478">
-			<Template>gaia/flora_tree_acacia</Template>
+			<Template>gaia/tree/acacia</Template>
 			<Player>0</Player>
 			<Position x="149.08439" z="310.9337"/>
 			<Orientation y="2.09487"/>
 			<Actor seed="58290"/>
 		</Entity>
 		<Entity uid="479">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="202.09208" z="430.35834"/>
 			<Orientation y="3.29392"/>
 			<Actor seed="40204"/>
 		</Entity>
 		<Entity uid="480">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="207.01557" z="421.47483"/>
 			<Orientation y="4.53936"/>
 			<Actor seed="36034"/>
 		</Entity>
 		<Entity uid="481">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="217.12745" z="437.1085"/>
 			<Orientation y="0.81576"/>
 			<Actor seed="57804"/>
 		</Entity>
 		<Entity uid="482">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="210.45218" z="426.63953"/>
 			<Orientation y="1.60793"/>
 			<Actor seed="34884"/>
 		</Entity>
 		<Entity uid="483">
-			<Template>gaia/flora_tree_acacia</Template>
+			<Template>gaia/tree/acacia</Template>
 			<Player>0</Player>
 			<Position x="216.22181" z="452.98432"/>
 			<Orientation y="3.15159"/>
 			<Actor seed="58290"/>
 		</Entity>
 		<Entity uid="484">
-			<Template>gaia/geology_metal_greek</Template>
+			<Template>gaia/ore/greece_small</Template>
 			<Player>0</Player>
 			<Position x="249.3867" z="460.71738"/>
 			<Orientation y="3.61628"/>
 			<Actor seed="12856"/>
 		</Entity>
 		<Entity uid="485">
-			<Template>gaia/geology_stone_greek</Template>
+			<Template>gaia/rock/greece_small</Template>
 			<Player>0</Player>
 			<Position x="199.67405" z="465.48212"/>
 			<Orientation y="7.55483"/>
 			<Actor seed="56302"/>
 		</Entity>
 		<Entity uid="486">
-			<Template>gaia/flora_tree_acacia</Template>
+			<Template>gaia/tree/acacia</Template>
 			<Player>0</Player>
 			<Position x="261.08725" z="464.23505"/>
 			<Orientation y="1.31536"/>
 			<Actor seed="31798"/>
 		</Entity>
 		<Entity uid="487">
-			<Template>gaia/flora_tree_acacia</Template>
+			<Template>gaia/tree/acacia</Template>
 			<Player>0</Player>
 			<Position x="194.24354" z="478.75547"/>
 			<Orientation y="2.46891"/>
 			<Actor seed="58290"/>
 		</Entity>
 		<Entity uid="488">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="253.56858" z="467.43467"/>
 			<Orientation y="3.61628"/>
 			<Actor seed="34884"/>
 		</Entity>
 		<Entity uid="489">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="225.33817" z="477.19254"/>
 			<Orientation y="0.66193"/>
 			<Actor seed="22796"/>
 		</Entity>
 		<Entity uid="490">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="251.42481" z="455.06296"/>
 			<Orientation y="3.61628"/>
 			<Actor seed="27132"/>
 		</Entity>
 		<Entity uid="491">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="230.50657" z="494.47773"/>
 			<Orientation y="2.57154"/>
 			<Actor seed="5564"/>
 		</Entity>
 		<Entity uid="492">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="222.9773" z="476.51865"/>
 			<Orientation y="-2.70185"/>
 			<Actor seed="57804"/>
 		</Entity>
 		<Entity uid="493">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="256.32352" z="473.77021"/>
 			<Orientation y="3.61628"/>
 			<Actor seed="49684"/>
 		</Entity>
 		<Entity uid="494">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="234.71048" z="486.44651"/>
 			<Orientation y="2.73893"/>
 			<Actor seed="36034"/>
 		</Entity>
 		<Entity uid="495">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="222.87635" z="480.32728"/>
 			<Orientation y="-0.22368"/>
 			<Actor seed="40204"/>
 		</Entity>
 		<Entity uid="496">
-			<Template>gaia/geology_metal_greek</Template>
+			<Template>gaia/ore/greece_small</Template>
 			<Player>0</Player>
 			<Position x="270.27518" z="413.5171"/>
 			<Orientation y="8.90597"/>
 			<Actor seed="12856"/>
 		</Entity>
 		<Entity uid="497">
-			<Template>gaia/geology_stone_greek</Template>
+			<Template>gaia/rock/greece_small</Template>
 			<Player>0</Player>
 			<Position x="245.55604" z="408.60718"/>
 			<Orientation y="7.70333"/>
 			<Actor seed="56302"/>
 		</Entity>
 		<Entity uid="498">
-			<Template>gaia/flora_tree_acacia</Template>
+			<Template>gaia/tree/acacia</Template>
 			<Player>0</Player>
 			<Position x="280.96964" z="414.78351"/>
 			<Orientation y="6.60505"/>
 			<Actor seed="31798"/>
 		</Entity>
 		<Entity uid="499">
-			<Template>gaia/flora_tree_acacia</Template>
+			<Template>gaia/tree/acacia</Template>
 			<Player>0</Player>
 			<Position x="247.57737" z="414.60822"/>
 			<Orientation y="6.67539"/>
 			<Actor seed="58290"/>
 		</Entity>
 		<Entity uid="500">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="271.37797" z="421.96451"/>
 			<Orientation y="8.90597"/>
 			<Actor seed="34884"/>
 		</Entity>
 		<Entity uid="501">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="264.86603" z="420.5789"/>
 			<Orientation y="7.70333"/>
 			<Actor seed="22796"/>
 		</Entity>
 		<Entity uid="502">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="283.38209" z="401.68104"/>
 			<Orientation y="8.90597"/>
 			<Actor seed="27132"/>
 		</Entity>
 		<Entity uid="503">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="249.78513" z="415.06461"/>
 			<Orientation y="7.86123"/>
 			<Actor seed="5564"/>
 		</Entity>
 		<Entity uid="504">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="238.30384" z="409.32517"/>
 			<Orientation y="4.33956"/>
 			<Actor seed="57804"/>
 		</Entity>
 		<Entity uid="505">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="265.883" z="413.92411"/>
 			<Orientation y="8.90597"/>
 			<Actor seed="49684"/>
 		</Entity>
 		<Entity uid="506">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="260.13047" z="421.74396"/>
 			<Orientation y="8.06316"/>
 			<Actor seed="36034"/>
 		</Entity>
 		<Entity uid="507">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="240.84946" z="412.15989"/>
 			<Orientation y="6.81772"/>
 			<Actor seed="40204"/>
 		</Entity>
 		<Entity uid="523">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="396.42774" z="121.9336"/>
 			<Orientation y="1.23321"/>
 			<Actor seed="40204"/>
 		</Entity>
 		<Entity uid="524">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="386.76835" z="105.13776"/>
 			<Orientation y="8.17133"/>
 			<Actor seed="36034"/>
 		</Entity>
 		<Entity uid="525">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="402.4647" z="95.7164"/>
 			<Orientation y="9.01415"/>
 			<Actor seed="49684"/>
 		</Entity>
 		<Entity uid="526">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="390.57511" z="117.08768"/>
 			<Orientation y="-1.24497"/>
 			<Actor seed="57804"/>
 		</Entity>
 		<Entity uid="527">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="415.19892" z="111.29226"/>
 			<Orientation y="2.27672"/>
 			<Actor seed="5564"/>
 		</Entity>
 		<Entity uid="528">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="425.44693" z="81.47611"/>
 			<Orientation y="9.01415"/>
 			<Actor seed="27132"/>
 		</Entity>
 		<Entity uid="529">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="409.07914" z="102.26236"/>
 			<Orientation y="7.8115"/>
 			<Actor seed="22796"/>
 		</Entity>
 		<Entity uid="530">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="404.14722" z="119.73984"/>
 			<Orientation y="9.01415"/>
 			<Actor seed="34884"/>
 		</Entity>
 		<Entity uid="531">
-			<Template>gaia/flora_tree_acacia</Template>
+			<Template>gaia/tree/acacia</Template>
 			<Player>0</Player>
 			<Position x="398.23987" z="124.36518"/>
 			<Orientation y="1.09087"/>
 			<Actor seed="58290"/>
 		</Entity>
 		<Entity uid="532">
-			<Template>gaia/flora_tree_acacia</Template>
+			<Template>gaia/tree/acacia</Template>
 			<Player>0</Player>
 			<Position x="424.46302" z="94.76247"/>
 			<Orientation y="6.71323"/>
 			<Actor seed="31798"/>
 		</Entity>
 		<Entity uid="533">
-			<Template>gaia/geology_stone_greek</Template>
+			<Template>gaia/rock/greece_small</Template>
 			<Player>0</Player>
 			<Position x="400.66034" z="131.5806"/>
 			<Orientation y="2.11881"/>
 			<Actor seed="56302"/>
 		</Entity>
 		<Entity uid="534">
-			<Template>gaia/geology_metal_greek</Template>
+			<Template>gaia/ore/greece_small</Template>
 			<Player>0</Player>
 			<Position x="401.27894" z="105.14312"/>
 			<Orientation y="9.01415"/>
@@ -3751,84 +3750,84 @@
 			<Actor seed="32440"/>
 		</Entity>
 		<Entity uid="640">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="432.72431" z="231.60456"/>
 			<Orientation y="10.41083"/>
 			<Actor seed="40204"/>
 		</Entity>
 		<Entity uid="641">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="334.17054" z="222.21216"/>
 			<Orientation y="11.16149"/>
 			<Actor seed="36034"/>
 		</Entity>
 		<Entity uid="642">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="323.70182" z="232.55414"/>
 			<Orientation y="12.00431"/>
 			<Actor seed="49684"/>
 		</Entity>
 		<Entity uid="643">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="431.5936" z="236.87827"/>
 			<Orientation y="7.93267"/>
 			<Actor seed="57804"/>
 		</Entity>
 		<Entity uid="644">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="423.4167" z="232.8899"/>
 			<Orientation y="11.45435"/>
 			<Actor seed="5564"/>
 		</Entity>
 		<Entity uid="645">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="296.62723" z="272.98899"/>
 			<Orientation y="12.64301"/>
 			<Actor seed="27132"/>
 		</Entity>
 		<Entity uid="646">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="343.33661" z="223.55051"/>
 			<Orientation y="10.80166"/>
 			<Actor seed="22796"/>
 		</Entity>
 		<Entity uid="647">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="336.8907" z="221.88462"/>
 			<Orientation y="12.00431"/>
 			<Actor seed="34884"/>
 		</Entity>
 		<Entity uid="648">
-			<Template>gaia/flora_tree_acacia</Template>
+			<Template>gaia/tree/acacia</Template>
 			<Player>0</Player>
 			<Position x="425.6023" z="232.33722"/>
 			<Orientation y="10.2685"/>
 			<Actor seed="58290"/>
 		</Entity>
 		<Entity uid="649">
-			<Template>gaia/flora_tree_acacia</Template>
+			<Template>gaia/tree/acacia</Template>
 			<Player>0</Player>
 			<Position x="291.27561" z="260.78858"/>
 			<Orientation y="10.3421"/>
 			<Actor seed="31798"/>
 		</Entity>
 		<Entity uid="650">
-			<Template>gaia/geology_stone_greek</Template>
+			<Template>gaia/rock/greece_small</Template>
 			<Player>0</Player>
 			<Position x="427.69123" z="241.10438"/>
 			<Orientation y="11.29644"/>
 			<Actor seed="56302"/>
 		</Entity>
 		<Entity uid="651">
-			<Template>gaia/geology_metal_greek</Template>
+			<Template>gaia/ore/greece_small</Template>
 			<Player>0</Player>
 			<Position x="300.75474" z="256.00477"/>
 			<Orientation y="12.64301"/>
@@ -3847,287 +3846,287 @@
 			<Actor seed="50370"/>
 		</Entity>
 		<Entity uid="654">
-			<Template>gaia/geology_stonemine_temperate_quarry</Template>
+			<Template>gaia/rock/temperate_large</Template>
 			<Player>0</Player>
 			<Position x="294.67212" z="336.98255"/>
 			<Orientation y="0.4343"/>
 			<Actor seed="12954"/>
 		</Entity>
 		<Entity uid="655">
-			<Template>gaia/geology_metal_mediterranean_slabs</Template>
+			<Template>gaia/ore/mediterranean_large</Template>
 			<Player>0</Player>
 			<Position x="314.27894" z="453.95481"/>
 			<Orientation y="-0.7225"/>
 			<Actor seed="13630"/>
 		</Entity>
 		<Entity uid="656">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="287.93635" z="351.8513"/>
 			<Orientation y="-0.45908"/>
 			<Actor seed="40204"/>
 		</Entity>
 		<Entity uid="657">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="298.01691" z="360.56183"/>
 			<Orientation y="2.50355"/>
 			<Actor seed="36034"/>
 		</Entity>
 		<Entity uid="658">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="288.9228" z="348.17124"/>
 			<Orientation y="-2.93725"/>
 			<Actor seed="57804"/>
 		</Entity>
 		<Entity uid="659">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="292.05585" z="367.39109"/>
 			<Orientation y="2.33614"/>
 			<Actor seed="5564"/>
 		</Entity>
 		<Entity uid="660">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="291.06138" z="349.37717"/>
 			<Orientation y="0.42653"/>
 			<Actor seed="22796"/>
 		</Entity>
 		<Entity uid="661">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="280.41294" z="333.12989"/>
 			<Orientation y="1.42553"/>
 			<Actor seed="40204"/>
 		</Entity>
 		<Entity uid="662">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="285.58631" z="320.85276"/>
 			<Orientation y="4.38814"/>
 			<Actor seed="36034"/>
 		</Entity>
 		<Entity uid="663">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="276.6081" z="333.32761"/>
 			<Orientation y="-1.05265"/>
 			<Actor seed="57804"/>
 		</Entity>
 		<Entity uid="664">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="293.92219" z="324.41459"/>
 			<Orientation y="4.22074"/>
 			<Actor seed="5564"/>
 		</Entity>
 		<Entity uid="665">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="277.09498" z="330.92118"/>
 			<Orientation y="2.31113"/>
 			<Actor seed="22796"/>
 		</Entity>
 		<Entity uid="666">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="372.25367" z="398.1248"/>
 			<Orientation y="-5.60981"/>
 			<Actor seed="40204"/>
 		</Entity>
 		<Entity uid="667">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="392.29957" z="413.29206"/>
 			<Orientation y="2.00197"/>
 			<Actor seed="36034"/>
 		</Entity>
 		<Entity uid="668">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="404.8029" z="412.13965"/>
 			<Orientation y="2.87932"/>
 			<Actor seed="49684"/>
 		</Entity>
 		<Entity uid="669">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="369.34018" z="395.66965"/>
 			<Orientation y="-8.08797"/>
 			<Actor seed="57804"/>
 		</Entity>
 		<Entity uid="670">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="388.07279" z="400.99027"/>
 			<Orientation y="-2.8146"/>
 			<Actor seed="5564"/>
 		</Entity>
 		<Entity uid="671">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="432.57084" z="394.54566"/>
 			<Orientation y="-0.02173"/>
 			<Actor seed="27132"/>
 		</Entity>
 		<Entity uid="672">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="371.33979" z="394.2451"/>
 			<Orientation y="-4.7242"/>
 			<Actor seed="22796"/>
 		</Entity>
 		<Entity uid="673">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="407.0206" z="405.59668"/>
 			<Orientation y="2.87932"/>
 			<Actor seed="34884"/>
 		</Entity>
 		<Entity uid="674">
-			<Template>gaia/flora_tree_acacia</Template>
+			<Template>gaia/tree/acacia</Template>
 			<Player>0</Player>
 			<Position x="335.75168" z="313.81644"/>
 			<Orientation y="0.5925"/>
 			<Actor seed="58290"/>
 		</Entity>
 		<Entity uid="675">
-			<Template>gaia/flora_tree_acacia</Template>
+			<Template>gaia/tree/acacia</Template>
 			<Player>0</Player>
 			<Position x="428.44324" z="381.87867"/>
 			<Orientation y="-2.32267"/>
 			<Actor seed="31798"/>
 		</Entity>
 		<Entity uid="676">
-			<Template>gaia/geology_stone_greek</Template>
+			<Template>gaia/rock/greece_small</Template>
 			<Player>0</Player>
 			<Position x="380.78019" z="423.12504"/>
 			<Orientation y="6.81786"/>
 			<Actor seed="56302"/>
 		</Entity>
 		<Entity uid="677">
-			<Template>gaia/geology_metal_greek</Template>
+			<Template>gaia/ore/greece_small</Template>
 			<Player>0</Player>
 			<Position x="397.78006" z="428.38532"/>
 			<Orientation y="2.87932"/>
 			<Actor seed="12856"/>
 		</Entity>
 		<Entity uid="678">
-			<Template>gaia/flora_tree_acacia</Template>
+			<Template>gaia/tree/acacia</Template>
 			<Player>0</Player>
 			<Position x="449.51133" z="355.59626"/>
 			<Orientation y="2.41463"/>
 			<Actor seed="58290"/>
 		</Entity>
 		<Entity uid="679">
-			<Template>gaia/flora_tree_acacia</Template>
+			<Template>gaia/tree/acacia</Template>
 			<Player>0</Player>
 			<Position x="351.71549" z="398.4499"/>
 			<Orientation y="1.83158"/>
 			<Actor seed="58290"/>
 		</Entity>
 		<Entity uid="682">
-			<Template>gaia/flora_tree_acacia</Template>
+			<Template>gaia/tree/acacia</Template>
 			<Player>0</Player>
 			<Position x="367.2649" z="407.4091"/>
 			<Orientation y="1.17597"/>
 			<Actor seed="31798"/>
 		</Entity>
 		<Entity uid="683">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="359.37464" z="409.53312"/>
 			<Orientation y="3.4769"/>
 			<Actor seed="34884"/>
 		</Entity>
 		<Entity uid="684">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="351.59919" z="405.00333"/>
 			<Orientation y="-5.1252"/>
 			<Actor seed="22796"/>
 		</Entity>
 		<Entity uid="685">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="358.97046" z="396.98353"/>
 			<Orientation y="3.4769"/>
 			<Actor seed="27132"/>
 		</Entity>
 		<Entity uid="686">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="337.95737" z="422.38132"/>
 			<Orientation y="-3.21561"/>
 			<Actor seed="5564"/>
 		</Entity>
 		<Entity uid="687">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="349.20212" z="405.53437"/>
 			<Orientation y="-8.48897"/>
 			<Actor seed="57804"/>
 		</Entity>
 		<Entity uid="688">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="361.22266" z="416.18995"/>
 			<Orientation y="3.4769"/>
 			<Actor seed="49684"/>
 		</Entity>
 		<Entity uid="689">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="337.04697" z="435.3571"/>
 			<Orientation y="1.60097"/>
 			<Actor seed="36034"/>
 		</Entity>
 		<Entity uid="690">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="350.92615" z="408.93198"/>
 			<Orientation y="-6.01082"/>
 			<Actor seed="40204"/>
 		</Entity>
 		<Entity uid="691">
-			<Template>gaia/flora_bush_berry</Template>
+			<Template>gaia/fruit/berry_01</Template>
 			<Player>0</Player>
 			<Position x="376.89368" z="395.28943"/>
 			<Orientation y="-0.41723"/>
 			<Actor seed="17278"/>
 		</Entity>
 		<Entity uid="692">
-			<Template>gaia/flora_bush_berry</Template>
+			<Template>gaia/fruit/berry_01</Template>
 			<Player>0</Player>
 			<Position x="342.36866" z="399.35477"/>
 			<Orientation y="2.04432"/>
 			<Actor seed="33974"/>
 		</Entity>
 		<Entity uid="693">
-			<Template>gaia/flora_bush_berry</Template>
+			<Template>gaia/fruit/berry_01</Template>
 			<Player>0</Player>
 			<Position x="359.56916" z="402.08893"/>
 			<Orientation y="2.74068"/>
 			<Actor seed="59934"/>
 		</Entity>
 		<Entity uid="694">
-			<Template>gaia/flora_bush_grapes</Template>
+			<Template>gaia/fruit/grapes</Template>
 			<Player>0</Player>
 			<Position x="407.50364" z="287.77311"/>
 			<Orientation y="0.43262"/>
 			<Actor seed="34650"/>
 		</Entity>
 		<Entity uid="695">
-			<Template>gaia/flora_bush_grapes</Template>
+			<Template>gaia/fruit/grapes</Template>
 			<Player>0</Player>
 			<Position x="416.35746" z="285.66526"/>
 			<Orientation y="-1.90056"/>
 			<Actor seed="6736"/>
 		</Entity>
 		<Entity uid="696">
-			<Template>gaia/flora_bush_grapes</Template>
+			<Template>gaia/fruit/grapes</Template>
 			<Player>0</Player>
 			<Position x="398.57996" z="294.46875"/>
 			<Orientation y="0.57686"/>
@@ -4274,299 +4273,299 @@
 			<Actor seed="2618"/>
 		</Entity>
 		<Entity uid="717">
-			<Template>gaia/fauna_hawk</Template>
+			<Template>birds/buzzard</Template>
 			<Position x="414.67493" z="120.83727"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="7782"/>
 		</Entity>
 		<Entity uid="718">
-			<Template>gaia/fauna_hawk</Template>
+			<Template>birds/buzzard</Template>
 			<Position x="316.71702" z="479.73322"/>
 			<Orientation y="-2.55748"/>
 			<Actor seed="28884"/>
 		</Entity>
 		<Entity uid="719">
-			<Template>gaia/flora_tree_acacia</Template>
+			<Template>gaia/tree/acacia</Template>
 			<Player>0</Player>
 			<Position x="455.98429" z="277.73111"/>
 			<Orientation y="6.29586"/>
 			<Actor seed="58290"/>
 		</Entity>
 		<Entity uid="722">
-			<Template>gaia/flora_tree_acacia</Template>
+			<Template>gaia/tree/acacia</Template>
 			<Player>0</Player>
 			<Position x="477.92011" z="262.57215"/>
 			<Orientation y="4.45961"/>
 			<Actor seed="31798"/>
 		</Entity>
 		<Entity uid="723">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="459.79947" z="294.5799"/>
 			<Orientation y="6.76055"/>
 			<Actor seed="34884"/>
 		</Entity>
 		<Entity uid="724">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="440.2418" z="302.7422"/>
 			<Orientation y="-0.84298"/>
 			<Actor seed="22796"/>
 		</Entity>
 		<Entity uid="725">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="444.44294" z="286.55057"/>
 			<Orientation y="6.76055"/>
 			<Actor seed="27132"/>
 		</Entity>
 		<Entity uid="726">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="470.25745" z="257.40943"/>
 			<Orientation y="1.06662"/>
 			<Actor seed="5564"/>
 		</Entity>
 		<Entity uid="727">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="426.32682" z="395.43223"/>
 			<Orientation y="-9.9848"/>
 			<Actor seed="57804"/>
 		</Entity>
 		<Entity uid="728">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="458.97959" z="271.29151"/>
 			<Orientation y="6.76055"/>
 			<Actor seed="49684"/>
 		</Entity>
 		<Entity uid="729">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="478.51011" z="250.15131"/>
 			<Orientation y="5.8832"/>
 			<Actor seed="36034"/>
 		</Entity>
 		<Entity uid="730">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="423.06785" z="397.40589"/>
 			<Orientation y="-7.50664"/>
 			<Actor seed="40204"/>
 		</Entity>
 		<Entity uid="731">
-			<Template>gaia/flora_tree_acacia</Template>
+			<Template>gaia/tree/acacia</Template>
 			<Player>0</Player>
 			<Position x="40.78118" z="173.1905"/>
 			<Orientation y="0.6667"/>
 			<Actor seed="58290"/>
 		</Entity>
 		<Entity uid="734">
-			<Template>gaia/flora_tree_acacia</Template>
+			<Template>gaia/tree/acacia</Template>
 			<Player>0</Player>
 			<Position x="39.71189" z="206.56846"/>
 			<Orientation y="-1.16956"/>
 			<Actor seed="31798"/>
 		</Entity>
 		<Entity uid="735">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="49.50786" z="165.22336"/>
 			<Orientation y="1.13138"/>
 			<Actor seed="34884"/>
 		</Entity>
 		<Entity uid="736">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="49.48975" z="149.80704"/>
 			<Orientation y="-6.47214"/>
 			<Actor seed="22796"/>
 		</Entity>
 		<Entity uid="737">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="53.46459" z="173.77924"/>
 			<Orientation y="1.13138"/>
 			<Actor seed="27132"/>
 		</Entity>
 		<Entity uid="738">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="34.43375" z="165.84537"/>
 			<Orientation y="-4.56255"/>
 			<Actor seed="5564"/>
 		</Entity>
 		<Entity uid="739">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="53.76966" z="146.04044"/>
 			<Orientation y="-9.83591"/>
 			<Actor seed="57804"/>
 		</Entity>
 		<Entity uid="740">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="48.7498" z="174.16025"/>
 			<Orientation y="1.13138"/>
 			<Actor seed="49684"/>
 		</Entity>
 		<Entity uid="741">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="48.87664" z="185.72541"/>
 			<Orientation y="0.25403"/>
 			<Actor seed="36034"/>
 		</Entity>
 		<Entity uid="742">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="55.67261" z="151.78834"/>
 			<Orientation y="-7.35776"/>
 			<Actor seed="40204"/>
 		</Entity>
 		<Entity uid="743">
-			<Template>gaia/flora_tree_acacia</Template>
+			<Template>gaia/tree/acacia</Template>
 			<Player>0</Player>
 			<Position x="383.03144" z="293.54661"/>
 			<Orientation y="1.82912"/>
 			<Actor seed="58290"/>
 		</Entity>
 		<Entity uid="746">
-			<Template>gaia/flora_tree_acacia</Template>
+			<Template>gaia/tree/acacia</Template>
 			<Player>0</Player>
 			<Position x="410.35361" z="275.06983"/>
 			<Orientation y="1.87653"/>
 			<Actor seed="31798"/>
 		</Entity>
 		<Entity uid="747">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="401.77756" z="277.30958"/>
 			<Orientation y="4.17746"/>
 			<Actor seed="34884"/>
 		</Entity>
 		<Entity uid="748">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="367.19043" z="324.52292"/>
 			<Orientation y="-3.42606"/>
 			<Actor seed="22796"/>
 		</Entity>
 		<Entity uid="749">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="399.60593" z="285.56849"/>
 			<Orientation y="4.17746"/>
 			<Actor seed="27132"/>
 		</Entity>
 		<Entity uid="750">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="373.2909" z="312.21741"/>
 			<Orientation y="-1.51647"/>
 			<Actor seed="5564"/>
 		</Entity>
 		<Entity uid="751">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="365.38471" z="329.2428"/>
 			<Orientation y="-6.78983"/>
 			<Actor seed="57804"/>
 		</Entity>
 		<Entity uid="752">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="408.33765" z="266.49375"/>
 			<Orientation y="4.17746"/>
 			<Actor seed="49684"/>
 		</Entity>
 		<Entity uid="753">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="399.79538" z="270.90845"/>
 			<Orientation y="3.30011"/>
 			<Actor seed="36034"/>
 		</Entity>
 		<Entity uid="754">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="369.27021" z="317.24195"/>
 			<Orientation y="-4.31168"/>
 			<Actor seed="40204"/>
 		</Entity>
 		<Entity uid="755">
-			<Template>gaia/flora_tree_acacia</Template>
+			<Template>gaia/tree/acacia</Template>
 			<Player>0</Player>
 			<Position x="137.93293" z="116.62931"/>
 			<Orientation y="2.41463"/>
 			<Actor seed="58290"/>
 		</Entity>
 		<Entity uid="758">
-			<Template>gaia/flora_tree_acacia</Template>
+			<Template>gaia/tree/acacia</Template>
 			<Player>0</Player>
 			<Position x="140.82706" z="127.12095"/>
 			<Orientation y="0.57839"/>
 			<Actor seed="31798"/>
 		</Entity>
 		<Entity uid="759">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="145.70746" z="129.57288"/>
 			<Orientation y="2.87932"/>
 			<Actor seed="34884"/>
 		</Entity>
 		<Entity uid="760">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="119.67447" z="116.36873"/>
 			<Orientation y="-5.53063"/>
 			<Actor seed="22796"/>
 		</Entity>
 		<Entity uid="761">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="152.43433" z="118.9708"/>
 			<Orientation y="2.87932"/>
 			<Actor seed="27132"/>
 		</Entity>
 		<Entity uid="762">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="124.95083" z="129.94977"/>
 			<Orientation y="-2.81461"/>
 			<Actor seed="5564"/>
 		</Entity>
 		<Entity uid="763">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="117.2623" z="115.91128"/>
 			<Orientation y="-8.8944"/>
 			<Actor seed="57804"/>
 		</Entity>
 		<Entity uid="764">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="143.48975" z="136.11585"/>
 			<Orientation y="2.87932"/>
 			<Actor seed="49684"/>
 		</Entity>
 		<Entity uid="765">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="130.98642" z="137.26825"/>
 			<Orientation y="2.00197"/>
 			<Actor seed="36034"/>
 		</Entity>
 		<Entity uid="766">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="117.5065" z="119.71344"/>
 			<Orientation y="-6.41625"/>
 			<Actor seed="40204"/>
 		</Entity>
 		<Entity uid="767">
-			<Template>gaia/flora_tree_olive</Template>
+			<Template>gaia/fruit/olive</Template>
 			<Player>0</Player>
 			<Position x="358.42725" z="331.4066"/>
 			<Orientation y="-1.86048"/>
@@ -4759,14 +4758,14 @@
 			<Actor seed="27396"/>
 		</Entity>
 		<Entity uid="800">
-			<Template>gaia/geology_metal_greek</Template>
+			<Template>gaia/ore/greece_small</Template>
 			<Player>0</Player>
 			<Position x="279.81812" z="387.18647"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="47788"/>
 		</Entity>
 		<Entity uid="801">
-			<Template>gaia/geology_stone_greek</Template>
+			<Template>gaia/rock/greece_small</Template>
 			<Player>0</Player>
 			<Position x="399.18592" z="410.90772"/>
 			<Orientation y="2.35621"/>
@@ -4920,7 +4919,7 @@
 			<Actor seed="51422"/>
 		</Entity>
 		<Entity uid="823">
-			<Template>gaia/geology_stone_greek</Template>
+			<Template>gaia/rock/greece_small</Template>
 			<Player>0</Player>
 			<Position x="373.94306" z="304.77988"/>
 			<Orientation y="2.39991"/>
@@ -5077,7 +5076,7 @@
 			<Actor seed="56008"/>
 		</Entity>
 		<Entity uid="850">
-			<Template>gaia/geology_metal_greek</Template>
+			<Template>gaia/ore/greece_small</Template>
 			<Player>0</Player>
 			<Position x="162.82862" z="116.23945"/>
 			<Orientation y="-1.30755"/>
@@ -5398,28 +5397,28 @@
 			<Actor seed="33922"/>
 		</Entity>
 		<Entity uid="930">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="463.67176" z="229.95112"/>
 			<Orientation y="6.03943"/>
 			<Actor seed="36034"/>
 		</Entity>
 		<Entity uid="931">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="461.16334" z="239.57187"/>
 			<Orientation y="6.91678"/>
 			<Actor seed="49684"/>
 		</Entity>
 		<Entity uid="932">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="450.23304" z="248.62027"/>
 			<Orientation y="1.22286"/>
 			<Actor seed="5564"/>
 		</Entity>
 		<Entity uid="933">
-			<Template>gaia/flora_tree_acacia</Template>
+			<Template>gaia/tree/acacia</Template>
 			<Player>0</Player>
 			<Position x="475.19571" z="220.11048"/>
 			<Orientation y="4.61585"/>
@@ -5690,224 +5689,224 @@
 			<Actor seed="43508"/>
 		</Entity>
 		<Entity uid="985">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="41.3546" z="264.90711"/>
 			<Orientation y="0.71964"/>
 			<Actor seed="36034"/>
 		</Entity>
 		<Entity uid="986">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="36.04897" z="254.63001"/>
 			<Orientation y="1.597"/>
 			<Actor seed="49684"/>
 		</Entity>
 		<Entity uid="987">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="19.52378" z="253.62757"/>
 			<Orientation y="-4.09694"/>
 			<Actor seed="5564"/>
 		</Entity>
 		<Entity uid="988">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="40.09081" z="252.1728"/>
 			<Orientation y="1.597"/>
 			<Actor seed="27132"/>
 		</Entity>
 		<Entity uid="989">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="32.71402" z="246.30411"/>
 			<Orientation y="1.597"/>
 			<Actor seed="34884"/>
 		</Entity>
 		<Entity uid="990">
-			<Template>gaia/flora_tree_acacia</Template>
+			<Template>gaia/tree/acacia</Template>
 			<Player>0</Player>
 			<Position x="28.49323" z="257.3411"/>
 			<Orientation y="1.13231"/>
 			<Actor seed="58290"/>
 		</Entity>
 		<Entity uid="991">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="40.38942" z="241.07773"/>
 			<Orientation y="6.02042"/>
 			<Actor seed="5564"/>
 		</Entity>
 		<Entity uid="992">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="41.17087" z="246.98371"/>
 			<Orientation y="6.02042"/>
 			<Actor seed="34884"/>
 		</Entity>
 		<Entity uid="993">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="329.06366" z="433.84083"/>
 			<Orientation y="1.1323"/>
 			<Actor seed="36034"/>
 		</Entity>
 		<Entity uid="994">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="320.08176" z="426.55423"/>
 			<Orientation y="2.00965"/>
 			<Actor seed="49684"/>
 		</Entity>
 		<Entity uid="995">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="304.54172" z="432.26337"/>
 			<Orientation y="-3.68429"/>
 			<Actor seed="5564"/>
 		</Entity>
 		<Entity uid="996">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="322.79886" z="422.68232"/>
 			<Orientation y="2.00965"/>
 			<Actor seed="27132"/>
 		</Entity>
 		<Entity uid="997">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="313.68769" z="420.26471"/>
 			<Orientation y="2.00965"/>
 			<Actor seed="34884"/>
 		</Entity>
 		<Entity uid="998">
-			<Template>gaia/flora_tree_acacia</Template>
+			<Template>gaia/tree/acacia</Template>
 			<Player>0</Player>
 			<Position x="314.24756" z="432.06797"/>
 			<Orientation y="1.54497"/>
 			<Actor seed="58290"/>
 		</Entity>
 		<Entity uid="999">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="318.62272" z="412.39884"/>
 			<Orientation y="6.43308"/>
 			<Actor seed="5564"/>
 		</Entity>
 		<Entity uid="1000">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="321.70716" z="417.49567"/>
 			<Orientation y="6.43308"/>
 			<Actor seed="34884"/>
 		</Entity>
 		<Entity uid="1001">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="90.07674" z="329.02927"/>
 			<Orientation y="-0.52753"/>
 			<Actor seed="36034"/>
 		</Entity>
 		<Entity uid="1002">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="122.27825" z="356.20795"/>
 			<Orientation y="0.34983"/>
 			<Actor seed="49684"/>
 		</Entity>
 		<Entity uid="1003">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="105.94724" z="340.25007"/>
 			<Orientation y="-5.34411"/>
 			<Actor seed="5564"/>
 		</Entity>
 		<Entity uid="1004">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="117.35315" z="353.63898"/>
 			<Orientation y="0.34983"/>
 			<Actor seed="27132"/>
 		</Entity>
 		<Entity uid="1005">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="122.0396" z="358.85123"/>
 			<Orientation y="0.34983"/>
 			<Actor seed="34884"/>
 		</Entity>
 		<Entity uid="1006">
-			<Template>gaia/flora_tree_acacia</Template>
+			<Template>gaia/tree/acacia</Template>
 			<Player>0</Player>
 			<Position x="63.80413" z="354.46613"/>
 			<Orientation y="-0.11486"/>
 			<Actor seed="58290"/>
 		</Entity>
 		<Entity uid="1007">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="129.4357" z="364.46604"/>
 			<Orientation y="4.77326"/>
 			<Actor seed="5564"/>
 		</Entity>
 		<Entity uid="1008">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="124.08472" z="367.08515"/>
 			<Orientation y="4.77326"/>
 			<Actor seed="34884"/>
 		</Entity>
 		<Entity uid="1009">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="249.91752" z="363.11097"/>
 			<Orientation y="-4.97185"/>
 			<Actor seed="36034"/>
 		</Entity>
 		<Entity uid="1010">
-			<Template>gaia/flora_tree_poplar_lombardy</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Player>0</Player>
 			<Position x="239.7815" z="357.5405"/>
 			<Orientation y="-4.0945"/>
 			<Actor seed="49684"/>
 		</Entity>
 		<Entity uid="1011">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="225.50666" z="365.926"/>
 			<Orientation y="-9.78843"/>
 			<Actor seed="5564"/>
 		</Entity>
 		<Entity uid="1012">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="241.76557" z="353.24656"/>
 			<Orientation y="-4.0945"/>
 			<Actor seed="27132"/>
 		</Entity>
 		<Entity uid="1013">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="232.36945" z="352.4903"/>
 			<Orientation y="-4.0945"/>
 			<Actor seed="34884"/>
 		</Entity>
 		<Entity uid="1014">
-			<Template>gaia/flora_tree_acacia</Template>
+			<Template>gaia/tree/acacia</Template>
 			<Player>0</Player>
 			<Position x="235.02253" z="364.00513"/>
 			<Orientation y="-4.55918"/>
 			<Actor seed="58290"/>
 		</Entity>
 		<Entity uid="1015">
-			<Template>gaia/flora_tree_cypress</Template>
+			<Template>gaia/tree/cypress</Template>
 			<Player>0</Player>
 			<Position x="235.82471" z="343.87128"/>
 			<Orientation y="0.32894"/>
 			<Actor seed="5564"/>
 		</Entity>
 		<Entity uid="1016">
-			<Template>gaia/flora_bush_temperate</Template>
+			<Template>gaia/tree/bush_temperate</Template>
 			<Player>0</Player>
 			<Position x="239.76758" z="348.33725"/>
 			<Orientation y="0.32894"/>

@@ -33,7 +33,7 @@ const aLilliesLarge = "actor|props/flora/pond_lillies_large.xml";
 const aLillies = "actor|props/flora/water_lillies.xml";
 const aSkeleton1 = "actor|props/special/eyecandy/skeleton.xml";
 const aSkeleton2 = "actor|props/special/eyecandy/skeleton_propped.xml";
-const aDeadTree = "gaia/flora_tree_dead";
+const aDeadTree = "gaia/tree/dead";
 
 Engine.SetProgress(10);
 

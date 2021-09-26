@@ -2,7 +2,7 @@ var disabledTemplates = (civ) => [
 	"structures/" + civ + "_wonder",
 	"structures/" + civ + "_wallset_stone",
 	"structures/rome_wallset_siege",
-	"other/wallset_palisade",
+	"structures/wallset_palisade",
 ];
 
 Trigger.prototype.InitSurvival = function()

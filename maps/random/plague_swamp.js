@@ -14,16 +14,16 @@ var tShoreBlend = "tropic_grass_plants";
 var tShore = "temp_plants_bog";
 var tWater = "tropic_swamp_a";
 
-var oTree1 = "gaia/flora_tree_dead";
-var oTree2 = "gaia/flora_tree_toona";
-var oBush = "gaia/flora_bush_badlands";
-var oCrocodile = "gaia/fauna_crocodile";
+var oTree1 = "gaia/tree/dead";
+var oTree2 = "gaia/tree/toona";
+var oBush = "gaia/tree/bush_badlands";
+var oCrocodile = "gaia/fauna_crocodile_nile_nile";
 var oDeer = "gaia/fauna_deer";
 var oRabbit = "gaia/fauna_rabbit";
 var oSwarm = "undeletable|trigger/fauna_insect_swarm";
-var oStoneLarge = "gaia/geology_stonemine_temperate_quarry";
-var oStoneSmall = "gaia/geology_stone_temperate";
-var oMetalLarge = "gaia/geology_metal_temperate_slabs";
+var oStoneLarge = "gaia/rock/temperate_large";
+var oStoneSmall = "gaia/rock/temperate_small";
+var oMetalLarge = "gaia/ore/temperate_large";
 
 var aGrass = "actor|props/flora/grass_soft_small_tall.xml";
 var aGrassShort = "actor|props/flora/grass_soft_large.xml";
