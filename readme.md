@@ -1,6 +1,10 @@
-# 0 A.D. Community Maps
+# 0 A.D. Community Maps 2
 
-This mod contains 44 maps (7 random maps, 18 skirmishes and 19 scenarios) collected from the [Wildfire Games (0 A.D.) Forum](https://wildfiregames.com/forum/). The maps can be easily accessed in game with the filter "Community Maps".
+(Forked from [https://github.com/cwrtl/community_maps](community maps))
+
+This mod contains various maps and scenarios collected from the
+[Wildfire Games (0 A.D.) Forum](https://wildfiregames.com/forum/). The
+maps can be easily accessed in game with the filter "Community Maps".
 
 ## Random Maps
 
@@ -65,5 +69,12 @@ This mod contains 44 maps (7 random maps, 18 skirmishes and 19 scenarios) collec
 
 Checked all forum threads updated from 2016 onwards.
 
-If you are one of the authors and want your map removed from this mod, or want something to be changed either in the map or in the way credit is given, please let me know -- I'm [coworotel](https://wildfiregames.com/forum/index.php?/profile/22499-coworotel/) in the forum. If you have a custom map and want it included here, let me know as well.
+If you are one of the authors and want your map removed from this mod,
+or want something to be changed either in the map or in the way credit
+is given, please let me know by opening an issue on this GitHub repo or
+by letting me on the 0ad forum
+[andy5995](https://wildfiregames.com/forum/profile/21632-andy5995/). If
+you have a custom map and want it included here, let me know as well,
+or you may submit it as a [pull
+request](https://guides.github.com/introduction/flow/).
 
