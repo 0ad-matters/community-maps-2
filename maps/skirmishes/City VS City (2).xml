@@ -27465,217 +27465,217 @@
 			<Actor seed="39600"/>
 		</Entity>
 		<Entity uid="7484">
-			<Template>units/athen_support_trader</Template>
+			<Template>units/athen/support_trader</Template>
 			<Player>1</Player>
 			<Position x="1481.31763" z="1477.25025"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="31594"/>
 		</Entity>
 		<Entity uid="7485">
-			<Template>units/athen_support_trader</Template>
+			<Template>units/athen/support_trader</Template>
 			<Player>1</Player>
 			<Position x="1498.8766" z="1474.51404"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="17306"/>
 		</Entity>
 		<Entity uid="7486">
-			<Template>units/athen_support_trader</Template>
+			<Template>units/athen/support_trader</Template>
 			<Player>1</Player>
 			<Position x="1523.18018" z="1471.38697"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="42672"/>
 		</Entity>
 		<Entity uid="7487">
-			<Template>units/kush_support_trader</Template>
+			<Template>units/kush/support_trader</Template>
 			<Player>1</Player>
 			<Position x="1424.59266" z="1476.24256"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="29910"/>
 		</Entity>
 		<Entity uid="7488">
-			<Template>units/kush_support_trader</Template>
+			<Template>units/kush/support_trader</Template>
 			<Player>1</Player>
 			<Position x="1435.10352" z="1475.14979"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="46780"/>
 		</Entity>
 		<Entity uid="7489">
-			<Template>units/kush_support_trader</Template>
+			<Template>units/kush/support_trader</Template>
 			<Player>1</Player>
 			<Position x="1448.04969" z="1477.63392"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="10140"/>
 		</Entity>
 		<Entity uid="7490">
-			<Template>units/kush_support_trader</Template>
+			<Template>units/kush/support_trader</Template>
 			<Player>1</Player>
 			<Position x="1425.06287" z="1521.60084"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="53152"/>
 		</Entity>
 		<Entity uid="7491">
-			<Template>units/mace_support_trader</Template>
+			<Template>units/mace/support_trader</Template>
 			<Player>1</Player>
 			<Position x="1448.985" z="1521.48755"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="51276"/>
 		</Entity>
 		<Entity uid="7492">
-			<Template>units/mace_support_trader</Template>
+			<Template>units/mace/support_trader</Template>
 			<Player>1</Player>
 			<Position x="1470.94349" z="1521.87"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="35174"/>
 		</Entity>
 		<Entity uid="7493">
-			<Template>units/mace_support_trader</Template>
+			<Template>units/mace/support_trader</Template>
 			<Player>1</Player>
 			<Position x="1495.2262" z="1518.65625"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="1380"/>
 		</Entity>
 		<Entity uid="7494">
-			<Template>units/pers_support_trader</Template>
+			<Template>units/pers/support_trader</Template>
 			<Player>1</Player>
 			<Position x="1526.27833" z="1513.22657"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="19426"/>
 		</Entity>
 		<Entity uid="7495">
-			<Template>units/pers_support_trader</Template>
+			<Template>units/pers/support_trader</Template>
 			<Player>1</Player>
 			<Position x="1550.2616" z="1513.86976"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="48092"/>
 		</Entity>
 		<Entity uid="7496">
-			<Template>units/pers_support_trader</Template>
+			<Template>units/pers/support_trader</Template>
 			<Player>1</Player>
 			<Position x="1532.77576" z="1547.47046"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="56538"/>
 		</Entity>
 		<Entity uid="7497">
-			<Template>units/pers_support_trader</Template>
+			<Template>units/pers/support_trader</Template>
 			<Player>1</Player>
 			<Position x="1474.00965" z="1561.07667"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="47094"/>
 		</Entity>
 		<Entity uid="7498">
-			<Template>units/ptol_support_trader</Template>
+			<Template>units/ptol/support_trader</Template>
 			<Player>1</Player>
 			<Position x="1459.04554" z="1561.85084"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="37580"/>
 		</Entity>
 		<Entity uid="7499">
-			<Template>units/ptol_support_trader</Template>
+			<Template>units/ptol/support_trader</Template>
 			<Player>1</Player>
 			<Position x="1434.04688" z="1561.80066"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="9404"/>
 		</Entity>
 		<Entity uid="7500">
-			<Template>units/ptol_support_trader</Template>
+			<Template>units/ptol/support_trader</Template>
 			<Player>1</Player>
 			<Position x="1427.14966" z="1550.19043"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="28342"/>
 		</Entity>
 		<Entity uid="7501">
-			<Template>units/rome_support_trader</Template>
+			<Template>units/rome/support_trader</Template>
 			<Player>1</Player>
 			<Position x="1441.72205" z="1557.94581"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="52294"/>
 		</Entity>
 		<Entity uid="7502">
-			<Template>units/rome_support_trader</Template>
+			<Template>units/rome/support_trader</Template>
 			<Player>1</Player>
 			<Position x="1489.28028" z="1564.19678"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="5888"/>
 		</Entity>
 		<Entity uid="7503">
-			<Template>units/rome_support_trader</Template>
+			<Template>units/rome/support_trader</Template>
 			<Player>1</Player>
 			<Position x="1524.80457" z="1569.47767"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="6244"/>
 		</Entity>
 		<Entity uid="7504">
-			<Template>units/gaul_support_trader</Template>
+			<Template>units/gaul/support_trader</Template>
 			<Player>1</Player>
 			<Position x="1493.93775" z="1606.84607"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="36192"/>
 		</Entity>
 		<Entity uid="7505">
-			<Template>units/gaul_support_trader</Template>
+			<Template>units/gaul/support_trader</Template>
 			<Player>1</Player>
 			<Position x="1504.3683" z="1610.38306"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="632"/>
 		</Entity>
 		<Entity uid="7506">
-			<Template>units/gaul_support_trader</Template>
+			<Template>units/gaul/support_trader</Template>
 			<Player>1</Player>
 			<Position x="1543.68775" z="1611.271"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="3618"/>
 		</Entity>
 		<Entity uid="7507">
-			<Template>units/brit_support_trader</Template>
+			<Template>units/brit/support_trader</Template>
 			<Player>1</Player>
 			<Position x="1463.62183" z="1609.04371"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="31282"/>
 		</Entity>
 		<Entity uid="7508">
-			<Template>units/brit_support_trader</Template>
+			<Template>units/brit/support_trader</Template>
 			<Player>1</Player>
 			<Position x="1475.69349" z="1610.28577"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="10302"/>
 		</Entity>
 		<Entity uid="7509">
-			<Template>units/brit_support_trader</Template>
+			<Template>units/brit/support_trader</Template>
 			<Player>1</Player>
 			<Position x="1458.58399" z="1598.90772"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="27190"/>
 		</Entity>
 		<Entity uid="7510">
-			<Template>units/spart_support_trader</Template>
+			<Template>units/spart/support_trader</Template>
 			<Player>1</Player>
 			<Position x="1423.0271" z="1607.85572"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="29890"/>
 		</Entity>
 		<Entity uid="7511">
-			<Template>units/spart_support_trader</Template>
+			<Template>units/spart/support_trader</Template>
 			<Player>1</Player>
 			<Position x="1436.26441" z="1609.4126"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="19828"/>
 		</Entity>
 		<Entity uid="7512">
-			<Template>units/kush_support_trader</Template>
+			<Template>units/kush/support_trader</Template>
 			<Player>1</Player>
 			<Position x="1420.56312" z="1596.68763"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="18486"/>
 		</Entity>
 		<Entity uid="7513">
-			<Template>units/kush_support_trader</Template>
+			<Template>units/kush/support_trader</Template>
 			<Player>1</Player>
 			<Position x="1421.71985" z="1587.45325"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="9874"/>
 		</Entity>
 		<Entity uid="7514">
-			<Template>units/kush_support_trader</Template>
+			<Template>units/kush/support_trader</Template>
 			<Player>1</Player>
 			<Position x="1423.73328" z="1539.54053"/>
 			<Orientation y="2.35621"/>
@@ -27997,7 +27997,7 @@
 			<Actor seed="24992"/>
 		</Entity>
 		<Entity uid="7563">
-			<Template>skirmish/structures/default_blacksmith</Template>
+			<Template>skirmish/structures/default_forge</Template>
 			<Player>1</Player>
 			<Position x="1539.88135" z="1385.70948"/>
 			<Orientation y="4.84098"/>
@@ -38415,7 +38415,7 @@
 			<Actor seed="51610"/>
 		</Entity>
 		<Entity uid="9480">
-			<Template>skirmish/structures/default_blacksmith</Template>
+			<Template>skirmish/structures/default_forge</Template>
 			<Player>2</Player>
 			<Position x="1137.20374" z="487.5171"/>
 			<Orientation y="4.84098"/>
@@ -38695,217 +38695,217 @@
 			<Actor seed="42546"/>
 		</Entity>
 		<Entity uid="9523">
-			<Template>units/kush_support_trader</Template>
+			<Template>units/kush/support_trader</Template>
 			<Player>2</Player>
 			<Position x="1021.05567" z="641.34815"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="50676"/>
 		</Entity>
 		<Entity uid="9524">
-			<Template>units/kush_support_trader</Template>
+			<Template>units/kush/support_trader</Template>
 			<Player>2</Player>
 			<Position x="1019.04224" z="689.26087"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="9874"/>
 		</Entity>
 		<Entity uid="9525">
-			<Template>units/kush_support_trader</Template>
+			<Template>units/kush/support_trader</Template>
 			<Player>2</Player>
 			<Position x="1017.8855" z="698.49524"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="18486"/>
 		</Entity>
 		<Entity uid="9526">
-			<Template>units/spart_support_trader</Template>
+			<Template>units/spart/support_trader</Template>
 			<Player>2</Player>
 			<Position x="1033.5868" z="711.22022"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="19828"/>
 		</Entity>
 		<Entity uid="9527">
-			<Template>units/spart_support_trader</Template>
+			<Template>units/spart/support_trader</Template>
 			<Player>2</Player>
 			<Position x="1020.3495" z="709.66334"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="29890"/>
 		</Entity>
 		<Entity uid="9528">
-			<Template>units/brit_support_trader</Template>
+			<Template>units/brit/support_trader</Template>
 			<Player>2</Player>
 			<Position x="1055.90638" z="700.71534"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="27190"/>
 		</Entity>
 		<Entity uid="9529">
-			<Template>units/brit_support_trader</Template>
+			<Template>units/brit/support_trader</Template>
 			<Player>2</Player>
 			<Position x="1073.01587" z="712.09339"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="10302"/>
 		</Entity>
 		<Entity uid="9530">
-			<Template>units/brit_support_trader</Template>
+			<Template>units/brit/support_trader</Template>
 			<Player>2</Player>
 			<Position x="1060.94422" z="710.85132"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="31282"/>
 		</Entity>
 		<Entity uid="9531">
-			<Template>units/gaul_support_trader</Template>
+			<Template>units/gaul/support_trader</Template>
 			<Player>2</Player>
 			<Position x="1141.01014" z="713.07862"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="3618"/>
 		</Entity>
 		<Entity uid="9532">
-			<Template>units/gaul_support_trader</Template>
+			<Template>units/gaul/support_trader</Template>
 			<Player>2</Player>
 			<Position x="1101.69068" z="712.19068"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="632"/>
 		</Entity>
 		<Entity uid="9533">
-			<Template>units/gaul_support_trader</Template>
+			<Template>units/gaul/support_trader</Template>
 			<Player>2</Player>
 			<Position x="1091.26014" z="708.6537"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="36192"/>
 		</Entity>
 		<Entity uid="9534">
-			<Template>units/rome_support_trader</Template>
+			<Template>units/rome/support_trader</Template>
 			<Player>2</Player>
 			<Position x="1122.12696" z="671.28528"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="6244"/>
 		</Entity>
 		<Entity uid="9535">
-			<Template>units/rome_support_trader</Template>
+			<Template>units/rome/support_trader</Template>
 			<Player>2</Player>
 			<Position x="1086.60267" z="666.0044"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="5888"/>
 		</Entity>
 		<Entity uid="9536">
-			<Template>units/rome_support_trader</Template>
+			<Template>units/rome/support_trader</Template>
 			<Player>2</Player>
 			<Position x="1039.04444" z="659.75342"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="52294"/>
 		</Entity>
 		<Entity uid="9537">
-			<Template>units/ptol_support_trader</Template>
+			<Template>units/ptol/support_trader</Template>
 			<Player>2</Player>
 			<Position x="1024.47205" z="651.99805"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="28342"/>
 		</Entity>
 		<Entity uid="9538">
-			<Template>units/ptol_support_trader</Template>
+			<Template>units/ptol/support_trader</Template>
 			<Player>2</Player>
 			<Position x="1031.36927" z="663.60828"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="9404"/>
 		</Entity>
 		<Entity uid="9539">
-			<Template>units/ptol_support_trader</Template>
+			<Template>units/ptol/support_trader</Template>
 			<Player>2</Player>
 			<Position x="1056.36792" z="663.65845"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="37580"/>
 		</Entity>
 		<Entity uid="9540">
-			<Template>units/pers_support_trader</Template>
+			<Template>units/pers/support_trader</Template>
 			<Player>2</Player>
 			<Position x="1071.33204" z="662.88428"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="47094"/>
 		</Entity>
 		<Entity uid="9541">
-			<Template>units/pers_support_trader</Template>
+			<Template>units/pers/support_trader</Template>
 			<Player>2</Player>
 			<Position x="1130.09815" z="649.27808"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="56538"/>
 		</Entity>
 		<Entity uid="9542">
-			<Template>units/pers_support_trader</Template>
+			<Template>units/pers/support_trader</Template>
 			<Player>2</Player>
 			<Position x="1147.58399" z="615.67737"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="48092"/>
 		</Entity>
 		<Entity uid="9543">
-			<Template>units/pers_support_trader</Template>
+			<Template>units/pers/support_trader</Template>
 			<Player>2</Player>
 			<Position x="1123.60071" z="615.03418"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="19426"/>
 		</Entity>
 		<Entity uid="9544">
-			<Template>units/mace_support_trader</Template>
+			<Template>units/mace/support_trader</Template>
 			<Player>2</Player>
 			<Position x="1092.54859" z="620.46387"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="1380"/>
 		</Entity>
 		<Entity uid="9545">
-			<Template>units/mace_support_trader</Template>
+			<Template>units/mace/support_trader</Template>
 			<Player>2</Player>
 			<Position x="1068.26587" z="623.67762"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="35174"/>
 		</Entity>
 		<Entity uid="9546">
-			<Template>units/mace_support_trader</Template>
+			<Template>units/mace/support_trader</Template>
 			<Player>2</Player>
 			<Position x="1046.30738" z="623.29517"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="51276"/>
 		</Entity>
 		<Entity uid="9547">
-			<Template>units/kush_support_trader</Template>
+			<Template>units/kush/support_trader</Template>
 			<Player>2</Player>
 			<Position x="1022.38526" z="623.40845"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="53152"/>
 		</Entity>
 		<Entity uid="9548">
-			<Template>units/kush_support_trader</Template>
+			<Template>units/kush/support_trader</Template>
 			<Player>2</Player>
 			<Position x="1045.37208" z="579.44153"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="10140"/>
 		</Entity>
 		<Entity uid="9549">
-			<Template>units/kush_support_trader</Template>
+			<Template>units/kush/support_trader</Template>
 			<Player>2</Player>
 			<Position x="1032.42591" z="576.9574"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="46780"/>
 		</Entity>
 		<Entity uid="9550">
-			<Template>units/kush_support_trader</Template>
+			<Template>units/kush/support_trader</Template>
 			<Player>2</Player>
 			<Position x="1021.91504" z="578.05018"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="29910"/>
 		</Entity>
 		<Entity uid="9551">
-			<Template>units/athen_support_trader</Template>
+			<Template>units/athen/support_trader</Template>
 			<Player>2</Player>
 			<Position x="1120.50257" z="573.19459"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="42672"/>
 		</Entity>
 		<Entity uid="9552">
-			<Template>units/athen_support_trader</Template>
+			<Template>units/athen/support_trader</Template>
 			<Player>2</Player>
 			<Position x="1096.19898" z="576.32166"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="17306"/>
 		</Entity>
 		<Entity uid="9553">
-			<Template>units/athen_support_trader</Template>
+			<Template>units/athen/support_trader</Template>
 			<Player>2</Player>
 			<Position x="1078.64002" z="579.05787"/>
 			<Orientation y="2.35622"/>
