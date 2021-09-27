@@ -1,6 +1,6 @@
 # 0 A.D. Community Maps 2
 
-(Forked from [https://github.com/cwrtl/community_maps](community maps))
+(Forked from [community maps](https://github.com/cwrtl/community_maps))
 
 This mod contains various maps and scenarios collected from the
 [Wildfire Games (0 A.D.) Forum](https://wildfiregames.com/forum/). The
