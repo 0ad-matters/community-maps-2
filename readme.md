@@ -9,7 +9,7 @@ maps can be easily accessed in game with the filter "Community Maps".
 ## Random Maps
 
 | Map Name | Author | Link | Publication Date |
-|----------|--------|--------|------|------------------|
+|----------|--------|------|------------------|
 | Volcanic Island | [nani](https://wildfiregames.com/forum/index.php?/profile/27866-nani/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/25695-random-map-volcanic-island/) | 18-04-2019 |
 | Dune | [nani](https://wildfiregames.com/forum/index.php?/profile/27866-nani/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/24638-random-map-dune-desert/) | 25-08-2018 |
 | Fert | [nani](https://wildfiregames.com/forum/index.php?/profile/27866-nani/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/24621-random-map-fert-king-of-the-hill-variant/) | 25-08-2018 |
@@ -21,7 +21,7 @@ maps can be easily accessed in game with the filter "Community Maps".
 ## Skirmishes
 
 | Map Name | Author | Link | Publication Date |
-|----------|--------|--------|------|------------------|
+|----------|--------|------|------------------|
 |Caribbean Island (6)|[Marcus Brutus Bombastus](https://wildfiregames.com/forum/index.php?/profile/30405-marcus-brutus-bombastus/)|[Forum](https://wildfiregames.com/forum/index.php?/topic/27363-first-try-caribbean-island/)|17-12-2019|
 |Lonely Mountain (4)|[MarcusAureliu#s](https://wildfiregames.com/forum/index.php?/profile/28269-marcusaurelius/)|[Forum](https://wildfiregames.com/forum/index.php?/topic/26299-the-lonely-mountain-my-first-try-at-map-design/)|19-06-2019|
 | Northern Islands (4) | [Scarecrow](https://wildfiregames.com/forum/index.php?/profile/29189-scarecrow/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/25698-atlas-map-northern-islands-4/) | 18-04-2019 |
@@ -44,7 +44,7 @@ maps can be easily accessed in game with the filter "Community Maps".
 ## Scenarios
 
 | Map Name | Author | Link | Publication Date |
-|----------|--------|--------|------|------------------|
+|----------|--------|------|------------------|
 |South East Asia (6)|[crazy_Baboon](https://wildfiregames.com/forum/index.php?/profile/29330-crazy_baboon/)|[Forum](https://wildfiregames.com/forum/index.php?/topic/26199-how-to-contribute-a-new-map/)|09-06-2019|
 | Asian Campaign III a.C. | [imperium](https://wildfiregames.com/forum/index.php?/profile/21662-imperium/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/25958-new-map-20-asia/) | 12-05-2019 |
 | Mappa Europea III Secolo a.C. | [imperium](https://wildfiregames.com/forum/index.php?/profile/21662-imperium/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/25413-new-map-europe/) | 26-02-2019 |
