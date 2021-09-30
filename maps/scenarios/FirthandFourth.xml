@@ -13721,35 +13721,35 @@
 			<Actor seed="21336"/>
 		</Entity>
 		<Entity uid="1986">
-			<Template>gaia/special_treasure_metal</Template>
+			<Template>gaia/treasure/metal</Template>
 			<Player>0</Player>
 			<Position x="1577.48584" z="1027.125"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="24942"/>
 		</Entity>
 		<Entity uid="1987">
-			<Template>gaia/special_treasure_metal</Template>
+			<Template>gaia/treasure/metal</Template>
 			<Player>0</Player>
 			<Position x="1579.3805" z="1027.56275"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="21928"/>
 		</Entity>
 		<Entity uid="1988">
-			<Template>gaia/special_treasure_metal</Template>
+			<Template>gaia/treasure/metal</Template>
 			<Player>0</Player>
 			<Position x="1581.43982" z="1027.86646"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="17790"/>
 		</Entity>
 		<Entity uid="1989">
-			<Template>gaia/special_treasure_metal</Template>
+			<Template>gaia/treasure/metal</Template>
 			<Player>0</Player>
 			<Position x="1575.46595" z="1026.7959"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="3014"/>
 		</Entity>
 		<Entity uid="1990">
-			<Template>gaia/special_treasure_metal</Template>
+			<Template>gaia/treasure/metal</Template>
 			<Player>0</Player>
 			<Position x="1577.11329" z="1024.23426"/>
 			<Orientation y="2.35621"/>
@@ -37353,28 +37353,28 @@
 			<Actor seed="6742"/>
 		</Entity>
 		<Entity uid="5389">
-			<Template>structures/gaul_outpost</Template>
+			<Template>structures/gaul/outpost</Template>
 			<Player>0</Player>
 			<Position x="1187.62024" z="1727.83204"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="4128"/>
 		</Entity>
 		<Entity uid="5390">
-			<Template>structures/gaul_outpost</Template>
+			<Template>structures/gaul/outpost</Template>
 			<Player>0</Player>
 			<Position x="208.11533" z="1604.97584"/>
 			<Orientation y="0.39008"/>
 			<Actor seed="55328"/>
 		</Entity>
 		<Entity uid="5391">
-			<Template>structures/gaul_outpost</Template>
+			<Template>structures/gaul/outpost</Template>
 			<Player>0</Player>
 			<Position x="384.81327" z="1627.67688"/>
 			<Orientation y="0.42917"/>
 			<Actor seed="41136"/>
 		</Entity>
 		<Entity uid="5392">
-			<Template>structures/gaul_outpost</Template>
+			<Template>structures/gaul/outpost</Template>
 			<Player>4</Player>
 			<Position x="29.87156" z="957.39307"/>
 			<Orientation y="1.90233"/>
@@ -43727,7 +43727,7 @@
 			<Actor seed="16538"/>
 		</Entity>
 		<Entity uid="6341">
-			<Template>gaia/special_treasure_metal_persian_bigl</Template>
+			<Template>gaia/treasure/metal_persian_bigl</Template>
 			<Player>0</Player>
 			<Position x="1583.64466" z="1014.44562"/>
 			<Orientation y="1.52604"/>
@@ -87481,7 +87481,7 @@
 			<Actor seed="24230"/>
 		</Entity>
 		<Entity uid="13221">
-			<Template>gaia/special_treasure_metal</Template>
+			<Template>gaia/treasure/metal</Template>
 			<Player>0</Player>
 			<Position x="364.91617" z="833.1905"/>
 			<Orientation y="2.35621"/>
@@ -94464,7 +94464,7 @@
 			<Actor seed="42302"/>
 		</Entity>
 		<Entity uid="14297">
-			<Template>gaia/special_treasure_metal_persian_bigl</Template>
+			<Template>gaia/treasure/metal_persian_bigl</Template>
 			<Player>0</Player>
 			<Position x="23.57447" z="983.84375"/>
 			<Orientation y="0.84137"/>
@@ -94751,14 +94751,14 @@
 			<Actor seed="29652"/>
 		</Entity>
 		<Entity uid="14341">
-			<Template>units/iber_infantry_swordsman_a</Template>
+			<Template>units/iber/infantry_swordsman_a</Template>
 			<Player>8</Player>
 			<Position x="395.17991" z="423.74506"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="44660"/>
 		</Entity>
 		<Entity uid="14342">
-			<Template>units/iber_infantry_swordsman_a</Template>
+			<Template>units/iber/infantry_swordsman_a</Template>
 			<Player>8</Player>
 			<Position x="399.35431" z="429.34333"/>
 			<Orientation y="2.35621"/>
@@ -94814,14 +94814,14 @@
 			<Actor seed="48390"/>
 		</Entity>
 		<Entity uid="14350">
-			<Template>units/rome_infantry_swordsman_a</Template>
+			<Template>units/rome/infantry_swordsman_a</Template>
 			<Player>7</Player>
 			<Position x="795.2757" z="250.9875"/>
 			<Orientation y="-1.32583"/>
 			<Actor seed="64870"/>
 		</Entity>
 		<Entity uid="14351">
-			<Template>units/rome_infantry_swordsman_a</Template>
+			<Template>units/rome/infantry_swordsman_a</Template>
 			<Player>7</Player>
 			<Position x="792.15516" z="246.90647"/>
 			<Orientation y="-0.94222"/>
@@ -94884,14 +94884,14 @@
 			<Actor seed="18534"/>
 		</Entity>
 		<Entity uid="14360">
-			<Template>units/rome_infantry_swordsman_a</Template>
+			<Template>units/rome/infantry_swordsman_a</Template>
 			<Player>5</Player>
 			<Position x="1442.16968" z="670.27009"/>
 			<Orientation y="-2.60941"/>
 			<Actor seed="30278"/>
 		</Entity>
 		<Entity uid="14361">
-			<Template>units/rome_infantry_swordsman_a</Template>
+			<Template>units/rome/infantry_swordsman_a</Template>
 			<Player>5</Player>
 			<Position x="1437.80713" z="672.9834"/>
 			<Orientation y="-2.99303"/>
@@ -94947,14 +94947,14 @@
 			<Actor seed="18534"/>
 		</Entity>
 		<Entity uid="14369">
-			<Template>units/rome_infantry_swordsman_a</Template>
+			<Template>units/rome/infantry_swordsman_a</Template>
 			<Player>6</Player>
 			<Position x="1386.70655" z="201.56778"/>
 			<Orientation y="1.18514"/>
 			<Actor seed="30278"/>
 		</Entity>
 		<Entity uid="14370">
-			<Template>units/rome_infantry_swordsman_a</Template>
+			<Template>units/rome/infantry_swordsman_a</Template>
 			<Player>6</Player>
 			<Position x="1388.5232" z="196.76227"/>
 			<Orientation y="0.80152"/>

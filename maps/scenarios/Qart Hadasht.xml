@@ -10327,14 +10327,14 @@
 			<Actor seed="22102"/>
 		</Entity>
 		<Entity uid="1783">
-			<Template>gaia/special_treasure_metal_persian_bigl</Template>
+			<Template>gaia/treasure/metal_persian_bigl</Template>
 			<Player>2</Player>
 			<Position x="691.39631" z="552.42493"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="37084"/>
 		</Entity>
 		<Entity uid="1784">
-			<Template>gaia/special_treasure_metal_persian_small</Template>
+			<Template>gaia/treasure/metal_persian_small</Template>
 			<Player>2</Player>
 			<Position x="664.60071" z="544.43592"/>
 			<Orientation y="2.35621"/>
@@ -17019,7 +17019,7 @@
 			<Actor seed="63168"/>
 		</Entity>
 		<Entity uid="2857">
-			<Template>structures/rome_outpost</Template>
+			<Template>structures/rome/outpost</Template>
 			<Player>1</Player>
 			<Position x="1359.95057" z="845.50501"/>
 			<Orientation y="2.35621"/>
@@ -17208,125 +17208,125 @@
 			<Actor seed="33432"/>
 		</Entity>
 		<Entity uid="2894">
-			<Template>units/rome_champion_infantry_barracks</Template>
+			<Template>units/rome/champion_infantry_barracks</Template>
 			<Player>1</Player>
 			<Position x="1413.89185" z="824.03864"/>
 			<Orientation y="-2.2163"/>
 			<Actor seed="4710"/>
 		</Entity>
 		<Entity uid="2895">
-			<Template>units/rome_champion_infantry_barracks</Template>
+			<Template>units/rome/champion_infantry_barracks</Template>
 			<Player>1</Player>
 			<Position x="1411.12488" z="826.05884"/>
 			<Orientation y="-1.97545"/>
 			<Actor seed="39036"/>
 		</Entity>
 		<Entity uid="2896">
-			<Template>units/rome_champion_infantry_barracks</Template>
+			<Template>units/rome/champion_infantry_barracks</Template>
 			<Player>1</Player>
 			<Position x="1407.74305" z="828.24433"/>
 			<Orientation y="-1.93808"/>
 			<Actor seed="6166"/>
 		</Entity>
 		<Entity uid="2897">
-			<Template>units/rome_champion_infantry_barracks</Template>
+			<Template>units/rome/champion_infantry_barracks</Template>
 			<Player>1</Player>
 			<Position x="1404.24695" z="830.66065"/>
 			<Orientation y="-1.95324"/>
 			<Actor seed="60938"/>
 		</Entity>
 		<Entity uid="2898">
-			<Template>units/rome_champion_infantry_barracks</Template>
+			<Template>units/rome/champion_infantry_barracks</Template>
 			<Player>1</Player>
 			<Position x="1416.14258" z="820.45246"/>
 			<Orientation y="-2.16106"/>
 			<Actor seed="20166"/>
 		</Entity>
 		<Entity uid="2899">
-			<Template>units/rome_champion_infantry_barracks</Template>
+			<Template>units/rome/champion_infantry_barracks</Template>
 			<Player>1</Player>
 			<Position x="1409.24048" z="819.0146"/>
 			<Orientation y="-1.93093"/>
 			<Actor seed="25134"/>
 		</Entity>
 		<Entity uid="2900">
-			<Template>units/rome_champion_infantry_barracks</Template>
+			<Template>units/rome/champion_infantry_barracks</Template>
 			<Player>1</Player>
 			<Position x="1406.70887" z="820.9618"/>
 			<Orientation y="-2.04578"/>
 			<Actor seed="28428"/>
 		</Entity>
 		<Entity uid="2901">
-			<Template>units/rome_champion_infantry_barracks</Template>
+			<Template>units/rome/champion_infantry_barracks</Template>
 			<Player>1</Player>
 			<Position x="1403.95911" z="824.02918"/>
 			<Orientation y="-2.16532"/>
 			<Actor seed="15244"/>
 		</Entity>
 		<Entity uid="2902">
-			<Template>units/rome_champion_infantry_barracks</Template>
+			<Template>units/rome/champion_infantry_barracks</Template>
 			<Player>1</Player>
 			<Position x="1400.86548" z="826.42786"/>
 			<Orientation y="-2.11747"/>
 			<Actor seed="9112"/>
 		</Entity>
 		<Entity uid="2904">
-			<Template>units/rome_champion_infantry_barracks</Template>
+			<Template>units/rome/champion_infantry_barracks</Template>
 			<Player>1</Player>
 			<Position x="1412.11866" z="816.27894"/>
 			<Orientation y="-1.92734"/>
 			<Actor seed="36400"/>
 		</Entity>
 		<Entity uid="2905">
-			<Template>units/rome_champion_infantry_barracks</Template>
+			<Template>units/rome/champion_infantry_barracks</Template>
 			<Player>1</Player>
 			<Position x="1419.60218" z="807.64136"/>
 			<Orientation y="-2.11748"/>
 		</Entity>
 		<Entity uid="2906">
-			<Template>units/rome_champion_infantry_barracks</Template>
+			<Template>units/rome/champion_infantry_barracks</Template>
 			<Player>1</Player>
 			<Position x="1423.60499" z="804.29828"/>
 			<Orientation y="-2.16532"/>
 		</Entity>
 		<Entity uid="2907">
-			<Template>units/rome_champion_infantry_barracks</Template>
+			<Template>units/rome/champion_infantry_barracks</Template>
 			<Player>1</Player>
 			<Position x="1426.35474" z="801.2309"/>
 			<Orientation y="-2.04578"/>
 		</Entity>
 		<Entity uid="2908">
-			<Template>units/rome_champion_infantry_barracks</Template>
+			<Template>units/rome/champion_infantry_barracks</Template>
 			<Player>1</Player>
 			<Position x="1428.88636" z="799.2837"/>
 			<Orientation y="-1.93093"/>
 		</Entity>
 		<Entity uid="2909">
-			<Template>units/rome_champion_infantry_barracks</Template>
+			<Template>units/rome/champion_infantry_barracks</Template>
 			<Player>1</Player>
 			<Position x="1436.39588" z="799.68287"/>
 			<Orientation y="-2.16106"/>
 		</Entity>
 		<Entity uid="2910">
-			<Template>units/rome_champion_infantry_barracks</Template>
+			<Template>units/rome/champion_infantry_barracks</Template>
 			<Player>1</Player>
 			<Position x="1423.89283" z="810.92975"/>
 			<Orientation y="-1.95325"/>
 		</Entity>
 		<Entity uid="2911">
-			<Template>units/rome_champion_infantry_barracks</Template>
+			<Template>units/rome/champion_infantry_barracks</Template>
 			<Player>1</Player>
 			<Position x="1427.38892" z="808.51343"/>
 			<Orientation y="-1.93808"/>
 		</Entity>
 		<Entity uid="2912">
-			<Template>units/rome_champion_infantry_barracks</Template>
+			<Template>units/rome/champion_infantry_barracks</Template>
 			<Player>1</Player>
 			<Position x="1430.77076" z="806.32795"/>
 			<Orientation y="-1.97545"/>
 		</Entity>
 		<Entity uid="2913">
-			<Template>units/rome_champion_infantry_barracks</Template>
+			<Template>units/rome/champion_infantry_barracks</Template>
 			<Player>1</Player>
 			<Position x="1433.53772" z="804.30774"/>
 			<Orientation y="-2.2163"/>
@@ -17447,7 +17447,7 @@
 			<Actor seed="7614"/>
 		</Entity>
 		<Entity uid="2941">
-			<Template>units/rome_hero_scipio</Template>
+			<Template>units/rome/hero_scipio</Template>
 			<Player>1</Player>
 			<Position x="1393.76392" z="787.84577"/>
 			<Orientation y="6.70936"/>
@@ -17608,70 +17608,70 @@
 			<Actor seed="27116"/>
 		</Entity>
 		<Entity uid="2970">
-			<Template>units/cart_infantry_swordsman_ital_e</Template>
+			<Template>units/cart/infantry_swordsman_ital_e</Template>
 			<Player>2</Player>
 			<Position x="869.13172" z="559.7464"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="15504"/>
 		</Entity>
 		<Entity uid="2971">
-			<Template>units/cart_infantry_swordsman_ital_e</Template>
+			<Template>units/cart/infantry_swordsman_ital_e</Template>
 			<Player>2</Player>
 			<Position x="874.53217" z="561.3459"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="47930"/>
 		</Entity>
 		<Entity uid="2972">
-			<Template>units/cart_infantry_swordsman_ital_e</Template>
+			<Template>units/cart/infantry_swordsman_ital_e</Template>
 			<Player>2</Player>
 			<Position x="881.77167" z="563.7837"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="40194"/>
 		</Entity>
 		<Entity uid="2973">
-			<Template>units/cart_infantry_swordsman_ital_e</Template>
+			<Template>units/cart/infantry_swordsman_ital_e</Template>
 			<Player>2</Player>
 			<Position x="890.77216" z="566.53412"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="42302"/>
 		</Entity>
 		<Entity uid="2974">
-			<Template>units/cart_infantry_swordsman_ital_e</Template>
+			<Template>units/cart/infantry_swordsman_ital_e</Template>
 			<Player>2</Player>
 			<Position x="901.41718" z="569.7599"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="44848"/>
 		</Entity>
 		<Entity uid="2975">
-			<Template>units/cart_infantry_swordsman_ital_e</Template>
+			<Template>units/cart/infantry_swordsman_ital_e</Template>
 			<Player>2</Player>
 			<Position x="903.2931" z="559.24158"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="10054"/>
 		</Entity>
 		<Entity uid="2976">
-			<Template>units/cart_infantry_swordsman_ital_e</Template>
+			<Template>units/cart/infantry_swordsman_ital_e</Template>
 			<Player>2</Player>
 			<Position x="893.76258" z="557.94953"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="33690"/>
 		</Entity>
 		<Entity uid="2977">
-			<Template>units/cart_infantry_swordsman_ital_e</Template>
+			<Template>units/cart/infantry_swordsman_ital_e</Template>
 			<Player>2</Player>
 			<Position x="885.06202" z="555.57136"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="3518"/>
 		</Entity>
 		<Entity uid="2978">
-			<Template>units/cart_infantry_swordsman_ital_e</Template>
+			<Template>units/cart/infantry_swordsman_ital_e</Template>
 			<Player>2</Player>
 			<Position x="877.37702" z="553.43305"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="19286"/>
 		</Entity>
 		<Entity uid="2979">
-			<Template>units/cart_infantry_swordsman_ital_e</Template>
+			<Template>units/cart/infantry_swordsman_ital_e</Template>
 			<Player>2</Player>
 			<Position x="871.72388" z="552.83301"/>
 			<Orientation y="2.35621"/>
@@ -18250,7 +18250,7 @@
 			<Actor seed="48434"/>
 		</Entity>
 		<Entity uid="3092">
-			<Template>units/rome_champion_infantry_barracks</Template>
+			<Template>units/rome/champion_infantry_barracks</Template>
 			<Player>1</Player>
 			<Position x="1432.0564" z="796.08039"/>
 			<Orientation y="-2.16106"/>
@@ -18333,7 +18333,7 @@
 			<Orientation y="-2.20064"/>
 		</Entity>
 		<Entity uid="3106">
-			<Template>gaia/special_treasure_stone</Template>
+			<Template>gaia/treasure/stone</Template>
 			<Player>0</Player>
 			<Position x="1354.91346" z="836.91022"/>
 			<Orientation y="2.35621"/>
@@ -18347,7 +18347,7 @@
 			<Actor seed="32112"/>
 		</Entity>
 		<Entity uid="3108">
-			<Template>gaia/special_treasure_stone</Template>
+			<Template>gaia/treasure/stone</Template>
 			<Player>0</Player>
 			<Position x="1349.26697" z="841.39991"/>
 			<Orientation y="2.35621"/>

@@ -14975,21 +14975,21 @@
 			<Actor seed="40953"/>
 		</Entity>
 		<Entity uid="2464">
-			<Template>units/brit_war_dog_a</Template>
+			<Template>units/brit/war_dog</Template>
 			<Player>3</Player>
 			<Position x="576.02247" z="41.76958"/>
 			<Orientation y="6.7405"/>
 			<Actor seed="35176"/>
 		</Entity>
 		<Entity uid="2466">
-			<Template>units/brit_war_dog_b</Template>
+			<Template>units/brit/war_dog_b</Template>
 			<Player>3</Player>
 			<Position x="584.18891" z="37.85616"/>
 			<Orientation y="6.74958"/>
 			<Actor seed="27413"/>
 		</Entity>
 		<Entity uid="2468">
-			<Template>units/brit_war_dog_e</Template>
+			<Template>units/brit/war_dog_e</Template>
 			<Player>3</Player>
 			<Position x="578.61109" z="41.09609"/>
 			<Orientation y="6.71937"/>
@@ -15212,14 +15212,14 @@
 			<Actor seed="46668"/>
 		</Entity>
 		<Entity uid="2525">
-			<Template>units/brit_war_dog_a</Template>
+			<Template>units/brit/war_dog</Template>
 			<Player>3</Player>
 			<Position x="581.13538" z="39.33333"/>
 			<Orientation y="6.7405"/>
 			<Actor seed="35176"/>
 		</Entity>
 		<Entity uid="2526">
-			<Template>units/brit_hero_caratacos</Template>
+			<Template>units/brit/hero_caratacos</Template>
 			<Player>3</Player>
 			<Position x="582.8083" z="47.73407"/>
 			<Orientation y="0.27887"/>
@@ -15254,42 +15254,42 @@
 			<Actor seed="4210"/>
 		</Entity>
 		<Entity uid="2535">
-			<Template>units/brit_champion_infantry</Template>
+			<Template>units/brit/champion_infantry</Template>
 			<Player>3</Player>
 			<Position x="574.64875" z="43.62658"/>
 			<Orientation y="6.88057"/>
 			<Actor seed="29766"/>
 		</Entity>
 		<Entity uid="2536">
-			<Template>units/brit_champion_infantry</Template>
+			<Template>units/brit/champion_infantry</Template>
 			<Player>3</Player>
 			<Position x="577.29011" z="41.78574"/>
 			<Orientation y="6.88057"/>
 			<Actor seed="29766"/>
 		</Entity>
 		<Entity uid="2537">
-			<Template>units/brit_champion_infantry</Template>
+			<Template>units/brit/champion_infantry</Template>
 			<Player>3</Player>
 			<Position x="579.76056" z="39.92939"/>
 			<Orientation y="6.88057"/>
 			<Actor seed="29766"/>
 		</Entity>
 		<Entity uid="2538">
-			<Template>units/brit_champion_infantry</Template>
+			<Template>units/brit/champion_infantry</Template>
 			<Player>3</Player>
 			<Position x="582.43317" z="38.35288"/>
 			<Orientation y="6.88057"/>
 			<Actor seed="29766"/>
 		</Entity>
 		<Entity uid="2539">
-			<Template>units/brit_war_dog_a</Template>
+			<Template>units/brit/war_dog</Template>
 			<Player>3</Player>
 			<Position x="586.71973" z="35.623"/>
 			<Orientation y="6.7405"/>
 			<Actor seed="35176"/>
 		</Entity>
 		<Entity uid="2540">
-			<Template>units/brit_champion_infantry</Template>
+			<Template>units/brit/champion_infantry</Template>
 			<Player>3</Player>
 			<Position x="585.34491" z="36.21906"/>
 			<Orientation y="6.88057"/>
@@ -15817,28 +15817,28 @@
 			<Actor seed="34498"/>
 		</Entity>
 		<Entity uid="2638">
-			<Template>units/brit_champion_infantry</Template>
+			<Template>units/brit/champion_infantry</Template>
 			<Player>3</Player>
 			<Position x="573.9477" z="41.04987"/>
 			<Orientation y="0.60396"/>
 			<Actor seed="45248"/>
 		</Entity>
 		<Entity uid="2639">
-			<Template>units/brit_champion_infantry</Template>
+			<Template>units/brit/champion_infantry</Template>
 			<Player>3</Player>
 			<Position x="576.5254" z="38.90282"/>
 			<Orientation y="0.32076"/>
 			<Actor seed="51649"/>
 		</Entity>
 		<Entity uid="2640">
-			<Template>units/brit_champion_infantry</Template>
+			<Template>units/brit/champion_infantry</Template>
 			<Player>3</Player>
 			<Position x="579.72461" z="37.10354"/>
 			<Orientation y="0.30086"/>
 			<Actor seed="27753"/>
 		</Entity>
 		<Entity uid="2641">
-			<Template>units/brit_champion_infantry</Template>
+			<Template>units/brit/champion_infantry</Template>
 			<Player>3</Player>
 			<Position x="583.18561" z="35.25123"/>
 			<Orientation y="0.56394"/>
@@ -15950,14 +15950,14 @@
 			<Actor seed="10471"/>
 		</Entity>
 		<Entity uid="2659">
-			<Template>structures/rome_outpost</Template>
+			<Template>structures/rome/outpost</Template>
 			<Player>2</Player>
 			<Position x="651.37861" z="493.12488"/>
 			<Orientation y="7.59665"/>
 			<Actor seed="36474"/>
 		</Entity>
 		<Entity uid="2660">
-			<Template>structures/rome_outpost</Template>
+			<Template>structures/rome/outpost</Template>
 			<Player>0</Player>
 			<Position x="630.83802" z="743.33039"/>
 			<Orientation y="2.08764"/>
@@ -15971,7 +15971,7 @@
 			<Actor seed="27692"/>
 		</Entity>
 		<Entity uid="2683">
-			<Template>units/rome_hero_maximus</Template>
+			<Template>units/rome/hero_maximus</Template>
 			<Player>2</Player>
 			<Position x="802.66181" z="538.23218"/>
 			<Orientation y="3.95804"/>
@@ -16705,21 +16705,21 @@
 			<Actor seed="32751"/>
 		</Entity>
 		<Entity uid="2828">
-			<Template>gaia/special_treasure_metal</Template>
+			<Template>gaia/treasure/metal</Template>
 			<Player>0</Player>
 			<Position x="766.61451" z="551.13898"/>
 			<Orientation y="0.84823"/>
 			<Actor seed="29584"/>
 		</Entity>
 		<Entity uid="2829">
-			<Template>gaia/special_treasure_metal</Template>
+			<Template>gaia/treasure/metal</Template>
 			<Player>0</Player>
 			<Position x="768.73261" z="551.92585"/>
 			<Orientation y="0.84823"/>
 			<Actor seed="62674"/>
 		</Entity>
 		<Entity uid="2830">
-			<Template>gaia/special_treasure_stone</Template>
+			<Template>gaia/treasure/stone</Template>
 			<Player>0</Player>
 			<Position x="812.96521" z="613.65113"/>
 			<Orientation y="2.35621"/>
@@ -17137,7 +17137,7 @@
 			<Actor seed="33870"/>
 		</Entity>
 		<Entity uid="2911">
-			<Template>structures/gaul_outpost</Template>
+			<Template>structures/gaul/outpost</Template>
 			<Player>1</Player>
 			<Position x="217.57697" z="610.28626"/>
 			<Orientation y="2.35621"/>
@@ -17409,7 +17409,7 @@
 			<Actor seed="22932"/>
 		</Entity>
 		<Entity uid="2984">
-			<Template>structures/rome_outpost</Template>
+			<Template>structures/rome/outpost</Template>
 			<Player>2</Player>
 			<Position x="861.54871" z="322.20759"/>
 			<Orientation y="-0.47442"/>
@@ -18118,7 +18118,7 @@
 			<Actor seed="45298"/>
 		</Entity>
 		<Entity uid="3247">
-			<Template>units/rome_champion_infantry</Template>
+			<Template>units/rome/champion_infantry</Template>
 			<Player>2</Player>
 			<Position x="799.68165" z="547.25971"/>
 			<Orientation y="-2.15928"/>
@@ -18132,14 +18132,14 @@
 			<Actor seed="19318"/>
 		</Entity>
 		<Entity uid="3285">
-			<Template>units/rome_champion_infantry</Template>
+			<Template>units/rome/champion_infantry</Template>
 			<Player>2</Player>
 			<Position x="835.93659" z="615.3628"/>
 			<Orientation y="-8.4842"/>
 			<Actor seed="49575"/>
 		</Entity>
 		<Entity uid="3286">
-			<Template>units/rome_champion_infantry</Template>
+			<Template>units/rome/champion_infantry</Template>
 			<Player>2</Player>
 			<Position x="811.92823" z="533.96735"/>
 			<Orientation y="-2.1593"/>
@@ -18293,28 +18293,28 @@
 			<Actor seed="22641"/>
 		</Entity>
 		<Entity uid="3386">
-			<Template>units/rome_infantry_swordsman_b</Template>
+			<Template>units/rome/infantry_swordsman_b</Template>
 			<Player>2</Player>
 			<Position x="814.19855" z="628.35218"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="32598"/>
 		</Entity>
 		<Entity uid="3387">
-			<Template>units/rome_infantry_swordsman_b</Template>
+			<Template>units/rome/infantry_swordsman_b</Template>
 			<Player>2</Player>
 			<Position x="811.0077" z="622.18769"/>
 			<Orientation y="1.71108"/>
 			<Actor seed="62617"/>
 		</Entity>
 		<Entity uid="3390">
-			<Template>units/rome_infantry_swordsman_b</Template>
+			<Template>units/rome/infantry_swordsman_b</Template>
 			<Player>2</Player>
 			<Position x="810.72748" z="609.22553"/>
 			<Orientation y="1.13575"/>
 			<Actor seed="9484"/>
 		</Entity>
 		<Entity uid="3391">
-			<Template>units/rome_infantry_swordsman_a</Template>
+			<Template>units/rome/infantry_swordsman_a</Template>
 			<Player>2</Player>
 			<Position x="807.2798" z="610.54474"/>
 			<Orientation y="-0.1372"/>
@@ -18535,7 +18535,7 @@
 			<Actor seed="46581"/>
 		</Entity>
 		<Entity uid="3456">
-			<Template>units/rome_champion_infantry</Template>
+			<Template>units/rome/champion_infantry</Template>
 			<Player>2</Player>
 			<Position x="845.71454" z="605.47913"/>
 			<Orientation y="-8.52007"/>
@@ -18703,7 +18703,7 @@
 			<Actor seed="48123"/>
 		</Entity>
 		<Entity uid="3480">
-			<Template>gaia/special_treasure_stone</Template>
+			<Template>gaia/treasure/stone</Template>
 			<Player>0</Player>
 			<Position x="800.81446" z="610.87208"/>
 			<Orientation y="4.0729"/>

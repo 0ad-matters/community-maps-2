@@ -11511,7 +11511,7 @@
 			<Actor seed="21348"/>
 		</Entity>
 		<Entity uid="1932">
-			<Template>gaia/fauna_crocodile_nile_nile</Template>
+			<Template>gaia/fauna_crocodile_nile</Template>
 			<Player>0</Player>
 			<Position x="1008.48975" z="1075.28077"/>
 			<Orientation y="2.35621"/>
@@ -12601,14 +12601,14 @@
 			<Actor seed="10690"/>
 		</Entity>
 		<Entity uid="2089">
-			<Template>gaia/fauna_crocodile_nile_nile</Template>
+			<Template>gaia/fauna_crocodile_nile</Template>
 			<Player>0</Player>
 			<Position x="347.09934" z="719.1349"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="55663"/>
 		</Entity>
 		<Entity uid="2090">
-			<Template>gaia/fauna_crocodile_nile_nile</Template>
+			<Template>gaia/fauna_crocodile_nile</Template>
 			<Player>0</Player>
 			<Position x="350.46265" z="727.0052"/>
 			<Orientation y="2.35621"/>
@@ -12811,7 +12811,7 @@
 			<Actor seed="29840"/>
 		</Entity>
 		<Entity uid="2119">
-			<Template>units/ptol_cavalry_archer_a</Template>
+			<Template>units/ptol/cavalry_archer_a</Template>
 			<Player>4</Player>
 			<Position x="655.60804" z="1132.72754"/>
 			<Orientation y="0.85935"/>

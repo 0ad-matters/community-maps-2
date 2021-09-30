@@ -6401,77 +6401,77 @@
 			<Actor seed="16975"/>
 		</Entity>
 		<Entity uid="955">
-			<Template>units/maur_infantry_swordsman_e</Template>
+			<Template>units/maur/infantry_swordsman_e</Template>
 			<Player>0</Player>
 			<Position x="743.1576" z="765.66065"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="50632"/>
 		</Entity>
 		<Entity uid="956">
-			<Template>units/maur_infantry_swordsman_e</Template>
+			<Template>units/maur/infantry_swordsman_e</Template>
 			<Player>0</Player>
 			<Position x="748.28003" z="773.47461"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="60020"/>
 		</Entity>
 		<Entity uid="957">
-			<Template>units/maur_infantry_swordsman_e</Template>
+			<Template>units/maur/infantry_swordsman_e</Template>
 			<Player>0</Player>
 			<Position x="749.70289" z="769.1344"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="12911"/>
 		</Entity>
 		<Entity uid="958">
-			<Template>units/maur_infantry_swordsman_e</Template>
+			<Template>units/maur/infantry_swordsman_e</Template>
 			<Player>0</Player>
 			<Position x="732.60645" z="763.23908"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="24679"/>
 		</Entity>
 		<Entity uid="959">
-			<Template>units/maur_infantry_swordsman_e</Template>
+			<Template>units/maur/infantry_swordsman_e</Template>
 			<Player>0</Player>
 			<Position x="780.50776" z="747.73011"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="56900"/>
 		</Entity>
 		<Entity uid="960">
-			<Template>units/maur_infantry_swordsman_e</Template>
+			<Template>units/maur/infantry_swordsman_e</Template>
 			<Player>0</Player>
 			<Position x="775.73432" z="747.39759"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="53016"/>
 		</Entity>
 		<Entity uid="961">
-			<Template>units/maur_infantry_swordsman_e</Template>
+			<Template>units/maur/infantry_swordsman_e</Template>
 			<Player>0</Player>
 			<Position x="771.74976" z="745.53657"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="64903"/>
 		</Entity>
 		<Entity uid="962">
-			<Template>units/maur_infantry_swordsman_e</Template>
+			<Template>units/maur/infantry_swordsman_e</Template>
 			<Player>0</Player>
 			<Position x="823.0027" z="753.88001"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="61143"/>
 		</Entity>
 		<Entity uid="963">
-			<Template>units/maur_infantry_swordsman_e</Template>
+			<Template>units/maur/infantry_swordsman_e</Template>
 			<Player>0</Player>
 			<Position x="824.59327" z="763.09913"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="2915"/>
 		</Entity>
 		<Entity uid="964">
-			<Template>units/maur_infantry_swordsman_e</Template>
+			<Template>units/maur/infantry_swordsman_e</Template>
 			<Player>0</Player>
 			<Position x="786.00959" z="788.49878"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="30905"/>
 		</Entity>
 		<Entity uid="965">
-			<Template>units/maur_infantry_swordsman_e</Template>
+			<Template>units/maur/infantry_swordsman_e</Template>
 			<Player>0</Player>
 			<Position x="762.51923" z="774.81537"/>
 			<Orientation y="2.35621"/>

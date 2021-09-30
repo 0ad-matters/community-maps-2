@@ -20335,7 +20335,7 @@
 			<Actor seed="21618"/>
 		</Entity>
 		<Entity uid="3356">
-			<Template>units/brit_war_dog_a</Template>
+			<Template>units/brit/war_dog</Template>
 			<Player>1</Player>
 			<Position x="1644.84546" z="802.31928"/>
 			<Orientation y="-0.85022"/>
@@ -20489,7 +20489,7 @@
 			<Actor seed="6986"/>
 		</Entity>
 		<Entity uid="3415">
-			<Template>structures/brit_outpost</Template>
+			<Template>structures/brit/outpost</Template>
 			<Player>0</Player>
 			<Position x="1329.02027" z="1581.3335"/>
 			<Orientation y="-2.4289"/>
@@ -20741,7 +20741,7 @@
 			<Actor seed="50626"/>
 		</Entity>
 		<Entity uid="3545">
-			<Template>gaia/special_treasure_metal</Template>
+			<Template>gaia/treasure/metal</Template>
 			<Player>2</Player>
 			<Position x="949.21711" z="700.90992"/>
 			<Orientation y="2.35621"/>
@@ -20790,7 +20790,7 @@
 			<Actor seed="10036"/>
 		</Entity>
 		<Entity uid="3604">
-			<Template>units/brit_war_dog_b</Template>
+			<Template>units/brit/war_dog_b</Template>
 			<Player>1</Player>
 			<Position x="1662.51368" z="841.33002"/>
 			<Orientation y="-2.30988"/>
@@ -21287,7 +21287,7 @@
 			<Actor seed="55300"/>
 		</Entity>
 		<Entity uid="3737">
-			<Template>gaia/special_treasure_stone</Template>
+			<Template>gaia/treasure/stone</Template>
 			<Player>1</Player>
 			<Position x="952.4969" z="697.15992"/>
 			<Orientation y="2.35621"/>
@@ -21359,7 +21359,7 @@
 			<Actor seed="47424"/>
 		</Entity>
 		<Entity uid="3781">
-			<Template>structures/rome_outpost</Template>
+			<Template>structures/rome/outpost</Template>
 			<Player>2</Player>
 			<Position x="834.87098" z="349.60428"/>
 			<Orientation y="1.01111"/>

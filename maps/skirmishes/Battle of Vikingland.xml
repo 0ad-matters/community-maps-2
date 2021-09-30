@@ -15217,105 +15217,105 @@
 			<Actor seed="19078"/>
 		</Entity>
 		<Entity uid="2438">
-			<Template>units/gaul_hero_vercingetorix</Template>
+			<Template>units/gaul/hero_vercingetorix</Template>
 			<Player>0</Player>
 			<Position x="745.30744" z="943.13978"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="45914"/>
 		</Entity>
 		<Entity uid="2439">
-			<Template>units/gaul_hero_vercingetorix</Template>
+			<Template>units/gaul/hero_vercingetorix</Template>
 			<Player>0</Player>
 			<Position x="747.80127" z="950.8125"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="27592"/>
 		</Entity>
 		<Entity uid="2441">
-			<Template>units/gaul_hero_vercingetorix</Template>
+			<Template>units/gaul/hero_vercingetorix</Template>
 			<Player>0</Player>
 			<Position x="673.53827" z="933.73755"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="60518"/>
 		</Entity>
 		<Entity uid="2442">
-			<Template>units/gaul_hero_vercingetorix</Template>
+			<Template>units/gaul/hero_vercingetorix</Template>
 			<Player>0</Player>
 			<Position x="675.01587" z="920.11664"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="55298"/>
 		</Entity>
 		<Entity uid="2444">
-			<Template>units/gaul_hero_vercingetorix</Template>
+			<Template>units/gaul/hero_vercingetorix</Template>
 			<Player>0</Player>
 			<Position x="655.14051" z="843.80945"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="8344"/>
 		</Entity>
 		<Entity uid="2445">
-			<Template>units/gaul_hero_vercingetorix</Template>
+			<Template>units/gaul/hero_vercingetorix</Template>
 			<Player>0</Player>
 			<Position x="656.5514" z="835.28986"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="32816"/>
 		</Entity>
 		<Entity uid="2446">
-			<Template>units/gaul_hero_vercingetorix</Template>
+			<Template>units/gaul/hero_vercingetorix</Template>
 			<Player>0</Player>
 			<Position x="714.68036" z="728.91974"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="64182"/>
 		</Entity>
 		<Entity uid="2448">
-			<Template>units/gaul_hero_vercingetorix</Template>
+			<Template>units/gaul/hero_vercingetorix</Template>
 			<Player>0</Player>
 			<Position x="718.38807" z="724.08356"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="24752"/>
 		</Entity>
 		<Entity uid="2450">
-			<Template>units/gaul_hero_vercingetorix</Template>
+			<Template>units/gaul/hero_vercingetorix</Template>
 			<Player>0</Player>
 			<Position x="797.47547" z="672.6084"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="21772"/>
 		</Entity>
 		<Entity uid="2451">
-			<Template>units/gaul_hero_vercingetorix</Template>
+			<Template>units/gaul/hero_vercingetorix</Template>
 			<Player>0</Player>
 			<Position x="809.9065" z="671.71058"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="41318"/>
 		</Entity>
 		<Entity uid="2453">
-			<Template>units/gaul_hero_vercingetorix</Template>
+			<Template>units/gaul/hero_vercingetorix</Template>
 			<Player>0</Player>
 			<Position x="883.813" z="705.74952"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="48670"/>
 		</Entity>
 		<Entity uid="2454">
-			<Template>units/gaul_hero_vercingetorix</Template>
+			<Template>units/gaul/hero_vercingetorix</Template>
 			<Player>0</Player>
 			<Position x="886.49506" z="710.56971"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="26226"/>
 		</Entity>
 		<Entity uid="2456">
-			<Template>units/gaul_hero_vercingetorix</Template>
+			<Template>units/gaul/hero_vercingetorix</Template>
 			<Player>0</Player>
 			<Position x="947.29383" z="818.76856"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="56188"/>
 		</Entity>
 		<Entity uid="2458">
-			<Template>units/gaul_hero_vercingetorix</Template>
+			<Template>units/gaul/hero_vercingetorix</Template>
 			<Player>0</Player>
 			<Position x="892.28644" z="871.53711"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="46284"/>
 		</Entity>
 		<Entity uid="2459">
-			<Template>units/gaul_hero_vercingetorix</Template>
+			<Template>units/gaul/hero_vercingetorix</Template>
 			<Player>0</Player>
 			<Position x="887.25818" z="881.68128"/>
 			<Orientation y="2.35621"/>

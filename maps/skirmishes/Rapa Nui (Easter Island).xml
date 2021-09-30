@@ -7009,217 +7009,217 @@
 			<Actor seed="43414"/>
 		</Entity>
 		<Entity uid="3419">
-			<Template>gaia/fauna_crocodile_nile_nile</Template>
+			<Template>gaia/fauna_crocodile_nile</Template>
 			<Player>0</Player>
 			<Position x="576.89942" z="457.11487"/>
 			<Orientation y="-2.31333"/>
 			<Actor seed="55672"/>
 		</Entity>
 		<Entity uid="3420">
-			<Template>gaia/fauna_crocodile_nile_nile</Template>
+			<Template>gaia/fauna_crocodile_nile</Template>
 			<Player>0</Player>
 			<Position x="586.09491" z="464.84296"/>
 			<Orientation y="0.64553"/>
 			<Actor seed="16204"/>
 		</Entity>
 		<Entity uid="3421">
-			<Template>gaia/fauna_crocodile_nile_nile</Template>
+			<Template>gaia/fauna_crocodile_nile</Template>
 			<Player>0</Player>
 			<Position x="588.83167" z="475.15497"/>
 			<Orientation y="0.6427"/>
 			<Actor seed="27108"/>
 		</Entity>
 		<Entity uid="3422">
-			<Template>gaia/fauna_crocodile_nile_nile</Template>
+			<Template>gaia/fauna_crocodile_nile</Template>
 			<Player>0</Player>
 			<Position x="599.82178" z="483.10807"/>
 			<Orientation y="0.64109"/>
 			<Actor seed="63174"/>
 		</Entity>
 		<Entity uid="3423">
-			<Template>gaia/fauna_crocodile_nile_nile</Template>
+			<Template>gaia/fauna_crocodile_nile</Template>
 			<Player>0</Player>
 			<Position x="574.18451" z="379.85456"/>
 			<Orientation y="-1.75559"/>
 			<Actor seed="18314"/>
 		</Entity>
 		<Entity uid="3424">
-			<Template>gaia/fauna_crocodile_nile_nile</Template>
+			<Template>gaia/fauna_crocodile_nile</Template>
 			<Player>0</Player>
 			<Position x="580.0323" z="362.0907"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="38626"/>
 		</Entity>
 		<Entity uid="3425">
-			<Template>gaia/fauna_crocodile_nile_nile</Template>
+			<Template>gaia/fauna_crocodile_nile</Template>
 			<Player>0</Player>
 			<Position x="333.89808" z="337.7143"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="60490"/>
 		</Entity>
 		<Entity uid="3426">
-			<Template>gaia/fauna_crocodile_nile_nile</Template>
+			<Template>gaia/fauna_crocodile_nile</Template>
 			<Player>0</Player>
 			<Position x="335.38831" z="344.28681"/>
 			<Orientation y="1.08747"/>
 			<Actor seed="34988"/>
 		</Entity>
 		<Entity uid="3427">
-			<Template>gaia/fauna_crocodile_nile_nile</Template>
+			<Template>gaia/fauna_crocodile_nile</Template>
 			<Player>0</Player>
 			<Position x="326.89075" z="348.64325"/>
 			<Orientation y="-2.3865"/>
 			<Actor seed="10512"/>
 		</Entity>
 		<Entity uid="3428">
-			<Template>gaia/fauna_crocodile_nile_nile</Template>
+			<Template>gaia/fauna_crocodile_nile</Template>
 			<Player>0</Player>
 			<Position x="316.3938" z="341.83021"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="34074"/>
 		</Entity>
 		<Entity uid="3429">
-			<Template>gaia/fauna_crocodile_nile_nile</Template>
+			<Template>gaia/fauna_crocodile_nile</Template>
 			<Player>0</Player>
 			<Position x="358.06992" z="268.96473"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="24506"/>
 		</Entity>
 		<Entity uid="3430">
-			<Template>gaia/fauna_crocodile_nile_nile</Template>
+			<Template>gaia/fauna_crocodile_nile</Template>
 			<Player>0</Player>
 			<Position x="352.66791" z="266.90195"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="36996"/>
 		</Entity>
 		<Entity uid="3431">
-			<Template>gaia/fauna_crocodile_nile_nile</Template>
+			<Template>gaia/fauna_crocodile_nile</Template>
 			<Player>0</Player>
 			<Position x="369.43821" z="258.76093"/>
 			<Orientation y="-1.17354"/>
 			<Actor seed="38286"/>
 		</Entity>
 		<Entity uid="3433">
-			<Template>gaia/fauna_crocodile_nile_nile</Template>
+			<Template>gaia/fauna_crocodile_nile</Template>
 			<Player>0</Player>
 			<Position x="511.25684" z="252.61182"/>
 			<Orientation y="3.06518"/>
 			<Actor seed="29718"/>
 		</Entity>
 		<Entity uid="3434">
-			<Template>gaia/fauna_crocodile_nile_nile</Template>
+			<Template>gaia/fauna_crocodile_nile</Template>
 			<Player>0</Player>
 			<Position x="524.61072" z="255.11735"/>
 			<Orientation y="-3.0542"/>
 			<Actor seed="13900"/>
 		</Entity>
 		<Entity uid="3435">
-			<Template>gaia/fauna_crocodile_nile_nile</Template>
+			<Template>gaia/fauna_crocodile_nile</Template>
 			<Player>0</Player>
 			<Position x="541.49463" z="258.32816"/>
 			<Orientation y="-3.11136"/>
 			<Actor seed="6266"/>
 		</Entity>
 		<Entity uid="3436">
-			<Template>gaia/fauna_crocodile_nile_nile</Template>
+			<Template>gaia/fauna_crocodile_nile</Template>
 			<Player>0</Player>
 			<Position x="533.68787" z="260.55723"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="18124"/>
 		</Entity>
 		<Entity uid="3437">
-			<Template>gaia/fauna_crocodile_nile_nile</Template>
+			<Template>gaia/fauna_crocodile_nile</Template>
 			<Player>0</Player>
 			<Position x="518.1822" z="257.19791"/>
 			<Orientation y="-2.19607"/>
 			<Actor seed="168"/>
 		</Entity>
 		<Entity uid="3438">
-			<Template>gaia/fauna_crocodile_nile_nile</Template>
+			<Template>gaia/fauna_crocodile_nile</Template>
 			<Player>0</Player>
 			<Position x="235.73377" z="412.78028"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="14966"/>
 		</Entity>
 		<Entity uid="3439">
-			<Template>gaia/fauna_crocodile_nile_nile</Template>
+			<Template>gaia/fauna_crocodile_nile</Template>
 			<Player>0</Player>
 			<Position x="204.87363" z="425.71213"/>
 			<Orientation y="-1.35238"/>
 			<Actor seed="13632"/>
 		</Entity>
 		<Entity uid="3440">
-			<Template>gaia/fauna_crocodile_nile_nile</Template>
+			<Template>gaia/fauna_crocodile_nile</Template>
 			<Player>0</Player>
 			<Position x="174.72321" z="433.01273"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="12586"/>
 		</Entity>
 		<Entity uid="3441">
-			<Template>gaia/fauna_crocodile_nile_nile</Template>
+			<Template>gaia/fauna_crocodile_nile</Template>
 			<Player>0</Player>
 			<Position x="188.83295" z="429.75678"/>
 			<Orientation y="0.2901"/>
 			<Actor seed="18940"/>
 		</Entity>
 		<Entity uid="3442">
-			<Template>gaia/fauna_crocodile_nile_nile</Template>
+			<Template>gaia/fauna_crocodile_nile</Template>
 			<Player>0</Player>
 			<Position x="251.57157" z="403.78711"/>
 			<Orientation y="-2.5666"/>
 			<Actor seed="58800"/>
 		</Entity>
 		<Entity uid="3443">
-			<Template>gaia/fauna_crocodile_nile_nile</Template>
+			<Template>gaia/fauna_crocodile_nile</Template>
 			<Player>0</Player>
 			<Position x="688.78028" z="474.72068"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="48242"/>
 		</Entity>
 		<Entity uid="3444">
-			<Template>gaia/fauna_crocodile_nile_nile</Template>
+			<Template>gaia/fauna_crocodile_nile</Template>
 			<Player>0</Player>
 			<Position x="681.7837" z="468.27112"/>
 			<Orientation y="-1.18511"/>
 			<Actor seed="42356"/>
 		</Entity>
 		<Entity uid="3445">
-			<Template>gaia/fauna_crocodile_nile_nile</Template>
+			<Template>gaia/fauna_crocodile_nile</Template>
 			<Player>0</Player>
 			<Position x="697.30323" z="461.7522"/>
 			<Orientation y="2.61405"/>
 			<Actor seed="57846"/>
 		</Entity>
 		<Entity uid="3447">
-			<Template>gaia/fauna_crocodile_nile_nile</Template>
+			<Template>gaia/fauna_crocodile_nile</Template>
 			<Player>0</Player>
 			<Position x="686.66492" z="461.80741"/>
 			<Orientation y="-2.36097"/>
 			<Actor seed="16108"/>
 		</Entity>
 		<Entity uid="3448">
-			<Template>gaia/fauna_crocodile_nile_nile</Template>
+			<Template>gaia/fauna_crocodile_nile</Template>
 			<Player>0</Player>
 			<Position x="681.54065" z="477.12052"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="21804"/>
 		</Entity>
 		<Entity uid="3449">
-			<Template>gaia/fauna_crocodile_nile_nile</Template>
+			<Template>gaia/fauna_crocodile_nile</Template>
 			<Player>0</Player>
 			<Position x="623.36762" z="684.39295"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="59142"/>
 		</Entity>
 		<Entity uid="3450">
-			<Template>gaia/fauna_crocodile_nile_nile</Template>
+			<Template>gaia/fauna_crocodile_nile</Template>
 			<Player>0</Player>
 			<Position x="639.23237" z="681.09284"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="42644"/>
 		</Entity>
 		<Entity uid="3452">
-			<Template>gaia/fauna_crocodile_nile_nile</Template>
+			<Template>gaia/fauna_crocodile_nile</Template>
 			<Player>0</Player>
 			<Position x="627.44928" z="695.45289"/>
 			<Orientation y="1.33765"/>
@@ -7895,21 +7895,21 @@
 			<Actor seed="28448"/>
 		</Entity>
 		<Entity uid="3566">
-			<Template>gaia/fauna_crocodile_nile_nile</Template>
+			<Template>gaia/fauna_crocodile_nile</Template>
 			<Player>0</Player>
 			<Position x="209.50733" z="501.16587"/>
 			<Orientation y="-5.96181"/>
 			<Actor seed="38286"/>
 		</Entity>
 		<Entity uid="3567">
-			<Template>gaia/fauna_crocodile_nile_nile</Template>
+			<Template>gaia/fauna_crocodile_nile</Template>
 			<Player>0</Player>
 			<Position x="220.87104" z="522.26697"/>
 			<Orientation y="-0.81156"/>
 			<Actor seed="36996"/>
 		</Entity>
 		<Entity uid="3568">
-			<Template>gaia/fauna_crocodile_nile_nile</Template>
+			<Template>gaia/fauna_crocodile_nile</Template>
 			<Player>0</Player>
 			<Position x="222.16095" z="507.0688"/>
 			<Orientation y="-4.53634"/>

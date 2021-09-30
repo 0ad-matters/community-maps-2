@@ -21524,7 +21524,7 @@
 			<Actor seed="18202"/>
 		</Entity>
 		<Entity uid="5723">
-			<Template>units/rome_hero_maximus</Template>
+			<Template>units/rome/hero_maximus</Template>
 			<Player>3</Player>
 			<Position x="248.66712" z="816.60322"/>
 			<Orientation y="2.35621"/>
@@ -21699,35 +21699,35 @@
 			<Actor seed="19554"/>
 		</Entity>
 		<Entity uid="5748">
-			<Template>gaia/special_treasure_metal</Template>
+			<Template>gaia/treasure/metal</Template>
 			<Player>3</Player>
 			<Position x="205.9065" z="814.61658"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="34610"/>
 		</Entity>
 		<Entity uid="5749">
-			<Template>gaia/special_treasure_metal</Template>
+			<Template>gaia/treasure/metal</Template>
 			<Player>3</Player>
 			<Position x="204.379" z="812.53125"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="7256"/>
 		</Entity>
 		<Entity uid="5750">
-			<Template>gaia/special_treasure_metal</Template>
+			<Template>gaia/treasure/metal</Template>
 			<Player>3</Player>
 			<Position x="202.91153" z="810.91456"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="10740"/>
 		</Entity>
 		<Entity uid="5751">
-			<Template>gaia/special_treasure_stone</Template>
+			<Template>gaia/treasure/stone</Template>
 			<Player>3</Player>
 			<Position x="204.05137" z="819.53931"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="13430"/>
 		</Entity>
 		<Entity uid="5752">
-			<Template>gaia/special_treasure_stone</Template>
+			<Template>gaia/treasure/stone</Template>
 			<Player>3</Player>
 			<Position x="200.65546" z="815.71052"/>
 			<Orientation y="2.35621"/>

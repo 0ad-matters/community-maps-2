@@ -20133,7 +20133,7 @@
 			<Actor seed="49877"/>
 		</Entity>
 		<Entity uid="3452">
-			<Template>structures/athen_outpost</Template>
+			<Template>structures/athen/outpost</Template>
 			<Player>0</Player>
 			<Position x="993.67634" z="759.70044"/>
 			<Orientation y="0.26122"/>

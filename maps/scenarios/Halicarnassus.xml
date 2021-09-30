@@ -3653,7 +3653,7 @@
 			<Actor seed="55958"/>
 		</Entity>
 		<Entity uid="559">
-			<Template>gaia/special_treasure_metal_persian_small</Template>
+			<Template>gaia/treasure/metal_persian_small</Template>
 			<Player>1</Player>
 			<Position x="412.7505" z="671.82288"/>
 			<Orientation y="1.72173"/>
@@ -3742,7 +3742,7 @@
 			<Actor seed="64170"/>
 		</Entity>
 		<Entity uid="577">
-			<Template>gaia/special_treasure_metal_persian_small</Template>
+			<Template>gaia/treasure/metal_persian_small</Template>
 			<Player>1</Player>
 			<Position x="401.39258" z="650.84888"/>
 			<Orientation y="4.85178"/>
@@ -3805,7 +3805,7 @@
 			<Actor seed="14864"/>
 		</Entity>
 		<Entity uid="586">
-			<Template>gaia/special_treasure_metal_persian_small</Template>
+			<Template>gaia/treasure/metal_persian_small</Template>
 			<Player>1</Player>
 			<Position x="351.40174" z="592.03174"/>
 			<Orientation y="2.35621"/>
@@ -3819,7 +3819,7 @@
 			<Actor seed="10448"/>
 		</Entity>
 		<Entity uid="588">
-			<Template>gaia/special_treasure_metal_persian_small</Template>
+			<Template>gaia/treasure/metal_persian_small</Template>
 			<Player>1</Player>
 			<Position x="331.59107" z="592.58344"/>
 			<Orientation y="0.55236"/>
@@ -3949,7 +3949,7 @@
 			<Actor seed="54776"/>
 		</Entity>
 		<Entity uid="608">
-			<Template>gaia/special_treasure_metal_persian_small</Template>
+			<Template>gaia/treasure/metal_persian_small</Template>
 			<Player>1</Player>
 			<Position x="502.9603" z="684.80079"/>
 			<Orientation y="2.35621"/>
@@ -4557,56 +4557,56 @@
 			<Actor seed="43010"/>
 		</Entity>
 		<Entity uid="702">
-			<Template>gaia/special_treasure_stone</Template>
+			<Template>gaia/treasure/stone</Template>
 			<Player>1</Player>
 			<Position x="510.61075" z="622.17347"/>
 			<Orientation y="-0.23348"/>
 			<Actor seed="52692"/>
 		</Entity>
 		<Entity uid="703">
-			<Template>gaia/special_treasure_stone</Template>
+			<Template>gaia/treasure/stone</Template>
 			<Player>1</Player>
 			<Position x="508.98014" z="620.28003"/>
 			<Orientation y="-2.76015"/>
 			<Actor seed="3712"/>
 		</Entity>
 		<Entity uid="704">
-			<Template>gaia/special_treasure_stone</Template>
+			<Template>gaia/treasure/stone</Template>
 			<Player>1</Player>
 			<Position x="513.03382" z="622.55805"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="19294"/>
 		</Entity>
 		<Entity uid="705">
-			<Template>gaia/special_treasure_stone</Template>
+			<Template>gaia/treasure/stone</Template>
 			<Player>1</Player>
 			<Position x="530.70356" z="621.27515"/>
 			<Orientation y="-1.54628"/>
 			<Actor seed="59766"/>
 		</Entity>
 		<Entity uid="706">
-			<Template>gaia/special_treasure_stone</Template>
+			<Template>gaia/treasure/stone</Template>
 			<Player>1</Player>
 			<Position x="522.49646" z="618.76716"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="40186"/>
 		</Entity>
 		<Entity uid="707">
-			<Template>gaia/special_treasure_stone</Template>
+			<Template>gaia/treasure/stone</Template>
 			<Player>1</Player>
 			<Position x="484.48234" z="629.50666"/>
 			<Orientation y="1.58017"/>
 			<Actor seed="46444"/>
 		</Entity>
 		<Entity uid="708">
-			<Template>gaia/special_treasure_stone</Template>
+			<Template>gaia/treasure/stone</Template>
 			<Player>1</Player>
 			<Position x="484.1548" z="632.19178"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="48636"/>
 		</Entity>
 		<Entity uid="709">
-			<Template>gaia/special_treasure_stone</Template>
+			<Template>gaia/treasure/stone</Template>
 			<Player>1</Player>
 			<Position x="487.82743" z="630.6952"/>
 			<Orientation y="-2.08562"/>
@@ -5026,7 +5026,7 @@
 			<Actor seed="24780"/>
 		</Entity>
 		<Entity uid="769">
-			<Template>gaia/special_treasure_metal_persian_small</Template>
+			<Template>gaia/treasure/metal_persian_small</Template>
 			<Player>1</Player>
 			<Position x="600.39014" z="333.1298"/>
 			<Orientation y="-5.99836"/>
@@ -5040,7 +5040,7 @@
 			<Actor seed="10448"/>
 		</Entity>
 		<Entity uid="771">
-			<Template>gaia/special_treasure_metal_persian_small</Template>
+			<Template>gaia/treasure/metal_persian_small</Template>
 			<Player>1</Player>
 			<Position x="619.64191" z="337.83445"/>
 			<Orientation y="-4.1945"/>
@@ -5294,21 +5294,21 @@
 			<Actor seed="34048"/>
 		</Entity>
 		<Entity uid="808">
-			<Template>gaia/special_treasure_metal</Template>
+			<Template>gaia/treasure/metal</Template>
 			<Player>1</Player>
 			<Position x="586.10724" z="382.3913"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="54678"/>
 		</Entity>
 		<Entity uid="809">
-			<Template>gaia/special_treasure_metal</Template>
+			<Template>gaia/treasure/metal</Template>
 			<Player>1</Player>
 			<Position x="584.4549" z="383.22382"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="37914"/>
 		</Entity>
 		<Entity uid="810">
-			<Template>gaia/special_treasure_metal</Template>
+			<Template>gaia/treasure/metal</Template>
 			<Player>1</Player>
 			<Position x="583.95447" z="381.6554"/>
 			<Orientation y="2.35621"/>
@@ -5985,28 +5985,28 @@
 			<Actor seed="63384"/>
 		</Entity>
 		<Entity uid="921">
-			<Template>gaia/special_treasure_metal_persian_small</Template>
+			<Template>gaia/treasure/metal_persian_small</Template>
 			<Player>1</Player>
 			<Position x="555.3188" z="358.08735"/>
 			<Orientation y="-1.79111"/>
 			<Actor seed="38266"/>
 		</Entity>
 		<Entity uid="922">
-			<Template>gaia/special_treasure_metal_persian_bigl</Template>
+			<Template>gaia/treasure/metal_persian_bigl</Template>
 			<Player>1</Player>
 			<Position x="555.69318" z="363.82941"/>
 			<Orientation y="-1.00266"/>
 			<Actor seed="1078"/>
 		</Entity>
 		<Entity uid="923">
-			<Template>gaia/special_treasure_metal_persian_bigl</Template>
+			<Template>gaia/treasure/metal_persian_bigl</Template>
 			<Player>1</Player>
 			<Position x="523.16095" z="344.25641"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="26894"/>
 		</Entity>
 		<Entity uid="924">
-			<Template>gaia/special_treasure_metal_persian_bigl</Template>
+			<Template>gaia/treasure/metal_persian_bigl</Template>
 			<Player>1</Player>
 			<Position x="517.53498" z="341.48911"/>
 			<Orientation y="2.69826"/>
@@ -14733,7 +14733,7 @@
 			<Actor seed="6626"/>
 		</Entity>
 		<Entity uid="2580">
-			<Template>structures/pers_outpost</Template>
+			<Template>structures/pers/outpost</Template>
 			<Player>1</Player>
 			<Position x="338.80271" z="547.75348"/>
 			<Orientation y="1.31691"/>
@@ -14761,42 +14761,42 @@
 			<Actor seed="35136"/>
 		</Entity>
 		<Entity uid="2584">
-			<Template>gaia/special_treasure_metal_persian_small</Template>
+			<Template>gaia/treasure/metal_persian_small</Template>
 			<Player>1</Player>
 			<Position x="326.56507" z="576.05524"/>
 			<Orientation y="-2.75901"/>
 			<Actor seed="51448"/>
 		</Entity>
 		<Entity uid="2586">
-			<Template>gaia/special_treasure_metal_persian_bigl</Template>
+			<Template>gaia/treasure/metal_persian_bigl</Template>
 			<Player>1</Player>
 			<Position x="320.28537" z="584.77991"/>
 			<Orientation y="0.77724"/>
 			<Actor seed="36480"/>
 		</Entity>
 		<Entity uid="2587">
-			<Template>gaia/special_treasure_stone</Template>
+			<Template>gaia/treasure/stone</Template>
 			<Player>1</Player>
 			<Position x="334.51371" z="560.46406"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="59712"/>
 		</Entity>
 		<Entity uid="2588">
-			<Template>gaia/special_treasure_stone</Template>
+			<Template>gaia/treasure/stone</Template>
 			<Player>1</Player>
 			<Position x="331.58326" z="550.67786"/>
 			<Orientation y="0.33588"/>
 			<Actor seed="1958"/>
 		</Entity>
 		<Entity uid="2589">
-			<Template>gaia/special_treasure_stone</Template>
+			<Template>gaia/treasure/stone</Template>
 			<Player>1</Player>
 			<Position x="329.0926" z="553.59668"/>
 			<Orientation y="-0.0123"/>
 			<Actor seed="62536"/>
 		</Entity>
 		<Entity uid="2590">
-			<Template>gaia/special_treasure_stone</Template>
+			<Template>gaia/treasure/stone</Template>
 			<Player>1</Player>
 			<Position x="349.84745" z="563.22114"/>
 			<Orientation y="2.35621"/>
@@ -16851,21 +16851,21 @@
 			<Actor seed="13796"/>
 		</Entity>
 		<Entity uid="2924">
-			<Template>gaia/special_treasure_stone</Template>
+			<Template>gaia/treasure/stone</Template>
 			<Player>1</Player>
 			<Position x="623.42273" z="254.31766"/>
 			<Orientation y="-2.16033"/>
 			<Actor seed="34902"/>
 		</Entity>
 		<Entity uid="2925">
-			<Template>gaia/special_treasure_stone</Template>
+			<Template>gaia/treasure/stone</Template>
 			<Player>1</Player>
 			<Position x="614.96265" z="268.33414"/>
 			<Orientation y="-2.23263"/>
 			<Actor seed="61758"/>
 		</Entity>
 		<Entity uid="2926">
-			<Template>gaia/special_treasure_stone</Template>
+			<Template>gaia/treasure/stone</Template>
 			<Player>1</Player>
 			<Position x="606.97388" z="248.58729"/>
 			<Orientation y="2.35621"/>
@@ -18352,14 +18352,14 @@
 			<Actor seed="33456"/>
 		</Entity>
 		<Entity uid="3158">
-			<Template>gaia/special_treasure_metal_persian_small</Template>
+			<Template>gaia/treasure/metal_persian_small</Template>
 			<Player>0</Player>
 			<Position x="653.75983" z="321.12354"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="40912"/>
 		</Entity>
 		<Entity uid="3159">
-			<Template>gaia/special_treasure_metal_persian_small</Template>
+			<Template>gaia/treasure/metal_persian_small</Template>
 			<Player>0</Player>
 			<Position x="653.3407" z="333.98932"/>
 			<Orientation y="2.35621"/>
@@ -29457,7 +29457,7 @@
 			<Actor seed="31156"/>
 		</Entity>
 		<Entity uid="5004">
-			<Template>structures/pers_outpost</Template>
+			<Template>structures/pers/outpost</Template>
 			<Player>1</Player>
 			<Position x="940.21479" z="647.52076"/>
 			<Orientation y="-1.48328"/>
@@ -29465,7 +29465,7 @@
 			<Actor seed="42506"/>
 		</Entity>
 		<Entity uid="5005">
-			<Template>structures/pers_outpost</Template>
+			<Template>structures/pers/outpost</Template>
 			<Player>1</Player>
 			<Position x="936.89704" z="704.51319"/>
 			<Orientation y="-2.13671"/>
@@ -30204,14 +30204,14 @@
 			<Actor seed="43676"/>
 		</Entity>
 		<Entity uid="5120">
-			<Template>structures/pers_outpost</Template>
+			<Template>structures/pers/outpost</Template>
 			<Player>0</Player>
 			<Position x="1416.8296" z="662.75397"/>
 			<Orientation y="2.92356"/>
 			<Actor seed="32540"/>
 		</Entity>
 		<Entity uid="5122">
-			<Template>structures/pers_outpost</Template>
+			<Template>structures/pers/outpost</Template>
 			<Player>0</Player>
 			<Position x="1432.31812" z="577.53303"/>
 			<Orientation y="-4.54389"/>
@@ -30663,7 +30663,7 @@
 			<Actor seed="46776"/>
 		</Entity>
 		<Entity uid="5201">
-			<Template>structures/pers_outpost</Template>
+			<Template>structures/pers/outpost</Template>
 			<Player>0</Player>
 			<Position x="266.63675" z="1179.55958"/>
 			<Orientation y="-0.90966"/>

@@ -601,7 +601,7 @@
 			<Actor seed="7065"/>
 		</Entity>
 		<Entity uid="266">
-			<Template>structures/iber_outpost</Template>
+			<Template>structures/iber/outpost</Template>
 			<Player>1</Player>
 			<Position x="552.89124" z="847.90308"/>
 			<Orientation y="2.35621"/>
@@ -678,181 +678,181 @@
 			<Actor seed="12119"/>
 		</Entity>
 		<Entity uid="279">
-			<Template>units/iber_hero_caros</Template>
+			<Template>units/iber/hero_caros</Template>
 			<Player>1</Player>
 			<Position x="554.56928" z="697.27387"/>
 			<Orientation y="1.22304"/>
 		</Entity>
 		<Entity uid="280">
-			<Template>units/iber_infantry_swordsman_b</Template>
+			<Template>units/iber/infantry_swordsman_b</Template>
 			<Player>1</Player>
 			<Position x="558.1839" z="721.2024"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="22011"/>
 		</Entity>
 		<Entity uid="281">
-			<Template>units/iber_infantry_swordsman_b</Template>
+			<Template>units/iber/infantry_swordsman_b</Template>
 			<Player>1</Player>
 			<Position x="553.36255" z="719.64338"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="62408"/>
 		</Entity>
 		<Entity uid="282">
-			<Template>units/iber_infantry_swordsman_b</Template>
+			<Template>units/iber/infantry_swordsman_b</Template>
 			<Player>1</Player>
 			<Position x="548.71991" z="717.81971"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="15710"/>
 		</Entity>
 		<Entity uid="283">
-			<Template>units/iber_infantry_swordsman_b</Template>
+			<Template>units/iber/infantry_swordsman_b</Template>
 			<Player>1</Player>
 			<Position x="544.01978" z="716.05115"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="63563"/>
 		</Entity>
 		<Entity uid="284">
-			<Template>units/iber_infantry_swordsman_b</Template>
+			<Template>units/iber/infantry_swordsman_b</Template>
 			<Player>1</Player>
 			<Position x="542.92322" z="719.26594"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="38658"/>
 		</Entity>
 		<Entity uid="285">
-			<Template>units/iber_infantry_swordsman_b</Template>
+			<Template>units/iber/infantry_swordsman_b</Template>
 			<Player>1</Player>
 			<Position x="547.65522" z="721.35663"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="30412"/>
 		</Entity>
 		<Entity uid="286">
-			<Template>units/iber_infantry_swordsman_b</Template>
+			<Template>units/iber/infantry_swordsman_b</Template>
 			<Player>1</Player>
 			<Position x="552.43525" z="722.55805"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="48799"/>
 		</Entity>
 		<Entity uid="287">
-			<Template>units/iber_infantry_swordsman_b</Template>
+			<Template>units/iber/infantry_swordsman_b</Template>
 			<Player>1</Player>
 			<Position x="556.74628" z="723.511"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="16015"/>
 		</Entity>
 		<Entity uid="288">
-			<Template>units/iber_infantry_swordsman_b</Template>
+			<Template>units/iber/infantry_swordsman_b</Template>
 			<Player>1</Player>
 			<Position x="555.20051" z="727.7032"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="51726"/>
 		</Entity>
 		<Entity uid="289">
-			<Template>units/iber_infantry_swordsman_b</Template>
+			<Template>units/iber/infantry_swordsman_b</Template>
 			<Player>1</Player>
 			<Position x="551.01966" z="725.49683"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="48557"/>
 		</Entity>
 		<Entity uid="290">
-			<Template>units/iber_infantry_swordsman_b</Template>
+			<Template>units/iber/infantry_swordsman_b</Template>
 			<Player>1</Player>
 			<Position x="545.79902" z="723.53028"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="8071"/>
 		</Entity>
 		<Entity uid="291">
-			<Template>units/iber_infantry_swordsman_b</Template>
+			<Template>units/iber/infantry_swordsman_b</Template>
 			<Player>1</Player>
 			<Position x="541.09437" z="721.49054"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="38942"/>
 		</Entity>
 		<Entity uid="292">
-			<Template>units/iber_infantry_swordsman_b</Template>
+			<Template>units/iber/infantry_swordsman_b</Template>
 			<Player>1</Player>
 			<Position x="539.2367" z="724.56318"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="31195"/>
 		</Entity>
 		<Entity uid="293">
-			<Template>units/iber_infantry_swordsman_b</Template>
+			<Template>units/iber/infantry_swordsman_b</Template>
 			<Player>1</Player>
 			<Position x="544.10865" z="726.60572"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="3756"/>
 		</Entity>
 		<Entity uid="294">
-			<Template>units/iber_infantry_swordsman_b</Template>
+			<Template>units/iber/infantry_swordsman_b</Template>
 			<Player>1</Player>
 			<Position x="549.32203" z="728.79242"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="27331"/>
 		</Entity>
 		<Entity uid="295">
-			<Template>units/iber_infantry_swordsman_b</Template>
+			<Template>units/iber/infantry_swordsman_b</Template>
 			<Player>1</Player>
 			<Position x="553.45331" z="730.51801"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="33001"/>
 		</Entity>
 		<Entity uid="296">
-			<Template>units/iber_infantry_swordsman_b</Template>
+			<Template>units/iber/infantry_swordsman_b</Template>
 			<Player>1</Player>
 			<Position x="534.18" z="722.53138"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="48127"/>
 		</Entity>
 		<Entity uid="297">
-			<Template>units/iber_infantry_swordsman_b</Template>
+			<Template>units/iber/infantry_swordsman_b</Template>
 			<Player>1</Player>
 			<Position x="535.00483" z="719.71631"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="9137"/>
 		</Entity>
 		<Entity uid="298">
-			<Template>units/iber_infantry_swordsman_b</Template>
+			<Template>units/iber/infantry_swordsman_b</Template>
 			<Player>1</Player>
 			<Position x="536.2547" z="716.81202"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="11330"/>
 		</Entity>
 		<Entity uid="299">
-			<Template>units/iber_infantry_swordsman_b</Template>
+			<Template>units/iber/infantry_swordsman_b</Template>
 			<Player>1</Player>
 			<Position x="538.11872" z="714.10572"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="11996"/>
 		</Entity>
 		<Entity uid="300">
-			<Template>units/iber_infantry_swordsman_b</Template>
+			<Template>units/iber/infantry_swordsman_b</Template>
 			<Player>1</Player>
 			<Position x="533.70441" z="726.01276"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="37868"/>
 		</Entity>
 		<Entity uid="301">
-			<Template>units/iber_infantry_swordsman_b</Template>
+			<Template>units/iber/infantry_swordsman_b</Template>
 			<Player>1</Player>
 			<Position x="538.97345" z="727.91181"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="9365"/>
 		</Entity>
 		<Entity uid="302">
-			<Template>units/iber_infantry_swordsman_b</Template>
+			<Template>units/iber/infantry_swordsman_b</Template>
 			<Player>1</Player>
 			<Position x="543.826" z="730.45215"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="31103"/>
 		</Entity>
 		<Entity uid="303">
-			<Template>units/iber_infantry_swordsman_b</Template>
+			<Template>units/iber/infantry_swordsman_b</Template>
 			<Player>1</Player>
 			<Position x="547.89081" z="731.9336"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="26683"/>
 		</Entity>
 		<Entity uid="304">
-			<Template>units/iber_infantry_swordsman_b</Template>
+			<Template>units/iber/infantry_swordsman_b</Template>
 			<Player>1</Player>
 			<Position x="552.02247" z="733.46912"/>
 			<Orientation y="2.35621"/>
@@ -12091,7 +12091,7 @@
 			<Actor seed="29824"/>
 		</Entity>
 		<Entity uid="2190">
-			<Template>units/rome_hero_scipio</Template>
+			<Template>units/rome/hero_scipio</Template>
 			<Player>2</Player>
 			<Position x="635.998" z="226.04691"/>
 			<Orientation y="-0.46192"/>

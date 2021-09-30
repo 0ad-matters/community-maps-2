@@ -11485,7 +11485,7 @@
 			<Actor seed="10412"/>
 		</Entity>
 		<Entity uid="1674">
-			<Template>gaia/fauna_crocodile_nile_nile</Template>
+			<Template>gaia/fauna_crocodile_nile</Template>
 			<Player>0</Player>
 			<Position x="863.6319" z="187.95899"/>
 			<Orientation y="2.35621"/>

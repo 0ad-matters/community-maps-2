@@ -215,7 +215,7 @@ Trigger.prototype.PlayerCommandHandler = function(data) {
 var persianAttacker = {
 
 	champion: [
-							   "units/pers_champion_infantry",
+							   "units/pers/champion_infantry",
 							   "units/pers_kardakes_hoplite"
 			  ],
 	infantry: [

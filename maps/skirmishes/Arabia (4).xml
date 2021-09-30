@@ -1957,49 +1957,49 @@
 			<Actor seed="39957"/>
 		</Entity>
 		<Entity uid="276">
-			<Template>units/ptol_cavalry_archer_e</Template>
+			<Template>units/ptol/cavalry_archer_e</Template>
 			<Player>0</Player>
 			<Position x="467.80662" z="504.18607"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="60657"/>
 		</Entity>
 		<Entity uid="277">
-			<Template>units/ptol_cavalry_archer_e</Template>
+			<Template>units/ptol/cavalry_archer_e</Template>
 			<Player>0</Player>
 			<Position x="470.93747" z="508.5253"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="14067"/>
 		</Entity>
 		<Entity uid="278">
-			<Template>units/ptol_cavalry_archer_e</Template>
+			<Template>units/ptol/cavalry_archer_e</Template>
 			<Player>0</Player>
 			<Position x="498.38392" z="536.10511"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="59597"/>
 		</Entity>
 		<Entity uid="279">
-			<Template>units/ptol_cavalry_archer_e</Template>
+			<Template>units/ptol/cavalry_archer_e</Template>
 			<Player>0</Player>
 			<Position x="504.42737" z="543.46961"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="30345"/>
 		</Entity>
 		<Entity uid="280">
-			<Template>units/ptol_cavalry_archer_e</Template>
+			<Template>units/ptol/cavalry_archer_e</Template>
 			<Player>0</Player>
 			<Position x="514.21418" z="508.70246"/>
 			<Orientation y="3.20756"/>
 			<Actor seed="40639"/>
 		</Entity>
 		<Entity uid="281">
-			<Template>units/ptol_cavalry_archer_e</Template>
+			<Template>units/ptol/cavalry_archer_e</Template>
 			<Player>0</Player>
 			<Position x="547.25208" z="499.40448"/>
 			<Orientation y="3.46853"/>
 			<Actor seed="33240"/>
 		</Entity>
 		<Entity uid="282">
-			<Template>units/ptol_cavalry_archer_e</Template>
+			<Template>units/ptol/cavalry_archer_e</Template>
 			<Player>0</Player>
 			<Position x="563.89966" z="473.0359"/>
 			<Orientation y="4.6368"/>

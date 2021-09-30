@@ -1029,7 +1029,7 @@
 			<Actor seed="58395"/>
 		</Entity>
 		<Entity uid="148">
-			<Template>structures/rome_outpost</Template>
+			<Template>structures/rome/outpost</Template>
 			<Player>1</Player>
 			<Position x="1410.87635" z="934.15241"/>
 			<Orientation y="3.32747"/>
@@ -1403,21 +1403,21 @@
 			<Actor seed="48713"/>
 		</Entity>
 		<Entity uid="212">
-			<Template>structures/rome_outpost</Template>
+			<Template>structures/rome/outpost</Template>
 			<Player>1</Player>
 			<Position x="769.02295" z="96.9862"/>
 			<Orientation y="-1.61158"/>
 			<Actor seed="151"/>
 		</Entity>
 		<Entity uid="213">
-			<Template>structures/rome_outpost</Template>
+			<Template>structures/rome/outpost</Template>
 			<Player>1</Player>
 			<Position x="919.40156" z="178.21753"/>
 			<Orientation y="-2.31188"/>
 			<Actor seed="22934"/>
 		</Entity>
 		<Entity uid="214">
-			<Template>structures/rome_outpost</Template>
+			<Template>structures/rome/outpost</Template>
 			<Player>1</Player>
 			<Position x="966.75446" z="571.0564"/>
 			<Orientation y="3.9329"/>
@@ -9646,14 +9646,14 @@
 			<Actor seed="10796"/>
 		</Entity>
 		<Entity uid="1590">
-			<Template>units/athen_support_female_citizen</Template>
+			<Template>units/athen/support_female_citizen</Template>
 			<Player>3</Player>
 			<Position x="760.0542" z="1408.06019"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="52457"/>
 		</Entity>
 		<Entity uid="1591">
-			<Template>units/athen_support_female_citizen_house</Template>
+			<Template>units/athen/support_female_citizen_house</Template>
 			<Player>3</Player>
 			<Position x="763.99512" z="1412.20472"/>
 			<Orientation y="2.35621"/>
@@ -10319,42 +10319,42 @@
 			<Actor seed="23448"/>
 		</Entity>
 		<Entity uid="1702">
-			<Template>units/athen_champion_infantry</Template>
+			<Template>units/athen/champion_infantry</Template>
 			<Player>3</Player>
 			<Position x="595.77204" z="1004.11225"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="41373"/>
 		</Entity>
 		<Entity uid="1703">
-			<Template>units/athen_champion_infantry</Template>
+			<Template>units/athen/champion_infantry</Template>
 			<Player>3</Player>
 			<Position x="597.745" z="1006.07587"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="27273"/>
 		</Entity>
 		<Entity uid="1704">
-			<Template>units/athen_champion_infantry</Template>
+			<Template>units/athen/champion_infantry</Template>
 			<Player>3</Player>
 			<Position x="599.85798" z="1008.11475"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="12690"/>
 		</Entity>
 		<Entity uid="1706">
-			<Template>units/athen_champion_infantry</Template>
+			<Template>units/athen/champion_infantry</Template>
 			<Player>3</Player>
 			<Position x="597.68177" z="1002.29249"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="42142"/>
 		</Entity>
 		<Entity uid="1707">
-			<Template>units/athen_champion_infantry</Template>
+			<Template>units/athen/champion_infantry</Template>
 			<Player>3</Player>
 			<Position x="599.72657" z="1004.08851"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="11890"/>
 		</Entity>
 		<Entity uid="1708">
-			<Template>units/athen_champion_infantry</Template>
+			<Template>units/athen/champion_infantry</Template>
 			<Player>3</Player>
 			<Position x="601.77948" z="1006.17133"/>
 			<Orientation y="2.35621"/>
@@ -12722,28 +12722,28 @@
 			<Actor seed="14564"/>
 		</Entity>
 		<Entity uid="2170">
-			<Template>units/athen_champion_infantry</Template>
+			<Template>units/athen/champion_infantry</Template>
 			<Player>3</Player>
 			<Position x="757.74061" z="1431.61561"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="12690"/>
 		</Entity>
 		<Entity uid="2171">
-			<Template>units/athen_champion_infantry</Template>
+			<Template>units/athen/champion_infantry</Template>
 			<Player>3</Player>
 			<Position x="759.66211" z="1429.67212"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="38015"/>
 		</Entity>
 		<Entity uid="2172">
-			<Template>units/athen_champion_infantry</Template>
+			<Template>units/athen/champion_infantry</Template>
 			<Player>3</Player>
 			<Position x="761.6883" z="1435.44007"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="12690"/>
 		</Entity>
 		<Entity uid="2173">
-			<Template>units/athen_champion_infantry</Template>
+			<Template>units/athen/champion_infantry</Template>
 			<Player>3</Player>
 			<Position x="763.57844" z="1433.5907"/>
 			<Orientation y="2.35622"/>
@@ -12785,63 +12785,63 @@
 			<Actor seed="52313"/>
 		</Entity>
 		<Entity uid="2179">
-			<Template>units/rome_champion_infantry</Template>
+			<Template>units/rome/champion_infantry</Template>
 			<Player>1</Player>
 			<Position x="784.08033" z="47.57413"/>
 			<Orientation y="1.30164"/>
 			<Actor seed="53041"/>
 		</Entity>
 		<Entity uid="2180">
-			<Template>units/rome_champion_infantry</Template>
+			<Template>units/rome/champion_infantry</Template>
 			<Player>1</Player>
 			<Position x="782.69275" z="52.45846"/>
 			<Orientation y="1.30164"/>
 			<Actor seed="8973"/>
 		</Entity>
 		<Entity uid="2181">
-			<Template>units/rome_champion_infantry</Template>
+			<Template>units/rome/champion_infantry</Template>
 			<Player>1</Player>
 			<Position x="780.8827" z="57.9162"/>
 			<Orientation y="1.30164"/>
 			<Actor seed="25056"/>
 		</Entity>
 		<Entity uid="2182">
-			<Template>units/rome_champion_infantry</Template>
+			<Template>units/rome/champion_infantry</Template>
 			<Player>1</Player>
 			<Position x="778.96534" z="63.62421"/>
 			<Orientation y="1.30164"/>
 			<Actor seed="47239"/>
 		</Entity>
 		<Entity uid="2183">
-			<Template>units/rome_champion_infantry</Template>
+			<Template>units/rome/champion_infantry</Template>
 			<Player>1</Player>
 			<Position x="777.63086" z="68.85026"/>
 			<Orientation y="1.30164"/>
 			<Actor seed="12316"/>
 		</Entity>
 		<Entity uid="2184">
-			<Template>units/rome_champion_infantry</Template>
+			<Template>units/rome/champion_infantry</Template>
 			<Player>1</Player>
 			<Position x="786.30787" z="50.73195"/>
 			<Orientation y="1.30164"/>
 			<Actor seed="55167"/>
 		</Entity>
 		<Entity uid="2185">
-			<Template>units/rome_champion_infantry</Template>
+			<Template>units/rome/champion_infantry</Template>
 			<Player>1</Player>
 			<Position x="784.43567" z="55.72648"/>
 			<Orientation y="1.30164"/>
 			<Actor seed="5993"/>
 		</Entity>
 		<Entity uid="2186">
-			<Template>units/rome_champion_infantry</Template>
+			<Template>units/rome/champion_infantry</Template>
 			<Player>1</Player>
 			<Position x="782.9148" z="61.78316"/>
 			<Orientation y="1.30164"/>
 			<Actor seed="16743"/>
 		</Entity>
 		<Entity uid="2187">
-			<Template>units/rome_champion_infantry</Template>
+			<Template>units/rome/champion_infantry</Template>
 			<Player>1</Player>
 			<Position x="781.81916" z="66.6541"/>
 			<Orientation y="1.30164"/>
@@ -15955,63 +15955,63 @@
 			<Actor seed="11697"/>
 		</Entity>
 		<Entity uid="2638">
-			<Template>units/rome_champion_infantry</Template>
+			<Template>units/rome/champion_infantry</Template>
 			<Player>1</Player>
 			<Position x="778.50355" z="53.94396"/>
 			<Orientation y="1.30164"/>
 			<Actor seed="5993"/>
 		</Entity>
 		<Entity uid="2639">
-			<Template>units/rome_champion_infantry</Template>
+			<Template>units/rome/champion_infantry</Template>
 			<Player>1</Player>
 			<Position x="780.37574" z="48.94942"/>
 			<Orientation y="1.30164"/>
 			<Actor seed="55167"/>
 		</Entity>
 		<Entity uid="2640">
-			<Template>units/rome_champion_infantry</Template>
+			<Template>units/rome/champion_infantry</Template>
 			<Player>1</Player>
 			<Position x="773.03321" z="61.84168"/>
 			<Orientation y="1.30164"/>
 			<Actor seed="47239"/>
 		</Entity>
 		<Entity uid="2641">
-			<Template>units/rome_champion_infantry</Template>
+			<Template>units/rome/champion_infantry</Template>
 			<Player>1</Player>
 			<Position x="774.95057" z="56.13367"/>
 			<Orientation y="1.30164"/>
 			<Actor seed="25056"/>
 		</Entity>
 		<Entity uid="2642">
-			<Template>units/rome_champion_infantry</Template>
+			<Template>units/rome/champion_infantry</Template>
 			<Player>1</Player>
 			<Position x="778.1482" z="45.7916"/>
 			<Orientation y="1.30164"/>
 			<Actor seed="53041"/>
 		</Entity>
 		<Entity uid="2643">
-			<Template>units/rome_champion_infantry</Template>
+			<Template>units/rome/champion_infantry</Template>
 			<Player>1</Player>
 			<Position x="776.76063" z="50.67594"/>
 			<Orientation y="1.30164"/>
 			<Actor seed="8973"/>
 		</Entity>
 		<Entity uid="2644">
-			<Template>units/rome_champion_infantry</Template>
+			<Template>units/rome/champion_infantry</Template>
 			<Player>1</Player>
 			<Position x="771.69874" z="67.06774"/>
 			<Orientation y="1.30164"/>
 			<Actor seed="12316"/>
 		</Entity>
 		<Entity uid="2645">
-			<Template>units/rome_champion_infantry</Template>
+			<Template>units/rome/champion_infantry</Template>
 			<Player>1</Player>
 			<Position x="775.88703" z="64.87157"/>
 			<Orientation y="1.30164"/>
 			<Actor seed="14419"/>
 		</Entity>
 		<Entity uid="2646">
-			<Template>units/rome_champion_infantry</Template>
+			<Template>units/rome/champion_infantry</Template>
 			<Player>1</Player>
 			<Position x="776.98267" z="60.00063"/>
 			<Orientation y="1.30164"/>
@@ -16032,35 +16032,35 @@
 			<Actor seed="50526"/>
 		</Entity>
 		<Entity uid="2649">
-			<Template>units/rome_champion_infantry</Template>
+			<Template>units/rome/champion_infantry</Template>
 			<Player>1</Player>
 			<Position x="785.37073" z="65.77594"/>
 			<Orientation y="1.30164"/>
 			<Actor seed="47239"/>
 		</Entity>
 		<Entity uid="2650">
-			<Template>units/rome_champion_infantry</Template>
+			<Template>units/rome/champion_infantry</Template>
 			<Player>1</Player>
 			<Position x="787.2881" z="60.06794"/>
 			<Orientation y="1.30164"/>
 			<Actor seed="25056"/>
 		</Entity>
 		<Entity uid="2651">
-			<Template>units/rome_champion_infantry</Template>
+			<Template>units/rome/champion_infantry</Template>
 			<Player>1</Player>
 			<Position x="790.48572" z="49.72587"/>
 			<Orientation y="1.30164"/>
 			<Actor seed="53041"/>
 		</Entity>
 		<Entity uid="2652">
-			<Template>units/rome_champion_infantry</Template>
+			<Template>units/rome/champion_infantry</Template>
 			<Player>1</Player>
 			<Position x="789.09815" z="54.6102"/>
 			<Orientation y="1.30164"/>
 			<Actor seed="8973"/>
 		</Entity>
 		<Entity uid="2653">
-			<Template>units/rome_champion_infantry</Template>
+			<Template>units/rome/champion_infantry</Template>
 			<Player>1</Player>
 			<Position x="784.03626" z="71.002"/>
 			<Orientation y="1.30164"/>
