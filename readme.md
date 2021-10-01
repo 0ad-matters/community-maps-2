@@ -22,6 +22,7 @@ maps can be easily accessed in game with the filter "Community Maps".
 
 | Map Name | Author | Link | Publication Date |
 |----------|--------|------|------------------|
+|Jerusalem VII-VI (2)|[MardukAmmon](https://wildfiregames.com/forum/profile/30634-mardukammon/)|[Forum](https://wildfiregames.com/forum/topic/50599-jerusalem-vii-vi/)|04-08-2019|
 |Caribbean Island (6)|[Marcus Brutus Bombastus](https://wildfiregames.com/forum/index.php?/profile/30405-marcus-brutus-bombastus/)|[Forum](https://wildfiregames.com/forum/index.php?/topic/27363-first-try-caribbean-island/)|17-12-2019|
 |Lonely Mountain (4)|[MarcusAureliu#s](https://wildfiregames.com/forum/index.php?/profile/28269-marcusaurelius/)|[Forum](https://wildfiregames.com/forum/index.php?/topic/26299-the-lonely-mountain-my-first-try-at-map-design/)|19-06-2019|
 | Northern Islands (4) | [Scarecrow](https://wildfiregames.com/forum/index.php?/profile/29189-scarecrow/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/25698-atlas-map-northern-islands-4/) | 18-04-2019 |
