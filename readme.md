@@ -22,7 +22,7 @@ maps can be easily accessed in game with the filter "Community Maps".
 
 | Map Name | Author | Link | Publication Date |
 |----------|--------|------|------------------|
-|Jerusalem VII-VI (2)|[MardukAmmon](https://wildfiregames.com/forum/profile/30634-mardukammon/)|[Forum](https://wildfiregames.com/forum/topic/50599-jerusalem-vii-vi/)|04-08-2019|
+|Jerusalem VII-VI (2)|[MardukAmmon](https://wildfiregames.com/forum/profile/30634-mardukammon/)|[Forum](https://wildfiregames.com/forum/topic/50599-jerusalem-vii-vi/)|04-08-2021|
 |Caribbean Island (6)|[Marcus Brutus Bombastus](https://wildfiregames.com/forum/index.php?/profile/30405-marcus-brutus-bombastus/)|[Forum](https://wildfiregames.com/forum/index.php?/topic/27363-first-try-caribbean-island/)|17-12-2019|
 |Lonely Mountain (4)|[MarcusAureliu#s](https://wildfiregames.com/forum/index.php?/profile/28269-marcusaurelius/)|[Forum](https://wildfiregames.com/forum/index.php?/topic/26299-the-lonely-mountain-my-first-try-at-map-design/)|19-06-2019|
 | Northern Islands (4) | [Scarecrow](https://wildfiregames.com/forum/index.php?/profile/29189-scarecrow/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/25698-atlas-map-northern-islands-4/) | 18-04-2019 |
@@ -46,7 +46,8 @@ maps can be easily accessed in game with the filter "Community Maps".
 
 | Map Name | Author | Link | Publication Date |
 |----------|--------|------|------------------|
-|South East Asia (6)|[crazy_Baboon](https://wildfiregames.com/forum/index.php?/profile/29330-crazy_baboon/)|[Forum](https://wildfiregames.com/forum/index.php?/topic/26199-how-to-contribute-a-new-map/)|09-06-2019|
+| The Limes | [nifa](https://wildfiregames.com/forum/profile/33088-nifa/) | [Forum](https://wildfiregames.com/forum/topic/36065-new-scenario-map-the-limes/) | 02-02-2021 |
+| South East Asia (6)|[crazy_Baboon](https://wildfiregames.com/forum/index.php?/profile/29330-crazy_baboon/)|[Forum](https://wildfiregames.com/forum/index.php?/topic/26199-how-to-contribute-a-new-map/)|09-06-2019|
 | Asian Campaign III a.C. | [imperium](https://wildfiregames.com/forum/index.php?/profile/21662-imperium/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/25958-new-map-20-asia/) | 12-05-2019 |
 | Mappa Europea III Secolo a.C. | [imperium](https://wildfiregames.com/forum/index.php?/profile/21662-imperium/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/25413-new-map-europe/) | 26-02-2019 |
 | Paradise valley | [Nevar](https://wildfiregames.com/forum/index.php?/profile/28458-nevar/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/25087-skirmish-paradise-valley-4/) | 23-11-2018 |
@@ -65,7 +66,6 @@ maps can be easily accessed in game with the filter "Community Maps".
 | Raiders in the Alps (3) | [Sidi](https://wildfiregames.com/forum/index.php?/profile/21697-sidi/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/21030-scenario-a-roman-invasion-in-the-alps/) | 10-08-2016 |
 | Qart Hadasht (Cartagena Punica) | [tavius1994](https://wildfiregames.com/forum/index.php?/profile/21651-tavius1994/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/20976-new-map-qart-hadast-punic-carthagonova/) | 17-07-2016 |
 | Obsidio Cyzicus | [Garaf](https://wildfiregames.com/forum/index.php?/profile/21410-garaf/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/20741-scenario-obsidio-cyzicus/) | 09-05-2016 |
-| The Limes | [nifa](https://wildfiregames.com/forum/profile/33088-nifa/) | [Forum](https://wildfiregames.com/forum/topic/36065-new-scenario-map-the-limes/) | 02-02-2021 |
 
 (\*) [Kimball](https://wildfiregames.com/forum/index.php?/profile/2104-kimball/), [Yodaspirine](https://wildfiregames.com/forum/index.php?/profile/9973-yodaspirine/), [idanwin](https://wildfiregames.com/forum/index.php?/profile/4287-idanwin/), [fcxSanya](https://wildfiregames.com/forum/index.php?/profile/9635-fcxsanya/), [Lion.Kanzen](https://wildfiregames.com/forum/index.php?/profile/13202-lionkanzen/), [niektb](https://wildfiregames.com/forum/index.php?/profile/15513-niektb/), [svott](https://wildfiregames.com/forum/index.php?/profile/21134-svott/), [Skhorn](https://wildfiregames.com/forum/index.php?/profile/16493-skhorn/)
 
