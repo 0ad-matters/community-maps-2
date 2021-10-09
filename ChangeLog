@@ -1,3 +1,9 @@
+2021-10-09
+
+  * Fix breakage with stock 0ad random maps
+  * Fix most random maps (migrate for recent compatibility changes in 0ad)
+  * v0.25.2 released
+
 2021-10-01
 
   * Skirmish map added: Jerusalem VII-VI

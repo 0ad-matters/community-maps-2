@@ -276,7 +276,7 @@ createObjectGroups(
 
 Engine.SetProgress(98);
 setSunElevation(2 * Math.PI * 0.25 / 10.0)
-setTerrainAmbientColor(0.8, 0.55, 0.55)
+setAmbientColor(0.8, 0.55, 0.55)
 setFogThickness(0.3)
 setSkySet("sunset 2")
 setSunColor(0.7, 0.55, 0.55)

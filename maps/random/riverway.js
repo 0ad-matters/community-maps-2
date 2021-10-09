@@ -33,10 +33,10 @@ const oStoneSmall = g_Gaia.stoneSmall;
 const oMetalLarge = g_Gaia.metalLarge;
 const oMetalSmall = g_Gaia.metalSmall;
 const oTreasure = ["food_barrel", "food_bin", "wood", "metal", "stone"].map(v => tWater + TERRAIN_SEPARATOR + "gaia/treasure/" + v);
-const oFemale = "units/gaul_support_female_citizen";
-const oHealer = "units/gaul_support_healer_b";
-const oSkirmisher = "units/gaul_infantry_javelinist_b";
-const oNakedFanatic = "units/gaul_champion_fanatic";
+const oFemale = "units/gaul/support_female_citizen";
+const oHealer = "units/gaul/support_healer_b";
+const oSkirmisher = "units/gaul/infantry_javelineer_b";
+const oNakedFanatic = "units/gaul/champion_fanatic";
 const oGoat = "gaia/fauna_goat";
 
 
