@@ -1,3 +1,10 @@
+2021-10-10
+
+  * re-add simulation/templates/special/filter/disableGarrisonHolder.xml, which
+    Andy accidentally deleted in a previous commit. (fixes
+    Fert random maps)
+  * v0.25.3 released
+
 2021-10-09
 
   * Fix breakage with stock 0ad random maps

@@ -77,7 +77,7 @@ let genMapFertWithMountain = function (isMountain)
 
     Engine.SetProgress(10);
 
-    g_Map.placeEntityPassable("undeletable|ungarrisonable|structures/brit/wonder", 0, new Vector2D(g_Map.size / 2, g_Map.size / 2), 0.0);
+    g_Map.placeEntityPassable("undeletable|disableGarrisonHolder|structures/brit/wonder", 0, new Vector2D(g_Map.size / 2, g_Map.size / 2), 0.0);
 
     var mountain = {};
     mountain.height = isMountain ? 100.0 * getNumPlayers() / 8.0 : 0;
