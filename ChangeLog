@@ -1,12 +1,12 @@
-2021-10-11
-  * Add Mainland TG and African Plains TG (random maps)
-  * Add Cliffs of Carnage (skirmish map)
-
 2021-10-10
   * re-add simulation/templates/special/filter/disableGarrisonHolder.xml, which
     Andy accidentally deleted in a previous commit. (fixes
     Fert random maps)
   * v0.25.3 released
+
+  * Add Mainland TG and African Plains TG (random maps)
+  * Add Cliffs of Carnage (skirmish map)
+  * v0.25.4 released
 
 2021-10-09
 
