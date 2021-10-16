@@ -1,14 +1,13 @@
 /**
  * Place on an arc on a circle, 1 arc per team. Each team member is on the same arc.
  * @param {Array[int]} playerIDs
- * @param {float} center
  * @param {float} radius
  * @param {float} mapAngle
- * @param {float} teamGapRatio Ratio difference between team gap and players on the same team Should be 0 to 1.
+ * @param {float} teamGapFrac Ratio difference between team gap and players on the same team Should be 0 to 1.
  * e.g. 0.8 means the ratio team gap:team player gap is 8:2. n.b. < 0.5 means enemies are closer
  * than team members are to each other
  */
-function playerPlacementMultiArcs(playerIDs, center, radius, mapAngle, teamGapFrac) {
+function playerPlacementMultiArcs(playerIDs, radius, mapAngle, teamGapFrac) {
 	let playerTeams = playerIDs.map(getPlayerTeam);
 	let uniqueTeams = new Set(playerTeams);
 	let nTeams = uniqueTeams.size;
@@ -54,20 +53,14 @@ function playerPlacementMultiArcs(playerIDs, center, radius, mapAngle, teamGapFr
 	}
 
 	const teamPlayerGapFrac = 1 - teamGapFrac;
-
 	const totalGapCount = teamGapFrac*nTeams + teamPlayerGapFrac*(nPlayers-nTeams);
-
 	const teamGapAngle = 2*Math.PI*teamGapFrac/totalGapCount;
 	const teamPlayerGapAngle = 2*Math.PI*teamPlayerGapFrac/totalGapCount;
 
-
-	function playerAngle(i) {
-
+	const playerAngleFunc = function(i) {
 		return mapAngle + teamGapAngle*teamIntMap[playerTeams[i]] + teamPlayerGapAngle*((teamPlayersIntMap[playerTeams[i]]++));
 	}
 
-	return playerPlacementCustomAngle(
-		radius,
-		center,
-		playerAngle);
+	let [playerPosition, playerAngle] = playerPlacementCustomAngle(radius, g_Map.getCenter(), playerAngleFunc);
+	return [playerIDs, playerPosition.map(p => p.round()), playerAngle, mapAngle];
 }

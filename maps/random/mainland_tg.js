@@ -1,9 +1,48 @@
 Engine.LoadLibrary("rmgen");
 Engine.LoadLibrary("rmgen-common");
+Engine.LoadLibrary("rmgen2");
 Engine.LoadLibrary("rmbiome");
 Engine.LoadLibrary("rmgen-helpers");
 
 setSelectedBiome();
+
+function createBasesMainland(playerIDs, playerPosition, walls)
+{
+	for (let i = 0; i < getNumPlayers(); ++i)
+	{
+		placePlayerBase({
+			"playerID": playerIDs[i],
+			"playerPosition": playerPosition[i],
+			"PlayerTileClass": clPlayer,
+			"BaseResourceClass": clBaseResource,
+			"Walls": g_Map.getSize() > 192 && walls, // Whether or not iberian gets starting walls
+			"CityPatch": {
+				"outerTerrain": tRoadWild,
+				"innerTerrain": tRoad
+			},
+			"Chicken": {
+			},
+			"Berries": {
+				"template": oFruitBush
+			},
+			"Mines": {
+				"types": [
+					{ "template": oMetalLarge },
+					{ "template": oStoneLarge }
+				]
+			},
+			"Trees": {
+				"template": oTree1,
+				"count": 5
+			},
+			"Decoratives": {
+				"template": aGrassShort
+			}
+		});
+	}
+
+	return [playerIDs, playerPosition];
+}
 
 const tMainTerrain = g_Terrains.mainTerrain;
 const tForestFloor1 = g_Terrains.forestFloor1;
@@ -55,41 +94,17 @@ var clMetal = g_Map.createTileClass();
 var clFood = g_Map.createTileClass();
 var clBaseResource = g_Map.createTileClass();
 
-const mapCenter = g_Map.getCenter();
-var playerIDs = sortAllPlayers();
+if (!isNomad())
+{
+	let pattern = g_MapSettings.TeamPlacement || pickRandom(Object.keys(g_PlayerbaseTypes));
+	createBasesByPattern(
+		pattern,
+		g_PlayerbaseTypes[pattern].distance,
+		g_PlayerbaseTypes[pattern].groupedDistance,
+		randomAngle(),
+		createBasesMainland);
+}
 
-placePlayerBases({
-		"PlayerPlacement": [sortAllPlayers(), ...playerPlacementMultiArcs(
-		playerIDs,
-		mapCenter,
-		fractionToTiles(0.35),
-		0,
-		0.75)],
-	"PlayerTileClass": clPlayer,
-	"BaseResourceClass": clBaseResource,
-	"CityPatch": {
-		"outerTerrain": tRoadWild,
-		"innerTerrain": tRoad
-	},
-	"Chicken": {
-	},
-	"Berries": {
-		"template": oFruitBush
-	},
-	"Mines": {
-		"types": [
-			{ "template": oMetalLarge },
-			{ "template": oStoneLarge }
-		]
-	},
-	"Trees": {
-		"template": oTree1,
-		"count": 5
-	},
-	"Decoratives": {
-		"template": aGrassShort
-	}
-});
 Engine.SetProgress(20);
 
 createBumps(avoidClasses(clPlayer, 20));

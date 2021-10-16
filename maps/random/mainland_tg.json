@@ -6,6 +6,7 @@
 		"Preview" : "mainland.png",
 		"Keywords": ["multiplayer", "community"],
 		"SupportedBiomes": "generic/",
-		"CircularMap" : true
+		"CircularMap" : true,
+		"TeamPlacements": ["line", "stronghold", "besideAllies", "randomGroup"]
 	}
 }

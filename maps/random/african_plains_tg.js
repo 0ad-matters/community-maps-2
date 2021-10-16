@@ -1,5 +1,6 @@
 Engine.LoadLibrary("rmgen");
 Engine.LoadLibrary("rmgen-common");
+Engine.LoadLibrary("rmgen2");
 Engine.LoadLibrary("rmbiome");
 Engine.LoadLibrary("rmgen-helpers");
 
@@ -8,6 +9,51 @@ if (g_MapSettings.Biome)
 else
 	setBiome("generic/savanna");
 
+function createBasesAfricanPlains(playerIDs, playerPosition, walls)
+{
+	for (let i = 0; i < getNumPlayers(); ++i)
+	{
+		placePlayerBase({
+			"playerID": playerIDs[i],
+			"playerPosition": playerPosition[i],
+			"PlayerTileClass": clPlayer,
+			"BaseResourceClass": clBaseResource,
+			"Walls": g_Map.getSize() > 192 && walls,
+			"CityPatch": {
+				"outerTerrain": tPrimary,
+				"innerTerrain": tCitytiles
+			},
+			"Chicken": {
+			},
+			"Berries": {
+				"template": oBerryBush
+			},
+			"Mines": {
+				"types": [
+					{
+						"template": oMetalLarge
+					},
+					{
+						"type": "stone_formation",
+						"template": oStoneSmall,
+						"terrain": tDirt4
+					}
+				]
+			},
+			"Trees": {
+				"template": oBaobab,
+				"count": scaleByMapSize(3, 12),
+				"minDistGroup": 2,
+				"maxDistGroup": 6,
+				"minDist": 15,
+				"maxDist": 16
+			}
+			// No decoratives
+		});
+	}
+
+	return [playerIDs, playerPosition];
+}
 
 // Pick some biome defaults and overload a few settings.
 var tPrimary = g_Terrains.mainTerrain;
@@ -69,49 +115,17 @@ var clMetal = g_Map.createTileClass();
 var clFood = g_Map.createTileClass();
 var clBaseResource = g_Map.createTileClass();
 
-const mapCenter = g_Map.getCenter();
-var playerIDs = sortAllPlayers();
+if (!isNomad())
+{
+	let pattern = g_MapSettings.TeamPlacement || pickRandom(Object.keys(g_PlayerbaseTypes));
+	createBasesByPattern(
+		pattern,
+		g_PlayerbaseTypes[pattern].distance,
+		g_PlayerbaseTypes[pattern].groupedDistance,
+		randomAngle(),
+		createBasesAfricanPlains);
+}
 
-placePlayerBases({
-	"PlayerPlacement": [sortAllPlayers(), ...playerPlacementMultiArcs(
-		playerIDs,
-		mapCenter,
-		fractionToTiles(0.35),
-		0,
-		0.75)],
-	"PlayerTileClass": clPlayer,
-	"BaseResourceClass": clBaseResource,
-	"CityPatch": {
-		"outerTerrain": tPrimary,
-		"innerTerrain": tCitytiles
-	},
-	"Chicken": {
-	},
-	"Berries": {
-		"template": oBerryBush
-	},
-	"Mines": {
-		"types": [
-			{
-				"template": oMetalLarge
-			},
-			{
-				"type": "stone_formation",
-				"template": oStoneSmall,
-				"terrain": tDirt4
-			}
-		]
-	},
-	"Trees": {
-		"template": oBaobab,
-		"count": scaleByMapSize(3, 12),
-		"minDistGroup": 2,
-		"maxDistGroup": 6,
-		"minDist": 15,
-		"maxDist": 16
-	}
-	// No decoratives
-});
 Engine.SetProgress(20);
 
 // The specificity of this map is a bunch of watering holes & hills making it somewhat cluttered.

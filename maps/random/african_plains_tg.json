@@ -6,6 +6,7 @@
 		"SupportedBiomes": ["generic/savanna", "generic/sahara", "generic/nubia"],
 		"Preview" : "african_plains.png",
 		"Keywords": ["multiplayer", "community"],
-		"CircularMap" : true
+		"CircularMap" : true,
+		"TeamPlacements": ["line", "stronghold", "besideAllies", "randomGroup"]
 	}
 }
