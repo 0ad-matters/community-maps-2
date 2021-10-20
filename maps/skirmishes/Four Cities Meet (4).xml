@@ -10032,21 +10032,21 @@
 			<Actor seed="44095"/>
 		</Entity>
 		<Entity uid="1494">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="1022.76667" z="830.34784"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="42153"/>
 		</Entity>
 		<Entity uid="1495">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="1026.11805" z="833.46216"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="44595"/>
 		</Entity>
 		<Entity uid="1496">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="1053.13587" z="832.08411"/>
 			<Orientation y="2.35621"/>

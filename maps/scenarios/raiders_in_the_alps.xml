@@ -14571,14 +14571,14 @@
 			<Actor seed="15734"/>
 		</Entity>
 		<Entity uid="2357">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="281.57392" z="687.32337"/>
 			<Orientation y="-2.51017"/>
 			<Actor seed="54262"/>
 		</Entity>
 		<Entity uid="2358">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="526.83594" z="811.26185"/>
 			<Orientation y="0.56771"/>
@@ -17158,49 +17158,49 @@
 			<Actor seed="31757"/>
 		</Entity>
 		<Entity uid="2915">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="287.15156" z="688.79682"/>
 			<Orientation y="-2.90967"/>
 			<Actor seed="53347"/>
 		</Entity>
 		<Entity uid="2916">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="272.08329" z="688.21186"/>
 			<Orientation y="-1.3413"/>
 			<Actor seed="23386"/>
 		</Entity>
 		<Entity uid="2917">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="288.3783" z="698.34467"/>
 			<Orientation y="1.52266"/>
 			<Actor seed="12558"/>
 		</Entity>
 		<Entity uid="2918">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="278.87317" z="724.04188"/>
 			<Orientation y="-0.49511"/>
 			<Actor seed="21192"/>
 		</Entity>
 		<Entity uid="2919">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="277.20771" z="691.33368"/>
 			<Orientation y="-2.96508"/>
 			<Actor seed="51977"/>
 		</Entity>
 		<Entity uid="2920">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="284.5962" z="691.24769"/>
 			<Orientation y="-1.28154"/>
 			<Actor seed="18057"/>
 		</Entity>
 		<Entity uid="2921">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="261.6969" z="702.96558"/>
 			<Orientation y="-3.132"/>
@@ -17529,140 +17529,140 @@
 			<Actor seed="57720"/>
 		</Entity>
 		<Entity uid="3022">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="687.2547" z="333.42716"/>
 			<Orientation y="-0.82935"/>
 			<Actor seed="18057"/>
 		</Entity>
 		<Entity uid="3023">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="680.64643" z="336.73285"/>
 			<Orientation y="-2.51288"/>
 			<Actor seed="51977"/>
 		</Entity>
 		<Entity uid="3024">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="693.75763" z="338.15827"/>
 			<Orientation y="1.97486"/>
 			<Actor seed="12558"/>
 		</Entity>
 		<Entity uid="3025">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="674.67298" z="336.16385"/>
 			<Orientation y="-0.8891"/>
 			<Actor seed="23386"/>
 		</Entity>
 		<Entity uid="3026">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="688.48237" z="330.10608"/>
 			<Orientation y="-2.45748"/>
 			<Actor seed="53347"/>
 		</Entity>
 		<Entity uid="3027">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="682.82148" z="331.21784"/>
 			<Orientation y="-2.05799"/>
 			<Actor seed="54262"/>
 		</Entity>
 		<Entity uid="3028">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="654.78766" z="348.56031"/>
 			<Orientation y="-1.28154"/>
 			<Actor seed="18057"/>
 		</Entity>
 		<Entity uid="3029">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="647.39917" z="348.64631"/>
 			<Orientation y="-2.96508"/>
 			<Actor seed="51977"/>
 		</Entity>
 		<Entity uid="3030">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="668.72407" z="341.3376"/>
 			<Orientation y="1.52266"/>
 			<Actor seed="12558"/>
 		</Entity>
 		<Entity uid="3031">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="642.27479" z="345.52448"/>
 			<Orientation y="-1.3413"/>
 			<Actor seed="23386"/>
 		</Entity>
 		<Entity uid="3032">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="657.34302" z="346.10944"/>
 			<Orientation y="-2.90967"/>
 			<Actor seed="53347"/>
 		</Entity>
 		<Entity uid="3033">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="651.76539" z="344.636"/>
 			<Orientation y="-2.51018"/>
 			<Actor seed="54262"/>
 		</Entity>
 		<Entity uid="3034">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="258.83588" z="752.85926"/>
 			<Orientation y="-1.28154"/>
 			<Actor seed="18057"/>
 		</Entity>
 		<Entity uid="3035">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="251.4474" z="752.94526"/>
 			<Orientation y="-2.96508"/>
 			<Actor seed="51977"/>
 		</Entity>
 		<Entity uid="3036">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="261.39124" z="750.4084"/>
 			<Orientation y="-2.90967"/>
 			<Actor seed="53347"/>
 		</Entity>
 		<Entity uid="3037">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="255.8136" z="748.93494"/>
 			<Orientation y="-2.51018"/>
 			<Actor seed="54262"/>
 		</Entity>
 		<Entity uid="3038">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="240.13486" z="726.86731"/>
 			<Orientation y="3.6553"/>
 			<Actor seed="18057"/>
 		</Entity>
 		<Entity uid="3039">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="238.40665" z="719.6833"/>
 			<Orientation y="1.97176"/>
 			<Actor seed="51977"/>
 		</Entity>
 		<Entity uid="3040">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="243.09296" z="728.81312"/>
 			<Orientation y="2.02717"/>
 			<Actor seed="53347"/>
 		</Entity>
 		<Entity uid="3041">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="243.28812" z="723.0475"/>
 			<Orientation y="2.42666"/>
@@ -18339,112 +18339,112 @@
 			<Actor seed="28988"/>
 		</Entity>
 		<Entity uid="3423">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="860.25709" z="344.46967"/>
 			<Orientation y="-2.93255"/>
 			<Actor seed="18057"/>
 		</Entity>
 		<Entity uid="3424">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="856.96851" z="351.0865"/>
 			<Orientation y="3.08858"/>
 			<Actor seed="51977"/>
 		</Entity>
 		<Entity uid="3425">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="851.8553" z="354.22669"/>
 			<Orientation y="2.89979"/>
 			<Actor seed="23386"/>
 		</Entity>
 		<Entity uid="3426">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="855.38691" z="345.3729"/>
 			<Orientation y="2.99328"/>
 			<Actor seed="54262"/>
 		</Entity>
 		<Entity uid="3429">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="854.79157" z="336.00327"/>
 			<Orientation y="-3.0411"/>
 			<Actor seed="54262"/>
 		</Entity>
 		<Entity uid="3430">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="853.05494" z="329.08"/>
 			<Orientation y="2.74094"/>
 			<Actor seed="23386"/>
 		</Entity>
 		<Entity uid="3431">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="853.20539" z="341.71558"/>
 			<Orientation y="3.04552"/>
 			<Actor seed="51977"/>
 		</Entity>
 		<Entity uid="3432">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="859.43158" z="337.73667"/>
 			<Orientation y="-2.67083"/>
 			<Actor seed="18057"/>
 		</Entity>
 		<Entity uid="3433">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="741.52253" z="896.1833"/>
 			<Orientation y="1.4711"/>
 			<Actor seed="18057"/>
 		</Entity>
 		<Entity uid="3434">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="747.12323" z="901.003"/>
 			<Orientation y="2.25892"/>
 			<Actor seed="51977"/>
 		</Entity>
 		<Entity uid="3435">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="735.06421" z="904.77918"/>
 			<Orientation y="2.13018"/>
 			<Actor seed="23386"/>
 		</Entity>
 		<Entity uid="3436">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="741.19611" z="901.12574"/>
 			<Orientation y="2.00698"/>
 			<Actor seed="54262"/>
 		</Entity>
 		<Entity uid="3437">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="749.99915" z="897.86219"/>
 			<Orientation y="0.45745"/>
 			<Actor seed="54262"/>
 		</Entity>
 		<Entity uid="3438">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="759.4944" z="898.69971"/>
 			<Orientation y="-1.24549"/>
 			<Actor seed="23386"/>
 		</Entity>
 		<Entity uid="3439">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="755.01697" z="894.70496"/>
 			<Orientation y="-0.63805"/>
 			<Actor seed="51977"/>
 		</Entity>
 		<Entity uid="3440">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="747.73414" z="893.45722"/>
 			<Orientation y="0.48717"/>
@@ -18784,196 +18784,196 @@
 			<Actor seed="53212"/>
 		</Entity>
 		<Entity uid="3507">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="49.11246" z="647.925"/>
 			<Orientation y="0.73191"/>
 			<Actor seed="56224"/>
 		</Entity>
 		<Entity uid="3508">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="41.18021" z="646.93305"/>
 			<Orientation y="0.95885"/>
 			<Actor seed="18057"/>
 		</Entity>
 		<Entity uid="3509">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="44.10633" z="653.71796"/>
 			<Orientation y="1.17943"/>
 			<Actor seed="51977"/>
 		</Entity>
 		<Entity uid="3510">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="46.27204" z="640.7085"/>
 			<Orientation y="0.62162"/>
 			<Actor seed="12558"/>
 		</Entity>
 		<Entity uid="3511">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="43.19996" z="659.6496"/>
 			<Orientation y="1.52892"/>
 			<Actor seed="23386"/>
 		</Entity>
 		<Entity uid="3512">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="37.934" z="645.5193"/>
 			<Orientation y="0.98595"/>
 			<Actor seed="53347"/>
 		</Entity>
 		<Entity uid="3513">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="38.72336" z="651.23401"/>
 			<Orientation y="1.16942"/>
 			<Actor seed="54262"/>
 		</Entity>
 		<Entity uid="3514">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="53.28843" z="648.19532"/>
 			<Orientation y="0.52207"/>
 			<Actor seed="54262"/>
 		</Entity>
 		<Entity uid="3515">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="58.86606" z="649.66877"/>
 			<Orientation y="0.1335"/>
 			<Actor seed="53347"/>
 		</Entity>
 		<Entity uid="3516">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="43.7978" z="649.08381"/>
 			<Orientation y="0.97071"/>
 			<Actor seed="23386"/>
 		</Entity>
 		<Entity uid="3517">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="60.09281" z="659.21662"/>
 			<Orientation y="0.19251"/>
 			<Actor seed="12558"/>
 		</Entity>
 		<Entity uid="3518">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="48.92222" z="652.20563"/>
 			<Orientation y="0.94744"/>
 			<Actor seed="51977"/>
 		</Entity>
 		<Entity uid="3519">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="56.3107" z="652.11963"/>
 			<Orientation y="0.45058"/>
 			<Actor seed="18057"/>
 		</Entity>
 		<Entity uid="3520">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="52.33909" z="659.05726"/>
 			<Orientation y="1.41332"/>
 			<Actor seed="56224"/>
 		</Entity>
 		<Entity uid="3521">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="832.27704" z="766.2472"/>
 			<Orientation y="-1.96941"/>
 			<Actor seed="56224"/>
 		</Entity>
 		<Entity uid="3522">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="821.56324" z="782.03174"/>
 			<Orientation y="1.99756"/>
 			<Actor seed="18057"/>
 		</Entity>
 		<Entity uid="3523">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="819.66834" z="778.80542"/>
 			<Orientation y="-1.37214"/>
 			<Actor seed="51977"/>
 		</Entity>
 		<Entity uid="3524">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="822.59888" z="767.2577"/>
 			<Orientation y="0.30318"/>
 			<Actor seed="12558"/>
 		</Entity>
 		<Entity uid="3525">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="818.76197" z="784.73707"/>
 			<Orientation y="-2.05625"/>
 			<Actor seed="23386"/>
 		</Entity>
 		<Entity uid="3526">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="813.17383" z="769.21613"/>
 			<Orientation y="0.66752"/>
 			<Actor seed="53347"/>
 		</Entity>
 		<Entity uid="3527">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="814.28541" z="776.32148"/>
 			<Orientation y="-0.62447"/>
 			<Actor seed="54262"/>
 		</Entity>
 		<Entity uid="3528">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="825.48945" z="777.77485"/>
 			<Orientation y="-2.17925"/>
 			<Actor seed="54262"/>
 		</Entity>
 		<Entity uid="3529">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="822.23261" z="770.92951"/>
 			<Orientation y="-1.09746"/>
 			<Actor seed="53347"/>
 		</Entity>
 		<Entity uid="3530">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="819.35987" z="774.17127"/>
 			<Orientation y="2.39585"/>
 			<Actor seed="23386"/>
 		</Entity>
 		<Entity uid="3531">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="835.48609" z="785.35853"/>
 			<Orientation y="2.76104"/>
 			<Actor seed="12558"/>
 		</Entity>
 		<Entity uid="3532">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="827.73005" z="772.28614"/>
 			<Orientation y="-1.75388"/>
 			<Actor seed="51977"/>
 		</Entity>
 		<Entity uid="3533">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="831.87275" z="777.2071"/>
 			<Orientation y="0.45058"/>
 			<Actor seed="18057"/>
 		</Entity>
 		<Entity uid="3534">
-			<Template>gaia/fauna_wolf_snow</Template>
+			<Template>gaia/fauna_wolf_arctic</Template>
 			<Player>0</Player>
 			<Position x="828.06983" z="783.09028"/>
 			<Orientation y="2.46297"/>

@@ -37521,7 +37521,7 @@
 			<Actor seed="1606"/>
 		</Entity>
 		<Entity uid="5413">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="871.96021" z="1238.70643"/>
 			<Orientation y="2.35621"/>
@@ -93255,28 +93255,28 @@
 			<Actor seed="39460"/>
 		</Entity>
 		<Entity uid="14123">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="56.696" z="879.5824"/>
 			<Orientation y="1.0226"/>
 			<Actor seed="9094"/>
 		</Entity>
 		<Entity uid="14124">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="64.98089" z="868.38086"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="65100"/>
 		</Entity>
 		<Entity uid="14125">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="113.00327" z="925.89057"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="41452"/>
 		</Entity>
 		<Entity uid="14126">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="87.82557" z="918.10749"/>
 			<Orientation y="0.30126"/>

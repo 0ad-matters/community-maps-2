@@ -9884,14 +9884,14 @@
 			<Actor seed="21210"/>
 		</Entity>
 		<Entity uid="1776">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="585.35407" z="53.64577"/>
 			<Orientation y="0.29107"/>
 			<Actor seed="39096"/>
 		</Entity>
 		<Entity uid="1777">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="74.04589" z="434.0037"/>
 			<Orientation y="2.14983"/>

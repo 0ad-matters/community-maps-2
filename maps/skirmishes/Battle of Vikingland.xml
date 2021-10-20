@@ -16064,231 +16064,231 @@
 			<Actor seed="14772"/>
 		</Entity>
 		<Entity uid="2567">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="669.68042" z="388.8682"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="37808"/>
 		</Entity>
 		<Entity uid="2568">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="684.6529" z="404.529"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="39622"/>
 		</Entity>
 		<Entity uid="2569">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="991.16053" z="380.66865"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="23938"/>
 		</Entity>
 		<Entity uid="2570">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="983.20899" z="399.74164"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="40120"/>
 		</Entity>
 		<Entity uid="2571">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="1243.59668" z="670.85938"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="39604"/>
 		</Entity>
 		<Entity uid="2572">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="1221.91041" z="682.67963"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="63554"/>
 		</Entity>
 		<Entity uid="2573">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="1172.37354" z="1007.90125"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="47596"/>
 		</Entity>
 		<Entity uid="2574">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="1146.68042" z="1005.90687"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="49992"/>
 		</Entity>
 		<Entity uid="2575">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="898.32001" z="1226.61915"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="41998"/>
 		</Entity>
 		<Entity uid="2576">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="884.68879" z="1200.84693"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="54164"/>
 		</Entity>
 		<Entity uid="2577">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="528.9076" z="1199.62537"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="63056"/>
 		</Entity>
 		<Entity uid="2578">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="543.48371" z="1185.71717"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="34204"/>
 		</Entity>
 		<Entity uid="2579">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="319.68982" z="902.24952"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="20252"/>
 		</Entity>
 		<Entity uid="2580">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="348.61554" z="900.5713"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="62154"/>
 		</Entity>
 		<Entity uid="2581">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="379.2436" z="597.46332"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="21528"/>
 		</Entity>
 		<Entity uid="2582">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="404.0655" z="613.07801"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="58506"/>
 		</Entity>
 		<Entity uid="2583">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="697.81763" z="709.13953"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="51712"/>
 		</Entity>
 		<Entity uid="2584">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="804.24421" z="644.5929"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="47508"/>
 		</Entity>
 		<Entity uid="2585">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="920.7812" z="679.60773"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="24018"/>
 		</Entity>
 		<Entity uid="2586">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="980.63971" z="819.21314"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="40840"/>
 		</Entity>
 		<Entity uid="2587">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="918.37342" z="936.80433"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="14578"/>
 		</Entity>
 		<Entity uid="2588">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="740.62342" z="1034.56421"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="4974"/>
 		</Entity>
 		<Entity uid="2589">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="586.22156" z="1028.02967"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="51380"/>
 		</Entity>
 		<Entity uid="2590">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="636.71131" z="836.48707"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="45086"/>
 		</Entity>
 		<Entity uid="2591">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="733.98316" z="921.67084"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="58374"/>
 		</Entity>
 		<Entity uid="2592">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="820.91755" z="905.16956"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="2622"/>
 		</Entity>
 		<Entity uid="2593">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="871.83039" z="822.9264"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="20640"/>
 		</Entity>
 		<Entity uid="2594">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="825.7464" z="741.98456"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="54722"/>
 		</Entity>
 		<Entity uid="2595">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="756.7887" z="754.9242"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="13166"/>
 		</Entity>
 		<Entity uid="2596">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="715.55225" z="812.34314"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="61834"/>
 		</Entity>
 		<Entity uid="2597">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="726.3866" z="873.99604"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="54956"/>
 		</Entity>
 		<Entity uid="2598">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="780.47053" z="879.24659"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="23114"/>
 		</Entity>
 		<Entity uid="2599">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="799.65577" z="767.34705"/>
 			<Orientation y="2.35621"/>

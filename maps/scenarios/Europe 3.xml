@@ -16371,63 +16371,63 @@
 			<Actor seed="41286"/>
 		</Entity>
 		<Entity uid="2359">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="998.91608" z="1462.10132"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="45912"/>
 		</Entity>
 		<Entity uid="2360">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="1003.41742" z="1465.22034"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="30266"/>
 		</Entity>
 		<Entity uid="2361">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="1003.24415" z="1458.787"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="13434"/>
 		</Entity>
 		<Entity uid="2362">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="1098.14649" z="1407.21644"/>
 			<Orientation y="-1.82192"/>
 			<Actor seed="4588"/>
 		</Entity>
 		<Entity uid="2363">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="1099.09144" z="1400.7411"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="10856"/>
 		</Entity>
 		<Entity uid="2364">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="1093.64893" z="1397.33497"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="25176"/>
 		</Entity>
 		<Entity uid="2365">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="1170.80506" z="1350.23792"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="64180"/>
 		</Entity>
 		<Entity uid="2366">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="1173.8943" z="1359.26673"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="41972"/>
 		</Entity>
 		<Entity uid="2367">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="1175.12586" z="1346.7826"/>
 			<Orientation y="2.35621"/>

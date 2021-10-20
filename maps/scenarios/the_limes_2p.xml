@@ -3929,7 +3929,7 @@
 			<Actor seed="34912"/>
 		</Entity>
 		<Entity uid="751">
-			<Template>gaia/fauna_bear_brown</Template>
+			<Template>gaia/fauna_bear_brown_brown</Template>
 			<Player>0</Player>
 			<Position x="891.22895" z="235.04316"/>
 			<Orientation y="-1.46077"/>
@@ -39927,7 +39927,7 @@
 			<Actor seed="44188"/>
 		</Entity>
 		<Entity uid="7022">
-			<Template>gaia/fauna_bear_brown</Template>
+			<Template>gaia/fauna_bear_brown_brown</Template>
 			<Player>0</Player>
 			<Position x="534.7422" z="896.30738"/>
 			<Orientation y="-3.09964"/>

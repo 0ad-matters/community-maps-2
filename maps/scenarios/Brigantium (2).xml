@@ -15316,14 +15316,14 @@
 			<Actor seed="6018"/>
 		</Entity>
 		<Entity uid="2293">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="1536.00721" z="1423.766"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="29084"/>
 		</Entity>
 		<Entity uid="2294">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="1712.26246" z="1103.38196"/>
 			<Orientation y="2.35621"/>

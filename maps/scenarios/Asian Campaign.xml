@@ -26420,28 +26420,28 @@
 			<Actor seed="24496"/>
 		</Entity>
 		<Entity uid="3845">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="1078.64747" z="1113.62464"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="27664"/>
 		</Entity>
 		<Entity uid="3846">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="1080.08973" z="1117.06641"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="60244"/>
 		</Entity>
 		<Entity uid="3847">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="1007.62818" z="1131.34144"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="41958"/>
 		</Entity>
 		<Entity uid="3848">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="1011.64197" z="1129.96265"/>
 			<Orientation y="2.35621"/>

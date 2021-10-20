@@ -1,6 +1,12 @@
 2021-10-20
 
-  * The Duel and Lonely Mountain: allow changing civs, fix warnings
+  * allow changing civs, fix warnings
+    * The Duel
+    * Lonely Mountain
+    * Country Side
+
+  * change fauna_bear to faun_bear_brown and wolf_snow to wolf_arctic
+  (fixes warnings on several maps)
 
 2021-10-16
 

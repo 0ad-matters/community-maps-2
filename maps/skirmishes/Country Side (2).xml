@@ -46,7 +46,6 @@
   "Name": "Country Side (2)",
   "PlayerData": [
     {
-      "Civ": "athen",
       "StartingCamera": {
         "Position": {
           "x": 177.121,
@@ -61,7 +60,6 @@
       }
     },
     {
-      "Civ": "cart",
       "StartingCamera": {
         "Position": {
           "x": 634.433,
@@ -11779,14 +11777,14 @@
 			<Actor seed="42674"/>
 		</Entity>
 		<Entity uid="1773">
-			<Template>structures/gaul_farmstead</Template>
+			<Template>structures/gaul/farmstead</Template>
 			<Player>0</Player>
 			<Position x="818.53187" z="534.17707"/>
 			<Orientation y="0.30512"/>
 			<Actor seed="45372"/>
 		</Entity>
 		<Entity uid="1774">
-			<Template>structures/gaul_farmstead</Template>
+			<Template>structures/gaul/farmstead</Template>
 			<Player>0</Player>
 			<Position x="555.53431" z="799.5871"/>
 			<Orientation y="-0.15966"/>

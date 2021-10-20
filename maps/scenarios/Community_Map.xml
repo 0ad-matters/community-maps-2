@@ -16478,14 +16478,14 @@
 			<Actor seed="18170"/>
 		</Entity>
 		<Entity uid="3201">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="805.61219" z="181.50242"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="18843"/>
 		</Entity>
 		<Entity uid="3202">
-			<Template>gaia/fauna_bear</Template>
+			<Template>gaia/fauna_bear_brown</Template>
 			<Player>0</Player>
 			<Position x="798.53681" z="179.15522"/>
 			<Orientation y="0.38418"/>
