@@ -3,7 +3,7 @@
 <Scenario version="7">
 	<Environment>
 		<SkySet>twilight</SkySet>
-		<SunColor r="1.44531" g="1.44531" b="0.708485"/>
+		<SunColor r="1.44531" g="1.44531" b="0.702817"/>
 		<SunElevation angle="0.637001"/>
 		<SunRotation angle="-0.826192"/>
 		<AmbientColor r="0.501961" g="0.501961" b="0.501961"/>
@@ -32,32 +32,25 @@
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="7404.49" y="52.5316" z="-6905.57"/>
-		<Rotation angle="-0.585759"/>
-		<Declination angle="-0.221519"/>
+		<Position x="327.521" y="246.936" z="213.382"/>
+		<Rotation angle="0"/>
+		<Declination angle="0.610865"/>
 	</Camera>
 	<ScriptSettings><![CDATA[
 {
   "AISeed": 0,
   "CircularMap": true,
   "Description": "Where the dragon sleeps on the gold.",
-  "Keywords": ["community"],
+  "Keywords": [
+    "community"
+  ],
   "LockTeams": false,
   "Name": "Lonely Mountain (4)",
   "PlayerData": [
-    "",
-    {
-      "Civ": "athen"
-    },
-    {
-      "Civ": "cart"
-    },
-    {
-      "Civ": "gaul"
-    },
-    {
-      "Civ": "iber"
-    }
+    {},
+    {},
+    {},
+    {}
   ],
   "Preview": "lonely_mountain.png",
   "RevealMap": false,
@@ -96,7 +89,7 @@
 			<Actor seed="63022"/>
 		</Entity>
 		<Entity uid="35">
-			<Template>structures/gaul_wall_gate</Template>
+			<Template>structures/gaul/wall_gate</Template>
 			<Player>0</Player>
 			<Position x="500.33036" z="623.85944"/>
 			<Orientation y="0.67415"/>
@@ -10442,14 +10435,14 @@
 			<Actor seed="10486"/>
 		</Entity>
 		<Entity uid="1514">
-			<Template>structures/brit_defense_tower</Template>
+			<Template>structures/brit/defense_tower</Template>
 			<Player>0</Player>
 			<Position x="519.21253" z="622.81598"/>
 			<Orientation y="-2.21526"/>
 			<Actor seed="6598"/>
 		</Entity>
 		<Entity uid="1515">
-			<Template>structures/brit_defense_tower</Template>
+			<Template>structures/brit/defense_tower</Template>
 			<Player>0</Player>
 			<Position x="491.40851" z="632.33265"/>
 			<Orientation y="2.35621"/>

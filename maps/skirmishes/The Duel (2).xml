@@ -45,9 +45,7 @@
   "LockTeams": false,
   "Name": "The Duel (2)",
   "PlayerData": [
-    null,
     {
-      "Civ": "athen",
       "StartingCamera": {
         "Position": {
           "x": 123.343,
@@ -62,7 +60,6 @@
       }
     },
     {
-      "Civ": "cart",
       "StartingCamera": {
         "Position": {
           "x": 399.748,
@@ -1207,31 +1204,31 @@
 			<Actor seed="27192"/>
 		</Entity>
 		<Entity uid="215">
-			<Template>actor|flora/trees/lumbardypoplar_top.xml</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Position x="220.28031" z="18.7667"/>
 			<Orientation y="-1.45899"/>
 			<Actor seed="41746"/>
 		</Entity>
 		<Entity uid="216">
-			<Template>actor|flora/trees/lumbardypoplar_top.xml</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Position x="209.7751" z="16.28649"/>
 			<Orientation y="2.63855"/>
 			<Actor seed="57964"/>
 		</Entity>
 		<Entity uid="217">
-			<Template>actor|flora/trees/lumbardypoplar_top.xml</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Position x="167.10163" z="28.91616"/>
 			<Orientation y="2.59849"/>
 			<Actor seed="36494"/>
 		</Entity>
 		<Entity uid="218">
-			<Template>actor|flora/trees/lumbardypoplar_top.xml</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Position x="108.45072" z="65.33527"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="13684"/>
 		</Entity>
 		<Entity uid="219">
-			<Template>actor|flora/trees/lumbardypoplar_top.xml</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Position x="112.2744" z="69.76084"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="316"/>
@@ -3288,49 +3285,49 @@
 			<Actor seed="31506"/>
 		</Entity>
 		<Entity uid="563">
-			<Template>actor|flora/trees/lumbardypoplar.xml</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Position x="441.88001" z="118.9158"/>
 			<Orientation y="0.82277"/>
 			<Actor seed="4358"/>
 		</Entity>
 		<Entity uid="564">
-			<Template>actor|flora/trees/lumbardypoplar.xml</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Position x="444.67487" z="120.49921"/>
 			<Orientation y="-2.27053"/>
 			<Actor seed="56270"/>
 		</Entity>
 		<Entity uid="565">
-			<Template>actor|flora/trees/lumbardypoplar.xml</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Position x="445.19141" z="131.47532"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="24764"/>
 		</Entity>
 		<Entity uid="566">
-			<Template>actor|flora/trees/lumbardypoplar.xml</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Position x="449.64832" z="113.96387"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="27530"/>
 		</Entity>
 		<Entity uid="567">
-			<Template>actor|flora/trees/lumbardypoplar.xml</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Position x="457.09836" z="121.27694"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="8762"/>
 		</Entity>
 		<Entity uid="568">
-			<Template>actor|flora/trees/lumbardypoplar.xml</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Position x="445.93714" z="157.07505"/>
 			<Orientation y="2.23151"/>
 			<Actor seed="3390"/>
 		</Entity>
 		<Entity uid="569">
-			<Template>actor|flora/trees/lumbardypoplar.xml</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Position x="480.39271" z="144.69925"/>
 			<Orientation y="2.62301"/>
 			<Actor seed="57814"/>
 		</Entity>
 		<Entity uid="570">
-			<Template>actor|flora/trees/lumbardypoplar.xml</Template>
+			<Template>gaia/tree/poplar_lombardy</Template>
 			<Position x="450.3043" z="148.32486"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="55932"/>
