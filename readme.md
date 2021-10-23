@@ -26,6 +26,7 @@ maps can be easily accessed in game with the filter "Community Maps".
 
 | Map Name | Author | Link | Publication Date |
 |----------|--------|------|------------------|
+| Chess | [Jammyjamjamman](https://wildfiregames.com/forum/profile/33845-jammyjamjamman/) | - | 23-10-2021 |
 |Cliffs of Carnage|[andy5995](https://wildfiregames.com/forum/profile/21632-andy5995/)|[Forum](https://wildfiregames.com/forum/topic/30590-cliffs-of-carnage-new-4v4-pvp-map/)|02-10-2020|
 |Jerusalem VII-VI (2)|[MardukAmmon](https://wildfiregames.com/forum/profile/30634-mardukammon/)|[Forum](https://wildfiregames.com/forum/topic/50599-jerusalem-vii-vi/)|04-08-2021|
 |Caribbean Island (6)|[Marcus Brutus Bombastus](https://wildfiregames.com/forum/index.php?/profile/30405-marcus-brutus-bombastus/)|[Forum](https://wildfiregames.com/forum/index.php?/topic/27363-first-try-caribbean-island/)|17-12-2019|
