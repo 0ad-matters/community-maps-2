@@ -6120,13 +6120,6 @@
 			<Orientation y="-3.11956"/>
 			<Actor seed="7256"/>
 		</Entity>
-		<Entity uid="1297">
-			<Template>units/brit/hero_boudicca</Template>
-			<Player>2</Player>
-			<Position x="545.03931" z="737.66138"/>
-			<Orientation y="-3.0591"/>
-			<Actor seed="8702"/>
-		</Entity>
 		<Entity uid="1299">
 			<Template>units/cart/champion_elephant</Template>
 			<Player>1</Player>
