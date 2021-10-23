@@ -124,10 +124,13 @@ Engine.SetProgress(20);
 
 createBumps(avoidClasses(clPlayer, 20));
 
+const rxHills = randIntInclusive(1, 4);
+const ryHills = randIntInclusive(5, 18);
+
 if (randBool())
-	createHills([tCliff, tCliff, tHill], avoidClasses(clPlayer, 20, clHill, 15), clHill, scaleByMapSize(randIntInclusive(1, 4), randIntInclusive(5, 18)));
+	createHills([tCliff, tCliff, tHill], avoidClasses(clPlayer, 20, clHill, 15), clHill, scaleByMapSize(rxHills, ryHills));
 else
-	createMountains(tCliff, avoidClasses(clPlayer, 20, clHill, 15), clHill, scaleByMapSize(randIntInclusive(1, 4), randIntInclusive(5, 18)));
+	createMountains(tCliff, avoidClasses(clPlayer, 20, clHill, 15), clHill, scaleByMapSize(rxHills, ryHills));
 
 var [forestTrees, stragglerTrees] = getTreeCounts(...rBiomeTreeCount(1));
 createForests(
