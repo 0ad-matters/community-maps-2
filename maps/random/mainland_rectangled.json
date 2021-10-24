@@ -3,7 +3,7 @@
 		"Name" : "Mainland Rectangled",
 		"Script" : "mainland_rectangled.js",
 		"Description" : "A typical map without any usable water.",
-		"Preview" : "mainland.png",
+		"Preview" : "mainland_rectangled.png",
 		"SupportedBiomes": "generic/",
 		"Keywords": ["community"],
 		"CircularMap" : false
