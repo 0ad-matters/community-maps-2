@@ -1,0 +1,11 @@
+{
+	"settings" : {
+		"Name" : "Jammy's Nightmare",
+		"Script" : "jammys_nightmare.js",
+		"Description" : "The last place on Earth you want to be.",
+		"Preview" : "corinthian_isthmus_4.png",
+		"Keywords": ["community"],
+		"SupportedBiomes": "generic/",
+		"CircularMap" : true
+	}
+}
