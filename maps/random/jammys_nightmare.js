@@ -71,8 +71,8 @@ var oceanAngle = startAngle + randFloat(-1, 1) * Math.PI / 12;
 
 const heightScale = num => num * g_MapSettings.Size / 320;
 const heightShoreline = heightScale(0.5);
-const minHeightSource = -20;
-const maxHeightSource = 500;
+const minHeightSource = -10;
+const maxHeightSource = 300;
 
 initTileClasses(["shoreline"]);
 
@@ -91,6 +91,19 @@ createArea(
 // const heightFertileLand = heightDesert - heightScale(2);
 const heightWaterLevel = 0;
 const heightSeaGround = heightWaterLevel - heightScale(8);
+
+//g_Map.log("Lowering sea ground");
+//createArea(
+	//new MapBoundsPlacer(),
+	//new SmoothElevationPainter(ELEVATION_SET, heightSeaGround, 2),
+	//new HeightConstraint(-Infinity, heightWaterLevel));
+//Engine.SetProgress(20);
+
+//g_Map.log("Smoothing heightmap");
+//createArea(
+	//new MapBoundsPlacer(),
+	//new SmoothingPainter(1, scaleByMapSize(0.1, 0.5), 1));
+//Engine.SetProgress(25);
 
 g_Map.log("Marking water");
 createArea(
@@ -177,7 +190,7 @@ Engine.SetProgress(20);
 var [forestTrees, stragglerTrees] = getTreeCounts(...rBiomeTreeCount(1));
 createForests(
  [tMainTerrain, tForestFloor1, tForestFloor2, pForest1, pForest2],
- avoidClasses(clWater, 5, clPlayer, 20, clForest, 18, clHill, 0),
+ avoidClasses(clWater, 5, clPlayer, 20, clForest, 18, clHill, 0, clCliff, 5),
  clForest,
  forestTrees);
 
