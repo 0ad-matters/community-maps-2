@@ -30,7 +30,6 @@ maps can be easily accessed in game with the filter "Community Maps".
 |Cliffs of Carnage|[andy5995](https://wildfiregames.com/forum/profile/21632-andy5995/)|[Forum](https://wildfiregames.com/forum/topic/30590-cliffs-of-carnage-new-4v4-pvp-map/)|02-10-2020|
 |Jerusalem VII-VI (2)|[MardukAmmon](https://wildfiregames.com/forum/profile/30634-mardukammon/)|[Forum](https://wildfiregames.com/forum/topic/50599-jerusalem-vii-vi/)|04-08-2021|
 |Caribbean Island (6)|[Marcus Brutus Bombastus](https://wildfiregames.com/forum/index.php?/profile/30405-marcus-brutus-bombastus/)|[Forum](https://wildfiregames.com/forum/index.php?/topic/27363-first-try-caribbean-island/)|17-12-2019|
-|Lonely Mountain (4)|[MarcusAureliu#s](https://wildfiregames.com/forum/index.php?/profile/28269-marcusaurelius/)|[Forum](https://wildfiregames.com/forum/index.php?/topic/26299-the-lonely-mountain-my-first-try-at-map-design/)|19-06-2019|
 | Northern Islands (4) | [Scarecrow](https://wildfiregames.com/forum/index.php?/profile/29189-scarecrow/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/25698-atlas-map-northern-islands-4/) | 18-04-2019 |
 | Arabia (4) | [coworotel](https://wildfiregames.com/forum/index.php?/profile/22499-coworotel/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/25570-new-skirmish-map-arabia-4/) | 30-03-2019 |
 | Four Cities Meet (4) | [coworotel](https://wildfiregames.com/forum/index.php?/profile/22499-coworotel/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/25560-skirmish-map-four-cities-meet-4/) | 28-03-2019 |
