@@ -3,7 +3,7 @@
   * Remove player color settings from At World's End (scenario) (fixes
   crashing when re-entering game setup menu)
   * Remove Lonely Mountain (while playable, it's basically an incomplete map)
-  * Remove Jerusalem
+  * Remove Jerusalem (freezes for about 5 seconds after game starts, laggy)
 
 2021-10-23
 
