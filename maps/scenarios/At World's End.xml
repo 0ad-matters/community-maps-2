@@ -47,11 +47,6 @@
   "PlayerData": [
     {
       "Civ": "mace",
-      "Color": {
-        "b": 192,
-        "g": 192,
-        "r": 192
-      },
       "Name": "Macedonians",
       "Resources": {
         "food": 1000,
@@ -75,11 +70,6 @@
     },
     {
       "Civ": "maur",
-      "Color": {
-        "b": 64,
-        "g": 64,
-        "r": 128
-      },
       "Name": "Mauryans",
       "Resources": {
         "food": 1000,
@@ -91,11 +81,6 @@
     },
     {
       "Civ": "maur",
-      "Color": {
-        "b": 64,
-        "g": 64,
-        "r": 128
-      },
       "Name": "Mauryans",
       "Resources": {
         "food": 1000,
@@ -107,11 +92,6 @@
     },
     {
       "Civ": "maur",
-      "Color": {
-        "b": 64,
-        "g": 64,
-        "r": 128
-      },
       "Name": "Mauryans",
       "Resources": {
         "food": 1000,
@@ -123,11 +103,6 @@
     },
     {
       "Civ": "pers",
-      "Color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
-      },
       "Name": "Persians",
       "Resources": {
         "food": 1000,

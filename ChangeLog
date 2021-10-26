@@ -1,5 +1,12 @@
 2021-10-23
 
+  * Remove player color settings from At World's End (scenario) (fixes
+  crashing when re-entering game setup menu)
+  * Remove Lonely Mountain (incomplete map)
+  * Remove Jerusalem
+
+2021-10-23
+
   * Yekaterinaville added (random map)
   * Chess added (skirmish map)
 
