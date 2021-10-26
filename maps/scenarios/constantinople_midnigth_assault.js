@@ -216,14 +216,14 @@ var persianAttacker = {
 
 	champion: [
 							   "units/pers/champion_infantry",
-							   "units/pers_kardakes_hoplite"
+							   "units/pers/kardakes_hoplite"
 			  ],
 	infantry: [
-								"units/pers_infantry_spearman_e",
+								"units/pers/infantry_spearman_e",
 			  ],
 	ranged: [
-								"units/pers_infantry_archer_e",
-								"units/pers_kardakes_skirmisher"
+								"units/pers/infantry_archer_e",
+								"units/pers/kardakes_skirmisher"
 			  ],
 
 }
@@ -231,16 +231,16 @@ var persianAttacker = {
 var romanDefenders = {
 
 	champion: [
-							   "units/rome_centurio_imperial"	
+							   "units/rome/centurio_imperial"	
 			  ],
 	infantry: [
-								"units/rome_infantry_spearman",
-								"units/rome_legionnaire_imperial",
-								"units/rome_legionnaire_marian"
+								"units/rome/infantry_spearman",
+								"units/rome/legionnaire_imperial",
+								"units/rome/legionnaire_marian"
 			  ],
 	ranged: [
-								"units/rome_infantry_javelinist",
-								"units/rome_infantry_archer"
+								"units/rome/infantry_javelinist",
+								"units/rome/infantry_archer"
 			  ],
 
 }
@@ -473,7 +473,7 @@ Trigger.prototype.SpawnRams = function()
 
 	for(var spawnLength = 0; spawnLength < movingPoints.length; spawnLength++){
 
-		var intruders = TriggerHelper.SpawnUnitsFromTriggerPoints(spawnPoint[spawnLength], "units/avars_mechanical_siege_ram" , 1, this.PlayerID);
+		var intruders = TriggerHelper.SpawnUnitsFromTriggerPoints(spawnPoint[spawnLength], "units/avars/siege_ram" , 1, this.PlayerID);
 
 		for (var origin in intruders) {
 			var cmd = null;

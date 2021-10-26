@@ -116,7 +116,7 @@
 			<Actor seed="23337"/>
 		</Entity>
 		<Entity uid="696">
-			<Template>structures/brit_civil_centre</Template>
+			<Template>structures/brit/civil_centre</Template>
 			<Player>5</Player>
 			<Position x="1082.2782" z="197.87574"/>
 			<Orientation y="2.35621"/>
@@ -137,28 +137,28 @@
 			<Actor seed="12513"/>
 		</Entity>
 		<Entity uid="8313">
-			<Template>structures/athen_civil_centre</Template>
+			<Template>structures/athen/civil_centre</Template>
 			<Player>1</Player>
 			<Position x="952.5691" z="659.2699"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="3152"/>
 		</Entity>
 		<Entity uid="8318">
-			<Template>structures/cart_civil_centre</Template>
+			<Template>structures/cart/civil_centre</Template>
 			<Player>2</Player>
 			<Position x="1225.3324" z="494.89094"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="18819"/>
 		</Entity>
 		<Entity uid="8319">
-			<Template>structures/gaul_civil_centre</Template>
+			<Template>structures/gaul/civil_centre</Template>
 			<Player>3</Player>
 			<Position x="1322.62452" z="914.14039"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="44536"/>
 		</Entity>
 		<Entity uid="8320">
-			<Template>structures/iber_civil_centre</Template>
+			<Template>structures/iber/civil_centre</Template>
 			<Player>4</Player>
 			<Position x="562.9419" z="453.72703"/>
 			<Orientation y="2.35621"/>
@@ -5510,7 +5510,7 @@
 			<Actor seed="22377"/>
 		</Entity>
 		<Entity uid="9433">
-			<Template>structures/maur_civil_centre</Template>
+			<Template>structures/maur/civil_centre</Template>
 			<Player>6</Player>
 			<Position x="288.18824" z="795.74732"/>
 			<Orientation y="2.35621"/>

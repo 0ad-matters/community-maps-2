@@ -11366,14 +11366,14 @@
 			<Actor seed="38722"/>
 		</Entity>
 		<Entity uid="1656">
-			<Template>structures/sele_colonnade</Template>
+			<Template>structures/sele/colonnade</Template>
 			<Player>0</Player>
 			<Position x="141.5947" z="423.30491"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="3746"/>
 		</Entity>
 		<Entity uid="1657">
-			<Template>structures/sele_colonnade</Template>
+			<Template>structures/sele/colonnade</Template>
 			<Player>0</Player>
 			<Position x="143.51914" z="415.7364"/>
 			<Orientation y="2.35621"/>

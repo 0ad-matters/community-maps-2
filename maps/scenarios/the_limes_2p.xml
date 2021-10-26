@@ -2183,13 +2183,13 @@
 			<Actor seed="55976"/>
 		</Entity>
 		<Entity uid="407">
-			<Template>actor|props/structures/ptolemies/ptol_military_settlement_trunks.xml</Template>
+			<Template>actor|props/structures/ptolemies/ptol/military_settlement_trunks.xml</Template>
 			<Position x="599.40632" z="589.83558"/>
 			<Orientation y="1.91424"/>
 			<Actor seed="22244"/>
 		</Entity>
 		<Entity uid="408">
-			<Template>actor|props/structures/ptolemies/ptol_military_settlement_trunks.xml</Template>
+			<Template>actor|props/structures/ptolemies/ptol/military_settlement_trunks.xml</Template>
 			<Position x="603.52228" z="620.36622"/>
 			<Orientation y="2.40448"/>
 			<Actor seed="43270"/>
@@ -10208,13 +10208,13 @@
 			<Actor seed="55976"/>
 		</Entity>
 		<Entity uid="1790">
-			<Template>actor|props/structures/ptolemies/ptol_military_settlement_trunks.xml</Template>
+			<Template>actor|props/structures/ptolemies/ptol/military_settlement_trunks.xml</Template>
 			<Position x="649.33307" z="843.35248"/>
 			<Orientation y="2.46703"/>
 			<Actor seed="22244"/>
 		</Entity>
 		<Entity uid="1791">
-			<Template>actor|props/structures/ptolemies/ptol_military_settlement_trunks.xml</Template>
+			<Template>actor|props/structures/ptolemies/ptol/military_settlement_trunks.xml</Template>
 			<Position x="628.16486" z="950.84681"/>
 			<Orientation y="3.14611"/>
 			<Actor seed="43270"/>
@@ -18401,13 +18401,13 @@
 			<Actor seed="18464"/>
 		</Entity>
 		<Entity uid="3163">
-			<Template>actor|props/structures/ptolemies/ptol_military_settlement_trunks.xml</Template>
+			<Template>actor|props/structures/ptolemies/ptol/military_settlement_trunks.xml</Template>
 			<Position x="449.62" z="825.09803"/>
 			<Orientation y="6.06428"/>
 			<Actor seed="22244"/>
 		</Entity>
 		<Entity uid="3164">
-			<Template>actor|props/structures/ptolemies/ptol_military_settlement_trunks.xml</Template>
+			<Template>actor|props/structures/ptolemies/ptol/military_settlement_trunks.xml</Template>
 			<Position x="421.3266" z="719.25562"/>
 			<Orientation y="6.74335"/>
 			<Actor seed="43270"/>
@@ -19427,13 +19427,13 @@
 			<Actor seed="18464"/>
 		</Entity>
 		<Entity uid="3334">
-			<Template>actor|props/structures/ptolemies/ptol_military_settlement_trunks.xml</Template>
+			<Template>actor|props/structures/ptolemies/ptol/military_settlement_trunks.xml</Template>
 			<Position x="347.68891" z="570.12348"/>
 			<Orientation y="5.68711"/>
 			<Actor seed="22244"/>
 		</Entity>
 		<Entity uid="3335">
-			<Template>actor|props/structures/ptolemies/ptol_military_settlement_trunks.xml</Template>
+			<Template>actor|props/structures/ptolemies/ptol/military_settlement_trunks.xml</Template>
 			<Position x="360.36353" z="461.3003"/>
 			<Orientation y="6.36619"/>
 			<Actor seed="43270"/>
@@ -20447,13 +20447,13 @@
 			<Actor seed="18464"/>
 		</Entity>
 		<Entity uid="3505">
-			<Template>actor|props/structures/ptolemies/ptol_military_settlement_trunks.xml</Template>
+			<Template>actor|props/structures/ptolemies/ptol/military_settlement_trunks.xml</Template>
 			<Position x="593.51648" z="673.34925"/>
 			<Orientation y="2.46703"/>
 			<Actor seed="22244"/>
 		</Entity>
 		<Entity uid="3506">
-			<Template>actor|props/structures/ptolemies/ptol_military_settlement_trunks.xml</Template>
+			<Template>actor|props/structures/ptolemies/ptol/military_settlement_trunks.xml</Template>
 			<Position x="572.34827" z="780.84351"/>
 			<Orientation y="3.14611"/>
 			<Actor seed="43270"/>
@@ -21371,7 +21371,7 @@
 			<Actor seed="51688"/>
 		</Entity>
 		<Entity uid="3659">
-			<Template>actor|props/structures/ptolemies/ptol_military_settlement_trunks.xml</Template>
+			<Template>actor|props/structures/ptolemies/ptol/military_settlement_trunks.xml</Template>
 			<Position x="376.95197" z="499.0672"/>
 			<Orientation y="5.05225"/>
 			<Actor seed="43270"/>
@@ -22235,7 +22235,7 @@
 			<Actor seed="51688"/>
 		</Entity>
 		<Entity uid="3803">
-			<Template>actor|props/structures/ptolemies/ptol_military_settlement_trunks.xml</Template>
+			<Template>actor|props/structures/ptolemies/ptol/military_settlement_trunks.xml</Template>
 			<Position x="438.12473" z="627.995"/>
 			<Orientation y="6.3662"/>
 			<Actor seed="43270"/>
@@ -23201,7 +23201,7 @@
 			<Actor seed="52038"/>
 		</Entity>
 		<Entity uid="3964">
-			<Template>actor|props/structures/ptolemies/ptol_military_settlement_trunks.xml</Template>
+			<Template>actor|props/structures/ptolemies/ptol/military_settlement_trunks.xml</Template>
 			<Position x="338.86313" z="682.53089"/>
 			<Orientation y="8.9444"/>
 			<Actor seed="43270"/>
@@ -23771,7 +23771,7 @@
 			<Actor seed="52038"/>
 		</Entity>
 		<Entity uid="4059">
-			<Template>actor|props/structures/ptolemies/ptol_military_settlement_trunks.xml</Template>
+			<Template>actor|props/structures/ptolemies/ptol/military_settlement_trunks.xml</Template>
 			<Position x="402.07337" z="662.54072"/>
 			<Orientation y="5.49257"/>
 			<Actor seed="43270"/>
@@ -24341,7 +24341,7 @@
 			<Actor seed="52038"/>
 		</Entity>
 		<Entity uid="4154">
-			<Template>actor|props/structures/ptolemies/ptol_military_settlement_trunks.xml</Template>
+			<Template>actor|props/structures/ptolemies/ptol/military_settlement_trunks.xml</Template>
 			<Position x="320.32917" z="586.19983"/>
 			<Orientation y="6.3662"/>
 			<Actor seed="43270"/>
@@ -24911,7 +24911,7 @@
 			<Actor seed="52038"/>
 		</Entity>
 		<Entity uid="4249">
-			<Template>actor|props/structures/ptolemies/ptol_military_settlement_trunks.xml</Template>
+			<Template>actor|props/structures/ptolemies/ptol/military_settlement_trunks.xml</Template>
 			<Position x="346.79313" z="521.57795"/>
 			<Orientation y="9.22977"/>
 			<Actor seed="43270"/>
@@ -25463,7 +25463,7 @@
 			<Actor seed="22804"/>
 		</Entity>
 		<Entity uid="4342">
-			<Template>actor|props/structures/ptolemies/ptol_military_settlement_trunks.xml</Template>
+			<Template>actor|props/structures/ptolemies/ptol/military_settlement_trunks.xml</Template>
 			<Position x="442.03577" z="987.71308"/>
 			<Orientation y="8.7991"/>
 			<Actor seed="43270"/>
@@ -25619,7 +25619,7 @@
 			<Actor seed="10328"/>
 		</Entity>
 		<Entity uid="4368">
-			<Template>actor|props/structures/ptolemies/ptol_military_settlement_trunks.xml</Template>
+			<Template>actor|props/structures/ptolemies/ptol/military_settlement_trunks.xml</Template>
 			<Position x="478.83854" z="979.84882"/>
 			<Orientation y="4.62157"/>
 			<Actor seed="43270"/>
@@ -26225,7 +26225,7 @@
 			<Actor seed="22804"/>
 		</Entity>
 		<Entity uid="4469">
-			<Template>actor|props/structures/ptolemies/ptol_military_settlement_trunks.xml</Template>
+			<Template>actor|props/structures/ptolemies/ptol/military_settlement_trunks.xml</Template>
 			<Position x="581.68781" z="953.54023"/>
 			<Orientation y="5.10862"/>
 			<Actor seed="43270"/>
@@ -26381,7 +26381,7 @@
 			<Actor seed="10328"/>
 		</Entity>
 		<Entity uid="4495">
-			<Template>actor|props/structures/ptolemies/ptol_military_settlement_trunks.xml</Template>
+			<Template>actor|props/structures/ptolemies/ptol/military_settlement_trunks.xml</Template>
 			<Position x="546.188" z="941.0481"/>
 			<Orientation y="0.9311"/>
 			<Actor seed="43270"/>
@@ -26987,7 +26987,7 @@
 			<Actor seed="22804"/>
 		</Entity>
 		<Entity uid="4596">
-			<Template>actor|props/structures/ptolemies/ptol_military_settlement_trunks.xml</Template>
+			<Template>actor|props/structures/ptolemies/ptol/military_settlement_trunks.xml</Template>
 			<Position x="527.89753" z="994.13099"/>
 			<Orientation y="8.7822"/>
 			<Actor seed="43270"/>
@@ -27143,7 +27143,7 @@
 			<Actor seed="10328"/>
 		</Entity>
 		<Entity uid="4622">
-			<Template>actor|props/structures/ptolemies/ptol_military_settlement_trunks.xml</Template>
+			<Template>actor|props/structures/ptolemies/ptol/military_settlement_trunks.xml</Template>
 			<Position x="564.82789" z="986.88984"/>
 			<Orientation y="4.60468"/>
 			<Actor seed="43270"/>
@@ -28283,7 +28283,7 @@
 			<Actor seed="52038"/>
 		</Entity>
 		<Entity uid="4812">
-			<Template>actor|props/structures/ptolemies/ptol_military_settlement_trunks.xml</Template>
+			<Template>actor|props/structures/ptolemies/ptol/military_settlement_trunks.xml</Template>
 			<Position x="746.3553" z="866.4015"/>
 			<Orientation y="1.66695"/>
 			<Actor seed="43270"/>
@@ -28619,7 +28619,7 @@
 			<Actor seed="33112"/>
 		</Entity>
 		<Entity uid="4868">
-			<Template>actor|props/structures/ptolemies/ptol_military_settlement_trunks.xml</Template>
+			<Template>actor|props/structures/ptolemies/ptol/military_settlement_trunks.xml</Template>
 			<Position x="781.07917" z="922.55695"/>
 			<Orientation y="4.60468"/>
 			<Actor seed="43270"/>
@@ -28769,7 +28769,7 @@
 			<Actor seed="51688"/>
 		</Entity>
 		<Entity uid="4893">
-			<Template>actor|props/structures/ptolemies/ptol_military_settlement_trunks.xml</Template>
+			<Template>actor|props/structures/ptolemies/ptol/military_settlement_trunks.xml</Template>
 			<Position x="762.43928" z="876.71521"/>
 			<Orientation y="0.93111"/>
 			<Actor seed="43270"/>
@@ -29315,7 +29315,7 @@
 			<Actor seed="43358"/>
 		</Entity>
 		<Entity uid="4984">
-			<Template>actor|props/structures/ptolemies/ptol_military_settlement_trunks.xml</Template>
+			<Template>actor|props/structures/ptolemies/ptol/military_settlement_trunks.xml</Template>
 			<Position x="668.84064" z="902.39795"/>
 			<Orientation y="5.2834"/>
 			<Actor seed="43270"/>
@@ -29693,7 +29693,7 @@
 			<Actor seed="22804"/>
 		</Entity>
 		<Entity uid="5047">
-			<Template>actor|props/structures/ptolemies/ptol_military_settlement_trunks.xml</Template>
+			<Template>actor|props/structures/ptolemies/ptol/military_settlement_trunks.xml</Template>
 			<Position x="649.82074" z="900.57898"/>
 			<Orientation y="4.54755"/>
 			<Actor seed="43270"/>
@@ -30143,7 +30143,7 @@
 			<Actor seed="43358"/>
 		</Entity>
 		<Entity uid="5122">
-			<Template>actor|props/structures/ptolemies/ptol_military_settlement_trunks.xml</Template>
+			<Template>actor|props/structures/ptolemies/ptol/military_settlement_trunks.xml</Template>
 			<Position x="594.42725" z="922.42164"/>
 			<Orientation y="2.31031"/>
 			<Actor seed="43270"/>
@@ -30521,7 +30521,7 @@
 			<Actor seed="22804"/>
 		</Entity>
 		<Entity uid="5185">
-			<Template>actor|props/structures/ptolemies/ptol_military_settlement_trunks.xml</Template>
+			<Template>actor|props/structures/ptolemies/ptol/military_settlement_trunks.xml</Template>
 			<Position x="613.48285" z="921.02485"/>
 			<Orientation y="1.57447"/>
 			<Actor seed="43270"/>
@@ -30971,7 +30971,7 @@
 			<Actor seed="43358"/>
 		</Entity>
 		<Entity uid="5260">
-			<Template>actor|props/structures/ptolemies/ptol_military_settlement_trunks.xml</Template>
+			<Template>actor|props/structures/ptolemies/ptol/military_settlement_trunks.xml</Template>
 			<Position x="651.84937" z="977.63025"/>
 			<Orientation y="2.85764"/>
 			<Actor seed="43270"/>
@@ -31349,7 +31349,7 @@
 			<Actor seed="22804"/>
 		</Entity>
 		<Entity uid="5323">
-			<Template>actor|props/structures/ptolemies/ptol_military_settlement_trunks.xml</Template>
+			<Template>actor|props/structures/ptolemies/ptol/military_settlement_trunks.xml</Template>
 			<Position x="667.39448" z="966.52094"/>
 			<Orientation y="2.1218"/>
 			<Actor seed="43270"/>
@@ -31661,7 +31661,7 @@
 			<Actor seed="28994"/>
 		</Entity>
 		<Entity uid="5375">
-			<Template>actor|props/structures/ptolemies/ptol_military_settlement_trunks.xml</Template>
+			<Template>actor|props/structures/ptolemies/ptol/military_settlement_trunks.xml</Template>
 			<Position x="484.90598" z="868.95978"/>
 			<Orientation y="4.60468"/>
 			<Actor seed="43270"/>
@@ -32231,7 +32231,7 @@
 			<Actor seed="28994"/>
 		</Entity>
 		<Entity uid="5470">
-			<Template>actor|props/structures/ptolemies/ptol_military_settlement_trunks.xml</Template>
+			<Template>actor|props/structures/ptolemies/ptol/military_settlement_trunks.xml</Template>
 			<Position x="414.9517" z="895.56727"/>
 			<Orientation y="1.79647"/>
 			<Actor seed="43270"/>

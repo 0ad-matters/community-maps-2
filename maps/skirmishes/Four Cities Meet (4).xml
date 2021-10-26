@@ -11431,7 +11431,7 @@
 			<Actor seed="65257"/>
 		</Entity>
 		<Entity uid="1719">
-			<Template>structures/gaul_house</Template>
+			<Template>structures/gaul/house</Template>
 			<Player>0</Player>
 			<Position x="661.37653" z="764.70856"/>
 			<Orientation y="4.11648"/>
@@ -11470,28 +11470,28 @@
 			<Orientation y="2.35621"/>
 		</Entity>
 		<Entity uid="1726">
-			<Template>units/gaul_support_healer_b</Template>
+			<Template>units/gaul/support_healer_b</Template>
 			<Player>0</Player>
 			<Position x="658.48523" z="772.08887"/>
 			<Orientation y="7.06341"/>
 			<Actor seed="52894"/>
 		</Entity>
 		<Entity uid="1727">
-			<Template>units/gaul_support_trader</Template>
+			<Template>units/gaul/support_trader</Template>
 			<Player>0</Player>
 			<Position x="658.54413" z="782.31812"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="17832"/>
 		</Entity>
 		<Entity uid="1728">
-			<Template>units/gaul_infantry_slinger_b</Template>
+			<Template>units/gaul/infantry_slinger_b</Template>
 			<Player>0</Player>
 			<Position x="670.774" z="767.745"/>
 			<Orientation y="5.59038"/>
 			<Actor seed="62302"/>
 		</Entity>
 		<Entity uid="1729">
-			<Template>units/gaul_infantry_slinger_b</Template>
+			<Template>units/gaul/infantry_slinger_b</Template>
 			<Player>0</Player>
 			<Position x="666.28998" z="774.18567"/>
 			<Orientation y="4.86722"/>

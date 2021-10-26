@@ -125,55 +125,55 @@
 ]]></ScriptSettings>
 	<Entities>
 		<Entity uid="150">
-			<Template>structures/mace_civil_centre</Template>
+			<Template>structures/mace/civil_centre</Template>
 			<Player>1</Player>
 			<Position x="159.79542" z="628.22638"/>
 			<Orientation y="2.34662"/>
 		</Entity>
 		<Entity uid="151">
-			<Template>units/mace_support_female_citizen</Template>
+			<Template>units/mace/support_female_citizen</Template>
 			<Player>1</Player>
 			<Position x="152.51206" z="607.2865"/>
 			<Orientation y="3.927"/>
 		</Entity>
 		<Entity uid="153">
-			<Template>units/mace_support_female_citizen</Template>
+			<Template>units/mace/support_female_citizen</Template>
 			<Player>1</Player>
 			<Position x="168.42865" z="605.66297"/>
 			<Orientation y="2.31978"/>
 		</Entity>
 		<Entity uid="154">
-			<Template>units/mace_support_female_citizen</Template>
+			<Template>units/mace/support_female_citizen</Template>
 			<Player>1</Player>
 			<Position x="160.77427" z="603.31482"/>
 			<Orientation y="3.14156"/>
 		</Entity>
 		<Entity uid="155">
-			<Template>units/mace_infantry_pikeman_b</Template>
+			<Template>units/mace/infantry_pikeman_b</Template>
 			<Player>1</Player>
 			<Position x="178.0998" z="614.98365"/>
 			<Orientation y="2.35621"/>
 		</Entity>
 		<Entity uid="156">
-			<Template>units/mace_infantry_pikeman_b</Template>
+			<Template>units/mace/infantry_pikeman_b</Template>
 			<Player>1</Player>
 			<Position x="173.45368" z="611.417"/>
 			<Orientation y="2.35621"/>
 		</Entity>
 		<Entity uid="157">
-			<Template>units/mace_infantry_javelinist_b</Template>
+			<Template>units/mace/infantry_javelinist_b</Template>
 			<Player>1</Player>
 			<Position x="185.23523" z="619.15375"/>
 			<Orientation y="0.78541"/>
 		</Entity>
 		<Entity uid="158">
-			<Template>units/mace_infantry_javelinist_b</Template>
+			<Template>units/mace/infantry_javelinist_b</Template>
 			<Player>1</Player>
 			<Position x="187.55994" z="623.73615"/>
 			<Orientation y="0.78541"/>
 		</Entity>
 		<Entity uid="159">
-			<Template>units/mace_cavalry_spearman_b</Template>
+			<Template>units/mace/cavalry_spearman_b</Template>
 			<Player>1</Player>
 			<Position x="194.75934" z="597.87415"/>
 			<Orientation y="2.47014"/>
@@ -51743,7 +51743,7 @@
 			<Actor seed="8401"/>
 		</Entity>
 		<Entity uid="9946">
-			<Template>structures/cart_civil_centre</Template>
+			<Template>structures/cart/civil_centre</Template>
 			<Player>2</Player>
 			<Position x="1637.75672" z="1031.7212"/>
 			<Orientation y="-1.46087"/>

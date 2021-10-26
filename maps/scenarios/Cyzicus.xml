@@ -107,14 +107,14 @@
 ]]></ScriptSettings>
 	<Entities>
 		<Entity uid="7">
-			<Template>structures/sele_military_colony</Template>
+			<Template>structures/sele/military_colony</Template>
 			<Player>1</Player>
 			<Position x="657.12006" z="117.03138"/>
 			<Orientation y="2.33854"/>
 			<Actor seed="56703"/>
 		</Entity>
 		<Entity uid="8">
-			<Template>structures/rome_army_camp</Template>
+			<Template>structures/rome/army_camp</Template>
 			<Player>1</Player>
 			<Position x="701.20051" z="75.74451"/>
 			<Orientation y="2.35621"/>
@@ -122,174 +122,174 @@
 			<Actor seed="19427"/>
 		</Entity>
 		<Entity uid="9">
-			<Template>structures/rome_temple_vesta</Template>
+			<Template>structures/rome/temple_vesta</Template>
 			<Player>1</Player>
 			<Position x="660.43775" z="84.73989"/>
 			<Orientation y="0.85177"/>
 			<Actor seed="9251"/>
 		</Entity>
 		<Entity uid="10">
-			<Template>structures/rome_blacksmith</Template>
+			<Template>structures/rome/forge</Template>
 			<Player>1</Player>
 			<Position x="604.9444" z="143.54667"/>
 			<Orientation y="2.00252"/>
 			<Actor seed="18893"/>
 		</Entity>
 		<Entity uid="11">
-			<Template>structures/sele_military_colony</Template>
+			<Template>structures/sele/military_colony</Template>
 			<Player>2</Player>
 			<Position x="276.46686" z="1288.67054"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="48500"/>
 		</Entity>
 		<Entity uid="12">
-			<Template>structures/pers_dock</Template>
+			<Template>structures/pers/dock</Template>
 			<Player>2</Player>
 			<Position x="215.3502" z="1226.28333"/>
 			<Orientation y="1.9208"/>
 			<Actor seed="40547"/>
 		</Entity>
 		<Entity uid="15">
-			<Template>structures/athen_civil_centre</Template>
+			<Template>structures/athen/civil_centre</Template>
 			<Player>3</Player>
 			<Position x="768.76838" z="1381.06324"/>
 			<Orientation y="-7.0588"/>
 			<Actor seed="26726"/>
 		</Entity>
 		<Entity uid="16">
-			<Template>structures/athen_wall_tower</Template>
+			<Template>structures/athen/wall_tower</Template>
 			<Player>3</Player>
 			<Position x="708.6023" z="1424.68531"/>
 			<Orientation y="2.38729"/>
 			<Actor seed="58706"/>
 		</Entity>
 		<Entity uid="17">
-			<Template>structures/athen_wall_tower</Template>
+			<Template>structures/athen/wall_tower</Template>
 			<Player>3</Player>
 			<Position x="681.80347" z="1397.8672"/>
 			<Orientation y="2.31469"/>
 			<Actor seed="48371"/>
 		</Entity>
 		<Entity uid="18">
-			<Template>structures/athen_wall_tower</Template>
+			<Template>structures/athen/wall_tower</Template>
 			<Player>3</Player>
 			<Position x="629.01917" z="1338.72193"/>
 			<Orientation y="2.28142"/>
 			<Actor seed="51978"/>
 		</Entity>
 		<Entity uid="19">
-			<Template>structures/athen_wall_tower</Template>
+			<Template>structures/athen/wall_tower</Template>
 			<Player>3</Player>
 			<Position x="757.27942" z="1464.42005"/>
 			<Orientation y="2.57198"/>
 			<Actor seed="51978"/>
 		</Entity>
 		<Entity uid="20">
-			<Template>structures/athen_wall_tower</Template>
+			<Template>structures/athen/wall_tower</Template>
 			<Player>3</Player>
 			<Position x="801.92157" z="1485.03467"/>
 			<Orientation y="2.93487"/>
 			<Actor seed="51978"/>
 		</Entity>
 		<Entity uid="21">
-			<Template>structures/athen_wall_tower</Template>
+			<Template>structures/athen/wall_tower</Template>
 			<Player>3</Player>
 			<Position x="852.09668" z="1485.76294"/>
 			<Orientation y="3.254"/>
 			<Actor seed="51978"/>
 		</Entity>
 		<Entity uid="23">
-			<Template>structures/athen_wall_tower</Template>
+			<Template>structures/athen/wall_tower</Template>
 			<Player>3</Player>
 			<Position x="881.00464" z="1368.89197"/>
 			<Orientation y="4.70621"/>
 			<Actor seed="51978"/>
 		</Entity>
 		<Entity uid="24">
-			<Template>structures/athen_wall_tower</Template>
+			<Template>structures/athen/wall_tower</Template>
 			<Player>3</Player>
 			<Position x="888.2798" z="1290.13428"/>
 			<Orientation y="-1.80117"/>
 			<Actor seed="51978"/>
 		</Entity>
 		<Entity uid="25">
-			<Template>structures/athen_wall_tower</Template>
+			<Template>structures/athen/wall_tower</Template>
 			<Player>3</Player>
 			<Position x="900.88605" z="1249.23841"/>
 			<Orientation y="4.33402"/>
 			<Actor seed="51978"/>
 		</Entity>
 		<Entity uid="26">
-			<Template>structures/athen_dock</Template>
+			<Template>structures/athen/dock</Template>
 			<Player>3</Player>
 			<Position x="914.23572" z="1420.38147"/>
 			<Orientation y="1.46705"/>
 		</Entity>
 		<Entity uid="28">
-			<Template>structures/rome_siege_wall_tower</Template>
+			<Template>structures/rome/siege_wall_tower</Template>
 			<Player>2</Player>
 			<Position x="528.09107" z="1320.95203"/>
 			<Orientation y="2.03101"/>
 			<Actor seed="31398"/>
 		</Entity>
 		<Entity uid="29">
-			<Template>structures/rome_siege_wall_tower</Template>
+			<Template>structures/rome/siege_wall_tower</Template>
 			<Player>2</Player>
 			<Position x="577.75489" z="1399.72376"/>
 			<Orientation y="2.30279"/>
 			<Actor seed="4368"/>
 		</Entity>
 		<Entity uid="30">
-			<Template>structures/rome_siege_wall_tower</Template>
+			<Template>structures/rome/siege_wall_tower</Template>
 			<Player>2</Player>
 			<Position x="554.18964" z="1366.27063"/>
 			<Orientation y="2.15851"/>
 			<Actor seed="35099"/>
 		</Entity>
 		<Entity uid="31">
-			<Template>structures/rome_siege_wall_tower</Template>
+			<Template>structures/rome/siege_wall_tower</Template>
 			<Player>2</Player>
 			<Position x="615.14911" z="1437.64026"/>
 			<Orientation y="2.42696"/>
 			<Actor seed="61863"/>
 		</Entity>
 		<Entity uid="32">
-			<Template>structures/rome_siege_wall_tower</Template>
+			<Template>structures/rome/siege_wall_tower</Template>
 			<Player>2</Player>
 			<Position x="655.34083" z="1472.27161"/>
 			<Orientation y="2.44835"/>
 			<Actor seed="11183"/>
 		</Entity>
 		<Entity uid="33">
-			<Template>structures/rome_siege_wall_tower</Template>
+			<Template>structures/rome/siege_wall_tower</Template>
 			<Player>2</Player>
 			<Position x="698.07447" z="1504.03846"/>
 			<Orientation y="2.58552"/>
 			<Actor seed="37842"/>
 		</Entity>
 		<Entity uid="34">
-			<Template>structures/rome_siege_wall_tower</Template>
+			<Template>structures/rome/siege_wall_tower</Template>
 			<Player>2</Player>
 			<Position x="747.85663" z="1522.43812"/>
 			<Orientation y="2.95897"/>
 			<Actor seed="23337"/>
 		</Entity>
 		<Entity uid="35">
-			<Template>structures/rome_siege_wall_tower</Template>
+			<Template>structures/rome/siege_wall_tower</Template>
 			<Player>2</Player>
 			<Position x="800.7707" z="1527.73365"/>
 			<Orientation y="3.05886"/>
 			<Actor seed="12294"/>
 		</Entity>
 		<Entity uid="36">
-			<Template>structures/rome_siege_wall_tower</Template>
+			<Template>structures/rome/siege_wall_tower</Template>
 			<Player>2</Player>
 			<Position x="841.0746" z="1527.91541"/>
 			<Orientation y="3.00731"/>
 			<Actor seed="23292"/>
 		</Entity>
 		<Entity uid="38">
-			<Template>structures/rome_siege_wall_short</Template>
+			<Template>structures/rome/siege_wall_short</Template>
 			<Player>2</Player>
 			<Position x="809.71265" z="1527.12037"/>
 			<Orientation y="3.11721"/>
@@ -297,7 +297,7 @@
 			<Actor seed="54920"/>
 		</Entity>
 		<Entity uid="39">
-			<Template>structures/rome_siege_wall_short</Template>
+			<Template>structures/rome/siege_wall_short</Template>
 			<Player>2</Player>
 			<Position x="706.3028" z="1507.67945"/>
 			<Orientation y="2.643"/>
@@ -305,7 +305,7 @@
 			<Actor seed="60858"/>
 		</Entity>
 		<Entity uid="40">
-			<Template>structures/rome_siege_wall_short</Template>
+			<Template>structures/rome/siege_wall_short</Template>
 			<Player>2</Player>
 			<Position x="792.5055" z="1526.01124"/>
 			<Orientation y="3.05987"/>
@@ -313,7 +313,7 @@
 			<Actor seed="30829"/>
 		</Entity>
 		<Entity uid="41">
-			<Template>structures/rome_siege_wall_short</Template>
+			<Template>structures/rome/siege_wall_short</Template>
 			<Player>2</Player>
 			<Position x="757.04004" z="1522.52186"/>
 			<Orientation y="3.01618"/>
@@ -321,7 +321,7 @@
 			<Actor seed="60301"/>
 		</Entity>
 		<Entity uid="42">
-			<Template>structures/rome_siege_wall_short</Template>
+			<Template>structures/rome/siege_wall_short</Template>
 			<Player>2</Player>
 			<Position x="833.17658" z="1526.66614"/>
 			<Orientation y="3.18615"/>
@@ -329,14 +329,14 @@
 			<Actor seed="60301"/>
 		</Entity>
 		<Entity uid="43">
-			<Template>structures/rome_siege_wall_short</Template>
+			<Template>structures/rome/siege_wall_short</Template>
 			<Player>2</Player>
 			<Position x="821.49567" z="1527.0973"/>
 			<Orientation y="3.16742"/>
 			<Actor seed="60301"/>
 		</Entity>
 		<Entity uid="44">
-			<Template>structures/rome_siege_wall_short</Template>
+			<Template>structures/rome/siege_wall_short</Template>
 			<Player>2</Player>
 			<Position x="739.83234" z="1519.6504"/>
 			<Orientation y="2.8654"/>
@@ -344,21 +344,21 @@
 			<Actor seed="60301"/>
 		</Entity>
 		<Entity uid="45">
-			<Template>structures/rome_siege_wall_medium</Template>
+			<Template>structures/rome/siege_wall_medium</Template>
 			<Player>2</Player>
 			<Position x="774.8863" z="1524.70203"/>
 			<Orientation y="3.08599"/>
 			<Actor seed="58464"/>
 		</Entity>
 		<Entity uid="46">
-			<Template>structures/rome_siege_wall_medium</Template>
+			<Template>structures/rome/siege_wall_medium</Template>
 			<Player>2</Player>
 			<Position x="722.87458" z="1514.36927"/>
 			<Orientation y="2.81748"/>
 			<Actor seed="45256"/>
 		</Entity>
 		<Entity uid="47">
-			<Template>structures/rome_siege_wall_medium</Template>
+			<Template>structures/rome/siege_wall_medium</Template>
 			<Player>2</Player>
 			<Position x="686.8708" z="1494.5276"/>
 			<Orientation y="2.4917"/>
@@ -366,7 +366,7 @@
 			<Actor seed="687"/>
 		</Entity>
 		<Entity uid="56">
-			<Template>structures/athen_wall_long</Template>
+			<Template>structures/athen/wall_long</Template>
 			<Player>3</Player>
 			<Position x="891.13276" z="1436.9773"/>
 			<Orientation y="1.76131"/>
@@ -374,7 +374,7 @@
 			<Actor seed="37547"/>
 		</Entity>
 		<Entity uid="57">
-			<Template>structures/athen_wall_long</Template>
+			<Template>structures/athen/wall_long</Template>
 			<Player>3</Player>
 			<Position x="885.09534" z="1401.80982"/>
 			<Orientation y="1.72542"/>
@@ -382,7 +382,7 @@
 			<Actor seed="64263"/>
 		</Entity>
 		<Entity uid="59">
-			<Template>structures/athen_wall_gate</Template>
+			<Template>structures/athen/wall_gate</Template>
 			<Player>3</Player>
 			<Position x="895.33887" z="1269.99988"/>
 			<Orientation y="10.69874"/>
@@ -390,7 +390,7 @@
 			<Actor seed="6149"/>
 		</Entity>
 		<Entity uid="60">
-			<Template>structures/athen_wall_long</Template>
+			<Template>structures/athen/wall_long</Template>
 			<Player>3</Player>
 			<Position x="882.85212" z="1347.32581"/>
 			<Orientation y="1.508"/>
@@ -398,7 +398,7 @@
 			<Actor seed="5877"/>
 		</Entity>
 		<Entity uid="61">
-			<Template>structures/athen_wall_long</Template>
+			<Template>structures/athen/wall_long</Template>
 			<Player>3</Player>
 			<Position x="886.21796" z="1311.70313"/>
 			<Orientation y="4.59537"/>
@@ -406,28 +406,28 @@
 			<Actor seed="35604"/>
 		</Entity>
 		<Entity uid="63">
-			<Template>structures/athen_wall_tower</Template>
+			<Template>structures/athen/wall_tower</Template>
 			<Player>3</Player>
 			<Position x="924.50202" z="1190.69251"/>
 			<Orientation y="5.02042"/>
 			<Actor seed="51978"/>
 		</Entity>
 		<Entity uid="64">
-			<Template>structures/athen_wall_tower</Template>
+			<Template>structures/athen/wall_tower</Template>
 			<Player>3</Player>
 			<Position x="835.39118" z="1150.6266"/>
 			<Orientation y="5.75734"/>
 			<Actor seed="51978"/>
 		</Entity>
 		<Entity uid="65">
-			<Template>structures/athen_wall_tower</Template>
+			<Template>structures/athen/wall_tower</Template>
 			<Player>3</Player>
 			<Position x="799.03534" z="1128.01587"/>
 			<Orientation y="5.6372"/>
 			<Actor seed="51978"/>
 		</Entity>
 		<Entity uid="66">
-			<Template>structures/athen_wall_gate</Template>
+			<Template>structures/athen/wall_gate</Template>
 			<Player>3</Player>
 			<Position x="817.6189" z="1138.8584"/>
 			<Orientation y="12.016"/>
@@ -435,7 +435,7 @@
 			<Actor seed="6149"/>
 		</Entity>
 		<Entity uid="67">
-			<Template>structures/athen_wall_gate</Template>
+			<Template>structures/athen/wall_gate</Template>
 			<Player>3</Player>
 			<Position x="686.42603" z="1015.42432"/>
 			<Orientation y="11.66799"/>
@@ -443,21 +443,21 @@
 			<Actor seed="6149"/>
 		</Entity>
 		<Entity uid="68">
-			<Template>structures/athen_wall_tower</Template>
+			<Template>structures/athen/wall_tower</Template>
 			<Player>3</Player>
 			<Position x="698.79145" z="1032.3313"/>
 			<Orientation y="5.38311"/>
 			<Actor seed="51978"/>
 		</Entity>
 		<Entity uid="69">
-			<Template>structures/athen_wall_tower</Template>
+			<Template>structures/athen/wall_tower</Template>
 			<Player>3</Player>
 			<Position x="672.44996" z="999.50031"/>
 			<Orientation y="5.39444"/>
 			<Actor seed="51978"/>
 		</Entity>
 		<Entity uid="70">
-			<Template>structures/athen_wall_gate</Template>
+			<Template>structures/athen/wall_gate</Template>
 			<Player>3</Player>
 			<Position x="535.25141" z="1013.30518"/>
 			<Orientation y="13.9845"/>
@@ -465,21 +465,21 @@
 			<Actor seed="6149"/>
 		</Entity>
 		<Entity uid="71">
-			<Template>structures/athen_wall_tower</Template>
+			<Template>structures/athen/wall_tower</Template>
 			<Player>3</Player>
 			<Position x="539.8141" z="992.31965"/>
 			<Orientation y="7.65816"/>
 			<Actor seed="51978"/>
 		</Entity>
 		<Entity uid="72">
-			<Template>structures/athen_wall_tower</Template>
+			<Template>structures/athen/wall_tower</Template>
 			<Player>3</Player>
 			<Position x="532.96528" z="1034.54664"/>
 			<Orientation y="7.74068"/>
 			<Actor seed="51978"/>
 		</Entity>
 		<Entity uid="73">
-			<Template>structures/athen_wall_gate</Template>
+			<Template>structures/athen/wall_gate</Template>
 			<Player>3</Player>
 			<Position x="546.57825" z="1203.1919"/>
 			<Orientation y="8.22178"/>
@@ -487,21 +487,21 @@
 			<Actor seed="6149"/>
 		</Entity>
 		<Entity uid="74">
-			<Template>structures/athen_wall_tower</Template>
+			<Template>structures/athen/wall_tower</Template>
 			<Player>3</Player>
 			<Position x="540.22193" z="1183.19764"/>
 			<Orientation y="1.84578"/>
 			<Actor seed="51978"/>
 		</Entity>
 		<Entity uid="75">
-			<Template>structures/athen_wall_tower</Template>
+			<Template>structures/athen/wall_tower</Template>
 			<Player>3</Player>
 			<Position x="555.41547" z="1222.45862"/>
 			<Orientation y="2.0277"/>
 			<Actor seed="51978"/>
 		</Entity>
 		<Entity uid="76">
-			<Template>structures/athen_wall_short</Template>
+			<Template>structures/athen/wall_short</Template>
 			<Player>3</Player>
 			<Position x="882.12855" z="1378.24988"/>
 			<Orientation y="7.89846"/>
@@ -509,7 +509,7 @@
 			<Actor seed="25733"/>
 		</Entity>
 		<Entity uid="77">
-			<Template>structures/athen_wall_long</Template>
+			<Template>structures/athen/wall_long</Template>
 			<Player>3</Player>
 			<Position x="910.06067" z="1230.08045"/>
 			<Orientation y="1.15616"/>
@@ -517,7 +517,7 @@
 			<Actor seed="48707"/>
 		</Entity>
 		<Entity uid="78">
-			<Template>structures/athen_wall_medium</Template>
+			<Template>structures/athen/wall_medium</Template>
 			<Player>3</Player>
 			<Position x="921.92927" z="1203.06214"/>
 			<Orientation y="1.17077"/>
@@ -525,7 +525,7 @@
 			<Actor seed="33369"/>
 		</Entity>
 		<Entity uid="79">
-			<Template>structures/athen_wall_medium</Template>
+			<Template>structures/athen/wall_medium</Template>
 			<Player>3</Player>
 			<Position x="915.17341" z="1182.58399"/>
 			<Orientation y="2.62443"/>
@@ -533,7 +533,7 @@
 			<Actor seed="33369"/>
 		</Entity>
 		<Entity uid="80">
-			<Template>structures/athen_wall_long</Template>
+			<Template>structures/athen/wall_long</Template>
 			<Player>3</Player>
 			<Position x="783.06067" z="1113.70691"/>
 			<Orientation y="2.44536"/>
@@ -541,21 +541,21 @@
 			<Actor seed="63792"/>
 		</Entity>
 		<Entity uid="81">
-			<Template>structures/athen_wall_medium</Template>
+			<Template>structures/athen/wall_medium</Template>
 			<Player>3</Player>
 			<Position x="894.27137" z="1171.81482"/>
 			<Orientation y="2.72454"/>
 			<Actor seed="33369"/>
 		</Entity>
 		<Entity uid="82">
-			<Template>structures/athen_wall_medium</Template>
+			<Template>structures/athen/wall_medium</Template>
 			<Player>3</Player>
 			<Position x="872.18982" z="1163.40015"/>
 			<Orientation y="2.84771"/>
 			<Actor seed="33369"/>
 		</Entity>
 		<Entity uid="83">
-			<Template>structures/athen_wall_medium</Template>
+			<Template>structures/athen/wall_medium</Template>
 			<Player>3</Player>
 			<Position x="849.85218" z="1155.73365"/>
 			<Orientation y="2.77724"/>
@@ -563,14 +563,14 @@
 			<Actor seed="33369"/>
 		</Entity>
 		<Entity uid="84">
-			<Template>structures/athen_wall_tower</Template>
+			<Template>structures/athen/wall_tower</Template>
 			<Player>3</Player>
 			<Position x="607.60535" z="906.88782"/>
 			<Orientation y="5.75008"/>
 			<Actor seed="51978"/>
 		</Entity>
 		<Entity uid="85">
-			<Template>structures/athen_wall_tower</Template>
+			<Template>structures/athen/wall_tower</Template>
 			<Player>3</Player>
 			<Position x="569.8011" z="910.17237"/>
 			<Orientation y="0.60552"/>
@@ -583,21 +583,21 @@
 			<Actor seed="22871"/>
 		</Entity>
 		<Entity uid="87">
-			<Template>structures/athen_wall_long</Template>
+			<Template>structures/athen/wall_long</Template>
 			<Player>3</Player>
 			<Position x="756.25116" z="1089.85047"/>
 			<Orientation y="2.38408"/>
 			<Actor seed="63792"/>
 		</Entity>
 		<Entity uid="88">
-			<Template>structures/athen_wall_long</Template>
+			<Template>structures/athen/wall_long</Template>
 			<Player>3</Player>
 			<Position x="730.32825" z="1064.81019"/>
 			<Orientation y="2.361"/>
 			<Actor seed="63792"/>
 		</Entity>
 		<Entity uid="89">
-			<Template>structures/athen_wall_medium</Template>
+			<Template>structures/athen/wall_medium</Template>
 			<Player>3</Player>
 			<Position x="709.68104" z="1043.4087"/>
 			<Orientation y="2.30057"/>
@@ -605,7 +605,7 @@
 			<Actor seed="33369"/>
 		</Entity>
 		<Entity uid="90">
-			<Template>structures/athen_wall_long</Template>
+			<Template>structures/athen/wall_long</Template>
 			<Player>3</Player>
 			<Position x="660.2975" z="981.51624"/>
 			<Orientation y="2.19947"/>
@@ -613,14 +613,14 @@
 			<Actor seed="63792"/>
 		</Entity>
 		<Entity uid="91">
-			<Template>structures/athen_wall_long</Template>
+			<Template>structures/athen/wall_long</Template>
 			<Player>3</Player>
 			<Position x="639.62427" z="952.13392"/>
 			<Orientation y="2.16805"/>
 			<Actor seed="63792"/>
 		</Entity>
 		<Entity uid="92">
-			<Template>structures/athen_wall_long</Template>
+			<Template>structures/athen/wall_long</Template>
 			<Player>3</Player>
 			<Position x="619.81489" z="922.13703"/>
 			<Orientation y="2.14341"/>
@@ -628,7 +628,7 @@
 			<Actor seed="63792"/>
 		</Entity>
 		<Entity uid="93">
-			<Template>structures/athen_wall_long</Template>
+			<Template>structures/athen/wall_long</Template>
 			<Player>3</Player>
 			<Position x="588.75263" z="906.27259"/>
 			<Orientation y="3.23124"/>
@@ -636,7 +636,7 @@
 			<Actor seed="42328"/>
 		</Entity>
 		<Entity uid="94">
-			<Template>structures/athen_wall_long</Template>
+			<Template>structures/athen/wall_long</Template>
 			<Player>3</Player>
 			<Position x="561.11634" z="926.89118"/>
 			<Orientation y="7.49067"/>
@@ -644,14 +644,14 @@
 			<Actor seed="56805"/>
 		</Entity>
 		<Entity uid="95">
-			<Template>structures/athen_wall_long</Template>
+			<Template>structures/athen/wall_long</Template>
 			<Player>3</Player>
 			<Position x="548.69153" z="960.59394"/>
 			<Orientation y="7.51473"/>
 			<Actor seed="56805"/>
 		</Entity>
 		<Entity uid="96">
-			<Template>structures/athen_wall_short</Template>
+			<Template>structures/athen/wall_short</Template>
 			<Player>3</Player>
 			<Position x="541.12427" z="983.0702"/>
 			<Orientation y="7.57688"/>
@@ -659,7 +659,7 @@
 			<Actor seed="43847"/>
 		</Entity>
 		<Entity uid="97">
-			<Template>structures/athen_wall_long</Template>
+			<Template>structures/athen/wall_long</Template>
 			<Player>3</Player>
 			<Position x="530.36628" z="1055.78687"/>
 			<Orientation y="7.77828"/>
@@ -667,21 +667,21 @@
 			<Actor seed="56805"/>
 		</Entity>
 		<Entity uid="98">
-			<Template>structures/athen_wall_long</Template>
+			<Template>structures/athen/wall_long</Template>
 			<Player>3</Player>
 			<Position x="529.29792" z="1091.51001"/>
 			<Orientation y="7.87154"/>
 			<Actor seed="56805"/>
 		</Entity>
 		<Entity uid="99">
-			<Template>structures/athen_wall_long</Template>
+			<Template>structures/athen/wall_long</Template>
 			<Player>3</Player>
 			<Position x="530.8647" z="1127.28785"/>
 			<Orientation y="1.6414"/>
 			<Actor seed="56805"/>
 		</Entity>
 		<Entity uid="100">
-			<Template>structures/athen_wall_long</Template>
+			<Template>structures/athen/wall_long</Template>
 			<Player>3</Player>
 			<Position x="535.30787" z="1162.68494"/>
 			<Orientation y="8.02846"/>
@@ -689,7 +689,7 @@
 			<Actor seed="56805"/>
 		</Entity>
 		<Entity uid="101">
-			<Template>structures/athen_wall_long</Template>
+			<Template>structures/athen/wall_long</Template>
 			<Player>3</Player>
 			<Position x="564.7193" z="1241.62269"/>
 			<Orientation y="8.36245"/>
@@ -697,21 +697,21 @@
 			<Actor seed="56805"/>
 		</Entity>
 		<Entity uid="102">
-			<Template>structures/athen_wall_long</Template>
+			<Template>structures/athen/wall_long</Template>
 			<Player>3</Player>
 			<Position x="582.7497" z="1272.57862"/>
 			<Orientation y="8.40328"/>
 			<Actor seed="56805"/>
 		</Entity>
 		<Entity uid="103">
-			<Template>structures/athen_wall_long</Template>
+			<Template>structures/athen/wall_long</Template>
 			<Player>3</Player>
 			<Position x="601.85724" z="1302.9021"/>
 			<Orientation y="8.43328"/>
 			<Actor seed="56805"/>
 		</Entity>
 		<Entity uid="104">
-			<Template>structures/athen_wall_medium</Template>
+			<Template>structures/athen/wall_medium</Template>
 			<Player>3</Player>
 			<Position x="618.86207" z="1327.21949"/>
 			<Orientation y="2.22728"/>
@@ -719,7 +719,7 @@
 			<Actor seed="14877"/>
 		</Entity>
 		<Entity uid="105">
-			<Template>structures/athen_wall_short</Template>
+			<Template>structures/athen/wall_short</Template>
 			<Player>3</Player>
 			<Position x="634.34467" z="1346.04285"/>
 			<Orientation y="2.31293"/>
@@ -727,42 +727,42 @@
 			<Actor seed="11171"/>
 		</Entity>
 		<Entity uid="106">
-			<Template>structures/athen_wall_short</Template>
+			<Template>structures/athen/wall_short</Template>
 			<Player>3</Player>
 			<Position x="641.73041" z="1354.16761"/>
 			<Orientation y="2.3209"/>
 			<Actor seed="27846"/>
 		</Entity>
 		<Entity uid="107">
-			<Template>structures/athen_wall_short</Template>
+			<Template>structures/athen/wall_short</Template>
 			<Player>3</Player>
 			<Position x="649.29255" z="1362.30201"/>
 			<Orientation y="2.31293"/>
 			<Actor seed="64134"/>
 		</Entity>
 		<Entity uid="108">
-			<Template>structures/athen_wall_short</Template>
+			<Template>structures/athen/wall_short</Template>
 			<Player>3</Player>
 			<Position x="655.60914" z="1369.46167"/>
 			<Orientation y="2.31293"/>
 			<Actor seed="37304"/>
 		</Entity>
 		<Entity uid="109">
-			<Template>structures/athen_wall_short</Template>
+			<Template>structures/athen/wall_short</Template>
 			<Player>3</Player>
 			<Position x="662.0799" z="1376.63123"/>
 			<Orientation y="2.31293"/>
 			<Actor seed="50267"/>
 		</Entity>
 		<Entity uid="110">
-			<Template>structures/athen_wall_short</Template>
+			<Template>structures/athen/wall_short</Template>
 			<Player>3</Player>
 			<Position x="668.71277" z="1384.0127"/>
 			<Orientation y="2.26276"/>
 			<Actor seed="23563"/>
 		</Entity>
 		<Entity uid="111">
-			<Template>structures/athen_wall_short</Template>
+			<Template>structures/athen/wall_short</Template>
 			<Player>3</Player>
 			<Position x="675.09095" z="1391.38758"/>
 			<Orientation y="2.25605"/>
@@ -770,7 +770,7 @@
 			<Actor seed="14219"/>
 		</Entity>
 		<Entity uid="112">
-			<Template>structures/athen_wall_short</Template>
+			<Template>structures/athen/wall_short</Template>
 			<Player>3</Player>
 			<Position x="687.62146" z="1405.41004"/>
 			<Orientation y="2.35621"/>
@@ -778,14 +778,14 @@
 			<Actor seed="7587"/>
 		</Entity>
 		<Entity uid="113">
-			<Template>structures/athen_wall_short</Template>
+			<Template>structures/athen/wall_short</Template>
 			<Player>3</Player>
 			<Position x="694.68262" z="1412.12012"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="14443"/>
 		</Entity>
 		<Entity uid="114">
-			<Template>structures/athen_wall_short</Template>
+			<Template>structures/athen/wall_short</Template>
 			<Player>3</Player>
 			<Position x="701.36231" z="1418.7787"/>
 			<Orientation y="2.35622"/>
@@ -793,7 +793,7 @@
 			<Actor seed="14443"/>
 		</Entity>
 		<Entity uid="116">
-			<Template>structures/athen_wall_short</Template>
+			<Template>structures/athen/wall_short</Template>
 			<Player>3</Player>
 			<Position x="714.97376" z="1431.85462"/>
 			<Orientation y="2.39376"/>
@@ -801,28 +801,28 @@
 			<Actor seed="7281"/>
 		</Entity>
 		<Entity uid="117">
-			<Template>structures/athen_wall_short</Template>
+			<Template>structures/athen/wall_short</Template>
 			<Player>3</Player>
 			<Position x="731.93781" z="1446.62879"/>
 			<Orientation y="2.45919"/>
 			<Actor seed="20917"/>
 		</Entity>
 		<Entity uid="118">
-			<Template>structures/athen_wall_short</Template>
+			<Template>structures/athen/wall_short</Template>
 			<Player>3</Player>
 			<Position x="723.27839" z="1439.41382"/>
 			<Orientation y="2.43393"/>
 			<Actor seed="20917"/>
 		</Entity>
 		<Entity uid="119">
-			<Template>structures/athen_wall_short</Template>
+			<Template>structures/athen/wall_short</Template>
 			<Player>3</Player>
 			<Position x="740.64795" z="1453.42444"/>
 			<Orientation y="2.48496"/>
 			<Actor seed="20917"/>
 		</Entity>
 		<Entity uid="120">
-			<Template>structures/athen_wall_short</Template>
+			<Template>structures/athen/wall_short</Template>
 			<Player>3</Player>
 			<Position x="749.44782" z="1460.04871"/>
 			<Orientation y="2.50634"/>
@@ -830,7 +830,7 @@
 			<Actor seed="20917"/>
 		</Entity>
 		<Entity uid="121">
-			<Template>structures/athen_wall_short</Template>
+			<Template>structures/athen/wall_short</Template>
 			<Player>3</Player>
 			<Position x="763.96607" z="1469.4004"/>
 			<Orientation y="2.62998"/>
@@ -838,21 +838,21 @@
 			<Actor seed="20917"/>
 		</Entity>
 		<Entity uid="122">
-			<Template>structures/athen_wall_short</Template>
+			<Template>structures/athen/wall_short</Template>
 			<Player>3</Player>
 			<Position x="773.55079" z="1474.41016"/>
 			<Orientation y="2.6705"/>
 			<Actor seed="20917"/>
 		</Entity>
 		<Entity uid="123">
-			<Template>structures/athen_wall_short</Template>
+			<Template>structures/athen/wall_short</Template>
 			<Player>3</Player>
 			<Position x="783.46045" z="1478.99305"/>
 			<Orientation y="2.72316"/>
 			<Actor seed="20917"/>
 		</Entity>
 		<Entity uid="124">
-			<Template>structures/athen_wall_short</Template>
+			<Template>structures/athen/wall_short</Template>
 			<Player>3</Player>
 			<Position x="793.66334" z="1483.17164"/>
 			<Orientation y="2.75542"/>
@@ -860,7 +860,7 @@
 			<Actor seed="20917"/>
 		</Entity>
 		<Entity uid="125">
-			<Template>structures/athen_wall_short</Template>
+			<Template>structures/athen/wall_short</Template>
 			<Player>3</Player>
 			<Position x="810.60029" z="1487.25403"/>
 			<Orientation y="3.01288"/>
@@ -868,21 +868,21 @@
 			<Actor seed="20917"/>
 		</Entity>
 		<Entity uid="126">
-			<Template>structures/athen_wall_short</Template>
+			<Template>structures/athen/wall_short</Template>
 			<Player>3</Player>
 			<Position x="821.29908" z="1488.07435"/>
 			<Orientation y="3.09166"/>
 			<Actor seed="20917"/>
 		</Entity>
 		<Entity uid="127">
-			<Template>structures/athen_wall_short</Template>
+			<Template>structures/athen/wall_short</Template>
 			<Player>3</Player>
 			<Position x="832.20783" z="1488.18323"/>
 			<Orientation y="3.16059"/>
 			<Actor seed="20917"/>
 		</Entity>
 		<Entity uid="128">
-			<Template>structures/athen_wall_short</Template>
+			<Template>structures/athen/wall_short</Template>
 			<Player>3</Player>
 			<Position x="843.086" z="1487.57825"/>
 			<Orientation y="3.21903"/>
@@ -890,7 +890,7 @@
 			<Actor seed="20917"/>
 		</Entity>
 		<Entity uid="129">
-			<Template>structures/athen_wall_short</Template>
+			<Template>structures/athen/wall_short</Template>
 			<Player>3</Player>
 			<Position x="859.02082" z="1485.85303"/>
 			<Orientation y="3.28531"/>
@@ -898,7 +898,7 @@
 			<Actor seed="20917"/>
 		</Entity>
 		<Entity uid="130">
-			<Template>structures/athen_wall_short</Template>
+			<Template>structures/athen/wall_short</Template>
 			<Player>3</Player>
 			<Position x="868.04499" z="1484.1897"/>
 			<Orientation y="3.33767"/>
@@ -906,7 +906,7 @@
 			<Actor seed="20917"/>
 		</Entity>
 		<Entity uid="131">
-			<Template>structures/athen_wall_short</Template>
+			<Template>structures/athen/wall_short</Template>
 			<Player>3</Player>
 			<Position x="877.33283" z="1482.03516"/>
 			<Orientation y="3.36255"/>
@@ -914,21 +914,21 @@
 			<Actor seed="20917"/>
 		</Entity>
 		<Entity uid="132">
-			<Template>structures/athen_wall_tower</Template>
+			<Template>structures/athen/wall_tower</Template>
 			<Player>3</Player>
 			<Position x="884.21503" z="1478.3202"/>
 			<Orientation y="3.8617"/>
 			<Actor seed="51978"/>
 		</Entity>
 		<Entity uid="133">
-			<Template>structures/athen_wall_tower</Template>
+			<Template>structures/athen/wall_tower</Template>
 			<Player>3</Player>
 			<Position x="893.2146" z="1456.58692"/>
 			<Orientation y="4.63209"/>
 			<Actor seed="51978"/>
 		</Entity>
 		<Entity uid="135">
-			<Template>structures/athen_wall_medium</Template>
+			<Template>structures/athen/wall_medium</Template>
 			<Player>3</Player>
 			<Position x="889.61646" z="1467.66004"/>
 			<Orientation y="1.1927"/>
@@ -936,7 +936,7 @@
 			<Actor seed="6661"/>
 		</Entity>
 		<Entity uid="136">
-			<Template>structures/rome_siege_wall_medium</Template>
+			<Template>structures/rome/siege_wall_medium</Template>
 			<Player>2</Player>
 			<Position x="667.96265" z="1480.3556"/>
 			<Orientation y="2.49984"/>
@@ -944,7 +944,7 @@
 			<Actor seed="687"/>
 		</Entity>
 		<Entity uid="137">
-			<Template>structures/rome_siege_wall_medium</Template>
+			<Template>structures/rome/siege_wall_medium</Template>
 			<Player>2</Player>
 			<Position x="645.11628" z="1462.00257"/>
 			<Orientation y="2.44358"/>
@@ -952,7 +952,7 @@
 			<Actor seed="687"/>
 		</Entity>
 		<Entity uid="138">
-			<Template>structures/rome_siege_wall_medium</Template>
+			<Template>structures/rome/siege_wall_medium</Template>
 			<Player>2</Player>
 			<Position x="626.79944" z="1446.99952"/>
 			<Orientation y="2.46364"/>
@@ -960,7 +960,7 @@
 			<Actor seed="687"/>
 		</Entity>
 		<Entity uid="139">
-			<Template>structures/rome_siege_wall_medium</Template>
+			<Template>structures/rome/siege_wall_medium</Template>
 			<Player>2</Player>
 			<Position x="605.6139" z="1426.11841"/>
 			<Orientation y="2.33791"/>
@@ -968,7 +968,7 @@
 			<Actor seed="687"/>
 		</Entity>
 		<Entity uid="140">
-			<Template>structures/rome_siege_wall_medium</Template>
+			<Template>structures/rome/siege_wall_medium</Template>
 			<Player>2</Player>
 			<Position x="589.03364" z="1409.37244"/>
 			<Orientation y="2.35836"/>
@@ -976,7 +976,7 @@
 			<Actor seed="687"/>
 		</Entity>
 		<Entity uid="141">
-			<Template>structures/rome_siege_wall_short</Template>
+			<Template>structures/rome/siege_wall_short</Template>
 			<Player>2</Player>
 			<Position x="573.43903" z="1392.0857"/>
 			<Orientation y="2.20965"/>
@@ -984,14 +984,14 @@
 			<Actor seed="54339"/>
 		</Entity>
 		<Entity uid="142">
-			<Template>structures/rome_siege_wall_short</Template>
+			<Template>structures/rome/siege_wall_short</Template>
 			<Player>2</Player>
 			<Position x="566.66382" z="1382.46839"/>
 			<Orientation y="2.16904"/>
 			<Actor seed="23621"/>
 		</Entity>
 		<Entity uid="143">
-			<Template>structures/rome_siege_wall_short</Template>
+			<Template>structures/rome/siege_wall_short</Template>
 			<Player>2</Player>
 			<Position x="560.1803" z="1372.818"/>
 			<Orientation y="2.14858"/>
@@ -999,7 +999,7 @@
 			<Actor seed="58395"/>
 		</Entity>
 		<Entity uid="144">
-			<Template>structures/rome_siege_wall_short</Template>
+			<Template>structures/rome/siege_wall_short</Template>
 			<Player>2</Player>
 			<Position x="550.66065" z="1358.4386"/>
 			<Orientation y="2.125"/>
@@ -1007,21 +1007,21 @@
 			<Actor seed="58395"/>
 		</Entity>
 		<Entity uid="145">
-			<Template>structures/rome_siege_wall_short</Template>
+			<Template>structures/rome/siege_wall_short</Template>
 			<Player>2</Player>
 			<Position x="544.6573" z="1348.40235"/>
 			<Orientation y="2.08373"/>
 			<Actor seed="58395"/>
 		</Entity>
 		<Entity uid="146">
-			<Template>structures/rome_siege_wall_short</Template>
+			<Template>structures/rome/siege_wall_short</Template>
 			<Player>2</Player>
 			<Position x="538.93165" z="1338.3418"/>
 			<Orientation y="2.07758"/>
 			<Actor seed="58395"/>
 		</Entity>
 		<Entity uid="147">
-			<Template>structures/rome_siege_wall_short</Template>
+			<Template>structures/rome/siege_wall_short</Template>
 			<Player>2</Player>
 			<Position x="533.34675" z="1328.22608"/>
 			<Orientation y="2.0666"/>
@@ -1382,21 +1382,21 @@
 			<Actor seed="24252"/>
 		</Entity>
 		<Entity uid="209">
-			<Template>structures/rome_wooden_tower</Template>
+			<Template>structures/rome/sentry_tower</Template>
 			<Player>1</Player>
 			<Position x="710.8285" z="167.52027"/>
 			<Orientation y="3.94176"/>
 			<Actor seed="15732"/>
 		</Entity>
 		<Entity uid="210">
-			<Template>structures/rome_wooden_tower</Template>
+			<Template>structures/rome/sentry_tower</Template>
 			<Player>1</Player>
 			<Position x="609.44745" z="62.87139"/>
 			<Orientation y="0.6984"/>
 			<Actor seed="29391"/>
 		</Entity>
 		<Entity uid="211">
-			<Template>structures/rome_wooden_tower</Template>
+			<Template>structures/rome/sentry_tower</Template>
 			<Player>1</Player>
 			<Position x="607.18201" z="167.66242"/>
 			<Orientation y="2.30958"/>
@@ -1452,14 +1452,14 @@
 			<Actor seed="26346"/>
 		</Entity>
 		<Entity uid="224">
-			<Template>structures/rome_farmstead</Template>
+			<Template>structures/rome/farmstead</Template>
 			<Player>1</Player>
 			<Position x="549.0141" z="128.52268"/>
 			<Orientation y="2.3657"/>
 			<Actor seed="45098"/>
 		</Entity>
 		<Entity uid="225">
-			<Template>structures/rome_storehouse</Template>
+			<Template>structures/rome/storehouse</Template>
 			<Player>1</Player>
 			<Position x="637.87934" z="64.21724"/>
 			<Orientation y="2.35621"/>
@@ -1620,238 +1620,238 @@
 			<Actor seed="4458"/>
 		</Entity>
 		<Entity uid="271">
-			<Template>structures/rome_storehouse</Template>
+			<Template>structures/rome/storehouse</Template>
 			<Player>1</Player>
 			<Position x="530.11884" z="152.2428"/>
 			<Orientation y="2.37841"/>
 			<Actor seed="59762"/>
 		</Entity>
 		<Entity uid="273">
-			<Template>structures/rome_tent</Template>
+			<Template>structures/rome/tent</Template>
 			<Player>1</Player>
 			<Position x="709.38495" z="101.64615"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="58688"/>
 		</Entity>
 		<Entity uid="274">
-			<Template>structures/rome_tent</Template>
+			<Template>structures/rome/tent</Template>
 			<Player>1</Player>
 			<Position x="722.85743" z="106.08072"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="55544"/>
 		</Entity>
 		<Entity uid="276">
-			<Template>structures/rome_tent</Template>
+			<Template>structures/rome/tent</Template>
 			<Player>1</Player>
 			<Position x="719.30951" z="139.43882"/>
 			<Orientation y="-0.77976"/>
 			<Actor seed="16938"/>
 		</Entity>
 		<Entity uid="277">
-			<Template>structures/rome_tent</Template>
+			<Template>structures/rome/tent</Template>
 			<Player>1</Player>
 			<Position x="702.07685" z="137.1396"/>
 			<Orientation y="5.50614"/>
 			<Actor seed="51120"/>
 		</Entity>
 		<Entity uid="278">
-			<Template>structures/rome_tent</Template>
+			<Template>structures/rome/tent</Template>
 			<Player>1</Player>
 			<Position x="708.81006" z="130.04764"/>
 			<Orientation y="-0.76119"/>
 			<Actor seed="3933"/>
 		</Entity>
 		<Entity uid="279">
-			<Template>structures/rome_tent</Template>
+			<Template>structures/rome/tent</Template>
 			<Player>1</Player>
 			<Position x="712.24201" z="146.9278"/>
 			<Orientation y="5.5265"/>
 			<Actor seed="10026"/>
 		</Entity>
 		<Entity uid="280">
-			<Template>structures/rome_tent</Template>
+			<Template>structures/rome/tent</Template>
 			<Player>1</Player>
 			<Position x="695.48523" z="144.03806"/>
 			<Orientation y="2.36332"/>
 			<Actor seed="38365"/>
 		</Entity>
 		<Entity uid="284">
-			<Template>structures/rome_tent</Template>
+			<Template>structures/rome/tent</Template>
 			<Player>1</Player>
 			<Position x="705.719" z="153.76755"/>
 			<Orientation y="2.38872"/>
 			<Actor seed="62808"/>
 		</Entity>
 		<Entity uid="288">
-			<Template>structures/rome_tent</Template>
+			<Template>structures/rome/tent</Template>
 			<Player>1</Player>
 			<Position x="696.27027" z="163.8472"/>
 			<Orientation y="5.53748"/>
 			<Actor seed="40127"/>
 		</Entity>
 		<Entity uid="289">
-			<Template>structures/rome_tent</Template>
+			<Template>structures/rome/tent</Template>
 			<Player>1</Player>
 			<Position x="685.89301" z="153.49137"/>
 			<Orientation y="5.54262"/>
 			<Actor seed="62808"/>
 		</Entity>
 		<Entity uid="290">
-			<Template>structures/rome_tent</Template>
+			<Template>structures/rome/tent</Template>
 			<Player>1</Player>
 			<Position x="678.82563" z="161.31403"/>
 			<Orientation y="5.53447"/>
 			<Actor seed="51120"/>
 		</Entity>
 		<Entity uid="291">
-			<Template>structures/rome_tent</Template>
+			<Template>structures/rome/tent</Template>
 			<Player>1</Player>
 			<Position x="689.16315" z="171.43738"/>
 			<Orientation y="5.55565"/>
 			<Actor seed="40127"/>
 		</Entity>
 		<Entity uid="292">
-			<Template>structures/rome_tent</Template>
+			<Template>structures/rome/tent</Template>
 			<Player>1</Player>
 			<Position x="681.8639" z="179.41346"/>
 			<Orientation y="8.69191"/>
 			<Actor seed="62808"/>
 		</Entity>
 		<Entity uid="293">
-			<Template>structures/rome_tent</Template>
+			<Template>structures/rome/tent</Template>
 			<Player>1</Player>
 			<Position x="671.74714" z="168.97266"/>
 			<Orientation y="8.68531"/>
 			<Actor seed="40127"/>
 		</Entity>
 		<Entity uid="295">
-			<Template>structures/rome_tent</Template>
+			<Template>structures/rome/tent</Template>
 			<Player>1</Player>
 			<Position x="664.54944" z="162.33783"/>
 			<Orientation y="8.69796"/>
 			<Actor seed="62808"/>
 		</Entity>
 		<Entity uid="296">
-			<Template>structures/rome_tent</Template>
+			<Template>structures/rome/tent</Template>
 			<Player>1</Player>
 			<Position x="671.62244" z="155.20878"/>
 			<Orientation y="5.5711"/>
 			<Actor seed="40127"/>
 		</Entity>
 		<Entity uid="297">
-			<Template>structures/rome_tent</Template>
+			<Template>structures/rome/tent</Template>
 			<Player>1</Player>
 			<Position x="655.1297" z="153.1999"/>
 			<Orientation y="8.71512"/>
 			<Actor seed="40127"/>
 		</Entity>
 		<Entity uid="298">
-			<Template>structures/rome_tent</Template>
+			<Template>structures/rome/tent</Template>
 			<Player>1</Player>
 			<Position x="679.01978" z="147.50788"/>
 			<Orientation y="5.56327"/>
 			<Actor seed="40127"/>
 		</Entity>
 		<Entity uid="299">
-			<Template>structures/rome_tent</Template>
+			<Template>structures/rome/tent</Template>
 			<Player>1</Player>
 			<Position x="668.56501" z="137.85276"/>
 			<Orientation y="5.57244"/>
 			<Actor seed="62808"/>
 		</Entity>
 		<Entity uid="300">
-			<Template>structures/rome_tent</Template>
+			<Template>structures/rome/tent</Template>
 			<Player>1</Player>
 			<Position x="661.97681" z="145.82523"/>
 			<Orientation y="5.5643"/>
 			<Actor seed="51120"/>
 		</Entity>
 		<Entity uid="301">
-			<Template>structures/rome_tent</Template>
+			<Template>structures/rome/tent</Template>
 			<Player>1</Player>
 			<Position x="690.96998" z="113.05826"/>
 			<Orientation y="5.57244"/>
 			<Actor seed="62808"/>
 		</Entity>
 		<Entity uid="302">
-			<Template>structures/rome_tent</Template>
+			<Template>structures/rome/tent</Template>
 			<Player>1</Player>
 			<Position x="701.597" z="123.39484"/>
 			<Orientation y="5.52892"/>
 			<Actor seed="40127"/>
 		</Entity>
 		<Entity uid="303">
-			<Template>structures/rome_tent</Template>
+			<Template>structures/rome/tent</Template>
 			<Player>1</Player>
 			<Position x="678.45868" z="127.41631"/>
 			<Orientation y="8.68763"/>
 			<Actor seed="40127"/>
 		</Entity>
 		<Entity uid="304">
-			<Template>structures/rome_tent</Template>
+			<Template>structures/rome/tent</Template>
 			<Player>1</Player>
 			<Position x="688.41248" z="137.65683"/>
 			<Orientation y="8.69756"/>
 			<Actor seed="62808"/>
 		</Entity>
 		<Entity uid="305">
-			<Template>structures/rome_tent</Template>
+			<Template>structures/rome/tent</Template>
 			<Player>1</Player>
 			<Position x="695.073" z="130.89686"/>
 			<Orientation y="5.52892"/>
 			<Actor seed="40127"/>
 		</Entity>
 		<Entity uid="306">
-			<Template>structures/rome_tent</Template>
+			<Template>structures/rome/tent</Template>
 			<Player>1</Player>
 			<Position x="684.62623" z="120.26755"/>
 			<Orientation y="5.54653"/>
 			<Actor seed="51120"/>
 		</Entity>
 		<Entity uid="307">
-			<Template>structures/rome_tent</Template>
+			<Template>structures/rome/tent</Template>
 			<Player>1</Player>
 			<Position x="718.24421" z="93.30771"/>
 			<Orientation y="5.48732"/>
 			<Actor seed="62808"/>
 		</Entity>
 		<Entity uid="308">
-			<Template>structures/athen_gymnasion</Template>
+			<Template>structures/athen/gymnasium</Template>
 			<Player>3</Player>
 			<Position x="797.68641" z="1404.03504"/>
 			<Orientation y="-7.06557"/>
 			<Actor seed="32902"/>
 		</Entity>
 		<Entity uid="309">
-			<Template>structures/athen_temple</Template>
+			<Template>structures/athen/temple</Template>
 			<Player>3</Player>
 			<Position x="728.24445" z="1414.26478"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="23042"/>
 		</Entity>
 		<Entity uid="310">
-			<Template>structures/athen_defense_tower</Template>
+			<Template>structures/athen/defense_tower</Template>
 			<Player>3</Player>
 			<Position x="731.14197" z="1432.37391"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="3259"/>
 		</Entity>
 		<Entity uid="311">
-			<Template>structures/athen_defense_tower</Template>
+			<Template>structures/athen/defense_tower</Template>
 			<Player>3</Player>
 			<Position x="759.07392" z="1359.15857"/>
 			<Orientation y="-0.85477"/>
 			<Actor seed="35760"/>
 		</Entity>
 		<Entity uid="312">
-			<Template>structures/athen_defense_tower</Template>
+			<Template>structures/athen/defense_tower</Template>
 			<Player>3</Player>
 			<Position x="824.5882" z="1438.17884"/>
 			<Orientation y="3.97117"/>
 			<Actor seed="53512"/>
 		</Entity>
 		<Entity uid="313">
-			<Template>structures/athen_defense_tower</Template>
+			<Template>structures/athen/defense_tower</Template>
 			<Player>3</Player>
 			<Position x="713.41999" z="1398.00977"/>
 			<Orientation y="0.73606"/>
@@ -1872,7 +1872,7 @@
 			<Actor seed="12985"/>
 		</Entity>
 		<Entity uid="316">
-			<Template>structures/athen_barracks</Template>
+			<Template>structures/athen/barracks</Template>
 			<Player>3</Player>
 			<Position x="793.23633" z="1443.04517"/>
 			<Orientation y="3.9171"/>
@@ -2411,7 +2411,7 @@
 			<Actor seed="39018"/>
 		</Entity>
 		<Entity uid="400">
-			<Template>structures/athen_theatron</Template>
+			<Template>structures/athen/theatron</Template>
 			<Player>3</Player>
 			<Position x="731.22248" z="1265.80542"/>
 			<Orientation y="-5.5225"/>
@@ -3489,35 +3489,35 @@
 			<Actor seed="22083"/>
 		</Entity>
 		<Entity uid="557">
-			<Template>structures/athen_market</Template>
+			<Template>structures/athen/market</Template>
 			<Player>3</Player>
 			<Position x="653.22071" z="1141.52234"/>
 			<Orientation y="2.40468"/>
 			<Actor seed="34045"/>
 		</Entity>
 		<Entity uid="558">
-			<Template>structures/athen_farmstead</Template>
+			<Template>structures/athen/farmstead</Template>
 			<Player>3</Player>
 			<Position x="599.99726" z="1266.68396"/>
 			<Orientation y="2.15011"/>
 			<Actor seed="7369"/>
 		</Entity>
 		<Entity uid="559">
-			<Template>structures/athen_field</Template>
+			<Template>structures/athen/field</Template>
 			<Player>3</Player>
 			<Position x="650.25812" z="1301.94751"/>
 			<Orientation y="2.17098"/>
 			<Actor seed="55638"/>
 		</Entity>
 		<Entity uid="560">
-			<Template>structures/athen_field</Template>
+			<Template>structures/athen/field</Template>
 			<Player>3</Player>
 			<Position x="619.87122" z="1256.57093"/>
 			<Orientation y="2.16018"/>
 			<Actor seed="15386"/>
 		</Entity>
 		<Entity uid="561">
-			<Template>structures/athen_field</Template>
+			<Template>structures/athen/field</Template>
 			<Player>3</Player>
 			<Position x="637.18928" z="1282.29688"/>
 			<Orientation y="2.16318"/>
@@ -3622,7 +3622,7 @@
 			<Actor seed="22760"/>
 		</Entity>
 		<Entity uid="576">
-			<Template>structures/athen_blacksmith</Template>
+			<Template>structures/athen/forge</Template>
 			<Player>3</Player>
 			<Position x="867.54615" z="1315.74927"/>
 			<Orientation y="9.33782"/>
@@ -3832,7 +3832,7 @@
 			<Actor seed="33392"/>
 		</Entity>
 		<Entity uid="612">
-			<Template>structures/athen_corral</Template>
+			<Template>structures/athen/corral</Template>
 			<Player>3</Player>
 			<Position x="591.0854" z="921.87903"/>
 			<Orientation y="0.09112"/>
@@ -4021,105 +4021,105 @@
 			<Actor seed="11020"/>
 		</Entity>
 		<Entity uid="640">
-			<Template>structures/athen_house</Template>
+			<Template>structures/athen/house</Template>
 			<Player>3</Player>
 			<Position x="803.1662" z="1175.31067"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="12622"/>
 		</Entity>
 		<Entity uid="641">
-			<Template>structures/athen_house</Template>
+			<Template>structures/athen/house</Template>
 			<Player>3</Player>
 			<Position x="592.06611" z="1124.35975"/>
 			<Orientation y="7.17916"/>
 			<Actor seed="49667"/>
 		</Entity>
 		<Entity uid="642">
-			<Template>structures/athen_house</Template>
+			<Template>structures/athen/house</Template>
 			<Player>3</Player>
 			<Position x="766.55182" z="1172.62452"/>
 			<Orientation y="3.93841"/>
 			<Actor seed="26194"/>
 		</Entity>
 		<Entity uid="643">
-			<Template>structures/athen_house</Template>
+			<Template>structures/athen/house</Template>
 			<Player>3</Player>
 			<Position x="782.00208" z="1244.18335"/>
 			<Orientation y="0.85776"/>
 			<Actor seed="44909"/>
 		</Entity>
 		<Entity uid="644">
-			<Template>structures/athen_house</Template>
+			<Template>structures/athen/house</Template>
 			<Player>3</Player>
 			<Position x="798.08265" z="1216.98194"/>
 			<Orientation y="-2.29506"/>
 			<Actor seed="40212"/>
 		</Entity>
 		<Entity uid="645">
-			<Template>structures/athen_house</Template>
+			<Template>structures/athen/house</Template>
 			<Player>3</Player>
 			<Position x="569.68213" z="1152.55384"/>
 			<Orientation y="0.91393"/>
 			<Actor seed="29879"/>
 		</Entity>
 		<Entity uid="646">
-			<Template>structures/athen_house</Template>
+			<Template>structures/athen/house</Template>
 			<Player>3</Player>
 			<Position x="709.62104" z="1186.55323"/>
 			<Orientation y="0.87975"/>
 			<Actor seed="32084"/>
 		</Entity>
 		<Entity uid="647">
-			<Template>structures/athen_house</Template>
+			<Template>structures/athen/house</Template>
 			<Player>3</Player>
 			<Position x="733.24457" z="1164.69239"/>
 			<Orientation y="3.94459"/>
 			<Actor seed="61312"/>
 		</Entity>
 		<Entity uid="648">
-			<Template>structures/athen_house</Template>
+			<Template>structures/athen/house</Template>
 			<Player>3</Player>
 			<Position x="687.70868" z="1167.53602"/>
 			<Orientation y="2.42873"/>
 			<Actor seed="1954"/>
 		</Entity>
 		<Entity uid="649">
-			<Template>structures/athen_house</Template>
+			<Template>structures/athen/house</Template>
 			<Player>3</Player>
 			<Position x="709.04499" z="1145.83973"/>
 			<Orientation y="2.4564"/>
 			<Actor seed="60441"/>
 		</Entity>
 		<Entity uid="650">
-			<Template>structures/athen_house</Template>
+			<Template>structures/athen/house</Template>
 			<Player>3</Player>
 			<Position x="609.18903" z="1148.99915"/>
 			<Orientation y="2.49303"/>
 			<Actor seed="57732"/>
 		</Entity>
 		<Entity uid="651">
-			<Template>structures/athen_house</Template>
+			<Template>structures/athen/house</Template>
 			<Player>3</Player>
 			<Position x="687.35151" z="1126.97278"/>
 			<Orientation y="5.58556"/>
 			<Actor seed="5450"/>
 		</Entity>
 		<Entity uid="652">
-			<Template>structures/athen_house</Template>
+			<Template>structures/athen/house</Template>
 			<Player>3</Player>
 			<Position x="590.17518" z="1173.86707"/>
 			<Orientation y="2.50103"/>
 			<Actor seed="2368"/>
 		</Entity>
 		<Entity uid="653">
-			<Template>structures/athen_prytaneion</Template>
+			<Template>structures/athen/prytaneion</Template>
 			<Player>3</Player>
 			<Position x="666.2638" z="1270.06836"/>
 			<Orientation y="7.94529"/>
 			<Actor seed="10819"/>
 		</Entity>
 		<Entity uid="654">
-			<Template>structures/athen_field</Template>
+			<Template>structures/athen/field</Template>
 			<Player>3</Player>
 			<Position x="646.93305" z="1238.8949"/>
 			<Orientation y="2.1602"/>
@@ -4504,7 +4504,7 @@
 			<Actor seed="58457"/>
 		</Entity>
 		<Entity uid="731">
-			<Template>structures/athen_house</Template>
+			<Template>structures/athen/house</Template>
 			<Player>3</Player>
 			<Position x="666.99708" z="1108.85682"/>
 			<Orientation y="5.52103"/>
@@ -4707,56 +4707,56 @@
 			<Actor seed="33853"/>
 		</Entity>
 		<Entity uid="760">
-			<Template>structures/pers_fortress</Template>
+			<Template>structures/pers/fortress</Template>
 			<Player>2</Player>
 			<Position x="135.09794" z="1324.62134"/>
 			<Orientation y="3.48652"/>
 			<Actor seed="30369"/>
 		</Entity>
 		<Entity uid="761">
-			<Template>structures/pers_blacksmith</Template>
+			<Template>structures/pers/forge</Template>
 			<Player>2</Player>
 			<Position x="350.79218" z="1370.34375"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="2926"/>
 		</Entity>
 		<Entity uid="762">
-			<Template>structures/pers_storehouse</Template>
+			<Template>structures/pers/storehouse</Template>
 			<Player>2</Player>
 			<Position x="378.47834" z="1414.33411"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="58068"/>
 		</Entity>
 		<Entity uid="763">
-			<Template>structures/pers_farmstead</Template>
+			<Template>structures/pers/farmstead</Template>
 			<Player>2</Player>
 			<Position x="237.76795" z="1454.19715"/>
 			<Orientation y="3.11635"/>
 			<Actor seed="9832"/>
 		</Entity>
 		<Entity uid="764">
-			<Template>structures/pers_defense_tower</Template>
+			<Template>structures/pers/defense_tower</Template>
 			<Player>2</Player>
 			<Position x="269.14966" z="1408.30347"/>
 			<Orientation y="-0.78855"/>
 			<Actor seed="54827"/>
 		</Entity>
 		<Entity uid="765">
-			<Template>structures/pers_barracks</Template>
+			<Template>structures/pers/barracks</Template>
 			<Player>2</Player>
 			<Position x="267.59913" z="1346.97901"/>
 			<Orientation y="-3.17399"/>
 			<Actor seed="25644"/>
 		</Entity>
 		<Entity uid="766">
-			<Template>structures/pers_field</Template>
+			<Template>structures/pers/field</Template>
 			<Player>2</Player>
 			<Position x="274.33658" z="1426.39478"/>
 			<Orientation y="3.13283"/>
 			<Actor seed="11958"/>
 		</Entity>
 		<Entity uid="767">
-			<Template>structures/pers_field</Template>
+			<Template>structures/pers/field</Template>
 			<Player>2</Player>
 			<Position x="243.32749" z="1426.65992"/>
 			<Orientation y="3.1518"/>
@@ -6058,14 +6058,14 @@
 			<Actor seed="58052"/>
 		</Entity>
 		<Entity uid="987">
-			<Template>structures/athen_storehouse</Template>
+			<Template>structures/athen/storehouse</Template>
 			<Player>3</Player>
 			<Position x="651.3844" z="1198.51563"/>
 			<Orientation y="2.16962"/>
 			<Actor seed="46328"/>
 		</Entity>
 		<Entity uid="988">
-			<Template>structures/athen_house</Template>
+			<Template>structures/athen/house</Template>
 			<Player>3</Player>
 			<Position x="824.93049" z="1237.85303"/>
 			<Orientation y="4.14255"/>
@@ -6079,7 +6079,7 @@
 			<Actor seed="32376"/>
 		</Entity>
 		<Entity uid="990">
-			<Template>structures/athen_house</Template>
+			<Template>structures/athen/house</Template>
 			<Player>3</Player>
 			<Position x="810.59052" z="1266.162"/>
 			<Orientation y="7.29899"/>
@@ -6254,7 +6254,7 @@
 			<Actor seed="50124"/>
 		</Entity>
 		<Entity uid="1019">
-			<Template>structures/rome_corral</Template>
+			<Template>structures/rome/corral</Template>
 			<Player>1</Player>
 			<Position x="613.68055" z="84.98505"/>
 			<Orientation y="-0.82671"/>
@@ -9142,34 +9142,34 @@
 			<Actor seed="48919"/>
 		</Entity>
 		<Entity uid="1507">
-			<Template>units/pers_support_female_citizen</Template>
+			<Template>units/pers/support_female_citizen</Template>
 			<Player>2</Player>
 			<Position x="286.70124" z="1274.78235"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="36426"/>
 		</Entity>
 		<Entity uid="1509">
-			<Template>units/pers_support_female_citizen_house</Template>
+			<Template>units/pers/support_female_citizen_house</Template>
 			<Player>2</Player>
 			<Position x="289.86023" z="1277.9209"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="44701"/>
 		</Entity>
 		<Entity uid="1510">
-			<Template>units/pers_infantry_archer_b</Template>
+			<Template>units/pers/infantry_archer_b</Template>
 			<Player>2</Player>
 			<Position x="293.3729" z="1281.87183"/>
 			<Orientation y="-4.25245"/>
 			<Actor seed="4855"/>
 		</Entity>
 		<Entity uid="1515">
-			<Template>units/pers_infantry_javelinist_b</Template>
+			<Template>units/pers/infantry_javelinist_b</Template>
 			<Player>2</Player>
 			<Position x="282.33063" z="1271.2942"/>
 			<Orientation y="1.71206"/>
 		</Entity>
 		<Entity uid="1516">
-			<Template>structures/pers_wooden_tower</Template>
+			<Template>structures/pers/sentry_tower</Template>
 			<Player>2</Player>
 			<Position x="325.18049" z="1238.78736"/>
 			<Orientation y="-1.28292"/>
@@ -9177,14 +9177,14 @@
 			<Actor seed="59315"/>
 		</Entity>
 		<Entity uid="1517">
-			<Template>structures/pers_wooden_tower</Template>
+			<Template>structures/pers/sentry_tower</Template>
 			<Player>2</Player>
 			<Position x="342.85257" z="1338.19703"/>
 			<Orientation y="5.37105"/>
 			<Actor seed="53692"/>
 		</Entity>
 		<Entity uid="1519">
-			<Template>structures/pers_house</Template>
+			<Template>structures/pers/house</Template>
 			<Player>2</Player>
 			<Position x="223.22641" z="1347.59668"/>
 			<Orientation y="2.35621"/>
@@ -9632,14 +9632,14 @@
 			<Actor seed="33875"/>
 		</Entity>
 		<Entity uid="1588">
-			<Template>units/athen_infantry_javelinist_b</Template>
+			<Template>units/athen/infantry_javelinist_b</Template>
 			<Player>3</Player>
 			<Position x="767.90674" z="1415.94935"/>
 			<Orientation y="-3.66076"/>
 			<Actor seed="64782"/>
 		</Entity>
 		<Entity uid="1589">
-			<Template>units/athen_infantry_spearman_b</Template>
+			<Template>units/athen/infantry_spearman_b</Template>
 			<Player>3</Player>
 			<Position x="756.0965" z="1403.7566"/>
 			<Orientation y="2.35621"/>
@@ -10361,84 +10361,84 @@
 			<Actor seed="38015"/>
 		</Entity>
 		<Entity uid="1710">
-			<Template>units/athen_champion_marine</Template>
+			<Template>units/athen/champion_marine</Template>
 			<Player>3</Player>
 			<Position x="621.62555" z="1003.46192"/>
 			<Orientation y="-0.8234"/>
 			<Actor seed="16285"/>
 		</Entity>
 		<Entity uid="1711">
-			<Template>units/athen_champion_marine</Template>
+			<Template>units/athen/champion_marine</Template>
 			<Player>3</Player>
 			<Position x="619.65741" z="1001.2707"/>
 			<Orientation y="-0.8234"/>
 			<Actor seed="56813"/>
 		</Entity>
 		<Entity uid="1712">
-			<Template>units/athen_champion_marine</Template>
+			<Template>units/athen/champion_marine</Template>
 			<Player>3</Player>
 			<Position x="617.49292" z="999.14124"/>
 			<Orientation y="-0.8234"/>
 			<Actor seed="24766"/>
 		</Entity>
 		<Entity uid="1714">
-			<Template>units/athen_champion_marine</Template>
+			<Template>units/athen/champion_marine</Template>
 			<Player>3</Player>
 			<Position x="619.39704" z="1005.18757"/>
 			<Orientation y="-0.8234"/>
 			<Actor seed="13729"/>
 		</Entity>
 		<Entity uid="1715">
-			<Template>units/athen_champion_marine</Template>
+			<Template>units/athen/champion_marine</Template>
 			<Player>3</Player>
 			<Position x="617.47394" z="1003.14332"/>
 			<Orientation y="-0.8234"/>
 			<Actor seed="25162"/>
 		</Entity>
 		<Entity uid="1716">
-			<Template>units/athen_champion_marine</Template>
+			<Template>units/athen/champion_marine</Template>
 			<Player>3</Player>
 			<Position x="615.54462" z="1001.04914"/>
 			<Orientation y="-0.8234"/>
 			<Actor seed="50526"/>
 		</Entity>
 		<Entity uid="1718">
-			<Template>units/athen_champion_ranged</Template>
+			<Template>units/athen/champion_ranged</Template>
 			<Player>3</Player>
 			<Position x="630.2602" z="1029.31824"/>
 			<Orientation y="3.96326"/>
 			<Actor seed="52512"/>
 		</Entity>
 		<Entity uid="1719">
-			<Template>units/athen_champion_ranged</Template>
+			<Template>units/athen/champion_ranged</Template>
 			<Player>3</Player>
 			<Position x="628.13343" z="1027.4397"/>
 			<Orientation y="3.96326"/>
 			<Actor seed="17448"/>
 		</Entity>
 		<Entity uid="1720">
-			<Template>units/athen_champion_ranged</Template>
+			<Template>units/athen/champion_ranged</Template>
 			<Player>3</Player>
 			<Position x="626.23786" z="1025.58704"/>
 			<Orientation y="3.96326"/>
 			<Actor seed="11697"/>
 		</Entity>
 		<Entity uid="1722">
-			<Template>units/athen_champion_ranged</Template>
+			<Template>units/athen/champion_ranged</Template>
 			<Player>3</Player>
 			<Position x="628.2132" z="1031.52259"/>
 			<Orientation y="3.96326"/>
 			<Actor seed="23919"/>
 		</Entity>
 		<Entity uid="1723">
-			<Template>units/athen_champion_ranged</Template>
+			<Template>units/athen/champion_ranged</Template>
 			<Player>3</Player>
 			<Position x="626.18006" z="1029.53858"/>
 			<Orientation y="3.96326"/>
 			<Actor seed="2847"/>
 		</Entity>
 		<Entity uid="1724">
-			<Template>units/athen_champion_ranged</Template>
+			<Template>units/athen/champion_ranged</Template>
 			<Player>3</Player>
 			<Position x="624.3675" z="1027.59681"/>
 			<Orientation y="3.96326"/>
@@ -10675,7 +10675,7 @@
 			<Actor seed="50811"/>
 		</Entity>
 		<Entity uid="1807">
-			<Template>structures/pers_defense_tower</Template>
+			<Template>structures/pers/defense_tower</Template>
 			<Player>2</Player>
 			<Position x="310.37668" z="1197.09888"/>
 			<Orientation y="-1.2576"/>
@@ -10749,84 +10749,84 @@
 			<Actor seed="49657"/>
 		</Entity>
 		<Entity uid="1820">
-			<Template>units/pers_kardakes_hoplite</Template>
+			<Template>units/pers/kardakes_hoplite</Template>
 			<Player>2</Player>
 			<Position x="384.52997" z="1320.87696"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="9682"/>
 		</Entity>
 		<Entity uid="1821">
-			<Template>units/pers_kardakes_hoplite</Template>
+			<Template>units/pers/kardakes_hoplite</Template>
 			<Player>2</Player>
 			<Position x="388.46238" z="1325.64112"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="58986"/>
 		</Entity>
 		<Entity uid="1822">
-			<Template>units/pers_kardakes_hoplite</Template>
+			<Template>units/pers/kardakes_hoplite</Template>
 			<Player>2</Player>
 			<Position x="380.84702" z="1317.09632"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="54956"/>
 		</Entity>
 		<Entity uid="1823">
-			<Template>units/pers_kardakes_hoplite</Template>
+			<Template>units/pers/kardakes_hoplite</Template>
 			<Player>2</Player>
 			<Position x="392.71537" z="1317.89454"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="30864"/>
 		</Entity>
 		<Entity uid="1824">
-			<Template>units/pers_kardakes_hoplite</Template>
+			<Template>units/pers/kardakes_hoplite</Template>
 			<Player>2</Player>
 			<Position x="388.63663" z="1313.42396"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="28630"/>
 		</Entity>
 		<Entity uid="1825">
-			<Template>units/pers_kardakes_hoplite</Template>
+			<Template>units/pers/kardakes_hoplite</Template>
 			<Player>2</Player>
 			<Position x="384.727" z="1316.9148"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="31550"/>
 		</Entity>
 		<Entity uid="1826">
-			<Template>units/pers_kardakes_hoplite</Template>
+			<Template>units/pers/kardakes_hoplite</Template>
 			<Player>2</Player>
 			<Position x="388.64869" z="1321.01258"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="26759"/>
 		</Entity>
 		<Entity uid="1827">
-			<Template>units/pers_kardakes_hoplite</Template>
+			<Template>units/pers/kardakes_hoplite</Template>
 			<Player>2</Player>
 			<Position x="388.5522" z="1317.33997"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="2747"/>
 		</Entity>
 		<Entity uid="1828">
-			<Template>units/pers_kardakes_hoplite</Template>
+			<Template>units/pers/kardakes_hoplite</Template>
 			<Player>2</Player>
 			<Position x="392.63318" z="1321.56006"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="55628"/>
 		</Entity>
 		<Entity uid="1829">
-			<Template>units/pers_kardakes_hoplite</Template>
+			<Template>units/pers/kardakes_hoplite</Template>
 			<Player>2</Player>
 			<Position x="384.51807" z="1313.20752"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="58347"/>
 		</Entity>
 		<Entity uid="1830">
-			<Template>units/pers_kardakes_hoplite</Template>
+			<Template>units/pers/kardakes_hoplite</Template>
 			<Player>2</Player>
 			<Position x="384.62238" z="1324.87879"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="28092"/>
 		</Entity>
 		<Entity uid="1864">
-			<Template>units/pers_kardakes_hoplite</Template>
+			<Template>units/pers/kardakes_hoplite</Template>
 			<Player>2</Player>
 			<Position x="380.65061" z="1321.21692"/>
 			<Orientation y="2.35621"/>
@@ -11106,56 +11106,56 @@
 			<Actor seed="22549"/>
 		</Entity>
 		<Entity uid="1904">
-			<Template>structures/pers_apartment_block</Template>
+			<Template>structures/pers/apartment_block</Template>
 			<Player>2</Player>
 			<Position x="218.30188" z="1289.52051"/>
 			<Orientation y="3.42083"/>
 			<Actor seed="9042"/>
 		</Entity>
 		<Entity uid="1906">
-			<Template>units/pers_kardakes_skirmisher</Template>
+			<Template>units/pers/kardakes_skirmisher</Template>
 			<Player>2</Player>
 			<Position x="396.58552" z="1318.9032"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="32504"/>
 		</Entity>
 		<Entity uid="1907">
-			<Template>units/pers_kardakes_skirmisher</Template>
+			<Template>units/pers/kardakes_skirmisher</Template>
 			<Player>2</Player>
 			<Position x="388.06135" z="1309.5022"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="28122"/>
 		</Entity>
 		<Entity uid="1908">
-			<Template>units/pers_kardakes_skirmisher</Template>
+			<Template>units/pers/kardakes_skirmisher</Template>
 			<Player>2</Player>
 			<Position x="392.46644" z="1313.42396"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="51018"/>
 		</Entity>
 		<Entity uid="1909">
-			<Template>units/pers_champion_cavalry</Template>
+			<Template>units/pers/champion_cavalry</Template>
 			<Player>2</Player>
 			<Position x="384.44428" z="1329.35633"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="50715"/>
 		</Entity>
 		<Entity uid="1910">
-			<Template>units/pers_champion_cavalry</Template>
+			<Template>units/pers/champion_cavalry</Template>
 			<Player>2</Player>
 			<Position x="380.4777" z="1324.87879"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="61975"/>
 		</Entity>
 		<Entity uid="1911">
-			<Template>units/pers_champion_cavalry</Template>
+			<Template>units/pers/champion_cavalry</Template>
 			<Player>2</Player>
 			<Position x="376.7223" z="1321.14869"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="13459"/>
 		</Entity>
 		<Entity uid="1912">
-			<Template>structures/pers_stables</Template>
+			<Template>structures/pers/stables</Template>
 			<Player>2</Player>
 			<Position x="183.80896" z="1440.45875"/>
 			<Orientation y="-3.13706"/>
@@ -11238,7 +11238,7 @@
 			<Actor seed="49630"/>
 		</Entity>
 		<Entity uid="1926">
-			<Template>structures/pers_house_a</Template>
+			<Template>structures/pers/house_a</Template>
 			<Player>2</Player>
 			<Position x="308.49558" z="1310.90564"/>
 			<Orientation y="2.35621"/>
@@ -11259,7 +11259,7 @@
 			<Actor seed="61109"/>
 		</Entity>
 		<Entity uid="1929">
-			<Template>structures/pers_field</Template>
+			<Template>structures/pers/field</Template>
 			<Player>2</Player>
 			<Position x="211.79825" z="1457.94495"/>
 			<Orientation y="3.13796"/>
@@ -11378,28 +11378,28 @@
 			<Actor seed="53932"/>
 		</Entity>
 		<Entity uid="1951">
-			<Template>units/athen_champion_marine</Template>
+			<Template>units/athen/champion_marine</Template>
 			<Player>3</Player>
 			<Position x="742.08783" z="1422.02356"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="45574"/>
 		</Entity>
 		<Entity uid="1952">
-			<Template>units/athen_champion_marine</Template>
+			<Template>units/athen/champion_marine</Template>
 			<Player>3</Player>
 			<Position x="741.84125" z="1417.94764"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="2420"/>
 		</Entity>
 		<Entity uid="1953">
-			<Template>units/athen_champion_marine</Template>
+			<Template>units/athen/champion_marine</Template>
 			<Player>3</Player>
 			<Position x="745.87031" z="1422.11854"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="994"/>
 		</Entity>
 		<Entity uid="1954">
-			<Template>units/athen_champion_marine</Template>
+			<Template>units/athen/champion_marine</Template>
 			<Player>3</Player>
 			<Position x="745.73627" z="1418.03052"/>
 			<Orientation y="2.35621"/>
@@ -11546,7 +11546,7 @@
 			<Actor seed="58682"/>
 		</Entity>
 		<Entity uid="1975">
-			<Template>structures/pers_civil_centre</Template>
+			<Template>structures/pers/civil_centre</Template>
 			<Player>2</Player>
 			<Position x="96.19196" z="1298.05823"/>
 			<Orientation y="0.38566"/>
@@ -12708,14 +12708,14 @@
 			<Actor seed="3524"/>
 		</Entity>
 		<Entity uid="2166">
-			<Template>units/athen_infantry_slinger_b</Template>
+			<Template>units/athen/infantry_slinger_b</Template>
 			<Player>3</Player>
 			<Position x="770.88471" z="1419.15674"/>
 			<Orientation y="-2.3537"/>
 			<Actor seed="2045"/>
 		</Entity>
 		<Entity uid="2167">
-			<Template>units/athen_infantry_slinger_b</Template>
+			<Template>units/athen/infantry_slinger_b</Template>
 			<Player>3</Player>
 			<Position x="753.73487" z="1402.11573"/>
 			<Orientation y="2.35621"/>
@@ -12750,35 +12750,35 @@
 			<Actor seed="38015"/>
 		</Entity>
 		<Entity uid="2174">
-			<Template>units/rome_champion_cavalry</Template>
+			<Template>units/rome/champion_cavalry</Template>
 			<Player>1</Player>
 			<Position x="766.92206" z="65.72667"/>
 			<Orientation y="1.30164"/>
 			<Actor seed="30822"/>
 		</Entity>
 		<Entity uid="2175">
-			<Template>units/rome_champion_cavalry</Template>
+			<Template>units/rome/champion_cavalry</Template>
 			<Player>1</Player>
 			<Position x="768.01166" z="60.5341"/>
 			<Orientation y="1.30164"/>
 			<Actor seed="51098"/>
 		</Entity>
 		<Entity uid="2176">
-			<Template>units/rome_champion_cavalry</Template>
+			<Template>units/rome/champion_cavalry</Template>
 			<Player>1</Player>
 			<Position x="769.80799" z="54.91895"/>
 			<Orientation y="1.30164"/>
 			<Actor seed="54052"/>
 		</Entity>
 		<Entity uid="2177">
-			<Template>units/rome_champion_cavalry</Template>
+			<Template>units/rome/champion_cavalry</Template>
 			<Player>1</Player>
 			<Position x="771.92243" z="49.5156"/>
 			<Orientation y="1.30164"/>
 			<Actor seed="60374"/>
 		</Entity>
 		<Entity uid="2178">
-			<Template>units/rome_champion_cavalry</Template>
+			<Template>units/rome/champion_cavalry</Template>
 			<Player>1</Player>
 			<Position x="772.84876" z="44.37578"/>
 			<Orientation y="1.30164"/>
@@ -12848,84 +12848,84 @@
 			<Actor seed="14419"/>
 		</Entity>
 		<Entity uid="2190">
-			<Template>units/rome_infantry_javelinist_a</Template>
+			<Template>units/rome/infantry_javelinist_a</Template>
 			<Player>1</Player>
 			<Position x="797.03461" z="50.98421"/>
 			<Orientation y="1.30164"/>
 			<Actor seed="27672"/>
 		</Entity>
 		<Entity uid="2191">
-			<Template>units/rome_infantry_javelinist_a</Template>
+			<Template>units/rome/infantry_javelinist_a</Template>
 			<Player>1</Player>
 			<Position x="795.30915" z="56.54514"/>
 			<Orientation y="1.30164"/>
 			<Actor seed="51093"/>
 		</Entity>
 		<Entity uid="2192">
-			<Template>units/rome_infantry_javelinist_a</Template>
+			<Template>units/rome/infantry_javelinist_a</Template>
 			<Player>1</Player>
 			<Position x="793.85474" z="61.79415"/>
 			<Orientation y="1.30164"/>
 			<Actor seed="35745"/>
 		</Entity>
 		<Entity uid="2193">
-			<Template>units/rome_infantry_javelinist_a</Template>
+			<Template>units/rome/infantry_javelinist_a</Template>
 			<Player>1</Player>
 			<Position x="792.41272" z="67.40297"/>
 			<Orientation y="1.30164"/>
 			<Actor seed="6082"/>
 		</Entity>
 		<Entity uid="2194">
-			<Template>units/rome_infantry_javelinist_a</Template>
+			<Template>units/rome/infantry_javelinist_a</Template>
 			<Player>1</Player>
 			<Position x="790.70704" z="72.80268"/>
 			<Orientation y="1.30164"/>
 			<Actor seed="38254"/>
 		</Entity>
 		<Entity uid="2195">
-			<Template>units/rome_infantry_javelinist_a</Template>
+			<Template>units/rome/infantry_javelinist_a</Template>
 			<Player>1</Player>
 			<Position x="793.70441" z="52.9776"/>
 			<Orientation y="1.30164"/>
 			<Actor seed="24845"/>
 		</Entity>
 		<Entity uid="2196">
-			<Template>units/rome_infantry_javelinist_a</Template>
+			<Template>units/rome/infantry_javelinist_a</Template>
 			<Player>1</Player>
 			<Position x="792.17023" z="58.4324"/>
 			<Orientation y="1.30164"/>
 			<Actor seed="13257"/>
 		</Entity>
 		<Entity uid="2197">
-			<Template>units/rome_infantry_javelinist_a</Template>
+			<Template>units/rome/infantry_javelinist_a</Template>
 			<Player>1</Player>
 			<Position x="790.17316" z="64.21863"/>
 			<Orientation y="1.30164"/>
 			<Actor seed="31971"/>
 		</Entity>
 		<Entity uid="2198">
-			<Template>units/rome_infantry_javelinist_a</Template>
+			<Template>units/rome/infantry_javelinist_a</Template>
 			<Player>1</Player>
 			<Position x="788.88386" z="69.56046"/>
 			<Orientation y="1.30164"/>
 			<Actor seed="39442"/>
 		</Entity>
 		<Entity uid="2199">
-			<Template>structures/rome_civil_centre</Template>
+			<Template>structures/rome/civil_centre</Template>
 			<Player>1</Player>
 			<Position x="642.93622" z="240.92365"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="58490"/>
 		</Entity>
 		<Entity uid="2200">
-			<Template>structures/rome_field</Template>
+			<Template>structures/rome/field</Template>
 			<Player>1</Player>
 			<Position x="559.0428" z="195.40842"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="43834"/>
 		</Entity>
 		<Entity uid="2201">
-			<Template>structures/rome_field</Template>
+			<Template>structures/rome/field</Template>
 			<Player>1</Player>
 			<Position x="580.86121" z="173.13318"/>
 			<Orientation y="2.35621"/>
@@ -15913,42 +15913,42 @@
 			<Actor seed="59692"/>
 		</Entity>
 		<Entity uid="2632">
-			<Template>structures/rome_siege_wall_tower</Template>
+			<Template>structures/rome/siege_wall_tower</Template>
 			<Player>2</Player>
 			<Position x="493.22822" z="1300.09168"/>
 			<Orientation y="2.44835"/>
 			<Actor seed="11975"/>
 		</Entity>
 		<Entity uid="2633">
-			<Template>structures/rome_siege_wall_tower</Template>
+			<Template>structures/rome/siege_wall_tower</Template>
 			<Player>2</Player>
 			<Position x="457.96503" z="1247.35279"/>
 			<Orientation y="1.65416"/>
 			<Actor seed="56041"/>
 		</Entity>
 		<Entity uid="2634">
-			<Template>units/pers_kardakes_hoplite</Template>
+			<Template>units/pers/kardakes_hoplite</Template>
 			<Player>2</Player>
 			<Position x="396.56482" z="1314.66175"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="30864"/>
 		</Entity>
 		<Entity uid="2635">
-			<Template>units/pers_kardakes_hoplite</Template>
+			<Template>units/pers/kardakes_hoplite</Template>
 			<Player>2</Player>
 			<Position x="392.72007" z="1310.29236"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="30864"/>
 		</Entity>
 		<Entity uid="2636">
-			<Template>units/athen_champion_ranged</Template>
+			<Template>units/athen/champion_ranged</Template>
 			<Player>3</Player>
 			<Position x="622.45972" z="1025.69385"/>
 			<Orientation y="3.96326"/>
 			<Actor seed="25339"/>
 		</Entity>
 		<Entity uid="2637">
-			<Template>units/athen_champion_ranged</Template>
+			<Template>units/athen/champion_ranged</Template>
 			<Player>3</Player>
 			<Position x="624.33008" z="1023.68409"/>
 			<Orientation y="3.96326"/>
@@ -16018,14 +16018,14 @@
 			<Actor seed="16743"/>
 		</Entity>
 		<Entity uid="2647">
-			<Template>units/athen_champion_marine</Template>
+			<Template>units/athen/champion_marine</Template>
 			<Player>3</Player>
 			<Position x="615.41724" z="996.86146"/>
 			<Orientation y="-0.8234"/>
 			<Actor seed="24766"/>
 		</Entity>
 		<Entity uid="2648">
-			<Template>units/athen_champion_marine</Template>
+			<Template>units/athen/champion_marine</Template>
 			<Player>3</Player>
 			<Position x="613.46894" z="998.76935"/>
 			<Orientation y="-0.8234"/>

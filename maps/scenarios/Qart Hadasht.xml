@@ -95,14 +95,14 @@
 ]]></ScriptSettings>
 	<Entities>
 		<Entity uid="19">
-			<Template>structures/cart_fortress</Template>
+			<Template>structures/cart/fortress</Template>
 			<Player>2</Player>
 			<Position x="1006.6717" z="381.576"/>
 			<Orientation y="-1.67173"/>
 			<Actor seed="64970"/>
 		</Entity>
 		<Entity uid="21">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="941.25696" z="295.57203"/>
 			<Orientation y="3.10703"/>
@@ -110,7 +110,7 @@
 			<Actor seed="39414"/>
 		</Entity>
 		<Entity uid="22">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="976.64167" z="299.18482"/>
 			<Orientation y="2.97834"/>
@@ -118,7 +118,7 @@
 			<Actor seed="43140"/>
 		</Entity>
 		<Entity uid="24">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="1018.85645" z="309.05485"/>
 			<Orientation y="2.8161"/>
@@ -126,7 +126,7 @@
 			<Actor seed="64254"/>
 		</Entity>
 		<Entity uid="25">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="1053.06653" z="329.08295"/>
 			<Orientation y="2.35621"/>
@@ -134,7 +134,7 @@
 			<Actor seed="60454"/>
 		</Entity>
 		<Entity uid="26">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="1083.48414" z="358.61646"/>
 			<Orientation y="2.35621"/>
@@ -142,42 +142,42 @@
 			<Actor seed="39512"/>
 		</Entity>
 		<Entity uid="27">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="958.24366" z="295.59772"/>
 			<Orientation y="2.97394"/>
 			<Actor seed="57104"/>
 		</Entity>
 		<Entity uid="28">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="997.64734" z="301.37409"/>
 			<Orientation y="2.88592"/>
 			<Actor seed="62170"/>
 		</Entity>
 		<Entity uid="29">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="1038.4126" z="314.18036"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="33090"/>
 		</Entity>
 		<Entity uid="30">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="1069.80445" z="345.38514"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="40352"/>
 		</Entity>
 		<Entity uid="31">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="1100.97828" z="376.36811"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="806"/>
 		</Entity>
 		<Entity uid="36">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>0</Player>
 			<Position x="1098.15162" z="397.76163"/>
 			<Orientation y="-1.7663"/>
@@ -185,7 +185,7 @@
 			<Actor seed="8274"/>
 		</Entity>
 		<Entity uid="37">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="1078.26758" z="427.83561"/>
 			<Orientation y="-2.56043"/>
@@ -193,7 +193,7 @@
 			<Actor seed="52866"/>
 		</Entity>
 		<Entity uid="39">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="1038.10975" z="444.71613"/>
 			<Orientation y="0.2174"/>
@@ -201,7 +201,7 @@
 			<Actor seed="19380"/>
 		</Entity>
 		<Entity uid="40">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="1000.57184" z="450.64972"/>
 			<Orientation y="-0.00773"/>
@@ -209,7 +209,7 @@
 			<Actor seed="59074"/>
 		</Entity>
 		<Entity uid="43">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="961.51673" z="445.35535"/>
 			<Orientation y="-0.3148"/>
@@ -217,7 +217,7 @@
 			<Actor seed="2488"/>
 		</Entity>
 		<Entity uid="45">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="899.95154" z="398.82084"/>
 			<Orientation y="2.35621"/>
@@ -225,56 +225,56 @@
 			<Actor seed="64826"/>
 		</Entity>
 		<Entity uid="57">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="885.26386" z="384.40787"/>
 			<Orientation y="-1.15931"/>
 			<Actor seed="39306"/>
 		</Entity>
 		<Entity uid="58">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="913.05823" z="413.68384"/>
 			<Orientation y="2.41878"/>
 			<Actor seed="21798"/>
 		</Entity>
 		<Entity uid="59">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="937.17707" z="437.37433"/>
 			<Orientation y="0.96691"/>
 			<Actor seed="24702"/>
 		</Entity>
 		<Entity uid="60">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="985.65131" z="451.42121"/>
 			<Orientation y="-0.02184"/>
 			<Actor seed="48078"/>
 		</Entity>
 		<Entity uid="65">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="1019.24207" z="449.23182"/>
 			<Orientation y="0.32393"/>
 			<Actor seed="52466"/>
 		</Entity>
 		<Entity uid="67">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="1058.568" z="439.84968"/>
 			<Orientation y="0.51256"/>
 			<Actor seed="8068"/>
 		</Entity>
 		<Entity uid="68">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="1095.57398" z="417.01795"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="64554"/>
 		</Entity>
 		<Entity uid="69">
-			<Template>structures/cart_wall_gate</Template>
+			<Template>structures/cart/wall_gate</Template>
 			<Player>2</Player>
 			<Position x="924.29871" z="424.00889"/>
 			<Orientation y="2.35621"/>
@@ -1884,7 +1884,7 @@
 			<Actor seed="45512"/>
 		</Entity>
 		<Entity uid="332">
-			<Template>structures/cart_wall_short</Template>
+			<Template>structures/cart/wall_short</Template>
 			<Player>2</Player>
 			<Position x="1104.06702" z="421.56104"/>
 			<Orientation y="2.79476"/>
@@ -1892,7 +1892,7 @@
 			<Actor seed="9726"/>
 		</Entity>
 		<Entity uid="334">
-			<Template>structures/cart_wall_short</Template>
+			<Template>structures/cart/wall_short</Template>
 			<Player>2</Player>
 			<Position x="1115.12012" z="425.24085"/>
 			<Orientation y="2.81023"/>
@@ -1900,7 +1900,7 @@
 			<Actor seed="28064"/>
 		</Entity>
 		<Entity uid="336">
-			<Template>structures/cart_wall_short</Template>
+			<Template>structures/cart/wall_short</Template>
 			<Player>2</Player>
 			<Position x="1125.85572" z="430.39676"/>
 			<Orientation y="2.65232"/>
@@ -1908,7 +1908,7 @@
 			<Actor seed="51544"/>
 		</Entity>
 		<Entity uid="343">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="1146.3429" z="443.23475"/>
 			<Orientation y="2.57534"/>
@@ -1916,7 +1916,7 @@
 			<Actor seed="8220"/>
 		</Entity>
 		<Entity uid="344">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="1175.06177" z="461.52982"/>
 			<Orientation y="2.61428"/>
@@ -1924,7 +1924,7 @@
 			<Actor seed="50168"/>
 		</Entity>
 		<Entity uid="346">
-			<Template>structures/cart_wall_medium</Template>
+			<Template>structures/cart/wall_medium</Template>
 			<Player>2</Player>
 			<Position x="1202.8307" z="476.56101"/>
 			<Orientation y="2.68012"/>
@@ -1932,49 +1932,49 @@
 			<Actor seed="37622"/>
 		</Entity>
 		<Entity uid="347">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="1108.75037" z="423.13443"/>
 			<Orientation y="2.66216"/>
 			<Actor seed="45690"/>
 		</Entity>
 		<Entity uid="348">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="1122.1211" z="427.25886"/>
 			<Orientation y="2.81424"/>
 			<Actor seed="51172"/>
 		</Entity>
 		<Entity uid="349">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="1132.76612" z="434.27408"/>
 			<Orientation y="2.60537"/>
 			<Actor seed="13360"/>
 		</Entity>
 		<Entity uid="350">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="1164.01453" z="454.06553"/>
 			<Orientation y="2.54931"/>
 			<Actor seed="3856"/>
 		</Entity>
 		<Entity uid="351">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="1190.73572" z="469.1294"/>
 			<Orientation y="2.56261"/>
 			<Actor seed="12040"/>
 		</Entity>
 		<Entity uid="352">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="1217.51807" z="485.632"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="3510"/>
 		</Entity>
 		<Entity uid="353">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="1220.15528" z="507.69166"/>
 			<Orientation y="-1.44921"/>
@@ -1982,7 +1982,7 @@
 			<Actor seed="63906"/>
 		</Entity>
 		<Entity uid="354">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="1224.77991" z="546.17176"/>
 			<Orientation y="-1.44921"/>
@@ -1990,7 +1990,7 @@
 			<Actor seed="63906"/>
 		</Entity>
 		<Entity uid="358">
-			<Template>structures/cart_wall_medium</Template>
+			<Template>structures/cart/wall_medium</Template>
 			<Player>2</Player>
 			<Position x="1220.6836" z="579.31281"/>
 			<Orientation y="-2.13112"/>
@@ -1998,7 +1998,7 @@
 			<Actor seed="31530"/>
 		</Entity>
 		<Entity uid="359">
-			<Template>structures/cart_wall_medium</Template>
+			<Template>structures/cart/wall_medium</Template>
 			<Player>2</Player>
 			<Position x="1197.53162" z="593.43604"/>
 			<Orientation y="0.24764"/>
@@ -2006,7 +2006,7 @@
 			<Actor seed="49104"/>
 		</Entity>
 		<Entity uid="361">
-			<Template>structures/cart_wall_medium</Template>
+			<Template>structures/cart/wall_medium</Template>
 			<Player>2</Player>
 			<Position x="1171.48829" z="594.81977"/>
 			<Orientation y="-0.13842"/>
@@ -2014,7 +2014,7 @@
 			<Actor seed="53366"/>
 		</Entity>
 		<Entity uid="364">
-			<Template>structures/cart_wall_gate</Template>
+			<Template>structures/cart/wall_gate</Template>
 			<Player>2</Player>
 			<Position x="1147.20618" z="623.18964"/>
 			<Orientation y="-1.82287"/>
@@ -2022,7 +2022,7 @@
 			<Actor seed="47314"/>
 		</Entity>
 		<Entity uid="366">
-			<Template>structures/cart_wall_short</Template>
+			<Template>structures/cart/wall_short</Template>
 			<Player>2</Player>
 			<Position x="1153.41114" z="597.93293"/>
 			<Orientation y="-1.83837"/>
@@ -2030,49 +2030,49 @@
 			<Actor seed="45442"/>
 		</Entity>
 		<Entity uid="367">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="1229.11841" z="566.27662"/>
 			<Orientation y="1.28031"/>
 			<Actor seed="29672"/>
 		</Entity>
 		<Entity uid="368">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="1213.28858" z="591.18152"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="36598"/>
 		</Entity>
 		<Entity uid="369">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="1184.40284" z="596.36957"/>
 			<Orientation y="-1.55588"/>
 			<Actor seed="39614"/>
 		</Entity>
 		<Entity uid="371">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="1154.7776" z="591.8053"/>
 			<Orientation y="-1.88421"/>
 			<Actor seed="25758"/>
 		</Entity>
 		<Entity uid="372">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="1151.48926" z="604.04072"/>
 			<Orientation y="-1.7969"/>
 			<Actor seed="21382"/>
 		</Entity>
 		<Entity uid="373">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="1141.71705" z="644.22938"/>
 			<Orientation y="-1.79618"/>
 			<Actor seed="25904"/>
 		</Entity>
 		<Entity uid="374">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="1136.99256" z="666.45173"/>
 			<Orientation y="-1.80147"/>
@@ -2080,7 +2080,7 @@
 			<Actor seed="45812"/>
 		</Entity>
 		<Entity uid="375">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="1136.84083" z="705.28602"/>
 			<Orientation y="1.76827"/>
@@ -2088,7 +2088,7 @@
 			<Actor seed="36974"/>
 		</Entity>
 		<Entity uid="376">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="1143.91626" z="740.49732"/>
 			<Orientation y="1.74029"/>
@@ -2096,28 +2096,28 @@
 			<Actor seed="40928"/>
 		</Entity>
 		<Entity uid="378">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="1133.98951" z="684.56446"/>
 			<Orientation y="1.53708"/>
 			<Actor seed="17834"/>
 		</Entity>
 		<Entity uid="379">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="1139.06421" z="716.7508"/>
 			<Orientation y="1.77807"/>
 			<Actor seed="62660"/>
 		</Entity>
 		<Entity uid="380">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="1147.44617" z="758.78132"/>
 			<Orientation y="1.80214"/>
 			<Actor seed="32988"/>
 		</Entity>
 		<Entity uid="383">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="1138.56983" z="781.54621"/>
 			<Orientation y="-1.94977"/>
@@ -2125,7 +2125,7 @@
 			<Actor seed="23330"/>
 		</Entity>
 		<Entity uid="384">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="1123.47645" z="820.09852"/>
 			<Orientation y="-1.9334"/>
@@ -2133,7 +2133,7 @@
 			<Actor seed="55092"/>
 		</Entity>
 		<Entity uid="385">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="1100.24842" z="850.87757"/>
 			<Orientation y="-2.49993"/>
@@ -2141,7 +2141,7 @@
 			<Actor seed="15426"/>
 		</Entity>
 		<Entity uid="386">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="1067.38929" z="875.03492"/>
 			<Orientation y="-2.49993"/>
@@ -2149,7 +2149,7 @@
 			<Actor seed="15426"/>
 		</Entity>
 		<Entity uid="390">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="1030.19153" z="891.61487"/>
 			<Orientation y="0.15586"/>
@@ -2157,7 +2157,7 @@
 			<Actor seed="43846"/>
 		</Entity>
 		<Entity uid="391">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="997.75824" z="881.03431"/>
 			<Orientation y="2.35621"/>
@@ -2165,7 +2165,7 @@
 			<Actor seed="56154"/>
 		</Entity>
 		<Entity uid="395">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="969.31141" z="873.8426"/>
 			<Orientation y="0.33051"/>
@@ -2173,7 +2173,7 @@
 			<Actor seed="62708"/>
 		</Entity>
 		<Entity uid="397">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="929.33277" z="885.36634"/>
 			<Orientation y="0.27477"/>
@@ -2181,7 +2181,7 @@
 			<Actor seed="48150"/>
 		</Entity>
 		<Entity uid="398">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="903.37269" z="909.04926"/>
 			<Orientation y="0.99918"/>
@@ -2189,7 +2189,7 @@
 			<Actor seed="19516"/>
 		</Entity>
 		<Entity uid="399">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="874.35914" z="934.78241"/>
 			<Orientation y="0.46906"/>
@@ -2197,7 +2197,7 @@
 			<Actor seed="10854"/>
 		</Entity>
 		<Entity uid="400">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="836.24366" z="946.9715"/>
 			<Orientation y="0.15165"/>
@@ -2205,7 +2205,7 @@
 			<Actor seed="53338"/>
 		</Entity>
 		<Entity uid="401">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="796.99927" z="949.38086"/>
 			<Orientation y="-0.0643"/>
@@ -2213,7 +2213,7 @@
 			<Actor seed="11972"/>
 		</Entity>
 		<Entity uid="402">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="758.2356" z="941.88843"/>
 			<Orientation y="-0.32302"/>
@@ -2221,7 +2221,7 @@
 			<Actor seed="52558"/>
 		</Entity>
 		<Entity uid="403">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="724.47974" z="921.35871"/>
 			<Orientation y="2.35621"/>
@@ -2229,7 +2229,7 @@
 			<Actor seed="60992"/>
 		</Entity>
 		<Entity uid="404">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="702.50727" z="886.74134"/>
 			<Orientation y="1.86106"/>
@@ -2237,7 +2237,7 @@
 			<Actor seed="41236"/>
 		</Entity>
 		<Entity uid="405">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="692.23255" z="845.94507"/>
 			<Orientation y="-1.34298"/>
@@ -2245,7 +2245,7 @@
 			<Actor seed="45038"/>
 		</Entity>
 		<Entity uid="408">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="676.05213" z="823.40406"/>
 			<Orientation y="-0.29044"/>
@@ -2253,7 +2253,7 @@
 			<Actor seed="58150"/>
 		</Entity>
 		<Entity uid="409">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="641.31867" z="814.11701"/>
 			<Orientation y="-0.2573"/>
@@ -2261,7 +2261,7 @@
 			<Actor seed="51242"/>
 		</Entity>
 		<Entity uid="419">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="599.68934" z="809.4579"/>
 			<Orientation y="0.00892"/>
@@ -2269,7 +2269,7 @@
 			<Actor seed="59048"/>
 		</Entity>
 		<Entity uid="420">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="561.90418" z="811.99463"/>
 			<Orientation y="0.14692"/>
@@ -2277,7 +2277,7 @@
 			<Actor seed="21360"/>
 		</Entity>
 		<Entity uid="421">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="521.22272" z="820.10004"/>
 			<Orientation y="0.25353"/>
@@ -2285,7 +2285,7 @@
 			<Actor seed="29398"/>
 		</Entity>
 		<Entity uid="423">
-			<Template>structures/cart_wall_medium</Template>
+			<Template>structures/cart/wall_medium</Template>
 			<Player>2</Player>
 			<Position x="491.19935" z="828.16163"/>
 			<Orientation y="0.32634"/>
@@ -2293,7 +2293,7 @@
 			<Actor seed="59558"/>
 		</Entity>
 		<Entity uid="424">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="465.47513" z="819.11548"/>
 			<Orientation y="2.35621"/>
@@ -2301,7 +2301,7 @@
 			<Actor seed="38750"/>
 		</Entity>
 		<Entity uid="425">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="434.7349" z="789.33832"/>
 			<Orientation y="2.35621"/>
@@ -2309,7 +2309,7 @@
 			<Actor seed="16062"/>
 		</Entity>
 		<Entity uid="427">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="408.59922" z="756.4787"/>
 			<Orientation y="-1.04925"/>
@@ -2317,7 +2317,7 @@
 			<Actor seed="22276"/>
 		</Entity>
 		<Entity uid="434">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="392.85145" z="717.47083"/>
 			<Orientation y="1.77018"/>
@@ -2325,7 +2325,7 @@
 			<Actor seed="47716"/>
 		</Entity>
 		<Entity uid="435">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="403.37342" z="683.14417"/>
 			<Orientation y="0.82557"/>
@@ -2333,7 +2333,7 @@
 			<Actor seed="22422"/>
 		</Entity>
 		<Entity uid="437">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="430.40717" z="650.77546"/>
 			<Orientation y="-2.17251"/>
@@ -2341,7 +2341,7 @@
 			<Actor seed="37524"/>
 		</Entity>
 		<Entity uid="450">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="447.48896" z="614.74555"/>
 			<Orientation y="-5.00751"/>
@@ -2349,7 +2349,7 @@
 			<Actor seed="38186"/>
 		</Entity>
 		<Entity uid="453">
-			<Template>structures/cart_wall_gate</Template>
+			<Template>structures/cart/wall_gate</Template>
 			<Player>2</Player>
 			<Position x="477.96119" z="545.05506"/>
 			<Orientation y="1.48858"/>
@@ -2357,7 +2357,7 @@
 			<Actor seed="12430"/>
 		</Entity>
 		<Entity uid="454">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="462.39365" z="503.88428"/>
 			<Orientation y="1.51"/>
@@ -2365,7 +2365,7 @@
 			<Actor seed="35204"/>
 		</Entity>
 		<Entity uid="455">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="458.39179" z="460.08222"/>
 			<Orientation y="1.87125"/>
@@ -2373,7 +2373,7 @@
 			<Actor seed="44288"/>
 		</Entity>
 		<Entity uid="456">
-			<Template>structures/cart_wall_medium</Template>
+			<Template>structures/cart/wall_medium</Template>
 			<Player>2</Player>
 			<Position x="452.47556" z="427.12833"/>
 			<Orientation y="1.54825"/>
@@ -2381,7 +2381,7 @@
 			<Actor seed="60458"/>
 		</Entity>
 		<Entity uid="457">
-			<Template>structures/cart_wall_medium</Template>
+			<Template>structures/cart/wall_medium</Template>
 			<Player>2</Player>
 			<Position x="457.5586" z="401.1207"/>
 			<Orientation y="1.23046"/>
@@ -2389,7 +2389,7 @@
 			<Actor seed="59860"/>
 		</Entity>
 		<Entity uid="458">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="472.7176" z="370.4426"/>
 			<Orientation y="1.04381"/>
@@ -2397,7 +2397,7 @@
 			<Actor seed="52182"/>
 		</Entity>
 		<Entity uid="459">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="501.47516" z="341.81534"/>
 			<Orientation y="0.5333"/>
@@ -2405,7 +2405,7 @@
 			<Actor seed="53402"/>
 		</Entity>
 		<Entity uid="460">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="539.42377" z="325.2368"/>
 			<Orientation y="-2.8706"/>
@@ -2413,7 +2413,7 @@
 			<Actor seed="57064"/>
 		</Entity>
 		<Entity uid="461">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="580.09217" z="317.34711"/>
 			<Orientation y="-3.03188"/>
@@ -2421,7 +2421,7 @@
 			<Actor seed="63418"/>
 		</Entity>
 		<Entity uid="462">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="621.14271" z="312.82969"/>
 			<Orientation y="-3.0665"/>
@@ -2429,7 +2429,7 @@
 			<Actor seed="56918"/>
 		</Entity>
 		<Entity uid="463">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="661.71302" z="311.23881"/>
 			<Orientation y="-3.13793"/>
@@ -2437,7 +2437,7 @@
 			<Actor seed="33126"/>
 		</Entity>
 		<Entity uid="464">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="698.87049" z="320.7512"/>
 			<Orientation y="2.68474"/>
@@ -2445,7 +2445,7 @@
 			<Actor seed="53000"/>
 		</Entity>
 		<Entity uid="465">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="734.44135" z="339.37824"/>
 			<Orientation y="2.6508"/>
@@ -2453,7 +2453,7 @@
 			<Actor seed="15696"/>
 		</Entity>
 		<Entity uid="467">
-			<Template>structures/cart_wall_medium</Template>
+			<Template>structures/cart/wall_medium</Template>
 			<Player>2</Player>
 			<Position x="765.8404" z="347.70258"/>
 			<Orientation y="-3.03122"/>
@@ -2461,7 +2461,7 @@
 			<Actor seed="33270"/>
 		</Entity>
 		<Entity uid="468">
-			<Template>structures/cart_wall_medium</Template>
+			<Template>structures/cart/wall_medium</Template>
 			<Player>2</Player>
 			<Position x="793.08039" z="345.228"/>
 			<Orientation y="-3.0591"/>
@@ -2469,7 +2469,7 @@
 			<Actor seed="26504"/>
 		</Entity>
 		<Entity uid="470">
-			<Template>structures/cart_wall_medium</Template>
+			<Template>structures/cart/wall_medium</Template>
 			<Player>2</Player>
 			<Position x="814.99262" z="340.72748"/>
 			<Orientation y="-2.80999"/>
@@ -2477,7 +2477,7 @@
 			<Actor seed="14548"/>
 		</Entity>
 		<Entity uid="471">
-			<Template>structures/cart_wall_medium</Template>
+			<Template>structures/cart/wall_medium</Template>
 			<Player>2</Player>
 			<Position x="838.47071" z="332.20331"/>
 			<Orientation y="-2.7584"/>
@@ -2485,7 +2485,7 @@
 			<Actor seed="31318"/>
 		</Entity>
 		<Entity uid="472">
-			<Template>structures/cart_wall_medium</Template>
+			<Template>structures/cart/wall_medium</Template>
 			<Player>2</Player>
 			<Position x="862.29181" z="320.0493"/>
 			<Orientation y="-2.57409"/>
@@ -2493,7 +2493,7 @@
 			<Actor seed="29106"/>
 		</Entity>
 		<Entity uid="473">
-			<Template>structures/cart_wall_medium</Template>
+			<Template>structures/cart/wall_medium</Template>
 			<Player>2</Player>
 			<Position x="885.11426" z="305.28138"/>
 			<Orientation y="-2.54096"/>
@@ -2501,7 +2501,7 @@
 			<Actor seed="32120"/>
 		</Entity>
 		<Entity uid="474">
-			<Template>structures/cart_wall_medium</Template>
+			<Template>structures/cart/wall_medium</Template>
 			<Player>2</Player>
 			<Position x="907.82953" z="296.26053"/>
 			<Orientation y="-3.01444"/>
@@ -2509,7 +2509,7 @@
 			<Actor seed="17140"/>
 		</Entity>
 		<Entity uid="475">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="886.68586" z="360.53034"/>
 			<Orientation y="1.44085"/>
@@ -2517,7 +2517,7 @@
 			<Actor seed="42566"/>
 		</Entity>
 		<Entity uid="476">
-			<Template>structures/cart_wall_long</Template>
+			<Template>structures/cart/wall_long</Template>
 			<Player>2</Player>
 			<Position x="891.72797" z="322.61405"/>
 			<Orientation y="1.44086"/>
@@ -2525,371 +2525,371 @@
 			<Actor seed="42566"/>
 		</Entity>
 		<Entity uid="477">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="893.89325" z="306.44666"/>
 			<Orientation y="-0.12195"/>
 			<Actor seed="15560"/>
 		</Entity>
 		<Entity uid="478">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="889.23218" z="340.61573"/>
 			<Orientation y="-1.70084"/>
 			<Actor seed="17290"/>
 		</Entity>
 		<Entity uid="484">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="894.45136" z="298.15915"/>
 			<Orientation y="-3.01601"/>
 			<Actor seed="4890"/>
 		</Entity>
 		<Entity uid="485">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="921.49714" z="294.11301"/>
 			<Orientation y="-3.12618"/>
 			<Actor seed="11722"/>
 		</Entity>
 		<Entity uid="486">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="874.70563" z="312.0163"/>
 			<Orientation y="-2.60169"/>
 			<Actor seed="20850"/>
 		</Entity>
 		<Entity uid="487">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="849.68964" z="328.18281"/>
 			<Orientation y="-2.73552"/>
 			<Actor seed="10264"/>
 		</Entity>
 		<Entity uid="488">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="804.05713" z="343.68119"/>
 			<Orientation y="1.82618"/>
 			<Actor seed="40838"/>
 		</Entity>
 		<Entity uid="489">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="829.88282" z="335.62851"/>
 			<Orientation y="1.91984"/>
 			<Actor seed="31792"/>
 		</Entity>
 		<Entity uid="490">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="780.03351" z="346.29734"/>
 			<Orientation y="-3.0247"/>
 			<Actor seed="38700"/>
 		</Entity>
 		<Entity uid="491">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="749.57221" z="347.23469"/>
 			<Orientation y="-2.01081"/>
 			<Actor seed="60438"/>
 		</Entity>
 		<Entity uid="492">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="683.00495" z="311.66205"/>
 			<Orientation y="3.02358"/>
 			<Actor seed="758"/>
 		</Entity>
 		<Entity uid="493">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="600.16022" z="314.32703"/>
 			<Orientation y="-3.03696"/>
 			<Actor seed="62468"/>
 		</Entity>
 		<Entity uid="494">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="560.04676" z="319.63651"/>
 			<Orientation y="-2.95556"/>
 			<Actor seed="13026"/>
 		</Entity>
 		<Entity uid="495">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="518.96625" z="330.96595"/>
 			<Orientation y="-2.72397"/>
 			<Actor seed="20244"/>
 		</Entity>
 		<Entity uid="496">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="483.41843" z="352.80973"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="9604"/>
 		</Entity>
 		<Entity uid="497">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="461.68512" z="389.85383"/>
 			<Orientation y="-1.98345"/>
 			<Actor seed="17926"/>
 		</Entity>
 		<Entity uid="498">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="452.93384" z="414.4911"/>
 			<Orientation y="-1.72455"/>
 			<Actor seed="64990"/>
 		</Entity>
 		<Entity uid="499">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="452.72324" z="443.36"/>
 			<Orientation y="-1.43508"/>
 			<Actor seed="17852"/>
 		</Entity>
 		<Entity uid="500">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="463.33808" z="478.84537"/>
 			<Orientation y="-1.40754"/>
 			<Actor seed="49282"/>
 		</Entity>
 		<Entity uid="501">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="461.201" z="522.86713"/>
 			<Orientation y="-1.62252"/>
 			<Actor seed="43300"/>
 		</Entity>
 		<Entity uid="502">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="457.44367" z="567.1183"/>
 			<Orientation y="-1.64081"/>
 			<Actor seed="12740"/>
 		</Entity>
 		<Entity uid="503">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="452.55747" z="597.30427"/>
 			<Orientation y="-1.92829"/>
 			<Actor seed="41128"/>
 		</Entity>
 		<Entity uid="504">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="441.28156" z="633.21637"/>
 			<Orientation y="-2.02617"/>
 			<Actor seed="56578"/>
 		</Entity>
 		<Entity uid="505">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="417.37183" z="668.11866"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="18838"/>
 		</Entity>
 		<Entity uid="506">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="389.31006" z="698.38666"/>
 			<Orientation y="-2.44153"/>
 			<Actor seed="62804"/>
 		</Entity>
 		<Entity uid="507">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="396.0925" z="738.33063"/>
 			<Orientation y="-1.22075"/>
 			<Actor seed="39564"/>
 		</Entity>
 		<Entity uid="508">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="420.4025" z="775.12482"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="47850"/>
 		</Entity>
 		<Entity uid="509">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="449.5626" z="804.16889"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="36252"/>
 		</Entity>
 		<Entity uid="510">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="481.35334" z="835.31861"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="52876"/>
 		</Entity>
 		<Entity uid="511">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="503.54578" z="824.55097"/>
 			<Orientation y="0.40647"/>
 			<Actor seed="25490"/>
 		</Entity>
 		<Entity uid="512">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="542.42988" z="815.77845"/>
 			<Orientation y="0.24776"/>
 			<Actor seed="37976"/>
 		</Entity>
 		<Entity uid="513">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="580.57728" z="809.95496"/>
 			<Orientation y="0.09847"/>
 			<Actor seed="52304"/>
 		</Entity>
 		<Entity uid="514">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="620.20197" z="809.67438"/>
 			<Orientation y="-0.11223"/>
 			<Actor seed="39216"/>
 		</Entity>
 		<Entity uid="515">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="659.98536" z="819.28156"/>
 			<Orientation y="-0.28505"/>
 			<Actor seed="3216"/>
 		</Entity>
 		<Entity uid="516">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="688.34083" z="826.86603"/>
 			<Orientation y="-0.32882"/>
 			<Actor seed="48032"/>
 		</Entity>
 		<Entity uid="517">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="696.21229" z="866.03278"/>
 			<Orientation y="-1.32644"/>
 			<Actor seed="27696"/>
 		</Entity>
 		<Entity uid="518">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="709.60944" z="906.76435"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="15508"/>
 		</Entity>
 		<Entity uid="519">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="739.41846" z="935.90918"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="16544"/>
 		</Entity>
 		<Entity uid="520">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="778.99177" z="948.79938"/>
 			<Orientation y="-0.21825"/>
 			<Actor seed="47662"/>
 		</Entity>
 		<Entity uid="521">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="817.7237" z="950.37354"/>
 			<Orientation y="0.073"/>
 			<Actor seed="35918"/>
 		</Entity>
 		<Entity uid="522">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="858.09675" z="943.2693"/>
 			<Orientation y="0.34366"/>
 			<Actor seed="37214"/>
 		</Entity>
 		<Entity uid="523">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="891.68683" z="926.10114"/>
 			<Orientation y="0.92571"/>
 			<Actor seed="44538"/>
 		</Entity>
 		<Entity uid="524">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="912.51838" z="890.25843"/>
 			<Orientation y="0.28927"/>
 			<Actor seed="28572"/>
 		</Entity>
 		<Entity uid="525">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="949.53412" z="880.94129"/>
 			<Orientation y="0.28208"/>
 			<Actor seed="56036"/>
 		</Entity>
 		<Entity uid="526">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="985.93335" z="866.12781"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="1218"/>
 		</Entity>
 		<Entity uid="527">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="1012.28425" z="895.57636"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="27966"/>
 		</Entity>
 		<Entity uid="528">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="1050.59925" z="887.70765"/>
 			<Orientation y="0.75806"/>
 			<Actor seed="24294"/>
 		</Entity>
 		<Entity uid="529">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="1083.667" z="862.797"/>
 			<Orientation y="0.61408"/>
 			<Actor seed="61568"/>
 		</Entity>
 		<Entity uid="530">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="1116.74927" z="837.63764"/>
 			<Orientation y="1.22788"/>
 			<Actor seed="53328"/>
 		</Entity>
 		<Entity uid="531">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="1131.50721" z="797.59693"/>
 			<Orientation y="1.14713"/>
 			<Actor seed="39402"/>
 		</Entity>
 		<Entity uid="533">
-			<Template>structures/cart_temple</Template>
+			<Template>structures/cart/temple</Template>
 			<Player>2</Player>
 			<Position x="581.73548" z="422.64158"/>
 			<Orientation y="-2.15516"/>
 			<Actor seed="37218"/>
 		</Entity>
 		<Entity uid="534">
-			<Template>structures/cart_temple</Template>
+			<Template>structures/cart/temple</Template>
 			<Player>2</Player>
 			<Position x="604.62305" z="389.60947"/>
 			<Orientation y="-2.16146"/>
 			<Actor seed="52456"/>
 		</Entity>
 		<Entity uid="535">
-			<Template>structures/cart_tophet</Template>
+			<Template>structures/cart/tophet</Template>
 			<Player>2</Player>
 			<Position x="601.6078" z="411.82035"/>
 			<Orientation y="-2.1546"/>
@@ -7818,91 +7818,91 @@
 			<Actor seed="23440"/>
 		</Entity>
 		<Entity uid="1316">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="505.86454" z="528.39655"/>
 			<Orientation y="-0.07535"/>
 			<Actor seed="21764"/>
 		</Entity>
 		<Entity uid="1317">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="520.17005" z="529.7641"/>
 			<Orientation y="-0.11454"/>
 			<Actor seed="42140"/>
 		</Entity>
 		<Entity uid="1318">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="534.19953" z="530.74567"/>
 			<Orientation y="-0.10557"/>
 			<Actor seed="30536"/>
 		</Entity>
 		<Entity uid="1319">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="650.26221" z="517.09455"/>
 			<Orientation y="0.15908"/>
 			<Actor seed="44620"/>
 		</Entity>
 		<Entity uid="1322">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="620.51551" z="523.1598"/>
 			<Orientation y="0.17179"/>
 			<Actor seed="33506"/>
 		</Entity>
 		<Entity uid="1323">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="635.40333" z="520.37671"/>
 			<Orientation y="0.20853"/>
 			<Actor seed="38220"/>
 		</Entity>
 		<Entity uid="1326">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="618.74927" z="500.32471"/>
 			<Orientation y="5.4399"/>
 			<Actor seed="2280"/>
 		</Entity>
 		<Entity uid="1330">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="713.01587" z="482.79407"/>
 			<Orientation y="-0.38086"/>
 			<Actor seed="48898"/>
 		</Entity>
 		<Entity uid="1331">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="697.79267" z="477.47297"/>
 			<Orientation y="-0.40285"/>
 			<Actor seed="45132"/>
 		</Entity>
 		<Entity uid="1332">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="549.2956" z="532.82868"/>
 			<Orientation y="-0.10558"/>
 			<Actor seed="30536"/>
 		</Entity>
 		<Entity uid="1334">
-			<Template>structures/cart_civil_centre</Template>
+			<Template>structures/cart/civil_centre</Template>
 			<Player>2</Player>
 			<Position x="927.99366" z="498.41761"/>
 			<Orientation y="0.01554"/>
 			<Actor seed="11370"/>
 		</Entity>
 		<Entity uid="1335">
-			<Template>structures/cart_embassy</Template>
+			<Template>structures/cart/embassy</Template>
 			<Player>2</Player>
 			<Position x="961.77173" z="500.2804"/>
 			<Orientation y="-0.00425"/>
 			<Actor seed="10670"/>
 		</Entity>
 		<Entity uid="1336">
-			<Template>structures/cart_embassy</Template>
+			<Template>structures/cart/embassy</Template>
 			<Player>2</Player>
 			<Position x="894.08906" z="501.4192"/>
 			<Orientation y="0.07004"/>
@@ -8134,244 +8134,244 @@
 			<Actor seed="32192"/>
 		</Entity>
 		<Entity uid="1381">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="964.235" z="582.0503"/>
 			<Orientation y="1.59438"/>
 			<Actor seed="32316"/>
 		</Entity>
 		<Entity uid="1382">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="946.98792" z="583.13788"/>
 			<Orientation y="3.18152"/>
 			<Actor seed="54222"/>
 		</Entity>
 		<Entity uid="1383">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="931.04084" z="582.8722"/>
 			<Orientation y="3.20606"/>
 			<Actor seed="46856"/>
 		</Entity>
 		<Entity uid="1385">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="963.77387" z="596.12922"/>
 			<Orientation y="11.0656"/>
 			<Actor seed="13932"/>
 		</Entity>
 		<Entity uid="1386">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="947.6579" z="597.25074"/>
 			<Orientation y="6.35312"/>
 			<Actor seed="46856"/>
 		</Entity>
 		<Entity uid="1387">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="932.37385" z="598.14966"/>
 			<Orientation y="6.32856"/>
 			<Actor seed="54222"/>
 		</Entity>
 		<Entity uid="1388">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="915.68018" z="597.70105"/>
 			<Orientation y="4.78161"/>
 			<Actor seed="32316"/>
 		</Entity>
 		<Entity uid="1389">
-			<Template>structures/cart_market</Template>
+			<Template>structures/cart/market</Template>
 			<Player>2</Player>
 			<Position x="870.47712" z="587.01594"/>
 			<Orientation y="2.74657"/>
 			<Actor seed="27488"/>
 		</Entity>
 		<Entity uid="1390">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="564.25959" z="534.50983"/>
 			<Orientation y="-0.10558"/>
 			<Actor seed="30536"/>
 		</Entity>
 		<Entity uid="1391">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="666.10261" z="513.13221"/>
 			<Orientation y="0.15908"/>
 			<Actor seed="44620"/>
 		</Entity>
 		<Entity uid="1393">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="809.03571" z="554.76014"/>
 			<Orientation y="1.06514"/>
 			<Actor seed="32316"/>
 		</Entity>
 		<Entity uid="1394">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="795.26948" z="545.30665"/>
 			<Orientation y="2.6121"/>
 			<Actor seed="54222"/>
 		</Entity>
 		<Entity uid="1395">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="781.95344" z="537.75055"/>
 			<Orientation y="2.63665"/>
 			<Actor seed="46856"/>
 		</Entity>
 		<Entity uid="1396">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="767.81818" z="529.92896"/>
 			<Orientation y="7.34913"/>
 			<Actor seed="13932"/>
 		</Entity>
 		<Entity uid="1401">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="681.69361" z="509.59635"/>
 			<Orientation y="0.15908"/>
 			<Actor seed="44620"/>
 		</Entity>
 		<Entity uid="1402">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="824.33307" z="562.45411"/>
 			<Orientation y="2.6121"/>
 			<Actor seed="54222"/>
 		</Entity>
 		<Entity uid="1403">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="763.19977" z="476.41065"/>
 			<Orientation y="-0.48452"/>
 			<Actor seed="45132"/>
 		</Entity>
 		<Entity uid="1404">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="778.03199" z="483.14292"/>
 			<Orientation y="-0.46251"/>
 			<Actor seed="48898"/>
 		</Entity>
 		<Entity uid="1405">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="718.82172" z="469.14362"/>
 			<Orientation y="2.74064"/>
 			<Actor seed="45132"/>
 		</Entity>
 		<Entity uid="1406">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="703.4795" z="463.6727"/>
 			<Orientation y="2.76264"/>
 			<Actor seed="48898"/>
 		</Entity>
 		<Entity uid="1407">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="1045.27051" z="579.19037"/>
 			<Orientation y="4.78162"/>
 			<Actor seed="32316"/>
 		</Entity>
 		<Entity uid="1408">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="1061.32435" z="579.19037"/>
 			<Orientation y="6.32857"/>
 			<Actor seed="54222"/>
 		</Entity>
 		<Entity uid="1411">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="1044.07667" z="565.8318"/>
 			<Orientation y="7.91855"/>
 			<Actor seed="13932"/>
 		</Entity>
 		<Entity uid="1412">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="1060.27198" z="564.73139"/>
 			<Orientation y="3.20606"/>
 			<Actor seed="46856"/>
 		</Entity>
 		<Entity uid="1415">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="1094.1178" z="547.41364"/>
 			<Orientation y="7.87438"/>
 			<Actor seed="54222"/>
 		</Entity>
 		<Entity uid="1416">
-			<Template>structures/cart_embassy_italiote</Template>
+			<Template>structures/cart/embassy_italiote</Template>
 			<Player>2</Player>
 			<Position x="914.46381" z="581.57618"/>
 			<Orientation y="3.12795"/>
 			<Actor seed="12066"/>
 		</Entity>
 		<Entity uid="1417">
-			<Template>structures/cart_temple</Template>
+			<Template>structures/cart/temple</Template>
 			<Player>2</Player>
 			<Position x="816.0016" z="845.71253"/>
 			<Orientation y="2.35621"/>
 		</Entity>
 		<Entity uid="1418">
-			<Template>structures/cart_barracks</Template>
+			<Template>structures/cart/barracks</Template>
 			<Player>2</Player>
 			<Position x="1169.60572" z="553.01716"/>
 			<Orientation y="-1.57229"/>
 			<Actor seed="4394"/>
 		</Entity>
 		<Entity uid="1419">
-			<Template>structures/cart_barracks</Template>
+			<Template>structures/cart/barracks</Template>
 			<Player>2</Player>
 			<Position x="1169.50086" z="526.83442"/>
 			<Orientation y="-1.5918"/>
 			<Actor seed="10988"/>
 		</Entity>
 		<Entity uid="1420">
-			<Template>structures/cart_blacksmith</Template>
+			<Template>structures/cart/forge</Template>
 			<Player>2</Player>
 			<Position x="1131.25562" z="526.80439"/>
 			<Orientation y="-0.09981"/>
 			<Actor seed="64860"/>
 		</Entity>
 		<Entity uid="1421">
-			<Template>structures/cart_farmstead</Template>
+			<Template>structures/cart/farmstead</Template>
 			<Player>2</Player>
 			<Position x="1128.69178" z="545.59876"/>
 			<Orientation y="1.46988"/>
 			<Actor seed="14280"/>
 		</Entity>
 		<Entity uid="1427">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="1056.29432" z="643.06617"/>
 			<Orientation y="9.4679"/>
 			<Actor seed="13932"/>
 		</Entity>
 		<Entity uid="1428">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="1071.14954" z="642.67524"/>
 			<Orientation y="3.20292"/>
 			<Actor seed="46856"/>
 		</Entity>
 		<Entity uid="1429">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="1086.44092" z="641.90796"/>
 			<Orientation y="3.17836"/>
 			<Actor seed="54222"/>
 		</Entity>
 		<Entity uid="1430">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="1103.5105" z="642.79267"/>
 			<Orientation y="1.63141"/>
@@ -8385,14 +8385,14 @@
 			<Actor seed="45894"/>
 		</Entity>
 		<Entity uid="1433">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="1056.06946" z="659.88672"/>
 			<Orientation y="9.4679"/>
 			<Actor seed="13932"/>
 		</Entity>
 		<Entity uid="1434">
-			<Template>structures/cart_fortress</Template>
+			<Template>structures/cart/fortress</Template>
 			<Player>2</Player>
 			<Position x="1062.14283" z="764.01307"/>
 			<Orientation y="-2.428"/>
@@ -8406,196 +8406,196 @@
 			<Actor seed="45894"/>
 		</Entity>
 		<Entity uid="1439">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="940.06623" z="673.24091"/>
 			<Orientation y="9.45334"/>
 			<Actor seed="54222"/>
 		</Entity>
 		<Entity uid="1440">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="924.76911" z="673.88276"/>
 			<Orientation y="9.47791"/>
 			<Actor seed="46856"/>
 		</Entity>
 		<Entity uid="1444">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="787.57068" z="713.3697"/>
 			<Orientation y="9.4679"/>
 			<Actor seed="13932"/>
 		</Entity>
 		<Entity uid="1445">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="787.34583" z="730.19025"/>
 			<Orientation y="9.4679"/>
 			<Actor seed="13932"/>
 		</Entity>
 		<Entity uid="1449">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="801.18274" z="714.56214"/>
 			<Orientation y="1.61036"/>
 			<Actor seed="46856"/>
 		</Entity>
 		<Entity uid="1450">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="801.61677" z="729.86664"/>
 			<Orientation y="1.5858"/>
 			<Actor seed="54222"/>
 		</Entity>
 		<Entity uid="1452">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="786.90198" z="697.03431"/>
 			<Orientation y="9.4679"/>
 			<Actor seed="13932"/>
 		</Entity>
 		<Entity uid="1453">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="801.17292" z="696.7107"/>
 			<Orientation y="1.58581"/>
 			<Actor seed="54222"/>
 		</Entity>
 		<Entity uid="1454">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="909.88202" z="701.95038"/>
 			<Orientation y="1.58582"/>
 			<Actor seed="54222"/>
 		</Entity>
 		<Entity uid="1455">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="893.85657" z="702.12623"/>
 			<Orientation y="9.4679"/>
 			<Actor seed="13932"/>
 		</Entity>
 		<Entity uid="1457">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="908.57136" z="734.95856"/>
 			<Orientation y="1.58581"/>
 			<Actor seed="54222"/>
 		</Entity>
 		<Entity uid="1458">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="908.13733" z="719.65406"/>
 			<Orientation y="1.61037"/>
 			<Actor seed="46856"/>
 		</Entity>
 		<Entity uid="1459">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="894.30042" z="735.28217"/>
 			<Orientation y="9.4679"/>
 			<Actor seed="13932"/>
 		</Entity>
 		<Entity uid="1460">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="894.52527" z="718.46161"/>
 			<Orientation y="9.4679"/>
 			<Actor seed="13932"/>
 		</Entity>
 		<Entity uid="1463">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="942.21686" z="688.774"/>
 			<Orientation y="6.29332"/>
 			<Actor seed="54222"/>
 		</Entity>
 		<Entity uid="1464">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="925.54944" z="687.73737"/>
 			<Orientation y="4.74637"/>
 			<Actor seed="32316"/>
 		</Entity>
 		<Entity uid="1470">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="759.43635" z="543.4325"/>
 			<Orientation y="-0.535"/>
 			<Actor seed="54222"/>
 		</Entity>
 		<Entity uid="1471">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="815.77131" z="576.26832"/>
 			<Orientation y="4.20205"/>
 			<Actor seed="13932"/>
 		</Entity>
 		<Entity uid="1472">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="801.67933" z="568.36902"/>
 			<Orientation y="-0.51044"/>
 			<Actor seed="46856"/>
 		</Entity>
 		<Entity uid="1473">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="788.4051" z="560.73975"/>
 			<Orientation y="-0.535"/>
 			<Actor seed="54222"/>
 		</Entity>
 		<Entity uid="1474">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="774.69111" z="551.21058"/>
 			<Orientation y="-2.08196"/>
 			<Actor seed="32316"/>
 		</Entity>
 		<Entity uid="1477">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="732.06269" z="656.51392"/>
 			<Orientation y="8.74769"/>
 			<Actor seed="54222"/>
 		</Entity>
 		<Entity uid="1478">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="723.62592" z="669.73218"/>
 			<Orientation y="5.58767"/>
 			<Actor seed="54222"/>
 		</Entity>
 		<Entity uid="1479">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="687.54859" z="637.18891"/>
 			<Orientation y="4.04072"/>
 			<Actor seed="32316"/>
 		</Entity>
 		<Entity uid="1482">
-			<Template>structures/cart_house</Template>
+			<Template>structures/cart/house</Template>
 			<Player>2</Player>
 			<Position x="695.93982" z="626.13691"/>
 			<Orientation y="8.77225"/>
 			<Actor seed="46856"/>
 		</Entity>
 		<Entity uid="1485">
-			<Template>structures/cart_wonder</Template>
+			<Template>structures/cart/wonder</Template>
 			<Player>2</Player>
 			<Position x="533.39185" z="669.44855"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="7470"/>
 		</Entity>
 		<Entity uid="1486">
-			<Template>structures/cart_storehouse</Template>
+			<Template>structures/cart/storehouse</Template>
 			<Player>2</Player>
 			<Position x="634.16547" z="638.8288"/>
 			<Orientation y="1.86976"/>
 			<Actor seed="24224"/>
 		</Entity>
 		<Entity uid="1487">
-			<Template>structures/cart_storehouse</Template>
+			<Template>structures/cart/storehouse</Template>
 			<Player>2</Player>
 			<Position x="638.62354" z="654.98621"/>
 			<Orientation y="1.83852"/>
@@ -8860,7 +8860,7 @@
 			<Actor seed="18588"/>
 		</Entity>
 		<Entity uid="1533">
-			<Template>structures/cart_corral</Template>
+			<Template>structures/cart/corral</Template>
 			<Player>2</Player>
 			<Position x="506.26648" z="495.41428"/>
 			<Orientation y="1.57786"/>
@@ -10299,28 +10299,28 @@
 			<Actor seed="2250"/>
 		</Entity>
 		<Entity uid="1778">
-			<Template>structures/cart_field</Template>
+			<Template>structures/cart/field</Template>
 			<Player>2</Player>
 			<Position x="851.40143" z="717.22864"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="32300"/>
 		</Entity>
 		<Entity uid="1779">
-			<Template>structures/cart_field</Template>
+			<Template>structures/cart/field</Template>
 			<Player>2</Player>
 			<Position x="829.521" z="695.36567"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="48744"/>
 		</Entity>
 		<Entity uid="1780">
-			<Template>structures/cart_field</Template>
+			<Template>structures/cart/field</Template>
 			<Player>2</Player>
 			<Position x="852.63862" z="672.10285"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="530"/>
 		</Entity>
 		<Entity uid="1781">
-			<Template>structures/cart_field</Template>
+			<Template>structures/cart/field</Template>
 			<Player>2</Player>
 			<Position x="823.28925" z="659.17762"/>
 			<Orientation y="2.35621"/>
@@ -10880,21 +10880,21 @@
 			<Actor seed="150"/>
 		</Entity>
 		<Entity uid="1870">
-			<Template>structures/iber_monument</Template>
+			<Template>structures/iber/monument</Template>
 			<Player>2</Player>
 			<Position x="1098.74817" z="608.07837"/>
 			<Orientation y="1.27285"/>
 			<Actor seed="9256"/>
 		</Entity>
 		<Entity uid="1871">
-			<Template>structures/iber_monument</Template>
+			<Template>structures/iber/monument</Template>
 			<Player>2</Player>
 			<Position x="925.9463" z="549.60572"/>
 			<Orientation y="3.116"/>
 			<Actor seed="35724"/>
 		</Entity>
 		<Entity uid="1872">
-			<Template>structures/iber_monument</Template>
+			<Template>structures/iber/monument</Template>
 			<Player>2</Player>
 			<Position x="493.38584" z="558.33057"/>
 			<Orientation y="-2.2492"/>
@@ -17026,182 +17026,182 @@
 			<Actor seed="57814"/>
 		</Entity>
 		<Entity uid="2861">
-			<Template>structures/rome_tent</Template>
+			<Template>structures/rome/tent</Template>
 			<Player>1</Player>
 			<Position x="1444.27686" z="896.72077"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="25506"/>
 		</Entity>
 		<Entity uid="2862">
-			<Template>structures/rome_tent</Template>
+			<Template>structures/rome/tent</Template>
 			<Player>1</Player>
 			<Position x="1482.28187" z="791.3589"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="844"/>
 		</Entity>
 		<Entity uid="2863">
-			<Template>structures/rome_tent</Template>
+			<Template>structures/rome/tent</Template>
 			<Player>1</Player>
 			<Position x="1458.9673" z="912.18445"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="34926"/>
 		</Entity>
 		<Entity uid="2864">
-			<Template>structures/rome_tent</Template>
+			<Template>structures/rome/tent</Template>
 			<Player>1</Player>
 			<Position x="1460.67151" z="885.41388"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="42376"/>
 		</Entity>
 		<Entity uid="2865">
-			<Template>structures/rome_tent</Template>
+			<Template>structures/rome/tent</Template>
 			<Player>1</Player>
 			<Position x="1475.35474" z="871.24463"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="15906"/>
 		</Entity>
 		<Entity uid="2866">
-			<Template>structures/rome_tent</Template>
+			<Template>structures/rome/tent</Template>
 			<Player>1</Player>
 			<Position x="1485.54603" z="910.58338"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="17534"/>
 		</Entity>
 		<Entity uid="2867">
-			<Template>structures/rome_tent</Template>
+			<Template>structures/rome/tent</Template>
 			<Player>1</Player>
 			<Position x="1466.29175" z="819.81055"/>
 			<Orientation y="0.65268"/>
 			<Actor seed="24902"/>
 		</Entity>
 		<Entity uid="2868">
-			<Template>structures/rome_tent</Template>
+			<Template>structures/rome/tent</Template>
 			<Player>1</Player>
 			<Position x="1475.47413" z="828.28455"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="6716"/>
 		</Entity>
 		<Entity uid="2869">
-			<Template>structures/rome_tent</Template>
+			<Template>structures/rome/tent</Template>
 			<Player>1</Player>
 			<Position x="1489.51514" z="835.38782"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="25800"/>
 		</Entity>
 		<Entity uid="2870">
-			<Template>structures/rome_tent</Template>
+			<Template>structures/rome/tent</Template>
 			<Player>1</Player>
 			<Position x="1503.59058" z="843.7417"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="47810"/>
 		</Entity>
 		<Entity uid="2871">
-			<Template>structures/rome_tent</Template>
+			<Template>structures/rome/tent</Template>
 			<Player>1</Player>
 			<Position x="1517.27845" z="855.33826"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="54876"/>
 		</Entity>
 		<Entity uid="2872">
-			<Template>structures/rome_tent</Template>
+			<Template>structures/rome/tent</Template>
 			<Player>1</Player>
 			<Position x="1455.68787" z="806.6009"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="28622"/>
 		</Entity>
 		<Entity uid="2873">
-			<Template>structures/rome_tent</Template>
+			<Template>structures/rome/tent</Template>
 			<Player>1</Player>
 			<Position x="1444.11304" z="791.14057"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="36894"/>
 		</Entity>
 		<Entity uid="2874">
-			<Template>structures/rome_tent</Template>
+			<Template>structures/rome/tent</Template>
 			<Player>1</Player>
 			<Position x="1457.21949" z="785.77729"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="54548"/>
 		</Entity>
 		<Entity uid="2875">
-			<Template>structures/rome_tent</Template>
+			<Template>structures/rome/tent</Template>
 			<Player>1</Player>
 			<Position x="1467.72193" z="797.94666"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="20712"/>
 		</Entity>
 		<Entity uid="2876">
-			<Template>structures/rome_tent</Template>
+			<Template>structures/rome/tent</Template>
 			<Player>1</Player>
 			<Position x="1475.8816" z="806.88532"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="51246"/>
 		</Entity>
 		<Entity uid="2877">
-			<Template>structures/rome_tent</Template>
+			<Template>structures/rome/tent</Template>
 			<Player>1</Player>
 			<Position x="1470.14478" z="895.25544"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="49530"/>
 		</Entity>
 		<Entity uid="2878">
-			<Template>structures/rome_tent</Template>
+			<Template>structures/rome/tent</Template>
 			<Player>1</Player>
 			<Position x="1488.011" z="863.35132"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="55834"/>
 		</Entity>
 		<Entity uid="2879">
-			<Template>structures/rome_tent</Template>
+			<Template>structures/rome/tent</Template>
 			<Player>1</Player>
 			<Position x="1495.25574" z="817.44013"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="40206"/>
 		</Entity>
 		<Entity uid="2880">
-			<Template>structures/rome_tent</Template>
+			<Template>structures/rome/tent</Template>
 			<Player>1</Player>
 			<Position x="1508.10645" z="890.05555"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="24208"/>
 		</Entity>
 		<Entity uid="2881">
-			<Template>structures/rome_tent</Template>
+			<Template>structures/rome/tent</Template>
 			<Player>1</Player>
 			<Position x="1488.05079" z="887.06635"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="59480"/>
 		</Entity>
 		<Entity uid="2882">
-			<Template>structures/rome_tent</Template>
+			<Template>structures/rome/tent</Template>
 			<Player>1</Player>
 			<Position x="1470.33118" z="924.67743"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="38906"/>
 		</Entity>
 		<Entity uid="2883">
-			<Template>structures/rome_tent</Template>
+			<Template>structures/rome/tent</Template>
 			<Player>1</Player>
 			<Position x="1501.95301" z="925.77887"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="64130"/>
 		</Entity>
 		<Entity uid="2884">
-			<Template>structures/rome_tent</Template>
+			<Template>structures/rome/tent</Template>
 			<Player>1</Player>
 			<Position x="1510.0569" z="827.95655"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="62840"/>
 		</Entity>
 		<Entity uid="2885">
-			<Template>structures/rome_tent</Template>
+			<Template>structures/rome/tent</Template>
 			<Player>1</Player>
 			<Position x="1498.0481" z="876.26685"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="47180"/>
 		</Entity>
 		<Entity uid="2886">
-			<Template>structures/rome_tent</Template>
+			<Template>structures/rome/tent</Template>
 			<Player>1</Player>
 			<Position x="1498.9734" z="898.80903"/>
 			<Orientation y="2.35621"/>
@@ -17363,84 +17363,84 @@
 			<Orientation y="2.35622"/>
 		</Entity>
 		<Entity uid="2929">
-			<Template>units/rome_cavalry_spearman_e</Template>
+			<Template>units/rome/cavalry_spearman_e</Template>
 			<Player>1</Player>
 			<Position x="1412.41407" z="790.10273"/>
 			<Orientation y="3.92307"/>
 			<Actor seed="54776"/>
 		</Entity>
 		<Entity uid="2930">
-			<Template>units/rome_cavalry_spearman_e</Template>
+			<Template>units/rome/cavalry_spearman_e</Template>
 			<Player>1</Player>
 			<Position x="1416.54725" z="795.04041"/>
 			<Orientation y="3.92307"/>
 			<Actor seed="9982"/>
 		</Entity>
 		<Entity uid="2931">
-			<Template>units/rome_cavalry_spearman_e</Template>
+			<Template>units/rome/cavalry_spearman_e</Template>
 			<Player>1</Player>
 			<Position x="1413.27259" z="800.77436"/>
 			<Orientation y="3.92307"/>
 			<Actor seed="45380"/>
 		</Entity>
 		<Entity uid="2932">
-			<Template>units/rome_cavalry_spearman_e</Template>
+			<Template>units/rome/cavalry_spearman_e</Template>
 			<Player>1</Player>
 			<Position x="1407.94483" z="794.3653"/>
 			<Orientation y="3.92307"/>
 			<Actor seed="25404"/>
 		</Entity>
 		<Entity uid="2933">
-			<Template>units/rome_cavalry_spearman_e</Template>
+			<Template>units/rome/cavalry_spearman_e</Template>
 			<Player>1</Player>
 			<Position x="1409.38013" z="805.01117"/>
 			<Orientation y="3.92307"/>
 			<Actor seed="32858"/>
 		</Entity>
 		<Entity uid="2934">
-			<Template>units/rome_cavalry_spearman_e</Template>
+			<Template>units/rome/cavalry_spearman_e</Template>
 			<Player>1</Player>
 			<Position x="1404.0658" z="797.41938"/>
 			<Orientation y="3.92307"/>
 			<Actor seed="40922"/>
 		</Entity>
 		<Entity uid="2935">
-			<Template>units/rome_cavalry_spearman_e</Template>
+			<Template>units/rome/cavalry_spearman_e</Template>
 			<Player>1</Player>
 			<Position x="1405.74927" z="808.52497"/>
 			<Orientation y="3.92307"/>
 			<Actor seed="11564"/>
 		</Entity>
 		<Entity uid="2936">
-			<Template>units/rome_cavalry_spearman_e</Template>
+			<Template>units/rome/cavalry_spearman_e</Template>
 			<Player>1</Player>
 			<Position x="1399.396" z="801.26581"/>
 			<Orientation y="3.92307"/>
 			<Actor seed="20630"/>
 		</Entity>
 		<Entity uid="2937">
-			<Template>units/rome_cavalry_spearman_e</Template>
+			<Template>units/rome/cavalry_spearman_e</Template>
 			<Player>1</Player>
 			<Position x="1402.20362" z="811.13569"/>
 			<Orientation y="3.92307"/>
 			<Actor seed="22430"/>
 		</Entity>
 		<Entity uid="2938">
-			<Template>units/rome_cavalry_spearman_e</Template>
+			<Template>units/rome/cavalry_spearman_e</Template>
 			<Player>1</Player>
 			<Position x="1396.68775" z="804.20142"/>
 			<Orientation y="3.92307"/>
 			<Actor seed="62608"/>
 		</Entity>
 		<Entity uid="2939">
-			<Template>units/rome_cavalry_spearman_e</Template>
+			<Template>units/rome/cavalry_spearman_e</Template>
 			<Player>1</Player>
 			<Position x="1397.86182" z="814.98652"/>
 			<Orientation y="3.92307"/>
 			<Actor seed="30206"/>
 		</Entity>
 		<Entity uid="2940">
-			<Template>units/rome_cavalry_spearman_e</Template>
+			<Template>units/rome/cavalry_spearman_e</Template>
 			<Player>1</Player>
 			<Position x="1392.2339" z="808.57618"/>
 			<Orientation y="3.92307"/>
@@ -17454,154 +17454,154 @@
 			<Actor seed="7012"/>
 		</Entity>
 		<Entity uid="2948">
-			<Template>units/rome_ship_quinquereme</Template>
+			<Template>units/rome/ship_quinquereme</Template>
 			<Player>1</Player>
 			<Position x="919.56196" z="129.70386"/>
 			<Orientation y="-0.2874"/>
 			<Actor seed="10330"/>
 		</Entity>
 		<Entity uid="2949">
-			<Template>units/rome_ship_quinquereme</Template>
+			<Template>units/rome/ship_quinquereme</Template>
 			<Player>1</Player>
 			<Position x="868.50458" z="116.01012"/>
 			<Orientation y="-0.33916"/>
 			<Actor seed="5100"/>
 		</Entity>
 		<Entity uid="2950">
-			<Template>units/rome_ship_quinquereme</Template>
+			<Template>units/rome/ship_quinquereme</Template>
 			<Player>1</Player>
 			<Position x="825.362" z="92.96767"/>
 			<Orientation y="-0.37346"/>
 			<Actor seed="52506"/>
 		</Entity>
 		<Entity uid="2951">
-			<Template>units/rome_ship_quinquereme</Template>
+			<Template>units/rome/ship_quinquereme</Template>
 			<Player>1</Player>
 			<Position x="768.76496" z="61.0822"/>
 			<Orientation y="-0.4386"/>
 			<Actor seed="15174"/>
 		</Entity>
 		<Entity uid="2952">
-			<Template>units/rome_ship_quinquereme</Template>
+			<Template>units/rome/ship_quinquereme</Template>
 			<Player>1</Player>
 			<Position x="705.02198" z="51.41021"/>
 			<Orientation y="-0.36774"/>
 			<Actor seed="31618"/>
 		</Entity>
 		<Entity uid="2953">
-			<Template>units/rome_ship_trireme</Template>
+			<Template>units/rome/ship_trireme</Template>
 			<Player>1</Player>
 			<Position x="714.16254" z="114.04723"/>
 			<Orientation y="-0.63126"/>
 			<Actor seed="23700"/>
 		</Entity>
 		<Entity uid="2954">
-			<Template>units/rome_ship_trireme</Template>
+			<Template>units/rome/ship_trireme</Template>
 			<Player>1</Player>
 			<Position x="776.51435" z="138.2942"/>
 			<Orientation y="-0.35859"/>
 			<Actor seed="30840"/>
 		</Entity>
 		<Entity uid="2955">
-			<Template>units/rome_ship_trireme</Template>
+			<Template>units/rome/ship_trireme</Template>
 			<Player>1</Player>
 			<Position x="832.29371" z="162.8582"/>
 			<Orientation y="-0.44735"/>
 			<Actor seed="17030"/>
 		</Entity>
 		<Entity uid="2956">
-			<Template>units/rome_ship_trireme</Template>
+			<Template>units/rome/ship_trireme</Template>
 			<Player>1</Player>
 			<Position x="879.19098" z="175.09021"/>
 			<Orientation y="-0.52074"/>
 			<Actor seed="64916"/>
 		</Entity>
 		<Entity uid="2957">
-			<Template>units/rome_ship_trireme</Template>
+			<Template>units/rome/ship_trireme</Template>
 			<Player>1</Player>
 			<Position x="747.9297" z="132.1478"/>
 			<Orientation y="-0.49671"/>
 			<Actor seed="43432"/>
 		</Entity>
 		<Entity uid="2958">
-			<Template>units/cart_infantry_archer_a</Template>
+			<Template>units/cart/infantry_archer_a</Template>
 			<Player>2</Player>
 			<Position x="935.52454" z="566.10608"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="65026"/>
 		</Entity>
 		<Entity uid="2959">
-			<Template>units/cart_infantry_archer_a</Template>
+			<Template>units/cart/infantry_archer_a</Template>
 			<Player>2</Player>
 			<Position x="943.6886" z="565.81202"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="63544"/>
 		</Entity>
 		<Entity uid="2960">
-			<Template>units/cart_infantry_archer_a</Template>
+			<Template>units/cart/infantry_archer_a</Template>
 			<Player>2</Player>
 			<Position x="953.38318" z="565.37555"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="50926"/>
 		</Entity>
 		<Entity uid="2961">
-			<Template>units/cart_infantry_archer_a</Template>
+			<Template>units/cart/infantry_archer_a</Template>
 			<Player>2</Player>
 			<Position x="961.24134" z="565.6659"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="54826"/>
 		</Entity>
 		<Entity uid="2962">
-			<Template>units/cart_infantry_archer_a</Template>
+			<Template>units/cart/infantry_archer_a</Template>
 			<Player>2</Player>
 			<Position x="972.59516" z="564.51905"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="39990"/>
 		</Entity>
 		<Entity uid="2963">
-			<Template>units/cart_infantry_archer_a</Template>
+			<Template>units/cart/infantry_archer_a</Template>
 			<Player>2</Player>
 			<Position x="984.70533" z="564.37836"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="48434"/>
 		</Entity>
 		<Entity uid="2964">
-			<Template>units/cart_infantry_archer_a</Template>
+			<Template>units/cart/infantry_archer_a</Template>
 			<Player>2</Player>
 			<Position x="936.67823" z="556.02698"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="38336"/>
 		</Entity>
 		<Entity uid="2965">
-			<Template>units/cart_infantry_archer_a</Template>
+			<Template>units/cart/infantry_archer_a</Template>
 			<Player>2</Player>
 			<Position x="945.59455" z="554.69495"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="6898"/>
 		</Entity>
 		<Entity uid="2966">
-			<Template>units/cart_infantry_archer_a</Template>
+			<Template>units/cart/infantry_archer_a</Template>
 			<Player>2</Player>
 			<Position x="954.44025" z="555.42865"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="39586"/>
 		</Entity>
 		<Entity uid="2967">
-			<Template>units/cart_infantry_archer_a</Template>
+			<Template>units/cart/infantry_archer_a</Template>
 			<Player>2</Player>
 			<Position x="961.95881" z="555.57728"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="47642"/>
 		</Entity>
 		<Entity uid="2968">
-			<Template>units/cart_infantry_archer_a</Template>
+			<Template>units/cart/infantry_archer_a</Template>
 			<Player>2</Player>
 			<Position x="972.60145" z="555.72651"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="39674"/>
 		</Entity>
 		<Entity uid="2969">
-			<Template>units/cart_infantry_archer_a</Template>
+			<Template>units/cart/infantry_archer_a</Template>
 			<Player>2</Player>
 			<Position x="982.2801" z="555.28064"/>
 			<Orientation y="2.35621"/>
@@ -17678,154 +17678,154 @@
 			<Actor seed="21088"/>
 		</Entity>
 		<Entity uid="2980">
-			<Template>units/cart_support_female_citizen_house</Template>
+			<Template>units/cart/support_female_citizen_house</Template>
 			<Player>2</Player>
 			<Position x="823.94507" z="659.31775"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="5924"/>
 		</Entity>
 		<Entity uid="2981">
-			<Template>units/cart_support_female_citizen_house</Template>
+			<Template>units/cart/support_female_citizen_house</Template>
 			<Player>2</Player>
 			<Position x="856.1811" z="668.89277"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="37556"/>
 		</Entity>
 		<Entity uid="2982">
-			<Template>units/cart_support_female_citizen_house</Template>
+			<Template>units/cart/support_female_citizen_house</Template>
 			<Player>2</Player>
 			<Position x="668.78937" z="533.79737"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="64026"/>
 		</Entity>
 		<Entity uid="2983">
-			<Template>units/cart_support_female_citizen_house</Template>
+			<Template>units/cart/support_female_citizen_house</Template>
 			<Player>2</Player>
 			<Position x="523.38099" z="545.83716"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="6152"/>
 		</Entity>
 		<Entity uid="2984">
-			<Template>units/cart_ship_quinquereme</Template>
+			<Template>units/cart/ship_quinquereme</Template>
 			<Player>2</Player>
 			<Position x="181.22388" z="527.20282"/>
 			<Orientation y="-1.47158"/>
 			<Actor seed="29316"/>
 		</Entity>
 		<Entity uid="2985">
-			<Template>units/cart_ship_quinquereme</Template>
+			<Template>units/cart/ship_quinquereme</Template>
 			<Player>2</Player>
 			<Position x="189.38453" z="498.53415"/>
 			<Orientation y="-1.63186"/>
 			<Actor seed="27482"/>
 		</Entity>
 		<Entity uid="2986">
-			<Template>units/cart_ship_quinquereme</Template>
+			<Template>units/cart/ship_quinquereme</Template>
 			<Player>2</Player>
 			<Position x="200.26682" z="471.40174"/>
 			<Orientation y="-1.63349"/>
 			<Actor seed="41136"/>
 		</Entity>
 		<Entity uid="2987">
-			<Template>units/cart_ship_quinquereme</Template>
+			<Template>units/cart/ship_quinquereme</Template>
 			<Player>2</Player>
 			<Position x="211.17954" z="451.30951"/>
 			<Orientation y="-1.68984"/>
 			<Actor seed="16386"/>
 		</Entity>
 		<Entity uid="2988">
-			<Template>units/cart_ship_quinquereme</Template>
+			<Template>units/cart/ship_quinquereme</Template>
 			<Player>2</Player>
 			<Position x="228.1977" z="427.40943"/>
 			<Orientation y="-1.66593"/>
 			<Actor seed="18296"/>
 		</Entity>
 		<Entity uid="2989">
-			<Template>units/cart_ship_trireme</Template>
+			<Template>units/cart/ship_trireme</Template>
 			<Player>2</Player>
 			<Position x="382.771" z="434.50043"/>
 			<Orientation y="1.24332"/>
 			<Actor seed="46740"/>
 		</Entity>
 		<Entity uid="2990">
-			<Template>units/cart_ship_trireme</Template>
+			<Template>units/cart/ship_trireme</Template>
 			<Player>2</Player>
 			<Position x="387.3234" z="519.98829"/>
 			<Orientation y="1.67309"/>
 			<Actor seed="62244"/>
 		</Entity>
 		<Entity uid="2991">
-			<Template>units/cart_ship_trireme</Template>
+			<Template>units/cart/ship_trireme</Template>
 			<Player>2</Player>
 			<Position x="380.94651" z="496.8343"/>
 			<Orientation y="1.57753"/>
 			<Actor seed="39456"/>
 		</Entity>
 		<Entity uid="2992">
-			<Template>units/cart_ship_trireme</Template>
+			<Template>units/cart/ship_trireme</Template>
 			<Player>2</Player>
 			<Position x="388.75431" z="418.92829"/>
 			<Orientation y="1.15432"/>
 			<Actor seed="64274"/>
 		</Entity>
 		<Entity uid="2993">
-			<Template>units/cart_ship_trireme</Template>
+			<Template>units/cart/ship_trireme</Template>
 			<Player>2</Player>
 			<Position x="376.28379" z="472.8484"/>
 			<Orientation y="1.4158"/>
 			<Actor seed="4848"/>
 		</Entity>
 		<Entity uid="2994">
-			<Template>units/cart_ship_trireme</Template>
+			<Template>units/cart/ship_trireme</Template>
 			<Player>2</Player>
 			<Position x="379.05662" z="453.18448"/>
 			<Orientation y="1.29726"/>
 			<Actor seed="58898"/>
 		</Entity>
 		<Entity uid="2995">
-			<Template>units/cart_ship_quinquereme</Template>
+			<Template>units/cart/ship_quinquereme</Template>
 			<Player>2</Player>
 			<Position x="174.08704" z="558.72925"/>
 			<Orientation y="-1.62262"/>
 			<Actor seed="61224"/>
 		</Entity>
 		<Entity uid="2996">
-			<Template>units/cart_ship_bireme</Template>
+			<Template>units/cart/ship_bireme</Template>
 			<Player>2</Player>
 			<Position x="223.82471" z="402.08887"/>
 			<Orientation y="-1.73348"/>
 			<Actor seed="9414"/>
 		</Entity>
 		<Entity uid="2997">
-			<Template>units/cart_ship_bireme</Template>
+			<Template>units/cart/ship_bireme</Template>
 			<Player>2</Player>
 			<Position x="235.99872" z="385.40232"/>
 			<Orientation y="-1.88096"/>
 			<Actor seed="61228"/>
 		</Entity>
 		<Entity uid="2998">
-			<Template>units/rome_ship_bireme</Template>
+			<Template>units/rome/ship_bireme</Template>
 			<Player>1</Player>
 			<Position x="627.94239" z="100.95203"/>
 			<Orientation y="-0.80335"/>
 			<Actor seed="30886"/>
 		</Entity>
 		<Entity uid="2999">
-			<Template>units/rome_ship_bireme</Template>
+			<Template>units/rome/ship_bireme</Template>
 			<Player>1</Player>
 			<Position x="658.93116" z="136.00684"/>
 			<Orientation y="-0.73357"/>
 			<Actor seed="10406"/>
 		</Entity>
 		<Entity uid="3000">
-			<Template>units/rome_ship_bireme</Template>
+			<Template>units/rome/ship_bireme</Template>
 			<Player>1</Player>
 			<Position x="707.88501" z="184.27594"/>
 			<Orientation y="-0.73053"/>
 			<Actor seed="63666"/>
 		</Entity>
 		<Entity uid="3001">
-			<Template>units/rome_ship_bireme</Template>
+			<Template>units/rome/ship_bireme</Template>
 			<Player>1</Player>
 			<Position x="599.18451" z="62.88233"/>
 			<Orientation y="2.35621"/>
@@ -17838,258 +17838,258 @@
 			<Orientation y="2.35622"/>
 		</Entity>
 		<Entity uid="3023">
-			<Template>units/rome_legionnaire_imperial</Template>
+			<Template>units/rome/legionnaire_imperial</Template>
 			<Player>1</Player>
 			<Position x="1422.22706" z="826.61548"/>
 			<Orientation y="3.97248"/>
 			<Actor seed="62856"/>
 		</Entity>
 		<Entity uid="3024">
-			<Template>units/rome_legionnaire_imperial</Template>
+			<Template>units/rome/legionnaire_imperial</Template>
 			<Player>1</Player>
 			<Position x="1425.71692" z="822.88605"/>
 			<Orientation y="3.97248"/>
 			<Actor seed="34204"/>
 		</Entity>
 		<Entity uid="3025">
-			<Template>units/rome_legionnaire_imperial</Template>
+			<Template>units/rome/legionnaire_imperial</Template>
 			<Player>1</Player>
 			<Position x="1428.9563" z="818.26264"/>
 			<Orientation y="3.97248"/>
 			<Actor seed="4244"/>
 		</Entity>
 		<Entity uid="3026">
-			<Template>units/rome_legionnaire_imperial</Template>
+			<Template>units/rome/legionnaire_imperial</Template>
 			<Player>1</Player>
 			<Position x="1432.83887" z="813.90876"/>
 			<Orientation y="3.97248"/>
 			<Actor seed="14964"/>
 		</Entity>
 		<Entity uid="3027">
-			<Template>units/rome_legionnaire_imperial</Template>
+			<Template>units/rome/legionnaire_imperial</Template>
 			<Player>1</Player>
 			<Position x="1426.57264" z="831.09687"/>
 			<Orientation y="3.97248"/>
 			<Actor seed="26466"/>
 		</Entity>
 		<Entity uid="3028">
-			<Template>units/rome_legionnaire_imperial</Template>
+			<Template>units/rome/legionnaire_imperial</Template>
 			<Player>1</Player>
 			<Position x="1429.7793" z="827.62281"/>
 			<Orientation y="3.97248"/>
 			<Actor seed="16456"/>
 		</Entity>
 		<Entity uid="3029">
-			<Template>units/rome_legionnaire_imperial</Template>
+			<Template>units/rome/legionnaire_imperial</Template>
 			<Player>1</Player>
 			<Position x="1433.20801" z="823.14063"/>
 			<Orientation y="3.97248"/>
 			<Actor seed="63592"/>
 		</Entity>
 		<Entity uid="3030">
-			<Template>units/rome_legionnaire_imperial</Template>
+			<Template>units/rome/legionnaire_imperial</Template>
 			<Player>1</Player>
 			<Position x="1436.76075" z="818.37366"/>
 			<Orientation y="3.97248"/>
 			<Actor seed="25074"/>
 		</Entity>
 		<Entity uid="3034">
-			<Template>units/rome_mechanical_siege_scorpio_packed</Template>
+			<Template>units/rome/mechanical_siege_scorpio_packed</Template>
 			<Player>1</Player>
 			<Position x="1464.31226" z="850.45765"/>
 			<Orientation y="-2.40566"/>
 			<Actor seed="45554"/>
 		</Entity>
 		<Entity uid="3035">
-			<Template>units/rome_mechanical_siege_scorpio_packed</Template>
+			<Template>units/rome/mechanical_siege_scorpio_packed</Template>
 			<Player>1</Player>
 			<Position x="1452.93787" z="860.27656"/>
 			<Orientation y="-2.44068"/>
 			<Actor seed="43838"/>
 		</Entity>
 		<Entity uid="3036">
-			<Template>structures/cart_defense_tower</Template>
+			<Template>structures/cart/defense_tower</Template>
 			<Player>2</Player>
 			<Position x="1119.6792" z="674.74244"/>
 			<Orientation y="1.31365"/>
 			<Actor seed="36556"/>
 		</Entity>
 		<Entity uid="3037">
-			<Template>structures/cart_defense_tower</Template>
+			<Template>structures/cart/defense_tower</Template>
 			<Player>2</Player>
 			<Position x="1163.60572" z="580.2212"/>
 			<Orientation y="-1.63564"/>
 			<Actor seed="6888"/>
 		</Entity>
 		<Entity uid="3038">
-			<Template>structures/cart_defense_tower</Template>
+			<Template>structures/cart/defense_tower</Template>
 			<Player>2</Player>
 			<Position x="1213.33741" z="564.55713"/>
 			<Orientation y="-2.21457"/>
 			<Actor seed="13428"/>
 		</Entity>
 		<Entity uid="3039">
-			<Template>structures/cart_defense_tower</Template>
+			<Template>structures/cart/defense_tower</Template>
 			<Player>2</Player>
 			<Position x="1102.20691" z="731.91645"/>
 			<Orientation y="-1.21291"/>
 			<Actor seed="3738"/>
 		</Entity>
 		<Entity uid="3040">
-			<Template>structures/cart_defense_tower</Template>
+			<Template>structures/cart/defense_tower</Template>
 			<Player>2</Player>
 			<Position x="1028.7002" z="335.50635"/>
 			<Orientation y="-0.78582"/>
 			<Actor seed="46484"/>
 		</Entity>
 		<Entity uid="3041">
-			<Template>structures/cart_defense_tower</Template>
+			<Template>structures/cart/defense_tower</Template>
 			<Player>2</Player>
 			<Position x="558.48298" z="366.93232"/>
 			<Orientation y="0.78066"/>
 			<Actor seed="50014"/>
 		</Entity>
 		<Entity uid="3042">
-			<Template>structures/cart_defense_tower</Template>
+			<Template>structures/cart/defense_tower</Template>
 			<Player>2</Player>
 			<Position x="483.17835" z="649.2552"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="57454"/>
 		</Entity>
 		<Entity uid="3044">
-			<Template>structures/cart_defense_tower</Template>
+			<Template>structures/cart/defense_tower</Template>
 			<Player>2</Player>
 			<Position x="1040.17994" z="821.16596"/>
 			<Orientation y="-2.39563"/>
 			<Actor seed="42036"/>
 		</Entity>
 		<Entity uid="3045">
-			<Template>structures/cart_defense_tower</Template>
+			<Template>structures/cart/defense_tower</Template>
 			<Player>2</Player>
 			<Position x="1207.6128" z="505.8195"/>
 			<Orientation y="-1.49408"/>
 			<Actor seed="13624"/>
 		</Entity>
 		<Entity uid="3046">
-			<Template>units/cart_infantry_archer_b</Template>
+			<Template>units/cart/infantry_archer_b</Template>
 			<Player>2</Player>
 			<Position x="871.5221" z="540.9839"/>
 			<Orientation y="1.36458"/>
 			<Actor seed="14078"/>
 		</Entity>
 		<Entity uid="3047">
-			<Template>units/cart_infantry_archer_b</Template>
+			<Template>units/cart/infantry_archer_b</Template>
 			<Player>2</Player>
 			<Position x="871.0923" z="535.62153"/>
 			<Orientation y="1.2615"/>
 			<Actor seed="52112"/>
 		</Entity>
 		<Entity uid="3048">
-			<Template>units/cart_infantry_archer_b</Template>
+			<Template>units/cart/infantry_archer_b</Template>
 			<Player>2</Player>
 			<Position x="870.52662" z="530.6775"/>
 			<Orientation y="1.57081"/>
 			<Actor seed="58016"/>
 		</Entity>
 		<Entity uid="3049">
-			<Template>units/cart_infantry_archer_b</Template>
+			<Template>units/cart/infantry_archer_b</Template>
 			<Player>2</Player>
 			<Position x="870.2981" z="525.37562"/>
 			<Orientation y="1.14817"/>
 			<Actor seed="4092"/>
 		</Entity>
 		<Entity uid="3050">
-			<Template>units/cart_infantry_archer_b</Template>
+			<Template>units/cart/infantry_archer_b</Template>
 			<Player>2</Player>
 			<Position x="869.75141" z="519.8548"/>
 			<Orientation y="1.50652"/>
 			<Actor seed="56740"/>
 		</Entity>
 		<Entity uid="3051">
-			<Template>units/cart_infantry_archer_b</Template>
+			<Template>units/cart/infantry_archer_b</Template>
 			<Player>2</Player>
 			<Position x="865.09284" z="540.36579"/>
 			<Orientation y="1.57081"/>
 			<Actor seed="60250"/>
 		</Entity>
 		<Entity uid="3052">
-			<Template>units/cart_infantry_archer_b</Template>
+			<Template>units/cart/infantry_archer_b</Template>
 			<Player>2</Player>
 			<Position x="865.10065" z="534.76984"/>
 			<Orientation y="1.64734"/>
 			<Actor seed="30358"/>
 		</Entity>
 		<Entity uid="3053">
-			<Template>units/cart_infantry_archer_b</Template>
+			<Template>units/cart/infantry_archer_b</Template>
 			<Player>2</Player>
 			<Position x="864.60401" z="529.63074"/>
 			<Orientation y="1.43116"/>
 			<Actor seed="61088"/>
 		</Entity>
 		<Entity uid="3054">
-			<Template>units/cart_infantry_archer_b</Template>
+			<Template>units/cart/infantry_archer_b</Template>
 			<Player>2</Player>
 			<Position x="864.14399" z="525.13465"/>
 			<Orientation y="1.361"/>
 			<Actor seed="5288"/>
 		</Entity>
 		<Entity uid="3055">
-			<Template>units/cart_infantry_archer_b</Template>
+			<Template>units/cart/infantry_archer_b</Template>
 			<Player>2</Player>
 			<Position x="864.04102" z="519.8548"/>
 			<Orientation y="1.2933"/>
 			<Actor seed="58888"/>
 		</Entity>
 		<Entity uid="3056">
-			<Template>units/cart_infantry_archer_b</Template>
+			<Template>units/cart/infantry_archer_b</Template>
 			<Player>2</Player>
 			<Position x="863.95203" z="514.63288"/>
 			<Orientation y="1.45836"/>
 			<Actor seed="24026"/>
 		</Entity>
 		<Entity uid="3057">
-			<Template>units/cart_infantry_archer_b</Template>
+			<Template>units/cart/infantry_archer_b</Template>
 			<Player>2</Player>
 			<Position x="869.38605" z="514.4355"/>
 			<Orientation y="1.67089"/>
 			<Actor seed="36720"/>
 		</Entity>
 		<Entity uid="3058">
-			<Template>structures/cart_civil_centre</Template>
+			<Template>structures/cart/civil_centre</Template>
 			<Player>2</Player>
 			<Position x="710.45038" z="646.24512"/>
 			<Orientation y="2.43804"/>
 			<Actor seed="57076"/>
 		</Entity>
 		<Entity uid="3059">
-			<Template>structures/cart_civil_centre</Template>
+			<Template>structures/cart/civil_centre</Template>
 			<Player>2</Player>
 			<Position x="1086.54078" z="573.17542"/>
 			<Orientation y="0.04657"/>
 			<Actor seed="59840"/>
 		</Entity>
 		<Entity uid="3060">
-			<Template>structures/cart_civil_centre</Template>
+			<Template>structures/cart/civil_centre</Template>
 			<Player>2</Player>
 			<Position x="965.85749" z="677.89051"/>
 			<Orientation y="-3.0605"/>
 			<Actor seed="61258"/>
 		</Entity>
 		<Entity uid="3062">
-			<Template>structures/cart_civil_centre</Template>
+			<Template>structures/cart/civil_centre</Template>
 			<Player>2</Player>
 			<Position x="570.20704" z="506.65421"/>
 			<Orientation y="-6.2639"/>
 			<Actor seed="24572"/>
 		</Entity>
 		<Entity uid="3066">
-			<Template>structures/cart_defense_tower</Template>
+			<Template>structures/cart/defense_tower</Template>
 			<Player>2</Player>
 			<Position x="1015.02125" z="436.23584"/>
 			<Orientation y="-2.82917"/>
 		</Entity>
 		<Entity uid="3067">
-			<Template>structures/cart_wall_gate</Template>
+			<Template>structures/cart/wall_gate</Template>
 			<Player>2</Player>
 			<Position x="1175.09717" z="628.84046"/>
 			<Orientation y="-1.81923"/>
@@ -18097,7 +18097,7 @@
 			<Actor seed="33744"/>
 		</Entity>
 		<Entity uid="3068">
-			<Template>structures/cart_wall_short</Template>
+			<Template>structures/cart/wall_short</Template>
 			<Player>2</Player>
 			<Position x="1181.92591" z="603.89246"/>
 			<Orientation y="-1.92382"/>
@@ -18105,14 +18105,14 @@
 			<Actor seed="60662"/>
 		</Entity>
 		<Entity uid="3069">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="1169.35157" z="651.27771"/>
 			<Orientation y="1.3247"/>
 			<Actor seed="11540"/>
 		</Entity>
 		<Entity uid="3070">
-			<Template>structures/cart_wall_medium</Template>
+			<Template>structures/cart/wall_medium</Template>
 			<Player>2</Player>
 			<Position x="1156.0276" z="647.78925"/>
 			<Orientation y="-0.2227"/>
@@ -18120,7 +18120,7 @@
 			<Actor seed="51980"/>
 		</Entity>
 		<Entity uid="3071">
-			<Template>structures/cart_wall_medium</Template>
+			<Template>structures/cart/wall_medium</Template>
 			<Player>2</Player>
 			<Position x="456.41263" z="580.9983"/>
 			<Orientation y="1.46113"/>
@@ -18128,7 +18128,7 @@
 			<Actor seed="24778"/>
 		</Entity>
 		<Entity uid="3072">
-			<Template>structures/cart_wall_gate</Template>
+			<Template>structures/cart/wall_gate</Template>
 			<Player>2</Player>
 			<Position x="459.46311" z="544.70136"/>
 			<Orientation y="1.48757"/>
@@ -18136,21 +18136,21 @@
 			<Actor seed="12430"/>
 		</Entity>
 		<Entity uid="3073">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="476.4282" z="568.17829"/>
 			<Orientation y="-1.64081"/>
 			<Actor seed="12740"/>
 		</Entity>
 		<Entity uid="3074">
-			<Template>structures/cart_wall_tower</Template>
+			<Template>structures/cart/wall_tower</Template>
 			<Player>2</Player>
 			<Position x="479.5749" z="523.04242"/>
 			<Orientation y="-1.62252"/>
 			<Actor seed="43300"/>
 		</Entity>
 		<Entity uid="3075">
-			<Template>structures/cart_wall_short</Template>
+			<Template>structures/cart/wall_short</Template>
 			<Player>2</Player>
 			<Position x="472.16843" z="523.05878"/>
 			<Orientation y="3.12932"/>
@@ -18158,7 +18158,7 @@
 			<Actor seed="19196"/>
 		</Entity>
 		<Entity uid="3076">
-			<Template>structures/cart_wall_short</Template>
+			<Template>structures/cart/wall_short</Template>
 			<Player>2</Player>
 			<Position x="467.62754" z="567.24683"/>
 			<Orientation y="3.09359"/>
@@ -18166,84 +18166,84 @@
 			<Actor seed="28862"/>
 		</Entity>
 		<Entity uid="3077">
-			<Template>units/cart_infantry_archer_a</Template>
+			<Template>units/cart/infantry_archer_a</Template>
 			<Player>2</Player>
 			<Position x="985.86048" z="560.52497"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="27116"/>
 		</Entity>
 		<Entity uid="3078">
-			<Template>units/cart_infantry_archer_a</Template>
+			<Template>units/cart/infantry_archer_a</Template>
 			<Player>2</Player>
 			<Position x="976.18183" z="560.97083"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="39674"/>
 		</Entity>
 		<Entity uid="3079">
-			<Template>units/cart_infantry_archer_a</Template>
+			<Template>units/cart/infantry_archer_a</Template>
 			<Player>2</Player>
 			<Position x="965.53919" z="560.8216"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="47642"/>
 		</Entity>
 		<Entity uid="3080">
-			<Template>units/cart_infantry_archer_a</Template>
+			<Template>units/cart/infantry_archer_a</Template>
 			<Player>2</Player>
 			<Position x="958.02063" z="560.67298"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="39586"/>
 		</Entity>
 		<Entity uid="3081">
-			<Template>units/cart_infantry_archer_a</Template>
+			<Template>units/cart/infantry_archer_a</Template>
 			<Player>2</Player>
 			<Position x="949.17493" z="559.93928"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="6898"/>
 		</Entity>
 		<Entity uid="3082">
-			<Template>units/cart_infantry_archer_a</Template>
+			<Template>units/cart/infantry_archer_a</Template>
 			<Player>2</Player>
 			<Position x="940.25861" z="561.27131"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="38336"/>
 		</Entity>
 		<Entity uid="3083">
-			<Template>units/cart_infantry_archer_a</Template>
+			<Template>units/cart/infantry_archer_a</Template>
 			<Player>2</Player>
 			<Position x="956.96357" z="570.61988"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="50926"/>
 		</Entity>
 		<Entity uid="3084">
-			<Template>units/cart_infantry_archer_a</Template>
+			<Template>units/cart/infantry_archer_a</Template>
 			<Player>2</Player>
 			<Position x="947.26899" z="571.05634"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="63544"/>
 		</Entity>
 		<Entity uid="3085">
-			<Template>units/cart_infantry_archer_a</Template>
+			<Template>units/cart/infantry_archer_a</Template>
 			<Player>2</Player>
 			<Position x="939.10492" z="571.35041"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="65026"/>
 		</Entity>
 		<Entity uid="3086">
-			<Template>units/cart_infantry_archer_a</Template>
+			<Template>units/cart/infantry_archer_a</Template>
 			<Player>2</Player>
 			<Position x="964.82172" z="570.91022"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="54826"/>
 		</Entity>
 		<Entity uid="3087">
-			<Template>units/cart_infantry_archer_a</Template>
+			<Template>units/cart/infantry_archer_a</Template>
 			<Player>2</Player>
 			<Position x="976.17554" z="569.76337"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="39990"/>
 		</Entity>
 		<Entity uid="3088">
-			<Template>units/cart_infantry_archer_a</Template>
+			<Template>units/cart/infantry_archer_a</Template>
 			<Player>2</Player>
 			<Position x="988.28571" z="569.62269"/>
 			<Orientation y="2.35622"/>
@@ -18257,77 +18257,77 @@
 			<Actor seed="2909"/>
 		</Entity>
 		<Entity uid="3094">
-			<Template>units/rome_infantry_spearman_a</Template>
+			<Template>units/rome/infantry_spearman_a</Template>
 			<Player>1</Player>
 			<Position x="1442.53907" z="852.71143"/>
 			<Orientation y="-2.3234"/>
 			<Actor seed="30484"/>
 		</Entity>
 		<Entity uid="3095">
-			<Template>units/rome_infantry_spearman_a</Template>
+			<Template>units/rome/infantry_spearman_a</Template>
 			<Player>1</Player>
 			<Position x="1446.55347" z="857.8224"/>
 			<Orientation y="-2.19474"/>
 			<Actor seed="60156"/>
 		</Entity>
 		<Entity uid="3096">
-			<Template>units/rome_infantry_spearman_a</Template>
+			<Template>units/rome/infantry_spearman_a</Template>
 			<Player>1</Player>
 			<Position x="1443.03101" z="860.57502"/>
 			<Orientation y="-1.73848"/>
 		</Entity>
 		<Entity uid="3097">
-			<Template>units/rome_infantry_spearman_a</Template>
+			<Template>units/rome/infantry_spearman_a</Template>
 			<Player>1</Player>
 			<Position x="1438.67725" z="856.0412"/>
 			<Orientation y="-2.0272"/>
 		</Entity>
 		<Entity uid="3098">
-			<Template>units/rome_infantry_spearman_a</Template>
+			<Template>units/rome/infantry_spearman_a</Template>
 			<Player>1</Player>
 			<Position x="1439.62708" z="864.56739"/>
 			<Orientation y="-2.27746"/>
 		</Entity>
 		<Entity uid="3099">
-			<Template>units/rome_infantry_spearman_a</Template>
+			<Template>units/rome/infantry_spearman_a</Template>
 			<Player>1</Player>
 			<Position x="1434.94141" z="860.1623"/>
 			<Orientation y="-1.82326"/>
 		</Entity>
 		<Entity uid="3100">
-			<Template>units/rome_infantry_spearman_a</Template>
+			<Template>units/rome/infantry_spearman_a</Template>
 			<Player>1</Player>
 			<Position x="1456.65906" z="837.65339"/>
 			<Orientation y="-2.07366"/>
 			<Actor seed="13898"/>
 		</Entity>
 		<Entity uid="3101">
-			<Template>units/rome_infantry_spearman_a</Template>
+			<Template>units/rome/infantry_spearman_a</Template>
 			<Player>1</Player>
 			<Position x="1459.98731" z="842.26618"/>
 			<Orientation y="-2.1499"/>
 			<Actor seed="782"/>
 		</Entity>
 		<Entity uid="3102">
-			<Template>units/rome_infantry_spearman_a</Template>
+			<Template>units/rome/infantry_spearman_a</Template>
 			<Player>1</Player>
 			<Position x="1460.36207" z="834.66175"/>
 			<Orientation y="-2.26043"/>
 		</Entity>
 		<Entity uid="3103">
-			<Template>units/rome_infantry_spearman_a</Template>
+			<Template>units/rome/infantry_spearman_a</Template>
 			<Player>1</Player>
 			<Position x="1464.23719" z="838.81568"/>
 			<Orientation y="-2.0338"/>
 		</Entity>
 		<Entity uid="3104">
-			<Template>units/rome_infantry_spearman_a</Template>
+			<Template>units/rome/infantry_spearman_a</Template>
 			<Player>1</Player>
 			<Position x="1464.37098" z="831.24872"/>
 			<Orientation y="-2.08614"/>
 		</Entity>
 		<Entity uid="3105">
-			<Template>units/rome_infantry_spearman_a</Template>
+			<Template>units/rome/infantry_spearman_a</Template>
 			<Player>1</Player>
 			<Position x="1468.63245" z="836.00733"/>
 			<Orientation y="-2.20064"/>
@@ -18382,7 +18382,7 @@
 			<Actor seed="1278"/>
 		</Entity>
 		<Entity uid="3113">
-			<Template>structures/cart_dock</Template>
+			<Template>structures/cart/dock</Template>
 			<Player>2</Player>
 			<Position x="384.16846" z="624.01319"/>
 			<Orientation y="-2.21312"/>
@@ -20173,35 +20173,35 @@
 			<Actor seed="45456"/>
 		</Entity>
 		<Entity uid="3406">
-			<Template>units/rome_infantry_spearman_a</Template>
+			<Template>units/rome/infantry_spearman_a</Template>
 			<Player>1</Player>
 			<Position x="1445.90992" z="849.08259"/>
 			<Orientation y="-1.82326"/>
 			<Actor seed="16440"/>
 		</Entity>
 		<Entity uid="3407">
-			<Template>units/rome_infantry_spearman_a</Template>
+			<Template>units/rome/infantry_spearman_a</Template>
 			<Player>1</Player>
 			<Position x="1449.0691" z="843.96607"/>
 			<Orientation y="-2.02721"/>
 			<Actor seed="30884"/>
 		</Entity>
 		<Entity uid="3408">
-			<Template>units/rome_infantry_spearman_a</Template>
+			<Template>units/rome/infantry_spearman_a</Template>
 			<Player>1</Player>
 			<Position x="1453.16761" z="849.65094"/>
 			<Orientation y="-1.73848"/>
 			<Actor seed="3534"/>
 		</Entity>
 		<Entity uid="3409">
-			<Template>units/rome_infantry_spearman_a</Template>
+			<Template>units/rome/infantry_spearman_a</Template>
 			<Player>1</Player>
 			<Position x="1457.20594" z="846.74195"/>
 			<Orientation y="-2.19474"/>
 			<Actor seed="60156"/>
 		</Entity>
 		<Entity uid="3410">
-			<Template>units/rome_infantry_spearman_a</Template>
+			<Template>units/rome/infantry_spearman_a</Template>
 			<Player>1</Player>
 			<Position x="1452.79676" z="841.08484"/>
 			<Orientation y="-2.3234"/>
@@ -20229,42 +20229,42 @@
 			<Actor seed="1584"/>
 		</Entity>
 		<Entity uid="3414">
-			<Template>units/rome_infantry_spearman_a</Template>
+			<Template>units/rome/infantry_spearman_a</Template>
 			<Player>1</Player>
 			<Position x="1449.75782" z="852.94086"/>
 			<Orientation y="-2.27747"/>
 			<Actor seed="20886"/>
 		</Entity>
 		<Entity uid="3415">
-			<Template>units/rome_infantry_spearman_a</Template>
+			<Template>units/rome/infantry_spearman_a</Template>
 			<Player>1</Player>
 			<Position x="1421.49402" z="841.99646"/>
 			<Orientation y="-1.82326"/>
 			<Actor seed="16440"/>
 		</Entity>
 		<Entity uid="3416">
-			<Template>units/rome_infantry_spearman_a</Template>
+			<Template>units/rome/infantry_spearman_a</Template>
 			<Player>1</Player>
 			<Position x="1425.68592" z="838.32184"/>
 			<Orientation y="-2.02721"/>
 			<Actor seed="30884"/>
 		</Entity>
 		<Entity uid="3417">
-			<Template>units/rome_infantry_spearman_a</Template>
+			<Template>units/rome/infantry_spearman_a</Template>
 			<Player>1</Player>
 			<Position x="1429.69349" z="843.47278"/>
 			<Orientation y="-1.73848"/>
 			<Actor seed="3534"/>
 		</Entity>
 		<Entity uid="3418">
-			<Template>units/rome_infantry_spearman_a</Template>
+			<Template>units/rome/infantry_spearman_a</Template>
 			<Player>1</Player>
 			<Position x="1433.70765" z="839.00379"/>
 			<Orientation y="-2.19474"/>
 			<Actor seed="60156"/>
 		</Entity>
 		<Entity uid="3419">
-			<Template>units/rome_infantry_spearman_a</Template>
+			<Template>units/rome/infantry_spearman_a</Template>
 			<Player>1</Player>
 			<Position x="1430.45667" z="835.97407"/>
 			<Orientation y="-2.3234"/>
@@ -20292,42 +20292,42 @@
 			<Actor seed="1584"/>
 		</Entity>
 		<Entity uid="3423">
-			<Template>units/rome_infantry_spearman_a</Template>
+			<Template>units/rome/infantry_spearman_a</Template>
 			<Player>1</Player>
 			<Position x="1424.38819" z="846.24964"/>
 			<Orientation y="-2.27747"/>
 			<Actor seed="20886"/>
 		</Entity>
 		<Entity uid="3424">
-			<Template>units/rome_infantry_spearman_a</Template>
+			<Template>units/rome/infantry_spearman_a</Template>
 			<Player>1</Player>
 			<Position x="1433.74463" z="831.57361"/>
 			<Orientation y="-1.82326"/>
 			<Actor seed="16440"/>
 		</Entity>
 		<Entity uid="3425">
-			<Template>units/rome_infantry_spearman_a</Template>
+			<Template>units/rome/infantry_spearman_a</Template>
 			<Player>1</Player>
 			<Position x="1437.65918" z="828.04035"/>
 			<Orientation y="-2.02721"/>
 			<Actor seed="30884"/>
 		</Entity>
 		<Entity uid="3426">
-			<Template>units/rome_infantry_spearman_a</Template>
+			<Template>units/rome/infantry_spearman_a</Template>
 			<Player>1</Player>
 			<Position x="1442.76233" z="832.4123"/>
 			<Orientation y="-1.73848"/>
 			<Actor seed="3534"/>
 		</Entity>
 		<Entity uid="3427">
-			<Template>units/rome_infantry_spearman_a</Template>
+			<Template>units/rome/infantry_spearman_a</Template>
 			<Player>1</Player>
 			<Position x="1420.70325" z="850.47706"/>
 			<Orientation y="-2.19474"/>
 			<Actor seed="60156"/>
 		</Entity>
 		<Entity uid="3428">
-			<Template>units/rome_infantry_spearman_a</Template>
+			<Template>units/rome/infantry_spearman_a</Template>
 			<Player>1</Player>
 			<Position x="1417.08753" z="846.27076"/>
 			<Orientation y="-2.3234"/>
@@ -20355,42 +20355,42 @@
 			<Actor seed="1584"/>
 		</Entity>
 		<Entity uid="3432">
-			<Template>units/rome_infantry_spearman_a</Template>
+			<Template>units/rome/infantry_spearman_a</Template>
 			<Player>1</Player>
 			<Position x="1439.07203" z="836.22156"/>
 			<Orientation y="-2.27747"/>
 			<Actor seed="20886"/>
 		</Entity>
 		<Entity uid="3433">
-			<Template>units/rome_infantry_spearman_a</Template>
+			<Template>units/rome/infantry_spearman_a</Template>
 			<Player>1</Player>
 			<Position x="1441.68384" z="823.39234"/>
 			<Orientation y="-1.82326"/>
 			<Actor seed="16440"/>
 		</Entity>
 		<Entity uid="3434">
-			<Template>units/rome_infantry_spearman_a</Template>
+			<Template>units/rome/infantry_spearman_a</Template>
 			<Player>1</Player>
 			<Position x="1444.18616" z="820.11786"/>
 			<Orientation y="-2.02721"/>
 			<Actor seed="30884"/>
 		</Entity>
 		<Entity uid="3435">
-			<Template>units/rome_infantry_spearman_a</Template>
+			<Template>units/rome/infantry_spearman_a</Template>
 			<Player>1</Player>
 			<Position x="1450.62745" z="825.01874"/>
 			<Orientation y="-1.73848"/>
 			<Actor seed="3534"/>
 		</Entity>
 		<Entity uid="3436">
-			<Template>units/rome_infantry_spearman_a</Template>
+			<Template>units/rome/infantry_spearman_a</Template>
 			<Player>1</Player>
 			<Position x="1453.38257" z="822.2162"/>
 			<Orientation y="-2.19474"/>
 			<Actor seed="60156"/>
 		</Entity>
 		<Entity uid="3437">
-			<Template>units/rome_infantry_spearman_a</Template>
+			<Template>units/rome/infantry_spearman_a</Template>
 			<Player>1</Player>
 			<Position x="1447.9297" z="816.4513"/>
 			<Orientation y="-2.3234"/>
@@ -20418,7 +20418,7 @@
 			<Actor seed="1584"/>
 		</Entity>
 		<Entity uid="3441">
-			<Template>units/rome_infantry_spearman_a</Template>
+			<Template>units/rome/infantry_spearman_a</Template>
 			<Player>1</Player>
 			<Position x="1447.99207" z="828.47638"/>
 			<Orientation y="-2.27747"/>

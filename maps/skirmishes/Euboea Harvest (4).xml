@@ -6297,7 +6297,7 @@
 			<Actor seed="37968"/>
 		</Entity>
 		<Entity uid="980">
-			<Template>structures/athen_corral</Template>
+			<Template>structures/athen/corral</Template>
 			<Player>0</Player>
 			<Position x="357.35285" z="605.05201"/>
 			<Orientation y="2.35621"/>
@@ -9232,7 +9232,7 @@
 			<Actor seed="4706"/>
 		</Entity>
 		<Entity uid="1438">
-			<Template>structures/athen_farmstead</Template>
+			<Template>structures/athen/farmstead</Template>
 			<Player>0</Player>
 			<Position x="558.23023" z="816.42548"/>
 			<Orientation y="-0.64518"/>
@@ -9855,7 +9855,7 @@
 			<Actor seed="11514"/>
 		</Entity>
 		<Entity uid="1529">
-			<Template>structures/mace_corral</Template>
+			<Template>structures/mace/corral</Template>
 			<Player>0</Player>
 			<Position x="745.83381" z="856.60804"/>
 			<Orientation y="2.35621"/>
@@ -18635,14 +18635,14 @@
 			<Actor seed="1780"/>
 		</Entity>
 		<Entity uid="2878">
-			<Template>structures/athen_farmstead</Template>
+			<Template>structures/athen/farmstead</Template>
 			<Player>0</Player>
 			<Position x="537.82343" z="108.42011"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="58042"/>
 		</Entity>
 		<Entity uid="2879">
-			<Template>structures/athen_farmstead</Template>
+			<Template>structures/athen/farmstead</Template>
 			<Player>0</Player>
 			<Position x="380.09241" z="312.17627"/>
 			<Orientation y="1.12883"/>
