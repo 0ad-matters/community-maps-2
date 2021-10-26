@@ -49494,7 +49494,7 @@
 			<Actor seed="61499"/>
 		</Entity>
 		<Entity uid="9490">
-			<Template>structures/bridge_wooden</Template>
+			<Template>actor|props/special/eyecandy/bridge_edge_wooden.xml</Template>
 			<Player>0</Player>
 			<Position x="634.58985" z="389.20438"/>
 			<Orientation y="1.251"/>
