@@ -14840,14 +14840,14 @@
 			<Actor seed="48818"/>
 		</Entity>
 		<Entity uid="2537">
-			<Template>structures/bridge_hele</Template>
+			<Template>actor|props/special/eyecandy/bridge_edge_hele.xml</Template>
 			<Player>1</Player>
 			<Position x="938.22553" z="921.71698"/>
 			<Orientation y="-1.11242"/>
 			<Actor seed="18580"/>
 		</Entity>
 		<Entity uid="2538">
-			<Template>structures/bridge_hele</Template>
+			<Template>actor|props/special/eyecandy/bridge_edge_hele.xml</Template>
 			<Player>1</Player>
 			<Position x="959.3614" z="910.35682"/>
 			<Orientation y="2.00863"/>
@@ -15794,7 +15794,7 @@
 			<Actor seed="24092"/>
 		</Entity>
 		<Entity uid="2726">
-			<Template>structures/bridge_wooden</Template>
+			<Template>actor|props/special/eyecandy/bridge_edge_wooden.xml</Template>
 			<Player>0</Player>
 			<Position x="1080.03284" z="812.26771"/>
 			<Orientation y="0.39568"/>
@@ -15802,7 +15802,7 @@
 			<Actor seed="2364"/>
 		</Entity>
 		<Entity uid="2727">
-			<Template>structures/bridge_wooden</Template>
+			<Template>actor|props/special/eyecandy/bridge_edge_wooden.xml</Template>
 			<Player>0</Player>
 			<Position x="1101.72938" z="752.15387"/>
 			<Orientation y="1.58056"/>
@@ -15899,7 +15899,7 @@
 			<Actor seed="38934"/>
 		</Entity>
 		<Entity uid="2753">
-			<Template>structures/bridge_wooden</Template>
+			<Template>actor|props/special/eyecandy/bridge_edge_wooden.xml</Template>
 			<Player>0</Player>
 			<Position x="1104.08753" z="665.88666"/>
 			<Orientation y="-1.59417"/>
@@ -16992,7 +16992,7 @@
 			<Actor seed="47458"/>
 		</Entity>
 		<Entity uid="2943">
-			<Template>structures/bridge_wooden</Template>
+			<Template>actor|props/special/eyecandy/bridge_edge_wooden.xml</Template>
 			<Player>1</Player>
 			<Position x="1194.79017" z="958.50892"/>
 			<Orientation y="3.10221"/>
@@ -17379,7 +17379,7 @@
 			<Actor seed="59292"/>
 		</Entity>
 		<Entity uid="3009">
-			<Template>structures/bridge_wooden</Template>
+			<Template>actor|props/special/eyecandy/bridge_edge_wooden.xml</Template>
 			<Player>1</Player>
 			<Position x="1189.7146" z="1028.99048"/>
 			<Orientation y="1.56759"/>

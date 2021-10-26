@@ -31165,14 +31165,14 @@
 			<Actor seed="59498"/>
 		</Entity>
 		<Entity uid="4502">
-			<Template>structures/bridge_wooden</Template>
+			<Template>actor|props/special/eyecandy/bridge_edge_wooden.xml</Template>
 			<Player>0</Player>
 			<Position x="42.22188" z="945.42365"/>
 			<Orientation y="1.30837"/>
 			<Actor seed="11224"/>
 		</Entity>
 		<Entity uid="4503">
-			<Template>structures/bridge_wooden</Template>
+			<Template>actor|props/special/eyecandy/bridge_edge_wooden.xml</Template>
 			<Player>0</Player>
 			<Position x="43.79464" z="932.07227"/>
 			<Orientation y="-1.82479"/>

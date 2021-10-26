@@ -4033,42 +4033,42 @@
 			<Actor seed="10146"/>
 		</Entity>
 		<Entity uid="621">
-			<Template>structures/bridge_wooden</Template>
+			<Template>actor|props/special/eyecandy/bridge_edge_wooden.xml</Template>
 			<Player>1</Player>
 			<Position x="413.22443" z="616.48346"/>
 			<Orientation y="-2.09528"/>
 			<Actor seed="2956"/>
 		</Entity>
 		<Entity uid="622">
-			<Template>structures/bridge_wooden</Template>
+			<Template>actor|props/special/eyecandy/bridge_edge_wooden.xml</Template>
 			<Player>1</Player>
 			<Position x="407.55167" z="613.89673"/>
 			<Orientation y="1.056"/>
 			<Actor seed="2956"/>
 		</Entity>
 		<Entity uid="623">
-			<Template>structures/bridge_wooden</Template>
+			<Template>actor|props/special/eyecandy/bridge_edge_wooden.xml</Template>
 			<Player>1</Player>
 			<Position x="379.08231" z="562.0943"/>
 			<Orientation y="0.56249"/>
 			<Actor seed="2956"/>
 		</Entity>
 		<Entity uid="624">
-			<Template>structures/bridge_wooden</Template>
+			<Template>actor|props/special/eyecandy/bridge_edge_wooden.xml</Template>
 			<Player>1</Player>
 			<Position x="382.85276" z="567.0597"/>
 			<Orientation y="-2.5888"/>
 			<Actor seed="2956"/>
 		</Entity>
 		<Entity uid="625">
-			<Template>structures/bridge_wooden</Template>
+			<Template>actor|props/special/eyecandy/bridge_edge_wooden.xml</Template>
 			<Player>1</Player>
 			<Position x="514.70685" z="564.3125"/>
 			<Orientation y="2.41648"/>
 			<Actor seed="2956"/>
 		</Entity>
 		<Entity uid="626">
-			<Template>structures/bridge_wooden</Template>
+			<Template>actor|props/special/eyecandy/bridge_edge_wooden.xml</Template>
 			<Player>1</Player>
 			<Position x="518.4209" z="559.30481"/>
 			<Orientation y="-0.73481"/>
@@ -4194,7 +4194,7 @@
 			<Actor seed="9162"/>
 		</Entity>
 		<Entity uid="647">
-			<Template>structures/bridge_wooden</Template>
+			<Template>actor|props/special/eyecandy/bridge_edge_wooden.xml</Template>
 			<Player>1</Player>
 			<Position x="505.504" z="599.18622"/>
 			<Orientation y="-2.41231"/>
@@ -4229,14 +4229,14 @@
 			<Actor seed="25510"/>
 		</Entity>
 		<Entity uid="652">
-			<Template>structures/bridge_wooden</Template>
+			<Template>actor|props/special/eyecandy/bridge_edge_wooden.xml</Template>
 			<Player>1</Player>
 			<Position x="550.83252" z="512.92383"/>
 			<Orientation y="2.84466"/>
 			<Actor seed="2956"/>
 		</Entity>
 		<Entity uid="653">
-			<Template>structures/bridge_wooden</Template>
+			<Template>actor|props/special/eyecandy/bridge_edge_wooden.xml</Template>
 			<Player>1</Player>
 			<Position x="552.13202" z="506.82609"/>
 			<Orientation y="-0.30665"/>
@@ -4914,14 +4914,14 @@
 			<Actor seed="3360"/>
 		</Entity>
 		<Entity uid="753">
-			<Template>structures/bridge_wooden</Template>
+			<Template>actor|props/special/eyecandy/bridge_edge_wooden.xml</Template>
 			<Player>1</Player>
 			<Position x="557.20002" z="443.35907"/>
 			<Orientation y="3.18993"/>
 			<Actor seed="2956"/>
 		</Entity>
 		<Entity uid="754">
-			<Template>structures/bridge_wooden</Template>
+			<Template>actor|props/special/eyecandy/bridge_edge_wooden.xml</Template>
 			<Player>1</Player>
 			<Position x="556.35914" z="437.18134"/>
 			<Orientation y="0.03861"/>
@@ -5154,14 +5154,14 @@
 			<Actor seed="55426"/>
 		</Entity>
 		<Entity uid="788">
-			<Template>structures/bridge_wooden</Template>
+			<Template>actor|props/special/eyecandy/bridge_edge_wooden.xml</Template>
 			<Player>1</Player>
 			<Position x="527.09833" z="389.79661"/>
 			<Orientation y="0.4686"/>
 			<Actor seed="2956"/>
 		</Entity>
 		<Entity uid="789">
-			<Template>structures/bridge_wooden</Template>
+			<Template>actor|props/special/eyecandy/bridge_edge_wooden.xml</Template>
 			<Player>1</Player>
 			<Position x="530.43793" z="395.06141"/>
 			<Orientation y="3.61992"/>
@@ -6036,14 +6036,14 @@
 			<Actor seed="13428"/>
 		</Entity>
 		<Entity uid="928">
-			<Template>structures/bridge_wooden</Template>
+			<Template>actor|props/special/eyecandy/bridge_edge_wooden.xml</Template>
 			<Player>1</Player>
 			<Position x="492.47474" z="353.66797"/>
 			<Orientation y="1.37494"/>
 			<Actor seed="2956"/>
 		</Entity>
 		<Entity uid="929">
-			<Template>structures/bridge_wooden</Template>
+			<Template>actor|props/special/eyecandy/bridge_edge_wooden.xml</Template>
 			<Player>1</Player>
 			<Position x="498.67875" z="354.28528"/>
 			<Orientation y="4.52627"/>
