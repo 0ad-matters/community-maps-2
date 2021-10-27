@@ -54,20 +54,16 @@ var clMetal = g_Map.createTileClass();
 var clFood = g_Map.createTileClass();
 var clBaseResource = g_Map.createTileClass();
 var clWater = g_Map.createTileClass();
+var clLand = g_Map.createTileClass();
+var clCliff = g_Map.createTileClass();
 
 const mapBounds = g_Map.getBounds();
-// var startAngle = randBool() ? 0 : Math.PI / 2;
-var startAngle = randBool() ? 0 : Math.PI / 2;
+var startAngle = 0;
 const mapCenter = g_Map.getCenter();
 var WATER_WIDTH = 0.15;
 const heightSeaGround = -7;
 const heightWaterLevel = 18;
-// const heightPlayer = 5;
 const heightHill = 12;
-// var horizontal = randBool();
-var clWater = g_Map.createTileClass();
-var clLand = g_Map.createTileClass();
-var clCliff = g_Map.createTileClass();
 
 for (let x of [mapBounds.left, mapBounds.right])
 	paintRiver({
@@ -75,7 +71,7 @@ for (let x of [mapBounds.left, mapBounds.right])
 		"start": new Vector2D(x, mapBounds.top).rotateAround(startAngle, mapCenter),
 		"end": new Vector2D(x, mapBounds.bottom).rotateAround(startAngle, mapCenter),
 		"width": 2 * fractionToTiles(WATER_WIDTH),
-		"fadeDist": 4,
+		"fadeDist": 3,
 		"deviation": 0,
 		"heightRiverbed": heightSeaGround,
 		"heightLand": heightLand,
@@ -107,13 +103,12 @@ createArea(
 	new HeightConstraint(-Infinity, heightShoreline));
 // Engine.SetProgress(40);
 
-var oceanAngle = startAngle + randFloat(-1, 1) * Math.PI / 12;
 var playerIDs = sortAllPlayers();
 var playerPosition = playerPlacementArcs(
 	playerIDs,
 	mapCenter,
 	fractionToTiles(0.35),
-	oceanAngle,
+	startAngle,
 	0.1 * Math.PI,
 	0.9 * Math.PI);
 
