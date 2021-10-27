@@ -2,7 +2,7 @@
 	"settings" : {
 		"Name" : "Yekaterinaville",
 		"Script" : "yekaterinaville.js",
-		"Description" : "A typical map with very straight (some might say unnaturally straight) rivers along the side.",
+		"Description" : "A typical map with rivers along the side.",
 		"Preview" : "yekaterinaville.png",
 		"SupportedBiomes": "generic/",
 		"Keywords": ["community", "naval"],

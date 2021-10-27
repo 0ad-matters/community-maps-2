@@ -1,5 +1,6 @@
 Engine.LoadLibrary("rmgen");
 Engine.LoadLibrary("rmgen-common");
+Engine.LoadLibrary("rmgen2");
 Engine.LoadLibrary("rmbiome");
 
 setSelectedBiome();
@@ -65,6 +66,7 @@ const heightWaterLevel = 18;
 const heightHill = 12;
 // var horizontal = randBool();
 var clWater = g_Map.createTileClass();
+var clLand = g_Map.createTileClass();
 var clCliff = g_Map.createTileClass();
 
 for (let x of [mapBounds.left, mapBounds.right])
@@ -73,16 +75,37 @@ for (let x of [mapBounds.left, mapBounds.right])
 		"start": new Vector2D(x, mapBounds.top).rotateAround(startAngle, mapCenter),
 		"end": new Vector2D(x, mapBounds.bottom).rotateAround(startAngle, mapCenter),
 		"width": 2 * fractionToTiles(WATER_WIDTH),
-		"fadeDist": 3,
+		"fadeDist": 4,
 		"deviation": 0,
 		"heightRiverbed": heightSeaGround,
 		"heightLand": heightLand,
-		"meanderShort": 0,
+		"meanderShort": 15,
 		"meanderLong": 0,
 		"waterFunc": (position, height, z) => {
 			clWater.add(position);
 		}
 	});
+
+g_Map.log("Marking land");
+createArea(
+	new DiskPlacer(fractionToTiles(0.5), mapCenter),
+	new TileClassPainter(clLand),
+	avoidClasses(clWater, 0));
+// Engine.SetProgress(35);
+
+const heightScale = num => num * g_MapSettings.Size / 320;
+const heightShoreline = heightScale(0.5);
+initTileClasses(["shoreline"]);
+
+g_Map.log("Painting shoreline");
+createArea(
+	new MapBoundsPlacer(),
+	[
+		new TerrainPainter(g_Terrains.water),
+		new TileClassPainter(g_TileClasses.shoreline)
+	],
+	new HeightConstraint(-Infinity, heightShoreline));
+// Engine.SetProgress(40);
 
 var oceanAngle = startAngle + randFloat(-1, 1) * Math.PI / 12;
 var playerIDs = sortAllPlayers();
