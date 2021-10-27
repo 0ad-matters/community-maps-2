@@ -1,5 +1,6 @@
 Engine.LoadLibrary("rmgen");
 Engine.LoadLibrary("rmgen-common");
+Engine.LoadLibrary("rmgen2");
 Engine.LoadLibrary("rmbiome");
 
 setSelectedBiome();
@@ -82,6 +83,17 @@ for (let x of [mapBounds.left, mapBounds.right])
 			clWater.add(position);
 		}
 	});
+
+g_Map.log("Painting cliffs");
+createArea(
+	new MapBoundsPlacer(),
+	[
+		new TerrainPainter(g_Terrains.cliff),
+		new TileClassPainter(clCliff),
+	],
+	[
+		new SlopeConstraint(1, Infinity)
+	]);
 
 var oceanAngle = startAngle + randFloat(-1, 1) * Math.PI / 12;
 var playerIDs = sortAllPlayers();
