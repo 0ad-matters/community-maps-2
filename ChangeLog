@@ -1,7 +1,9 @@
 2021-10-27
 
+  * Fix issue with bridges (See https://github.com/0ad-matters/community_maps_2/pull/12)
   * Fix team spacing on Mainland TG (See https://code.wildfiregames.com/differential/diff/18891/)
   * Make player positions more uniform on Mainland Rectangled and Yekaterinaville
+
 
 2021-10-26
 
