@@ -280,13 +280,13 @@ if (!isNomad())
 			new PathPlacer(
 				Vector2D.sub(position, relPos),
 				mapCenter,
-				3, // width // should we be using scaleByMapSize(?, ?) here?,
+				1, // width // should we be using scaleByMapSize(?, ?) here?,
 				0, // waviness
 				20,
 				0.1,
 				-0.6),
 			[
-				new LayeredPainter([tRoad, tDirt, tRoad], [3, 6]),
+				new LayeredPainter([tRoad, tDirt, tRoad], [1, 3]),
 				new SmoothElevationPainter(ELEVATION_MODIFY, heightPath, 4),
 				new TileClassPainter(clRoad)
 			],
