@@ -1,0 +1,11 @@
+{
+	"settings" : {
+		"Name" : "Corinthian Isthmus II",
+		"Script" : "corinthian_isthmus_ii.js",
+		"Description" : "Adapted from the Corinthian Isthmus 2v2 skirmish map",
+		"Preview" : "corinthian_isthmus_4.png",
+		"Keywords": ["community"],
+		"SupportedBiomes": "generic/",
+		"CircularMap" : true
+	}
+}
