@@ -5,7 +5,7 @@
 		"Description" : "A typical map with rivers along the side.",
 		"Preview" : "yekaterinaville.png",
 		"SupportedBiomes": "generic/",
-		"Keywords": ["community", "naval"],
+		"Keywords": ["community"],
 		"CircularMap" : false
 	}
 }
