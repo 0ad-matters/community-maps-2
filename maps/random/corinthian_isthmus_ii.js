@@ -120,7 +120,7 @@ g_Map.log("Widening the Isthmus");
  */
 createArea(
 	new ClumpPlacer(diskArea(6), 0.0, 0.6, Infinity, mapCenter),
-	new SmoothElevationPainter(ELEVATION_SET, heightWaterLevel+8, 0));
+	new SmoothElevationPainter(ELEVATION_SET, heightWaterLevel + heightScale(8), 0));
 
 g_Map.log("Marking water");
 createArea(
