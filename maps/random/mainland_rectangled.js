@@ -70,12 +70,12 @@ for (let x of [mapBounds.left, mapBounds.right])
 		"start": new Vector2D(x, mapBounds.top).rotateAround(startAngle, mapCenter),
 		"end": new Vector2D(x, mapBounds.bottom).rotateAround(startAngle, mapCenter),
 		"width": 2 * fractionToTiles(WATER_WIDTH),
-		"fadeDist": 3,
+		"fadeDist": 5,
 		"deviation": 0,
 		"heightRiverbed": heightSeaGround,
 		"heightLand": heightLand,
-		"meanderShort": 0,
-		"meanderLong": 0,
+		"meanderShort": 8,
+		"meanderLong": 10,
 		"waterFunc": (position, height, z) => {
 			clWater.add(position);
 		}
@@ -162,7 +162,7 @@ g_Map.log("Creating grass patches");
 createPatches(
  [scaleByMapSize(2, 4), scaleByMapSize(3, 7), scaleByMapSize(5, 15)],
  tTier4Terrain,
- avoidClasses(clWater, 0, clForest, 0, clHill, 0, clDirt, 5, clPlayer, 12, clCliff, 2),
+ avoidClasses(clForest, 0, clHill, 0, clDirt, 5, clPlayer, 12, clCliff, 1),
  scaleByMapSize(15, 45),
  clDirt);
 Engine.SetProgress(55);
@@ -205,7 +205,7 @@ createDecoration(
 		planetm * scaleByMapSize(13, 200),
 		planetm * scaleByMapSize(13, 200)
 	],
-	avoidClasses(clWater, 5, clForest, 0, clPlayer, 0, clHill, 0, clCliff, 2));
+	avoidClasses(clWater, 0, clForest, 0, clPlayer, 0, clHill, 0, clCliff, 1));
 
 Engine.SetProgress(70);
 
