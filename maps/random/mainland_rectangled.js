@@ -94,6 +94,7 @@ placePlayerBases({
 	"PlayerPlacement": [playerIDs, playerPosition],
 	"PlayerTileClass": clPlayer,
 	"BaseResourceClass": clBaseResource,
+	"Walls": g_Map.getSize() > 320,
 	"CityPatch": {
 		"outerTerrain": tRoadWild,
 		"innerTerrain": tRoad
