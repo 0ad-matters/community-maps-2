@@ -67,7 +67,8 @@ const mapCenter = g_Map.getCenter();
 const heightScale = num => num * g_MapSettings.Size / 320;
 const minHeightSource = -15;
 const maxHeightSource = 400;
-const mineDistToCC = defaultPlayerBaseRadius() * 1.8;
+const mineDistToCC = defaultPlayerBaseRadius() * 1.7;
+const mediumMapSize = 320;
 
 function placeMine(position, centerEntity,
 	decorativeActors = [
@@ -172,25 +173,14 @@ Engine.SetProgress(30);
 if (!isNomad())
 {
 	g_Map.log("Placing players");
-	//let [playerIDs, playerPosition] = createBases(
-		//...playerPlacementRandom(
-			//sortAllPlayers(),
-			//[
-				//avoidClasses(g_TileClasses.mountain, scaleByMapSize(5, 10)),
-				//stayClasses(g_TileClasses.land, defaultPlayerBaseRadius())
-			//]),
-		//true);
-
-// function playerPlacementArcs(playerIDs, center, radius, mapAngle, startAngle, endAngle)
-// function playerPlacementMultiArcs(playerIDs, radius, mapAngle, teamGapFrac)
 	var playerIDs = sortAllPlayers();
 	var playerPosition = playerPlacementArcs(
-	playerIDs,
-	mapCenter,
-	fractionToTiles(0.35),
-	0.25 * Math.PI,
-	0.2 * Math.PI,
-	0.8 * Math.PI);
+		playerIDs,
+		mapCenter,
+		fractionToTiles(0.35),
+		0.25 * Math.PI,
+		0.2 * Math.PI,
+		0.8 * Math.PI);
 
 	const initBaseHeight = heightWaterLevel;
 	const baseHeight = initBaseHeight + 24;
@@ -200,11 +190,30 @@ if (!isNomad())
 	{
 		createArea(
 			new ClumpPlacer(diskArea(defaultPlayerBaseRadius() * 2.2), 0.95, 0.6, Infinity, position),
-			// new SmoothElevationPainter(ELEVATION_SET, g_Map.getHeight(position), 6));
 			new SmoothElevationPainter(ELEVATION_SET, initBaseHeight, 12));
+	}
 
-		placeMine(Vector2D.add(position, new Vector2D(defaultPlayerBaseRadius() * 1.7, 0)).rotateAround(position.angleTo(mapCenter)-Math.PI*0.45, position), oMetalLarge);
-		placeMine(Vector2D.add(position, new Vector2D(mineDistToCC, 0)).rotateAround(position.angleTo(mapCenter)-Math.PI*0.55, position), oStoneLarge);
+	// If the map is smaller than Medium size, don't place the large
+	// mines near the player's territory border. On maps that small, the
+	// chance of mines already being nearby is pretty high.
+	if (g_Map.size >= mediumMapSize)
+	{
+		g_Map.log("Placing large mines for each player");
+		for (let position of playerPosition)
+		{
+			placeMine(
+				Vector2D.add(
+					position,
+					new Vector2D(mineDistToCC, 0)).rotateAround(position.angleTo(mapCenter)-Math.PI*0.45,
+					position),
+				oMetalLarge);
+			placeMine(
+				Vector2D.add(
+					position,
+					new Vector2D(mineDistToCC, 0)).rotateAround(position.angleTo(mapCenter)-Math.PI*0.55,
+					position),
+				oStoneLarge);
+		}
 	}
 
 	g_Map.log("Now raise the initial CC area");
