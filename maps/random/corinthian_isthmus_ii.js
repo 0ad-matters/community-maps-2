@@ -398,7 +398,7 @@ createBalancedMetalMines(
 	oMetalSmall,
 	oMetalLarge,
 	clMetal,
-	avoidClasses(clRoad, 1, g_TileClasses.player, scaleByMapSize(20, 35), clHill, 1, g_TileClasses.water, 4)
+	avoidClasses(clRock, 5, clMetal, 10, clRoad, 1, g_TileClasses.player, scaleByMapSize(20, 35), clHill, 1, g_TileClasses.water, 4)
 );
 
 g_Map.log("Creating stone mines");
@@ -406,7 +406,7 @@ createBalancedStoneMines(
 	oStoneSmall,
 	oStoneLarge,
 	clRock,
-	avoidClasses(clRoad, 1, g_TileClasses.player, scaleByMapSize(20, 35), clHill, 2, clMetal, 0, g_TileClasses.water, 5)
+	avoidClasses(clRoad, 1, g_TileClasses.player, scaleByMapSize(20, 35), clHill, 2, clRock, 10, clMetal, 5, g_TileClasses.water, 5)
 );
 
 Engine.SetProgress(50);
