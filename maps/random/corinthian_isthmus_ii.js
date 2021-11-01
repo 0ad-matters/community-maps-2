@@ -67,6 +67,27 @@ const mapCenter = g_Map.getCenter();
 const heightScale = num => num * g_MapSettings.Size / 320;
 const minHeightSource = -15;
 const maxHeightSource = 400;
+const mineDistToCC = defaultPlayerBaseRadius() * 1.8;
+
+function placeMine(position, centerEntity,
+	decorativeActors = [
+		g_Decoratives.grass, g_Decoratives.grassShort,
+		g_Decoratives.rockLarge, g_Decoratives.rockMedium,
+		g_Decoratives.bushMedium, g_Decoratives.bushSmall
+	]
+)
+{
+	g_Map.placeEntityPassable(centerEntity, 0, position, randomAngle());
+
+	let quantity = randIntInclusive(11, 23);
+	let dAngle = 2 * Math.PI / quantity;
+	for (let i = 0; i < quantity; ++i)
+		g_Map.placeEntityPassable(
+			pickRandom(decorativeActors),
+			0,
+			Vector2D.add(position, new Vector2D(randFloat(2, 5), 0).rotate(-dAngle * randFloat(i, i + 1))),
+			randomAngle());
+}
 
 //function scaleByMapSize(min, max, minMapSize = 128, maxMapSize = 512)
 	//{
@@ -176,10 +197,15 @@ if (!isNomad())
 	const cliffEdgeRadius = defaultPlayerBaseRadius() * 1.2
 	g_Map.log("Flatten the initial CC area");
 	for (let position of playerPosition)
+	{
 		createArea(
 			new ClumpPlacer(diskArea(defaultPlayerBaseRadius() * 2.2), 0.95, 0.6, Infinity, position),
 			// new SmoothElevationPainter(ELEVATION_SET, g_Map.getHeight(position), 6));
 			new SmoothElevationPainter(ELEVATION_SET, initBaseHeight, 12));
+
+		placeMine(Vector2D.add(position, new Vector2D(defaultPlayerBaseRadius() * 1.7, 0)).rotateAround(position.angleTo(mapCenter)-Math.PI*0.45, position), oMetalLarge);
+		placeMine(Vector2D.add(position, new Vector2D(mineDistToCC, 0)).rotateAround(position.angleTo(mapCenter)-Math.PI*0.55, position), oStoneLarge);
+	}
 
 	g_Map.log("Now raise the initial CC area");
 	for (let position of playerPosition)
