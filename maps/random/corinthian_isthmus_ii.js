@@ -51,7 +51,7 @@ const g_Map = new RandomMap(0, tMainTerrain);
 
 const numPlayers = getNumPlayers();
 
-// var clPlayer = g_Map.createTileClass();
+var clPlayer = g_Map.createTileClass();
 var clHill = g_Map.createTileClass();
 var clForest = g_Map.createTileClass();
 var clDirt = g_Map.createTileClass();
@@ -60,9 +60,12 @@ var clMetal = g_Map.createTileClass();
 var clFood = g_Map.createTileClass();
 var clBaseResource = g_Map.createTileClass();
 var clRoad = g_Map.createTileClass();
+var clLand = g_Map.createTileClass();
+var clWater = g_Map.createTileClass();
 
 const mapBounds = g_Map.getBounds();
 var startAngle = randBool() ? 0 : Math.PI / 2;
+const mapSize = g_Map.getSize();
 const mapCenter = g_Map.getCenter();
 const heightScale = num => num * g_MapSettings.Size / 320;
 const minHeightSource = -15;
@@ -95,7 +98,7 @@ function placeMine(position, centerEntity,
 		//return min + (max - min) * (g_MapSettings.Size - minMapSize) / (maxMapSize - minMapSize);
 	//}
 
-initTileClasses(["shoreline", "step"]);
+initTileClasses(["shoreline"]);
 
 g_Map.log("Loading hill heightmap");
 createArea(
@@ -147,14 +150,14 @@ createArea(
 g_Map.log("Marking water");
 createArea(
 	new MapBoundsPlacer(),
-	new TileClassPainter(g_TileClasses.water),
+	new TileClassPainter(clWater),
 	new HeightConstraint(-Infinity, heightWaterLevel));
 
 g_Map.log("Marking land");
 createArea(
 	new DiskPlacer(fractionToTiles(0.5), mapCenter),
-	new TileClassPainter(g_TileClasses.land),
-	avoidClasses(g_TileClasses.water, 0));
+	new TileClassPainter(clLand),
+	avoidClasses(clWater, 0));
 
 g_Map.log("Painting shoreline");
 createArea(
@@ -166,9 +169,7 @@ createArea(
 	new HeightConstraint(-Infinity, heightShoreline));
 Engine.SetProgress(30);
 
-	var baseRadius = 15;
-	const heightOffsetPath = -0.1;
-	const heightPath = -2.5;
+const heightOffsetRoad = -2.5;
 
 if (!isNomad())
 {
@@ -266,7 +267,7 @@ if (!isNomad())
 			new TileClassPainter(clHill),
 		],
 		[
-			avoidClasses(g_TileClasses.water, 2),
+			avoidClasses(clWater, 2),
 			new SlopeConstraint(2, Infinity)
 		]);
 
@@ -306,12 +307,62 @@ if (!isNomad())
  * Each width specifies how many tiles the corresponding Terrain should be wide (distance to the prior Terrain border).
  * The remaining area is filled with the last terrain.
  */
+
+	const stayLand = new StaticConstraint(stayClasses(clLand, 0));
+	g_Map.log("Finding possible roads");
+	var roadConstraint = new StaticConstraint(
+		[
+			stayLand,
+			avoidClasses(clHill, 0, clWater, 0, g_TileClasses.shoreline, 0)
+		]);
+
+	//var areaCityPaths = new Area(areasCityPaths.reduce((points, area) => points.concat(area.getPoints()), []));
+	//var areaRoads = [];
+	//for (let roadStart of roadStartLocations)
+	//{
+		//if (areaRoads.length >= scaleByMapSize(2, 5))
+			//break;
+
+		//let closestPoint = areaCityPaths.getClosestPointTo(roadStart);
+		//roadConstraint = new StaticConstraint([roadConstraint, avoidClasses(clRoad, 20)]);
+		//for (let tries = 0; tries < 30; ++tries)
+		//{
+			//let area = createArea(
+				//new PathPlacer(
+					//Vector2D.add(closestPoint, new Vector2D(0, 3/4 * mapSize).rotate(closestPoint.angleTo(roadStart))),
+					//roadStart,
+					//scaleByMapSize(5, 3),
+					//0.1,
+					//5,
+					//0.5,
+					//0,
+					//0),
+				//new TileClassPainter(clRoad),
+				//roadConstraint);
+
+			//if (area && area.getPoints().length)
+			//{
+				//areaRoads.push(area);
+				//break;
+			//}
+		//}
+	//}
+
+	//g_Map.log("Painting roads");
+	//createArea(
+		//new MapBoundsPlacer(),
+		//[
+			//new SmoothElevationPainter(ELEVATION_MODIFY, heightOffsetRoad, 1),
+			//new LayeredPainter([tPathWild, tPath], [1]),
+		//],
+		//[stayClasses(clRoad, 0), avoidClasses(clPath, 0)])
+
 	for (let position of playerPosition)
 	{
 		let relPos = Vector2D.sub(position, mapCenter);
 		relPos = relPos.normalize().mult(scaleByMapSize(4,8));
 		// Path from player to neighbor
-		createArea(
+		let area = createArea(
 			new PathPlacer(
 				Vector2D.sub(position, relPos),
 				mapCenter,
@@ -321,20 +372,24 @@ if (!isNomad())
 				0.1,
 				-0.6),
 			[
-				new LayeredPainter([tRoad, tDirt, tRoad], [1, 3]),
-				new SmoothElevationPainter(ELEVATION_MODIFY, heightPath, 4),
+				new LayeredPainter([tRoad, tDirt, tRoad], [2, 4]),
+				new SmoothElevationPainter(ELEVATION_MODIFY, heightOffsetRoad, 4),
 				new TileClassPainter(clRoad)
 			],
 			[
-				// new NearTileClassConstraint(g_TileClasses.water, 0),
-				// avoidClasses(g_TileClasses.water, 0)
-				// stayClasses(g_TileClasses.land, 2)
+				roadConstraint
+				//new NearTileClassConstraint(clWater, 0),
+				// avoidClasses(clWater, 0, clHill, 2)
+				// stayClasses(clLand, 2)
 			]);
+
+			g_Map.log("Area = ");
+			// g_Map.log(area.getPoints());
 	}
 
 	placePlayerBases({
 		"PlayerPlacement": [playerIDs, playerPosition],
-		"PlayerTileClass": g_TileClasses.player,
+		"PlayerTileClass": clPlayer,
 		"BaseResourceClass": clBaseResource,
 		"baseResourceConstraint": avoidClasses(clRoad, 0),
 		"Walls": false,
@@ -367,7 +422,7 @@ if (!isNomad())
 	});
 }
 
-createBumps(avoidClasses(g_TileClasses.player, 20));
+createBumps(avoidClasses(clPlayer, 20));
 
 // Paint the cliffs again, overwriting any road paintings
 	g_Map.log("Painting cliffs");
@@ -378,7 +433,7 @@ createBumps(avoidClasses(g_TileClasses.player, 20));
 			new TileClassPainter(clHill),
 		],
 		[
-			avoidClasses(g_TileClasses.water, 2),
+			avoidClasses(clWater, 2),
 			new SlopeConstraint(2, Infinity)
 		]);
 
@@ -389,7 +444,7 @@ createLayeredPatches(
  [scaleByMapSize(3, 6), scaleByMapSize(5, 10), scaleByMapSize(8, 21)],
  [[tMainTerrain,tTier1Terrain],[tTier1Terrain,tTier2Terrain], [tTier2Terrain,tTier3Terrain]],
  [1, 1],
- avoidClasses(clRoad, 0, g_TileClasses.water, 5, clForest, 0, clHill, 0, clDirt, 5, g_TileClasses.player, 12),
+ avoidClasses(clRoad, 0, clWater, 5, clForest, 0, clHill, 0, clDirt, 5, clPlayer, 12),
  scaleByMapSize(15, 45),
  clDirt);
 
@@ -397,7 +452,7 @@ g_Map.log("Creating grass patches");
 createPatches(
  [scaleByMapSize(2, 4), scaleByMapSize(3, 7), scaleByMapSize(5, 15)],
  tTier4Terrain,
- avoidClasses(clRoad, 0, g_TileClasses.water, 5, clHill, 0, clDirt, 5, g_TileClasses.player, 12),
+ avoidClasses(clRoad, 0, clWater, 5, clHill, 0, clDirt, 5, clPlayer, 12),
  scaleByMapSize(15, 45),
  clDirt);
 Engine.SetProgress(45);
@@ -407,7 +462,7 @@ createBalancedMetalMines(
 	oMetalSmall,
 	oMetalLarge,
 	clMetal,
-	avoidClasses(clRock, 5, clMetal, 10, clRoad, 1, g_TileClasses.player, scaleByMapSize(20, 35), clHill, 1, g_TileClasses.water, 4)
+	avoidClasses(clRock, 5, clMetal, 10, clRoad, 1, clPlayer, scaleByMapSize(20, 35), clHill, 1, clWater, 4)
 );
 
 g_Map.log("Creating stone mines");
@@ -415,7 +470,7 @@ createBalancedStoneMines(
 	oStoneSmall,
 	oStoneLarge,
 	clRock,
-	avoidClasses(clRoad, 1, g_TileClasses.player, scaleByMapSize(20, 35), clHill, 2, clRock, 10, clMetal, 5, g_TileClasses.water, 5)
+	avoidClasses(clRoad, 1, clPlayer, scaleByMapSize(20, 35), clHill, 2, clRock, 10, clMetal, 5, clWater, 5)
 );
 
 Engine.SetProgress(50);
@@ -423,7 +478,7 @@ Engine.SetProgress(50);
 var [forestTrees, stragglerTrees] = getTreeCounts(...rBiomeTreeCount(1));
 createForests(
  [tMainTerrain, tForestFloor1, tForestFloor2, pForest1, pForest2],
- avoidClasses(clRock, 1, clMetal, 1, clRoad, 1, g_TileClasses.water, 5, g_TileClasses.player, 20, clForest, 18, clHill, 2),
+ avoidClasses(clRock, 1, clMetal, 1, clRoad, 1, clWater, 5, clPlayer, 20, clForest, 18, clHill, 2),
  clForest,
  forestTrees);
 Engine.SetProgress(60);
@@ -448,7 +503,7 @@ createDecoration(
 		planetm * scaleByMapSize(13, 200),
 		planetm * scaleByMapSize(13, 200)
 	],
-	avoidClasses(clRoad, 1, g_TileClasses.water, 5, clForest, 0, g_TileClasses.player, 0, clHill, 0));
+	avoidClasses(clRoad, 1, clWater, 5, clForest, 0, clPlayer, 0, clHill, 0));
 
 Engine.SetProgress(70);
 
@@ -461,7 +516,7 @@ createFood(
 		3 * numPlayers,
 		3 * numPlayers
 	],
-	avoidClasses(clRoad, 1, g_TileClasses.water, 20, clForest, 0, g_TileClasses.player, 20, clHill, 1, clMetal, 4, clRock, 4, clFood, 20),
+	avoidClasses(clRoad, 1, clWater, 20, clForest, 0, clPlayer, 20, clHill, 1, clMetal, 4, clRock, 4, clFood, 20),
 	clFood);
 Engine.SetProgress(75);
 
@@ -469,10 +524,10 @@ createStragglerTrees(
 	[oTree1, oTree2, oTree4, oTree3],
 	avoidClasses(
 		clRoad, 1,
-		g_TileClasses.water, 5,
+		clWater, 5,
 		clForest, 8,
 		clHill, 1,
-		g_TileClasses.player, 12,
+		clPlayer, 12,
 		clMetal, 1,
 		clRock, 1,
 		clFood, 1),
@@ -485,12 +540,12 @@ createObjectGroups(
 	0,
 	[
 		avoidClasses(clFood, 10),
-		stayClasses(g_TileClasses.water, 4),
+		stayClasses(clWater, 4),
 		new HeightConstraint(-Infinity, heightWaterLevel)
 	],
 	scaleByMapSize(8, 32));
 
-placePlayersNomad(g_TileClasses.player, avoidClasses(g_TileClasses.water, 5, clForest, 1, clMetal, 4, clRock, 4, clHill, 4, clFood, 2));
+placePlayersNomad(clPlayer, avoidClasses(clWater, 5, clForest, 1, clMetal, 4, clRock, 4, clHill, 4, clFood, 2));
 
 // setWaterHeight(heightWaterLevel);
 setWaterHeight(heightWaterLevel + SEA_LEVEL);
