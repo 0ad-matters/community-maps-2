@@ -367,10 +367,11 @@ if (!isNomad())
 				Vector2D.sub(position, relPos),
 				mapCenter,
 				1, // width // should we be using scaleByMapSize(?, ?) here?,
-				0, // waviness
+				1.0, // waviness
 				20,
 				0.1,
-				-0.6),
+				-0.6,
+				0.0),
 			[
 				new LayeredPainter([tRoad, tDirt, tRoad], [2, 4]),
 				new SmoothElevationPainter(ELEVATION_MODIFY, heightOffsetRoad, 4),
