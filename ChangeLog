@@ -1,3 +1,12 @@
+2021-11-04
+
+  * replace underscores with hyphens in mod name to fix incompatibility
+  bug (see
+  https://wildfiregames.com/forum/topic/57694-community-maps-2/?do=findComment&comment=463379)
+  (Thanks to Palaiologos and ValihrAnt for helping test)
+  * various improvements to Mainland Rectangled, Yekaterinaville, and Corinthian Isthmus II
+  * v0.25.8 released
+
 2021-10-30
 
   * Add Corinthian Isthmus II (random map)
