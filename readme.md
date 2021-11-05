@@ -85,3 +85,25 @@ you have a custom map and want it included here, let me know as well,
 or you may submit it as a [pull
 request](https://guides.github.com/introduction/flow/).
 
+## Installing
+
+You can install the pyromod file from the [releases
+section](https://github.com/0ad-matters/community-maps-2/releases) or
+the zip file from [0ad.mod.io](https://0ad.mod.io/community-maps-2).
+Periodically, the latest release will be available by downloading
+directly from the 0ad mod downloader (It's usually best to check there
+first). You can confirm the latest release by looking at the top of the
+release section on the GitHub repo.
+
+Note: If you use "Download Zip" from the repo home page, the zip file
+will not be installable by 0ad and you'll receive an error.
+
+If you clone this repo to do live testing, the directory name should be
+the same as the mod name.
+
+    git clone https://github.com/0ad-matters/community-maps-2.git community-maps-2-git
+
+should work fine, as long as the 'Name' field from the mod.json file
+matches the directory name. (When releases are issued, the '-git' is
+removed)
+
