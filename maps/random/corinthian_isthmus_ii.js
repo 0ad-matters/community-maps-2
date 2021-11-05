@@ -1,4 +1,6 @@
 // modified Corinthian Isthmus skirmish map
+// License: GPL2
+// Authors: Andy Alt, James Sherratt (based on code written by the 0AD project)
 
 Engine.LoadLibrary("rmgen");
 Engine.LoadLibrary("rmgen-common");
