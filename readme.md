@@ -107,3 +107,7 @@ should work fine, as long as the 'Name' field from the mod.json file
 matches the directory name. (When releases are issued, the '-git' is
 removed)
 
+If you use the Arch user repository, you can install the
+[0ad-community-maps-2
+package](https://aur.archlinux.org/packages/0ad-community-maps-2/).
+
