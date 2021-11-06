@@ -4,6 +4,6 @@
 	"label": "Community Maps 2",
 	"description": "A collection of maps made by players and fans of 0 A.D. and shared publicly.",
 	"dependencies": ["0ad>=0.0.24"],
-	"url": "https://github.com/0ad-matters/community_maps_2",
+	"url": "https://github.com/0ad-matters/community-maps-2",
 	"type": "maps"
 }
