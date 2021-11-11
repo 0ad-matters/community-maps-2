@@ -98,8 +98,11 @@
 ]]></ScriptSettings>
 	<Entities>
 		<Entity uid="11">
-			<Template>structures/rome/sentry_tower</Template>
+			<Template>structures/rome/outpost</Template>
 			<Player>1</Player>
+			<Turrets>
+				<Turret turret="One" uid="7813"/>
+			</Turrets>			
 			<Position x="666.02417" z="562.90821"/>
 			<Orientation y="2.16536"/>
 			<Actor seed="22698"/>
@@ -5399,36 +5402,51 @@
 			<Actor seed="38694"/>
 		</Entity>
 		<Entity uid="968">
-			<Template>structures/rome/sentry_tower</Template>
+			<Template>structures/rome/outpost</Template>
 			<Player>1</Player>
+			<Turrets>
+				<Turret turret="One" uid="7814"/>
+			</Turrets>
 			<Position x="731.14203" z="675.45948"/>
 			<Orientation y="1.8983"/>
 			<Actor seed="22698"/>
 		</Entity>
 		<Entity uid="969">
-			<Template>structures/rome/sentry_tower</Template>
+			<Template>structures/rome/outpost</Template>
 			<Player>1</Player>
+			<Turrets>
+				<Turret turret="One" uid="7815"/>
+			</Turrets>
 			<Position x="779.15326" z="770.76197"/>
 			<Orientation y="2.25722"/>
 			<Actor seed="22698"/>
 		</Entity>
 		<Entity uid="970">
-			<Template>structures/rome/sentry_tower</Template>
+			<Template>structures/rome/outpost</Template>
 			<Player>1</Player>
+			<Turrets>
+				<Turret turret="One" uid="7816"/>
+			</Turrets>
 			<Position x="565.29987" z="440.11176"/>
 			<Orientation y="2.25196"/>
 			<Actor seed="22698"/>
 		</Entity>
 		<Entity uid="971">
-			<Template>structures/rome/sentry_tower</Template>
+			<Template>structures/rome/outpost</Template>
 			<Player>1</Player>
+			<Turrets>
+				<Turret turret="One" uid="7817"/>
+			</Turrets>
 			<Position x="467.21549" z="345.13834"/>
 			<Orientation y="2.36313"/>
 			<Actor seed="22698"/>
 		</Entity>
 		<Entity uid="972">
-			<Template>structures/rome/sentry_tower</Template>
+			<Template>structures/rome/outpost</Template>
 			<Player>1</Player>
+			<Turrets>
+				<Turret turret="One" uid="7818"/>
+			</Turrets>
 			<Position x="361.72962" z="250.29816"/>
 			<Orientation y="2.36313"/>
 			<Actor seed="22698"/>
@@ -6247,7 +6265,7 @@
 			<Actor seed="63274"/>
 		</Entity>
 		<Entity uid="1123">
-			<Template>structures/rome/fortress</Template>
+			<Template>structures/rome/civil_centre</Template>
 			<Player>1</Player>
 			<Position x="462.23005" z="184.82184"/>
 			<Orientation y="2.64841"/>
@@ -44287,14 +44305,14 @@
 			<Actor seed="56992"/>
 		</Entity>
 		<Entity uid="7817">
-			<Template>units/rome/infantry_spearman_a</Template>
+			<Template>units/rome/infantry_javelineer_a</Template>
 			<Player>1</Player>
 			<Position x="723.94135" z="686.97956"/>
 			<Orientation y="4.76255"/>
 			<Actor seed="22262"/>
 		</Entity>
 		<Entity uid="7818">
-			<Template>units/rome/infantry_spearman_a</Template>
+			<Template>units/rome/infantry_javelineer_a</Template>
 			<Player>1</Player>
 			<Position x="724.30439" z="690.0655"/>
 			<Orientation y="4.76255"/>
