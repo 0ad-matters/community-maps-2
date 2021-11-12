@@ -1,0 +1,11 @@
+{
+	"settings" : {
+		"Name" : "Jammy's Despair",
+		"Script" : "jammys_despair.js",
+		"Description" : "Just another map.",
+		"Preview" : "jammys_despair.png",
+		"Keywords": ["community"],
+		"SupportedBiomes": "generic/",
+		"CircularMap" : true
+	}
+}

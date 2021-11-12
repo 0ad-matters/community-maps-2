@@ -10,6 +10,7 @@ maps can be easily accessed in game with the filter "Community Maps".
 
 | Map Name | Author | Link | Publication Date |
 |----------|--------|------|------------------|
+| Jammy's Despair | andy5995, Jammyjamjamman | - | 12-11-2021 |
 | Corinthian Isthmus II | andy5995, Jammyjamjamman | [Forum](https://wildfiregames.com/forum/topic/61741-corinthian-isthmus-ii/) | 30-10-2021 |
 | Yekaterinaville | [andy5995](https://wildfiregames.com/forum/profile/21632-andy5995/) | [Forum](https://wildfiregames.com/forum/topic/60909-mainland-rectangled/?do=findComment&comment=461162) | 23-10-2021 |
 | Mainland Rectangled | [andy5995](https://wildfiregames.com/forum/profile/21632-andy5995/) | [Forum](https://wildfiregames.com/forum/topic/60909-mainland-rectangled/) | 22-10-2021 |
