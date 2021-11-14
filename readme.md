@@ -10,68 +10,68 @@ maps can be easily accessed in game with the filter "Community Maps".
 
 | Map Name | Author | Link | Publication Date |
 |----------|--------|------|------------------|
-| Jammy's Despair | andy5995, Jammyjamjamman | - | 12-11-2021 |
-| Corinthian Isthmus II | andy5995, Jammyjamjamman | [Forum](https://wildfiregames.com/forum/topic/61741-corinthian-isthmus-ii/) | 30-10-2021 |
-| Yekaterinaville | [andy5995](https://wildfiregames.com/forum/profile/21632-andy5995/) | [Forum](https://wildfiregames.com/forum/topic/60909-mainland-rectangled/?do=findComment&comment=461162) | 23-10-2021 |
-| Mainland Rectangled | [andy5995](https://wildfiregames.com/forum/profile/21632-andy5995/) | [Forum](https://wildfiregames.com/forum/topic/60909-mainland-rectangled/) | 22-10-2021 |
-| Mainland TG | [Jammyjamjamman](https://wildfiregames.com/forum/profile/33845-jammyjamjamman/) | [Forum](https://wildfiregames.com/forum/topic/28758-mainland-with-teammates-placed-closely-together/) | 06-09-2020 |
+| Jammy's Despair | andy5995, Jammyjamjamman | - | 2021-11-12 |
+| Corinthian Isthmus II | andy5995, Jammyjamjamman | [Forum](https://wildfiregames.com/forum/topic/61741-corinthian-isthmus-ii/) | 2021-10-30 |
+| Yekaterinaville | [andy5995](https://wildfiregames.com/forum/profile/21632-andy5995/) | [Forum](https://wildfiregames.com/forum/topic/60909-mainland-rectangled/?do=findComment&comment=461162) | 2021-10-23 |
+| Mainland Rectangled | [andy5995](https://wildfiregames.com/forum/profile/21632-andy5995/) | [Forum](https://wildfiregames.com/forum/topic/60909-mainland-rectangled/) | 2021-10-22 |
+| Mainland TG | [Jammyjamjamman](https://wildfiregames.com/forum/profile/33845-jammyjamjamman/) | [Forum](https://wildfiregames.com/forum/topic/28758-mainland-with-teammates-placed-closely-together/) | 2020-09-06 |
 | African Plains TG | [Jammyjamjamman](https://wildfiregames.com/forum/profile/33845-jammyjamjamman/) | - | - |
-| Volcanic Island | [nani](https://wildfiregames.com/forum/index.php?/profile/27866-nani/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/25695-random-map-volcanic-island/) | 18-04-2019 |
-| Dune | [nani](https://wildfiregames.com/forum/index.php?/profile/27866-nani/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/24638-random-map-dune-desert/) | 25-08-2018 |
-| Fert | [nani](https://wildfiregames.com/forum/index.php?/profile/27866-nani/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/24621-random-map-fert-king-of-the-hill-variant/) | 25-08-2018 |
-| Fert Mountain | [nani](https://wildfiregames.com/forum/index.php?/profile/27866-nani/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/24621-random-map-fert-king-of-the-hill-variant/) | 25-08-2018 |
-| Plague Swamp | [Hannibal_Barca](https://wildfiregames.com/forum/index.php?/profile/22024-hannibal_barca/) and [(-_-)](https://wildfiregames.com/forum/index.php?/profile/24952-_/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/24621-random-map-fert-king-of-the-hill-variant/) | 25-08-2018 |
-| Riverway | [nani](https://wildfiregames.com/forum/index.php?/profile/27866-nani/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/24782-random-map-riverway/) | 25-08-2018 |
-| Forest Nothing | [coworotel](https://wildfiregames.com/forum/index.php?/profile/22499-coworotel/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/24623-forest-nothing-random-map/) | 11-07-2018 |
+| Volcanic Island | [nani](https://wildfiregames.com/forum/index.php?/profile/27866-nani/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/25695-random-map-volcanic-island/) | 2019-04-18 |
+| Dune | [nani](https://wildfiregames.com/forum/index.php?/profile/27866-nani/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/24638-random-map-dune-desert/) | 2018-08-25 |
+| Fert | [nani](https://wildfiregames.com/forum/index.php?/profile/27866-nani/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/24621-random-map-fert-king-of-the-hill-variant/) | 2018-08-25 |
+| Fert Mountain | [nani](https://wildfiregames.com/forum/index.php?/profile/27866-nani/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/24621-random-map-fert-king-of-the-hill-variant/) | 2018-08-25 |
+| Plague Swamp | [Hannibal_Barca](https://wildfiregames.com/forum/index.php?/profile/22024-hannibal_barca/) and [(-_-)](https://wildfiregames.com/forum/index.php?/profile/24952-_/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/24621-random-map-fert-king-of-the-hill-variant/) | 2018-08-25 |
+| Riverway | [nani](https://wildfiregames.com/forum/index.php?/profile/27866-nani/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/24782-random-map-riverway/) | 2018-08-25 |
+| Forest Nothing | [coworotel](https://wildfiregames.com/forum/index.php?/profile/22499-coworotel/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/24623-forest-nothing-random-map/) | 2018-07-11 |
 
 ## Skirmishes
 
 | Map Name | Author | Link | Publication Date |
 |----------|--------|------|------------------|
-| Chess | [Jammyjamjamman](https://wildfiregames.com/forum/profile/33845-jammyjamjamman/) | [Forum](https://wildfiregames.com/forum/topic/61013-chess-map/) | 23-10-2021 |
-|Cliffs of Carnage|[andy5995](https://wildfiregames.com/forum/profile/21632-andy5995/)|[Forum](https://wildfiregames.com/forum/topic/30590-cliffs-of-carnage-new-4v4-pvp-map/)|02-10-2020|
-|Caribbean Island (6)|[Marcus Brutus Bombastus](https://wildfiregames.com/forum/index.php?/profile/30405-marcus-brutus-bombastus/)|[Forum](https://wildfiregames.com/forum/index.php?/topic/27363-first-try-caribbean-island/)|17-12-2019|
-| Northern Islands (4) | [Scarecrow](https://wildfiregames.com/forum/index.php?/profile/29189-scarecrow/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/25698-atlas-map-northern-islands-4/) | 18-04-2019 |
-| Arabia (4) | [coworotel](https://wildfiregames.com/forum/index.php?/profile/22499-coworotel/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/25570-new-skirmish-map-arabia-4/) | 30-03-2019 |
-| Four Cities Meet (4) | [coworotel](https://wildfiregames.com/forum/index.php?/profile/22499-coworotel/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/25560-skirmish-map-four-cities-meet-4/) | 28-03-2019 |
-| Italian Peninsula (6) | [Bigtiger](https://wildfiregames.com/forum/index.php?/profile/26958-bigtiger/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/25008-skirmish-map-italian-peninsula-6/) | 26-10-2018 |
-| Country Side (2) | [Bigtiger](https://wildfiregames.com/forum/index.php?/profile/26958-bigtiger/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/25003-skirmish-map-country-side-2/) | 25-10-2018 |
-| City VS City (2) | [Imperator Ferrum Princeps I](https://wildfiregames.com/forum/index.php?/profile/27583-imperator-ferrum-princeps-i/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/24921-city-vs-city-2/) | 02-10-2018 |
-| Jungle Valley (2) | [Bigtiger](https://wildfiregames.com/forum/index.php?/profile/26958-bigtiger/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/24820-skirmish-map-jungle-valley-2/) | 08-09-2018 |
-| Coastline (2) | [Bigtiger](https://wildfiregames.com/forum/index.php?/profile/26958-bigtiger/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/24815-skirmish-map-coastline-2/) | 06-09-2018 |
-| Lesvos Castle (2) | [Bigtiger](https://wildfiregames.com/forum/index.php?/profile/26958-bigtiger/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/24812-skirmish-map-lesvos-castle-2/) | 06-09-2018 |
-| The Duel (2) | [Bigtiger](https://wildfiregames.com/forum/index.php?/profile/26958-bigtiger/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/24800-map-the-duel-2-skirmish-map-1vs1/) | 01-09-2018 |
-| Battle of Vikingland (8) | [woodpecker](https://wildfiregames.com/forum/index.php?/profile/27789-woodpecker/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/24531-skrimish-map-battle-of-vikingland-8/) | 26-06-2018 |
-| Fahrenheit | [phoenixdesk](https://wildfiregames.com/forum/index.php?/profile/23503-phoenixdesk/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/24164-designing-new-map-need-help/) | 08-04-2018 |
-| Euboea Harvest (4) | [Bigtiger](https://wildfiregames.com/forum/index.php?/profile/26958-bigtiger/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/24111-euboea-harvest-4/) | 13-03-2018 |
-| Alpine Rivers | [z4k](https://wildfiregames.com/forum/index.php?/profile/24112-z4k/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/22929-sharing-users-map/) | 09-12-2017 |
-| Battles in the Dirt | [Lion.Kanzen](https://wildfiregames.com/forum/index.php?/profile/13202-lionkanzen/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/21613-battles-in-the-dirt/) | 17-01-2017 |
-| Rapa Nui (Easter Island) | [Grapjas](https://wildfiregames.com/forum/index.php?/profile/21464-grapjas/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/20674-you-guys-want-something-new-do-you-d-new-skirmish-mapupdated-to-v21/) | 13-04-2016 |
+| Chess | [Jammyjamjamman](https://wildfiregames.com/forum/profile/33845-jammyjamjamman/) | [Forum](https://wildfiregames.com/forum/topic/61013-chess-map/) | 2021-10-23 |
+|Cliffs of Carnage|[andy5995](https://wildfiregames.com/forum/profile/21632-andy5995/)|[Forum](https://wildfiregames.com/forum/topic/30590-cliffs-of-carnage-new-4v4-pvp-map/)|2020-10-02|
+|Caribbean Island (6)|[Marcus Brutus Bombastus](https://wildfiregames.com/forum/index.php?/profile/30405-marcus-brutus-bombastus/)|[Forum](https://wildfiregames.com/forum/index.php?/topic/27363-first-try-caribbean-island/)|2019-12-17|
+| Northern Islands (4) | [Scarecrow](https://wildfiregames.com/forum/index.php?/profile/29189-scarecrow/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/25698-atlas-map-northern-islands-4/) | 2019-04-18 |
+| Arabia (4) | [coworotel](https://wildfiregames.com/forum/index.php?/profile/22499-coworotel/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/25570-new-skirmish-map-arabia-4/) | 2019-03-30 |
+| Four Cities Meet (4) | [coworotel](https://wildfiregames.com/forum/index.php?/profile/22499-coworotel/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/25560-skirmish-map-four-cities-meet-4/) | 2019-03-28 |
+| Italian Peninsula (6) | [Bigtiger](https://wildfiregames.com/forum/index.php?/profile/26958-bigtiger/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/25008-skirmish-map-italian-peninsula-6/) | 2018-10-26 |
+| Country Side (2) | [Bigtiger](https://wildfiregames.com/forum/index.php?/profile/26958-bigtiger/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/25003-skirmish-map-country-side-2/) | 2018-10-25 |
+| City VS City (2) | [Imperator Ferrum Princeps I](https://wildfiregames.com/forum/index.php?/profile/27583-imperator-ferrum-princeps-i/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/24921-city-vs-city-2/) | 2018-10-02 |
+| Jungle Valley (2) | [Bigtiger](https://wildfiregames.com/forum/index.php?/profile/26958-bigtiger/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/24820-skirmish-map-jungle-valley-2/) | 2018-09-08 |
+| Coastline (2) | [Bigtiger](https://wildfiregames.com/forum/index.php?/profile/26958-bigtiger/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/24815-skirmish-map-coastline-2/) | 2018-09-06 |
+| Lesvos Castle (2) | [Bigtiger](https://wildfiregames.com/forum/index.php?/profile/26958-bigtiger/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/24812-skirmish-map-lesvos-castle-2/) | 2018-09-06 |
+| The Duel (2) | [Bigtiger](https://wildfiregames.com/forum/index.php?/profile/26958-bigtiger/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/24800-map-the-duel-2-skirmish-map-1vs1/) | 2018-09-01 |
+| Battle of Vikingland (8) | [woodpecker](https://wildfiregames.com/forum/index.php?/profile/27789-woodpecker/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/24531-skrimish-map-battle-of-vikingland-8/) | 2018-06-26 |
+| Fahrenheit | [phoenixdesk](https://wildfiregames.com/forum/index.php?/profile/23503-phoenixdesk/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/24164-designing-new-map-need-help/) | 2018-04-08 |
+| Euboea Harvest (4) | [Bigtiger](https://wildfiregames.com/forum/index.php?/profile/26958-bigtiger/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/24111-euboea-harvest-4/) | 2018-03-13 |
+| Alpine Rivers | [z4k](https://wildfiregames.com/forum/index.php?/profile/24112-z4k/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/22929-sharing-users-map/) | 2017-12-09 |
+| Battles in the Dirt | [Lion.Kanzen](https://wildfiregames.com/forum/index.php?/profile/13202-lionkanzen/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/21613-battles-in-the-dirt/) | 2017-01-17 |
+| Rapa Nui (Easter Island) | [Grapjas](https://wildfiregames.com/forum/index.php?/profile/21464-grapjas/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/20674-you-guys-want-something-new-do-you-d-new-skirmish-mapupdated-to-v21/) | 2016-04-13 |
 
 ## Scenarios
 
 | Map Name | Author | Link | Publication Date |
 |----------|--------|------|------------------|
-| The Limes | [nifa](https://wildfiregames.com/forum/profile/33088-nifa/) | [Forum](https://wildfiregames.com/forum/topic/36065-new-scenario-map-the-limes/) | 02-02-2021 |
-| South East Asia (6)|[crazy_Baboon](https://wildfiregames.com/forum/index.php?/profile/29330-crazy_baboon/)|[Forum](https://wildfiregames.com/forum/index.php?/topic/26199-how-to-contribute-a-new-map/)|09-06-2019|
-| Asian Campaign III a.C. | [imperium](https://wildfiregames.com/forum/index.php?/profile/21662-imperium/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/25958-new-map-20-asia/) | 12-05-2019 |
-| Mappa Europea III Secolo a.C. | [imperium](https://wildfiregames.com/forum/index.php?/profile/21662-imperium/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/25413-new-map-europe/) | 26-02-2019 |
-| Paradise valley | [Nevar](https://wildfiregames.com/forum/index.php?/profile/28458-nevar/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/25087-skirmish-paradise-valley-4/) | 23-11-2018 |
-| Halicarnassus | [Skhorn](https://wildfiregames.com/forum/index.php?/profile/16493-skhorn/) | [Github](https://github.com/Skhorn/0AD-map-pack) | 19-05-2018 |
-| Constantinople: Midnight Assault | [Skhorn](https://wildfiregames.com/forum/index.php?/profile/16493-skhorn/) | [Github](https://github.com/Skhorn/0AD-map-pack) | 16-05-2018 |
-| Mesina | [Tiber7](https://wildfiregames.com/forum/index.php?/profile/21360-tiber7/) and [Skhorn](https://wildfiregames.com/forum/index.php?/profile/16493-skhorn/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/21948-the-first-punic-war-campaign-project/) | 10-03-2018 |
-| Invasion of Brittania | [KzoneDD](https://wildfiregames.com/forum/index.php?/profile/27214-kzonedd/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/24023-change-player-setup-map-wip/) | 20-02-2018 |
-| Olimpus 4 | [Juli51](https://wildfiregames.com/forum/index.php?/profile/21926-juli51/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/23627-enemy-civ-not-aggressive/) | 01-01-2018 |
-| Linne Foirthe | [AgamemnonPhlemnon](https://wildfiregames.com/forum/index.php?/profile/22102-agamemnonphlemnon/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/22679-linne-foirthe-need-help-improving/) | 29-07-2017 |
-| At World's End | [shieldwolf23](https://wildfiregames.com/forum/index.php?/profile/16160-shieldwolf23/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/18884-map-working-title-conquest-and-empire/) | 28-05-2017 |
-| Brigantium (Eng) | [Lankusnav](https://wildfiregames.com/forum/index.php?/profile/22485-lankusnav/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/22259-brigantium/) | 12-05-2017 |
-| First Battle of Numantia | [Lankusnav](https://wildfiregames.com/forum/index.php?/profile/22485-lankusnav/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/22255-numantia-scenarios/) | 01-05-2017 |
-| Siege of Numantia | [Lankusnav](https://wildfiregames.com/forum/index.php?/profile/22485-lankusnav/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/22255-numantia-scenarios/) | 01-05-2017 |
-| Siege of Greece | [Skhorn](https://wildfiregames.com/forum/index.php?/profile/16493-skhorn/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/21503-scenario-siege-of-greece/) | 23-12-2016 |
-| 0 A.D. Community Eyecandy Map | (\*) | [Forum](https://wildfiregames.com/forum/index.php?/topic/16913-the-great-community-map-10/) | 15-12-2016 |
-| Raiders in the Alps (3) | [Sidi](https://wildfiregames.com/forum/index.php?/profile/21697-sidi/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/21030-scenario-a-roman-invasion-in-the-alps/) | 10-08-2016 |
-| Qart Hadasht (Cartagena Punica) | [tavius1994](https://wildfiregames.com/forum/index.php?/profile/21651-tavius1994/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/20976-new-map-qart-hadast-punic-carthagonova/) | 17-07-2016 |
-| Obsidio Cyzicus | [Garaf](https://wildfiregames.com/forum/index.php?/profile/21410-garaf/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/20741-scenario-obsidio-cyzicus/) | 09-05-2016 |
+| The Limes | [nifa](https://wildfiregames.com/forum/profile/33088-nifa/) | [Forum](https://wildfiregames.com/forum/topic/36065-new-scenario-map-the-limes/) | 2021-02-02 |
+| South East Asia (6)|[crazy_Baboon](https://wildfiregames.com/forum/index.php?/profile/29330-crazy_baboon/)|[Forum](https://wildfiregames.com/forum/index.php?/topic/26199-how-to-contribute-a-new-map/)|2019-06-09|
+| Asian Campaign III a.C. | [imperium](https://wildfiregames.com/forum/index.php?/profile/21662-imperium/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/25958-new-map-20-asia/) | 2019-05-12 |
+| Mappa Europea III Secolo a.C. | [imperium](https://wildfiregames.com/forum/index.php?/profile/21662-imperium/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/25413-new-map-europe/) | 2019-02-26 |
+| Paradise valley | [Nevar](https://wildfiregames.com/forum/index.php?/profile/28458-nevar/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/25087-skirmish-paradise-valley-4/) | 2018-11-23 |
+| Halicarnassus | [Skhorn](https://wildfiregames.com/forum/index.php?/profile/16493-skhorn/) | [Github](https://github.com/Skhorn/0AD-map-pack) | 2018-05-19 |
+| Constantinople: Midnight Assault | [Skhorn](https://wildfiregames.com/forum/index.php?/profile/16493-skhorn/) | [Github](https://github.com/Skhorn/0AD-map-pack) | 2018-05-16 |
+| Mesina | [Tiber7](https://wildfiregames.com/forum/index.php?/profile/21360-tiber7/) and [Skhorn](https://wildfiregames.com/forum/index.php?/profile/16493-skhorn/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/21948-the-first-punic-war-campaign-project/) | 2018-03-10 |
+| Invasion of Brittania | [KzoneDD](https://wildfiregames.com/forum/index.php?/profile/27214-kzonedd/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/24023-change-player-setup-map-wip/) | 2018-02-20 |
+| Olimpus 4 | [Juli51](https://wildfiregames.com/forum/index.php?/profile/21926-juli51/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/23627-enemy-civ-not-aggressive/) | 2018-01-01 |
+| Linne Foirthe | [AgamemnonPhlemnon](https://wildfiregames.com/forum/index.php?/profile/22102-agamemnonphlemnon/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/22679-linne-foirthe-need-help-improving/) | 2017-07-29 |
+| At World's End | [shieldwolf23](https://wildfiregames.com/forum/index.php?/profile/16160-shieldwolf23/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/18884-map-working-title-conquest-and-empire/) | 2017-05-28 |
+| Brigantium (Eng) | [Lankusnav](https://wildfiregames.com/forum/index.php?/profile/22485-lankusnav/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/22259-brigantium/) | 2017-05-12 |
+| First Battle of Numantia | [Lankusnav](https://wildfiregames.com/forum/index.php?/profile/22485-lankusnav/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/22255-numantia-scenarios/) | 2017-05-01 |
+| Siege of Numantia | [Lankusnav](https://wildfiregames.com/forum/index.php?/profile/22485-lankusnav/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/22255-numantia-scenarios/) | 2017-05-01 |
+| Siege of Greece | [Skhorn](https://wildfiregames.com/forum/index.php?/profile/16493-skhorn/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/21503-scenario-siege-of-greece/) | 2016-12-23 |
+| 0 A.D. Community Eyecandy Map | (\*) | [Forum](https://wildfiregames.com/forum/index.php?/topic/16913-the-great-community-map-10/) | 2016-12-15 |
+| Raiders in the Alps (3) | [Sidi](https://wildfiregames.com/forum/index.php?/profile/21697-sidi/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/21030-scenario-a-roman-invasion-in-the-alps/) | 2016-08-10 |
+| Qart Hadasht (Cartagena Punica) | [tavius1994](https://wildfiregames.com/forum/index.php?/profile/21651-tavius1994/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/20976-new-map-qart-hadast-punic-carthagonova/) | 2016-07-17 |
+| Obsidio Cyzicus | [Garaf](https://wildfiregames.com/forum/index.php?/profile/21410-garaf/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/20741-scenario-obsidio-cyzicus/) | 2016-05-09 |
 
 (\*) [Kimball](https://wildfiregames.com/forum/index.php?/profile/2104-kimball/), [Yodaspirine](https://wildfiregames.com/forum/index.php?/profile/9973-yodaspirine/), [idanwin](https://wildfiregames.com/forum/index.php?/profile/4287-idanwin/), [fcxSanya](https://wildfiregames.com/forum/index.php?/profile/9635-fcxsanya/), [Lion.Kanzen](https://wildfiregames.com/forum/index.php?/profile/13202-lionkanzen/), [niektb](https://wildfiregames.com/forum/index.php?/profile/15513-niektb/), [svott](https://wildfiregames.com/forum/index.php?/profile/21134-svott/), [Skhorn](https://wildfiregames.com/forum/index.php?/profile/16493-skhorn/)
 
@@ -111,4 +111,3 @@ removed)
 If you use the Arch user repository, you can install the
 [0ad-community-maps-2
 package](https://aur.archlinux.org/packages/0ad-community-maps-2/).
-
