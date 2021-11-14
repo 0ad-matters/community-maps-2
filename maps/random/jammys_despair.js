@@ -23,6 +23,9 @@ const tRoad = g_Terrains.road;
 const tRoadWild = g_Terrains.roadWild;
 const tTier4Terrain = g_Terrains.tier4Terrain;
 const tDirt = g_Terrains.dirt;
+const tShoreBlend = g_Terrains.shoreBlend;
+const tShore = g_Terrains.shore;
+const tWater = g_Terrains.water;
 
 const oTree1 = g_Gaia.tree1;
 const oTree2 = g_Gaia.tree2;
@@ -43,6 +46,8 @@ const aRockLarge = g_Decoratives.rockLarge;
 const aRockMedium = g_Decoratives.rockMedium;
 const aBushMedium = g_Decoratives.bushMedium;
 const aBushSmall = g_Decoratives.bushSmall;
+const aReeds = g_Decoratives.reeds;
+const aLillies = g_Decoratives.lillies;
 
 const pForest1 = [tForestFloor2 + TERRAIN_SEPARATOR + oTree1, tForestFloor2 + TERRAIN_SEPARATOR + oTree2, tForestFloor2];
 const pForest2 = [tForestFloor1 + TERRAIN_SEPARATOR + oTree4, tForestFloor1 + TERRAIN_SEPARATOR + oTree5, tForestFloor1];
@@ -53,8 +58,7 @@ const heightSeaGround = heightScale(-4);
 const heightReedsMin = heightScale(-2);
 const heightReedsMax = heightScale(-0.5);
 const heightWaterLevel = heightScale(0);
-const heightShoreline = heightScale(0.8);
-const heightHills = heightScale(16);
+const heightShoreline = heightScale(0.5);
 const heightLand = heightScale(1);
 
 var g_Map = new RandomMap(heightLand, tMainTerrain);
@@ -72,39 +76,12 @@ var clBaseResource = g_Map.createTileClass();
 var clWater = g_Map.createTileClass();
 var clLand = g_Map.createTileClass();
 
-/**
- * Mainland style with some small random lakes.
- * code pinched and adapted from unknownLakes() in unknown.js
- */
-function createLakes()
-{
-	g_Map.log("Creating lakes");
-	createAreas(
-		new ClumpPlacer(
-			scaleByMapSize(60, 240),
-			0.5, // coherence - How much the radius of the clump varies (1 = circle, 0 = very random).
-			0.5, // smoothness - How smooth the border of the clump is (1 = few "peaks", 0 = very jagged).
-			Infinity),
-		[
-			new SmoothElevationPainter(ELEVATION_SET, heightWaterLevel - heightScale(3), 5),
-			new TileClassPainter(clWater)
-		],
-		[avoidClasses(clPlayer, 15, clWater, 12, clPath, 0)],
-		scaleByMapSize(5, 16));
-}
-
 initTileClasses(["shoreline", "path"]);
 var clPath = g_TileClasses.path;
 
 g_Map.log("Creating mountains");
 g_Map.LoadHeightmapImage("jammys_despair.png", heightLand, 50);
 Engine.SetProgress(15);
-
-//g_Map.log("Smoothing heightmap");
-//createArea(
-	//new MapBoundsPlacer(),
-	//new SmoothingPainter(1, scaleByMapSize(1.0, .5), 1));
-//Engine.SetProgress(25);
 
 const heightMapCenter = g_Map.getHeight(mapCenter);
 
@@ -148,7 +125,47 @@ if (!isNomad())
 	}
 }
 
-createLakes();
+g_Map.log("Creating lakes");
+var numLakes = Math.round(scaleByMapSize(1,4) * numPlayers);
+for (let passes = 0; passes < numLakes; passes++)
+{
+	var waterAreas = createAreas(
+		new ClumpPlacer(scaleByMapSize(randIntInclusive(40, 70), randIntInclusive(180, 280)), randFloat(0.3, 0.9), randFloat(0.2, 0.9), Infinity),
+		[
+			new LayeredPainter([tShoreBlend, tShore, tWater], [1, 1]),
+			new SmoothElevationPainter(ELEVATION_SET, heightWaterLevel - heightScale(randIntInclusive(1, 5)), randIntInclusive(1, 3), randIntInclusive(1, 3)),
+			new TileClassPainter(clWater)
+		],
+		avoidClasses(clPath, 0, clPlayer, 24, clWater, 12),
+		1
+	);
+}
+
+/* These lakes aren't very deep; units can walk over them, so it doesn't have to avoid clPath */
+for (let passes = 0; passes < 4; passes++)
+{
+	var waterAreas = createAreas(
+		new ClumpPlacer(scaleByMapSize(randIntInclusive(40, 70), randIntInclusive(180, 280)), randFloat(0.3, 0.9), randFloat(0.2, 0.9), Infinity),
+		[
+			new LayeredPainter([tShoreBlend, tShore, tWater], [1, 1]),
+			new SmoothElevationPainter(ELEVATION_SET, heightWaterLevel - heightScale(1), randIntInclusive(1, 3), randIntInclusive(1, 3)),
+			new TileClassPainter(clWater)
+		],
+		avoidClasses(clPlayer, 24, clWater, 12),
+		2
+	);
+}
+
+g_Map.log("Creating reeds");
+var group = new SimpleGroup(
+	[new SimpleObject(aReeds, 5,10, 0,4), new SimpleObject(aLillies, 0,1, 0,4)], true
+);
+createObjectGroupsByAreas(group, 0,
+//	[borderClasses(clWater, 3, 0), stayClasses(clWater, 1)],
+	[avoidClasses(clLand, 0)],
+	numLakes, 100,
+	waterAreas
+);
 
 g_Map.log("Painting cliffs");
 createArea(
@@ -162,18 +179,6 @@ createArea(
 		new SlopeConstraint(2, Infinity)
 	]);
 
-///* These bumps go down not up */
-//createBumps(
-	//avoidClasses(clPlayer, 20, clHill, 5),
-	//scaleByMapSize(20, 40), // count
-	//1, // minSize
-	//4, // maxSize
-	////Math.floor(scaleByMapSize(2, 5)), // spread
-	//Math.floor(scaleByMapSize(2, 5)), // spread
-	//0, //failFraction
-	//-1.0 // elevation
-//);
-
 g_Map.log("Marking water");
 createArea(
 	new MapBoundsPlacer(),
@@ -181,7 +186,20 @@ createArea(
 	new HeightConstraint(-Infinity, heightWaterLevel));
 Engine.SetProgress(30);
 
-createBumps(avoidClasses(clPlayer, 20, clHill, 2, clWater, 2));
+g_Map.log("Marking land");
+createArea(
+	new DiskPlacer(fractionToTiles(0.5), mapCenter),
+	new TileClassPainter(clLand),
+	avoidClasses(clWater, 0));
+
+createBumps(avoidClasses(clHill, 2, clPlayer, 20), scaleByMapSize(20, 40), 1, 4, Math.floor(scaleByMapSize(2, 5))); // spread)
+
+/* creating bumps may change the water or land, so re-mark them */
+g_Map.log("Marking water");
+createArea(
+	new MapBoundsPlacer(),
+	new TileClassPainter(clWater),
+	new HeightConstraint(-Infinity, heightWaterLevel));
 
 g_Map.log("Marking land");
 createArea(
@@ -264,7 +282,7 @@ createDecoration(
 		planetm * scaleByMapSize(13, 200),
 		planetm * scaleByMapSize(13, 200)
 	],
-	avoidClasses(clPath, 2, clWater, 1, clForest, 0, clPlayer, 0, clHill, 0));
+	avoidClasses(clForest, 0, clPlayer, 0, clHill, 0));
 
 Engine.SetProgress(70);
 
@@ -296,7 +314,7 @@ Engine.SetProgress(85);
 
 createStragglerTrees(
 	[oTree1, oTree2, oTree4, oTree3],
-	avoidClasses(clPath, 2, clWater, 2, clForest, 8, clHill, 4, clPlayer, 12, clMetal, 6, clRock, 6, clFood, 1),
+	avoidClasses(clWater, 2, clForest, 8, clHill, 4, clPlayer, 12, clMetal, 6, clRock, 6, clFood, 1),
 	clForest,
 	stragglerTrees);
 
@@ -304,9 +322,9 @@ placePlayersNomad(clPlayer, avoidClasses(clWater, 2, clForest, 1, clMetal, 4, cl
 
 setWaterHeight(heightWaterLevel + SEA_LEVEL);
 setWaterTint(0.161, 0.286, 0.353);
-setWaterColor(0.129, 0.176, 0.259);
-//setWaterWaviness(1);
-//setWaterMurkiness(0.05);
-//setWaterType("ocean");
+setWaterColor(0.159, 0.279, 0.337);
+setWaterWaviness(3);
+setWaterMurkiness(.95);
+setWaterType("lake");
 
 g_Map.ExportMap();
