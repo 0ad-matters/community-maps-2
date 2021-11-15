@@ -119,41 +119,70 @@ if (!isNomad())
 			[
 				// new LayeredPainter([tRoad, tDirt, tRoad], [3, 6]),
 				new SmoothElevationPainter(ELEVATION_SET, heightLand, 0),
-				new SmoothElevationPainter(ELEVATION_MODIFY, heightMapCenter, 50),
+				new SmoothElevationPainter(ELEVATION_MODIFY, heightScale(heightMapCenter), 50),
 				new TileClassPainter(clPath)
 			]);
 	}
 }
 
+var waterAreas = [];
 g_Map.log("Creating lakes");
 var numLakes = Math.round(scaleByMapSize(1,4) * numPlayers);
-for (let passes = 0; passes < numLakes; passes++)
+var lakeSize;
+var lakeCoherence;
+var lakeBorderSmoothness;
+var lakeBlendRadius;
+var lakeMaxRndDiff;
+/* These lakes aren't very deep; units can walk over them, so it doesn't have to avoid clPath */
+for (let passes = 0; passes < 6; passes++)
 {
-	var waterAreas = createAreas(
-		new ClumpPlacer(scaleByMapSize(randIntInclusive(40, 70), randIntInclusive(180, 280)), randFloat(0.3, 0.9), randFloat(0.2, 0.9), Infinity),
+	lakeSize = scaleByMapSize(randIntInclusive(40, 70), randIntInclusive(180, 280));
+	lakeCoherence = randFloat(0.2, 0.8);
+	lakeBorderSmoothness = randFloat(0.1, 0.9);
+
+	waterAreas = createAreas(
+		new ClumpPlacer(
+			lakeSize,
+			lakeCoherence, // coherence - How much the radius of the clump varies (1 = circle, 0 = very random).
+			lakeBorderSmoothness, // smoothness - How smooth the border of the clump is (1 = few "peaks", 0 = very jagged).
+			Infinity),
 		[
 			new LayeredPainter([tShoreBlend, tShore, tWater], [1, 1]),
-			new SmoothElevationPainter(ELEVATION_SET, heightWaterLevel - heightScale(randIntInclusive(1, 5)), randIntInclusive(1, 3), randIntInclusive(1, 3)),
+			new SmoothElevationPainter(
+				ELEVATION_SET,
+				heightWaterLevel - heightScale(1), // elevation - target height.
+				2, // blendRadius - How steep the elevation change is.
+				1), // randomElevation - maximum random elevation difference added to each vertex.
+			new TileClassPainter(clWater)
+		],
+		avoidClasses(clPlayer, 24, clWater, 12),
+		1
+	).concat(waterAreas);
+}
+
+/* These may be a little deeper, so they won't be placed on any marked Paths */
+for (let passes = 0; passes < numLakes; passes++)
+{
+	lakeSize = scaleByMapSize(randIntInclusive(40, 70), randIntInclusive(180, 280));
+	lakeCoherence = randFloat(0.2, 0.8);
+	lakeBorderSmoothness = randFloat(0.1, 0.9);
+	lakeBlendRadius = randFloat(1.0, 4.0);
+	lakeMaxRndDiff = randFloat(1.0, 5.0);
+
+	waterAreas = createAreas(
+		new ClumpPlacer(lakeSize, lakeCoherence, lakeBorderSmoothness, Infinity),
+		[
+			new LayeredPainter([tShoreBlend, tShore, tWater], [1, 1]),
+			new SmoothElevationPainter(
+				ELEVATION_SET,
+				heightWaterLevel - heightScale(randIntInclusive(1, 5)),
+				lakeBlendRadius,
+				lakeMaxRndDiff),
 			new TileClassPainter(clWater)
 		],
 		avoidClasses(clPath, 0, clPlayer, 24, clWater, 12),
 		1
-	);
-}
-
-/* These lakes aren't very deep; units can walk over them, so it doesn't have to avoid clPath */
-for (let passes = 0; passes < 4; passes++)
-{
-	var waterAreas = createAreas(
-		new ClumpPlacer(scaleByMapSize(randIntInclusive(40, 70), randIntInclusive(180, 280)), randFloat(0.3, 0.9), randFloat(0.2, 0.9), Infinity),
-		[
-			new LayeredPainter([tShoreBlend, tShore, tWater], [1, 1]),
-			new SmoothElevationPainter(ELEVATION_SET, heightWaterLevel - heightScale(1), randIntInclusive(1, 3), randIntInclusive(1, 3)),
-			new TileClassPainter(clWater)
-		],
-		avoidClasses(clPlayer, 24, clWater, 12),
-		2
-	);
+	).concat(waterAreas);
 }
 
 g_Map.log("Creating reeds");
@@ -324,7 +353,7 @@ setWaterHeight(heightWaterLevel + SEA_LEVEL);
 setWaterTint(0.161, 0.286, 0.353);
 setWaterColor(0.159, 0.279, 0.337);
 setWaterWaviness(3);
-setWaterMurkiness(.95);
+setWaterMurkiness(.85);
 setWaterType("lake");
 
 g_Map.ExportMap();
