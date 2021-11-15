@@ -10,6 +10,8 @@ maps can be easily accessed in game with the filter "Community Maps".
 
 | Map Name | Author | Link | Publication Date |
 |----------|--------|------|------------------|
+| Mainland balanced | [Feldfeld](https://wildfiregames.com/forum/profile/22154-feldfeld/) | [Forum](https://wildfiregames.com/forum/topic/53880-feldmap-a25/) | 2021-08-27 |
+| Alpine Mountains | [Feldfeld](https://wildfiregames.com/forum/profile/22154-feldfeld/) | [Forum](https://wildfiregames.com/forum/topic/53880-feldmap-a25/) | 2021-08-27 |
 | Jammy's Despair | andy5995, Jammyjamjamman | [Forum](https://wildfiregames.com/forum/topic/62726-jammys-despair/) | 2021-11-12 |
 | Corinthian Isthmus II | andy5995, Jammyjamjamman | [Forum](https://wildfiregames.com/forum/topic/61741-corinthian-isthmus-ii/) | 2021-10-30 |
 | Yekaterinaville | [andy5995](https://wildfiregames.com/forum/profile/21632-andy5995/) | [Forum](https://wildfiregames.com/forum/topic/60909-mainland-rectangled/?do=findComment&comment=461162) | 2021-10-23 |

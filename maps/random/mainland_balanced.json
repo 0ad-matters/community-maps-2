@@ -1,0 +1,11 @@
+{
+	"settings" : {
+		"Name" : "Mainland balanced",
+		"Script" : "mainland_balanced.js",
+		"Description" : "A typical map without any water. Balanced food start",
+		"Preview" : "mainland.png",
+		"Keywords": ["multiplayer", "community"],
+		"SupportedBiomes": "mainland_balanced/",
+		"CircularMap" : true
+	}
+}

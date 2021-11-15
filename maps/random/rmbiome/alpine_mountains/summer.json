@@ -1,0 +1,29 @@
+{
+	"Description": {
+		"Title": "Summer",
+		"Description": "Summer"
+	},
+	"Terrains": {
+		"grassA": "steppe_grass_02",
+		"grassB": "steppe_grass_03",
+		"grassC": "steppe_grass_dirt_03",
+		"forestFloor": "steppe_grass_dirt_02"
+	},
+	"Gaia": {
+		"pine" : "gaia/tree/pine",
+		"firA": "gaia/tree/fir",
+		"firB": "gaia/tree/fir_sapling",
+		"berry": "gaia/fruit/berry_02"
+	},
+	"Decoratives": {
+		"rocks": [
+			"actor|geology/highland1.xml",
+			"actor|geology/highland_d.xml",
+			"actor|geology/highland_e.xml",
+			"actor|geology/highland2.xml",
+			"actor|geology/highland3.xml",
+			"actor|geology/highland_c.xml",
+			"actor|geology/gray1.xml"
+		]
+	}
+}

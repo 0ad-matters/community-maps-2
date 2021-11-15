@@ -1,0 +1,24 @@
+{
+	"Description": {
+		"Title": "Winter",
+		"Description": "Winter"
+	},
+	"Terrains": {
+		"grassA": "alpine_snow_02",
+		"grassB": "alpine_snow_01",
+		"grassC": "alpine_snow_03",
+		"forestFloor": "alpine_snow_02"
+	},
+	"Gaia": {
+		"pine" : "gaia/tree/pine_w",
+		"firA": "gaia/tree/fir_winter",
+		"firB": "gaia/tree/fir_winter",
+		"berry": "gaia/tree/bush_temperate_winter"
+	},
+	"Decoratives": {
+		"rocks": [
+			"actor|geology/stone_granite_med.xml",
+			"actor|geology/stone_granite_large.xml"
+		]
+	}
+}
