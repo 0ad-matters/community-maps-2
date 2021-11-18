@@ -8,7 +8,7 @@ Engine.LoadLibrary("rmbiome");
 if (g_MapSettings.Biome)
 	setSelectedBiome();
 else
-	setBiome("alpine_mountains/winter");
+	setBiome("alpine_mountains/summer");
 
 const tForestfloor = g_Terrains.forestFloor;
 const tForestfloorSnow = "alpine_forrestfloor_snow";
