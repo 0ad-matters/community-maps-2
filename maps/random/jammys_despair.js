@@ -204,7 +204,6 @@ createArea(
 		new TileClassPainter(clHill),
 	],
 	[
-		avoidClasses(clWater, 2),
 		new SlopeConstraint(2, Infinity)
 	]);
 
