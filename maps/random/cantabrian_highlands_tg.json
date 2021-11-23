@@ -1,0 +1,12 @@
+{
+	"settings" : {
+		"Name" : "Cantabrian Highlands TG",
+		"Script" : "cantabrian_highlands_tg.js",
+		"Description" : "Each player starts on a hill surrounded by steep cliffs. Inspired by Cantabria, a mountainous region in the north of the Iberian peninsula.",
+		"SupportedBiomes": "generic/",
+		"Keywords": ["multiplayer", "community"],
+		"Preview" : "cantabrian_highlands.png",
+		"CircularMap" : true,
+		"TeamPlacements": ["besideAllies"]
+	}
+}

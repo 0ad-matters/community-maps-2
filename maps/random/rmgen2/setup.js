@@ -155,8 +155,10 @@ function pickSize(sizes)
  */
 function createBasesByPattern(type, distance, groupedDistance, startAngle, createBasesFunc=createBases)
 {
-	g_Map.log("Creating bases");
-	return createBasesFunc(...g_PlayerbaseTypes[type].getPosition(distance, groupedDistance, startAngle), g_PlayerbaseTypes[type].walls);
+	let [playerIDs, playerPosition, playerAngle] = g_PlayerbaseTypes[type].getPosition(distance, groupedDistance, startAngle);
+	let playerPosData = createBasesFunc(playerIDs, playerPosition, g_PlayerbaseTypes[type].walls);
+	playerPosData.push(playerAngle);
+	return playerPosData;
 }
 
 function createBases(playerIDs, playerPosition, walls)
