@@ -1,3 +1,7 @@
+// lightly modified Cantabrian Highlands random map to use "Beside Allies" placement
+// License: GPL2
+// Authors: Andy Alt, James Sherratt (based on code written by the 0AD project)
+
 Engine.LoadLibrary("rmgen");
 Engine.LoadLibrary("rmgen-common");
 Engine.LoadLibrary("rmgen2");
@@ -74,7 +78,7 @@ var playerHillRadius = defaultPlayerBaseRadius() / (isNomad() ? 1.5 : 1);
 
 if (!isNomad())
 {
-	let pattern = g_MapSettings.TeamPlacement || pickRandom(Object.keys(g_PlayerbaseTypes));
+	let pattern = "besideAllies";
 	var [playerIDs, playerPosition, playerAngle] = createBasesByPattern(
 		pattern,
 		g_PlayerbaseTypes[pattern].distance,

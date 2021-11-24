@@ -6,7 +6,6 @@
 		"SupportedBiomes": "generic/",
 		"Keywords": ["multiplayer", "community"],
 		"Preview" : "cantabrian_highlands.png",
-		"CircularMap" : true,
-		"TeamPlacements": ["besideAllies"]
+		"CircularMap" : true
 	}
 }
