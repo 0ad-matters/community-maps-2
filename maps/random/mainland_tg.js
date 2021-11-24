@@ -102,7 +102,7 @@ if (!isNomad())
 	let pattern = g_MapSettings.TeamPlacement || pickRandom(Object.keys(g_PlayerbaseTypes));
 	createBasesByPattern(
 		pattern,
-		fractionToTiles(0.35),
+		g_PlayerbaseTypes[pattern].distance,
 		g_PlayerbaseTypes[pattern].groupedDistance,
 		randomAngle(),
 		createBasesMainland);

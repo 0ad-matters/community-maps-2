@@ -80,9 +80,9 @@ var g_PlayerbaseTypes = {
 		"walls": false
 	},
 	"besideAllies": {
-		"getPosition": (distance, groupedDistance, startAngle) => playerPlacementMultiArcs(sortAllPlayers(), distance, startAngle, randFloat(0.6, 0.8)),
-		"distance": fractionToTiles(randFloat(0.2, 0.35)),
-		"groupedDistance": fractionToTiles(randFloat(0.08, 0.1)),
+		"getPosition": (distance, groupedDistance, startAngle) => playerPlacementMultiArcs(sortAllPlayers(), distance, startAngle),
+		"distance": fractionToTiles(randFloat(0.3, 0.35)),
+		"groupedDistance": null, // The gap between allies is computed within the function
 		"walls": false
 	}
 };
