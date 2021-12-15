@@ -1,0 +1,12 @@
+{
+	"settings" : {
+		"Name" : "Povorotnaya",
+		"Script" : "povorotnaya.js",
+		"Description" : "plenty of resources and a lot of ridges, that breaks up the map",
+		"BaseTerrain" : ["alpine"],
+		"BaseHeight" : 10,
+		"Keywords": ["community"],
+		"Preview" : "povorotnaya.png",
+		"CircularMap" : true
+	}
+}

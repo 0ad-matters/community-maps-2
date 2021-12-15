@@ -10,6 +10,7 @@ maps can be easily accessed in game with the filter "Community Maps".
 
 | Map Name | Author | Link | Publication Date |
 |----------|--------|------|------------------|
+| Povorotnaya | [norjay](https://wildfiregames.com/forum/profile/35479-norjay/) | [Forum](https://wildfiregames.com/forum/topic/63618-random-povorotnaya/) | 2021-11-27 |
 | Mainland balanced | [Feldfeld](https://wildfiregames.com/forum/profile/22154-feldfeld/) | [Forum](https://wildfiregames.com/forum/topic/53880-feldmap-a25/) | 2021-08-27 |
 | Alpine Mountains | [Feldfeld](https://wildfiregames.com/forum/profile/22154-feldfeld/) | [Forum](https://wildfiregames.com/forum/topic/53880-feldmap-a25/) | 2021-08-27 |
 | Jammy's Despair | andy5995, Jammyjamjamman | [Forum](https://wildfiregames.com/forum/topic/62726-jammys-despair/) | 2021-11-12 |
