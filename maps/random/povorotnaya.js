@@ -282,7 +282,7 @@ function Brush() {
 		}
 	}
 	val.sort(function(a,b){return a["r"]-b["r"]});
-	
+
 	this.get = function(maxV) {
 		var result = [];
 		var i = 0;
@@ -295,7 +295,7 @@ function Brush() {
 				i++;
 			}
 			else i = val.length;
-		} 
+		}
 		return result;
 	}
 	return this;
@@ -431,12 +431,12 @@ function placeBaseElement(player, angle, x, y, entity) {
 		g_Map.placeEntityAnywhere(entity, player, {"x":vx, "y":vy}, randomAngle());
 	}
 	return {"x": vx, "y": vy};
-	
+
 }
 
 if (true) {
 	var brush = new Brush();
-	
+
 	// create the map of Objects
 	try {
 		var map = Array();
@@ -451,15 +451,15 @@ if (true) {
 	catch (e) {
 		g_Map.log("Exception creating the map ");
 	};
-	
+
 	if (true) {
 		setPattern1(margin_trees1, size_trees1, setForest2, 0.8);
 	}
-	
+
 	if (true) {
 		setPattern2(30, 10, setForest1, 0.8);
 	}
-	
+
 	if (false) {
 		// some ridges to deter movements for multi player to the next base
 		var wStep = 2 * Math.PI / numPlayers;
@@ -469,14 +469,14 @@ if (true) {
 			var sw1 = Math.sin(w), cw1 = Math.cos(w);
 			var sw2 = Math.sin(w), cw2 = Math.cos(w);
 			var px0 = 0.5 * dd + (0.5 * dd - 1) * sw0;
-			var py0 = 0.5 * dd + (0.5 * dd - 1) * cw0;		
+			var py0 = 0.5 * dd + (0.5 * dd - 1) * cw0;
 			var px1 = 0.5 * dd + Math.max(0.2 * dd, 0.5 * dd - 30) * sw0;
-			var py1 = 0.5 * dd + Math.max(0.2 * dd, 0.5 * dd - 30) * cw0;		
+			var py1 = 0.5 * dd + Math.max(0.2 * dd, 0.5 * dd - 30) * cw0;
 			// g_Map.log("line " + px0 + "," + py0 + " " + px1 + "," + py1);
 			line(px0,py0,px1,py1, 3, setHill1);
 		}
 	}
-	
+
 	if (true) {
 		// random displacement of start and ende of the ridge
 		// set this to zero to get a plain view on the math
@@ -503,7 +503,7 @@ if (true) {
 			// line(rix0 + rndP*(Math.random()-0.5),riy0 + rndP*(Math.random()-0.5),rnx0 + rndP*(Math.random()-0.5),rny0 + rndP*(Math.random()-0.5), 3, setHill1);
 		}
 	}
-	
+
 
 	// set the bases
 	for (var i = 1; i < (numPlayers + 1); i++) {
@@ -520,37 +520,37 @@ if (true) {
 		var sw3 = Math.sin(w3), cw3 = Math.cos(w3);
 		var sw4 = Math.sin(w4), cw4 = Math.cos(w4);
 		var px = 0.5 * dd + (0.5 * dd - 40) * sw;
-		var py = 0.5 * dd + (0.5 * dd - 40) * cw;		
+		var py = 0.5 * dd + (0.5 * dd - 40) * cw;
 		g_Map.placeEntityAnywhere("skirmish/structures/default_civil_centre", i, {"x":px, "y":py}, -w + 1.5 * Math.PI);
-		
+
 		if (true) {
 			setPoint(px,py,32,setBase);
-					
+
 			placeBaseElement(i,w,-6,1.2,"skirmish/units/default_support_female_citizen");
 			placeBaseElement(i,w,-6,0.4,"skirmish/units/default_support_female_citizen");
 			placeBaseElement(i,w,-6,-0.4,"skirmish/units/default_support_female_citizen");
 			placeBaseElement(i,w,-6,-1.4,"skirmish/units/default_support_female_citizen");
-			
+
 			placeBaseElement(i,w,-7,1.2,"skirmish/units/default_infantry_melee_b");
 			placeBaseElement(i,w,-7,0.4,"skirmish/units/default_infantry_ranged_b");
 			placeBaseElement(i,w,-7,-0.4,"skirmish/units/default_infantry_melee_b");
 			placeBaseElement(i,w,-7,-1.4,"skirmish/units/default_infantry_ranged_b");
-			
-			placeBaseElement(i,w,9,1.5,flora_berry);
-			placeBaseElement(i,w,9,0.5,flora_berry);
-			placeBaseElement(i,w,9,-0.5,flora_berry);
-			placeBaseElement(i,w,9,-1.5,flora_berry);
-					
+
+			for (let m = -1.5;m < 2 ;m++ )
+			{
+				placeBaseElement(0,w,9,m,flora_berry);
+			}
+
 			var mine = placeBaseElement(i,w,8,-12,mine_stone);
 			setPoint(mine.x,mine.y,5,setMine);
 			var mine = placeBaseElement(i,w,8,12,mine_metal);
 			setPoint(mine.x,mine.y,5,setMine);
-			
+
 			var mine = placeBaseElement(i,w,5,40,mine_stone);
 			setPoint(mine.x,mine.y,5,setMine);
 			var mine = placeBaseElement(i,w,5,-40,mine_metal);
 			setPoint(mine.x,mine.y,5,setMine);
-			
+
 			if (60 < dd / numPlayers) {
 				// for big maps some extra-mines
 				var px0a = 0.5 * dd + (0.5 * dd - 10) * sw0;
@@ -566,7 +566,7 @@ if (true) {
 				g_Map.placeEntityAnywhere(mine_metal, i, {"x":px2a, "y":py2a}, randomAngle());
 				setPoint(px2a,py2a,5,setMine);
 			}
-			
+
 			if (105 < dd / numPlayers) {
 				// for bigger maps more extra-mines
 				var px0a = 0.5 * dd + (0.5 * dd - 70) * sw0;
@@ -582,9 +582,9 @@ if (true) {
 				g_Map.placeEntityAnywhere(mine_metal, i, {"x":px2a, "y":py2a}, randomAngle());
 				setPoint(px2a,py2a,5,setMine);
 			}
-		}		
+		}
 	}
-	
+
 	// render
 	g_Map.log("start rendering");
 	for (var i=0; i<dd; i++) {
