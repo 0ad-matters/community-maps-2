@@ -114,3 +114,8 @@ removed)
 If you use the Arch user repository, you can install the
 [0ad-community-maps-2
 package](https://aur.archlinux.org/packages/0ad-community-maps-2/).
+
+## Map-making Tips
+
+* [Creating a map preview](https://trac.wildfiregames.com/wiki/Atlas_Manual_Map_Preview)
+* [How to easily turn ANY Country into a 0AD Map](https://www.youtube.com/watch?v=yBFdxOE7UFw)
