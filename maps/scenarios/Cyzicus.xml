@@ -9163,7 +9163,7 @@
 			<Actor seed="4855"/>
 		</Entity>
 		<Entity uid="1515">
-			<Template>units/pers/infantry_javelinist_b</Template>
+			<Template>units/pers/infantry_javelineer_b</Template>
 			<Player>2</Player>
 			<Position x="282.33063" z="1271.2942"/>
 			<Orientation y="1.71206"/>
@@ -9632,7 +9632,7 @@
 			<Actor seed="33875"/>
 		</Entity>
 		<Entity uid="1588">
-			<Template>units/athen/infantry_javelinist_b</Template>
+			<Template>units/athen/infantry_javelineer_b</Template>
 			<Player>3</Player>
 			<Position x="767.90674" z="1415.94935"/>
 			<Orientation y="-3.66076"/>

@@ -15254,28 +15254,28 @@
 			<Actor seed="4210"/>
 		</Entity>
 		<Entity uid="2535">
-			<Template>units/brit/champion_infantry</Template>
+			<Template>units/brit/champion_infantry_swordsman</Template>
 			<Player>3</Player>
 			<Position x="574.64875" z="43.62658"/>
 			<Orientation y="6.88057"/>
 			<Actor seed="29766"/>
 		</Entity>
 		<Entity uid="2536">
-			<Template>units/brit/champion_infantry</Template>
+			<Template>units/brit/champion_infantry_swordsman</Template>
 			<Player>3</Player>
 			<Position x="577.29011" z="41.78574"/>
 			<Orientation y="6.88057"/>
 			<Actor seed="29766"/>
 		</Entity>
 		<Entity uid="2537">
-			<Template>units/brit/champion_infantry</Template>
+			<Template>units/brit/champion_infantry_swordsman</Template>
 			<Player>3</Player>
 			<Position x="579.76056" z="39.92939"/>
 			<Orientation y="6.88057"/>
 			<Actor seed="29766"/>
 		</Entity>
 		<Entity uid="2538">
-			<Template>units/brit/champion_infantry</Template>
+			<Template>units/brit/champion_infantry_swordsman</Template>
 			<Player>3</Player>
 			<Position x="582.43317" z="38.35288"/>
 			<Orientation y="6.88057"/>
@@ -15289,7 +15289,7 @@
 			<Actor seed="35176"/>
 		</Entity>
 		<Entity uid="2540">
-			<Template>units/brit/champion_infantry</Template>
+			<Template>units/brit/champion_infantry_swordsman</Template>
 			<Player>3</Player>
 			<Position x="585.34491" z="36.21906"/>
 			<Orientation y="6.88057"/>
@@ -15817,42 +15817,42 @@
 			<Actor seed="34498"/>
 		</Entity>
 		<Entity uid="2638">
-			<Template>units/brit/champion_infantry</Template>
+			<Template>units/brit/champion_infantry_swordsman</Template>
 			<Player>3</Player>
 			<Position x="573.9477" z="41.04987"/>
 			<Orientation y="0.60396"/>
 			<Actor seed="45248"/>
 		</Entity>
 		<Entity uid="2639">
-			<Template>units/brit/champion_infantry</Template>
+			<Template>units/brit/champion_infantry_swordsman</Template>
 			<Player>3</Player>
 			<Position x="576.5254" z="38.90282"/>
 			<Orientation y="0.32076"/>
 			<Actor seed="51649"/>
 		</Entity>
 		<Entity uid="2640">
-			<Template>units/brit/champion_infantry</Template>
+			<Template>units/brit/champion_infantry_swordsman</Template>
 			<Player>3</Player>
 			<Position x="579.72461" z="37.10354"/>
 			<Orientation y="0.30086"/>
 			<Actor seed="27753"/>
 		</Entity>
 		<Entity uid="2641">
-			<Template>units/brit/champion_infantry</Template>
+			<Template>units/brit/champion_infantry_swordsman</Template>
 			<Player>3</Player>
 			<Position x="583.18561" z="35.25123"/>
 			<Orientation y="0.56394"/>
 			<Actor seed="65435"/>
 		</Entity>
 		<Entity uid="2642">
-			<Template>units/brit/infantry_javelinist_b</Template>
+			<Template>units/brit/infantry_javelineer_b</Template>
 			<Player>3</Player>
 			<Position x="575.13996" z="34.65236"/>
 			<Orientation y="0.38234"/>
 			<Actor seed="30279"/>
 		</Entity>
 		<Entity uid="2643">
-			<Template>units/brit/infantry_javelinist_b</Template>
+			<Template>units/brit/infantry_javelineer_b</Template>
 			<Player>3</Player>
 			<Position x="579.87262" z="27.81658"/>
 			<Orientation y="0.57036"/>
@@ -15901,21 +15901,21 @@
 			<Actor seed="15526"/>
 		</Entity>
 		<Entity uid="2650">
-			<Template>units/brit/infantry_javelinist_b</Template>
+			<Template>units/brit/infantry_javelineer_b</Template>
 			<Player>3</Player>
 			<Position x="583.22004" z="29.11443"/>
 			<Orientation y="-0.15096"/>
 			<Actor seed="40697"/>
 		</Entity>
 		<Entity uid="2651">
-			<Template>units/brit/infantry_javelinist_b</Template>
+			<Template>units/brit/infantry_javelineer_b</Template>
 			<Player>3</Player>
 			<Position x="581.6709" z="26.89739"/>
 			<Orientation y="0.37533"/>
 			<Actor seed="54293"/>
 		</Entity>
 		<Entity uid="2652">
-			<Template>units/brit/infantry_javelinist_b</Template>
+			<Template>units/brit/infantry_javelineer_b</Template>
 			<Player>3</Player>
 			<Position x="576.51618" z="27.21456"/>
 			<Orientation y="0.40156"/>
@@ -18118,7 +18118,7 @@
 			<Actor seed="45298"/>
 		</Entity>
 		<Entity uid="3247">
-			<Template>units/rome/champion_infantry</Template>
+			<Template>units/rome/champion_infantry_spearman</Template>
 			<Player>2</Player>
 			<Position x="799.68165" z="547.25971"/>
 			<Orientation y="-2.15928"/>
@@ -18132,14 +18132,14 @@
 			<Actor seed="19318"/>
 		</Entity>
 		<Entity uid="3285">
-			<Template>units/rome/champion_infantry</Template>
+			<Template>units/rome/champion_infantry_spearman</Template>
 			<Player>2</Player>
 			<Position x="835.93659" z="615.3628"/>
 			<Orientation y="-8.4842"/>
 			<Actor seed="49575"/>
 		</Entity>
 		<Entity uid="3286">
-			<Template>units/rome/champion_infantry</Template>
+			<Template>units/rome/champion_infantry_spearman</Template>
 			<Player>2</Player>
 			<Position x="811.92823" z="533.96735"/>
 			<Orientation y="-2.1593"/>
@@ -18535,7 +18535,7 @@
 			<Actor seed="46581"/>
 		</Entity>
 		<Entity uid="3456">
-			<Template>units/rome/champion_infantry</Template>
+			<Template>units/rome/champion_infantry_spearman</Template>
 			<Player>2</Player>
 			<Position x="845.71454" z="605.47913"/>
 			<Orientation y="-8.52007"/>

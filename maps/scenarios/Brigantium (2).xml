@@ -20307,7 +20307,7 @@
 			<Actor seed="61320"/>
 		</Entity>
 		<Entity uid="3350">
-			<Template>units/brit/infantry_javelinist_b</Template>
+			<Template>units/brit/infantry_javelineer_b</Template>
 			<Player>1</Player>
 			<Position x="1659.47645" z="786.2328"/>
 			<Orientation y="-0.05239"/>
@@ -20405,7 +20405,7 @@
 			<Actor seed="17688"/>
 		</Entity>
 		<Entity uid="3391">
-			<Template>units/rome/infantry_javelinist_b</Template>
+			<Template>units/rome/infantry_javelineer_b</Template>
 			<Player>2</Player>
 			<Position x="928.35132" z="734.5959"/>
 			<Orientation y="2.35621"/>
@@ -20748,7 +20748,7 @@
 			<Actor seed="62788"/>
 		</Entity>
 		<Entity uid="3550">
-			<Template>units/rome/infantry_javelinist_b</Template>
+			<Template>units/rome/infantry_javelineer_b</Template>
 			<Player>2</Player>
 			<Position x="843.16425" z="361.741"/>
 			<Orientation y="1.55646"/>
@@ -20888,7 +20888,7 @@
 			<Actor seed="13406"/>
 		</Entity>
 		<Entity uid="3654">
-			<Template>units/rome/infantry_javelinist_b</Template>
+			<Template>units/rome/infantry_javelineer_b</Template>
 			<Player>2</Player>
 			<Position x="932.22565" z="738.0915"/>
 			<Orientation y="2.35621"/>

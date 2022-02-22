@@ -161,13 +161,13 @@
 			<Orientation y="2.35621"/>
 		</Entity>
 		<Entity uid="157">
-			<Template>units/mace/infantry_javelinist_b</Template>
+			<Template>units/mace/infantry_javelineer_b</Template>
 			<Player>1</Player>
 			<Position x="185.23523" z="619.15375"/>
 			<Orientation y="0.78541"/>
 		</Entity>
 		<Entity uid="158">
-			<Template>units/mace/infantry_javelinist_b</Template>
+			<Template>units/mace/infantry_javelineer_b</Template>
 			<Player>1</Player>
 			<Position x="187.55994" z="623.73615"/>
 			<Orientation y="0.78541"/>

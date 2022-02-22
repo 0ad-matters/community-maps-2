@@ -8309,7 +8309,7 @@
 			<Actor seed="54222"/>
 		</Entity>
 		<Entity uid="1416">
-			<Template>structures/cart/embassy_italiote</Template>
+			<Template>structures/cart/embassy_italic</Template>
 			<Player>2</Player>
 			<Position x="914.46381" z="581.57618"/>
 			<Orientation y="3.12795"/>

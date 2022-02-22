@@ -29303,7 +29303,7 @@
 			<Actor seed="54592"/>
 		</Entity>
 		<Entity uid="5706">
-			<Template>units/mace/hero_alexander</Template>
+			<Template>units/mace/hero_alexander_iii</Template>
 			<Player>1</Player>
 			<Position x="542.89483" z="886.54343"/>
 			<Orientation y="1.19834"/>
