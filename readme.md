@@ -70,12 +70,9 @@ maps can be easily accessed in game with the filter "Community Maps".
 | First Battle of Numantia | [Lankusnav](https://wildfiregames.com/forum/index.php?/profile/22485-lankusnav/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/22255-numantia-scenarios/) | 2017-05-01 |
 | Siege of Numantia | [Lankusnav](https://wildfiregames.com/forum/index.php?/profile/22485-lankusnav/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/22255-numantia-scenarios/) | 2017-05-01 |
 | Siege of Greece | [Skhorn](https://wildfiregames.com/forum/index.php?/profile/16493-skhorn/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/21503-scenario-siege-of-greece/) | 2016-12-23 |
-| 0 A.D. Community Eyecandy Map | (\*) | [Forum](https://wildfiregames.com/forum/index.php?/topic/16913-the-great-community-map-10/) | 2016-12-15 |
 | Raiders in the Alps (3) | [Sidi](https://wildfiregames.com/forum/index.php?/profile/21697-sidi/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/21030-scenario-a-roman-invasion-in-the-alps/) | 2016-08-10 |
 | Qart Hadasht (Cartagena Punica) | [tavius1994](https://wildfiregames.com/forum/index.php?/profile/21651-tavius1994/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/20976-new-map-qart-hadast-punic-carthagonova/) | 2016-07-17 |
 | Obsidio Cyzicus | [Garaf](https://wildfiregames.com/forum/index.php?/profile/21410-garaf/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/20741-scenario-obsidio-cyzicus/) | 2016-05-09 |
-
-(\*) [Kimball](https://wildfiregames.com/forum/index.php?/profile/2104-kimball/), [Yodaspirine](https://wildfiregames.com/forum/index.php?/profile/9973-yodaspirine/), [idanwin](https://wildfiregames.com/forum/index.php?/profile/4287-idanwin/), [fcxSanya](https://wildfiregames.com/forum/index.php?/profile/9635-fcxsanya/), [Lion.Kanzen](https://wildfiregames.com/forum/index.php?/profile/13202-lionkanzen/), [niektb](https://wildfiregames.com/forum/index.php?/profile/15513-niektb/), [svott](https://wildfiregames.com/forum/index.php?/profile/21134-svott/), [Skhorn](https://wildfiregames.com/forum/index.php?/profile/16493-skhorn/)
 
 Checked all forum threads updated from 2016 onwards.
 
