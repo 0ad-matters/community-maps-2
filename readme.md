@@ -60,7 +60,6 @@ maps can be easily accessed in game with the filter "Community Maps".
 | Asian Campaign III a.C. | [imperium](https://wildfiregames.com/forum/index.php?/profile/21662-imperium/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/25958-new-map-20-asia/) | 2019-05-12 |
 | Mappa Europea III Secolo a.C. | [imperium](https://wildfiregames.com/forum/index.php?/profile/21662-imperium/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/25413-new-map-europe/) | 2019-02-26 |
 | Paradise valley | [Nevar](https://wildfiregames.com/forum/index.php?/profile/28458-nevar/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/25087-skirmish-paradise-valley-4/) | 2018-11-23 |
-| Halicarnassus | [Skhorn](https://wildfiregames.com/forum/index.php?/profile/16493-skhorn/) | [Github](https://github.com/Skhorn/0AD-map-pack) | 2018-05-19 |
 | Constantinople: Midnight Assault | [Skhorn](https://wildfiregames.com/forum/index.php?/profile/16493-skhorn/) | [Github](https://github.com/Skhorn/0AD-map-pack) | 2018-05-16 |
 | Mesina | [Tiber7](https://wildfiregames.com/forum/index.php?/profile/21360-tiber7/) and [Skhorn](https://wildfiregames.com/forum/index.php?/profile/16493-skhorn/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/21948-the-first-punic-war-campaign-project/) | 2018-03-10 |
 | Invasion of Brittania | [KzoneDD](https://wildfiregames.com/forum/index.php?/profile/27214-kzonedd/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/24023-change-player-setup-map-wip/) | 2018-02-20 |
