@@ -15161,56 +15161,56 @@
 			<Actor seed="21682"/>
 		</Entity>
 		<Entity uid="2429">
-			<Template>units/viking_longboat</Template>
+			<Template>units/viking_longship</Template>
 			<Player>0</Player>
 			<Position x="1261.51075" z="277.11152"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="36302"/>
 		</Entity>
 		<Entity uid="2430">
-			<Template>units/viking_longboat</Template>
+			<Template>units/viking_longship</Template>
 			<Player>0</Player>
 			<Position x="766.81104" z="77.77967"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="39102"/>
 		</Entity>
 		<Entity uid="2431">
-			<Template>units/viking_longboat</Template>
+			<Template>units/viking_longship</Template>
 			<Player>0</Player>
 			<Position x="1464.0558" z="800.69977"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="3578"/>
 		</Entity>
 		<Entity uid="2432">
-			<Template>units/viking_longboat</Template>
+			<Template>units/viking_longship</Template>
 			<Player>0</Player>
 			<Position x="1239.11707" z="1242.61292"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="48642"/>
 		</Entity>
 		<Entity uid="2433">
-			<Template>units/viking_longboat</Template>
+			<Template>units/viking_longship</Template>
 			<Player>0</Player>
 			<Position x="768.77167" z="1472.1172"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="35084"/>
 		</Entity>
 		<Entity uid="2434">
-			<Template>units/viking_longboat</Template>
+			<Template>units/viking_longship</Template>
 			<Player>0</Player>
 			<Position x="255.63404" z="1231.26282"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="63334"/>
 		</Entity>
 		<Entity uid="2435">
-			<Template>units/viking_longboat</Template>
+			<Template>units/viking_longship</Template>
 			<Player>0</Player>
 			<Position x="63.70984" z="767.3838"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="39762"/>
 		</Entity>
 		<Entity uid="2436">
-			<Template>units/viking_longboat</Template>
+			<Template>units/viking_longship</Template>
 			<Player>0</Player>
 			<Position x="307.15235" z="267.6698"/>
 			<Orientation y="2.35621"/>
