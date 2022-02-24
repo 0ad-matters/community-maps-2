@@ -18,4 +18,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build pyromod
-      run: sh .github/scripts/makepyromod-cm2.sh test
+      run: sh .github/scripts/makepyromod-cm2.sh test $HOME
