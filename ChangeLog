@@ -1,3 +1,8 @@
+2022-03-03
+
+  * Fix warnings (missing entities) on skirmishes/Arabia and
+  scenarios/Paradise Valley
+
 2022-02-22
 
   * removed Halicarnassus; appears to be an unfinished/abandoned map

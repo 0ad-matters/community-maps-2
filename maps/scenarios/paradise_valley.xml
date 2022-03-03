@@ -136,7 +136,7 @@
 ]]></ScriptSettings>
 	<Entities>
 		<Entity uid="12">
-			<Template>structures/desert_trading_post</Template>
+			<Template>structures/trading_post_desert</Template>
 			<Player>0</Player>
 			<Position x="756.84156" z="615.63007"/>
 			<Orientation y="1.64121"/>
@@ -2775,35 +2775,35 @@
 			<Actor seed="19818"/>
 		</Entity>
 		<Entity uid="444">
-			<Template>structures/sele/colonnade</Template>
+			<Template>structures/sele_colonnade</Template>
 			<Player>0</Player>
 			<Position x="739.97999" z="570.87043"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="58204"/>
 		</Entity>
 		<Entity uid="445">
-			<Template>structures/sele/colonnade</Template>
+			<Template>structures/sele_colonnade</Template>
 			<Player>0</Player>
 			<Position x="759.66614" z="647.7909"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="46707"/>
 		</Entity>
 		<Entity uid="446">
-			<Template>structures/sele/colonnade</Template>
+			<Template>structures/sele_colonnade</Template>
 			<Player>0</Player>
 			<Position x="782.63801" z="652.91187"/>
 			<Orientation y="0.99012"/>
 			<Actor seed="19704"/>
 		</Entity>
 		<Entity uid="447">
-			<Template>structures/sele/colonnade</Template>
+			<Template>structures/sele_colonnade</Template>
 			<Player>0</Player>
 			<Position x="722.2397" z="661.26874"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="60859"/>
 		</Entity>
 		<Entity uid="448">
-			<Template>structures/sele/colonnade</Template>
+			<Template>structures/sele_colonnade</Template>
 			<Player>0</Player>
 			<Position x="723.05781" z="643.56122"/>
 			<Orientation y="-3.01652"/>
@@ -11504,7 +11504,7 @@
 			<Actor seed="54394"/>
 		</Entity>
 		<Entity uid="1931">
-			<Template>structures/desert_trading_post</Template>
+			<Template>structures/trading_post_desert</Template>
 			<Player>0</Player>
 			<Position x="1085.95191" z="942.2757"/>
 			<Orientation y="2.35621"/>

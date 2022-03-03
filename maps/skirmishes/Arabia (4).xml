@@ -1950,7 +1950,7 @@
 			<Actor seed="56809"/>
 		</Entity>
 		<Entity uid="275">
-			<Template>structures/desert_trading_post</Template>
+			<Template>structures/trading_post_desert</Template>
 			<Player>0</Player>
 			<Position x="484.40915" z="523.75306"/>
 			<Orientation y="2.35621"/>
