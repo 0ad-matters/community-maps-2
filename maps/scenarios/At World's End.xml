@@ -8030,21 +8030,21 @@
 			<Actor seed="650"/>
 		</Entity>
 		<Entity uid="1954">
-			<Template>gaia/special_treasure_wood</Template>
+			<Template>gaia/treasure/wood</Template>
 			<Player>0</Player>
 			<Position x="264.80915" z="218.28455"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="19528"/>
 		</Entity>
 		<Entity uid="1955">
-			<Template>gaia/special_treasure_wood</Template>
+			<Template>gaia/treasure/wood</Template>
 			<Player>0</Player>
 			<Position x="261.00165" z="207.16564"/>
 			<Orientation y="1.71157"/>
 			<Actor seed="24704"/>
 		</Entity>
 		<Entity uid="1956">
-			<Template>gaia/special_treasure_wood</Template>
+			<Template>gaia/treasure/wood</Template>
 			<Player>0</Player>
 			<Position x="271.18595" z="208.29493"/>
 			<Orientation y="2.35621"/>

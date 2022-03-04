@@ -18340,7 +18340,7 @@
 			<Actor seed="15338"/>
 		</Entity>
 		<Entity uid="3107">
-			<Template>gaia/special_treasure_wood</Template>
+			<Template>gaia/treasure/wood</Template>
 			<Player>0</Player>
 			<Position x="1365.13501" z="835.09046"/>
 			<Orientation y="2.35621"/>
@@ -18354,7 +18354,7 @@
 			<Actor seed="56814"/>
 		</Entity>
 		<Entity uid="3109">
-			<Template>gaia/special_treasure_wood</Template>
+			<Template>gaia/treasure/wood</Template>
 			<Player>0</Player>
 			<Position x="1360.72352" z="831.21998"/>
 			<Orientation y="2.35621"/>

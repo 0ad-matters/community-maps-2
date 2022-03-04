@@ -16511,49 +16511,49 @@
 			<Actor seed="7730"/>
 		</Entity>
 		<Entity uid="2860">
-			<Template>gaia/special_treasure_wood</Template>
+			<Template>gaia/treasure/wood</Template>
 			<Player>1</Player>
 			<Position x="1082.74537" z="774.00947"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="22678"/>
 		</Entity>
 		<Entity uid="2862">
-			<Template>gaia/special_treasure_wood</Template>
+			<Template>gaia/treasure/wood</Template>
 			<Player>1</Player>
 			<Position x="1078.64515" z="773.03846"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="9146"/>
 		</Entity>
 		<Entity uid="2863">
-			<Template>gaia/special_treasure_wood</Template>
+			<Template>gaia/treasure/wood</Template>
 			<Player>1</Player>
 			<Position x="1074.03089" z="778.10676"/>
 			<Orientation y="0.49413"/>
 			<Actor seed="34766"/>
 		</Entity>
 		<Entity uid="2864">
-			<Template>gaia/special_treasure_wood</Template>
+			<Template>gaia/treasure/wood</Template>
 			<Player>1</Player>
 			<Position x="1091.19678" z="808.2566"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="26390"/>
 		</Entity>
 		<Entity uid="2865">
-			<Template>gaia/special_treasure_wood</Template>
+			<Template>gaia/treasure/wood</Template>
 			<Player>1</Player>
 			<Position x="1087.96241" z="807.1938"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="45972"/>
 		</Entity>
 		<Entity uid="2866">
-			<Template>gaia/special_treasure_wood</Template>
+			<Template>gaia/treasure/wood</Template>
 			<Player>1</Player>
 			<Position x="1085.83008" z="802.38141"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="19058"/>
 		</Entity>
 		<Entity uid="2867">
-			<Template>gaia/special_treasure_wood</Template>
+			<Template>gaia/treasure/wood</Template>
 			<Player>1</Player>
 			<Position x="1084.06702" z="797.99872"/>
 			<Orientation y="2.35621"/>
@@ -16688,14 +16688,14 @@
 			<Actor seed="62522"/>
 		</Entity>
 		<Entity uid="2891">
-			<Template>gaia/special_treasure_wood</Template>
+			<Template>gaia/treasure/wood</Template>
 			<Player>0</Player>
 			<Position x="1112.7223" z="699.56763"/>
 			<Orientation y="-0.85045"/>
 			<Actor seed="50240"/>
 		</Entity>
 		<Entity uid="2892">
-			<Template>gaia/special_treasure_wood</Template>
+			<Template>gaia/treasure/wood</Template>
 			<Player>0</Player>
 			<Position x="1116.7743" z="701.412"/>
 			<Orientation y="2.48943"/>
@@ -17736,21 +17736,21 @@
 			<Actor seed="56148"/>
 		</Entity>
 		<Entity uid="3070">
-			<Template>gaia/special_treasure_wood</Template>
+			<Template>gaia/treasure/wood</Template>
 			<Player>1</Player>
 			<Position x="1177.78272" z="1028.91114"/>
 			<Orientation y="-2.37331"/>
 			<Actor seed="46588"/>
 		</Entity>
 		<Entity uid="3071">
-			<Template>gaia/special_treasure_wood</Template>
+			<Template>gaia/treasure/wood</Template>
 			<Player>1</Player>
 			<Position x="1158.21497" z="1035.54957"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="65148"/>
 		</Entity>
 		<Entity uid="3072">
-			<Template>gaia/special_treasure_wood</Template>
+			<Template>gaia/treasure/wood</Template>
 			<Player>1</Player>
 			<Position x="1156.95862" z="1041.78113"/>
 			<Orientation y="3.10042"/>
@@ -18641,7 +18641,7 @@
 			<Actor seed="18654"/>
 		</Entity>
 		<Entity uid="3233">
-			<Template>gaia/special_treasure_wood</Template>
+			<Template>gaia/treasure/wood</Template>
 			<Player>1</Player>
 			<Position x="977.82868" z="460.29245"/>
 			<Orientation y="-1.18525"/>
@@ -19151,14 +19151,14 @@
 			<Actor seed="45620"/>
 		</Entity>
 		<Entity uid="3340">
-			<Template>gaia/special_treasure_wood</Template>
+			<Template>gaia/treasure/wood</Template>
 			<Player>0</Player>
 			<Position x="948.94141" z="710.6731"/>
 			<Orientation y="-2.90523"/>
 			<Actor seed="19066"/>
 		</Entity>
 		<Entity uid="3341">
-			<Template>gaia/special_treasure_wood</Template>
+			<Template>gaia/treasure/wood</Template>
 			<Player>0</Player>
 			<Position x="942.56501" z="711.44593"/>
 			<Orientation y="2.35621"/>
@@ -19375,14 +19375,14 @@
 			<Actor seed="24394"/>
 		</Entity>
 		<Entity uid="3373">
-			<Template>gaia/special_treasure_wood</Template>
+			<Template>gaia/treasure/wood</Template>
 			<Player>0</Player>
 			<Position x="990.06" z="713.5727"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="25340"/>
 		</Entity>
 		<Entity uid="3374">
-			<Template>gaia/special_treasure_wood</Template>
+			<Template>gaia/treasure/wood</Template>
 			<Player>0</Player>
 			<Position x="993.28052" z="706.74292"/>
 			<Orientation y="-0.29339"/>
@@ -21266,14 +21266,14 @@
 			<Actor seed="47258"/>
 		</Entity>
 		<Entity uid="4197">
-			<Template>gaia/special_treasure_wood</Template>
+			<Template>gaia/treasure/wood</Template>
 			<Player>0</Player>
 			<Position x="729.2024" z="768.15894"/>
 			<Orientation y="-2.44646"/>
 			<Actor seed="8362"/>
 		</Entity>
 		<Entity uid="4198">
-			<Template>gaia/special_treasure_wood</Template>
+			<Template>gaia/treasure/wood</Template>
 			<Player>0</Player>
 			<Position x="725.26905" z="761.71332"/>
 			<Orientation y="0.20316"/>
@@ -22021,21 +22021,21 @@
 			<Actor seed="40218"/>
 		</Entity>
 		<Entity uid="4331">
-			<Template>gaia/special_treasure_wood</Template>
+			<Template>gaia/treasure/wood</Template>
 			<Player>1</Player>
 			<Position x="954.82258" z="911.29456"/>
 			<Orientation y="-0.06612"/>
 			<Actor seed="58074"/>
 		</Entity>
 		<Entity uid="4332">
-			<Template>gaia/special_treasure_wood</Template>
+			<Template>gaia/treasure/wood</Template>
 			<Player>1</Player>
 			<Position x="976.56812" z="939.93323"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="31926"/>
 		</Entity>
 		<Entity uid="4334">
-			<Template>gaia/special_treasure_wood</Template>
+			<Template>gaia/treasure/wood</Template>
 			<Player>1</Player>
 			<Position x="949.29407" z="879.24012"/>
 			<Orientation y="2.35621"/>
@@ -26610,7 +26610,7 @@
 			<Actor seed="59984"/>
 		</Entity>
 		<Entity uid="5137">
-			<Template>gaia/special_treasure_wood</Template>
+			<Template>gaia/treasure/wood</Template>
 			<Player>1</Player>
 			<Position x="775.05506" z="1023.90314"/>
 			<Orientation y="2.35621"/>
@@ -26827,35 +26827,35 @@
 			<Actor seed="7240"/>
 		</Entity>
 		<Entity uid="5168">
-			<Template>gaia/special_treasure_wood</Template>
+			<Template>gaia/treasure/wood</Template>
 			<Player>1</Player>
 			<Position x="862.74531" z="1096.79908"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="39748"/>
 		</Entity>
 		<Entity uid="5169">
-			<Template>gaia/special_treasure_wood</Template>
+			<Template>gaia/treasure/wood</Template>
 			<Player>1</Player>
 			<Position x="792.23084" z="1117.68531"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="63564"/>
 		</Entity>
 		<Entity uid="5170">
-			<Template>gaia/special_treasure_wood</Template>
+			<Template>gaia/treasure/wood</Template>
 			<Player>1</Player>
 			<Position x="795.03797" z="1118.71717"/>
 			<Orientation y="2.74085"/>
 			<Actor seed="52832"/>
 		</Entity>
 		<Entity uid="5171">
-			<Template>gaia/special_treasure_wood</Template>
+			<Template>gaia/treasure/wood</Template>
 			<Player>1</Player>
 			<Position x="780.65595" z="1110.41541"/>
 			<Orientation y="-2.80471"/>
 			<Actor seed="64262"/>
 		</Entity>
 		<Entity uid="5172">
-			<Template>gaia/special_treasure_wood</Template>
+			<Template>gaia/treasure/wood</Template>
 			<Player>1</Player>
 			<Position x="784.08283" z="1109.52735"/>
 			<Orientation y="-3.07052"/>
@@ -28050,14 +28050,14 @@
 			<Actor seed="18282"/>
 		</Entity>
 		<Entity uid="5358">
-			<Template>gaia/special_treasure_wood</Template>
+			<Template>gaia/treasure/wood</Template>
 			<Player>1</Player>
 			<Position x="802.88056" z="1215.81751"/>
 			<Orientation y="1.88341"/>
 			<Actor seed="34096"/>
 		</Entity>
 		<Entity uid="5359">
-			<Template>gaia/special_treasure_wood</Template>
+			<Template>gaia/treasure/wood</Template>
 			<Player>1</Player>
 			<Position x="808.97712" z="1214.41272"/>
 			<Orientation y="-2.92013"/>
@@ -29598,21 +29598,21 @@
 			<Actor seed="22176"/>
 		</Entity>
 		<Entity uid="5610">
-			<Template>gaia/special_treasure_wood</Template>
+			<Template>gaia/treasure/wood</Template>
 			<Player>1</Player>
 			<Position x="851.15357" z="1311.26807"/>
 			<Orientation y="-0.61553"/>
 			<Actor seed="65527"/>
 		</Entity>
 		<Entity uid="5611">
-			<Template>gaia/special_treasure_wood</Template>
+			<Template>gaia/treasure/wood</Template>
 			<Player>1</Player>
 			<Position x="849.1662" z="1308.85706"/>
 			<Orientation y="-1.04574"/>
 			<Actor seed="19040"/>
 		</Entity>
 		<Entity uid="5612">
-			<Template>gaia/special_treasure_wood</Template>
+			<Template>gaia/treasure/wood</Template>
 			<Player>1</Player>
 			<Position x="847.29365" z="1306.50892"/>
 			<Orientation y="-1.16668"/>
@@ -37215,28 +37215,28 @@
 			<Actor seed="38432"/>
 		</Entity>
 		<Entity uid="6947">
-			<Template>gaia/special_treasure_wood</Template>
+			<Template>gaia/treasure/wood</Template>
 			<Player>1</Player>
 			<Position x="504.40192" z="1616.03943"/>
 			<Orientation y="-3.07053"/>
 			<Actor seed="34128"/>
 		</Entity>
 		<Entity uid="6948">
-			<Template>gaia/special_treasure_wood</Template>
+			<Template>gaia/treasure/wood</Template>
 			<Player>1</Player>
 			<Position x="500.97498" z="1616.9275"/>
 			<Orientation y="-2.80471"/>
 			<Actor seed="64262"/>
 		</Entity>
 		<Entity uid="6949">
-			<Template>gaia/special_treasure_wood</Template>
+			<Template>gaia/treasure/wood</Template>
 			<Player>1</Player>
 			<Position x="515.357" z="1625.22925"/>
 			<Orientation y="2.74085"/>
 			<Actor seed="52832"/>
 		</Entity>
 		<Entity uid="6950">
-			<Template>gaia/special_treasure_wood</Template>
+			<Template>gaia/treasure/wood</Template>
 			<Player>1</Player>
 			<Position x="512.54987" z="1624.1974"/>
 			<Orientation y="2.35622"/>
@@ -37929,7 +37929,7 @@
 			<Actor seed="35696"/>
 		</Entity>
 		<Entity uid="7049">
-			<Template>gaia/special_treasure_wood</Template>
+			<Template>gaia/treasure/wood</Template>
 			<Player>1</Player>
 			<Position x="628.89008" z="1552.61487"/>
 			<Orientation y="2.35622"/>

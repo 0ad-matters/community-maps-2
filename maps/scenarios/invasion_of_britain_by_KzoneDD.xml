@@ -21734,21 +21734,21 @@
 			<Actor seed="32164"/>
 		</Entity>
 		<Entity uid="5753">
-			<Template>gaia/special_treasure_wood</Template>
+			<Template>gaia/treasure/wood</Template>
 			<Player>3</Player>
 			<Position x="200.92878" z="823.81849"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="14872"/>
 		</Entity>
 		<Entity uid="5754">
-			<Template>gaia/special_treasure_wood</Template>
+			<Template>gaia/treasure/wood</Template>
 			<Player>3</Player>
 			<Position x="197.48563" z="821.75751"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="42050"/>
 		</Entity>
 		<Entity uid="5755">
-			<Template>gaia/special_treasure_wood</Template>
+			<Template>gaia/treasure/wood</Template>
 			<Player>3</Player>
 			<Position x="193.6934" z="818.90064"/>
 			<Orientation y="2.35621"/>

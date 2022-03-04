@@ -16726,7 +16726,7 @@
 			<Actor seed="50175"/>
 		</Entity>
 		<Entity uid="2831">
-			<Template>gaia/special_treasure_wood</Template>
+			<Template>gaia/treasure/wood</Template>
 			<Player>0</Player>
 			<Position x="814.7074" z="605.93622"/>
 			<Orientation y="3.41845"/>
@@ -16878,7 +16878,7 @@
 			<Actor seed="31188"/>
 		</Entity>
 		<Entity uid="2864">
-			<Template>gaia/special_treasure_wood</Template>
+			<Template>gaia/treasure/wood</Template>
 			<Player>3</Player>
 			<Position x="578.83436" z="150.48462"/>
 			<Orientation y="2.35621"/>
@@ -18696,7 +18696,7 @@
 			<Actor seed="32341"/>
 		</Entity>
 		<Entity uid="3479">
-			<Template>gaia/special_treasure_wood</Template>
+			<Template>gaia/treasure/wood</Template>
 			<Player>0</Player>
 			<Position x="808.82941" z="624.70673"/>
 			<Orientation y="3.41846"/>
