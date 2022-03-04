@@ -136,13 +136,9 @@ createArea(
 		new SlopeConstraint(1, Infinity)
 	]);
 
-const rxHills = randIntInclusive(1, 4);
-const ryHills = randIntInclusive(5, 18);
-
-if (randBool())
-	createHills([tCliff, tCliff, tHill], avoidClasses(clPlayer, 20, clHill, 15, clCliff, 5), clHill, scaleByMapSize(rxHills, ryHills));
-else
-	createMountains(tCliff, avoidClasses(clPlayer, 20, clHill, 15, clCliff, 5), clHill, scaleByMapSize(rxHills, ryHills));
+createHillsAndMountains(
+	scaleByMapSize(3 * randFloat(1, 3), 15 * randFloat(1, 2)), // hillCount
+	scaleByMapSize(3 * randFloat(1, 3), 15 * randFloat(1, 2))); // mountainCount
 
 var [forestTrees, stragglerTrees] = getTreeCounts(...rBiomeTreeCount(1));
 createForests(
