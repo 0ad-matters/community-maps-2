@@ -6,6 +6,11 @@ This mod contains various maps and scenarios collected from the
 [Wildfire Games (0 A.D.) Forum](https://wildfiregames.com/forum/). The
 maps can be easily accessed in game with the filter "Community Maps".
 
+To participate in how this mod is maintained (which maps are included
+or removed, etc), use the [Discussions
+section](https://github.com/0ad-matters/community-maps-2/discussions)
+of this repo.
+
 ## Random Maps
 
 | Map Name | Author | Link | Publication Date |
