@@ -356,21 +356,21 @@
 			<Actor seed="57594"/>
 		</Entity>
 		<Entity uid="201">
-			<Template>gaia/special_treasure_food_barrel</Template>
+			<Template>gaia/treasure/food_barrel</Template>
 			<Player>0</Player>
 			<Position x="469.51502" z="716.80604"/>
 			<Orientation y="4.08239"/>
 			<Actor seed="19078"/>
 		</Entity>
 		<Entity uid="202">
-			<Template>gaia/special_treasure_food_barrel</Template>
+			<Template>gaia/treasure/food_barrel</Template>
 			<Player>0</Player>
 			<Position x="471.40818" z="718.71155"/>
 			<Orientation y="4.08239"/>
 			<Actor seed="24949"/>
 		</Entity>
 		<Entity uid="203">
-			<Template>gaia/special_treasure_food_barrel</Template>
+			<Template>gaia/treasure/food_barrel</Template>
 			<Player>0</Player>
 			<Position x="467.60837" z="714.6258"/>
 			<Orientation y="4.08239"/>

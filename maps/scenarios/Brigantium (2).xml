@@ -20734,7 +20734,7 @@
 			<Actor seed="59264"/>
 		</Entity>
 		<Entity uid="3544">
-			<Template>gaia/special_treasure_food_barrel</Template>
+			<Template>gaia/treasure/food_barrel</Template>
 			<Player>2</Player>
 			<Position x="947.19355" z="698.79957"/>
 			<Orientation y="2.35621"/>
