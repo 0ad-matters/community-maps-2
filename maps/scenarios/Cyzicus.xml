@@ -12848,63 +12848,63 @@
 			<Actor seed="14419"/>
 		</Entity>
 		<Entity uid="2190">
-			<Template>units/rome/infantry_javelinist_a</Template>
+			<Template>units/rome/infantry_javelineer_a</Template>
 			<Player>1</Player>
 			<Position x="797.03461" z="50.98421"/>
 			<Orientation y="1.30164"/>
 			<Actor seed="27672"/>
 		</Entity>
 		<Entity uid="2191">
-			<Template>units/rome/infantry_javelinist_a</Template>
+			<Template>units/rome/infantry_javelineer_a</Template>
 			<Player>1</Player>
 			<Position x="795.30915" z="56.54514"/>
 			<Orientation y="1.30164"/>
 			<Actor seed="51093"/>
 		</Entity>
 		<Entity uid="2192">
-			<Template>units/rome/infantry_javelinist_a</Template>
+			<Template>units/rome/infantry_javelineer_a</Template>
 			<Player>1</Player>
 			<Position x="793.85474" z="61.79415"/>
 			<Orientation y="1.30164"/>
 			<Actor seed="35745"/>
 		</Entity>
 		<Entity uid="2193">
-			<Template>units/rome/infantry_javelinist_a</Template>
+			<Template>units/rome/infantry_javelineer_a</Template>
 			<Player>1</Player>
 			<Position x="792.41272" z="67.40297"/>
 			<Orientation y="1.30164"/>
 			<Actor seed="6082"/>
 		</Entity>
 		<Entity uid="2194">
-			<Template>units/rome/infantry_javelinist_a</Template>
+			<Template>units/rome/infantry_javelineer_a</Template>
 			<Player>1</Player>
 			<Position x="790.70704" z="72.80268"/>
 			<Orientation y="1.30164"/>
 			<Actor seed="38254"/>
 		</Entity>
 		<Entity uid="2195">
-			<Template>units/rome/infantry_javelinist_a</Template>
+			<Template>units/rome/infantry_javelineer_a</Template>
 			<Player>1</Player>
 			<Position x="793.70441" z="52.9776"/>
 			<Orientation y="1.30164"/>
 			<Actor seed="24845"/>
 		</Entity>
 		<Entity uid="2196">
-			<Template>units/rome/infantry_javelinist_a</Template>
+			<Template>units/rome/infantry_javelineer_a</Template>
 			<Player>1</Player>
 			<Position x="792.17023" z="58.4324"/>
 			<Orientation y="1.30164"/>
 			<Actor seed="13257"/>
 		</Entity>
 		<Entity uid="2197">
-			<Template>units/rome/infantry_javelinist_a</Template>
+			<Template>units/rome/infantry_javelineer_a</Template>
 			<Player>1</Player>
 			<Position x="790.17316" z="64.21863"/>
 			<Orientation y="1.30164"/>
 			<Actor seed="31971"/>
 		</Entity>
 		<Entity uid="2198">
-			<Template>units/rome/infantry_javelinist_a</Template>
+			<Template>units/rome/infantry_javelineer_a</Template>
 			<Player>1</Player>
 			<Position x="788.88386" z="69.56046"/>
 			<Orientation y="1.30164"/>

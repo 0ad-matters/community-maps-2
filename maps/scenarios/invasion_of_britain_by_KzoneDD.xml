@@ -18139,42 +18139,42 @@
 			<Actor seed="52300"/>
 		</Entity>
 		<Entity uid="5040">
-			<Template>units/gaul/infantry_javelinist_a</Template>
+			<Template>units/gaul/infantry_javelineer_a</Template>
 			<Player>2</Player>
 			<Position x="36.87407" z="554.9292"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="14286"/>
 		</Entity>
 		<Entity uid="5041">
-			<Template>units/gaul/infantry_javelinist_a</Template>
+			<Template>units/gaul/infantry_javelineer_a</Template>
 			<Player>2</Player>
 			<Position x="35.58788" z="556.69495"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="29482"/>
 		</Entity>
 		<Entity uid="5042">
-			<Template>units/gaul/infantry_javelinist_a</Template>
+			<Template>units/gaul/infantry_javelineer_a</Template>
 			<Player>2</Player>
 			<Position x="39.14765" z="556.08356"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="38354"/>
 		</Entity>
 		<Entity uid="5043">
-			<Template>units/gaul/infantry_javelinist_a</Template>
+			<Template>units/gaul/infantry_javelineer_a</Template>
 			<Player>2</Player>
 			<Position x="37.93435" z="557.6739"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="32784"/>
 		</Entity>
 		<Entity uid="5044">
-			<Template>units/gaul/infantry_javelinist_a</Template>
+			<Template>units/gaul/infantry_javelineer_a</Template>
 			<Player>2</Player>
 			<Position x="41.88595" z="557.7428"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="55698"/>
 		</Entity>
 		<Entity uid="5045">
-			<Template>units/gaul/infantry_javelinist_a</Template>
+			<Template>units/gaul/infantry_javelineer_a</Template>
 			<Player>2</Player>
 			<Position x="40.28676" z="559.07172"/>
 			<Orientation y="2.35621"/>

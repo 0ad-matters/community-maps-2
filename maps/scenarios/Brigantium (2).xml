@@ -20398,7 +20398,7 @@
 			<Actor seed="44616"/>
 		</Entity>
 		<Entity uid="3390">
-			<Template>units/rome/infantry_javelinist_a</Template>
+			<Template>units/rome/infantry_javelineer_a</Template>
 			<Player>2</Player>
 			<Position x="924.70813" z="730.08802"/>
 			<Orientation y="2.35621"/>
@@ -20881,7 +20881,7 @@
 			<Actor seed="43720"/>
 		</Entity>
 		<Entity uid="3652">
-			<Template>units/rome/infantry_javelinist_a</Template>
+			<Template>units/rome/infantry_javelineer_a</Template>
 			<Player>2</Player>
 			<Position x="920.78412" z="726.12983"/>
 			<Orientation y="2.35621"/>
