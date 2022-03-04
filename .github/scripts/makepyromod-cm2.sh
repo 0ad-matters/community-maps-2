@@ -37,8 +37,8 @@ fi
 	-archivebuild-output="${DESTDIR}"/"${OUTFILE}".pyromod \
 	-archivebuild-compress
 
-# If the pyromod fails to build, 0ad returns 0, so do an extra check to make
-# sure the fail exists
+# If the pyromod fails to build, 0ad may returns 0 in some cases, so
+# check to make sure the file exists
 test -e "${DESTDIR}"/"${OUTFILE}".pyromod
 
 if [ "${VER}" != "test" ]; then
