@@ -61,7 +61,6 @@ of this repo.
 | Map Name | Author | Link | Publication Date |
 |----------|--------|------|------------------|
 | The Limes | [nifa](https://wildfiregames.com/forum/profile/33088-nifa/) | [Forum](https://wildfiregames.com/forum/topic/36065-new-scenario-map-the-limes/) | 2021-02-02 |
-| South East Asia (6)|[crazy_Baboon](https://wildfiregames.com/forum/index.php?/profile/29330-crazy_baboon/)|[Forum](https://wildfiregames.com/forum/index.php?/topic/26199-how-to-contribute-a-new-map/)|2019-06-09|
 | Asian Campaign III a.C. | [imperium](https://wildfiregames.com/forum/index.php?/profile/21662-imperium/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/25958-new-map-20-asia/) | 2019-05-12 |
 | Mappa Europea III Secolo a.C. | [imperium](https://wildfiregames.com/forum/index.php?/profile/21662-imperium/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/25413-new-map-europe/) | 2019-02-26 |
 | Paradise valley | [Nevar](https://wildfiregames.com/forum/index.php?/profile/28458-nevar/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/25087-skirmish-paradise-valley-4/) | 2018-11-23 |
