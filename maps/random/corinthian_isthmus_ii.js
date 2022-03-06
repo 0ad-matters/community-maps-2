@@ -31,6 +31,7 @@ const oTree3 = g_Gaia.tree3;
 const oTree4 = g_Gaia.tree4;
 const oTree5 = g_Gaia.tree5;
 const oFruitBush = g_Gaia.fruitBush;
+const oPig = "gaia/fauna_pig";
 const oMainHuntableAnimal = g_Gaia.mainHuntableAnimal;
 const oSecondaryHuntableAnimal = g_Gaia.secondaryHuntableAnimal;
 const oStoneLarge = g_Gaia.stoneLarge;
@@ -409,6 +410,7 @@ if (!isNomad())
 			"innerTerrain": tRoad
 		},
 		"Chicken": {
+			"template": oPig
 		},
 		"Berries": {
 			"template": oFruitBush

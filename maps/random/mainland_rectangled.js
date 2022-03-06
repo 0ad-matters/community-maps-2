@@ -26,6 +26,7 @@ const oTree3 = g_Gaia.tree3;
 const oTree4 = g_Gaia.tree4;
 const oTree5 = g_Gaia.tree5;
 const oFruitBush = g_Gaia.fruitBush;
+const oSheep = "gaia/fauna_sheep";
 const oMainHuntableAnimal = g_Gaia.mainHuntableAnimal;
 const oSecondaryHuntableAnimal = g_Gaia.secondaryHuntableAnimal;
 const oStoneLarge = g_Gaia.stoneLarge;
@@ -103,6 +104,7 @@ placePlayerBases({
 		"innerTerrain": tRoad
 	},
 	"Chicken": {
+		"template": oSheep
 	},
 	"Berries": {
 		"template": oFruitBush
