@@ -1,3 +1,7 @@
+2022-03-07
+
+  * Fix errors (missing entities) on scenarios/Asian Campaign
+
 2022-03-05
 
   * remove scenarios/Southeast Asia (incomplete/abandoned)
@@ -8,7 +12,7 @@
 
 2022-03-03
 
-  * Fix warnings (missing entities) on skirmishes/Arabia and
+  * Fix errors (missing entities) on skirmishes/Arabia and
   scenarios/Paradise Valley
 
 2022-02-22

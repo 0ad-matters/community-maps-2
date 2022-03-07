@@ -30613,28 +30613,28 @@
 			<Actor seed="23056"/>
 		</Entity>
 		<Entity uid="4446">
-			<Template>gaia/fauna_rhinoceros_whiteceros_white</Template>
+			<Template>gaia/fauna_rhinoceros_white</Template>
 			<Player>0</Player>
 			<Position x="313.69501" z="593.66083"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="29520"/>
 		</Entity>
 		<Entity uid="4447">
-			<Template>gaia/fauna_rhinoceros_whiteceros_white</Template>
+			<Template>gaia/fauna_rhinoceros_white</Template>
 			<Player>0</Player>
 			<Position x="318.86347" z="601.72895"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="16850"/>
 		</Entity>
 		<Entity uid="4448">
-			<Template>gaia/fauna_rhinoceros_whiteceros_white</Template>
+			<Template>gaia/fauna_rhinoceros_white</Template>
 			<Player>0</Player>
 			<Position x="329.7016" z="605.64808"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="47480"/>
 		</Entity>
 		<Entity uid="4449">
-			<Template>gaia/fauna_rhinoceros_whiteceros_white</Template>
+			<Template>gaia/fauna_rhinoceros_white</Template>
 			<Player>0</Player>
 			<Position x="340.26935" z="614.4723"/>
 			<Orientation y="2.35621"/>
@@ -30893,56 +30893,56 @@
 			<Actor seed="6536"/>
 		</Entity>
 		<Entity uid="4486">
-			<Template>gaia/fauna_zebu</Template>
+			<Template>gaia/fauna_cattle_zebu</Template>
 			<Player>0</Player>
 			<Position x="1634.81824" z="520.41059"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="53950"/>
 		</Entity>
 		<Entity uid="4487">
-			<Template>gaia/fauna_zebu</Template>
+			<Template>gaia/fauna_cattle_zebu</Template>
 			<Player>0</Player>
 			<Position x="1640.02515" z="523.49036"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="44514"/>
 		</Entity>
 		<Entity uid="4488">
-			<Template>gaia/fauna_zebu</Template>
+			<Template>gaia/fauna_cattle_zebu</Template>
 			<Player>0</Player>
 			<Position x="1628.7765" z="515.80707"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="55440"/>
 		</Entity>
 		<Entity uid="4489">
-			<Template>gaia/fauna_zebu</Template>
+			<Template>gaia/fauna_cattle_zebu</Template>
 			<Player>0</Player>
 			<Position x="1607.95936" z="445.54545"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="40598"/>
 		</Entity>
 		<Entity uid="4490">
-			<Template>gaia/fauna_zebu</Template>
+			<Template>gaia/fauna_cattle_zebu</Template>
 			<Player>0</Player>
 			<Position x="1612.8307" z="448.36411"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="35644"/>
 		</Entity>
 		<Entity uid="4491">
-			<Template>gaia/fauna_zebu</Template>
+			<Template>gaia/fauna_cattle_zebu</Template>
 			<Player>0</Player>
 			<Position x="1613.76172" z="440.3838"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="22158"/>
 		</Entity>
 		<Entity uid="4492">
-			<Template>gaia/fauna_zebu</Template>
+			<Template>gaia/fauna_cattle_zebu</Template>
 			<Player>0</Player>
 			<Position x="1527.54432" z="419.72645"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="55464"/>
 		</Entity>
 		<Entity uid="4493">
-			<Template>gaia/fauna_zebu</Template>
+			<Template>gaia/fauna_cattle_zebu</Template>
 			<Player>0</Player>
 			<Position x="1530.3573" z="423.5088"/>
 			<Orientation y="2.35621"/>
@@ -32615,14 +32615,14 @@
 			<Actor seed="43410"/>
 		</Entity>
 		<Entity uid="4742">
-			<Template>units/brit/champion_cavalry</Template>
+			<Template>units/brit/champion_chariot</Template>
 			<Player>0</Player>
 			<Position x="1536.66211" z="1311.53882"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="21732"/>
 		</Entity>
 		<Entity uid="4743">
-			<Template>units/brit/champion_cavalry</Template>
+			<Template>units/brit/champion_chariot</Template>
 			<Player>0</Player>
 			<Position x="1516.14026" z="1296.85474"/>
 			<Orientation y="2.35621"/>
@@ -32839,7 +32839,7 @@
 			<Actor seed="12714"/>
 		</Entity>
 		<Entity uid="4774">
-			<Template>structures/kush/nuba_village</Template>
+			<Template>structures/kush/camp_noba</Template>
 			<Player>0</Player>
 			<Position x="984.40931" z="283.41263"/>
 			<Orientation y="2.35621"/>
@@ -34883,7 +34883,7 @@
 			<Actor seed="27214"/>
 		</Entity>
 		<Entity uid="5080">
-			<Template>structures/kush/nuba_village</Template>
+			<Template>structures/kush/camp_noba</Template>
 			<Player>3</Player>
 			<Position x="627.01838" z="242.80127"/>
 			<Orientation y="2.35621"/>
@@ -35093,84 +35093,84 @@
 			<Actor seed="21624"/>
 		</Entity>
 		<Entity uid="5110">
-			<Template>units/kush/infantry_clubman_b</Template>
+			<Template>units/kush/infantry_maceman_merc_b</Template>
 			<Player>3</Player>
 			<Position x="601.46479" z="196.46204"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="43340"/>
 		</Entity>
 		<Entity uid="5111">
-			<Template>units/kush/infantry_clubman_b</Template>
+			<Template>units/kush/infantry_maceman_merc_b</Template>
 			<Player>3</Player>
 			<Position x="603.43317" z="198.75068"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="24774"/>
 		</Entity>
 		<Entity uid="5112">
-			<Template>units/kush/infantry_clubman_b</Template>
+			<Template>units/kush/infantry_maceman_merc_b</Template>
 			<Player>3</Player>
 			<Position x="604.80658" z="200.29511"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="31528"/>
 		</Entity>
 		<Entity uid="5113">
-			<Template>units/kush/infantry_clubman_b</Template>
+			<Template>units/kush/infantry_maceman_merc_b</Template>
 			<Player>3</Player>
 			<Position x="595.99604" z="191.1059"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="59500"/>
 		</Entity>
 		<Entity uid="5114">
-			<Template>units/kush/infantry_clubman_b</Template>
+			<Template>units/kush/infantry_maceman_merc_b</Template>
 			<Player>3</Player>
 			<Position x="594.16822" z="189.4014"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="28354"/>
 		</Entity>
 		<Entity uid="5115">
-			<Template>units/kush/infantry_clubman_b</Template>
+			<Template>units/kush/infantry_maceman_merc_b</Template>
 			<Player>3</Player>
 			<Position x="592.29151" z="187.41071"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="59188"/>
 		</Entity>
 		<Entity uid="5116">
-			<Template>units/kush/infantry_clubman_b</Template>
+			<Template>units/kush/infantry_maceman_merc_b</Template>
 			<Player>3</Player>
 			<Position x="612.54865" z="210.202"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="31204"/>
 		</Entity>
 		<Entity uid="5117">
-			<Template>units/kush/infantry_clubman_b</Template>
+			<Template>units/kush/infantry_maceman_merc_b</Template>
 			<Player>3</Player>
 			<Position x="614.16102" z="216.22385"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="62118"/>
 		</Entity>
 		<Entity uid="5118">
-			<Template>units/kush/infantry_clubman_b</Template>
+			<Template>units/kush/infantry_maceman_merc_b</Template>
 			<Player>3</Player>
 			<Position x="616.14911" z="218.71991"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="1856"/>
 		</Entity>
 		<Entity uid="5119">
-			<Template>units/kush/infantry_clubman_b</Template>
+			<Template>units/kush/infantry_maceman_merc_b</Template>
 			<Player>3</Player>
 			<Position x="868.33075" z="166.70096"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="39088"/>
 		</Entity>
 		<Entity uid="5120">
-			<Template>units/kush/infantry_clubman_b</Template>
+			<Template>units/kush/infantry_maceman_merc_b</Template>
 			<Player>3</Player>
 			<Position x="869.39979" z="161.38025"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="4880"/>
 		</Entity>
 		<Entity uid="5121">
-			<Template>units/kush/infantry_clubman_b</Template>
+			<Template>units/kush/infantry_maceman_merc_b</Template>
 			<Player>3</Player>
 			<Position x="870.18934" z="156.93427"/>
 			<Orientation y="2.35621"/>
@@ -37172,42 +37172,42 @@
 			<Actor seed="33034"/>
 		</Entity>
 		<Entity uid="5407">
-			<Template>units/pers/champion/cavalry_archer</Template>
+			<Template>units/pers/champion_cavalry_archer</Template>
 			<Player>8</Player>
 			<Position x="1403.81214" z="834.92463"/>
 			<Orientation y="-2.7362"/>
 			<Actor seed="41016"/>
 		</Entity>
 		<Entity uid="5408">
-			<Template>units/pers/champion/cavalry_archer</Template>
+			<Template>units/pers/champion_cavalry_archer</Template>
 			<Player>8</Player>
 			<Position x="1406.60828" z="833.63074"/>
 			<Orientation y="-2.8201"/>
 			<Actor seed="11688"/>
 		</Entity>
 		<Entity uid="5409">
-			<Template>units/pers/champion/cavalry_archer</Template>
+			<Template>units/pers/champion_cavalry_archer</Template>
 			<Player>8</Player>
 			<Position x="1408.7533" z="833.02247"/>
 			<Orientation y="-2.9781"/>
 			<Actor seed="59590"/>
 		</Entity>
 		<Entity uid="5410">
-			<Template>units/pers/champion/cavalry_archer</Template>
+			<Template>units/pers/champion_cavalry_archer</Template>
 			<Player>8</Player>
 			<Position x="1407.5492" z="853.79566"/>
 			<Orientation y="-2.91416"/>
 			<Actor seed="26370"/>
 		</Entity>
 		<Entity uid="5411">
-			<Template>units/pers/champion/cavalry_archer</Template>
+			<Template>units/pers/champion_cavalry_archer</Template>
 			<Player>8</Player>
 			<Position x="1411.13917" z="853.51636"/>
 			<Orientation y="-2.99784"/>
 			<Actor seed="53220"/>
 		</Entity>
 		<Entity uid="5412">
-			<Template>units/pers/champion/cavalry_archer</Template>
+			<Template>units/pers/champion_cavalry_archer</Template>
 			<Player>8</Player>
 			<Position x="1417.53943" z="854.38172"/>
 			<Orientation y="-2.5966"/>
