@@ -32,20 +32,19 @@
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="131.414" y="365.03" z="1024.4"/>
-		<Rotation angle="0.159932"/>
+		<Position x="270.93" y="337.672" z="849.63"/>
+		<Rotation angle="-0.0791974"/>
 		<Declination angle="0.610865"/>
 	</Camera>
 	<ScriptSettings><![CDATA[
 {
   "AISeed": 0,
   "CircularMap": true,
-  "Description": "Egitto\nDifficolta Normale\nIl nostro regno al momento si trova in un punto fiorente del tempo, attualmente siamo in aspri rapporti con i Seleucidi pronti a conquistare la nostra terra, le nostre colonie in Anatolia sono attualmente minacciate dalla potenza Seleucide.\nA Sud possiamo trovare i Kush Nubiani sarebbero terra di facile conquista per quanto ne sappiamo, ma prima di tutto sarebbe meglio prepararsi ad una eventuale guerra con i Seleucidi.\nA sud della nostra Giudea possiamo trovare i Nabatei che potrebbero' minacciare la nostra gente in quei luoghi.\n\nSeleucidi\nDifficolta Difficile\nIl nostro grande e potente impero attualmente si trova in una situazione amara con la Partia, potenziale conquista sarebbe o l'Armenia, piccola fazione che e' una spina sul fianco o l'Egitto, quest'ultimo molto piu' florido.\nNon conosciamo le intenzioni dell'impero Maurya, ma sembra anch'esso pacifico al momento, porta il nostro impero alla gloria.\n\nRegno di Saba\nDifficolta Facile \nNoi siamo un regno pacifico della penisola Arabica, e del Corno d'Africa abbiamo delle relazioni con le popolazione Arabe: Arabi a nord-est e Nabatei a Nord, una grande potenza con cui abbiamo rapporti sono gli Egiziani, tuttavia non temiamo particolari invasioni.\nPotremo espanderci verso l'Arabia, ma sempre se tu vorrai.\n\nArmenia\nDifficolta Normale\nDopo tante generazioni noi forse riusciremo ad avere un vasto Regno per la nostra popolazione, l'unico nostro pericolo e' un'annessione eventuale da parte dei Seleucidi, a Nord invece siamo protetti dalla catena montuosa, recluta un potente esercito e difendi il nostro Regno.\n\nMacedonia\nDifficolta Difficile\nIl nostro regno dopo Alessandro non e' altro che una piccola fazione nei Balcani, potremmo sbarcare in Anatolia per conquistare i Galati oppure potremmo cacciare definitivamente i Daci, che pero' stando sopra di noi offrono una specie di stato cuscinetto.\nGuerra alternativa sarebbe quella di unificare la Grecia, ma questo sarebbe un enorme impegno, crea un forte esercito e fai valere cio' che la Macedonia e'.\n\nScizia Reale\nDifficolta Facile\nNoi siamo un popolo di tribu' stanziato in Ucraina, la nostra posizione e' molto favorevole, in quanto i vicini attorno a noi non sono tanti e un espansione e' la cosa piu' ovvia da fare, in Dacia ci sono i Daci, tribu' Germaniche abbastanza Potenti, a est invece ci sono i nostri fratelli Sciiti che in ogni caso possiamo riunificare, a sud c'e' il Bosforo, un regno molto fiorente che deve essere molto difficile da battere, tutto ci permette una buona espansione solo se tu riuscirai ad avere la meglio sugli altri.\n\nImpero Maurya\nDifficolta Facile\nIl nostro impero, e' un impero appena sorto.\nTuttavia c'e' gia' una potenza che sta cercando di ostacolarci, i Seleucidi, i quali in passato hanno conquistato i territori oltre l'Indo, dobbiamo assolutamente preparare un esercito e mandare via i Seleucidi da quei territori, per l'Impero, in quanto primo ad aver riunificato tutte le tribu' Indiane.\n\nPartia\nDifficolta Facile\nSiamo un regno appena nato dai Seleucidi, essi possono essere di grande ricchezza se conquistati, al nord per quanto sappiamo non c'e' vita, sarebbe un buon tentativo di prendere risorse, per poi scendere giu' in Baktria dove i Seleucidi non hanno buone difese, inoltre stiamo gia' facendo preparativi col nostro esercito.",
+  "Description": "Egypt\nNormal Difficulty\nOur kingdom is currently at a flourishing point in time, we are in harsh relations with the Seleucids ready to conquer our land, our colonies in Anatolia are currently threatened by the Seleucid power.\nA South is not Kush Nubiani, but first of all it is better to prepare for a war with the Seleucids.\nSouth of our Judea you can find the Nabataeans who could threaten our people in those places.\n\nSeleucid\nDifficult Difficulty\nOur great and powerful empire finds itself in a bitter situation with Parthia, perhaps the victory or Armenia, a small faction that is a thorn on the side of the Hego, much more prosperous.\nWe do not know the intentions of the Maurya empire, but it also seems peaceful at the moment, it brings our empire to glory.\n\nKingdom of Saba\nEasy difficulty\nWe are a peaceful country on the Arabian peninsula, and we have relations with the Arab populations of the Horn of Africa: Arabs in the north-east and Nabataeans in the north, a great power with which we have relations are the Egyptians, but we do not fear any particular invasions.\nWe can expand Arabia, but always if you want.\n\nArmenia\nNormal Difficulty\nAfter so many generations we do not expect to have a vast Kingdom for our population, one of our dangers and a reliability on the part of the Seleucids, a north we are instead protected by the mountain range, recruit a powerful army and defend our Kingdom.\n\nMacedonia\nDifficult Difficulty\nAlessandro is nothing more than a small faction in the Balkans, we could land in Anatolia to conquer the Galatians or we could definitely look for the Dacians, who, standing above us, are a kind of buffer state.\nAlternative war would be to unify Greece, but this would be a huge commitment, create a strong army and assert what Macedonia is.\n\nScythia Real\nEasy difficulty\nWe are a tribe people stationed in Ukraine, our situation is very favorable, as we are not so many and an expansion is the most obvious thing to do, in Dacia there are the Dacians, Germanic tribes quite powerful, there are our Shiite brothers in the east, which in any case we can reunify, there is a Bosphorus in the south, a very flourishing kingdom that must be very difficult to beat, everything you can get over others.\n\nMaurya Empire\nEasy difficulty\nOur empire is a newly risen empire.\nHowever, there is already a power that is trying to hinder us, the Seleucids, who in the past have conquered the territories beyond the Indus, we absolutely have to prepare an army and send away the Seleucids from those territories, for the Empire, as the first to have reunified all the Indian tribes.\n\nParthia\nEasy difficulty\nWe are a kingdom just born of the Seleucids, they can be of great wealth if conquered, in the north as far as we know there is no life, it would be a good attempt to take resources, only to fall down in Baktria where the Seleucids have no good defenses, we are already making preparations with our army.",
   "Keywords": ["community"],
   "LockTeams": false,
   "Name": "Asian Campaign III a.C.",
   "PlayerData": [
-    "",
     {
       "Civ": "ptol",
       "Color": {
@@ -53,7 +52,7 @@
         "g": 255,
         "r": 255
       },
-      "Name": "Egitto"
+      "Name": "Egypt"
     },
     {
       "Civ": "sele",
@@ -62,11 +61,11 @@
         "g": 255,
         "r": 128
       },
-      "Name": "Impero Seleucide"
+      "Name": "Seleucid Empire"
     },
     {
       "Civ": "kush",
-      "Name": "Regno di Saba"
+      "Name": "Kingdom of Saba"
     },
     {
       "Civ": "iber",
@@ -93,7 +92,7 @@
         "g": 0,
         "r": 128
       },
-      "Name": "Scizia Reale"
+      "Name": "Scythia Real"
     },
     {
       "Civ": "maur",
@@ -102,7 +101,7 @@
         "g": 115,
         "r": 220
       },
-      "Name": "Impero Maurya"
+      "Name": "Maurya Empire"
     },
     {
       "Civ": "pers",
@@ -111,7 +110,7 @@
         "g": 0,
         "r": 128
       },
-      "Name": "Regno Partico"
+      "Name": "Parthia"
     }
   ],
   "Preview": "asian_campaign_iii.png",
