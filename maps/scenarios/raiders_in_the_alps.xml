@@ -15859,14 +15859,14 @@
 			<Actor seed="26398"/>
 		</Entity>
 		<Entity uid="2644">
-			<Template>units/brit/infantry_javelinist_e</Template>
+			<Template>units/brit/infantry_javelineer_e</Template>
 			<Player>3</Player>
 			<Position x="575.62903" z="30.5548"/>
 			<Orientation y="0.68078"/>
 			<Actor seed="48912"/>
 		</Entity>
 		<Entity uid="2645">
-			<Template>units/brit/infantry_javelinist_e</Template>
+			<Template>units/brit/infantry_javelineer_e</Template>
 			<Player>3</Player>
 			<Position x="578.37134" z="26.3429"/>
 			<Orientation y="0.49103"/>
@@ -15922,28 +15922,28 @@
 			<Actor seed="3351"/>
 		</Entity>
 		<Entity uid="2653">
-			<Template>units/brit/infantry_javelinist_e</Template>
+			<Template>units/brit/infantry_javelineer_e</Template>
 			<Player>3</Player>
 			<Position x="574.09565" z="28.53383"/>
 			<Orientation y="0.82563"/>
 			<Actor seed="35907"/>
 		</Entity>
 		<Entity uid="2654">
-			<Template>units/brit/infantry_javelinist_e</Template>
+			<Template>units/brit/infantry_javelineer_e</Template>
 			<Player>3</Player>
 			<Position x="581.06965" z="29.5816"/>
 			<Orientation y="0.74282"/>
 			<Actor seed="55670"/>
 		</Entity>
 		<Entity uid="2655">
-			<Template>units/brit/infantry_javelinist_e</Template>
+			<Template>units/brit/infantry_javelineer_e</Template>
 			<Player>3</Player>
 			<Position x="577.1037" z="32.59226"/>
 			<Orientation y="0.50651"/>
 			<Actor seed="20218"/>
 		</Entity>
 		<Entity uid="2656">
-			<Template>units/brit/infantry_javelinist_e</Template>
+			<Template>units/brit/infantry_javelineer_e</Template>
 			<Player>3</Player>
 			<Position x="580.30555" z="24.77826"/>
 			<Orientation y="0.49103"/>

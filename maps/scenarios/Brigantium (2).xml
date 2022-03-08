@@ -20300,7 +20300,7 @@
 			<Actor seed="30288"/>
 		</Entity>
 		<Entity uid="3349">
-			<Template>units/brit/infantry_javelinist_e</Template>
+			<Template>units/brit/infantry_javelineer_e</Template>
 			<Player>1</Player>
 			<Position x="1650.64576" z="783.22205"/>
 			<Orientation y="-0.42212"/>

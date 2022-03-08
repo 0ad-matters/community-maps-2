@@ -94737,14 +94737,14 @@
 			<Actor seed="24636"/>
 		</Entity>
 		<Entity uid="14339">
-			<Template>units/cart/infantry_javelinist_iber_a</Template>
+			<Template>units/cart/infantry_javelineer_iber_a</Template>
 			<Player>8</Player>
 			<Position x="382.00266" z="412.767"/>
 			<Orientation y="2.73635"/>
 			<Actor seed="16612"/>
 		</Entity>
 		<Entity uid="14340">
-			<Template>units/cart/infantry_javelinist_iber_a</Template>
+			<Template>units/cart/infantry_javelineer_iber_a</Template>
 			<Player>8</Player>
 			<Position x="376.90378" z="409.55567"/>
 			<Orientation y="2.35621"/>
