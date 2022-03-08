@@ -20,8 +20,6 @@ const tTier1Terrain = g_Terrains.tier1Terrain;
 const tTier2Terrain = g_Terrains.tier2Terrain;
 const tTier3Terrain = g_Terrains.tier3Terrain;
 const tHill = g_Terrains.hill;
-const tRoad = g_Terrains.road;
-const tRoadWild = g_Terrains.roadWild;
 const tTier4Terrain = g_Terrains.tier4Terrain;
 const tDirt = g_Terrains.dirt;
 
@@ -62,7 +60,6 @@ var clRock = g_Map.createTileClass();
 var clMetal = g_Map.createTileClass();
 var clFood = g_Map.createTileClass();
 var clBaseResource = g_Map.createTileClass();
-var clRoad = g_Map.createTileClass();
 var clLand = g_Map.createTileClass();
 var clWater = g_Map.createTileClass();
 
@@ -180,8 +177,6 @@ createArea(
 	new HeightConstraint(-Infinity, heightShoreline));
 Engine.SetProgress(30);
 
-const heightOffsetRoad = -2.5;
-
 if (!isNomad())
 {
 	g_Map.log("Placing players");
@@ -282,132 +277,12 @@ if (!isNomad())
 			new SlopeConstraint(2, Infinity)
 		]);
 
-/**
- * function PathPlacer(start, end, width, waviness, smoothness, offset, tapering, failFraction = 0)
- * Creates a winding path between two points.
- *
- * @param {Vector2D} start - Starting position of the path.
- * @param {Vector2D} end - Endposition of the path.
- * @param {number} width - Number of tiles between two sides of the path.
- * @param {number} waviness - 0 is a straight line, higher numbers are.
- * @param {number} smoothness - the higher the number, the smoother the path.
- * @param {number} offset - Maximum amplitude of waves along the path. 0 is straight line.
- * @param {number} tapering - How much the width of the path changes from start to end.
- *   If positive, the width will decrease by that factor.
- *   If negative the width will increase by that factor.
- */
-
-/**
- * function SmoothElevationPainter(type, elevation, blendRadius, randomElevation = 0)
- * Sets the elevation of the Area in dependence to the given blendRadius and
- * interpolates it with the existing elevation.
- *
- * @param type - ELEVATION_MODIFY or ELEVATION_SET.
- * @param elevation - target height.
- * @param blendRadius - How steep the elevation change is.
- * @param randomElevation - maximum random elevation difference added to each vertex.
- */
-
-/**
- * function LayeredPainter(terrainArray, widths)
- * The LayeredPainter sets different Terrains within the Area.
- * It choses the Terrain depending on the distance to the border of the Area.
- *
- * The Terrains given in the first array are painted from the border of the area towards the center (outermost first).
- * The widths array has one item less than the Terrains array.
- * Each width specifies how many tiles the corresponding Terrain should be wide (distance to the prior Terrain border).
- * The remaining area is filled with the last terrain.
- */
-
-	const stayLand = new StaticConstraint(stayClasses(clLand, 0));
-	g_Map.log("Finding possible roads");
-	var roadConstraint = new StaticConstraint(
-		[
-			stayLand,
-			avoidClasses(clHill, 0, clWater, 0, clShoreline, 0)
-		]);
-
-	//var areaCityPaths = new Area(areasCityPaths.reduce((points, area) => points.concat(area.getPoints()), []));
-	//var areaRoads = [];
-	//for (let roadStart of roadStartLocations)
-	//{
-		//if (areaRoads.length >= scaleByMapSize(2, 5))
-			//break;
-
-		//let closestPoint = areaCityPaths.getClosestPointTo(roadStart);
-		//roadConstraint = new StaticConstraint([roadConstraint, avoidClasses(clRoad, 20)]);
-		//for (let tries = 0; tries < 30; ++tries)
-		//{
-			//let area = createArea(
-				//new PathPlacer(
-					//Vector2D.add(closestPoint, new Vector2D(0, 3/4 * mapSize).rotate(closestPoint.angleTo(roadStart))),
-					//roadStart,
-					//scaleByMapSize(5, 3),
-					//0.1,
-					//5,
-					//0.5,
-					//0,
-					//0),
-				//new TileClassPainter(clRoad),
-				//roadConstraint);
-
-			//if (area && area.getPoints().length)
-			//{
-				//areaRoads.push(area);
-				//break;
-			//}
-		//}
-	//}
-
-	//g_Map.log("Painting roads");
-	//createArea(
-		//new MapBoundsPlacer(),
-		//[
-			//new SmoothElevationPainter(ELEVATION_MODIFY, heightOffsetRoad, 1),
-			//new LayeredPainter([tPathWild, tPath], [1]),
-		//],
-		//[stayClasses(clRoad, 0), avoidClasses(clPath, 0)])
-
-	for (let position of playerPosition)
-	{
-		let relPos = Vector2D.sub(position, mapCenter);
-		relPos = relPos.normalize().mult(scaleByMapSize(4,8));
-		// Path from player to neighbor
-		let area = createArea(
-			new PathPlacer(
-				Vector2D.sub(position, relPos),
-				mapCenter,
-				1, // width
-				1.0, // waviness
-				20,
-				0.1,
-				-0.6,
-				0),
-			[
-				new LayeredPainter([tRoad, tDirt, tRoad], [2, 4]),
-				new SmoothElevationPainter(ELEVATION_MODIFY, heightOffsetRoad, 4),
-				new TileClassPainter(clRoad)
-			],
-			[
-				roadConstraint
-				//new NearTileClassConstraint(clWater, 0),
-				// avoidClasses(clWater, 0, clHill, 2)
-				// stayClasses(clLand, 2)
-			]);
-
-			// g_Map.log("Area = ");
-			// g_Map.log(area.getPoints());
-	}
-
 	placePlayerBases({
 		"PlayerPlacement": [playerIDs, playerPosition],
 		"PlayerTileClass": clPlayer,
 		"BaseResourceClass": clBaseResource,
-		"baseResourceConstraint": avoidClasses(clRoad, 0),
 		"Walls": false,
 		"CityPatch": {
-			"outerTerrain": tRoadWild,
-			"innerTerrain": tRoad
 		},
 		"Chicken": {
 			"template": oPig
@@ -443,7 +318,7 @@ createLayeredPatches(
  [scaleByMapSize(3, 6), scaleByMapSize(5, 10), scaleByMapSize(8, 21)],
  [[tMainTerrain,tTier1Terrain],[tTier1Terrain,tTier2Terrain], [tTier2Terrain,tTier3Terrain]],
  [1, 1],
- avoidClasses(clRoad, 0, clWater, 5, clForest, 0, clHill, 0, clDirt, 5, clPlayer, 12),
+ avoidClasses(clWater, 5, clForest, 0, clHill, 0, clDirt, 5, clPlayer, 12),
  scaleByMapSize(15, 45),
  clDirt);
 
@@ -451,7 +326,7 @@ g_Map.log("Creating grass patches");
 createPatches(
  [scaleByMapSize(2, 4), scaleByMapSize(3, 7), scaleByMapSize(5, 15)],
  tTier4Terrain,
- avoidClasses(clRoad, 0, clWater, 5, clHill, 0, clDirt, 5, clPlayer, 12),
+ avoidClasses(clWater, 5, clHill, 0, clDirt, 5, clPlayer, 12),
  scaleByMapSize(15, 45),
  clDirt);
 Engine.SetProgress(45);
@@ -461,7 +336,7 @@ createBalancedMetalMines(
 	oMetalSmall,
 	oMetalLarge,
 	clMetal,
-	avoidClasses(clIsthmus, 1, clRock, 5, clMetal, 10, clRoad, 1, clPlayer, scaleByMapSize(23, 38), clHill, 1, clWater, 4)
+	avoidClasses(clIsthmus, 1, clRock, 5, clMetal, 10, clPlayer, scaleByMapSize(23, 38), clHill, 1, clWater, 4)
 );
 
 g_Map.log("Creating stone mines");
@@ -469,7 +344,7 @@ createBalancedStoneMines(
 	oStoneSmall,
 	oStoneLarge,
 	clRock,
-	avoidClasses(clIsthmus, 1, clRoad, 1, clPlayer, scaleByMapSize(23, 38), clHill, 2, clRock, 10, clMetal, 5, clWater, 5)
+	avoidClasses(clIsthmus, 1, clPlayer, scaleByMapSize(23, 38), clHill, 2, clRock, 10, clMetal, 5, clWater, 5)
 );
 
 Engine.SetProgress(50);
@@ -477,7 +352,7 @@ Engine.SetProgress(50);
 var [forestTrees, stragglerTrees] = getTreeCounts(...rBiomeTreeCount(1));
 createForests(
  [tMainTerrain, tForestFloor1, tForestFloor2, pForest1, pForest2],
- avoidClasses(clIsthmus, 2, clRock, 1, clMetal, 1, clRoad, 1, clWater, 5, clPlayer, scaleByMapSize(20, 35), clForest, 18, clHill, 2),
+ avoidClasses(clIsthmus, 2, clRock, 1, clMetal, 1, clWater, 5, clPlayer, scaleByMapSize(20, 35), clForest, 18, clHill, 2),
  clForest,
  forestTrees);
 Engine.SetProgress(60);
@@ -502,7 +377,7 @@ createDecoration(
 		planetm * scaleByMapSize(13, 200),
 		planetm * scaleByMapSize(13, 200)
 	],
-	avoidClasses(clRoad, 1, clWater, 5, clForest, 0, clPlayer, 0, clHill, 0));
+	avoidClasses(clWater, 5, clForest, 0, clPlayer, 0, clHill, 0));
 
 Engine.SetProgress(70);
 
@@ -515,14 +390,13 @@ createFood(
 		3 * numPlayers,
 		3 * numPlayers
 	],
-	avoidClasses(clRoad, 1, clWater, 20, clForest, 0, clPlayer, 20, clHill, 1, clMetal, 4, clRock, 4, clFood, 20),
+	avoidClasses(clWater, 20, clForest, 0, clPlayer, 20, clHill, 1, clMetal, 4, clRock, 4, clFood, 20),
 	clFood);
 Engine.SetProgress(75);
 
 createStragglerTrees(
 	[oTree1, oTree2, oTree4, oTree3],
 	avoidClasses(
-		clRoad, 1,
 		clWater, 5,
 		clForest, 8,
 		clHill, 1,
