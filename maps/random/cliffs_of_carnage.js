@@ -192,7 +192,9 @@ createBalancedMetalMines(
 	oMetalSmall,
 	oMetalLarge,
 	clMetal,
-	avoidClasses(clMetal, randIntInclusive(8,12), clPlayer, scaleByMapSize(23, 38), clHill, 2, clWater, 4)
+	avoidClasses(clMetal, randIntInclusive(8,12), clPlayer, scaleByMapSize(23, 38), clHill, 2, clWater, 4),
+	scaleByMapSize(1, 7), // counts, // counts (multiplier)
+	randFloat(0.05, 0.15) // randomness
 );
 
 g_Map.log("Creating stone mines");
@@ -200,7 +202,9 @@ createBalancedStoneMines(
 	oStoneSmall,
 	oStoneLarge,
 	clRock,
-	avoidClasses(clPlayer, scaleByMapSize(23, 38), clHill, 2, clRock, randIntInclusive(8,12), clMetal, randIntInclusive(4,8), clWater, 4)
+	avoidClasses(clPlayer, scaleByMapSize(23, 38), clHill, 2, clRock, randIntInclusive(8,12), clMetal, randIntInclusive(4,8), clWater, 4),
+	scaleByMapSize(1, 7), // counts
+	randFloat(0.05, 0.15) // randomness
 );
 
 Engine.SetProgress(60);
