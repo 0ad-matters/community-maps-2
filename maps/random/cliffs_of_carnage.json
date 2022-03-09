@@ -1,0 +1,11 @@
+{
+	"settings" : {
+		"Name" : "Cliffs of Carnage",
+		"Script" : "cliffs_of_carnage.js",
+		"Description" : "Players start as nomads. There are cliffs on each side on which you can build a civic center, or you may choose to build a dock near one of the lakes first",
+		"Preview" : "cliffs_of_carnage_random.png",
+		"Keywords": ["community"],
+		"SupportedBiomes": "generic/",
+		"CircularMap" : false
+	}
+}
