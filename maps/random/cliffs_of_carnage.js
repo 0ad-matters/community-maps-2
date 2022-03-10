@@ -22,6 +22,8 @@ const tTier3Terrain = g_Terrains.tier3Terrain;
 const tHill = g_Terrains.hill;
 const tTier4Terrain = g_Terrains.tier4Terrain;
 const tDirt = g_Terrains.dirt;
+const tRoad = g_Terrains.road;
+const tRoadWild = g_Terrains.roadWild;
 
 const oTree1 = g_Gaia.tree1;
 const oTree2 = g_Gaia.tree2;
@@ -64,7 +66,6 @@ var clLand = g_Map.createTileClass();
 var clWater = g_Map.createTileClass();
 
 const mapBounds = g_Map.getBounds();
-// var startAngle = randBool() ? 0 : Math.PI / 2;
 const mapSize = g_Map.getSize();
 const mapCenter = g_Map.getCenter();
 const heightScale = num => num * g_MapSettings.Size / 320;
@@ -91,7 +92,7 @@ function placeMine(position, centerEntity,
 			randomAngle());
 }
 
-initTileClasses(["shoreline", "isthmus"]);
+initTileClasses("shoreline");
 var clShoreline = g_TileClasses.shoreline;
 
 g_Map.log("Loading hill heightmap");
@@ -161,6 +162,37 @@ createArea(
 
 Engine.SetProgress(35);
 
+placePlayerBases({
+	"PlayerPlacement": playerPlacementRiver(Math.PI/2, fractionToTiles(.75)),
+	"PlayerTileClass": clPlayer,
+	"BaseResourceClass": clBaseResource,
+	"Walls": false,
+	"CityPatch": {
+		"outerTerrain": tRoadWild,
+		"innerTerrain": tRoad
+	},
+	"Chicken": {
+			"template": oPig
+	},
+	"Berries": {
+		"template": oFruitBush
+	},
+	"Mines": {
+		"types": [
+			{ "template": oMetalLarge },
+			{ "template": oStoneLarge },
+		]
+	},
+	"Trees": {
+		"template": oTree1,
+		"count": 2
+	},
+	"Decoratives": {
+		"template": aGrassShort
+	}
+});
+Engine.SetProgress(40);
+
 g_Map.log("Creating dirt patches");
 createLayeredPatches(
  [scaleByMapSize(3, 6), scaleByMapSize(5, 10), scaleByMapSize(8, 21)],
@@ -193,7 +225,7 @@ createBalancedMetalMines(
 	oMetalLarge,
 	clMetal,
 	avoidClasses(clMetal, randIntInclusive(8,12), clPlayer, scaleByMapSize(23, 38), clHill, 2, clWater, 4),
-	scaleByMapSize(1, 7), // counts, // counts (multiplier)
+	scaleByMapSize(1, 3), // counts, // counts (multiplier)
 	randFloat(0.05, 0.15) // randomness
 );
 
@@ -203,7 +235,7 @@ createBalancedStoneMines(
 	oStoneLarge,
 	clRock,
 	avoidClasses(clPlayer, scaleByMapSize(23, 38), clHill, 2, clRock, randIntInclusive(8,12), clMetal, randIntInclusive(4,8), clWater, 4),
-	scaleByMapSize(1, 7), // counts
+	scaleByMapSize(1, 3), // counts
 	randFloat(0.05, 0.15) // randomness
 );
 
@@ -273,6 +305,9 @@ createObjectGroups(
 // slightly modified from the function in maps/random/rmgen-common/player.js
 function placePlayersNomad_cm2(playerClass, constraints)
 {
+	if (!isNomad())
+		return undefined;
+
 	g_Map.log("Placing nomad starting units");
 
 	let distance = scaleByMapSize(60, 240);
