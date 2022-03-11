@@ -32,6 +32,9 @@ const oTree4 = g_Gaia.tree4;
 const oTree5 = g_Gaia.tree5;
 const oFruitBush = g_Gaia.fruitBush;
 const oPig = "gaia/fauna_pig";
+const oSheep = "gaia/fauna_sheep";
+const oGrapes = "gaia/fruit/grapes";
+const oApples = "gaia/fruit/apple";
 const oMainHuntableAnimal = g_Gaia.mainHuntableAnimal;
 const oSecondaryHuntableAnimal = g_Gaia.secondaryHuntableAnimal;
 const oStoneLarge = g_Gaia.stoneLarge;
@@ -103,7 +106,7 @@ createArea(
 			new Vector2D(0, scaleByMapSize(0, 0)),
 			// new Vector2D(-12, scaleByMapSize(-12, -25)),
 			undefined,
-			convertHeightmap1Dto2D(Engine.LoadMapTerrain("maps/skirmishes/Cliffs_of_Carnage_4v4_8p.pmp").height)),
+			convertHeightmap1Dto2D(Engine.LoadMapTerrain("maps/random/cliffs_of_carnage.pmp").height)),
 		minHeightSource,
 		maxHeightSource));
 
@@ -112,6 +115,8 @@ const heightReedsMin = heightScale(-2);
 const heightReedsMax = heightScale(-0.5);
 const heightWaterLevel = heightScale(0);
 const heightShoreline = heightScale(0.5);
+
+const fruit = [oFruitBush, oGrapes, oApples];
 
 g_Map.log("Lowering sea ground");
 createArea(
@@ -156,7 +161,7 @@ createArea(
 		new TileClassPainter(clHill),
 	],
 	[
-		avoidClasses(clWater, 2),
+		avoidClasses(clShoreline, 0),
 		new SlopeConstraint(2, Infinity)
 	]);
 
@@ -172,10 +177,11 @@ placePlayerBases({
 		"innerTerrain": tRoad
 	},
 	"Chicken": {
-			"template": oPig
+			"template": randBool() ? oPig : oSheep,
+			"count": randIntInclusive(5,20)
 	},
 	"Berries": {
-		"template": oFruitBush
+		"template": fruit[randIntInclusive(0, fruit.length - 1)], "count": randIntInclusive(1,4)
 	},
 	"Mines": {
 		"types": [
@@ -212,11 +218,12 @@ createPatches(
 Engine.SetProgress(45);
 
 var [forestTrees, stragglerTrees] = getTreeCounts(...rBiomeTreeCount(1));
+let randForestTrees = randFloat(forestTrees * 0.85, forestTrees * 1.15);
 createForests(
  [tMainTerrain, tForestFloor1, tForestFloor2, pForest1, pForest2],
  avoidClasses(clWater, 5, clPlayer, scaleByMapSize(20, 35), clForest, randIntInclusive(10,14), clHill, 5),
  clForest,
- forestTrees);
+ randForestTrees);
 Engine.SetProgress(50);
 
 g_Map.log("Creating metal mines");
@@ -224,7 +231,7 @@ createBalancedMetalMines(
 	oMetalSmall,
 	oMetalLarge,
 	clMetal,
-	avoidClasses(clMetal, randIntInclusive(8,12), clPlayer, scaleByMapSize(23, 38), clHill, 2, clWater, 4),
+	avoidClasses(clMetal, randIntInclusive(8,12), clPlayer, scaleByMapSize(23, 38), clHill, 6, clWater, 4, clShoreline, 6),
 	scaleByMapSize(1, 3), // counts, // counts (multiplier)
 	randFloat(0.05, 0.15) // randomness
 );
@@ -234,7 +241,7 @@ createBalancedStoneMines(
 	oStoneSmall,
 	oStoneLarge,
 	clRock,
-	avoidClasses(clPlayer, scaleByMapSize(23, 38), clHill, 2, clRock, randIntInclusive(8,12), clMetal, randIntInclusive(4,8), clWater, 4),
+	avoidClasses(clPlayer, scaleByMapSize(23, 38), clHill, 6, clRock, randIntInclusive(8,12), clMetal, randIntInclusive(4,8), clWater, 4, clShoreline, 6),
 	scaleByMapSize(1, 3), // counts
 	randFloat(0.05, 0.15) // randomness
 );
@@ -268,13 +275,15 @@ Engine.SetProgress(70);
 createFood(
 	[
 		[new SimpleObject(oMainHuntableAnimal, 5, 7, 0, 4)],
-		[new SimpleObject(oSecondaryHuntableAnimal, 2, 3, 0, 2)]
+		[new SimpleObject(oSecondaryHuntableAnimal, 2, 3, 0, 2)],
+		[new SimpleObject(oFruitBush, 5, 7, 0, 4)]
 	],
 	[
 		3 * numPlayers,
-		3 * numPlayers
+		3 * numPlayers,
+		randIntInclusive(1,4) * numPlayers,
 	],
-	avoidClasses(clWater, 20, clForest, 0, clPlayer, 20, clHill, 1, clMetal, 4, clRock, 4, clFood, 20),
+	avoidClasses(clWater, 6, clForest, 0, clPlayer, scaleByMapSize(23, 38), clHill, 1, clMetal, 4, clRock, 4, clFood, 20),
 	clFood);
 Engine.SetProgress(75);
 
@@ -289,15 +298,16 @@ createStragglerTrees(
 		clRock, 1,
 		clFood, 1),
 	clForest,
-	stragglerTrees);
+	stragglerTrees,
+	randFloat(randForestTrees * 0.25, randForestTrees));
 
 g_Map.log("Creating fish");
 createObjectGroups(
 	new SimpleGroup([new SimpleObject(oFish, 1, 1, 0, 1)], true, clFood),
 	0,
 	[
-		avoidClasses(clFood, 10),
-		stayClasses(clWater, 4),
+		avoidClasses(clFood, 2),
+		stayClasses(clWater, 2),
 		new HeightConstraint(-Infinity, heightWaterLevel)
 	],
 	scaleByMapSize(8, 32));
@@ -358,14 +368,13 @@ function placePlayersNomad_cm2(playerClass, constraints)
 	return [playerIDs, playerPosition];
 }
 
-
 placePlayersNomad_cm2(clPlayer, avoidClasses(clWater, 5, clForest, 1, clMetal, 4, clRock, 4, clHill, 4, clFood, 2));
 
 setWaterHeight(heightWaterLevel + SEA_LEVEL);
-setWaterColor(0.100,0.149,0.237);
-setWaterTint(0.100, 0.149,0.237);
+setWaterColor(0.089,0.157,0.212);
+setWaterTint(0.089, 0.157,0.212);
 setWaterWaviness(randIntInclusive(2, 8));
-setWaterMurkiness(.67);
+setWaterMurkiness(0.90);
 setWaterType("lake");
 
 g_Map.ExportMap();

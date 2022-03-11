@@ -3,7 +3,7 @@
 		"Name" : "Cliffs of Carnage",
 		"Script" : "cliffs_of_carnage.js",
 		"Description" : "Players start with bases on top of a cliff near their allies.",
-		"Preview" : "cliffs_of_carnage_random.png",
+		"Preview" : "cliffs_of_carnage.png",
 		"Keywords": ["community"],
 		"SupportedBiomes": "generic/",
 		"CircularMap" : false
