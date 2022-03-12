@@ -221,9 +221,7 @@ for (let position of playerPosition)
 		// new ClumpPlacer(diskArea(playerHillRadius), 0.95, 0.6, Infinity, position),
 		new ClumpPlacer(diskArea(playerHillRadius), 0.95, 0.1, Infinity, position),
 		[
-			// new LayeredPainter([tCliff, tHill], [2]),
 			new SmoothElevationPainter(ELEVATION_SET, heightHill, 2),
-			new TileClassPainter(clPlayer)
 		]);
 
 	let angle = position.angleTo(mapCenter) - Math.PI * 0.5;
@@ -235,7 +233,6 @@ for (let position of playerPosition)
 		"startWidth": 12,
 		"endWidth": 20,
 		"smoothWidth": 4,
-		"tileClass": clPlayer,
 	});
 
 	createPassage({
@@ -244,7 +241,6 @@ for (let position of playerPosition)
 		"startWidth": 12,
 		"endWidth": 20,
 		"smoothWidth": 4,
-		"tileClass": clPlayer,
 	});
 }
 
@@ -329,14 +325,13 @@ createBalancedStoneMines(
 	clRock,
 	avoidClasses(clIsthmus, 1, clPlayer, scaleByMapSize(23, 38), clHill, 2, clRock, 10, clMetal, 5, clWater, 5)
 );
-
 Engine.SetProgress(50);
 
 g_Map.log("Establishing forests");
 var [forestTrees, stragglerTrees] = getTreeCounts(...rBiomeTreeCount(1));
 createForests(
  [tMainTerrain, tForestFloor1, tForestFloor2, pForest1, pForest2],
- avoidClasses(clIsthmus, 2, clRock, 1, clMetal, 1, clWater, 5, clPlayer, scaleByMapSize(20, 35), clForest, 18, clHill, 2),
+ avoidClasses(clIsthmus, 2, clRock, 1, clMetal, 1, clWater, 5, clPlayer, scaleByMapSize(18, 34), clForest, 12, clHill, 3),
  clForest,
  forestTrees);
 Engine.SetProgress(60);
