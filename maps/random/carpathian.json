@@ -1,0 +1,12 @@
+{
+	"settings" : {
+		"Name" : "Carpathian",
+		"Script" : "carpathian.js",
+		"Description" : "plenty of ridges",
+		"BaseTerrain" : ["taiga"],
+		"BaseHeight" : 10,
+		"Keywords": ["community"],
+		"Preview" : "carpathian.png",
+		"CircularMap" : true
+	}
+}

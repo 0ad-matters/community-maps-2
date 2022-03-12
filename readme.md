@@ -15,7 +15,8 @@ of this repo.
 
 | Map Name | Author | Link | Publication Date |
 |----------|--------|------|------------------|
-| Cliffs of Carnage|[andy5995](https://wildfiregames.com/forum/profile/21632-andy5995/)|[Forum](https://wildfiregames.com/forum/topic/30590-cliffs-of-carnage-new-4v4-pvp-map/)|2022-03-09|
+| Carpathian | norjay |[Forum](https://wildfiregames.com/forum/topic/73639-random-carpathian/)| 2022-03-12|
+| Cliffs of Carnage | andy5995 |[Forum](https://wildfiregames.com/forum/topic/30590-cliffs-of-carnage-new-4v4-pvp-map/)|2022-03-09|
 | Povorotnaya | [norjay](https://wildfiregames.com/forum/profile/35479-norjay/) | [Forum](https://wildfiregames.com/forum/topic/63618-random-povorotnaya/) | 2021-11-27 |
 | Mainland balanced | [Feldfeld](https://wildfiregames.com/forum/profile/22154-feldfeld/) | [Forum](https://wildfiregames.com/forum/topic/53880-feldmap-a25/) | 2021-08-27 |
 | Alpine Mountains | [Feldfeld](https://wildfiregames.com/forum/profile/22154-feldfeld/) | [Forum](https://wildfiregames.com/forum/topic/53880-feldmap-a25/) | 2021-08-27 |
