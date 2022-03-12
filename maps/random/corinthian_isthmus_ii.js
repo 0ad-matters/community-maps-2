@@ -64,14 +64,13 @@ var clLand = g_Map.createTileClass();
 var clWater = g_Map.createTileClass();
 
 const mapBounds = g_Map.getBounds();
-var startAngle = randBool() ? 0 : Math.PI / 2;
+const startAngle = 0.05 * Math.PI;
 const mapSize = g_Map.getSize();
 const mapCenter = g_Map.getCenter();
 const heightScale = num => num * g_MapSettings.Size / 320;
 const minHeightSource = -15;
 const maxHeightSource = 400;
-// const mineDistToCC = defaultPlayerBaseRadius() * scaleByMapSize(2, 1);
-const mineDistToCC = scaleByMapSize(20, 35);
+const mineDistToCC = scaleByMapSize(22, 35);
 const mediumMapSize = 320;
 
 function placeMine(position, centerEntity,
@@ -94,11 +93,6 @@ function placeMine(position, centerEntity,
 			randomAngle());
 }
 
-//function scaleByMapSize(min, max, minMapSize = 128, maxMapSize = 512)
-	//{
-		//return min + (max - min) * (g_MapSettings.Size - minMapSize) / (maxMapSize - minMapSize);
-	//}
-
 initTileClasses(["shoreline", "isthmus"]);
 var clShoreline = g_TileClasses.shoreline;
 var clIsthmus = g_TileClasses.isthmus;
@@ -119,7 +113,7 @@ const heightSeaGround = heightScale(-4);
 const heightReedsMin = heightScale(-2);
 const heightReedsMax = heightScale(-0.5);
 const heightWaterLevel = heightScale(0);
-const heightShoreline = heightScale(0.5);
+const heightShoreline = heightScale(0.4);
 
 g_Map.log("Lowering sea ground");
 createArea(
@@ -184,19 +178,19 @@ if (!isNomad())
 	var playerPosition = playerPlacementArcs(
 		playerIDs,
 		mapCenter,
-		fractionToTiles(0.35),
-		0.25 * Math.PI,
+		fractionToTiles(0.30),
+		startAngle - 0.75 * Math.PI,
 		0.2 * Math.PI,
-		0.8 * Math.PI);
+		0.9 * Math.PI);
 
 	const initBaseHeight = heightWaterLevel;
-	const baseHeight = initBaseHeight + 24;
-	const cliffEdgeRadius = defaultPlayerBaseRadius() * 1.2
+	const heightHill = 25;
+	var playerHillRadius = defaultPlayerBaseRadius() / (isNomad() ? 1.5 : 1) * 1.2;
 	g_Map.log("Flatten the initial CC area");
 	for (let position of playerPosition)
 	{
 		createArea(
-			new ClumpPlacer(diskArea(defaultPlayerBaseRadius() * 2.2), 0.95, 0.6, Infinity, position),
+			new ClumpPlacer(diskArea(playerHillRadius * 2), 0.85, 0.45, Infinity, position),
 			new SmoothElevationPainter(ELEVATION_SET, initBaseHeight, 12));
 	}
 
@@ -211,106 +205,98 @@ if (!isNomad())
 			placeMine(
 				Vector2D.add(
 					position,
-					new Vector2D(mineDistToCC, 0)).rotateAround(position.angleTo(mapCenter)-Math.PI*0.45,
+					new Vector2D(mineDistToCC, 0)).rotateAround(position.angleTo(mapCenter)-Math.PI*0.44,
 					position),
 				oMetalLarge);
 			placeMine(
 				Vector2D.add(
 					position,
-					new Vector2D(mineDistToCC, 0)).rotateAround(position.angleTo(mapCenter)-Math.PI*0.55,
+					new Vector2D(mineDistToCC, 0)).rotateAround(position.angleTo(mapCenter)-Math.PI*0.56,
 					position),
 				oStoneLarge);
 		}
 	}
 
-	g_Map.log("Now raise the initial CC area");
-	for (let position of playerPosition)
-		createArea(
-			new ClumpPlacer(diskArea(cliffEdgeRadius), 0.95, 0.6, Infinity, position),
-			new SmoothElevationPainter(ELEVATION_SET, baseHeight, 2));
-
-	const passageBlendRadius = 8;
-	const passageHeight = baseHeight/2.0
-	g_Map.log("Lower part of the cliff in front of each base to make a passage");
+	g_Map.log("Creating player hills and ramps");
 	for (let position of playerPosition)
 	{
 		createArea(
-			new ClumpPlacer(diskArea(
-				defaultPlayerBaseRadius() * 0.7),
-				0.95, 0.6,
-				Infinity,
-				Vector2D.add(position,
-				new Vector2D(cliffEdgeRadius,0)).rotateAround(position.angleTo(mapCenter)-Math.PI*0.5,
-				position)),
-			new SmoothElevationPainter(
-				ELEVATION_SET,
-				g_Map.getHeight(position) - passageHeight,
-				passageBlendRadius));
+			// new ClumpPlacer(diskArea(playerHillRadius), 0.95, 0.6, Infinity, position),
+			new ClumpPlacer(diskArea(playerHillRadius), 0.95, 0.1, Infinity, position),
+			[
+				// new LayeredPainter([tCliff, tHill], [2]),
+				new SmoothElevationPainter(ELEVATION_SET, heightHill, 2),
+				new TileClassPainter(clPlayer)
+			]);
+
+		let angle = position.angleTo(mapCenter) - Math.PI * 0.5;
+		let distanceFromCC = playerHillRadius * 0.80;
+		let distanceFromEdge = playerHillRadius / 8;
+		createPassage({
+			"start": Vector2D.add(position, new Vector2D(playerHillRadius + distanceFromEdge, 0).rotate(angle)),
+			"end": Vector2D.add(position, new Vector2D(playerHillRadius - distanceFromCC, 0).rotate(angle)),
+			"startWidth": 12,
+			"endWidth": 20,
+			"smoothWidth": 4,
+			"tileClass": clPlayer,
+		});
+
+		createPassage({
+			"start": Vector2D.add(position, new Vector2D(playerHillRadius + distanceFromEdge, 0).rotate(angle + Math.PI)),
+			"end": Vector2D.add(position, new Vector2D(playerHillRadius - distanceFromCC, 0).rotate(angle + Math.PI)),
+			"startWidth": 12,
+			"endWidth": 20,
+			"smoothWidth": 4,
+			"tileClass": clPlayer,
+		});
 	}
-
-	g_Map.log("Lower part of the cliff in back of each base to make a passage");
-	for (let position of playerPosition)
-	{
-		createArea(
-			new ClumpPlacer(diskArea(
-				defaultPlayerBaseRadius() * 0.7),
-				0.95, 0.6,
-				Infinity,
-				Vector2D.add(position,
-				new Vector2D(cliffEdgeRadius,0)).rotateAround(position.angleTo(mapCenter)+Math.PI*0.5,
-				position)),
-			new SmoothElevationPainter(
-				ELEVATION_SET,
-				g_Map.getHeight(position) - passageHeight,
-				passageBlendRadius));
-	}
-
-	g_Map.log("Painting cliffs");
-	createArea(
-		new MapBoundsPlacer(),
-		[
-			new TerrainPainter(g_Terrains.cliff),
-			new TileClassPainter(clHill),
-		],
-		[
-			avoidClasses(clWater, 2),
-			new SlopeConstraint(2, Infinity)
-		]);
-
-	placePlayerBases({
-		"PlayerPlacement": [playerIDs, playerPosition],
-		"PlayerTileClass": clPlayer,
-		"BaseResourceClass": clBaseResource,
-		"Walls": false,
-		"CityPatch": {
-		},
-		"Chicken": {
-			"template": oPig
-		},
-		"Berries": {
-			"template": oFruitBush
-		},
-		"Mines": {
-			"types": [
-				{ "template": oMetalSmall },
-				{ "template": oStoneSmall },
-				// distance value is completely ignored
-				// https://wildfiregames.com/forum/topic/60993-suggestion-players-should-not-start-with-5000-stone-and-5000-metal-right-next-to-their-cc/?do=findComment&comment=462533
-				// { "template": oMetalLarge, "distance": defaultPlayerBaseRadius() * 1.5 },
-				// { "template": oStoneLarge, "distance": defaultPlayerBaseRadius() * 1.5 }
-			],
-		},
-		"Trees": {
-			"template": oTree1,
-			"count": 5
-		},
-		"Decoratives": {
-			"template": aGrassShort
-		}
-	});
 }
 
-createBumps(avoidClasses(clPlayer, 20));
+g_Map.log("Painting cliffs");
+createArea(
+	new MapBoundsPlacer(),
+	[
+		new TerrainPainter(g_Terrains.cliff),
+		new TileClassPainter(clHill),
+	],
+	[
+		avoidClasses(clWater, 2),
+		new SlopeConstraint(2, Infinity)
+	]);
+
+placePlayerBases({
+	"PlayerPlacement": [playerIDs, playerPosition],
+	"PlayerTileClass": clPlayer,
+	"BaseResourceClass": clBaseResource,
+	"Walls": false,
+	"CityPatch": {
+	},
+	"Chicken": {
+		"template": oPig
+	},
+	"Berries": {
+		"template": oFruitBush
+	},
+	"Mines": {
+		"types": [
+			{ "template": oMetalSmall },
+			{ "template": oStoneSmall },
+			// distance value is completely ignored
+			// https://wildfiregames.com/forum/topic/60993-suggestion-players-should-not-start-with-5000-stone-and-5000-metal-right-next-to-their-cc/?do=findComment&comment=462533
+			// { "template": oMetalLarge, "distance": defaultPlayerBaseRadius() * 1.5 },
+			// { "template": oStoneLarge, "distance": defaultPlayerBaseRadius() * 1.5 }
+		],
+	},
+	"Trees": {
+		"template": oTree1,
+		"count": 5
+	},
+	"Decoratives": {
+		"template": aGrassShort
+	}
+});
+
+createBumps(avoidClasses(clPlayer, 20, clWater, 1));
 Engine.SetProgress(35);
 
 g_Map.log("Creating dirt patches");
@@ -349,6 +335,7 @@ createBalancedStoneMines(
 
 Engine.SetProgress(50);
 
+g_Map.log("Establishing forests");
 var [forestTrees, stragglerTrees] = getTreeCounts(...rBiomeTreeCount(1));
 createForests(
  [tMainTerrain, tForestFloor1, tForestFloor2, pForest1, pForest2],
@@ -362,6 +349,7 @@ var planetm = 1;
 if (currentBiome() == "generic/tropic")
 	planetm = 8;
 
+g_Map.log("Creating adornments");
 createDecoration(
 	[
 		[new SimpleObject(aRockMedium, 1, 3, 0, 1)],
@@ -381,6 +369,7 @@ createDecoration(
 
 Engine.SetProgress(70);
 
+g_Map.log("Populating with food");
 createFood(
 	[
 		[new SimpleObject(oMainHuntableAnimal, 5, 7, 0, 4)],
@@ -420,9 +409,11 @@ createObjectGroups(
 
 placePlayersNomad(clPlayer, avoidClasses(clWater, 5, clForest, 1, clMetal, 4, clRock, 4, clHill, 4, clFood, 2));
 
-// setWaterHeight(heightWaterLevel);
 setWaterHeight(heightWaterLevel + SEA_LEVEL);
-setWaterColor(0.100,0.149,0.237);
-setWaterTint(0.100, 0.149,0.237);
+setWaterColor(0.120,0.125,0.221);
+setWaterTint(0.120, 0.125,0.221);
+setWaterWaviness(randIntInclusive(2, 8));
+setWaterMurkiness(.93);
+setWaterType("ocean");
 
 g_Map.ExportMap();
