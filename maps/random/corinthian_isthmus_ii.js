@@ -171,85 +171,81 @@ createArea(
 	new HeightConstraint(-Infinity, heightShoreline));
 Engine.SetProgress(30);
 
-if (!isNomad())
+var playerIDs = sortAllPlayers();
+var playerPosition = playerPlacementArcs(
+	playerIDs,
+	mapCenter,
+	fractionToTiles(0.30),
+	startAngle - 0.75 * Math.PI,
+	0.2 * Math.PI,
+	0.9 * Math.PI);
+
+const initBaseHeight = heightWaterLevel;
+const heightHill = 25;
+var playerHillRadius = defaultPlayerBaseRadius() / (isNomad() ? 1.5 : 1) * 1.2;
+g_Map.log("Flatten the initial CC area");
+for (let position of playerPosition)
 {
-	g_Map.log("Placing players");
-	var playerIDs = sortAllPlayers();
-	var playerPosition = playerPlacementArcs(
-		playerIDs,
-		mapCenter,
-		fractionToTiles(0.30),
-		startAngle - 0.75 * Math.PI,
-		0.2 * Math.PI,
-		0.9 * Math.PI);
+	createArea(
+		new ClumpPlacer(diskArea(playerHillRadius * 2), 0.85, 0.45, Infinity, position),
+		new SmoothElevationPainter(ELEVATION_SET, initBaseHeight, 12));
+}
 
-	const initBaseHeight = heightWaterLevel;
-	const heightHill = 25;
-	var playerHillRadius = defaultPlayerBaseRadius() / (isNomad() ? 1.5 : 1) * 1.2;
-	g_Map.log("Flatten the initial CC area");
+// If the map is smaller than Medium size, don't place the large
+// mines near the player's territory border. On maps that small, the
+// chance of mines already being nearby is pretty high.
+if (g_Map.size >= mediumMapSize)
+{
+	g_Map.log("Placing large mines for each player");
 	for (let position of playerPosition)
 	{
-		createArea(
-			new ClumpPlacer(diskArea(playerHillRadius * 2), 0.85, 0.45, Infinity, position),
-			new SmoothElevationPainter(ELEVATION_SET, initBaseHeight, 12));
+		placeMine(
+			Vector2D.add(
+				position,
+				new Vector2D(mineDistToCC, 0)).rotateAround(position.angleTo(mapCenter)-Math.PI*0.44,
+				position),
+			oMetalLarge);
+		placeMine(
+			Vector2D.add(
+				position,
+				new Vector2D(mineDistToCC, 0)).rotateAround(position.angleTo(mapCenter)-Math.PI*0.56,
+				position),
+			oStoneLarge);
 	}
+}
 
-	// If the map is smaller than Medium size, don't place the large
-	// mines near the player's territory border. On maps that small, the
-	// chance of mines already being nearby is pretty high.
-	if (g_Map.size >= mediumMapSize)
-	{
-		g_Map.log("Placing large mines for each player");
-		for (let position of playerPosition)
-		{
-			placeMine(
-				Vector2D.add(
-					position,
-					new Vector2D(mineDistToCC, 0)).rotateAround(position.angleTo(mapCenter)-Math.PI*0.44,
-					position),
-				oMetalLarge);
-			placeMine(
-				Vector2D.add(
-					position,
-					new Vector2D(mineDistToCC, 0)).rotateAround(position.angleTo(mapCenter)-Math.PI*0.56,
-					position),
-				oStoneLarge);
-		}
-	}
+g_Map.log("Creating player hills and ramps");
+for (let position of playerPosition)
+{
+	createArea(
+		// new ClumpPlacer(diskArea(playerHillRadius), 0.95, 0.6, Infinity, position),
+		new ClumpPlacer(diskArea(playerHillRadius), 0.95, 0.1, Infinity, position),
+		[
+			// new LayeredPainter([tCliff, tHill], [2]),
+			new SmoothElevationPainter(ELEVATION_SET, heightHill, 2),
+			new TileClassPainter(clPlayer)
+		]);
 
-	g_Map.log("Creating player hills and ramps");
-	for (let position of playerPosition)
-	{
-		createArea(
-			// new ClumpPlacer(diskArea(playerHillRadius), 0.95, 0.6, Infinity, position),
-			new ClumpPlacer(diskArea(playerHillRadius), 0.95, 0.1, Infinity, position),
-			[
-				// new LayeredPainter([tCliff, tHill], [2]),
-				new SmoothElevationPainter(ELEVATION_SET, heightHill, 2),
-				new TileClassPainter(clPlayer)
-			]);
+	let angle = position.angleTo(mapCenter) - Math.PI * 0.5;
+	let distanceFromCC = playerHillRadius * 0.80;
+	let distanceFromEdge = playerHillRadius / 8;
+	createPassage({
+		"start": Vector2D.add(position, new Vector2D(playerHillRadius + distanceFromEdge, 0).rotate(angle)),
+		"end": Vector2D.add(position, new Vector2D(playerHillRadius - distanceFromCC, 0).rotate(angle)),
+		"startWidth": 12,
+		"endWidth": 20,
+		"smoothWidth": 4,
+		"tileClass": clPlayer,
+	});
 
-		let angle = position.angleTo(mapCenter) - Math.PI * 0.5;
-		let distanceFromCC = playerHillRadius * 0.80;
-		let distanceFromEdge = playerHillRadius / 8;
-		createPassage({
-			"start": Vector2D.add(position, new Vector2D(playerHillRadius + distanceFromEdge, 0).rotate(angle)),
-			"end": Vector2D.add(position, new Vector2D(playerHillRadius - distanceFromCC, 0).rotate(angle)),
-			"startWidth": 12,
-			"endWidth": 20,
-			"smoothWidth": 4,
-			"tileClass": clPlayer,
-		});
-
-		createPassage({
-			"start": Vector2D.add(position, new Vector2D(playerHillRadius + distanceFromEdge, 0).rotate(angle + Math.PI)),
-			"end": Vector2D.add(position, new Vector2D(playerHillRadius - distanceFromCC, 0).rotate(angle + Math.PI)),
-			"startWidth": 12,
-			"endWidth": 20,
-			"smoothWidth": 4,
-			"tileClass": clPlayer,
-		});
-	}
+	createPassage({
+		"start": Vector2D.add(position, new Vector2D(playerHillRadius + distanceFromEdge, 0).rotate(angle + Math.PI)),
+		"end": Vector2D.add(position, new Vector2D(playerHillRadius - distanceFromCC, 0).rotate(angle + Math.PI)),
+		"startWidth": 12,
+		"endWidth": 20,
+		"smoothWidth": 4,
+		"tileClass": clPlayer,
+	});
 }
 
 g_Map.log("Painting cliffs");
@@ -295,9 +291,10 @@ placePlayerBases({
 		"template": aGrassShort
 	}
 });
-
-createBumps(avoidClasses(clPlayer, 20, clWater, 1));
 Engine.SetProgress(35);
+
+g_Map.log("Bumpifying");
+createBumps(avoidClasses(clPlayer, 20, clWater, 1));
 
 g_Map.log("Creating dirt patches");
 createLayeredPatches(
