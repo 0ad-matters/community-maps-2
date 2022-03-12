@@ -167,6 +167,7 @@ createArea(
 
 Engine.SetProgress(35);
 
+g_Map.log("Placing players");
 placePlayerBases({
 	"PlayerPlacement": playerPlacementRiver(Math.PI/2, fractionToTiles(.75)),
 	"PlayerTileClass": clPlayer,
@@ -186,7 +187,7 @@ placePlayerBases({
 	"Mines": {
 		"types": [
 			{ "template": oMetalLarge },
-			{ "template": oStoneLarge },
+			{ "template": oStoneLarge }
 		]
 	},
 	"Trees": {
@@ -217,35 +218,47 @@ createPatches(
  clDirt);
 Engine.SetProgress(45);
 
-var [forestTrees, stragglerTrees] = getTreeCounts(...rBiomeTreeCount(1));
-let randForestTrees = randFloat(forestTrees * 0.85, forestTrees * 1.15);
-createForests(
- [tMainTerrain, tForestFloor1, tForestFloor2, pForest1, pForest2],
- avoidClasses(clWater, 5, clPlayer, scaleByMapSize(20, 35), clForest, randIntInclusive(10,14), clHill, 5),
- clForest,
- randForestTrees);
-Engine.SetProgress(50);
-
 g_Map.log("Creating metal mines");
 createBalancedMetalMines(
 	oMetalSmall,
 	oMetalLarge,
 	clMetal,
-	avoidClasses(clMetal, randIntInclusive(8,12), clPlayer, scaleByMapSize(23, 38), clHill, 6, clWater, 4, clShoreline, 6),
-	scaleByMapSize(1, 3), // counts, // counts (multiplier)
-	randFloat(0.05, 0.15) // randomness
-);
+	avoidClasses(
+		clPlayer, scaleByMapSize(18, 32),
+		clMetal, randIntInclusive(8,12),
+		clHill, 1,
+		clWater, 12, // This is what's used to keep the resources off the ramps near the corner lakes
+		clShoreline, 6,
+		// count (multiplier; default is 1)
+		)
+	);
 
 g_Map.log("Creating stone mines");
 createBalancedStoneMines(
 	oStoneSmall,
 	oStoneLarge,
 	clRock,
-	avoidClasses(clPlayer, scaleByMapSize(23, 38), clHill, 6, clRock, randIntInclusive(8,12), clMetal, randIntInclusive(4,8), clWater, 4, clShoreline, 6),
-	scaleByMapSize(1, 3), // counts
-	randFloat(0.05, 0.15) // randomness
-);
+	avoidClasses(clPlayer, scaleByMapSize(18, 32),
+		clHill, 1,
+		clRock, randIntInclusive(8,12),
+		clMetal, randIntInclusive(4,8),
+		clWater, 12,
+		clShoreline, 6,
+		// count (multiplier)
+		)
+	);
+Engine.SetProgress(50);
 
+g_Map.log("Establishing forests");
+var [forestTrees, stragglerTrees] = getTreeCounts(...rBiomeTreeCount(1));
+createForests(
+ [tMainTerrain, tForestFloor1, tForestFloor2, pForest1, pForest2],
+ avoidClasses(clWater, 5, clPlayer, scaleByMapSize(20, 35), clForest, randIntInclusive(10,14), clHill, 5,
+	clRock, 1,
+	clMetal, 1
+	),
+ clForest,
+ forestTrees);
 Engine.SetProgress(60);
 
 var planetm = 1;
@@ -253,6 +266,7 @@ var planetm = 1;
 if (currentBiome() == "generic/tropic")
 	planetm = 8;
 
+g_Map.log("Creating adornments");
 createDecoration(
 	[
 		[new SimpleObject(aRockMedium, 1, 3, 0, 1)],
@@ -272,11 +286,12 @@ createDecoration(
 
 Engine.SetProgress(70);
 
+g_Map.log("Populating with food");
 createFood(
 	[
 		[new SimpleObject(oMainHuntableAnimal, 5, 7, 0, 4)],
 		[new SimpleObject(oSecondaryHuntableAnimal, 2, 3, 0, 2)],
-		[new SimpleObject(oFruitBush, 5, 7, 0, 4)]
+		[new SimpleObject(fruit[randIntInclusive(0, fruit.length - 1)], 5, 7, 0, 4)]
 	],
 	[
 		3 * numPlayers,
@@ -287,6 +302,7 @@ createFood(
 	clFood);
 Engine.SetProgress(75);
 
+g_Map.log("Creating stragglers (trees)");
 createStragglerTrees(
 	[oTree1, oTree2, oTree4, oTree3],
 	avoidClasses(
@@ -298,8 +314,8 @@ createStragglerTrees(
 		clRock, 1,
 		clFood, 1),
 	clForest,
-	stragglerTrees,
-	randFloat(randForestTrees * 0.25, randForestTrees));
+	stragglerTrees
+	);
 
 g_Map.log("Creating fish");
 createObjectGroups(
