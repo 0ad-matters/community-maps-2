@@ -189,21 +189,53 @@ if(!isNomad())
 	{
 		for (let i = 0; i < teams[i_t].length - 1; i++)
 		{
-			for (let j = i + 1; j < teams[i_t].length ; j++)
+			for (let j = i + 1; j < teams[i_t].length; j++)
 			{
+				warn("i_t:");
+				warn(uneval(i_t));
+				warn("i:");
 				warn(uneval(i));
+				warn("j:");
 				warn(uneval(j));
-				// const rWidth = randFloat(8, 5.0);
-				createPassage({
-					"start": playerPosition[i],
-					"end": playerPosition[j],
-					"startWidth": 8,
-					"endWidth": 8,
-					"smoothWidth": 0,
-					"tileClass": clRoad,
-					"terrain": tRoadWild,
-					"edgeTerrain": tRoad
-					});
+				warn("teams[i_t][i]:");
+				warn(uneval(teams[i_t][i]));
+				warn("teams[i_t][j]:");
+				warn(uneval(teams[i_t][j]));
+				warn("indexOf i:");
+				warn(uneval(teams[i_t].indexOf(i)));
+				warn("indexOf i:");
+				warn(uneval(teams[i_t].indexOf(j)));
+				const rWidth = randFloat(8, 12);
+				if (teams[i_t].indexOf(i) != -1 && teams[i_t].indexOf(j) != -1)
+				{
+					createPassage({
+						"start": playerPosition[teams[i_t].indexOf(i)],
+						"end": playerPosition[teams[i_t].indexOf(j)],
+						"startWidth": rWidth,
+						"endWidth": rWidth,
+						"smoothWidth": 0,
+						"tileClass": clRoad,
+						"terrain": tRoadWild,
+						"edgeTerrain": tRoad
+						});
+
+						// Path from player to neighbor
+						let area = createArea(
+							new PathPlacer(
+								playerPosition[teams[i_t].indexOf(i)],
+								playerPosition[teams[i_t].indexOf(j)],
+								rWidth, // width
+								0, // waviness - 0 is a straight line, higher numbers are.
+								20, // smoothness
+								20, // offset - Maximum amplitude of waves along the path. 0 is straight line.
+								-0.6,
+								0),
+							[
+								new LayeredPainter([tRoad, tDirt, tRoad], [3, 6]),
+								new SmoothElevationPainter(ELEVATION_MODIFY, 0, 200),
+								new TileClassPainter(clRoad)
+							]);
+				}
 			}
 		}
 	}
