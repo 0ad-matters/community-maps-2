@@ -181,96 +181,33 @@ for (let position of playerPosition)
 		new SmoothElevationPainter(ELEVATION_SET, g_Map.getHeight(position), 6));
 }
 
-
-initTileClasses(["path"]);
-var clPath = g_TileClasses.path;
-const heightLand = heightScale(1);
-const heightMapCenter = g_Map.getHeight(mapCenter);
-
-// smoothElevationPainter:
- //* @param type - ELEVATION_MODIFY or ELEVATION_SET.
- //* @param elevation - target height.
- //* @param blendRadius - How steep the elevation change is.
- //* @param randomElevation - maximum random elevation difference added to each vertex.
-
-for (let position of playerPosition)
-{
-	let relPos = Vector2D.sub(position, mapCenter);
-	relPos = relPos.normalize().mult(scaleByMapSize(4,8));
-	// Path from player to neighbor
-	let area = createArea(
-		new PathPlacer(
-			Vector2D.sub(position, relPos),
-			mapCenter,
-			10, // width
-			0, // waviness - 0 is a straight line, higher numbers are.
-			20, // smoothness
-			0, // offset - Maximum amplitude of waves along the path. 0 is straight line.
-			-0.6,
-			0),
-		[
-			// new LayeredPainter([tRoad, tDirt, tRoad], [3, 6]),
-			// new SmoothElevationPainter(ELEVATION_MODIFY, g_Map.getHeight(position), 50),
-			new SmoothElevationPainter(ELEVATION_SET, g_Map.getHeight(position), Infinity),
-			new SmoothElevationPainter(ELEVATION_MODIFY, 0, Infinity),
-			new TileClassPainter(clPath)
-		]);
-}
-
-				//new SmoothElevationPainter(ELEVATION_SET, heightLand, 0),
-				//new SmoothElevationPainter(ELEVATION_MODIFY, heightScale(heightMapCenter), 50),
-
 // Player roads
-//if(!isNomad())
-//{
-	//for(let p1 = 0; p1 < numPlayers - 1; ++p1)
-	//{
-		//for(let p2 = p1 + 1; p2 < numPlayers; ++p2)
-		//{
-			//for(let i = 0; i < teams.length; ++i)
-			//{
-				//if(teams[i].indexOf(p1 + 1) != -1 && teams[i].indexOf(p2 + 1) != -1)
-				//{
-					//const rWidth = randFloat(2.5, 5.0);
-					////createPassage({
-						////"start": playerPosition[p1],
-						////"end": playerPosition[p2],
-						////"startWidth": rWidth,
-						////"endWidth": rWidth,
-						////"smoothWidth": rWidth * 2,
-						////"startHeight": 0,
-						////"endHeight": 50,
-						////"tileClass": clRoad,
-						////"terrain": tRoadWild,
-						////"edgeTerrain": tRoad
-					////});
-					//// break;
-					//let relPos = Vector2D.sub(playerPosition[1], mapCenter);
-					//relPos = relPos.normalize().mult(scaleByMapSize(4,8));
-					//// Path from player to neighbor
-					//let area = createArea(
-						//new PathPlacer(
-							//Vector2D.sub(playerPosition[p1], relPos),
-							//playerPosition[p2],
-							//12, // width
-							//0, // waviness - 0 is a straight line, higher numbers are.
-							//20, // smoothness
-							//.5, // offset - Maximum amplitude of waves along the path. 0 is straight line.
-							//-0.6,
-							//0),
-						//[
-							//// new LayeredPainter([tRoad, tDirt, tRoad], [3, 6]),
-							//// new SmoothElevationPainter(ELEVATION_MODIFY, g_Map.getHeight(position), 50),
-							//new SmoothElevationPainter(ELEVATION_SET, (g_Map.getHeight(playerPosition[p1]) + g_Map.getHeight(playerPosition[p2])) / 2, Infinity),
-							//new SmoothElevationPainter(ELEVATION_MODIFY, (g_Map.getHeight(playerPosition[p1]) + g_Map.getHeight(playerPosition[p2])) / 2, Infinity),
-							//new TileClassPainter(clPath)
-						//]);
-						//break;
-				//}
-			//}
-		//}
-	//}
-//}
+// warn(uneval(teams)); // for debugging
+if(!isNomad())
+{
+	for (let i_t = 0; i_t < teams.length; i_t++)
+	{
+		for (let i = 0; i < teams[i_t].length - 1; i++)
+		{
+			for (let j = i + 1; j < teams[i_t].length ; j++)
+			{
+				warn(uneval(i));
+				warn(uneval(j));
+				// const rWidth = randFloat(8, 5.0);
+				createPassage({
+					"start": playerPosition[i],
+					"end": playerPosition[j],
+					"startWidth": 8,
+					"endWidth": 8,
+					"smoothWidth": 0,
+					"tileClass": clRoad,
+					"terrain": tRoadWild,
+					"edgeTerrain": tRoad
+					});
+			}
+		}
+	}
+}
 
 Engine.SetProgress(30);
 g_Map.log("Generating lakes and rivers");
