@@ -1,0 +1,43 @@
+{
+	"all": {
+		"terrains": {
+			"shallow": "desert_sand_wet",
+			"water": ["medit_sea_depths", "steppe_river_rocks_wet"]
+		}
+	},
+	"lowest": {
+		"terrains": {
+			"base": "desert_sand_dunes_100",
+			"hill": ["desert_sand_dunes_100", "desert_sand_dunes_50", ["medit_grass_shrubs", "medit_rocks_grass_shrubs", "medit_rocks_shrubs", "medit_rocks_grass", "medit_shrubs"]],
+			"mountain": "medit_sand"
+		}
+	},
+	"low": {
+		"terrains": {
+			"base": "desert_grass_a_sand",
+			"hill": [["desert_grass_a", "desert_grass_a_sand"], "medit_grass_field_b", ["medit_grass_shrubs", "medit_rocks_grass_shrubs", "medit_rocks_shrubs", "medit_rocks_grass", "medit_shrubs"]],
+			"mountain": "medit_dirt"
+		}
+	},
+	"medium": {
+		"terrains": {
+			"base": "medit_grass_field",
+			"hill": ["medit_grass_field", "", ["medit_grass_shrubs", "medit_rocks_grass_shrubs", "medit_rocks_shrubs", "medit_rocks_grass", "medit_shrubs"]],
+			"mountain": "medit_dirt"
+		}
+	},
+	"high": {
+		"terrains": {
+			"base": ["alpine_grass_snow_50", "alpine_dirt_snow"],
+			"hill": [["alpine_grass_snow_50", "alpine_dirt_snow"], "medit_cliff_aegean", ["medit_grass_shrubs", "medit_rocks_grass_shrubs", "medit_rocks_shrubs", "medit_rocks_grass", "medit_shrubs"]],
+			"mountain": "alpine_snow_rocky"
+		}
+	},
+	"highest": {
+		"terrains": {
+			"base": "snow rough",
+			"hill": ["snow rough", "medit_cliff_aegean", ["medit_grass_shrubs", "medit_rocks_grass_shrubs", "medit_rocks_shrubs", "medit_rocks_grass", "medit_shrubs"]],
+			"mountain": "medit_dirt_c"
+		}
+	}
+}

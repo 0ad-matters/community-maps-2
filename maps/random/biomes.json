@@ -1,0 +1,36 @@
+{
+	"settings" : {
+		"Name" : "Biomes",
+		"Script" : "biomes.js",
+		"Description" : "WIP map.",
+		"Preview" : "polar_sea_dawn.png",
+		"CircularMap" : true,
+		"Daytime":
+		[
+			{
+				"Id": "day",
+				"Name": "Day",
+				"Description": "Daytime.",
+				"Preview" : "polar_sea_daylight.png"
+			},
+			{
+				"Id": "dawn",
+				"Name": "Dusk / Dawn",
+				"Description": "Sunrise or sunset.",
+				"Preview" : "polar_sea_daylight.png"
+			},
+			{
+				"Id": "night",
+				"Name": "Night",
+				"Description": "Nighttime.",
+				"Preview" : "polar_sea_dawn.png"
+			},
+			{
+				"Id": "cloudy",
+				"Name": "Cloudy",
+				"Description": "Cloudy day.",
+				"Preview" : "polar_sea_dawn.png"
+			}
+		]
+	}
+}
