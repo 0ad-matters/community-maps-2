@@ -59,10 +59,11 @@ var clFood = g_Map.createTileClass();
 var clBaseResource = g_Map.createTileClass();
 var clWater = g_Map.createTileClass();
 
+warn(uneval(g_Map.size));
 const mapBounds = g_Map.getBounds();
 var startAngle = 0;
 const mapCenter = g_Map.getCenter();
-var WATER_WIDTH = 0.40;
+var WATER_WIDTH = .38;
 const heightSeaGround = 120;
 const heightWaterLevel = 1;
 const heightHill = 12;
@@ -74,7 +75,7 @@ for (let x of [mapBounds.left, mapBounds.right])
 		"end": new Vector2D(x, mapBounds.bottom).rotateAround(startAngle, mapCenter),
 		"width": 2 * fractionToTiles(WATER_WIDTH),
 		"fadeDist": 5,
-		"deviation": 1,
+		"deviation": .08,
 		"heightRiverbed": heightSeaGround,
 		"heightLand": heightLand,
 		"meanderShort": 5,
@@ -93,32 +94,45 @@ var playerPosition = playerPlacementArcs(
 	0.1 * Math.PI,
 	0.9 * Math.PI);
 
-var playerHillRadius = defaultPlayerBaseRadius() / (isNomad() ? 1.5 : 1) * 1.2;
+var playerBaseRadius = defaultPlayerBaseRadius() / (isNomad() ? 1.5 : 1) * 1.2;
 
 if(!isNomad())
 {
-	for (let i = 0; i < numPlayers - 1; i++)
-	{
-		warn(uneval(g_Map.getHeight(playerPosition[i])));
-		if (g_Map.getHeight(playerPosition[i]) < heightSeaGround)
-		{
-			createPassage({
-				"start": Vector2D.add(playerPosition[i],
-					new Vector2D(playerHillRadius + 15, 0).rotate(playerPosition[i].angleTo(playerPosition[i]))),
-				"end": Vector2D.add(playerPosition[i + 1],
-					new Vector2D(playerHillRadius - 15, 0).rotate(playerPosition[i + 1].angleTo(playerPosition[i]))),
-				"startWidth": 20,
-				"endWidth": 20,
-				"smoothWidth": 2,
-				});
-		}
-	}
+	let left = new Vector2D(mapCenter.x - mapCenter.x * 0.7, mapCenter.y).round();
+	let right = new Vector2D(mapCenter.x + mapCenter.x * 0.7, mapCenter.y).round();
+	createPassage({
+		"start": left,
+		"end": new Vector2D(mapCenter.x - 20, mapCenter.y),
+		"startWidth": playerBaseRadius,
+		"endWidth": playerBaseRadius,
+		"smoothWidth": 2,
+		});
+
+	createPassage({
+		"start": right,
+		"end": new Vector2D(mapCenter.x + 20, mapCenter.y),
+		"startWidth": playerBaseRadius,
+		"endWidth": playerBaseRadius,
+		"smoothWidth": 2,
+		});
 }
+
+g_Map.log("Painting cliffs");
+createArea(
+	new MapBoundsPlacer(),
+	[
+		new TerrainPainter(g_Terrains.cliff),
+		new TileClassPainter(clHill),
+	],
+	[
+		new SlopeConstraint(1, Infinity)
+	]);
 
 placePlayerBases({
 	"PlayerPlacement": [playerIDs, playerPosition],
 	"PlayerTileClass": clPlayer,
 	"BaseResourceClass": clBaseResource,
+	"baseResourceConstraint": avoidClasses(clHill, 1),
 	"Walls": false,
 	"CityPatch": {
 		"outerTerrain": tRoadWild,
@@ -148,17 +162,6 @@ Engine.SetProgress(20);
 
 createBumps(avoidClasses(clPlayer, 20));
 
-g_Map.log("Painting cliffs");
-createArea(
-	new MapBoundsPlacer(),
-	[
-		new TerrainPainter(g_Terrains.cliff),
-		new TileClassPainter(clHill),
-	],
-	[
-		new SlopeConstraint(1, Infinity)
-	]);
-
 createHillsAndMountains(
 	scaleByMapSize(3 * randFloat(1, 3), 15 * randFloat(1, 2)), // hillCount
 	scaleByMapSize(3 * randFloat(1, 3), 15 * randFloat(1, 2))); // mountainCount
@@ -166,7 +169,7 @@ createHillsAndMountains(
 var [forestTrees, stragglerTrees] = getTreeCounts(...rBiomeTreeCount(1));
 createForests(
  [tMainTerrain, tForestFloor1, tForestFloor2, pForest1, pForest2],
- avoidClasses(clWater, 1, clPlayer, 20, clForest, 18, clHill, 0),
+ avoidClasses(clWater, 1, clPlayer, 20, clForest, 18, clHill, 5),
  clForest,
  forestTrees);
 
@@ -195,7 +198,7 @@ createBalancedMetalMines(
 	oMetalSmall,
 	oMetalLarge,
 	clMetal,
-	avoidClasses(clWater, 2, clForest, 1, clPlayer, 20, clHill, 2),
+	avoidClasses(clWater, 2, clForest, 1, clPlayer, 20, clHill, 5, clMetal, 10),
 );
 
 g_Map.log("Creating stone mines");
@@ -203,7 +206,7 @@ createBalancedStoneMines(
 	oStoneSmall,
 	oStoneLarge,
 	clRock,
-	avoidClasses(clWater, 2, clForest, 1, clPlayer, 20, clMetal, 10, clHill, 2),
+	avoidClasses(clWater, 2, clForest, 1, clPlayer, 20, clMetal, 10, clHill, 3, clRock, 10),
 );
 
 Engine.SetProgress(65);
