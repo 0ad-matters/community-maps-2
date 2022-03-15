@@ -62,7 +62,7 @@ var clWater = g_Map.createTileClass();
 const mapBounds = g_Map.getBounds();
 var startAngle = 0;
 const mapCenter = g_Map.getCenter();
-var WATER_WIDTH = 0.45;
+var WATER_WIDTH = 0.40;
 const heightSeaGround = 120;
 const heightWaterLevel = 1;
 const heightHill = 12;
@@ -93,11 +93,33 @@ var playerPosition = playerPlacementArcs(
 	0.1 * Math.PI,
 	0.9 * Math.PI);
 
+var playerHillRadius = defaultPlayerBaseRadius() / (isNomad() ? 1.5 : 1) * 1.2;
+
+if(!isNomad())
+{
+	for (let i = 0; i < numPlayers - 1; i++)
+	{
+		warn(uneval(g_Map.getHeight(playerPosition[i])));
+		if (g_Map.getHeight(playerPosition[i]) < heightSeaGround)
+		{
+			createPassage({
+				"start": Vector2D.add(playerPosition[i],
+					new Vector2D(playerHillRadius + 15, 0).rotate(playerPosition[i].angleTo(playerPosition[i]))),
+				"end": Vector2D.add(playerPosition[i + 1],
+					new Vector2D(playerHillRadius - 15, 0).rotate(playerPosition[i + 1].angleTo(playerPosition[i]))),
+				"startWidth": 20,
+				"endWidth": 20,
+				"smoothWidth": 2,
+				});
+		}
+	}
+}
+
 placePlayerBases({
 	"PlayerPlacement": [playerIDs, playerPosition],
 	"PlayerTileClass": clPlayer,
 	"BaseResourceClass": clBaseResource,
-	"Walls": g_Map.getSize() > 320,
+	"Walls": false,
 	"CityPatch": {
 		"outerTerrain": tRoadWild,
 		"innerTerrain": tRoad
@@ -244,39 +266,39 @@ createStragglerTrees(
 
 placePlayersNomad(clPlayer, avoidClasses(clWater, 5, clForest, 1, clMetal, 4, clRock, 4, clHill, 4, clFood, 2));
 
-g_Map.log("Creating smoke");
-let clSmoke = g_Map.createTileClass();
-var aSmoke = "actor|particle/smoke.xml";
-let smokeGroup = new SimpleGroup([new SimpleObject(aSmoke, 3, 3, 0, 7)], false, clSmoke);
-createObjectGroups(smokeGroup, 0,
-	avoidClasses(clHill, 0),
-	100,
-	scaleByMapSize(80, 250));
+//g_Map.log("Creating smoke");
+//let clSmoke = g_Map.createTileClass();
+//var aSmoke = "actor|particle/smoke.xml";
+//let smokeGroup = new SimpleGroup([new SimpleObject(aSmoke, 3, 3, 0, 7)], false, clSmoke);
+//createObjectGroups(smokeGroup, 0,
+	//avoidClasses(clHill, 0),
+	//100,
+	//scaleByMapSize(80, 250));
 
-g_Map.log("Creating dust storm");
-let clDustStorm = g_Map.createTileClass();
-var aDustStorm = "actor|particle/dust_storm.xml";
-let dustStormGroup = new SimpleGroup([new SimpleObject(aDustStorm, 1, 1, 0, 7)], false, clDustStorm);
-createObjectGroups(dustStormGroup, 0,
-	avoidClasses(clForest, 1, clHill, 0),
-	100,
-	scaleByMapSize(80, 250));
+//g_Map.log("Creating dust storm");
+//let clDustStorm = g_Map.createTileClass();
+//var aDustStorm = "actor|particle/dust_storm.xml";
+//let dustStormGroup = new SimpleGroup([new SimpleObject(aDustStorm, 1, 1, 0, 7)], false, clDustStorm);
+//createObjectGroups(dustStormGroup, 0,
+	//avoidClasses(clForest, 1, clHill, 0),
+	//100,
+	//scaleByMapSize(80, 250));
 
-g_Map.log("Clouding the issue");
-let clCloud = g_Map.createTileClass();
-let cloudGroup = new SimpleGroup([new SimpleObject("actor|particle/cloud.xml", 1, 1, 0, 7)], false, clCloud);
-createObjectGroups(cloudGroup, 0,
-	avoidClasses(clForest, 1),
-	100,
-	scaleByMapSize(80, 250));
+//g_Map.log("Clouding the issue");
+//let clCloud = g_Map.createTileClass();
+//let cloudGroup = new SimpleGroup([new SimpleObject("actor|particle/cloud.xml", 1, 1, 0, 7)], false, clCloud);
+//createObjectGroups(cloudGroup, 0,
+	//avoidClasses(clForest, 1),
+	//100,
+	//scaleByMapSize(80, 250));
 
-g_Map.log("Clouding the issue");
-let clDestructionDust = g_Map.createTileClass();
-let destructionDustGroup = new SimpleGroup([new SimpleObject("actor|particle/destruction_dust_med_gray.xml", 10, 12, 0, 7)], false, clDestructionDust);
-createObjectGroups(destructionDustGroup, 0,
-	avoidClasses(clForest, 1),
-	20,
-	scaleByMapSize(80, 250));
+//g_Map.log("Clouding the issue");
+//let clDestructionDust = g_Map.createTileClass();
+//let destructionDustGroup = new SimpleGroup([new SimpleObject("actor|particle/destruction_dust_med_gray.xml", 10, 12, 0, 7)], false, clDestructionDust);
+//createObjectGroups(destructionDustGroup, 0,
+	//avoidClasses(clForest, 1),
+	//20,
+	//scaleByMapSize(80, 250));
 
 g_Map.log("Creating rain drops");
 var clRain = g_Map.createTileClass();
