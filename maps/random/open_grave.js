@@ -58,6 +58,7 @@ var clMetal = g_Map.createTileClass();
 var clFood = g_Map.createTileClass();
 var clBaseResource = g_Map.createTileClass();
 var clWater = g_Map.createTileClass();
+var clRamp = g_Map.createTileClass();
 
 warn(uneval(g_Map.size));
 const mapBounds = g_Map.getBounds();
@@ -95,25 +96,40 @@ var playerPosition = playerPlacementArcs(
 	0.9 * Math.PI);
 
 var playerBaseRadius = defaultPlayerBaseRadius() / (isNomad() ? 1.5 : 1) * 1.2;
-
+warn(uneval(mapBounds));
 if(!isNomad())
 {
-	let left = new Vector2D(mapCenter.x - mapCenter.x * 0.7, mapCenter.y).round();
-	let right = new Vector2D(mapCenter.x + mapCenter.x * 0.7, mapCenter.y).round();
+	let width = playerBaseRadius * 1.5;
+	let left = new Vector2D(mapCenter.x * 0.25, mapCenter.y).round();
+	let right = new Vector2D(mapCenter.x * 1.75, mapCenter.y).round();
 	createPassage({
 		"start": left,
 		"end": new Vector2D(mapCenter.x - 20, mapCenter.y),
-		"startWidth": playerBaseRadius,
-		"endWidth": playerBaseRadius,
+		"startWidth": width,
+		"endWidth": width,
 		"smoothWidth": 2,
+		"tileClass": clRamp,
+		//"terrain": tHill,
+		//"edgeTerrain": tCliff
 		});
 
 	createPassage({
 		"start": right,
 		"end": new Vector2D(mapCenter.x + 20, mapCenter.y),
-		"startWidth": playerBaseRadius,
-		"endWidth": playerBaseRadius,
+		"startWidth": width,
+		"endWidth": width,
 		"smoothWidth": 2,
+		"tileClass": clRamp,
+		});
+
+		let rightFront = new Vector2D(mapCenter.x + playerBaseRadius * 1.4, mapCenter.y * 1.9).round();
+		createPassage({
+		"start": rightFront,
+		"end": new Vector2D(rightFront.x * 1.3, rightFront.y * 0.85),
+		"startWidth": width / 2,
+		"endWidth": width / 2,
+		"smoothWidth": 2,
+		"tileClass": clRamp,
 		});
 }
 
@@ -169,7 +185,7 @@ createHillsAndMountains(
 var [forestTrees, stragglerTrees] = getTreeCounts(...rBiomeTreeCount(1));
 createForests(
  [tMainTerrain, tForestFloor1, tForestFloor2, pForest1, pForest2],
- avoidClasses(clWater, 1, clPlayer, 20, clForest, 18, clHill, 5),
+ avoidClasses(clWater, 1, clPlayer, 20, clForest, 18, clHill, 5, clRamp, 5),
  clForest,
  forestTrees);
 
@@ -263,20 +279,20 @@ Engine.SetProgress(85);
 
 createStragglerTrees(
 	[oTree1, oTree2, oTree4, oTree3],
-	avoidClasses(clWater, 1, clForest, 8, clHill, 1, clPlayer, 12, clMetal, 6, clRock, 6, clFood, 1),
+	avoidClasses(clWater, 1, clForest, 8, clHill, 1, clPlayer, 12, clMetal, 6, clRock, 6, clFood, 1, clRamp, 5),
 	clForest,
 	stragglerTrees);
 
 placePlayersNomad(clPlayer, avoidClasses(clWater, 5, clForest, 1, clMetal, 4, clRock, 4, clHill, 4, clFood, 2));
 
-//g_Map.log("Creating smoke");
-//let clSmoke = g_Map.createTileClass();
-//var aSmoke = "actor|particle/smoke.xml";
-//let smokeGroup = new SimpleGroup([new SimpleObject(aSmoke, 3, 3, 0, 7)], false, clSmoke);
-//createObjectGroups(smokeGroup, 0,
-	//avoidClasses(clHill, 0),
-	//100,
-	//scaleByMapSize(80, 250));
+g_Map.log("Creating smoke");
+let clSmoke = g_Map.createTileClass();
+var aSmoke = "actor|particle/smoke_cm2.xml";
+let smokeGroup = new SimpleGroup([new SimpleObject(aSmoke, 3, 3, 0, 7)], false, clSmoke);
+createObjectGroups(smokeGroup, 0,
+	avoidClasses(clHill, 1),
+	100,
+	scaleByMapSize(80, 250));
 
 //g_Map.log("Creating dust storm");
 //let clDustStorm = g_Map.createTileClass();
@@ -322,8 +338,8 @@ setWaterTint(0.133, 0.325,0.255);
 
 setSkySet("sunset");
 
-//setFogFactor(90);
-//setFogThickness(50);
-//setFogColor(0.69, 0.616, 0.541);
+//setFogFactor(.75);
+//setFogThickness(1.8);
+//setFogColor(0.498, 0.498, 0.498);
 
 g_Map.ExportMap();
