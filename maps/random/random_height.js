@@ -11,6 +11,8 @@ setSelectedBiome();
 
 const heightScale = num => num * g_MapSettings.Size / 320;
 const heightLand =  heightScale(0);
+const heightRavineValley = heightScale(heightLand - 28);
+const heightRavineHill = heightScale(heightLand + 10);
 
 function createBasesMainland(playerIDs, playerPosition, walls)
 {
@@ -81,6 +83,9 @@ const aRockLarge = g_Decoratives.rockLarge;
 const aRockMedium = g_Decoratives.rockMedium;
 const aBushMedium = g_Decoratives.bushMedium;
 const aBushSmall = g_Decoratives.bushSmall;
+const aCeltHomestead = "actor|structures/celts/homestead.xml";
+const aCeltHouse = "actor|structures/celts/house.xml";
+const aCeltLongHouse = "actor|structures/celts/longhouse.xml";
 
 const pForest1 = [tForestFloor2 + TERRAIN_SEPARATOR + oTree1, tForestFloor2 + TERRAIN_SEPARATOR + oTree2, tForestFloor2];
 const pForest2 = [tForestFloor1 + TERRAIN_SEPARATOR + oTree4, tForestFloor1 + TERRAIN_SEPARATOR + oTree5, tForestFloor1];
@@ -88,12 +93,13 @@ const pForest2 = [tForestFloor1 + TERRAIN_SEPARATOR + oTree4, tForestFloor1 + TE
 var g_Map = new RandomMap(heightLand, tMainTerrain);
 var mapBounds = g_Map.getBounds();
 var mapCenter = g_Map.getCenter();
-
+const playerBaseRadius = defaultPlayerBaseRadius() / (isNomad() ? 1.5 : 1);
 const numPlayers = getNumPlayers();
 
 var clPlayer = g_Map.createTileClass();
 var clPlayerTerritory = g_Map.createTileClass();
 var clHill = g_Map.createTileClass();
+var clHillDeco = g_Map.createTileClass();
 var clForest = g_Map.createTileClass();
 var clDirt = g_Map.createTileClass();
 var clRock = g_Map.createTileClass();
@@ -133,17 +139,85 @@ for (let i = 0; i < 100; i++)
 		new SmoothElevationPainter(ELEVATION_MODIFY, height , blendRadius));
 }
 
-	createArea(
-		new ClumpPlacer(diskArea(10), 1, 1 , Infinity, mapCenter),
-		new SmoothElevationPainter(ELEVATION_MODIFY, 30 , 20));
+g_Map.log("Painting cliffs");
+createArea(
+	new MapBoundsPlacer(),
+	[
+		new TerrainPainter(g_Terrains.cliff),
+		new TileClassPainter(clHill),
+	],
+	[
+		new SlopeConstraint(1, Infinity)
+	]);
 
-var playerBaseRadius = defaultPlayerBaseRadius() / (isNomad() ? 1.5 : 1);
+g_Map.log("Creating ravines");
+for (let size of [scaleByMapSize(50, 800), scaleByMapSize(50, 400), scaleByMapSize(10, 30), scaleByMapSize(10, 30)])
+{
+	let ravine = createAreas(
+		new ClumpPlacer(size, 0.1, 0.2, 0.1),
+		[
+			new LayeredPainter([tCliff, tForestFloor1], [2]),
+			new SmoothElevationPainter(ELEVATION_SET, heightRavineValley, 2),
+			new TileClassPainter(clHill)
+		],
+		avoidClasses(clPlayer, playerBaseRadius * 1.7),
+		scaleByMapSize(1, 3));
+
+	if (size > 150 && ravine.length)
+	{
+		g_Map.log("Placing huts in ravines");
+		createObjectGroupsByAreasDeprecated(
+			new RandomGroup(
+				[
+					new SimpleObject(aCeltHouse, 0, 1, 4, 5),
+					new SimpleObject(aCeltLongHouse, 1, 1, 4, 5)
+				],
+				true,
+				clHillDeco),
+			0,
+			[avoidClasses(clHillDeco, 3), stayClasses(clHill, 3)],
+			ravine.length * 5, 20,
+			ravine);
+
+		createObjectGroupsByAreasDeprecated(
+			new RandomGroup([new SimpleObject(aCeltHomestead, 1, 1, 1, 1)], true, clHillDeco),
+			0,
+			[avoidClasses(clHillDeco, 5), stayClasses(clHill, 4)],
+			ravine.length * 2, 100,
+			ravine);
+
+		// Place noise
+		createAreasInAreas(
+			new ClumpPlacer(size * 0.3, 0.94, 0.05, 0.1),
+			[
+				new LayeredPainter([tCliff, tForestFloor1], [2]),
+				new SmoothElevationPainter(ELEVATION_SET, heightRavineValley, 2)
+			],
+			[avoidClasses(clHillDeco, 2), stayClasses(clHill, 0)],
+			ravine.length * 2,
+			20,
+			ravine);
+
+		createAreasInAreas(
+			new ClumpPlacer(size * 0.1, 0.3, 0.05, 0.1),
+			[
+				new LayeredPainter([tCliff, tForestFloor1], [2]),
+				new SmoothElevationPainter(ELEVATION_SET, heightRavineHill, 2),
+				new TileClassPainter(clHill)
+			],
+			[avoidClasses(clHillDeco, 2), borderClasses(clHill, 15, 1)],
+			ravine.length * 2,
+			50,
+			ravine);
+	}
+}
+
 g_Map.log("Flatten the initial CC area");
 for (let position of playerPosition)
 {
 	createArea(
 		new ClumpPlacer(diskArea(playerBaseRadius * 1.6), 0.85, 0.45, Infinity, position),
-		new SmoothElevationPainter(ELEVATION_SET, heightLand, playerBaseRadius * 1.9));
+		new SmoothElevationPainter(ELEVATION_SET, heightLand, playerBaseRadius * 1.7));
 }
 
 g_Map.log("Painting cliffs");
