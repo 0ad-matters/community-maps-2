@@ -23,7 +23,7 @@ function createBasesMainland(playerIDs, playerPosition, walls)
 			"playerPosition": playerPosition[i],
 			"PlayerTileClass": clPlayer,
 			"BaseResourceClass": clBaseResource,
-			"Walls": g_Map.getSize() > 192 && walls, // Whether or not iberian gets starting walls
+			"Walls": false,
 			"CityPatch": {
 				"outerTerrain": tRoadWild,
 				"innerTerrain": tRoad
@@ -128,15 +128,16 @@ for (let i = 0; i < 100; i++)
 		randIntInclusive (mapBounds.left, mapBounds.right),
 		randIntInclusive (mapBounds.top, mapBounds.bottom)
 		);
-	let size = randFloat(1, scaleByMapSize(20, 60));
+	let size = randFloat(1, scaleByMapSize(10, 30));
 	let coherence = randFloat(0.35, 0.85); // How much the radius of the clump varies (1 = circle, 0 = very random).
 	let smoothness = randFloat(0.1, 1); // How smooth the border of the clump is (1 = few "peaks", 0 = very jagged).
-	let height = randFloat(-12.0, heightScale(40));
+	let height = randFloat(heightScale(-15), heightScale(40));
 	let blendRadius = randFloat(size * 1.5, size * 2);
 
 	createArea(
 		new ClumpPlacer(diskArea(size), coherence, smoothness , Infinity, centerPosition),
-		new SmoothElevationPainter(ELEVATION_MODIFY, height , blendRadius));
+		new SmoothElevationPainter(ELEVATION_MODIFY, height , blendRadius),
+		avoidClasses(clPlayer, playerBaseRadius * 1.2));
 }
 
 g_Map.log("Painting cliffs");
@@ -151,8 +152,11 @@ createArea(
 	]);
 
 g_Map.log("Creating ravines");
+var loop_num = 0;
 for (let size of [scaleByMapSize(50, 800), scaleByMapSize(50, 400), scaleByMapSize(10, 30), scaleByMapSize(10, 30)])
 {
+	warn(uneval(loop_num));
+	loop_num++;
 	let ravine = createAreas(
 		new ClumpPlacer(size, 0.1, 0.2, 0.1),
 		[
@@ -160,7 +164,7 @@ for (let size of [scaleByMapSize(50, 800), scaleByMapSize(50, 400), scaleByMapSi
 			new SmoothElevationPainter(ELEVATION_SET, heightRavineValley, 2),
 			new TileClassPainter(clHill)
 		],
-		avoidClasses(clPlayer, playerBaseRadius * 1.7),
+		avoidClasses(clPlayer, playerBaseRadius * 2),
 		scaleByMapSize(1, 3));
 
 	if (size > 150 && ravine.length)
@@ -212,24 +216,29 @@ for (let size of [scaleByMapSize(50, 800), scaleByMapSize(50, 400), scaleByMapSi
 	}
 }
 
-g_Map.log("Flatten the initial CC area");
-for (let position of playerPosition)
-{
-	createArea(
-		new ClumpPlacer(diskArea(playerBaseRadius * 1.6), 0.85, 0.45, Infinity, position),
-		new SmoothElevationPainter(ELEVATION_SET, heightLand, playerBaseRadius * 1.7));
-}
+//g_Map.log("Flatten the initial CC area");
+//for (let i = 0; i < 4; i++)
+//{
+	//for (let position of playerPosition)
+	//{
+		//let size = playerBaseRadius * 1.6;
+		//createArea(
+			//new ClumpPlacer(diskArea(size), 1, 1, Infinity, position),
+			//new SmoothElevationPainter(ELEVATION_SET, heightLand, size * 1.5)
+			//);
+	//}
+//}
 
-g_Map.log("Painting cliffs");
-createArea(
-	new MapBoundsPlacer(),
-	[
-		new TerrainPainter(g_Terrains.cliff),
-		new TileClassPainter(clHill),
-	],
-	[
-		new SlopeConstraint(1, Infinity)
-	]);
+//g_Map.log("Painting cliffs");
+//createArea(
+	//new MapBoundsPlacer(),
+	//[
+		//new TerrainPainter(g_Terrains.cliff),
+		//new TileClassPainter(clHill),
+	//],
+	//[
+		//new SlopeConstraint(1, Infinity)
+	//]);
 
 var [forestTrees, stragglerTrees] = getTreeCounts(...rBiomeTreeCount(1));
 createDefaultForests(

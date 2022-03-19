@@ -2,9 +2,9 @@
 	"settings" : {
 		"Name" : "Random Height",
 		"Script" : "random_height.js",
-		"Description" : "A typical map without any water; teammates are placed more closely together.",
+		"Description" : "A map without any water; heights are randomly generated.",
 		"Preview" : "mainland.png",
-		"Keywords": ["multiplayer", "community"],
+		"Keywords": ["community"],
 		"SupportedBiomes": "generic/",
 		"CircularMap" : true,
 		"TeamPlacements": ["radial", "line", "stronghold", "besideAllies", "randomGroup"]
