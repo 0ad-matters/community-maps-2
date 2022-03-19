@@ -14,7 +14,7 @@ const heightLand =  heightScale(0);
 const heightRavineValley = heightScale(heightLand - 28);
 const heightRavineHill = heightScale(heightLand + 10);
 
-function createBasesMainland(playerIDs, playerPosition, walls)
+function createBasesRandomHeights(playerIDs, playerPosition, walls)
 {
 	for (let i = 0; i < getNumPlayers(); ++i)
 	{
@@ -29,6 +29,7 @@ function createBasesMainland(playerIDs, playerPosition, walls)
 				"innerTerrain": tRoad
 			},
 			"Chicken": {
+				"template": "gaia/fauna_sheep"
 			},
 			"Berries": {
 				"template": oFruitBush
@@ -83,8 +84,8 @@ const aRockLarge = g_Decoratives.rockLarge;
 const aRockMedium = g_Decoratives.rockMedium;
 const aBushMedium = g_Decoratives.bushMedium;
 const aBushSmall = g_Decoratives.bushSmall;
-const aCeltHomestead = "actor|structures/celts/homestead.xml";
-const aCeltHouse = "actor|structures/celts/house.xml";
+const aRndStructure = ["actor|structures/celts/homestead.xml", "actor|structures/iberian/market.xml", "actor|structures/kushites/defense_tower_stone.xml"];
+const aRndHouse = ["actor|structures/ptolemies/house.xml", "actor|structures/romans/house.xml", "actor|structures/iberians/house.xml"];
 const aCeltLongHouse = "actor|structures/celts/longhouse.xml";
 
 const pForest1 = [tForestFloor2 + TERRAIN_SEPARATOR + oTree1, tForestFloor2 + TERRAIN_SEPARATOR + oTree2, tForestFloor2];
@@ -116,7 +117,7 @@ if (!isNomad())
 		g_PlayerbaseTypes[pattern].distance,
 		g_PlayerbaseTypes[pattern].groupedDistance,
 		randomAngle(),
-		createBasesMainland);
+		createBasesRandomHeights);
 }
 
 Engine.SetProgress(20);
@@ -152,11 +153,8 @@ createArea(
 	]);
 
 g_Map.log("Creating ravines");
-var loop_num = 0;
 for (let size of [scaleByMapSize(50, 800), scaleByMapSize(50, 400), scaleByMapSize(10, 30), scaleByMapSize(10, 30)])
 {
-	warn(uneval(loop_num));
-	loop_num++;
 	let ravine = createAreas(
 		new ClumpPlacer(size, 0.1, 0.2, 0.1),
 		[
@@ -173,7 +171,7 @@ for (let size of [scaleByMapSize(50, 800), scaleByMapSize(50, 400), scaleByMapSi
 		createObjectGroupsByAreasDeprecated(
 			new RandomGroup(
 				[
-					new SimpleObject(aCeltHouse, 0, 1, 4, 5),
+					new SimpleObject(aRndHouse[randIntInclusive(0, aRndHouse.length - 1)], 0, 1, 4, 5),
 					new SimpleObject(aCeltLongHouse, 1, 1, 4, 5)
 				],
 				true,
@@ -184,7 +182,7 @@ for (let size of [scaleByMapSize(50, 800), scaleByMapSize(50, 400), scaleByMapSi
 			ravine);
 
 		createObjectGroupsByAreasDeprecated(
-			new RandomGroup([new SimpleObject(aCeltHomestead, 1, 1, 1, 1)], true, clHillDeco),
+			new RandomGroup([new SimpleObject(aRndStructure[0, aRndStructure.length - 1], 1, 1, 1, 1)], true, clHillDeco),
 			0,
 			[avoidClasses(clHillDeco, 5), stayClasses(clHill, 4)],
 			ravine.length * 2, 100,
