@@ -10,8 +10,7 @@ Engine.LoadLibrary("rmgen-helpers");
 setSelectedBiome();
 
 const heightScale = num => num * g_MapSettings.Size / 320;
-const heightWaterLevel = heightScale(0);
-const heightLand = heightWaterLevel + 1;
+const heightLand =  heightScale(0);
 
 function createBasesMainland(playerIDs, playerPosition, walls)
 {
@@ -88,10 +87,12 @@ const pForest2 = [tForestFloor1 + TERRAIN_SEPARATOR + oTree4, tForestFloor1 + TE
 
 var g_Map = new RandomMap(heightLand, tMainTerrain);
 var mapBounds = g_Map.getBounds();
+var mapCenter = g_Map.getCenter();
 
 const numPlayers = getNumPlayers();
 
 var clPlayer = g_Map.createTileClass();
+var clPlayerTerritory = g_Map.createTileClass();
 var clHill = g_Map.createTileClass();
 var clForest = g_Map.createTileClass();
 var clDirt = g_Map.createTileClass();
@@ -99,7 +100,6 @@ var clRock = g_Map.createTileClass();
 var clMetal = g_Map.createTileClass();
 var clFood = g_Map.createTileClass();
 var clBaseResource = g_Map.createTileClass();
-var clWater = g_Map.createTileClass();
 
 var playerPosition = [];
 if (!isNomad())
@@ -122,16 +122,20 @@ for (let i = 0; i < 100; i++)
 		randIntInclusive (mapBounds.left, mapBounds.right),
 		randIntInclusive (mapBounds.top, mapBounds.bottom)
 		);
-	let size = randFloat(1, 16);
+	let size = randFloat(1, scaleByMapSize(20, 60));
 	let coherence = randFloat(0.35, 0.85); // How much the radius of the clump varies (1 = circle, 0 = very random).
 	let smoothness = randFloat(0.1, 1); // How smooth the border of the clump is (1 = few "peaks", 0 = very jagged).
-	let height = randFloat(-12.0, 40);
-	let blendRadius = randFloat(10, 16);
+	let height = randFloat(-12.0, heightScale(40));
+	let blendRadius = randFloat(size * 1.5, size * 2);
 
 	createArea(
 		new ClumpPlacer(diskArea(size), coherence, smoothness , Infinity, centerPosition),
 		new SmoothElevationPainter(ELEVATION_MODIFY, height , blendRadius));
 }
+
+	createArea(
+		new ClumpPlacer(diskArea(10), 1, 1 , Infinity, mapCenter),
+		new SmoothElevationPainter(ELEVATION_MODIFY, 30 , 20));
 
 var playerBaseRadius = defaultPlayerBaseRadius() / (isNomad() ? 1.5 : 1);
 g_Map.log("Flatten the initial CC area");
@@ -139,14 +143,8 @@ for (let position of playerPosition)
 {
 	createArea(
 		new ClumpPlacer(diskArea(playerBaseRadius * 1.6), 0.85, 0.45, Infinity, position),
-		new SmoothElevationPainter(ELEVATION_SET, heightLand, 12));
+		new SmoothElevationPainter(ELEVATION_SET, heightLand, playerBaseRadius * 1.9));
 }
-
-g_Map.log("Marking water");
-createArea(
-	new MapBoundsPlacer(),
-	new TileClassPainter(clWater),
-	new HeightConstraint(-Infinity, heightWaterLevel));
 
 g_Map.log("Painting cliffs");
 createArea(
@@ -162,7 +160,7 @@ createArea(
 var [forestTrees, stragglerTrees] = getTreeCounts(...rBiomeTreeCount(1));
 createDefaultForests(
 	[tMainTerrain, tForestFloor1, tForestFloor2, pForest1, pForest2],
-	avoidClasses(clPlayer, 20, clForest, 18, clHill, 2, clWater, 5),
+	avoidClasses(clPlayer, playerBaseRadius * 1.5, clForest, 18, clHill, 5),
 	clForest,
 	forestTrees);
 
@@ -173,7 +171,7 @@ createLayeredPatches(
  [scaleByMapSize(3, 6), scaleByMapSize(5, 10), scaleByMapSize(8, 21)],
  [[tMainTerrain,tTier1Terrain],[tTier1Terrain,tTier2Terrain], [tTier2Terrain,tTier3Terrain]],
  [1, 1],
- avoidClasses(clForest, 0, clHill, 0, clDirt, 5, clPlayer, 12, clWater, 0),
+ avoidClasses(clForest, 0, clHill, 0, clDirt, 5, clPlayer, 12),
  scaleByMapSize(15, 45),
  clDirt);
 
@@ -181,7 +179,7 @@ g_Map.log("Creating grass patches");
 createPatches(
  [scaleByMapSize(2, 4), scaleByMapSize(3, 7), scaleByMapSize(5, 15)],
  tTier4Terrain,
- avoidClasses(clForest, 0, clHill, 0, clDirt, 5, clPlayer, 12, clWater, 0),
+ avoidClasses(clForest, 0, clHill, 0, clDirt, 5, clPlayer, 12),
  scaleByMapSize(15, 45),
  clDirt);
 Engine.SetProgress(55);
@@ -191,7 +189,7 @@ createBalancedMetalMines(
 	oMetalSmall,
 	oMetalLarge,
 	clMetal,
-	avoidClasses(clForest, 1, clPlayer, scaleByMapSize(20, 35), clHill, 1, clWater, 4)
+	avoidClasses(clForest, 1, clPlayer, playerBaseRadius * 1.5, clHill, 6)
 );
 
 g_Map.log("Creating stone mines");
@@ -199,7 +197,7 @@ createBalancedStoneMines(
 	oStoneSmall,
 	oStoneLarge,
 	clRock,
-	avoidClasses(clForest, 1, clPlayer, scaleByMapSize(20, 35), clHill, 1, clMetal, 10, clWater, 4)
+	avoidClasses(clForest, 1, clPlayer, playerBaseRadius * 1.5, clHill, 6, clMetal, 10)
 );
 
 Engine.SetProgress(65);
@@ -224,7 +222,7 @@ createDecoration(
 		planetm * scaleByMapSize(13, 200),
 		planetm * scaleByMapSize(13, 200)
 	],
-	avoidClasses(clForest, 0, clPlayer, 0, clHill, 0, clWater, 0));
+	avoidClasses(clForest, 0, clPlayer, 0, clHill, 0));
 
 Engine.SetProgress(70);
 
@@ -237,7 +235,7 @@ createFood(
 		3 * numPlayers,
 		3 * numPlayers
 	],
-	avoidClasses(clForest, 0, clPlayer, 20, clHill, 1, clMetal, 4, clRock, 4, clFood, 20, clWater, 1),
+	avoidClasses(clForest, 0, clPlayer, 20, clHill, 1, clMetal, 4, clRock, 4, clFood, 20),
 	clFood);
 
 Engine.SetProgress(75);
@@ -249,24 +247,19 @@ createFood(
 	[
 		3 * numPlayers
 	],
-	avoidClasses(clForest, 0, clPlayer, 20, clHill, 1, clMetal, 4, clRock, 4, clFood, 10, clWater, 1),
+	avoidClasses(clForest, 0, clPlayer, 20, clHill, 1, clMetal, 4, clRock, 4, clFood, 10),
 	clFood);
 
 Engine.SetProgress(85);
 
 createStragglerTrees(
 	[oTree1, oTree2, oTree4, oTree3],
-	avoidClasses(clForest, 8, clHill, 1, clPlayer, 12, clMetal, 6, clRock, 6, clFood, 1, clWater, 7),
+	avoidClasses(clForest, 8, clHill, 1, clPlayer, 12, clMetal, 6, clRock, 6, clFood, 1),
 	clForest,
 	stragglerTrees);
 
-placePlayersNomad(clPlayer, avoidClasses(clForest, 1, clMetal, 4, clRock, 4, clHill, 4, clFood, 2, clWater, 2));
+placePlayersNomad(clPlayer, avoidClasses(clForest, 1, clMetal, 4, clRock, 4, clHill, 4, clFood, 2));
 
-setWaterHeight(heightWaterLevel + SEA_LEVEL);
-setWaterColor(0.120,0.125,0.221);
-setWaterTint(0.120, 0.125,0.221);
-setWaterWaviness(randIntInclusive(2, 8));
-setWaterMurkiness(randFloat(0.8, .95));
-setWaterType("lake");
+setWaterHeight(heightLand - 20);
 
 g_Map.ExportMap();

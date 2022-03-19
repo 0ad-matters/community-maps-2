@@ -7,6 +7,6 @@
 		"Keywords": ["multiplayer", "community"],
 		"SupportedBiomes": "generic/",
 		"CircularMap" : true,
-		"TeamPlacements": ["line", "stronghold", "besideAllies", "randomGroup"]
+		"TeamPlacements": ["radial", "line", "stronghold", "besideAllies", "randomGroup"]
 	}
 }
