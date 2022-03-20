@@ -1,7 +1,7 @@
 {
 	"settings" : {
-		"Name" : "Random Height",
-		"Script" : "random_height.js",
+		"Name" : "Random Heights",
+		"Script" : "random_heights.js",
 		"Description" : "A map without any water; heights are randomly generated.",
 		"Preview" : "mainland.png",
 		"Keywords": ["community"],
