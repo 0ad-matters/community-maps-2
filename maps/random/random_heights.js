@@ -6,13 +6,35 @@ Engine.LoadLibrary("rmgen-common");
 Engine.LoadLibrary("rmgen2");
 Engine.LoadLibrary("rmbiome");
 Engine.LoadLibrary("rmgen-helpers");
+Engine.LoadLibrary("heightmap"); // rescaleHeightMap function
+
 
 setSelectedBiome();
 
 const heightScale = num => num * g_MapSettings.Size / 320;
-const heightLand =  heightScale(0);
-const heightRavineValley = heightScale(heightLand - 28);
-const heightRavineHill = heightScale(heightLand + 10);
+const heightLand =  30;
+const heightRavineValley = 2;
+const heightRavineHill = 40;
+const heightHill = 50;
+const heightOffsetRavine = 10;
+
+const oTree1 = g_Gaia.tree1;
+const oTree2 = g_Gaia.tree2;
+const oTree3 = g_Gaia.tree3;
+const oTree4 = g_Gaia.tree4;
+const oTree5 = g_Gaia.tree5;
+const oFruitBush = g_Gaia.fruitBush;
+const oGrapes = "gaia/fruit/grapes";
+const oApples = "gaia/fruit/apple";
+const oPig = "gaia/fauna_pig";
+const oSheep = "gaia/fauna_sheep";
+const oMainHuntableAnimal = g_Gaia.mainHuntableAnimal;
+const oSecondaryHuntableAnimal = g_Gaia.secondaryHuntableAnimal;
+const oStoneLarge = g_Gaia.stoneLarge;
+const oStoneSmall = g_Gaia.stoneSmall;
+const oMetalLarge = g_Gaia.metalLarge;
+const oMetalSmall = g_Gaia.metalSmall;
+const fruit = [oFruitBush, oGrapes, oApples];
 
 function createBasesRandomHeights(playerIDs, playerPosition, walls)
 {
@@ -29,10 +51,11 @@ function createBasesRandomHeights(playerIDs, playerPosition, walls)
 				"innerTerrain": tRoad
 			},
 			"Chicken": {
-				"template": "gaia/fauna_sheep"
+				"template": randBool() ? oPig : oSheep,
+				"count": randIntInclusive(5,20)
 			},
 			"Berries": {
-				"template": oFruitBush
+				"template": fruit[randIntInclusive(0, fruit.length - 1)], "count": randIntInclusive(1,4)
 			},
 			"Mines": {
 				"types": [
@@ -65,19 +88,6 @@ const tRoad = g_Terrains.road;
 const tRoadWild = g_Terrains.roadWild;
 const tTier4Terrain = g_Terrains.tier4Terrain;
 
-const oTree1 = g_Gaia.tree1;
-const oTree2 = g_Gaia.tree2;
-const oTree3 = g_Gaia.tree3;
-const oTree4 = g_Gaia.tree4;
-const oTree5 = g_Gaia.tree5;
-const oFruitBush = g_Gaia.fruitBush;
-const oMainHuntableAnimal = g_Gaia.mainHuntableAnimal;
-const oSecondaryHuntableAnimal = g_Gaia.secondaryHuntableAnimal;
-const oStoneLarge = g_Gaia.stoneLarge;
-const oStoneSmall = g_Gaia.stoneSmall;
-const oMetalLarge = g_Gaia.metalLarge;
-const oMetalSmall = g_Gaia.metalSmall;
-
 const aGrass = g_Decoratives.grass;
 const aGrassShort = g_Decoratives.grassShort;
 const aRockLarge = g_Decoratives.rockLarge;
@@ -91,9 +101,10 @@ const aCeltLongHouse = "actor|structures/celts/longhouse.xml";
 const pForest1 = [tForestFloor2 + TERRAIN_SEPARATOR + oTree1, tForestFloor2 + TERRAIN_SEPARATOR + oTree2, tForestFloor2];
 const pForest2 = [tForestFloor1 + TERRAIN_SEPARATOR + oTree4, tForestFloor1 + TERRAIN_SEPARATOR + oTree5, tForestFloor1];
 
-var g_Map = new RandomMap(heightLand, tMainTerrain);
+var g_Map = new RandomMap(heightHill, tMainTerrain);
 var mapBounds = g_Map.getBounds();
 var mapCenter = g_Map.getCenter();
+var mapSize = g_Map.getSize();
 const playerBaseRadius = defaultPlayerBaseRadius() / (isNomad() ? 1.5 : 1);
 const numPlayers = getNumPlayers();
 
@@ -122,8 +133,37 @@ if (!isNomad())
 
 Engine.SetProgress(20);
 
+g_Map.log("Creating the central dip");
+createArea(
+	new ClumpPlacer(diskArea(fractionToTiles(0.44)), 0.94, 0.05, 0.1, mapCenter),
+	[
+		new LayeredPainter([tCliff, tTier4Terrain], [3]),
+		new SmoothElevationPainter(ELEVATION_SET, heightLand, 3)
+	]);
+
+g_Map.log("Finding hills");
+var noise0 = new Noise2D(20);
+for (var ix = 0; ix < mapSize; ix++)
+{
+	for (var iz = 0; iz < mapSize; iz++)
+	{
+		let position = new Vector2D(ix, iz);
+		let h = g_Map.getHeight(position);
+		if (h > heightRavineHill)
+		{
+			clHill.add(position);
+
+			// Add hill noise
+			var x = ix / (mapSize + 1.0);
+			var z = iz / (mapSize + 1.0);
+			var n = (noise0.get(x, z) - 0.5) * heightRavineHill;
+			g_Map.setHeight(position, h + n);
+		}
+	}
+}
+
 g_Map.log("Creating ravines");
-for (let size of [scaleByMapSize(50, 800), scaleByMapSize(50, 400), scaleByMapSize(10, 30), scaleByMapSize(10, 30)])
+for (let size of [scaleByMapSize(50, 600), scaleByMapSize(50, 300), scaleByMapSize(50, 400), scaleByMapSize(10, 30), scaleByMapSize(10, 30)])
 {
 	let ravine = createAreas(
 		new ClumpPlacer(size, 0.1, 0.2, 0.1),
@@ -181,7 +221,44 @@ for (let size of [scaleByMapSize(50, 800), scaleByMapSize(50, 400), scaleByMapSi
 			ravine.length * 2,
 			50,
 			ravine);
+
+		//createObjectGroupsByAreasDeprecated(
+			//new RandomGroup(
+				//[
+					//new SimpleObject(oTree1, 0, 1, 4, 5),
+					//new SimpleObject(oTree2, 0, 1, 4, 5),
+				//],
+				//true,
+				//clHillDeco
+				//),
+			//0,
+			//[avoidClasses(clHillDeco, 3), stayClasses(clHill, 3)],
+			//ravine.length * 5, 20,
+			//ravine);
 	}
+}
+
+g_Map.log("Generating random heights");
+for (let passes = 0; passes < 200; passes++)
+{
+	const centerPosition = new Vector2D(
+		randIntInclusive (mapBounds.left, mapBounds.right),
+		randIntInclusive (mapBounds.top, mapBounds.bottom)
+		);
+	const size = randFloat(1, scaleByMapSize(2, 16));
+	const coherence = randFloat(0.05, 0.35); // How much the radius of the clump varies (1 = circle, 0 = very random).
+	const smoothness = randFloat(0.1, 0.6); // How smooth the border of the clump is (1 = few "peaks", 0 = very jagged).
+	const height = randFloat(0, 50);
+	// const blendRadius = randFloat (size * 0.5, size * 1.7);
+
+	createArea(
+		new ClumpPlacer(diskArea(size), coherence, smoothness, Infinity, centerPosition),
+		[
+			new SmoothElevationPainter(ELEVATION_MODIFY, height, size * 1.1),
+			new SmoothingPainter(4, 1, 8),
+		],
+		avoidClasses(clPlayer, playerBaseRadius * 1.2, clHill, 8)
+		);
 }
 
 createAreas(
@@ -194,29 +271,6 @@ createAreas(
 	avoidClasses(clPlayer, playerBaseRadius * 2, clHill, 10),
 	scaleByMapSize(2, 10)
 	);
-
-g_Map.log("Generating random heights");
-for (let passes = 0; passes < 100; passes++)
-{
-	let centerPosition = new Vector2D(
-		randIntInclusive (mapBounds.left, mapBounds.right),
-		randIntInclusive (mapBounds.top, mapBounds.bottom)
-		);
-	let size = randFloat(1, scaleByMapSize(10, 30));
-	let coherence = randFloat(0.35, 0.85); // How much the radius of the clump varies (1 = circle, 0 = very random).
-	let smoothness = randFloat(0.1, 1); // How smooth the border of the clump is (1 = few "peaks", 0 = very jagged).
-	let height = randFloat(heightScale(-15), heightScale(50));
-	let blendRadius = size * 1.3;
-
-	createArea(
-		new ClumpPlacer(diskArea(size), coherence, smoothness , Infinity, centerPosition),
-		[
-			new SmoothElevationPainter(ELEVATION_MODIFY, height, blendRadius),
-			new SmoothingPainter(2, 1, 15)
-		],
-		avoidClasses(clPlayer, playerBaseRadius * 1.2, clHill, 8)
-		);
-}
 
 g_Map.log("Painting cliffs");
 createArea(
@@ -326,7 +380,7 @@ Engine.SetProgress(85);
 
 createStragglerTrees(
 	[oTree1, oTree2, oTree4, oTree3],
-	avoidClasses(clForest, 8, clHill, 1, clPlayer, 12, clMetal, 6, clRock, 6, clFood, 1),
+	avoidClasses(clForest, 4, clHill, 1, clPlayer, 12, clMetal, 6, clRock, 6, clFood, 1, clBaseResource, 10),
 	clForest,
 	stragglerTrees);
 
