@@ -15,7 +15,7 @@ of this repo.
 
 | Map Name | Author | Link | Publication Date |
 |----------|--------|------|------------------|
-| Stan's Sorrow | andy5995 | - | 2022-03-22 |
+| Stan's Sorrow | andy5995 | [Forum](https://wildfiregames.com/forum/topic/74679-stans-sorrow/) | 2022-03-22 |
 | Carpathian | norjay |[Forum](https://wildfiregames.com/forum/topic/73639-random-carpathian/)| 2022-03-12|
 | Cliffs of Carnage | andy5995 |[Forum](https://wildfiregames.com/forum/topic/30590-cliffs-of-carnage-new-4v4-pvp-map/)|2022-03-09|
 | Povorotnaya | [norjay](https://wildfiregames.com/forum/profile/35479-norjay/) | [Forum](https://wildfiregames.com/forum/topic/63618-random-povorotnaya/) | 2021-11-27 |
