@@ -6,8 +6,6 @@ Engine.LoadLibrary("rmgen-common");
 Engine.LoadLibrary("rmgen2");
 Engine.LoadLibrary("rmbiome");
 Engine.LoadLibrary("rmgen-helpers");
-Engine.LoadLibrary("heightmap"); // rescaleHeightMap function
-
 
 setSelectedBiome();
 
@@ -133,6 +131,7 @@ if (!isNomad())
 
 Engine.SetProgress(20);
 
+// Some code from the Ardennes Forest map
 g_Map.log("Creating the central dip");
 createArea(
 	new ClumpPlacer(diskArea(fractionToTiles(0.44)), 0.94, 0.05, 0.1, mapCenter),
@@ -221,6 +220,8 @@ for (let size of [scaleByMapSize(50, 600), scaleByMapSize(50, 300), scaleByMapSi
 			ravine.length * 2,
 			50,
 			ravine);
+
+// FIXME: Some trees appear to grow from the cliffs
 
 		//createObjectGroupsByAreasDeprecated(
 			//new RandomGroup(

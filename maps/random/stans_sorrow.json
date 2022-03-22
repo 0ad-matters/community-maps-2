@@ -1,9 +1,9 @@
 {
 	"settings" : {
-		"Name" : "Random Heights",
-		"Script" : "random_heights.js",
-		"Description" : "A map without any water; heights are randomly generated.",
-		"Preview" : "mainland.png",
+		"Name" : "Stan's Sorrow",
+		"Script" : "stans_sorrow.js",
+		"Description" : "A map without any water; some heights are randomly generated.",
+		"Preview" : "stans_sorrow.png",
 		"Keywords": ["community"],
 		"SupportedBiomes": "generic/",
 		"CircularMap" : true,
