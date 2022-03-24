@@ -55,8 +55,6 @@ const pForest2 = [tForestFloor1 + TERRAIN_SEPARATOR + oTree4, tForestFloor1 + TE
 const heightScale = num => num * g_MapSettings.Size / 320;
 
 const heightSeaGround = heightScale(-4);
-const heightReedsMin = heightScale(-2);
-const heightReedsMax = heightScale(-0.5);
 const heightWaterLevel = heightScale(0);
 const heightShoreline = heightScale(0.5);
 const heightLand = heightScale(1);
@@ -221,25 +219,25 @@ createArea(
 	new TileClassPainter(clLand),
 	avoidClasses(clBlood, 0));
 
-createBumps(avoidClasses(clHill, 2, clPlayer, 20), scaleByMapSize(20, 40), 1, 4, Math.floor(scaleByMapSize(2, 5))); // spread)
+createBumps(avoidClasses(clBlood, 2, clHill, 2, clPlayer, 20), scaleByMapSize(20, 40), 1, 4, Math.floor(scaleByMapSize(2, 5))); // spread)
 
-/* creating bumps may change the blood or land, so re-mark them */
-if (!bSahara)
-	g_Map.log("Marking blood");
-else
-	g_Map.log("Marking sand pits");
+///* creating bumps may change the blood or land, so re-mark them */
+//if (!bSahara)
+	//g_Map.log("Marking blood");
+//else
+	//g_Map.log("Marking sand pits");
 
-createArea(
-	new MapBoundsPlacer(),
-	new TileClassPainter(clBlood),
-	new HeightConstraint(-Infinity, heightWaterLevel));
+//createArea(
+	//new MapBoundsPlacer(),
+	//new TileClassPainter(clBlood),
+	//new HeightConstraint(-Infinity, heightWaterLevel - 1));
 
-g_Map.log("Marking land");
-createArea(
-	new DiskPlacer(fractionToTiles(0.5), mapCenter),
-	new TileClassPainter(clLand),
-	avoidClasses(clBlood, 0));
-Engine.SetProgress(35);
+//g_Map.log("Marking land");
+//createArea(
+	//new DiskPlacer(fractionToTiles(0.5), mapCenter),
+	//new TileClassPainter(clLand),
+	//avoidClasses(clBlood, 0));
+//Engine.SetProgress(35);
 
 g_Map.log("Painting shoreline");
 createArea(
@@ -248,7 +246,7 @@ createArea(
 		new TerrainPainter(g_Terrains.water),
 		new TileClassPainter(clShoreline)
 	],
-	new HeightConstraint(-Infinity, heightShoreline));
+	new HeightConstraint(-0.2, heightShoreline));
 
 Engine.SetProgress(50);
 
@@ -357,10 +355,11 @@ if (!bSahara)
 {
 	g_Map.log("Boiling the blood");
 	const clBubbles = g_Map.createTileClass();
-	const bubblesGroup = new SimpleGroup([new SimpleObject("actor|particle/jammys_despair_bubbles.xml", 1, 1, 0, 7)], false, clBubbles);
+	const bubblesGroup = new SimpleGroup(
+		[new SimpleObject("actor|particle/jammys_despair_bubbles.xml", 1, 1, 0, 7)], false, clBubbles);
 	createObjectGroupsByAreas(bubblesGroup, 0,
-		[stayClasses(clBlood, 3), avoidClasses(clLand, 2)],
-		scaleByMapSize(20, 160), // amount
+		[stayClasses(clBlood, 1), avoidClasses(clShoreline, 2, clBubbles, 4, clHill, 3)],
+		scaleByMapSize(10, 90), // amount
 		50, // retry factor
 		bloodAreas
 		);
@@ -385,7 +384,7 @@ else
 setWaterTint(0.541, 0.012, 0.012);
 setWaterColor(0.541, 0.012, 0.012);
 setWaterWaviness(8);
-setWaterMurkiness(1.0);
+setWaterMurkiness(1); // 0 - 1
 setWaterType("lake");
 
 g_Map.ExportMap();
