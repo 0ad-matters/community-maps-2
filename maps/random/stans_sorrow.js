@@ -249,29 +249,52 @@ for (let passes = 0; passes < 200; passes++)
 	const size = randFloat(1, scaleByMapSize(2, 16));
 	const coherence = randFloat(0.05, 0.35); // How much the radius of the clump varies (1 = circle, 0 = very random).
 	const smoothness = randFloat(0.1, 0.6); // How smooth the border of the clump is (1 = few "peaks", 0 = very jagged).
-	const height = randFloat(0, 50);
+	const height = randFloat(-12, 40);
 	// const blendRadius = randFloat (size * 0.5, size * 1.7);
 
 	createArea(
 		new ClumpPlacer(diskArea(size), coherence, smoothness, Infinity, centerPosition),
 		[
 			new SmoothElevationPainter(ELEVATION_MODIFY, height, size * 1.1),
-			new SmoothingPainter(4, 1, 8),
+			// new SmoothingPainter(4, 1, 8),
 		],
 		avoidClasses(clPlayer, playerBaseRadius * 1.2, clHill, 8)
 		);
 }
 
-createAreas(
-	new ClumpPlacer(diskArea(8), .40, .7, Infinity),
-	[
-		new SmoothElevationPainter(ELEVATION_SET, heightScale(50), 0),
-		new SmoothingPainter(2, 1, 4),
-		new TileClassPainter(clHill)
-	],
-	avoidClasses(clPlayer, playerBaseRadius * 2, clHill, 10),
-	scaleByMapSize(2, 10)
-	);
+g_Map.log("Smoothing heightmap");
+createArea(
+	new MapBoundsPlacer(),
+	new SmoothingPainter(2, 1, 16),
+	avoidClasses(clHill, 4));
+
+g_Map.log("Adding some noise");
+var noise0 = new Noise2D(20);
+for (var ix = 0; ix < mapSize; ix++)
+{
+	for (var iz = 0; iz < mapSize; iz++)
+	{
+		let position = new Vector2D(ix, iz);
+		let h = g_Map.getHeight(position);
+		if (h > heightLand + 2 && !clHill.has(position))
+		{
+			// Don't add it yet, let it happen during the cliff painting
+			// clHill.add(position);
+
+			// Add hill noise
+			var x = ix / (mapSize + 1.0);
+			var z = iz / (mapSize + 1.0);
+			var n = (noise0.get(x, z) - 0.50) * heightRavineHill;
+			g_Map.setHeight(position, h + n);
+		}
+	}
+}
+
+g_Map.log("Re-smoothing heightmap");
+createArea(
+	new MapBoundsPlacer(),
+	new SmoothingPainter(2, 1, 2),
+	avoidClasses(clHill, 4)); // We don't want the current tiles marked as hills to be smoothed
 
 g_Map.log("Painting cliffs");
 createArea(
@@ -287,7 +310,7 @@ createArea(
 var [forestTrees, stragglerTrees] = getTreeCounts(...rBiomeTreeCount(1));
 createDefaultForests(
 	[tMainTerrain, tForestFloor1, tForestFloor2, pForest1, pForest2],
-	avoidClasses(clPlayer, playerBaseRadius * 1.5, clForest, 10, clHill, 6),
+	avoidClasses(clPlayer, playerBaseRadius * 1.5, clForest, 14, clHill, 6),
 	clForest,
 	forestTrees);
 
@@ -316,7 +339,7 @@ createBalancedMetalMines(
 	oMetalSmall,
 	oMetalLarge,
 	clMetal,
-	avoidClasses(clForest, 1, clPlayer, playerBaseRadius * 1.5, clHill, 6)
+	avoidClasses(clForest, 1, clPlayer, playerBaseRadius * 1.5, clHill, 1)
 );
 
 g_Map.log("Creating stone mines");
@@ -324,7 +347,7 @@ createBalancedStoneMines(
 	oStoneSmall,
 	oStoneLarge,
 	clRock,
-	avoidClasses(clForest, 1, clPlayer, playerBaseRadius * 1.5, clHill, 6, clMetal, 10)
+	avoidClasses(clForest, 1, clPlayer, playerBaseRadius * 1.5, clHill, 1, clMetal, 10)
 );
 
 Engine.SetProgress(65);
@@ -359,8 +382,8 @@ createFood(
 		[new SimpleObject(oSecondaryHuntableAnimal, 2, 3, 0, 2)]
 	],
 	[
-		3 * numPlayers,
-		3 * numPlayers
+		randIntInclusive(0, 3) * numPlayers,
+		randIntInclusive(0, 3) * numPlayers
 	],
 	avoidClasses(clForest, 0, clPlayer, 20, clHill, 1, clMetal, 4, clRock, 4, clFood, 20),
 	clFood);
@@ -369,10 +392,12 @@ Engine.SetProgress(75);
 
 createFood(
 	[
-		[new SimpleObject(oFruitBush, 5, 7, 0, 4)]
+		[new SimpleObject(fruit[randIntInclusive(0, fruit.length - 1)], 3, 5, 0, 4)],
+		[new SimpleObject(fruit[randIntInclusive(0, fruit.length - 1)], 3, 5, 0, 4)]
 	],
 	[
-		3 * numPlayers
+		randIntInclusive(0, 3) * numPlayers,
+		randIntInclusive(0, 3) * numPlayers
 	],
 	avoidClasses(clForest, 0, clPlayer, 20, clHill, 1, clMetal, 4, clRock, 4, clFood, 10),
 	clFood);
@@ -381,7 +406,7 @@ Engine.SetProgress(85);
 
 createStragglerTrees(
 	[oTree1, oTree2, oTree4, oTree3],
-	avoidClasses(clForest, 4, clHill, 1, clPlayer, 12, clMetal, 6, clRock, 6, clFood, 1, clBaseResource, 10),
+	avoidClasses(clForest, 14, clHill, 2, clMetal, 2, clRock, 2, clFood, 1, clBaseResource, 12),
 	clForest,
 	stragglerTrees);
 
