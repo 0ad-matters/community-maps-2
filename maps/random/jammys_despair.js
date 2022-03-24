@@ -55,8 +55,6 @@ const pForest2 = [tForestFloor1 + TERRAIN_SEPARATOR + oTree4, tForestFloor1 + TE
 const heightScale = num => num * g_MapSettings.Size / 320;
 
 const heightSeaGround = heightScale(-4);
-const heightReedsMin = heightScale(-2);
-const heightReedsMax = heightScale(-0.5);
 const heightWaterLevel = heightScale(0);
 const heightShoreline = heightScale(0.5);
 const heightLand = heightScale(1);
@@ -73,11 +71,14 @@ var clRock = g_Map.createTileClass();
 var clMetal = g_Map.createTileClass();
 var clFood = g_Map.createTileClass();
 var clBaseResource = g_Map.createTileClass();
-var clWater = g_Map.createTileClass();
+var clBlood = g_Map.createTileClass();
 var clLand = g_Map.createTileClass();
+
+const bSahara = (currentBiome() == "generic/sahara");
 
 initTileClasses(["shoreline", "path"]);
 var clPath = g_TileClasses.path;
+var clShoreline = g_TileClasses.shoreline;
 
 g_Map.log("Creating mountains");
 g_Map.LoadHeightmapImage("jammys_despair.png", heightLand, 50);
@@ -125,8 +126,12 @@ if (!isNomad())
 	}
 }
 
-var waterAreas = [];
-g_Map.log("Creating lakes");
+if (!bSahara)
+	g_Map.log("Creating blood pools");
+else
+	g_Map.log("Creating sand pits");
+
+var bloodAreas = [];
 var numLakes = Math.round(scaleByMapSize(1,4) * numPlayers);
 var lakeSize;
 var lakeCoherence;
@@ -140,12 +145,13 @@ for (let passes = 0; passes < 6; passes++)
 	lakeCoherence = randFloat(0.2, 0.8);
 	lakeBorderSmoothness = randFloat(0.1, 0.9);
 
-	waterAreas = createAreas(
+	bloodAreas = createAreas(
 		new ClumpPlacer(
 			lakeSize,
 			lakeCoherence, // coherence - How much the radius of the clump varies (1 = circle, 0 = very random).
 			lakeBorderSmoothness, // smoothness - How smooth the border of the clump is (1 = few "peaks", 0 = very jagged).
-			Infinity),
+			Infinity
+			),
 		[
 			new LayeredPainter([tShoreBlend, tShore, tWater], [1, 1]),
 			new SmoothElevationPainter(
@@ -153,11 +159,11 @@ for (let passes = 0; passes < 6; passes++)
 				heightWaterLevel - heightScale(1), // elevation - target height.
 				2, // blendRadius - How steep the elevation change is.
 				1), // randomElevation - maximum random elevation difference added to each vertex.
-			new TileClassPainter(clWater)
+			new TileClassPainter(clBlood)
 		],
-		avoidClasses(clPlayer, 24, clWater, 12),
+		avoidClasses(clPlayer, 24, clBlood, 12),
 		1
-	).concat(waterAreas);
+	).concat(bloodAreas);
 }
 
 /* These may be a little deeper, so they won't be placed on any marked Paths */
@@ -169,7 +175,7 @@ for (let passes = 0; passes < numLakes; passes++)
 	lakeBlendRadius = randFloat(1.0, 4.0);
 	lakeMaxRndDiff = randFloat(1.0, 5.0);
 
-	waterAreas = createAreas(
+	bloodAreas = createAreas(
 		new ClumpPlacer(lakeSize, lakeCoherence, lakeBorderSmoothness, Infinity),
 		[
 			new LayeredPainter([tShoreBlend, tShore, tWater], [1, 1]),
@@ -178,23 +184,12 @@ for (let passes = 0; passes < numLakes; passes++)
 				heightWaterLevel - heightScale(randIntInclusive(1, 5)),
 				lakeBlendRadius,
 				lakeMaxRndDiff),
-			new TileClassPainter(clWater)
+			new TileClassPainter(clBlood)
 		],
-		avoidClasses(clPath, 0, clPlayer, 24, clWater, 12),
+		avoidClasses(clPath, 0, clPlayer, 24, clBlood, 12),
 		1
-	).concat(waterAreas);
+	).concat(bloodAreas);
 }
-
-g_Map.log("Creating reeds");
-var group = new SimpleGroup(
-	[new SimpleObject(aReeds, 5,10, 0,4), new SimpleObject(aLillies, 0,1, 0,4)], true
-);
-createObjectGroupsByAreas(group, 0,
-//	[borderClasses(clWater, 3, 0), stayClasses(clWater, 1)],
-	[avoidClasses(clLand, 0)],
-	numLakes, 100,
-	waterAreas
-);
 
 g_Map.log("Painting cliffs");
 createArea(
@@ -207,10 +202,14 @@ createArea(
 		new SlopeConstraint(2, Infinity)
 	]);
 
-g_Map.log("Marking water");
+if (!bSahara)
+	g_Map.log("Marking blood");
+else
+	g_Map.log("Marking sand pits");
+
 createArea(
 	new MapBoundsPlacer(),
-	new TileClassPainter(clWater),
+	new TileClassPainter(clBlood),
 	new HeightConstraint(-Infinity, heightWaterLevel));
 Engine.SetProgress(30);
 
@@ -218,32 +217,36 @@ g_Map.log("Marking land");
 createArea(
 	new DiskPlacer(fractionToTiles(0.5), mapCenter),
 	new TileClassPainter(clLand),
-	avoidClasses(clWater, 0));
+	avoidClasses(clBlood, 0));
 
-createBumps(avoidClasses(clHill, 2, clPlayer, 20), scaleByMapSize(20, 40), 1, 4, Math.floor(scaleByMapSize(2, 5))); // spread)
+createBumps(avoidClasses(clBlood, 2, clHill, 2, clPlayer, 20), scaleByMapSize(20, 40), 1, 4, Math.floor(scaleByMapSize(2, 5))); // spread)
 
-/* creating bumps may change the water or land, so re-mark them */
-g_Map.log("Marking water");
-createArea(
-	new MapBoundsPlacer(),
-	new TileClassPainter(clWater),
-	new HeightConstraint(-Infinity, heightWaterLevel));
+///* creating bumps may change the blood or land, so re-mark them */
+//if (!bSahara)
+	//g_Map.log("Marking blood");
+//else
+	//g_Map.log("Marking sand pits");
 
-g_Map.log("Marking land");
-createArea(
-	new DiskPlacer(fractionToTiles(0.5), mapCenter),
-	new TileClassPainter(clLand),
-	avoidClasses(clWater, 0));
-Engine.SetProgress(35);
+//createArea(
+	//new MapBoundsPlacer(),
+	//new TileClassPainter(clBlood),
+	//new HeightConstraint(-Infinity, heightWaterLevel - 1));
+
+//g_Map.log("Marking land");
+//createArea(
+	//new DiskPlacer(fractionToTiles(0.5), mapCenter),
+	//new TileClassPainter(clLand),
+	//avoidClasses(clBlood, 0));
+//Engine.SetProgress(35);
 
 g_Map.log("Painting shoreline");
 createArea(
 	new MapBoundsPlacer(),
 	[
 		new TerrainPainter(g_Terrains.water),
-		new TileClassPainter(g_TileClasses.shoreline)
+		new TileClassPainter(clShoreline)
 	],
-	new HeightConstraint(-Infinity, heightShoreline));
+	new HeightConstraint(-0.2, heightShoreline));
 
 Engine.SetProgress(50);
 
@@ -252,7 +255,7 @@ createLayeredPatches(
  [scaleByMapSize(3, 6), scaleByMapSize(5, 10), scaleByMapSize(8, 21)],
  [[tMainTerrain,tTier1Terrain],[tTier1Terrain,tTier2Terrain], [tTier2Terrain,tTier3Terrain]],
  [1, 1],
- avoidClasses(clWater, 1, clForest, 0, clHill, 0, clDirt, 5, clPlayer, 12),
+ avoidClasses(clBlood, 1, clForest, 0, clHill, 0, clDirt, 5, clPlayer, 12),
  scaleByMapSize(15, 45),
  clDirt);
 
@@ -260,7 +263,7 @@ g_Map.log("Creating grass patches");
 createPatches(
  [scaleByMapSize(2, 4), scaleByMapSize(3, 7), scaleByMapSize(5, 15)],
  tTier4Terrain,
- avoidClasses(clWater, 1, clForest, 0, clHill, 0, clDirt, 5, clPlayer, 12),
+ avoidClasses(clBlood, 1, clForest, 0, clHill, 0, clDirt, 5, clPlayer, 12),
  scaleByMapSize(15, 45),
  clDirt);
 Engine.SetProgress(55);
@@ -270,7 +273,7 @@ createBalancedMetalMines(
 	oMetalSmall,
 	oMetalLarge,
 	clMetal,
-	avoidClasses(clPath, 0, clWater, 3, clPlayer, scaleByMapSize(20, 35), clHill, 4)
+	avoidClasses(clPath, 0, clBlood, 3, clPlayer, scaleByMapSize(20, 35), clHill, 4)
 );
 
 g_Map.log("Creating stone mines");
@@ -278,13 +281,13 @@ createBalancedStoneMines(
 	oStoneSmall,
 	oStoneLarge,
 	clRock,
-	avoidClasses(clPath, 0, clWater, 3, clPlayer, scaleByMapSize(20, 35), clHill, 4, clMetal, 10)
+	avoidClasses(clPath, 0, clBlood, 3, clPlayer, scaleByMapSize(20, 35), clHill, 4, clMetal, 10)
 );
 
 var [forestTrees, stragglerTrees] = getTreeCounts(...rBiomeTreeCount(1));
 createDefaultForests(
 	[tMainTerrain, tForestFloor1, tForestFloor2, pForest1, pForest2],
-	avoidClasses(clHill, 2, clPath, 0, clMetal, 2, clRock, 2, clWater, 10, clPlayer, 20, clForest, 10),
+	avoidClasses(clHill, 2, clPath, 0, clMetal, 2, clRock, 2, clBlood, 10, clPlayer, 20, clForest, 10),
 	clForest,
 	forestTrees);
 
@@ -310,7 +313,7 @@ createDecoration(
 		planetm * scaleByMapSize(13, 200),
 		planetm * scaleByMapSize(13, 200)
 	],
-	avoidClasses(clForest, 0, clPlayer, 0, clHill, 0));
+	avoidClasses(clForest, 0, clPlayer, 0, clHill, 0, clBlood, 1));
 
 Engine.SetProgress(70);
 
@@ -323,7 +326,7 @@ createFood(
 		3 * numPlayers,
 		3 * numPlayers
 	],
-	avoidClasses(clWater, 2, clForest, 0, clPlayer, 10, clHill, 1, clMetal, 4, clRock, 4, clFood, 20),
+	avoidClasses(clBlood, 2, clForest, 0, clPlayer, 10, clHill, 1, clMetal, 4, clRock, 4, clFood, 20),
 	clFood);
 
 Engine.SetProgress(75);
@@ -335,24 +338,53 @@ createFood(
 	[
 		3 * numPlayers
 	],
-	avoidClasses(clPath, 2, clWater, 1, clForest, 0, clPlayer, 20, clHill, 1, clMetal, 4, clRock, 4, clFood, 10),
+	avoidClasses(clPath, 2, clBlood, 1, clForest, 0, clPlayer, 20, clHill, 1, clMetal, 4, clRock, 4, clFood, 10),
 	clFood);
 
 Engine.SetProgress(85);
 
 createStragglerTrees(
 	[oTree1, oTree2, oTree4, oTree3],
-	avoidClasses(clWater, 2, clForest, 8, clHill, 4, clPlayer, 12, clMetal, 6, clRock, 6, clFood, 1),
+	avoidClasses(clBlood, 2, clForest, 8, clHill, 4, clPlayer, 12, clMetal, 6, clRock, 6, clFood, 1),
 	clForest,
 	stragglerTrees);
 
-placePlayersNomad(clPlayer, avoidClasses(clWater, 2, clForest, 1, clMetal, 4, clRock, 4, clHill, 4, clFood, 2));
+placePlayersNomad(clPlayer, avoidClasses(clBlood, 2, clForest, 1, clMetal, 4, clRock, 4, clHill, 4, clFood, 2));
 
-setWaterHeight(heightWaterLevel + SEA_LEVEL);
-setWaterTint(0.161, 0.286, 0.353);
-setWaterColor(0.159, 0.279, 0.337);
-setWaterWaviness(3);
-setWaterMurkiness(.85);
+if (!bSahara)
+{
+	g_Map.log("Boiling the blood");
+	const clBubbles = g_Map.createTileClass();
+	const bubblesGroup = new SimpleGroup(
+		[new SimpleObject("actor|particle/jammys_despair_bubbles.xml", 1, 1, 0, 7)], false, clBubbles);
+	createObjectGroupsByAreas(bubblesGroup, 0,
+		[stayClasses(clBlood, 1), avoidClasses(clShoreline, 2, clBubbles, 4, clHill, 3)],
+		scaleByMapSize(10, 90), // amount
+		50, // retry factor
+		bloodAreas
+		);
+
+	setWaterHeight(heightWaterLevel + SEA_LEVEL);
+}
+else
+{
+	g_Map.log("Swirling the dust");
+	const clSand = g_Map.createTileClass();
+	const sandGroup = new SimpleGroup([new SimpleObject("actor|particle/blowing_sand.xml", 1, 1, 0, 7)], false, clSand);
+	createObjectGroupsByAreas(sandGroup, 0,
+		[stayClasses(clBlood, 3), avoidClasses(clLand, 2)],
+		scaleByMapSize(4, 32), // amount
+		30, // retry factor
+		bloodAreas
+		);
+
+	setWaterHeight(-100);
+}
+
+setWaterTint(0.541, 0.012, 0.012);
+setWaterColor(0.541, 0.012, 0.012);
+setWaterWaviness(8);
+setWaterMurkiness(1); // 0 - 1
 setWaterType("lake");
 
 g_Map.ExportMap();
