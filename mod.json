@@ -1,9 +1,9 @@
 {
 	"name": "community-maps-2-git",
-	"version": "0.25.15999",
+	"version": "0.25999.0",
 	"label": "Community Maps 2",
 	"description": "A collection of maps made by players and fans of 0 A.D. and shared publicly.",
-	"dependencies": ["0ad>=0.0.24", "0ad<=0.0.25"],
+	"dependencies": ["0ad>=0.0.26"],
 	"url": "https://github.com/0ad-matters/community-maps-2",
 	"type": "maps"
 }
