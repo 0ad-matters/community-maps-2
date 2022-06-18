@@ -246,7 +246,7 @@ while(true) {
 			"PlayerTileClass": clPlayer,
 			"Walls": "towers",
 			"BaseResourceClass": clBaseResource,
-			"Chicken": {
+			"StartingAnimal": {
 			},
 			"Berries": {
 				"template": oBerryBush

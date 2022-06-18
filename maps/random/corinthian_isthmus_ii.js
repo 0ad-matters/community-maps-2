@@ -263,7 +263,7 @@ placePlayerBases({
 	"Walls": false,
 	"CityPatch": {
 	},
-	"Chicken": {
+	"StartingAnimal": {
 		"template": oPig
 	},
 	"Berries": {

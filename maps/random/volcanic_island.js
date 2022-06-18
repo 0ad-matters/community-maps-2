@@ -228,7 +228,7 @@ placePlayerBases({
 	"CityPatch": {
 		"outerTerrain": tRoadWild
 	},
-	"Chicken": {
+	"StartingAnimal": {
 	},
 	"Berries": {
 		"template": oFruitBush

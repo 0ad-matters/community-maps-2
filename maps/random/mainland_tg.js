@@ -23,7 +23,7 @@ function createBasesMainland(playerIDs, playerPosition, walls)
 				"outerTerrain": tRoadWild,
 				"innerTerrain": tRoad
 			},
-			"Chicken": {
+			"StartingAnimal": {
 			},
 			"Berries": {
 				"template": oFruitBush

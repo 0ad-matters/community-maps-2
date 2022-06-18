@@ -48,7 +48,7 @@ function createBasesRandomHeights(playerIDs, playerPosition, walls)
 				"outerTerrain": tRoadWild,
 				"innerTerrain": tRoad
 			},
-			"Chicken": {
+			"StartingAnimal": {
 				"template": randBool() ? oPig : oSheep,
 				"count": randIntInclusive(5,20)
 			},

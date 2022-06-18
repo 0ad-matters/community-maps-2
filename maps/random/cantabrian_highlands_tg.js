@@ -125,7 +125,7 @@ function createBasesCantabrianHighlands(playerIDs, playerPosition, walls)
 				"outerTerrain": tRoadWild,
 				"innerTerrain": tRoad
 			},
-			"Chicken": {
+			"StartingAnimal": {
 			},
 			"Berries": {
 				"template": oBerryBush
