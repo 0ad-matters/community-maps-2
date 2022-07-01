@@ -1,0 +1,11 @@
+{
+	"settings" : {
+		"Name" : "Homer's Delight",
+		"Script" : "homers_delight.js",
+		"Description" : "All players starts on a continent surrounded by water.",
+		"Preview" : "homers_delight.png",
+		"Keywords": ["community"],
+		"SupportedBiomes": "generic/",
+		"CircularMap" : true
+	}
+}
