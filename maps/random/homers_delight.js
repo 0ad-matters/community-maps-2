@@ -93,16 +93,16 @@ createArea(
 // This doesn't actually mark the entire isthmus, but enough that we
 // can have trees and rocks avoid it, thereby preventing a bottleneck.
 createArea(
-	new ClumpPlacer(diskArea(scaleByMapSize(6,56)), 0.7, 0.6, Infinity, mapCenter),
+	new ClumpPlacer(diskArea(scaleByMapSize(6,56)), 0.5, 0.6, Infinity, mapCenter),
 	[
-		new SmoothElevationPainter(ELEVATION_MODIFY, heightSeaGround, 0)
+		new SmoothElevationPainter(ELEVATION_SET, heightSeaGround - 20, 10)
 	]);
 
 g_Map.log("Marking land");
 createArea(
 	new MapBoundsPlacer(),
 	new TileClassPainter(clLand),
-	new HeightConstraint(heightLand, Infinity));	
+	new HeightConstraint(heightLand, Infinity));
 
 var [playerIDs, playerPosition] = playerPlacementCircle(fractionToTiles(0.25));
 
