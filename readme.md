@@ -15,6 +15,7 @@ of this repo.
 
 | Map Name | Author | Link | Publication Date |
 |----------|--------|------|------------------|
+| Homer's Delight | andy5995, Jammyjamjamman | [Forum](https://wildfiregames.com/forum/topic/28740-new-skirmish-map-2v4-and-3v3-modified-continent/) | 2022-07-03 |
 | Gaia | [MirceaKitsune](https://wildfiregames.com/forum/profile/33691-mirceakitsune/) | [Forum](https://wildfiregames.com/forum/topic/74442-random-gaia/) | 2022-03-20 |
 | Stan's Sorrow | andy5995 | [Forum](https://wildfiregames.com/forum/topic/74679-stans-sorrow/) | 2022-03-22 |
 | Carpathian | norjay |[Forum](https://wildfiregames.com/forum/topic/73639-random-carpathian/)| 2022-03-12|
