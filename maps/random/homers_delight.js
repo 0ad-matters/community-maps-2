@@ -102,7 +102,7 @@ g_Map.log("Marking land");
 createArea(
 	new MapBoundsPlacer(),
 	new TileClassPainter(clLand),
-	new HeightConstraint(heightLand, Infinity));
+	new HeightConstraint(heightLand + heightSeaGround, Infinity));
 
 var [playerIDs, playerPosition] = playerPlacementCircle(fractionToTiles(0.25));
 
