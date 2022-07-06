@@ -104,15 +104,6 @@ release section on the GitHub repo.
 Note: If you use "Download Zip" from the repo home page, the zip file
 will not be installable by 0ad and you'll receive an error.
 
-If you clone this repo to do live testing, the directory name should be
-the same as the mod name.
-
-    git clone https://github.com/0ad-matters/community-maps-2.git community-maps-2-git
-
-should work fine, as long as the 'Name' field from the mod.json file
-matches the directory name. (When releases are issued, the '-git' is
-removed)
-
 If you use the Arch user repository, you can install the
 [0ad-community-maps-2
 package](https://aur.archlinux.org/packages/0ad-community-maps-2/).
