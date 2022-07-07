@@ -1,3 +1,12 @@
+2022-07-07
+
+    * release v0.26.1
+
+2022-07-06
+
+    * maps/random/homers_delight.js:don't have fish on land
+    * mod.json:remove trailing '-git' from mod name
+
 2022-07-04
 
     * release v0.26.0
