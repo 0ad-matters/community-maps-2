@@ -113,7 +113,7 @@ const heightSeaGround = heightScale(-4);
 const heightReedsMin = heightScale(-2);
 const heightReedsMax = heightScale(-0.5);
 const heightWaterLevel = heightScale(0);
-const heightShoreline = heightScale(0.4);
+const heightShoreline = 0.5;
 
 g_Map.log("Lowering sea ground");
 createArea(
@@ -143,10 +143,10 @@ g_Map.log("Widening and marking the Isthmus");
 // This doesn't actually mark the entire isthmus, but enough that we
 // can have trees and rocks avoid it, thereby preventing a bottleneck.
 createArea(
-	new ClumpPlacer(diskArea(6), 0.0, 0.6, Infinity, mapCenter),
+	new ClumpPlacer(diskArea(scaleByMapSize(6, 20)), 0.6, 0.6, Infinity, mapCenter),
 	[
 		new TileClassPainter(clIsthmus),
-		new SmoothElevationPainter(ELEVATION_SET, heightWaterLevel + heightScale(8), 0)
+		new SmoothElevationPainter(ELEVATION_SET, heightWaterLevel + 5, 10)
 	]);
 
 g_Map.log("Marking water");
@@ -310,6 +310,15 @@ createPatches(
  clDirt);
 Engine.SetProgress(45);
 
+g_Map.log("Establishing forests");
+var [forestTrees, stragglerTrees] = getTreeCounts(...rBiomeTreeCount(1));
+createForests(
+ [tMainTerrain, tForestFloor1, tForestFloor2, pForest1, pForest2],
+ avoidClasses(clIsthmus, 2, clRock, 1, clMetal, 1, clWater, 2, clPlayer, scaleByMapSize(18, 30), clForest, 12, clHill, 3),
+ clForest,
+ forestTrees);
+Engine.SetProgress(50);
+
 g_Map.log("Creating metal mines");
 createBalancedMetalMines(
 	oMetalSmall,
@@ -325,15 +334,6 @@ createBalancedStoneMines(
 	clRock,
 	avoidClasses(clIsthmus, 1, clPlayer, scaleByMapSize(23, 38), clHill, 2, clRock, 10, clMetal, 5, clWater, 5)
 );
-Engine.SetProgress(50);
-
-g_Map.log("Establishing forests");
-var [forestTrees, stragglerTrees] = getTreeCounts(...rBiomeTreeCount(1));
-createForests(
- [tMainTerrain, tForestFloor1, tForestFloor2, pForest1, pForest2],
- avoidClasses(clIsthmus, 2, clRock, 1, clMetal, 1, clWater, 5, clPlayer, scaleByMapSize(18, 34), clForest, 12, clHill, 3),
- clForest,
- forestTrees);
 Engine.SetProgress(60);
 
 var planetm = 1;
