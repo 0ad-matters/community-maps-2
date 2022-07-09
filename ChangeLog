@@ -1,3 +1,7 @@
+2022-07-09
+
+    * random/dune.json:change biome from 'desert' to 'sahara' (fixes OOS)
+
 2022-07-07
 
     * release v0.26.1
