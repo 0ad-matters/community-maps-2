@@ -1,6 +1,7 @@
 2022-07-09
 
     * random/dune.json:change biome from 'desert' to 'sahara' (fixes OOS)
+    * maps/random/fert_triggers.js:fix 'GetCiv' error message
 
 2022-07-07
 

@@ -19,7 +19,7 @@ Trigger.prototype.SetDisableTemplates = function()
 	for (let i = 1; i < TriggerHelper.GetNumberOfPlayers(); ++i)
 	{
 		let cmpPlayer = QueryPlayerIDInterface(i);
-		cmpPlayer.SetDisabledTemplates(disabledTemplates(cmpPlayer.GetCiv()));
+		cmpPlayer.SetDisabledTemplates(disabledTemplates(QueryPlayerIDInterface(i, IID_Identity).GetCiv()));
 	}
 };
 
