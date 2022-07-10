@@ -33,7 +33,7 @@ of this repo.
 | Dune | [nani](https://wildfiregames.com/forum/index.php?/profile/27866-nani/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/24638-random-map-dune-desert/) | 2018-08-25 |
 | Fert | [nani](https://wildfiregames.com/forum/index.php?/profile/27866-nani/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/24621-random-map-fert-king-of-the-hill-variant/) | 2018-08-25 |
 | Fert Mountain | [nani](https://wildfiregames.com/forum/index.php?/profile/27866-nani/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/24621-random-map-fert-king-of-the-hill-variant/) | 2018-08-25 |
-| Plague Swamp | [Hannibal_Barca](https://wildfiregames.com/forum/index.php?/profile/22024-hannibal_barca/) and [(-_-)](https://wildfiregames.com/forum/index.php?/profile/24952-_/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/24621-random-map-fert-king-of-the-hill-variant/) | 2018-08-25 |
+| Plague Swamp | [Hannibal_Barca](https://wildfiregames.com/forum/index.php?/profile/22024-hannibal_barca/) and (-_-) | | 2018-08-25 |
 | Riverway | [nani](https://wildfiregames.com/forum/index.php?/profile/27866-nani/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/24782-random-map-riverway/) | 2018-08-25 |
 | Forest Nothing | [coworotel](https://wildfiregames.com/forum/index.php?/profile/22499-coworotel/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/24623-forest-nothing-random-map/) | 2018-07-11 |
 

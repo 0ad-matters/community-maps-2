@@ -20,7 +20,7 @@ var oBush = "gaia/tree/bush_badlands";
 var oCrocodile = "gaia/fauna_crocodile_nile";
 var oDeer = "gaia/fauna_deer";
 var oRabbit = "gaia/fauna_rabbit";
-var oSwarm = "undeletable|trigger/fauna_insect_swarm";
+// var oSwarm = "undeletable|trigger/fauna_insect_swarm";
 var oStoneLarge = "gaia/rock/temperate_large";
 var oStoneSmall = "gaia/rock/temperate_small";
 var oMetalLarge = "gaia/ore/temperate_large";
@@ -159,12 +159,17 @@ createObjectGroups(
 	avoidClasses(clPlayer, 1, clHill, 2),
 	scaleByMapSize(16, 262), 50);
 
-g_Map.log("Creating insect swarms");
-for (let i = 0; i < numPlayers; ++i)
-	g_Map.placeEntityPassable(
-		oSwarm,
-		0,
-		new Vector2D((g_Map.getSize()/2) + randIntInclusive(-15, 15), (g_Map.getSize()/2) + randIntInclusive(-15, 15)));
+// Disabled 2022-07-10
+// See https://github.com/0ad-matters/community-maps-2/issues/5
+// and https://wildfiregames.com/forum/topic/25808-community-maps-mod-problems/?do=findComment&comment=373966
+// I also removed maps/random/plague_swamp_triggers.js
+
+//g_Map.log("Creating insect swarms");
+//for (let i = 0; i < numPlayers; ++i)
+	//g_Map.placeEntityPassable(
+		//oSwarm,
+		//0,
+		//new Vector2D((g_Map.getSize()/2) + randIntInclusive(-15, 15), (g_Map.getSize()/2) + randIntInclusive(-15, 15)));
 
 g_Map.log("Creating small decorative rocks");
 createObjectGroups(
@@ -241,7 +246,7 @@ createObjectGroups(
 	0,
 	avoidClasses(clWater, 1, clHill, 1, clPlayer, 13, clDirt, 1),
 	scaleByMapSize(13, 200), 50);
-	
+
 g_Map.log("Creating trigger points \"A\"");
 for (let position of playerPosition)
 	g_Map.placeEntityPassable("trigger/trigger_point_A", 0, position);
