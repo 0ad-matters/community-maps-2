@@ -10,8 +10,6 @@ Trigger.prototype.InitSurvival = function()
 	this.SetDisableTemplates();
 	this.gaiaWonder = TriggerHelper.GetPlayerEntitiesByClass(0, "Wonder")[0];
 	Engine.QueryInterface(this.gaiaWonder, IID_Health);
-	Engine.QueryInterface(this.gaiaWonder, IID_Resistance).SetInvulnerability(true);
-	// Engine.QueryInterface(this.treasureFemale[playerID], IID_Resistance).SetInvulnerability(true);
 };
 
 Trigger.prototype.SetDisableTemplates = function()
