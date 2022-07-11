@@ -28,12 +28,11 @@ of this repo.
 | Yekaterinaville | [andy5995](https://wildfiregames.com/forum/profile/21632-andy5995/) | [Forum](https://wildfiregames.com/forum/topic/60909-mainland-rectangled/?do=findComment&comment=461162) | 2021-10-23 |
 | Mainland Rectangled | [andy5995](https://wildfiregames.com/forum/profile/21632-andy5995/) | [Forum](https://wildfiregames.com/forum/topic/60909-mainland-rectangled/) | 2021-10-22 |
 | Mainland TG | [Jammyjamjamman](https://wildfiregames.com/forum/profile/33845-jammyjamjamman/) | [Forum](https://wildfiregames.com/forum/topic/28758-mainland-with-teammates-placed-closely-together/) | 2020-09-06 |
-| African Plains TG | [Jammyjamjamman](https://wildfiregames.com/forum/profile/33845-jammyjamjamman/) | - | - |
 | Volcanic Island | [nani](https://wildfiregames.com/forum/index.php?/profile/27866-nani/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/25695-random-map-volcanic-island/) | 2019-04-18 |
 | Dune | [nani](https://wildfiregames.com/forum/index.php?/profile/27866-nani/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/24638-random-map-dune-desert/) | 2018-08-25 |
 | Fert | [nani](https://wildfiregames.com/forum/index.php?/profile/27866-nani/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/24621-random-map-fert-king-of-the-hill-variant/) | 2018-08-25 |
 | Fert Mountain | [nani](https://wildfiregames.com/forum/index.php?/profile/27866-nani/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/24621-random-map-fert-king-of-the-hill-variant/) | 2018-08-25 |
-| Plague Swamp | [Hannibal_Barca](https://wildfiregames.com/forum/index.php?/profile/22024-hannibal_barca/) and (-_-) | | 2018-08-25 |
+| Plague Swamp | [Hannibal_Barca](https://wildfiregames.com/forum/index.php?/profile/22024-hannibal_barca/) and (-_-) | - | 2018-08-25 |
 | Riverway | [nani](https://wildfiregames.com/forum/index.php?/profile/27866-nani/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/24782-random-map-riverway/) | 2018-08-25 |
 
 ## Skirmishes
