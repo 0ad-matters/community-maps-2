@@ -9,7 +9,6 @@ Trigger.prototype.InitSurvival = function()
 {
 	this.SetDisableTemplates();
 	this.gaiaWonder = TriggerHelper.GetPlayerEntitiesByClass(0, "Wonder")[0];
-	Engine.QueryInterface(this.gaiaWonder, IID_Health);
 };
 
 Trigger.prototype.SetDisableTemplates = function()

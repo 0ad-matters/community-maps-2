@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- used by the Fert random maps -->
+<Entity merge="">
+  <Health disable=""/>
+  <Resistance replace=""/>
+</Entity>
