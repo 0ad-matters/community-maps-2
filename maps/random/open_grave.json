@@ -1,0 +1,11 @@
+{
+	"settings" : {
+		"Name" : "Open Grave",
+		"Script" : "open_grave.js",
+		"Description" : "A typical map without any usable water.",
+		"Preview" : "mainland_rectangled.png",
+		"SupportedBiomes": "generic/",
+		"Keywords": ["community"],
+		"CircularMap" : true
+	}
+}
