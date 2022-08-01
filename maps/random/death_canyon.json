@@ -1,0 +1,10 @@
+{
+	"settings" : {
+		"Name" : "Death Canyon",
+		"Script" : "death_canyon.js",
+		"Description" : "Random adaptation of the Death Canyon skirmish map",
+		"Preview" : "red_sea.png",
+		"Keywords" : ["community"],
+		"CircularMap": true
+	}
+}
