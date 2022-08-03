@@ -1,0 +1,16 @@
+{
+	"settings" : {
+		"Name" : "Mainland TG (markets disabled)",
+		"Script" : "mainland_tg.js",
+		"Description" : "A typical map without any water; teammates are placed more closely together (markets disabled).",
+		"Preview" : "mainland.png",
+		"Keywords": ["multiplayer", "community"],
+		"SupportedBiomes": "generic/",
+		"CircularMap" : true,
+		"TriggerScripts": [
+			"scripts/TriggerHelper.js",
+			"random/disabled_markets_triggers.js"
+		],
+		"TeamPlacements": ["line", "stronghold", "besideAllies", "randomGroup"]
+	}
+}

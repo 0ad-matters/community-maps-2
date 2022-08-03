@@ -144,12 +144,18 @@ createPatches(
  clDirt);
 Engine.SetProgress(55);
 
+if (g_MapSettings.mapName === "Mainland TG (markets disabled)") {
+	// More res if markets are disabled
+	var resCount = 1.25;
+}
+
 g_Map.log("Creating metal mines");
 createBalancedMetalMines(
 	oMetalSmall,
 	oMetalLarge,
 	clMetal,
-	avoidClasses(clForest, 1, clPlayer, scaleByMapSize(20, 35), clHill, 1)
+	avoidClasses(clForest, 1, clPlayer, scaleByMapSize(20, 35), clHill, 1),
+	resCount
 );
 
 g_Map.log("Creating stone mines");
@@ -157,7 +163,8 @@ createBalancedStoneMines(
 	oStoneSmall,
 	oStoneLarge,
 	clRock,
-	avoidClasses(clForest, 1, clPlayer, scaleByMapSize(20, 35), clHill, 1, clMetal, 10)
+	avoidClasses(clForest, 1, clPlayer, scaleByMapSize(20, 35), clHill, 1, clMetal, 10),
+	resCount
 );
 
 Engine.SetProgress(65);
