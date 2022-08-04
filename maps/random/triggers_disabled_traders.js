@@ -1,5 +1,8 @@
+
+
 var disabledTemplates = (civ) => [
-	"structures/" + civ + "/market",
+	"units/" + civ + "/support_trader",
+	"units/" + civ + "/ship_merchant",
 ];
 
 Trigger.prototype.InitSurvival = function()
