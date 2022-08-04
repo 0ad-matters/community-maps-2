@@ -144,9 +144,10 @@ createPatches(
  clDirt);
 Engine.SetProgress(55);
 
-if (g_MapSettings.mapName === "Mainland TG (markets disabled)") {
+var resCount = 1;
+if (g_MapSettings.mapName === "Mainland TG (traders disabled)") {
 	// More res if markets are disabled
-	var resCount = 1.25;
+	resCount = 1.25;
 }
 
 g_Map.log("Creating metal mines");
