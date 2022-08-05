@@ -50,6 +50,7 @@ var g_Map = new RandomMap(0, g_Terrains.mainTerrain);
 var mapCenter = g_Map.getCenter();
 
 initTileClasses(["shoreline"]);
+var clBaseResource = g_Map.createTileClass();
 
 const minHeightSource = -18;
 const maxHeightSource = 750;
@@ -115,13 +116,7 @@ if (!isNomad())
 				avoidClasses(g_TileClasses.mountain, 10),
 				stayClasses(g_TileClasses.land, defaultPlayerBaseRadius())
 			]),
-		true);
-
-	//g_Map.log("Flatten the initial CC area");
-	//for (let position of playerPosition)
-		//createArea(
-			//new ClumpPlacer(diskArea(defaultPlayerBaseRadius() * 0.8), 0.95, 0.6, Infinity, position),
-			//new SmoothElevationPainter(ELEVATION_SET, g_Map.getHeight(position), 6));
+		false);
 }
 
 addElements(shuffleArray([
@@ -130,7 +125,7 @@ addElements(shuffleArray([
 		"avoid": [
 			g_TileClasses.berries, 5,
 			g_TileClasses.forest, 3,
-			g_TileClasses.mountain, 2,
+			g_TileClasses.mountain, 6,
 			g_TileClasses.player, 30,
 			g_TileClasses.rock, 10,
 			g_TileClasses.metal, 20,
@@ -145,7 +140,7 @@ addElements(shuffleArray([
 		"avoid": [
 			g_TileClasses.berries, 5,
 			g_TileClasses.forest, 3,
-			g_TileClasses.mountain, 2,
+			g_TileClasses.mountain, 6,
 			g_TileClasses.player, 30,
 			g_TileClasses.rock, 20,
 			g_TileClasses.metal, 10,
@@ -161,10 +156,11 @@ addElements(shuffleArray([
 			g_TileClasses.berries, 3,
 			g_TileClasses.forest, 20,
 			g_TileClasses.metal, 4,
-			g_TileClasses.mountain, 3,
+			g_TileClasses.mountain, 5,
+			g_TileClasses.shoreline, 8,
 			g_TileClasses.player, 20,
 			g_TileClasses.rock, 4,
-			g_TileClasses.water, 2
+			g_TileClasses.water, 4
 		],
 		"sizes": ["big"],
 		"mixes": ["similar"],
@@ -181,6 +177,7 @@ addElements([{
 		g_TileClasses.forest, 25,
 		g_TileClasses.metal, 4,
 		g_TileClasses.mountain, 5,
+		g_TileClasses.shoreline, 8,
 		g_TileClasses.player, 15,
 		g_TileClasses.rock, 4,
 		g_TileClasses.water, 2
@@ -198,7 +195,7 @@ addElements(shuffleArray([
 			g_TileClasses.berries, 30,
 			g_TileClasses.forest, 5,
 			g_TileClasses.metal, 10,
-			g_TileClasses.mountain, 2,
+			g_TileClasses.mountain, 8,
 			g_TileClasses.player, 20,
 			g_TileClasses.rock, 10,
 			g_TileClasses.water, 3
@@ -218,17 +215,6 @@ addElements(shuffleArray([
 			g_TileClasses.rock, 4,
 			g_TileClasses.water, 3
 		],
-		"sizes": ["normal"],
-		"mixes": ["same"],
-		"amounts": ["many"]
-	},
-	{
-		"func": addFish,
-		"avoid": [
-			g_TileClasses.fish, 12,
-			g_TileClasses.player, 8
-		],
-		"stay": [g_TileClasses.water, 4],
 		"sizes": ["normal"],
 		"mixes": ["same"],
 		"amounts": ["many"]

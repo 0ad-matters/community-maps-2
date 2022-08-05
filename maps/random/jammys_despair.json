@@ -7,7 +7,7 @@
 		"Keywords": ["community"],
 		"TriggerScripts": [
 			"scripts/TriggerHelper.js",
-			"random/jammys_despair_triggers.js"
+			"random/triggers_disable_docks.js"
 		],
 		"SupportedBiomes": "generic/",
 		"CircularMap" : true

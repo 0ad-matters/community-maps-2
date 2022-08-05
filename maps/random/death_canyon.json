@@ -3,7 +3,11 @@
 		"Name" : "Death Canyon",
 		"Script" : "death_canyon.js",
 		"Description" : "Random adaptation of the Death Canyon skirmish map",
-		"Preview" : "red_sea.png",
+		"Preview" : "death_canyon_rnd.png",
+		"TriggerScripts": [
+			"scripts/TriggerHelper.js",
+			"random/triggers_disable_docks.js"
+		],
 		"Keywords" : ["community"],
 		"CircularMap": true
 	}
