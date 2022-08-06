@@ -10,13 +10,6 @@ Trigger.prototype.SetDisableTemplates = function()
     "units/" + civ + "/ship_merchant",
   ];
 
-  const disabledTechs = [
-    "trader_health",
-    "trade_gain_01",
-    "trade_gain_02",
-    "trade_commercial_treaty"
-  ];
-
   for (let i = 1; i < TriggerHelper.GetNumberOfPlayers(); ++i)
   {
     let cmpPlayer = QueryPlayerIDInterface(i);
@@ -24,6 +17,8 @@ Trigger.prototype.SetDisableTemplates = function()
     cmpPlayer.SetDisabledTemplates(disabledTemplates(civ));
 
     // Also disable market upgrades so the AI won't waste money on them
+    let cmpTemplateManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_TemplateManager);
+    let disabledTechs = cmpTemplateManager.GetTemplateWithoutValidation("structures/" + civ + "/market").Researcher.Technologies._string.split(" ");
     cmpPlayer.SetDisabledTechnologies(disabledTechs);
   }
 };
