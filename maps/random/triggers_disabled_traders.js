@@ -20,6 +20,8 @@ Trigger.prototype.SetDisableTemplates = function()
     let cmpTemplateManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_TemplateManager);
     let disabledTechs = cmpTemplateManager.GetTemplateWithoutValidation("structures/" + civ + "/market").Researcher.Technologies._string.split(" ");
     cmpPlayer.SetDisabledTechnologies(disabledTechs);
+    const cmpTechnologyManager = Engine.QueryInterface(cmpPlayer.entity, IID_TechnologyManager);
+    cmpTechnologyManager.ResearchTechnology("unlock_shared_dropsites");
   }
 };
 
