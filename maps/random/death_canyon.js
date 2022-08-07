@@ -106,17 +106,63 @@ createArea(
 	]);
 Engine.SetProgress(45);
 
+const startAngle = 0.05 * Math.PI;
 if (!isNomad())
 {
 	g_Map.log("Placing players");
-	let [playerIDs, playerPosition] = createBases(
-		...playerPlacementRandom(
-			sortAllPlayers(),
-			[
-				avoidClasses(g_TileClasses.mountain, 10),
-				stayClasses(g_TileClasses.land, defaultPlayerBaseRadius())
-			]),
-		false);
+	//let [playerIDs, playerPosition] = createBases(
+		//...playerPlacementRandom(
+			//sortAllPlayers(),
+			//[
+				//avoidClasses(g_TileClasses.mountain, 10),
+				//stayClasses(g_TileClasses.land, defaultPlayerBaseRadius())
+			//]),
+		//false);
+	let playerIDs = sortAllPlayers();
+	let playerPosition = playerPlacementArcs(
+		playerIDs,
+		mapCenter,
+		fractionToTiles(0.40),
+		startAngle - 0.15 * Math.PI,
+		0.2 * Math.PI,
+		0.9 * Math.PI);
+
+	g_Map.log("Flatten the initial CC area");
+	for (let position of playerPosition)
+		createArea(
+			new ClumpPlacer(diskArea(defaultPlayerBaseRadius() * 1.5), 0.95, 0.6, Infinity, position),
+			new SmoothElevationPainter(ELEVATION_SET, g_Map.getHeight(position), 20));
+
+	placePlayerBases({
+		"PlayerPlacement": [playerIDs, playerPosition],
+		"PlayerTileClass": g_TileClasses.player,
+		"BaseResourceClass": clBaseResource,
+		"Walls": false,
+		"CityPatch": {
+			"outerTerrain": g_Terrains.roadWild,
+			"innerTerrain": g_Terrains.road
+		},
+		"Berries": {
+			"template": g_Gaia.fruitBush,
+		},
+		"StartingAnimal": {
+				"template": "gaia/fauna_sheep",
+		},
+		"Mines": {
+			"types": [
+				{ "template": g_Gaia.metalLarge },
+				{ "template": g_Gaia.stoneLarge },
+			],
+		},
+		"Trees": {
+			"template": g_Gaia.tree1,
+			"count": 5
+		},
+		"Decoratives": {
+			"template": g_Decoratives.grassShort,
+		}
+	});
+	Engine.SetProgress(55);
 }
 
 addElements(shuffleArray([
