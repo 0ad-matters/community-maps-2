@@ -22,6 +22,8 @@ const tTier3Terrain = g_Terrains.tier3Terrain;
 const tHill = g_Terrains.hill;
 const tTier4Terrain = g_Terrains.tier4Terrain;
 const tDirt = g_Terrains.dirt;
+const tRoad = g_Terrains.road;
+const tRoadWild = g_Terrains.roadWild;
 
 const oTree1 = g_Gaia.tree1;
 const oTree2 = g_Gaia.tree2;
@@ -248,6 +250,8 @@ placePlayerBases({
 	"BaseResourceClass": clBaseResource,
 	"Walls": false,
 	"CityPatch": {
+		"outerTerrain": tRoadWild,
+		"innerTerrain": tRoad
 	},
 	"StartingAnimal": {
 		"template": oPig
