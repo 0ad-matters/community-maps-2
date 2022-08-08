@@ -134,22 +134,20 @@ else
 var bloodAreas = [];
 var numLakes = Math.round(scaleByMapSize(1,4) * numPlayers);
 var lakeSize;
-var lakeCoherence;
-var lakeBorderSmoothness;
+const lakeCoherence = 0.1 // coherence - How much the radius of the clump varies (1 = circle, 0 = very random).
+const lakeBorderSmoothness = 0.2; // smoothness - How smooth the border of the clump is (1 = few "peaks", 0 = very jagged).
 var lakeBlendRadius;
 var lakeMaxRndDiff;
 /* These lakes aren't very deep; units can walk over them, so it doesn't have to avoid clPath */
 for (let passes = 0; passes < 6; passes++)
 {
 	lakeSize = scaleByMapSize(randIntInclusive(40, 70), randIntInclusive(180, 280));
-	lakeCoherence = randFloat(0.2, 0.8);
-	lakeBorderSmoothness = randFloat(0.1, 0.9);
 
 	bloodAreas = createAreas(
 		new ClumpPlacer(
 			lakeSize,
-			lakeCoherence, // coherence - How much the radius of the clump varies (1 = circle, 0 = very random).
-			lakeBorderSmoothness, // smoothness - How smooth the border of the clump is (1 = few "peaks", 0 = very jagged).
+			lakeCoherence,
+			lakeBorderSmoothness,
 			Infinity
 			),
 		[
@@ -170,8 +168,6 @@ for (let passes = 0; passes < 6; passes++)
 for (let passes = 0; passes < numLakes; passes++)
 {
 	lakeSize = scaleByMapSize(randIntInclusive(40, 70), randIntInclusive(180, 280));
-	lakeCoherence = randFloat(0.2, 0.8);
-	lakeBorderSmoothness = randFloat(0.1, 0.9);
 	lakeBlendRadius = randFloat(1.0, 4.0);
 	lakeMaxRndDiff = randFloat(1.0, 5.0);
 
