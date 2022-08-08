@@ -1,6 +1,13 @@
+2022-08-08
+
+    * release v0.26.3
+
 2022-08-05
 
     * maps/random/death_canyon.js:add new map
+    * maps/random/mainland_tg_disabled_traders.json:add version of
+    Mainland in which traders and merchant ships are disabled
+
 
 2022-07-22
 
