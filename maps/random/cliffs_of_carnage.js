@@ -118,19 +118,6 @@ const heightShoreline = heightScale(0.5);
 
 const fruit = [oFruitBush, oGrapes, oApples];
 
-g_Map.log("Lowering sea ground");
-createArea(
-	new MapBoundsPlacer(),
-	new SmoothElevationPainter(ELEVATION_SET, heightSeaGround, 2),
-	new HeightConstraint(-Infinity, heightWaterLevel));
-Engine.SetProgress(20);
-
-g_Map.log("Smoothing heightmap");
-createArea(
-	new MapBoundsPlacer(),
-	new SmoothingPainter(1, scaleByMapSize(0.1, 0.5), 1));
-Engine.SetProgress(25);
-
 g_Map.log("Marking water");
 createArea(
 	new MapBoundsPlacer(),

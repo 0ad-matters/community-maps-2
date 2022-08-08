@@ -115,20 +115,6 @@ const heightReedsMax = heightScale(-0.5);
 const heightWaterLevel = heightScale(0);
 const heightShoreline = 0.5;
 
-g_Map.log("Lowering sea ground");
-createArea(
-	new MapBoundsPlacer(),
-	new SmoothElevationPainter(ELEVATION_SET, heightSeaGround, 2),
-	new HeightConstraint(-Infinity, heightWaterLevel));
-Engine.SetProgress(20);
-
-g_Map.log("Smoothing heightmap");
-createArea(
-	new MapBoundsPlacer(),
-	new SmoothingPainter(1, scaleByMapSize(0.1, 0.5), 1));
-Engine.SetProgress(25);
-
-
 g_Map.log("Widening and marking the Isthmus");
 /**
  * function ClumpPlacer(size, coherence, smoothness, failFraction = 0, centerPosition = undefined)
