@@ -32,7 +32,7 @@
 		</Postproc>
 	</Environment>
 	<Camera>
-		<Position x="454.457" y="250.14" z="448.987"/>
+		<Position x="946.811" y="627.971" z="-4.53021"/>
 		<Rotation angle="0"/>
 		<Declination angle="0.610865"/>
 	</Camera>
@@ -40,8 +40,8 @@
 {
   "AISeed": 0,
   "Description": "A map with many shores and lots of strategic possibilities. ",
-  "Keywords": [	
-  "grapejuice"
+  "Keywords": [
+    "grapejuice"
   ],
   "LockTeams": false,
   "Name": "A Path Beyond II (8)",
@@ -58,11 +58,6 @@
   ],
   "Preview": "A_Path_Beyond_II.png",
   "RevealMap": false,
-  "TriggerScripts": [
-    "scripts/SkirmishRandomizer.js",
-    "scripts/TriggerHelper.js",
-    "skirmishes/A Path Beyond II (8).js"
-  ],
   "VictoryConditions": [
     "conquest"
   ]
@@ -22591,7 +22586,7 @@
 			<Player>0</Player>
 			<Position x="1257.75916" z="457.94755"/>
 			<Orientation y="2.35622"/>
-			<Obstruction group="5653"/>
+			<Obstruction group="5653" group2="3963"/>
 			<Actor seed="38242"/>
 		</Entity>
 		<Entity uid="3965">
@@ -23313,6 +23308,7 @@
 			<Player>0</Player>
 			<Position x="1227.49878" z="524.37195"/>
 			<Orientation y="-1.45186"/>
+			<Obstruction group="6096" group2="4073"/>
 			<Actor seed="11494"/>
 		</Entity>
 		<Entity uid="4074">
@@ -27061,6 +27057,7 @@
 			<Player>0</Player>
 			<Position x="835.24244" z="572.89234"/>
 			<Orientation y="5.16732"/>
+			<Obstruction group="6063" group2="5455"/>
 			<Actor seed="31264"/>
 		</Entity>
 		<Entity uid="5456">
@@ -27082,6 +27079,7 @@
 			<Player>0</Player>
 			<Position x="841.73151" z="570.13819"/>
 			<Orientation y="1.89592"/>
+			<Obstruction group="5457" group2="5455"/>
 			<Actor seed="52626"/>
 		</Entity>
 		<Entity uid="5459">
@@ -27152,6 +27150,7 @@
 			<Player>0</Player>
 			<Position x="820.70655" z="555.15168"/>
 			<Orientation y="5.16732"/>
+			<Obstruction group="5469" group2="6064"/>
 			<Actor seed="22104"/>
 		</Entity>
 		<Entity uid="5469">
@@ -27159,6 +27158,7 @@
 			<Player>0</Player>
 			<Position x="811.88233" z="564.90583"/>
 			<Orientation y="5.16732"/>
+			<Obstruction group="5468" group2="5469"/>
 			<Actor seed="53744"/>
 		</Entity>
 		<Entity uid="5470">
@@ -27565,78 +27565,6 @@
 			<Orientation y="2.38164"/>
 			<Actor seed="63732"/>
 		</Entity>
-		<Entity uid="5740">
-			<Template>structures/palisades_long</Template>
-			<Player>4</Player>
-			<Position x="0" z="0"/>
-			<Orientation y="0"/>
-		</Entity>
-		<Entity uid="5741">
-			<Template>structures/palisades_long</Template>
-			<Player>4</Player>
-			<Position x="0" z="0"/>
-			<Orientation y="0"/>
-		</Entity>
-		<Entity uid="5742">
-			<Template>structures/palisades_long</Template>
-			<Player>4</Player>
-			<Position x="0" z="0"/>
-			<Orientation y="0"/>
-		</Entity>
-		<Entity uid="5743">
-			<Template>structures/palisades_long</Template>
-			<Player>4</Player>
-			<Position x="0" z="0"/>
-			<Orientation y="0"/>
-		</Entity>
-		<Entity uid="5744">
-			<Template>structures/palisades_long</Template>
-			<Player>4</Player>
-			<Position x="0" z="0"/>
-			<Orientation y="0"/>
-		</Entity>
-		<Entity uid="5745">
-			<Template>structures/palisades_long</Template>
-			<Player>4</Player>
-			<Position x="0" z="0"/>
-			<Orientation y="0"/>
-		</Entity>
-		<Entity uid="5746">
-			<Template>structures/palisades_long</Template>
-			<Player>4</Player>
-			<Position x="0" z="0"/>
-			<Orientation y="0"/>
-		</Entity>
-		<Entity uid="5747">
-			<Template>structures/palisades_long</Template>
-			<Player>4</Player>
-			<Position x="0" z="0"/>
-			<Orientation y="0"/>
-		</Entity>
-		<Entity uid="5748">
-			<Template>skirmish/structures/default_outpost</Template>
-			<Player>4</Player>
-			<Position x="0" z="0"/>
-			<Orientation y="0"/>
-		</Entity>
-		<Entity uid="5749">
-			<Template>skirmish/structures/default_outpost</Template>
-			<Player>4</Player>
-			<Position x="0" z="0"/>
-			<Orientation y="0"/>
-		</Entity>
-		<Entity uid="5750">
-			<Template>skirmish/structures/default_outpost</Template>
-			<Player>4</Player>
-			<Position x="0" z="0"/>
-			<Orientation y="0"/>
-		</Entity>
-		<Entity uid="5751">
-			<Template>skirmish/structures/default_outpost</Template>
-			<Player>4</Player>
-			<Position x="0" z="0"/>
-			<Orientation y="0"/>
-		</Entity>
 		<Entity uid="5776">
 			<Template>structures/palisades_long</Template>
 			<Player>4</Player>
@@ -27712,618 +27640,2028 @@
 		<Entity uid="5788">
 			<Template>skirmish/structures/default_civil_centre</Template>
 			<Player>1</Player>
-			<Position x="0" z="0"/>
+			<Position x="450" z="541"/>
 			<Orientation y="-3.07961"/>
 			<Actor seed="35916"/>
 		</Entity>
 		<Entity uid="5789">
 			<Template>skirmish/units/default_cavalry</Template>
 			<Player>1</Player>
-			<Position x="0" z="0"/>
+			<Position x="470" z="521"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="60884"/>
 		</Entity>
 		<Entity uid="5791">
 			<Template>skirmish/units/default_infantry_melee_b</Template>
 			<Player>1</Player>
-			<Position x="0" z="0"/>
+			<Position x="430" z="521"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="32702"/>
 		</Entity>
 		<Entity uid="5792">
 			<Template>skirmish/units/default_infantry_melee_b</Template>
 			<Player>1</Player>
-			<Position x="0" z="0"/>
+			<Position x="425" z="521"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="46316"/>
 		</Entity>
 		<Entity uid="5793">
 			<Template>skirmish/units/default_infantry_ranged_b</Template>
 			<Player>1</Player>
-			<Position x="0" z="0"/>
+			<Position x="430" z="526"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="64114"/>
 		</Entity>
 		<Entity uid="5794">
 			<Template>skirmish/units/default_infantry_ranged_b</Template>
 			<Player>1</Player>
-			<Position x="0" z="0"/>
+			<Position x="430" z="516"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="24452"/>
 		</Entity>
 		<Entity uid="5795">
 			<Template>skirmish/units/special_starting_unit</Template>
 			<Player>1</Player>
-			<Position x="0" z="0"/>
+			<Position x="470" z="561"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="29790"/>
 		</Entity>
 		<Entity uid="5796">
 			<Template>skirmish/units/default_support_female_citizen</Template>
 			<Player>1</Player>
-			<Position x="0" z="0"/>
+			<Position x="475" z="561"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="56262"/>
 		</Entity>
 		<Entity uid="5797">
 			<Template>skirmish/units/default_support_female_citizen</Template>
 			<Player>1</Player>
-			<Position x="0" z="0"/>
+			<Position x="470" z="556"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="32196"/>
 		</Entity>
 		<Entity uid="5798">
 			<Template>skirmish/units/default_support_female_citizen</Template>
 			<Player>1</Player>
-			<Position x="0" z="0"/>
+			<Position x="470" z="566"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="11658"/>
 		</Entity>
 		<Entity uid="5799">
 			<Template>skirmish/units/default_support_female_citizen</Template>
 			<Player>1</Player>
-			<Position x="0" z="0"/>
+			<Position x="470" z="571"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="60750"/>
 		</Entity>
 		<Entity uid="5800">
 			<Template>skirmish/structures/default_civil_centre</Template>
 			<Player>2</Player>
-			<Position x="0" z="0"/>
+			<Position x="511" z="912"/>
 			<Orientation y="-4.0174"/>
 			<Actor seed="35916"/>
 		</Entity>
 		<Entity uid="5801">
 			<Template>skirmish/units/default_cavalry</Template>
 			<Player>2</Player>
-			<Position x="0" z="0"/>
+			<Position x="531" z="892"/>
 			<Orientation y="1.41843"/>
 			<Actor seed="60884"/>
 		</Entity>
 		<Entity uid="5802">
 			<Template>skirmish/units/default_infantry_melee_b</Template>
 			<Player>2</Player>
-			<Position x="0" z="0"/>
+			<Position x="491" z="892"/>
 			<Orientation y="1.41843"/>
 			<Actor seed="46316"/>
 		</Entity>
 		<Entity uid="5803">
 			<Template>skirmish/units/default_infantry_melee_b</Template>
 			<Player>2</Player>
-			<Position x="0" z="0"/>
+			<Position x="486" z="892"/>
 			<Orientation y="1.41843"/>
 			<Actor seed="32702"/>
 		</Entity>
 		<Entity uid="5804">
 			<Template>skirmish/units/default_infantry_ranged_b</Template>
 			<Player>2</Player>
-			<Position x="0" z="0"/>
+			<Position x="491" z="897"/>
 			<Orientation y="1.41843"/>
 			<Actor seed="24452"/>
 		</Entity>
 		<Entity uid="5805">
 			<Template>skirmish/units/default_infantry_ranged_b</Template>
 			<Player>2</Player>
-			<Position x="0" z="0"/>
+			<Position x="491" z="887"/>
 			<Orientation y="1.41843"/>
 			<Actor seed="64114"/>
 		</Entity>
 		<Entity uid="5806">
 			<Template>skirmish/units/default_support_female_citizen</Template>
 			<Player>2</Player>
-			<Position x="0" z="0"/>
+			<Position x="531" z="932"/>
 			<Orientation y="1.41843"/>
 			<Actor seed="56262"/>
 		</Entity>
 		<Entity uid="5807">
 			<Template>skirmish/units/default_support_female_citizen</Template>
 			<Player>2</Player>
-			<Position x="0" z="0"/>
+			<Position x="536" z="932"/>
 			<Orientation y="1.41843"/>
 			<Actor seed="60750"/>
 		</Entity>
 		<Entity uid="5808">
 			<Template>skirmish/units/default_support_female_citizen</Template>
 			<Player>2</Player>
-			<Position x="0" z="0"/>
+			<Position x="531" z="927"/>
 			<Orientation y="1.41843"/>
 			<Actor seed="32196"/>
 		</Entity>
 		<Entity uid="5809">
 			<Template>skirmish/units/default_support_female_citizen</Template>
 			<Player>2</Player>
-			<Position x="0" z="0"/>
+			<Position x="531" z="937"/>
 			<Orientation y="1.41843"/>
 			<Actor seed="11658"/>
 		</Entity>
 		<Entity uid="5810">
 			<Template>skirmish/units/special_starting_unit</Template>
 			<Player>2</Player>
-			<Position x="0" z="0"/>
+			<Position x="531" z="942"/>
 			<Orientation y="1.41843"/>
 			<Actor seed="29790"/>
 		</Entity>
 		<Entity uid="5811">
 			<Template>skirmish/structures/default_civil_centre</Template>
 			<Player>3</Player>
-			<Position x="0" z="0"/>
+			<Position x="563" z="1384"/>
 			<Orientation y="-3.8658"/>
 			<Actor seed="35916"/>
 		</Entity>
 		<Entity uid="5812">
 			<Template>skirmish/units/default_cavalry</Template>
 			<Player>3</Player>
-			<Position x="0" z="0"/>
+			<Position x="583" z="1364"/>
 			<Orientation y="1.57003"/>
 			<Actor seed="60884"/>
 		</Entity>
 		<Entity uid="5813">
 			<Template>skirmish/units/default_infantry_melee_b</Template>
 			<Player>3</Player>
-			<Position x="0" z="0"/>
+			<Position x="543" z="1364"/>
 			<Orientation y="1.57003"/>
 			<Actor seed="46316"/>
 		</Entity>
 		<Entity uid="5814">
 			<Template>skirmish/units/default_infantry_melee_b</Template>
 			<Player>3</Player>
-			<Position x="0" z="0"/>
+			<Position x="538" z="1364"/>
 			<Orientation y="1.57003"/>
 			<Actor seed="32702"/>
 		</Entity>
 		<Entity uid="5815">
 			<Template>skirmish/units/default_infantry_ranged_b</Template>
 			<Player>3</Player>
-			<Position x="0" z="0"/>
+			<Position x="543" z="1369"/>
 			<Orientation y="1.57003"/>
 			<Actor seed="24452"/>
 		</Entity>
 		<Entity uid="5816">
 			<Template>skirmish/units/default_infantry_ranged_b</Template>
 			<Player>3</Player>
-			<Position x="0" z="0"/>
+			<Position x="543" z="1359"/>
 			<Orientation y="1.57003"/>
 			<Actor seed="64114"/>
 		</Entity>
 		<Entity uid="5817">
 			<Template>skirmish/units/default_support_female_citizen</Template>
 			<Player>3</Player>
-			<Position x="0" z="0"/>
+			<Position x="583" z="1404"/>
 			<Orientation y="1.57003"/>
 			<Actor seed="56262"/>
 		</Entity>
 		<Entity uid="5818">
 			<Template>skirmish/units/default_support_female_citizen</Template>
 			<Player>3</Player>
-			<Position x="0" z="0"/>
+			<Position x="588" z="1404"/>
 			<Orientation y="1.57003"/>
 			<Actor seed="60750"/>
 		</Entity>
 		<Entity uid="5819">
 			<Template>skirmish/units/default_support_female_citizen</Template>
 			<Player>3</Player>
-			<Position x="0" z="0"/>
+			<Position x="583" z="1399"/>
 			<Orientation y="1.57003"/>
 			<Actor seed="32196"/>
 		</Entity>
 		<Entity uid="5820">
 			<Template>skirmish/units/default_support_female_citizen</Template>
 			<Player>3</Player>
-			<Position x="0" z="0"/>
+			<Position x="583" z="1409"/>
 			<Orientation y="1.57003"/>
 			<Actor seed="11658"/>
 		</Entity>
 		<Entity uid="5821">
 			<Template>skirmish/units/special_starting_unit</Template>
 			<Player>3</Player>
-			<Position x="0" z="0"/>
+			<Position x="583" z="1414"/>
 			<Orientation y="1.57003"/>
 			<Actor seed="29790"/>
 		</Entity>
 		<Entity uid="5822">
 			<Template>skirmish/structures/default_civil_centre</Template>
 			<Player>4</Player>
-			<Position x="0" z="0"/>
+			<Position x="911" z="1347"/>
 			<Orientation y="-4.02187"/>
 			<Actor seed="35916"/>
 		</Entity>
 		<Entity uid="5823">
 			<Template>skirmish/units/default_cavalry</Template>
 			<Player>4</Player>
-			<Position x="0" z="0"/>
+			<Position x="931" z="1327"/>
 			<Orientation y="1.41396"/>
 			<Actor seed="60884"/>
 		</Entity>
 		<Entity uid="5824">
 			<Template>skirmish/units/default_infantry_melee_b</Template>
 			<Player>4</Player>
-			<Position x="0" z="0"/>
+			<Position x="891" z="1327"/>
 			<Orientation y="1.41396"/>
 			<Actor seed="46316"/>
 		</Entity>
 		<Entity uid="5825">
 			<Template>skirmish/units/default_infantry_melee_b</Template>
 			<Player>4</Player>
-			<Position x="0" z="0"/>
+			<Position x="886" z="1327"/>
 			<Orientation y="1.41396"/>
 			<Actor seed="32702"/>
 		</Entity>
 		<Entity uid="5826">
 			<Template>skirmish/units/default_infantry_ranged_b</Template>
 			<Player>4</Player>
-			<Position x="0" z="0"/>
+			<Position x="891" z="1332"/>
 			<Orientation y="1.41396"/>
 			<Actor seed="24452"/>
 		</Entity>
 		<Entity uid="5827">
 			<Template>skirmish/units/default_infantry_ranged_b</Template>
 			<Player>4</Player>
-			<Position x="0" z="0"/>
+			<Position x="891" z="1322"/>
 			<Orientation y="1.41396"/>
 			<Actor seed="64114"/>
 		</Entity>
 		<Entity uid="5828">
 			<Template>skirmish/units/default_support_female_citizen</Template>
 			<Player>4</Player>
-			<Position x="0" z="0"/>
+			<Position x="931" z="1367"/>
 			<Orientation y="1.41396"/>
 			<Actor seed="56262"/>
 		</Entity>
 		<Entity uid="5829">
 			<Template>skirmish/units/default_support_female_citizen</Template>
 			<Player>4</Player>
-			<Position x="0" z="0"/>
+			<Position x="936" z="1367"/>
 			<Orientation y="1.41396"/>
 			<Actor seed="60750"/>
 		</Entity>
 		<Entity uid="5830">
 			<Template>skirmish/units/default_support_female_citizen</Template>
 			<Player>4</Player>
-			<Position x="0" z="0"/>
+			<Position x="931" z="1362"/>
 			<Orientation y="1.41396"/>
 			<Actor seed="32196"/>
 		</Entity>
 		<Entity uid="5831">
 			<Template>skirmish/units/default_support_female_citizen</Template>
 			<Player>4</Player>
-			<Position x="0" z="0"/>
+			<Position x="931" z="1372"/>
 			<Orientation y="1.41396"/>
 			<Actor seed="11658"/>
 		</Entity>
 		<Entity uid="5832">
 			<Template>skirmish/units/special_starting_unit</Template>
 			<Player>4</Player>
-			<Position x="0" z="0"/>
+			<Position x="931" z="1377"/>
 			<Orientation y="1.41396"/>
 			<Actor seed="29790"/>
 		</Entity>
 		<Entity uid="5833">
 			<Template>skirmish/structures/default_civil_centre</Template>
 			<Player>5</Player>
-			<Position x="0" z="0"/>
+			<Position x="1272" z="1381"/>
 			<Orientation y="-3.96891"/>
 			<Actor seed="35916"/>
 		</Entity>
 		<Entity uid="5834">
 			<Template>skirmish/units/default_cavalry</Template>
 			<Player>5</Player>
-			<Position x="0" z="0"/>
+			<Position x="1292" z="1361"/>
 			<Orientation y="1.46692"/>
 			<Actor seed="60884"/>
 		</Entity>
 		<Entity uid="5835">
 			<Template>skirmish/units/default_infantry_melee_b</Template>
 			<Player>5</Player>
-			<Position x="0" z="0"/>
+			<Position x="1252" z="1361"/>
 			<Orientation y="1.46692"/>
 			<Actor seed="46316"/>
 		</Entity>
 		<Entity uid="5836">
 			<Template>skirmish/units/default_infantry_melee_b</Template>
 			<Player>5</Player>
-			<Position x="0" z="0"/>
+			<Position x="1247" z="1361"/>
 			<Orientation y="1.46692"/>
 			<Actor seed="32702"/>
 		</Entity>
 		<Entity uid="5837">
 			<Template>skirmish/units/default_infantry_ranged_b</Template>
 			<Player>5</Player>
-			<Position x="0" z="0"/>
+			<Position x="1252" z="1366"/>
 			<Orientation y="1.46692"/>
 			<Actor seed="24452"/>
 		</Entity>
 		<Entity uid="5838">
 			<Template>skirmish/units/default_infantry_ranged_b</Template>
 			<Player>5</Player>
-			<Position x="0" z="0"/>
+			<Position x="1252" z="1356"/>
 			<Orientation y="1.46692"/>
 			<Actor seed="64114"/>
 		</Entity>
 		<Entity uid="5839">
 			<Template>skirmish/units/default_support_female_citizen</Template>
 			<Player>5</Player>
-			<Position x="0" z="0"/>
+			<Position x="1292" z="1401"/>
 			<Orientation y="1.46692"/>
 			<Actor seed="56262"/>
 		</Entity>
 		<Entity uid="5840">
 			<Template>skirmish/units/default_support_female_citizen</Template>
 			<Player>5</Player>
-			<Position x="0" z="0"/>
+			<Position x="1297" z="1401"/>
 			<Orientation y="1.46692"/>
 			<Actor seed="60750"/>
 		</Entity>
 		<Entity uid="5841">
 			<Template>skirmish/units/default_support_female_citizen</Template>
 			<Player>5</Player>
-			<Position x="0" z="0"/>
+			<Position x="1292" z="1396"/>
 			<Orientation y="1.46692"/>
 			<Actor seed="32196"/>
 		</Entity>
 		<Entity uid="5842">
 			<Template>skirmish/units/default_support_female_citizen</Template>
 			<Player>5</Player>
-			<Position x="0" z="0"/>
+			<Position x="1292" z="1406"/>
 			<Orientation y="1.46692"/>
 			<Actor seed="11658"/>
 		</Entity>
 		<Entity uid="5843">
 			<Template>skirmish/units/special_starting_unit</Template>
 			<Player>5</Player>
-			<Position x="0" z="0"/>
+			<Position x="1292" z="1411"/>
 			<Orientation y="1.46692"/>
 			<Actor seed="29790"/>
 		</Entity>
 		<Entity uid="5844">
 			<Template>skirmish/structures/default_civil_centre</Template>
 			<Player>6</Player>
-			<Position x="0" z="0"/>
+			<Position x="1301" z="914"/>
 			<Orientation y="-3.93641"/>
 			<Actor seed="35916"/>
 		</Entity>
 		<Entity uid="5845">
 			<Template>skirmish/units/default_cavalry</Template>
 			<Player>6</Player>
-			<Position x="0" z="0"/>
+			<Position x="1321" z="894"/>
 			<Orientation y="1.49943"/>
 			<Actor seed="60884"/>
 		</Entity>
 		<Entity uid="5846">
 			<Template>skirmish/units/default_infantry_melee_b</Template>
 			<Player>6</Player>
-			<Position x="0" z="0"/>
+			<Position x="1281" z="894"/>
 			<Orientation y="1.49943"/>
 			<Actor seed="46316"/>
 		</Entity>
 		<Entity uid="5847">
 			<Template>skirmish/units/default_infantry_melee_b</Template>
 			<Player>6</Player>
-			<Position x="0" z="0"/>
+			<Position x="1276" z="894"/>
 			<Orientation y="1.49943"/>
 			<Actor seed="32702"/>
 		</Entity>
 		<Entity uid="5848">
 			<Template>skirmish/units/default_infantry_ranged_b</Template>
 			<Player>6</Player>
-			<Position x="0" z="0"/>
+			<Position x="1281" z="899"/>
 			<Orientation y="1.49943"/>
 			<Actor seed="24452"/>
 		</Entity>
 		<Entity uid="5849">
 			<Template>skirmish/units/default_infantry_ranged_b</Template>
 			<Player>6</Player>
-			<Position x="0" z="0"/>
+			<Position x="1281" z="889"/>
 			<Orientation y="1.49943"/>
 			<Actor seed="64114"/>
 		</Entity>
 		<Entity uid="5850">
 			<Template>skirmish/units/default_support_female_citizen</Template>
 			<Player>6</Player>
-			<Position x="0" z="0"/>
+			<Position x="1321" z="934"/>
 			<Orientation y="1.49943"/>
 			<Actor seed="56262"/>
 		</Entity>
 		<Entity uid="5851">
 			<Template>skirmish/units/default_support_female_citizen</Template>
 			<Player>6</Player>
-			<Position x="0" z="0"/>
+			<Position x="1326" z="934"/>
 			<Orientation y="1.49943"/>
 			<Actor seed="60750"/>
 		</Entity>
 		<Entity uid="5852">
 			<Template>skirmish/units/default_support_female_citizen</Template>
 			<Player>6</Player>
-			<Position x="0" z="0"/>
+			<Position x="1321" z="929"/>
 			<Orientation y="1.49943"/>
 			<Actor seed="32196"/>
 		</Entity>
 		<Entity uid="5853">
 			<Template>skirmish/units/default_support_female_citizen</Template>
 			<Player>6</Player>
-			<Position x="0" z="0"/>
+			<Position x="1321" z="939"/>
 			<Orientation y="1.49943"/>
 			<Actor seed="11658"/>
 		</Entity>
 		<Entity uid="5854">
 			<Template>skirmish/units/special_starting_unit</Template>
 			<Player>6</Player>
-			<Position x="0" z="0"/>
+			<Position x="1321" z="944"/>
 			<Orientation y="1.49943"/>
 			<Actor seed="29790"/>
 		</Entity>
 		<Entity uid="5855">
 			<Template>skirmish/structures/default_civil_centre</Template>
 			<Player>7</Player>
-			<Position x="0" z="0"/>
+			<Position x="1281" z="502"/>
 			<Orientation y="-3.95398"/>
 			<Actor seed="35916"/>
 		</Entity>
 		<Entity uid="5856">
 			<Template>skirmish/units/default_cavalry</Template>
 			<Player>7</Player>
-			<Position x="0" z="0"/>
+			<Position x="1301" z="482"/>
 			<Orientation y="1.48185"/>
 			<Actor seed="60884"/>
 		</Entity>
 		<Entity uid="5857">
 			<Template>skirmish/units/default_infantry_melee_b</Template>
 			<Player>7</Player>
-			<Position x="0" z="0"/>
+			<Position x="1261" z="482"/>
 			<Orientation y="1.48185"/>
 			<Actor seed="46316"/>
 		</Entity>
 		<Entity uid="5858">
 			<Template>skirmish/units/default_infantry_melee_b</Template>
 			<Player>7</Player>
-			<Position x="0" z="0"/>
+			<Position x="1256" z="482"/>
 			<Orientation y="1.48185"/>
 			<Actor seed="32702"/>
 		</Entity>
 		<Entity uid="5859">
 			<Template>skirmish/units/default_infantry_ranged_b</Template>
 			<Player>7</Player>
-			<Position x="0" z="0"/>
+			<Position x="1261" z="487"/>
 			<Orientation y="1.48185"/>
 			<Actor seed="24452"/>
 		</Entity>
 		<Entity uid="5860">
 			<Template>skirmish/units/default_infantry_ranged_b</Template>
 			<Player>7</Player>
-			<Position x="0" z="0"/>
+			<Position x="1261" z="477"/>
 			<Orientation y="1.48185"/>
 			<Actor seed="64114"/>
 		</Entity>
 		<Entity uid="5861">
 			<Template>skirmish/units/default_support_female_citizen</Template>
 			<Player>7</Player>
-			<Position x="0" z="0"/>
+			<Position x="1301" z="522"/>
 			<Orientation y="1.48185"/>
 			<Actor seed="56262"/>
 		</Entity>
 		<Entity uid="5862">
 			<Template>skirmish/units/default_support_female_citizen</Template>
 			<Player>7</Player>
-			<Position x="0" z="0"/>
+			<Position x="1306" z="522"/>
 			<Orientation y="1.48185"/>
 			<Actor seed="60750"/>
 		</Entity>
 		<Entity uid="5863">
 			<Template>skirmish/units/default_support_female_citizen</Template>
 			<Player>7</Player>
-			<Position x="0" z="0"/>
+			<Position x="1301" z="517"/>
 			<Orientation y="1.48185"/>
 			<Actor seed="32196"/>
 		</Entity>
 		<Entity uid="5864">
 			<Template>skirmish/units/default_support_female_citizen</Template>
 			<Player>7</Player>
-			<Position x="0" z="0"/>
+			<Position x="1301" z="527"/>
 			<Orientation y="1.48185"/>
 			<Actor seed="11658"/>
 		</Entity>
 		<Entity uid="5865">
 			<Template>skirmish/units/special_starting_unit</Template>
 			<Player>7</Player>
-			<Position x="0" z="0"/>
+			<Position x="1301" z="532"/>
 			<Orientation y="1.48185"/>
 			<Actor seed="29790"/>
 		</Entity>
 		<Entity uid="5866">
 			<Template>skirmish/structures/default_civil_centre</Template>
 			<Player>8</Player>
-			<Position x="0" z="0"/>
+			<Position x="878" z="514"/>
 			<Orientation y="-3.6888"/>
 			<Actor seed="35916"/>
 		</Entity>
 		<Entity uid="5867">
 			<Template>skirmish/units/default_cavalry</Template>
 			<Player>8</Player>
-			<Position x="0" z="0"/>
+			<Position x="898" z="494"/>
 			<Orientation y="1.45054"/>
 			<Actor seed="60884"/>
 		</Entity>
 		<Entity uid="5868">
 			<Template>skirmish/units/default_infantry_melee_b</Template>
 			<Player>8</Player>
-			<Position x="0" z="0"/>
+			<Position x="858" z="494"/>
 			<Orientation y="1.45054"/>
 			<Actor seed="46316"/>
 		</Entity>
 		<Entity uid="5869">
 			<Template>skirmish/units/default_infantry_melee_b</Template>
 			<Player>8</Player>
-			<Position x="0" z="0"/>
+			<Position x="853" z="494"/>
 			<Orientation y="1.45054"/>
 			<Actor seed="32702"/>
 		</Entity>
 		<Entity uid="5870">
 			<Template>skirmish/units/default_infantry_ranged_b</Template>
 			<Player>8</Player>
-			<Position x="0" z="0"/>
+			<Position x="858" z="499"/>
 			<Orientation y="1.45054"/>
 			<Actor seed="24452"/>
 		</Entity>
 		<Entity uid="5871">
 			<Template>skirmish/units/default_infantry_ranged_b</Template>
 			<Player>8</Player>
-			<Position x="0" z="0"/>
+			<Position x="858" z="489"/>
 			<Orientation y="1.45054"/>
 			<Actor seed="64114"/>
 		</Entity>
 		<Entity uid="5872">
 			<Template>skirmish/units/default_support_female_citizen</Template>
 			<Player>8</Player>
-			<Position x="0" z="0"/>
+			<Position x="898" z="534"/>
 			<Orientation y="1.45054"/>
 			<Actor seed="56262"/>
 		</Entity>
 		<Entity uid="5873">
 			<Template>skirmish/units/default_support_female_citizen</Template>
 			<Player>8</Player>
-			<Position x="0" z="0"/>
+			<Position x="903" z="534"/>
 			<Orientation y="1.45054"/>
 			<Actor seed="60750"/>
 		</Entity>
 		<Entity uid="5874">
 			<Template>skirmish/units/default_support_female_citizen</Template>
 			<Player>8</Player>
-			<Position x="0" z="0"/>
+			<Position x="898" z="529"/>
 			<Orientation y="1.45054"/>
 			<Actor seed="32196"/>
 		</Entity>
 		<Entity uid="5875">
 			<Template>skirmish/units/default_support_female_citizen</Template>
 			<Player>8</Player>
-			<Position x="0" z="0"/>
+			<Position x="898" z="539"/>
 			<Orientation y="1.45054"/>
 			<Actor seed="11658"/>
 		</Entity>
 		<Entity uid="5876">
 			<Template>skirmish/units/special_starting_unit</Template>
 			<Player>8</Player>
-			<Position x="0" z="0"/>
+			<Position x="898" z="544"/>
 			<Orientation y="1.45054"/>
 			<Actor seed="29790"/>
+		</Entity>
+		<Entity uid="5877">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>4</Player>
+			<Position x="909" z="1278"/>
+			<Orientation y="3.15"/>
+			<Obstruction group="5207" group2="5741"/>
+		</Entity>
+		<Entity uid="5878">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>4</Player>
+			<Position x="965" z="1294"/>
+			<Orientation y="2.4"/>
+			<Obstruction group="5211" group2="5878"/>
+		</Entity>
+		<Entity uid="5879">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>4</Player>
+			<Position x="980" z="1349"/>
+			<Orientation y="1.55001"/>
+			<Obstruction group="5743" group2="5879"/>
+		</Entity>
+		<Entity uid="5880">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>4</Player>
+			<Position x="962" z="1398"/>
+			<Orientation y="0.74001"/>
+			<Obstruction group="5744" group2="5880"/>
+		</Entity>
+		<Entity uid="5881">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>4</Player>
+			<Position x="910.37226" z="1418.12403"/>
+			<Orientation y="-3.10001"/>
+			<Obstruction group="5745" group2="5881"/>
+		</Entity>
+		<Entity uid="5882">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>4</Player>
+			<Position x="859" z="1398"/>
+			<Orientation y="2.30001"/>
+			<Obstruction group="5746" group2="5882"/>
+		</Entity>
+		<Entity uid="5883">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>4</Player>
+			<Position x="837" z="1352"/>
+			<Orientation y="1.60001"/>
+			<Obstruction group="5747" group2="5883"/>
+		</Entity>
+		<Entity uid="5884">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>4</Player>
+			<Position x="854" z="1299"/>
+			<Orientation y="0.76"/>
+			<Obstruction group="5740" group2="5884"/>
+		</Entity>
+		<Entity uid="5885">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>4</Player>
+			<Position x="865" z="1288"/>
+			<Orientation y="0"/>
+		</Entity>
+		<Entity uid="5886">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>4</Player>
+			<Position x="869" z="1410"/>
+			<Orientation y="0"/>
+		</Entity>
+		<Entity uid="5887">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>4</Player>
+			<Position x="838" z="1367"/>
+			<Orientation y="0"/>
+		</Entity>
+		<Entity uid="5888">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>4</Player>
+			<Position x="843" z="1310"/>
+			<Orientation y="0"/>
+		</Entity>
+		<Entity uid="5889">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>4</Player>
+			<Position x="893" z="1279"/>
+			<Orientation y="0"/>
+		</Entity>
+		<Entity uid="5890">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>4</Player>
+			<Position x="979" z="1334"/>
+			<Orientation y="0"/>
+		</Entity>
+		<Entity uid="5891">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>4</Player>
+			<Position x="975" z="1387"/>
+			<Orientation y="0"/>
+		</Entity>
+		<Entity uid="5892">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>4</Player>
+			<Position x="896" z="1418"/>
+			<Orientation y="0"/>
+		</Entity>
+		<Entity uid="5893">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>4</Player>
+			<Position x="980" z="1365"/>
+			<Orientation y="0"/>
+		</Entity>
+		<Entity uid="5894">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>4</Player>
+			<Position x="950" z="1409"/>
+			<Orientation y="0"/>
+		</Entity>
+		<Entity uid="5895">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>4</Player>
+			<Position x="928" z="1418"/>
+			<Orientation y="0"/>
+		</Entity>
+		<Entity uid="5896">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>4</Player>
+			<Position x="847" z="1387"/>
+			<Orientation y="0"/>
+		</Entity>
+		<Entity uid="5897">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>4</Player>
+			<Position x="837" z="1337"/>
+			<Orientation y="0"/>
+		</Entity>
+		<Entity uid="5898">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>4</Player>
+			<Position x="976" z="1305"/>
+			<Orientation y="0"/>
+		</Entity>
+		<Entity uid="5899">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>4</Player>
+			<Position x="953" z="1284"/>
+			<Orientation y="0"/>
+		</Entity>
+		<Entity uid="5900">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>4</Player>
+			<Position x="925" z="1278"/>
+			<Orientation y="0"/>
+		</Entity>
+		<Entity uid="5901">
+			<Template>structures/palisades_long</Template>
+			<Player>4</Player>
+			<Position x="0" z="0"/>
+			<Orientation y="0"/>
+		</Entity>
+		<Entity uid="5902">
+			<Template>structures/palisades_long</Template>
+			<Player>4</Player>
+			<Position x="0" z="0"/>
+			<Orientation y="0"/>
+		</Entity>
+		<Entity uid="5903">
+			<Template>structures/palisades_long</Template>
+			<Player>4</Player>
+			<Position x="0" z="0"/>
+			<Orientation y="0"/>
+		</Entity>
+		<Entity uid="5904">
+			<Template>structures/palisades_long</Template>
+			<Player>4</Player>
+			<Position x="0" z="0"/>
+			<Orientation y="0"/>
+		</Entity>
+		<Entity uid="5905">
+			<Template>structures/palisades_long</Template>
+			<Player>4</Player>
+			<Position x="0" z="0"/>
+			<Orientation y="0"/>
+		</Entity>
+		<Entity uid="5906">
+			<Template>structures/palisades_long</Template>
+			<Player>4</Player>
+			<Position x="0" z="0"/>
+			<Orientation y="0"/>
+		</Entity>
+		<Entity uid="5907">
+			<Template>structures/palisades_long</Template>
+			<Player>4</Player>
+			<Position x="0" z="0"/>
+			<Orientation y="0"/>
+		</Entity>
+		<Entity uid="5908">
+			<Template>structures/palisades_long</Template>
+			<Player>4</Player>
+			<Position x="0" z="0"/>
+			<Orientation y="0"/>
+		</Entity>
+		<Entity uid="5909">
+			<Template>skirmish/structures/default_outpost</Template>
+			<Player>4</Player>
+			<Position x="0" z="0"/>
+			<Orientation y="0"/>
+		</Entity>
+		<Entity uid="5910">
+			<Template>skirmish/structures/default_outpost</Template>
+			<Player>4</Player>
+			<Position x="0" z="0"/>
+			<Orientation y="0"/>
+		</Entity>
+		<Entity uid="5911">
+			<Template>skirmish/structures/default_outpost</Template>
+			<Player>4</Player>
+			<Position x="0" z="0"/>
+			<Orientation y="0"/>
+		</Entity>
+		<Entity uid="5912">
+			<Template>skirmish/structures/default_outpost</Template>
+			<Player>4</Player>
+			<Position x="0" z="0"/>
+			<Orientation y="0"/>
+		</Entity>
+		<Entity uid="5913">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>3</Player>
+			<Position x="513.2898" z="1431.2179"/>
+			<Orientation y="2.30001"/>
+			<Actor seed="5882"/>
+		</Entity>
+		<Entity uid="5914">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>3</Player>
+			<Position x="619.2898" z="1327.2179"/>
+			<Orientation y="2.4"/>
+			<Actor seed="5878"/>
+		</Entity>
+		<Entity uid="5915">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>3</Player>
+			<Position x="616.2898" z="1431.2179"/>
+			<Orientation y="0.74001"/>
+			<Actor seed="5880"/>
+		</Entity>
+		<Entity uid="5916">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>3</Player>
+			<Position x="563.2898" z="1311.2179"/>
+			<Orientation y="3.15"/>
+			<Actor seed="5877"/>
+		</Entity>
+		<Entity uid="5917">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>3</Player>
+			<Position x="634.2898" z="1382.2179"/>
+			<Orientation y="1.55001"/>
+			<Actor seed="5879"/>
+		</Entity>
+		<Entity uid="5918">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>3</Player>
+			<Position x="564.66205" z="1451.34192"/>
+			<Orientation y="-3.10001"/>
+			<Actor seed="5881"/>
+		</Entity>
+		<Entity uid="5919">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>3</Player>
+			<Position x="491.2898" z="1385.2179"/>
+			<Orientation y="1.60001"/>
+			<Obstruction group="5944" group2="5919"/>
+			<Actor seed="5883"/>
+		</Entity>
+		<Entity uid="5920">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>3</Player>
+			<Position x="508.2898" z="1332.2179"/>
+			<Orientation y="0.76"/>
+			<Actor seed="5884"/>
+		</Entity>
+		<Entity uid="5921">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>3</Player>
+			<Position x="550.2898" z="1451.2179"/>
+			<Orientation y="0"/>
+			<Actor seed="5892"/>
+		</Entity>
+		<Entity uid="5922">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>3</Player>
+			<Position x="523.2898" z="1443.2179"/>
+			<Orientation y="0"/>
+			<Actor seed="5886"/>
+		</Entity>
+		<Entity uid="5923">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>3</Player>
+			<Position x="629.2898" z="1420.2179"/>
+			<Orientation y="0"/>
+			<Actor seed="5891"/>
+		</Entity>
+		<Entity uid="5924">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>3</Player>
+			<Position x="519.2898" z="1321.2179"/>
+			<Orientation y="0"/>
+			<Actor seed="5885"/>
+		</Entity>
+		<Entity uid="5925">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>3</Player>
+			<Position x="497.2898" z="1343.2179"/>
+			<Orientation y="0"/>
+			<Actor seed="5888"/>
+		</Entity>
+		<Entity uid="5926">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>3</Player>
+			<Position x="501.2898" z="1420.2179"/>
+			<Orientation y="0"/>
+			<Actor seed="5896"/>
+		</Entity>
+		<Entity uid="5927">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>3</Player>
+			<Position x="630.2898" z="1338.2179"/>
+			<Orientation y="0"/>
+			<Actor seed="5898"/>
+		</Entity>
+		<Entity uid="5928">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>3</Player>
+			<Position x="492.2898" z="1400.2179"/>
+			<Orientation y="0"/>
+			<Actor seed="5887"/>
+		</Entity>
+		<Entity uid="5929">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>3</Player>
+			<Position x="604.2898" z="1442.2179"/>
+			<Orientation y="0"/>
+			<Actor seed="5894"/>
+		</Entity>
+		<Entity uid="5930">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>3</Player>
+			<Position x="634.2898" z="1398.2179"/>
+			<Orientation y="0"/>
+			<Actor seed="5893"/>
+		</Entity>
+		<Entity uid="5931">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>3</Player>
+			<Position x="547.2898" z="1312.2179"/>
+			<Orientation y="0"/>
+			<Actor seed="5889"/>
+		</Entity>
+		<Entity uid="5932">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>3</Player>
+			<Position x="633.2898" z="1367.2179"/>
+			<Orientation y="0"/>
+			<Actor seed="5890"/>
+		</Entity>
+		<Entity uid="5933">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>3</Player>
+			<Position x="582.2898" z="1451.2179"/>
+			<Orientation y="0"/>
+			<Actor seed="5895"/>
+		</Entity>
+		<Entity uid="5934">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>3</Player>
+			<Position x="491.2898" z="1370.2179"/>
+			<Orientation y="0"/>
+			<Actor seed="5897"/>
+		</Entity>
+		<Entity uid="5935">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>3</Player>
+			<Position x="607.2898" z="1317.2179"/>
+			<Orientation y="0"/>
+			<Actor seed="5899"/>
+		</Entity>
+		<Entity uid="5936">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>3</Player>
+			<Position x="579.2898" z="1311.2179"/>
+			<Orientation y="0"/>
+			<Actor seed="5900"/>
+		</Entity>
+		<Entity uid="5949">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>2</Player>
+			<Position x="461.19028" z="966.8603"/>
+			<Orientation y="2.30001"/>
+			<Actor seed="5882"/>
+		</Entity>
+		<Entity uid="5950">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>2</Player>
+			<Position x="567.19031" z="862.8603"/>
+			<Orientation y="2.4"/>
+			<Actor seed="5878"/>
+		</Entity>
+		<Entity uid="5951">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>2</Player>
+			<Position x="564.19031" z="966.8603"/>
+			<Orientation y="0.74001"/>
+			<Actor seed="5880"/>
+		</Entity>
+		<Entity uid="5952">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>2</Player>
+			<Position x="511.19028" z="846.8603"/>
+			<Orientation y="3.15"/>
+			<Actor seed="5877"/>
+		</Entity>
+		<Entity uid="5953">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>2</Player>
+			<Position x="582.19031" z="917.8603"/>
+			<Orientation y="1.55001"/>
+			<Actor seed="5879"/>
+		</Entity>
+		<Entity uid="5954">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>2</Player>
+			<Position x="512.5625" z="986.98432"/>
+			<Orientation y="-3.10001"/>
+			<Actor seed="5881"/>
+		</Entity>
+		<Entity uid="5955">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>2</Player>
+			<Position x="439.19028" z="920.8603"/>
+			<Orientation y="1.60001"/>
+			<Obstruction group="5980" group2="5955"/>
+			<Actor seed="5883"/>
+		</Entity>
+		<Entity uid="5956">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>2</Player>
+			<Position x="456.19028" z="867.8603"/>
+			<Orientation y="0.76"/>
+			<Actor seed="5884"/>
+		</Entity>
+		<Entity uid="5957">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>2</Player>
+			<Position x="498.19028" z="986.8603"/>
+			<Orientation y="0"/>
+			<Actor seed="5892"/>
+		</Entity>
+		<Entity uid="5958">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>2</Player>
+			<Position x="471.19028" z="978.8603"/>
+			<Orientation y="0"/>
+			<Actor seed="5886"/>
+		</Entity>
+		<Entity uid="5959">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>2</Player>
+			<Position x="577.19031" z="955.8603"/>
+			<Orientation y="0"/>
+			<Actor seed="5891"/>
+		</Entity>
+		<Entity uid="5960">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>2</Player>
+			<Position x="467.19028" z="856.8603"/>
+			<Orientation y="0"/>
+			<Actor seed="5885"/>
+		</Entity>
+		<Entity uid="5961">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>2</Player>
+			<Position x="445.19028" z="878.8603"/>
+			<Orientation y="0"/>
+			<Actor seed="5888"/>
+		</Entity>
+		<Entity uid="5962">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>2</Player>
+			<Position x="449.19028" z="955.8603"/>
+			<Orientation y="0"/>
+			<Actor seed="5896"/>
+		</Entity>
+		<Entity uid="5963">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>2</Player>
+			<Position x="578.19031" z="873.8603"/>
+			<Orientation y="0"/>
+			<Actor seed="5898"/>
+		</Entity>
+		<Entity uid="5964">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>2</Player>
+			<Position x="440.19028" z="935.8603"/>
+			<Orientation y="0"/>
+			<Actor seed="5887"/>
+		</Entity>
+		<Entity uid="5965">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>2</Player>
+			<Position x="552.19031" z="977.8603"/>
+			<Orientation y="0"/>
+			<Actor seed="5894"/>
+		</Entity>
+		<Entity uid="5966">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>2</Player>
+			<Position x="582.19031" z="933.8603"/>
+			<Orientation y="0"/>
+			<Actor seed="5893"/>
+		</Entity>
+		<Entity uid="5967">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>2</Player>
+			<Position x="495.19028" z="847.8603"/>
+			<Orientation y="0"/>
+			<Actor seed="5889"/>
+		</Entity>
+		<Entity uid="5968">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>2</Player>
+			<Position x="581.19031" z="902.8603"/>
+			<Orientation y="0"/>
+			<Actor seed="5890"/>
+		</Entity>
+		<Entity uid="5969">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>2</Player>
+			<Position x="530.19031" z="986.8603"/>
+			<Orientation y="0"/>
+			<Actor seed="5895"/>
+		</Entity>
+		<Entity uid="5970">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>2</Player>
+			<Position x="439.19028" z="905.8603"/>
+			<Orientation y="0"/>
+			<Actor seed="5897"/>
+		</Entity>
+		<Entity uid="5971">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>2</Player>
+			<Position x="555.19031" z="852.8603"/>
+			<Orientation y="0"/>
+			<Actor seed="5899"/>
+		</Entity>
+		<Entity uid="5972">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>2</Player>
+			<Position x="527.19031" z="846.8603"/>
+			<Orientation y="0"/>
+			<Actor seed="5900"/>
+		</Entity>
+		<Entity uid="5985">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>1</Player>
+			<Position x="399.4246" z="591.5824"/>
+			<Orientation y="2.30001"/>
+			<Actor seed="5882"/>
+		</Entity>
+		<Entity uid="5986">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>1</Player>
+			<Position x="505.4246" z="487.5824"/>
+			<Orientation y="2.4"/>
+			<Actor seed="5878"/>
+		</Entity>
+		<Entity uid="5987">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>1</Player>
+			<Position x="502.4246" z="591.5824"/>
+			<Orientation y="0.74001"/>
+			<Actor seed="5880"/>
+		</Entity>
+		<Entity uid="5988">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>1</Player>
+			<Position x="449.4246" z="471.5824"/>
+			<Orientation y="3.15"/>
+			<Actor seed="5877"/>
+		</Entity>
+		<Entity uid="5989">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>1</Player>
+			<Position x="520.42457" z="542.5824"/>
+			<Orientation y="1.55001"/>
+			<Actor seed="5879"/>
+		</Entity>
+		<Entity uid="5990">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>1</Player>
+			<Position x="450.79685" z="611.70643"/>
+			<Orientation y="-3.10001"/>
+			<Actor seed="5881"/>
+		</Entity>
+		<Entity uid="5991">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>1</Player>
+			<Position x="377.4246" z="545.5824"/>
+			<Orientation y="1.60001"/>
+			<Obstruction group="6016" group2="5991"/>
+			<Actor seed="5883"/>
+		</Entity>
+		<Entity uid="5992">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>1</Player>
+			<Position x="394.4246" z="492.5824"/>
+			<Orientation y="0.76"/>
+			<Actor seed="5884"/>
+		</Entity>
+		<Entity uid="5993">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>1</Player>
+			<Position x="436.4246" z="611.5824"/>
+			<Orientation y="0"/>
+			<Actor seed="5892"/>
+		</Entity>
+		<Entity uid="5994">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>1</Player>
+			<Position x="409.4246" z="603.5824"/>
+			<Orientation y="0"/>
+			<Actor seed="5886"/>
+		</Entity>
+		<Entity uid="5995">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>1</Player>
+			<Position x="515.42457" z="580.5824"/>
+			<Orientation y="0"/>
+			<Actor seed="5891"/>
+		</Entity>
+		<Entity uid="5996">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>1</Player>
+			<Position x="405.4246" z="481.5824"/>
+			<Orientation y="0"/>
+			<Actor seed="5885"/>
+		</Entity>
+		<Entity uid="5997">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>1</Player>
+			<Position x="383.4246" z="503.5824"/>
+			<Orientation y="0"/>
+			<Actor seed="5888"/>
+		</Entity>
+		<Entity uid="5998">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>1</Player>
+			<Position x="387.4246" z="580.5824"/>
+			<Orientation y="0"/>
+			<Actor seed="5896"/>
+		</Entity>
+		<Entity uid="5999">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>1</Player>
+			<Position x="516.42457" z="498.5824"/>
+			<Orientation y="0"/>
+			<Actor seed="5898"/>
+		</Entity>
+		<Entity uid="6000">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>1</Player>
+			<Position x="378.4246" z="560.5824"/>
+			<Orientation y="0"/>
+			<Actor seed="5887"/>
+		</Entity>
+		<Entity uid="6001">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>1</Player>
+			<Position x="490.4246" z="602.5824"/>
+			<Orientation y="0"/>
+			<Actor seed="5894"/>
+		</Entity>
+		<Entity uid="6002">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>1</Player>
+			<Position x="520.42457" z="558.5824"/>
+			<Orientation y="0"/>
+			<Actor seed="5893"/>
+		</Entity>
+		<Entity uid="6003">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>1</Player>
+			<Position x="433.4246" z="472.5824"/>
+			<Orientation y="0"/>
+			<Actor seed="5889"/>
+		</Entity>
+		<Entity uid="6004">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>1</Player>
+			<Position x="519.42457" z="527.5824"/>
+			<Orientation y="0"/>
+			<Actor seed="5890"/>
+		</Entity>
+		<Entity uid="6005">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>1</Player>
+			<Position x="468.4246" z="611.5824"/>
+			<Orientation y="0"/>
+			<Actor seed="5895"/>
+		</Entity>
+		<Entity uid="6006">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>1</Player>
+			<Position x="377.4246" z="530.5824"/>
+			<Orientation y="0"/>
+			<Actor seed="5897"/>
+		</Entity>
+		<Entity uid="6007">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>1</Player>
+			<Position x="493.4246" z="477.5824"/>
+			<Orientation y="0"/>
+			<Actor seed="5899"/>
+		</Entity>
+		<Entity uid="6008">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>1</Player>
+			<Position x="465.4246" z="471.5824"/>
+			<Orientation y="0"/>
+			<Actor seed="5900"/>
+		</Entity>
+		<Entity uid="6057">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>8</Player>
+			<Position x="898.30512" z="582.03827"/>
+			<Orientation y="3.4064"/>
+			<Actor seed="5882"/>
+		</Entity>
+		<Entity uid="6058">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>8</Player>
+			<Position x="852.79676" z="440.68418"/>
+			<Orientation y="3.50638"/>
+			<Actor seed="5878"/>
+		</Entity>
+		<Entity uid="6059">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>8</Player>
+			<Position x="944.43812" z="489.9473"/>
+			<Orientation y="1.8464"/>
+			<Actor seed="5880"/>
+		</Entity>
+		<Entity uid="6060">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>8</Player>
+			<Position x="813.40931" z="483.58677"/>
+			<Orientation y="4.25638"/>
+			<Actor seed="5877"/>
+		</Entity>
+		<Entity uid="6061">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>8</Player>
+			<Position x="908.68995" z="451.90699"/>
+			<Orientation y="2.6564"/>
+			<Actor seed="5879"/>
+		</Entity>
+		<Entity uid="6062">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>8</Player>
+			<Position x="939.30701" z="545.12043"/>
+			<Orientation y="-1.99363"/>
+			<Actor seed="5881"/>
+		</Entity>
+		<Entity uid="6063">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>8</Player>
+			<Position x="847.3235" z="581.10511"/>
+			<Orientation y="2.7064"/>
+			<Obstruction group="5455" group2="6063"/>
+			<Actor seed="5883"/>
+		</Entity>
+		<Entity uid="6064">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>8</Player>
+			<Position x="807.55103" z="542.1673"/>
+			<Orientation y="1.86638"/>
+			<Obstruction group="5468" group2="5469"/>
+			<Actor seed="5884"/>
+		</Entity>
+		<Entity uid="6065">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>8</Player>
+			<Position x="932.75892" z="557.91492"/>
+			<Orientation y="1.10639"/>
+			<Actor seed="5892"/>
+		</Entity>
+		<Entity uid="6066">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>8</Player>
+			<Position x="913.51313" z="578.47211"/>
+			<Orientation y="1.10639"/>
+			<Actor seed="5886"/>
+		</Entity>
+		<Entity uid="6067">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>8</Player>
+			<Position x="940.42579" z="473.39734"/>
+			<Orientation y="1.10639"/>
+			<Actor seed="5891"/>
+		</Entity>
+		<Entity uid="6068">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>8</Player>
+			<Position x="802.64295" z="527.40552"/>
+			<Orientation y="1.10639"/>
+			<Actor seed="5885"/>
+		</Entity>
+		<Entity uid="6069">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>8</Player>
+			<Position x="812.45917" z="556.92908"/>
+			<Orientation y="1.10639"/>
+			<Actor seed="5888"/>
+		</Entity>
+		<Entity uid="6070">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>8</Player>
+			<Position x="883.09546" z="587.84052"/>
+			<Orientation y="1.10639"/>
+			<Actor seed="5896"/>
+		</Entity>
+		<Entity uid="6071">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>8</Player>
+			<Position x="867.55854" z="435.77604"/>
+			<Orientation y="1.10639"/>
+			<Actor seed="5898"/>
+		</Entity>
+		<Entity uid="6072">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>8</Player>
+			<Position x="861.18268" z="586.92945"/>
+			<Orientation y="1.10639"/>
+			<Actor seed="5887"/>
+		</Entity>
+		<Entity uid="6073">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>8</Player>
+			<Position x="948.89838" z="505.60318"/>
+			<Orientation y="1.10639"/>
+			<Actor seed="5894"/>
+		</Entity>
+		<Entity uid="6074">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>8</Player>
+			<Position x="922.99531" z="459.07328"/>
+			<Orientation y="1.10639"/>
+			<Actor seed="5893"/>
+		</Entity>
+		<Entity uid="6075">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>8</Player>
+			<Position x="807.13715" z="498.34006"/>
+			<Orientation y="1.10639"/>
+			<Actor seed="5889"/>
+		</Entity>
+		<Entity uid="6076">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>8</Player>
+			<Position x="894.83075" z="446.08268"/>
+			<Orientation y="1.10639"/>
+			<Actor seed="5890"/>
+		</Entity>
+		<Entity uid="6077">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>8</Player>
+			<Position x="947.0915" z="529.30414"/>
+			<Orientation y="1.10639"/>
+			<Actor seed="5895"/>
+		</Entity>
+		<Entity uid="6078">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>8</Player>
+			<Position x="833.91218" z="574.38672"/>
+			<Orientation y="1.10639"/>
+			<Actor seed="5897"/>
+		</Entity>
+		<Entity uid="6079">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>8</Player>
+			<Position x="838.48115" z="446.9343"/>
+			<Orientation y="1.10639"/>
+			<Actor seed="5899"/>
+		</Entity>
+		<Entity uid="6080">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>8</Player>
+			<Position x="820.57563" z="469.28138"/>
+			<Orientation y="1.10639"/>
+			<Actor seed="5900"/>
+		</Entity>
+		<Entity uid="6093">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>7</Player>
+			<Position x="1368.06385" z="518.89905"/>
+			<Orientation y="4.37175"/>
+			<Actor seed="5882"/>
+		</Entity>
+		<Entity uid="6094">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>7</Player>
+			<Position x="1225.93555" z="475.86988"/>
+			<Orientation y="4.47175"/>
+			<Actor seed="5878"/>
+		</Entity>
+		<Entity uid="6095">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>7</Player>
+			<Position x="1318.59766" z="428.55481"/>
+			<Orientation y="2.81174"/>
+			<Actor seed="5880"/>
+		</Entity>
+		<Entity uid="6096">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>7</Player>
+			<Position x="1238.79566" z="532.67316"/>
+			<Orientation y="5.22175"/>
+			<Obstruction group="4073" group2="6096"/>
+			<Actor seed="5877"/>
+		</Entity>
+		<Entity uid="6097">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>7</Player>
+			<Position x="1266.97376" z="436.29896"/>
+			<Orientation y="3.62174"/>
+			<Obstruction group="3963" group2="6097"/>
+			<Actor seed="5879"/>
+		</Entity>
+		<Entity uid="6098">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>7</Player>
+			<Position x="1361.04346" z="464.17423"/>
+			<Orientation y="-1.02828"/>
+			<Actor seed="5881"/>
+		</Entity>
+		<Entity uid="6099">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>7</Player>
+			<Position x="1338.28162" z="560.2876"/>
+			<Orientation y="3.67174"/>
+			<Obstruction group="6124" group2="6099"/>
+			<Actor seed="5883"/>
+		</Entity>
+		<Entity uid="6100">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>7</Player>
+			<Position x="1283.6294" z="570.82996"/>
+			<Orientation y="2.83173"/>
+			<Actor seed="5884"/>
+		</Entity>
+		<Entity uid="6101">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>7</Player>
+			<Position x="1367.83704" z="476.84018"/>
+			<Orientation y="2.07174"/>
+			<Actor seed="5892"/>
+		</Entity>
+		<Entity uid="6102">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>7</Player>
+			<Position x="1373.787" z="504.3647"/>
+			<Orientation y="2.07174"/>
+			<Actor seed="5886"/>
+		</Entity>
+		<Entity uid="6103">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>7</Player>
+			<Position x="1302.70594" z="422.43488"/>
+			<Orientation y="2.07174"/>
+			<Actor seed="5891"/>
+		</Entity>
+		<Entity uid="6104">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>7</Player>
+			<Position x="1268.69813" z="566.4643"/>
+			<Orientation y="2.07174"/>
+			<Actor seed="5885"/>
+		</Entity>
+		<Entity uid="6105">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>7</Player>
+			<Position x="1298.56067" z="575.19556"/>
+			<Orientation y="2.07174"/>
+			<Actor seed="5888"/>
+		</Entity>
+		<Entity uid="6106">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>7</Player>
+			<Position x="1364.17847" z="534.7074"/>
+			<Orientation y="2.07174"/>
+			<Actor seed="5896"/>
+		</Entity>
+		<Entity uid="6107">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>7</Player>
+			<Position x="1230.30115" z="460.93863"/>
+			<Orientation y="2.07174"/>
+			<Actor seed="5898"/>
+		</Entity>
+		<Entity uid="6108">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>7</Player>
+			<Position x="1350.95826" z="552.20667"/>
+			<Orientation y="2.07174"/>
+			<Actor seed="5887"/>
+		</Entity>
+		<Entity uid="6109">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>7</Player>
+			<Position x="1334.00904" z="433.79752"/>
+			<Orientation y="2.07174"/>
+			<Actor seed="5894"/>
+		</Entity>
+		<Entity uid="6110">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>7</Player>
+			<Position x="1281.00782" z="428.61487"/>
+			<Orientation y="2.07174"/>
+			<Actor seed="5893"/>
+		</Entity>
+		<Entity uid="6111">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>7</Player>
+			<Position x="1247.35694" z="546.227"/>
+			<Orientation y="2.07174"/>
+			<Actor seed="5889"/>
+		</Entity>
+		<Entity uid="6112">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>7</Player>
+			<Position x="1254.297" z="444.37989"/>
+			<Orientation y="2.07174"/>
+			<Actor seed="5890"/>
+		</Entity>
+		<Entity uid="6113">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>7</Player>
+			<Position x="1352.46888" z="448.77207"/>
+			<Orientation y="2.07174"/>
+			<Actor seed="5895"/>
+		</Entity>
+		<Entity uid="6114">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>7</Player>
+			<Position x="1325.12464" z="567.49146"/>
+			<Orientation y="2.07174"/>
+			<Actor seed="5897"/>
+		</Entity>
+		<Entity uid="6115">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>7</Player>
+			<Position x="1222.92725" z="491.19797"/>
+			<Orientation y="2.07174"/>
+			<Actor seed="5899"/>
+		</Entity>
+		<Entity uid="6116">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>7</Player>
+			<Position x="1231.11158" z="518.63917"/>
+			<Orientation y="2.07174"/>
+			<Actor seed="5900"/>
+		</Entity>
+		<Entity uid="6129">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>6</Player>
+			<Position x="1253.12598" z="963.19459"/>
+			<Orientation y="2.30001"/>
+			<Actor seed="5882"/>
+		</Entity>
+		<Entity uid="6130">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>6</Player>
+			<Position x="1359.12598" z="859.19459"/>
+			<Orientation y="2.4"/>
+			<Actor seed="5878"/>
+		</Entity>
+		<Entity uid="6131">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>6</Player>
+			<Position x="1356.12598" z="963.19459"/>
+			<Orientation y="0.74001"/>
+			<Actor seed="5880"/>
+		</Entity>
+		<Entity uid="6132">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>6</Player>
+			<Position x="1303.12598" z="843.19459"/>
+			<Orientation y="3.15"/>
+			<Actor seed="5877"/>
+		</Entity>
+		<Entity uid="6133">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>6</Player>
+			<Position x="1374.12598" z="914.19459"/>
+			<Orientation y="1.55001"/>
+			<Actor seed="5879"/>
+		</Entity>
+		<Entity uid="6134">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>6</Player>
+			<Position x="1304.4983" z="983.31861"/>
+			<Orientation y="-3.10001"/>
+			<Actor seed="5881"/>
+		</Entity>
+		<Entity uid="6135">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>6</Player>
+			<Position x="1231.12598" z="917.19459"/>
+			<Orientation y="1.60001"/>
+			<Obstruction group="6160" group2="6135"/>
+			<Actor seed="5883"/>
+		</Entity>
+		<Entity uid="6136">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>6</Player>
+			<Position x="1248.12598" z="864.19459"/>
+			<Orientation y="0.76"/>
+			<Actor seed="5884"/>
+		</Entity>
+		<Entity uid="6137">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>6</Player>
+			<Position x="1290.12598" z="983.19459"/>
+			<Orientation y="0"/>
+			<Actor seed="5892"/>
+		</Entity>
+		<Entity uid="6138">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>6</Player>
+			<Position x="1263.12598" z="975.19459"/>
+			<Orientation y="0"/>
+			<Actor seed="5886"/>
+		</Entity>
+		<Entity uid="6139">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>6</Player>
+			<Position x="1369.12598" z="952.19459"/>
+			<Orientation y="0"/>
+			<Actor seed="5891"/>
+		</Entity>
+		<Entity uid="6140">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>6</Player>
+			<Position x="1259.12598" z="853.19459"/>
+			<Orientation y="0"/>
+			<Actor seed="5885"/>
+		</Entity>
+		<Entity uid="6141">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>6</Player>
+			<Position x="1237.12598" z="875.19459"/>
+			<Orientation y="0"/>
+			<Actor seed="5888"/>
+		</Entity>
+		<Entity uid="6142">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>6</Player>
+			<Position x="1241.12598" z="952.19459"/>
+			<Orientation y="0"/>
+			<Actor seed="5896"/>
+		</Entity>
+		<Entity uid="6143">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>6</Player>
+			<Position x="1370.12598" z="870.19459"/>
+			<Orientation y="0"/>
+			<Actor seed="5898"/>
+		</Entity>
+		<Entity uid="6144">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>6</Player>
+			<Position x="1232.12598" z="932.19459"/>
+			<Orientation y="0"/>
+			<Actor seed="5887"/>
+		</Entity>
+		<Entity uid="6145">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>6</Player>
+			<Position x="1344.12598" z="974.19459"/>
+			<Orientation y="0"/>
+			<Actor seed="5894"/>
+		</Entity>
+		<Entity uid="6146">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>6</Player>
+			<Position x="1374.12598" z="930.19459"/>
+			<Orientation y="0"/>
+			<Actor seed="5893"/>
+		</Entity>
+		<Entity uid="6147">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>6</Player>
+			<Position x="1287.12598" z="844.19459"/>
+			<Orientation y="0"/>
+			<Actor seed="5889"/>
+		</Entity>
+		<Entity uid="6148">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>6</Player>
+			<Position x="1373.12598" z="899.19459"/>
+			<Orientation y="0"/>
+			<Actor seed="5890"/>
+		</Entity>
+		<Entity uid="6149">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>6</Player>
+			<Position x="1322.12598" z="983.19459"/>
+			<Orientation y="0"/>
+			<Actor seed="5895"/>
+		</Entity>
+		<Entity uid="6150">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>6</Player>
+			<Position x="1231.12598" z="902.19459"/>
+			<Orientation y="0"/>
+			<Actor seed="5897"/>
+		</Entity>
+		<Entity uid="6151">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>6</Player>
+			<Position x="1347.12598" z="849.19459"/>
+			<Orientation y="0"/>
+			<Actor seed="5899"/>
+		</Entity>
+		<Entity uid="6152">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>6</Player>
+			<Position x="1319.12598" z="843.19459"/>
+			<Orientation y="0"/>
+			<Actor seed="5900"/>
+		</Entity>
+		<Entity uid="6165">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>5</Player>
+			<Position x="1211.45704" z="1396.18775"/>
+			<Orientation y="1.7757"/>
+			<Actor seed="5882"/>
+		</Entity>
+		<Entity uid="6166">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>5</Player>
+			<Position x="1355.28199" z="1359.22315"/>
+			<Orientation y="1.8757"/>
+			<Actor seed="5878"/>
+		</Entity>
+		<Entity uid="6167">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>5</Player>
+			<Position x="1300.6211" z="1447.75098"/>
+			<Orientation y="0.2157"/>
+			<Actor seed="5880"/>
+		</Entity>
+		<Entity uid="6168">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>5</Player>
+			<Position x="1314.81434" z="1317.33802"/>
+			<Orientation y="2.6257"/>
+			<Actor seed="5877"/>
+		</Entity>
+		<Entity uid="6169">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>5</Player>
+			<Position x="1340.73328" z="1414.34424"/>
+			<Orientation y="1.0257"/>
+			<Actor seed="5879"/>
+		</Entity>
+		<Entity uid="6170">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>5</Player>
+			<Position x="1245.85401" z="1439.32618"/>
+			<Orientation y="-3.62432"/>
+			<Actor seed="5881"/>
+		</Entity>
+		<Entity uid="6171">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>5</Player>
+			<Position x="1215.44056" z="1345.3534"/>
+			<Orientation y="1.0757"/>
+			<Obstruction group="6196" group2="6171"/>
+			<Actor seed="5883"/>
+		</Entity>
+		<Entity uid="6172">
+			<Template>skirmish/structures/iber_wall_long</Template>
+			<Player>5</Player>
+			<Position x="1256.68958" z="1307.98328"/>
+			<Orientation y="0.2357"/>
+			<Actor seed="5884"/>
+		</Entity>
+		<Entity uid="6173">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>5</Player>
+			<Position x="1233.4745" z="1432.02381"/>
+			<Orientation y="-0.52431"/>
+			<Actor seed="5892"/>
+		</Entity>
+		<Entity uid="6174">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>5</Player>
+			<Position x="1214.10633" z="1411.58191"/>
+			<Orientation y="-0.52431"/>
+			<Actor seed="5886"/>
+		</Entity>
+		<Entity uid="6175">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>5</Player>
+			<Position x="1317.3816" z="1444.73658"/>
+			<Orientation y="-0.52431"/>
+			<Actor seed="5891"/>
+		</Entity>
+		<Entity uid="6176">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>5</Player>
+			<Position x="1271.71863" z="1303.96766"/>
+			<Orientation y="-0.52431"/>
+			<Actor seed="5885"/>
+		</Entity>
+		<Entity uid="6177">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>5</Player>
+			<Position x="1241.66041" z="1311.99891"/>
+			<Orientation y="-0.52431"/>
+			<Actor seed="5888"/>
+		</Entity>
+		<Entity uid="6178">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>5</Player>
+			<Position x="1206.57569" z="1380.65796"/>
+			<Orientation y="-0.52431"/>
+			<Actor seed="5896"/>
+		</Entity>
+		<Entity uid="6179">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>5</Player>
+			<Position x="1359.29761" z="1374.25232"/>
+			<Orientation y="-0.52431"/>
+			<Actor seed="5898"/>
+		</Entity>
+		<Entity uid="6180">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>5</Player>
+			<Position x="1208.797" z="1358.839"/>
+			<Orientation y="-0.52431"/>
+			<Actor seed="5887"/>
+		</Entity>
+		<Entity uid="6181">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>5</Player>
+			<Position x="1284.7262" z="1451.266"/>
+			<Orientation y="-0.52431"/>
+			<Actor seed="5894"/>
+		</Entity>
+		<Entity uid="6182">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>5</Player>
+			<Position x="1332.7234" z="1428.19495"/>
+			<Orientation y="-0.52431"/>
+			<Actor seed="5893"/>
+		</Entity>
+		<Entity uid="6183">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>5</Player>
+			<Position x="1300.46302" z="1310.19385"/>
+			<Orientation y="-0.52431"/>
+			<Actor seed="5889"/>
+		</Entity>
+		<Entity uid="6184">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>5</Player>
+			<Position x="1347.37684" z="1400.85853"/>
+			<Orientation y="-0.52431"/>
+			<Actor seed="5890"/>
+		</Entity>
+		<Entity uid="6185">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>5</Player>
+			<Position x="1261.17603" z="1448.04346"/>
+			<Orientation y="-0.52431"/>
+			<Actor seed="5895"/>
+		</Entity>
+		<Entity uid="6186">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>5</Player>
+			<Position x="1222.94983" z="1332.3683"/>
+			<Orientation y="-0.52431"/>
+			<Actor seed="5897"/>
+		</Entity>
+		<Entity uid="6187">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>5</Player>
+			<Position x="1349.90015" z="1344.55909"/>
+			<Orientation y="-0.52431"/>
+			<Actor seed="5899"/>
+		</Entity>
+		<Entity uid="6188">
+			<Template>skirmish/structures/iber_wall_tower</Template>
+			<Player>5</Player>
+			<Position x="1328.66504" z="1325.34791"/>
+			<Orientation y="-0.52431"/>
+			<Actor seed="5900"/>
 		</Entity>
 	</Entities>
 	<Paths>
