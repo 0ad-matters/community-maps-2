@@ -42,6 +42,7 @@ of this repo.
 
 | Map Name | Author | Link | Publication Date |
 |----------|--------|------|------------------|
+| Aegean Archipelago | [Yavin](https://wildfiregames.com/forum/profile/33733-yavin/) | [Forum](https://wildfiregames.com/forum/topic/87660-new-map-aegean-archipelago-skirmish/) | 2022-06-29 |
 | A Path Beyond II | Grapjas93 | | 2022-10-25
 | X | [Grapjas93](https://github.com/Grapjas93) | | 2022-10-25
 | Conquest of Hispania | perfecto25 | | 2022-10-17
