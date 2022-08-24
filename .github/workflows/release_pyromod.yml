@@ -17,15 +17,16 @@ jobs:
         MOD_VERSION="$(jq .version mod.json | tr -d \")"
         MOD_NAME="$(jq .name mod.json | tr -d \")"
         sh .github/scripts/makepyromod.sh ${MOD_NAME} ${MOD_VERSION} ${HOME}
+        mv ${HOME}/${MOD_NAME}*.* $PWD
     - name: Deploy PyroMod
       uses: ncipollo/release-action@v1
       with:
         allowUpdates: True
         prerelease: False
-        artifacts: "${HOME}/community-maps*.*"
+        artifacts: "community-maps*.*"
         token: ${{ secrets.GITHUB_TOKEN }}
         omitNameDuringUpdate: True
         omitBodyDuringUpdate: True
     - name: remove artifacts
-      run: rm "${HOME}/community-maps*.*"
+      run: rm community-maps*.*"
 
