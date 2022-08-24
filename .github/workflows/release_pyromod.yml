@@ -22,10 +22,10 @@ jobs:
       with:
         allowUpdates: True
         prerelease: False
-        artifacts: "${HOME}/${MOD_NAME}*.*"
+        artifacts: "${HOME}/community-maps*.*"
         token: ${{ secrets.GITHUB_TOKEN }}
         omitNameDuringUpdate: True
         omitBodyDuringUpdate: True
     - name: remove artifacts
-      run: rm "${HOME}/${MOD_NAME}*.*"
+      run: rm "${HOME}/community-maps*.*"
 
