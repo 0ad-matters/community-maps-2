@@ -28,5 +28,5 @@ jobs:
         omitNameDuringUpdate: True
         omitBodyDuringUpdate: True
     - name: remove artifacts
-      run: rm community-maps*.*"
+      run: rm community-maps*.*
 
