@@ -18,4 +18,8 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build pyromod
-      run: sh .github/scripts/makepyromod-cm2.sh test $HOME
+      run: |
+        MOD_VERSION="$(jq .version mod.json | tr -d \")"
+        MOD_NAME="$(jq .name mod.json | tr -d \")"
+        sh .github/scripts/makepyromod.sh ${MOD_NAME} ${MOD_VERSION} ${HOME}
+        rm ${HOME}/${MOD_NAME}*.*
