@@ -1,0 +1,31 @@
+name: Deploy Pyromod
+
+on:
+  push:
+    tags:
+      - v**
+
+jobs:
+  arch64:
+    strategy:
+      fail-fast: false
+    runs-on: self-hosted
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build pyromod
+      run: |
+        MOD_VERSION="$(jq .version mod.json | tr -d \")"
+        MOD_NAME="$(jq .name mod.json | tr -d \")"
+        sh .github/scripts/makepyromod.sh ${MOD_NAME} ${MOD_VERSION} ${HOME}
+    - name: Deploy PyroMod
+      uses: ncipollo/release-action@v1
+      with:
+        allowUpdates: True
+        prerelease: False
+        artifacts: "${HOME}/${MOD_NAME}*.*"
+        token: ${{ secrets.GITHUB_TOKEN }}
+        omitNameDuringUpdate: True
+        omitBodyDuringUpdate: True
+    - name: remove artifacts
+      run: rm "${HOME}/${MOD_NAME}*.*"
+
