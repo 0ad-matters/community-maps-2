@@ -40,10 +40,10 @@
 {
   "AISeed": 0,
   "CircularMap": false,
-  "Description": "A 2v4 map",
+  "Description": "A 2v4 map with cliffs on two sides",
   "Keywords": ["community"],
   "LockTeams": true,
-  "Name": "Cliffs of Carnage 2v4 (6)",
+  "Name": "Cliffs of Carnage (6)",
   "Nomad": false,
   "PlayerData": [
     {
