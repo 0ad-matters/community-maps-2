@@ -6,6 +6,9 @@ This mod contains various maps and scenarios collected from the
 [Wildfire Games (0 A.D.) Forum](https://wildfiregames.com/forum/). The
 maps can be easily accessed in game with the filter "Community Maps".
 
+Note: Currently only maps compatible with 0ad a26 are being accepted.
+The last release of community-maps-2 for the a25 version was v0.25.15.
+
 To participate in how this mod is maintained (which maps are included
 or removed, etc), use the [Discussions
 section](https://github.com/0ad-matters/community-maps-2/discussions)
