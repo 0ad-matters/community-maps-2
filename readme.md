@@ -43,6 +43,7 @@ of this repo.
 
 | Map Name | Author | Link | Publication Date |
 |----------|--------|------|------------------|
+| Caledonia | perfecto25 |  |  2022-09-04 |
 | The Valley of Forgotten Temple | [Lion.Kanzen](https://wildfiregames.com/forum/profile/13202-lionkanzen/) | [Forum](https://wildfiregames.com/forum/topic/81151-skirmish-map-valley-of-forgotten-temple-01-4-players-map/) | 2022-05-23 |
 | Chess | [Jammyjamjamman](https://wildfiregames.com/forum/profile/33845-jammyjamjamman/) | [Forum](https://wildfiregames.com/forum/topic/61013-chess-map/) | 2021-10-23 |
 | Cliffs of Carnage|[andy5995](https://wildfiregames.com/forum/profile/21632-andy5995/)|[Forum](https://wildfiregames.com/forum/topic/30590-cliffs-of-carnage-new-4v4-pvp-map/)|2020-10-02|
@@ -63,7 +64,6 @@ of this repo.
 | Alpine Rivers | [z4k](https://wildfiregames.com/forum/index.php?/profile/24112-z4k/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/22929-sharing-users-map/) | 2017-12-09 |
 | Battles in the Dirt | [Lion.Kanzen](https://wildfiregames.com/forum/index.php?/profile/13202-lionkanzen/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/21613-battles-in-the-dirt/) | 2017-01-17 |
 | Rapa Nui (Easter Island) | [Grapjas](https://wildfiregames.com/forum/index.php?/profile/21464-grapjas/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/20674-you-guys-want-something-new-do-you-d-new-skirmish-mapupdated-to-v21/) | 2016-04-13 |
-| Caledonia | perfecto25 |  |  2022-09-04 |
 
 ## Scenarios
 
