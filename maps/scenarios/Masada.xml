@@ -41,7 +41,9 @@
   "AISeed": 0,
   "CircularMap": true,
   "Description": "Roman siege of Judean Sicari fortress of Masada",
-  "Keywords": [],
+  "Keywords": [
+    "community"
+  ],
   "LockTeams": false,
   "Name": "Siege of Masada",
   "PlayerData": [
