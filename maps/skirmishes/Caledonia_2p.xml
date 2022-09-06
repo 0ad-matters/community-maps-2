@@ -16666,13 +16666,6 @@
 			<Orientation y="2.35621"/>
 			<Actor seed="31859"/>
 		</Entity>
-		<Entity uid="2894">
-			<Template>structures/bridge_wooden</Template>
-			<Player>0</Player>
-			<Position x="2258.386" z="1809.58533"/>
-			<Orientation y="-2.40128"/>
-			<Actor seed="18683"/>
-		</Entity>
 		<Entity uid="2895">
 			<Template>gaia/fauna_boar</Template>
 			<Player>0</Player>
