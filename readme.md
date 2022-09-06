@@ -63,6 +63,7 @@ of this repo.
 | Alpine Rivers | [z4k](https://wildfiregames.com/forum/index.php?/profile/24112-z4k/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/22929-sharing-users-map/) | 2017-12-09 |
 | Battles in the Dirt | [Lion.Kanzen](https://wildfiregames.com/forum/index.php?/profile/13202-lionkanzen/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/21613-battles-in-the-dirt/) | 2017-01-17 |
 | Rapa Nui (Easter Island) | [Grapjas](https://wildfiregames.com/forum/index.php?/profile/21464-grapjas/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/20674-you-guys-want-something-new-do-you-d-new-skirmish-mapupdated-to-v21/) | 2016-04-13 |
+| Caledonia | perfecto25 |  |  2022-09-04 |
 
 ## Scenarios
 
