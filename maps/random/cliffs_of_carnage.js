@@ -106,7 +106,7 @@ createArea(
 			new Vector2D(0, scaleByMapSize(0, 0)),
 			// new Vector2D(-12, scaleByMapSize(-12, -25)),
 			undefined,
-			convertHeightmap1Dto2D(Engine.LoadMapTerrain("maps/skirmishes/Cliffs_of_Carnage_2v4_6p.pmp").height)),
+			convertHeightmap1Dto2D(Engine.LoadMapTerrain("maps/skirmishes/cliffs_of_carnage_6p.pmp").height)),
 		minHeightSource,
 		maxHeightSource));
 
