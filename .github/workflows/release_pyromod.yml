@@ -10,15 +10,16 @@ jobs:
     runs-on: ubuntu-20.04
     env:
       MOD_NAME: community-maps-2
+      MOD_VERSION: ${{ github.ref_name }}
     steps:
     - uses: actions/checkout@v3
     - uses:  0ad-matters/gh-action-build-pyromod@trunk
       with:
         name: ${{ env.MOD_NAME }}
-        version: ${{ github.ref_name##v }}
+        version: ${{ env.MOD_VERSION##v }}
       id: build-pyromod
     - run: |
-        OUTPUT_FILE="$MOD_NAME-${GITHUB_REF_NAME##v}.pyromod"
+        OUTPUT_FILE="$MOD_NAME-${MOD_VERSION##v}.pyromod"
         cd output
         sha256sum $OUTPUT_FILE > ${OUTPUT_FILE}.sha256sum
     - name: Release PyroMod
