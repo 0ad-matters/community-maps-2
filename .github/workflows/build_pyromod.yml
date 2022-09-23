@@ -23,14 +23,3 @@ jobs:
         MOD_NAME="$(jq .name mod.json | tr -d \")"
         sh .github/scripts/makepyromod.sh ${MOD_NAME} ${MOD_VERSION} ${HOME}
         rm ${HOME}/${MOD_NAME}*.*
-
-  build-pyromod:
-    runs-on: ubuntu-20.04
-    steps:
-      - uses: actions/checkout@v3
-      - uses:  0ad-matters/gh-action-build-pyromod@trunk
-        with:
-          name: community-maps-2
-          version: test
-        id: build-pyromod
-

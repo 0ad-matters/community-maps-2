@@ -6,27 +6,27 @@ on:
       - v**
 
 jobs:
-  arch64:
-    strategy:
-      fail-fast: false
-    runs-on: self-hosted
+  build-pyromod:
+    runs-on: ubuntu-20.04
+    env:
+      MOD_NAME: community-maps-2
     steps:
     - uses: actions/checkout@v3
-    - name: Build pyromod
-      run: |
-        MOD_VERSION="$(jq .version mod.json | tr -d \")"
-        MOD_NAME="$(jq .name mod.json | tr -d \")"
-        sh .github/scripts/makepyromod.sh ${MOD_NAME} ${MOD_VERSION} ${HOME}
-        mv ${HOME}/${MOD_NAME}*.* $PWD
-    - name: Deploy PyroMod
+    - uses:  0ad-matters/gh-action-build-pyromod@trunk
+      with:
+        name: ${{ env.MOD_NAME }}
+        version: ${{ env.GITHUB_REF_NAME##v }}
+      id: build-pyromod
+    - run: |
+        OUTPUT_FILE="$MOD_NAME-${GITHUB_REF_NAME##v}.pyromod"
+        cd output
+        sha256sum $OUTPUT_FILE > ${OUTPUT_FILE}.sha256sum
+    - name: Release PyroMod
       uses: ncipollo/release-action@v1
       with:
         allowUpdates: True
         prerelease: False
-        artifacts: "community-maps*.*"
+        artifacts: "output/{{ env.MOD_NAME }}*.*"
         token: ${{ secrets.GITHUB_TOKEN }}
         omitNameDuringUpdate: True
         omitBodyDuringUpdate: True
-    - name: remove artifacts
-      run: rm community-maps*.*
-
