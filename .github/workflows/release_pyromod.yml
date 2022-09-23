@@ -28,7 +28,7 @@ jobs:
       with:
         allowUpdates: True
         prerelease: False
-        artifacts: "output/{{ env.MOD_NAME }}*.*"
+        artifacts: "output/${{ env.MOD_NAME }}*.*"
         token: ${{ secrets.GITHUB_TOKEN }}
         omitNameDuringUpdate: True
         omitBodyDuringUpdate: True
