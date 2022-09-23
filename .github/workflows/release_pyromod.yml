@@ -15,7 +15,7 @@ jobs:
     - uses:  0ad-matters/gh-action-build-pyromod@trunk
       with:
         name: ${{ env.MOD_NAME }}
-        version: ${{ env.GITHUB_REF_NAME##v }}
+        version: ${{ github.ref_name##v }}
       id: build-pyromod
     - run: |
         OUTPUT_FILE="$MOD_NAME-${GITHUB_REF_NAME##v}.pyromod"
