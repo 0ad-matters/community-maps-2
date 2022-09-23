@@ -29,5 +29,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses:  0ad-matters/gh-action-build-pyromod@trunk
+        with:
+          name: community-maps-2
+          version: test
         id: build-pyromod
 
