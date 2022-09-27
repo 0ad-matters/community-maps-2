@@ -1,4 +1,4 @@
-name: Release Pyromod
+name: Build Pyromod
 
 on:
   push:
@@ -7,22 +7,28 @@ on:
 
 jobs:
   build-pyromod:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     env:
-      MOD_NAME: community-maps-2
+      MOD_NAME: ${{ github.repository }}
       MOD_VERSION: ${{ github.ref_name }}
     steps:
     - uses: actions/checkout@v3
-    - run: echo "MOD_VERSION=${MOD_VERSION:1}" >> $GITHUB_ENV
-    - uses:  0ad-matters/gh-action-build-pyromod@v1
+    - name: Massage Variables
+      run: |
+        # remove "<owner>/" from repository string
+        echo "MOD_NAME=${MOD_NAME#*/}" >> $GITHUB_ENV
+        # remove 'v' from version string
+        echo "MOD_VERSION=${MOD_VERSION:1}" >> $GITHUB_ENV
+    - uses:  0ad-matters/gh-action-build-pyromod@v1.2
       with:
         name: ${{ env.MOD_NAME }}
         version: ${{ env.MOD_VERSION }}
       id: build-pyromod
-    - run: |
-        OUTPUT_FILE="$MOD_NAME-${MOD_VERSION}.pyromod"
+    - name: Create sha256sum
+      run:  |
+        OUTPUT_FILE="$MOD_NAME-$MOD_VERSION.pyromod"
         cd output
-        sha256sum $OUTPUT_FILE > ${OUTPUT_FILE}.sha256sum
+        sha256sum $OUTPUT_FILE > $OUTPUT_FILE.sha256sum
     - name: Release PyroMod
       uses: ncipollo/release-action@v1
       with:
