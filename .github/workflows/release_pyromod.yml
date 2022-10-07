@@ -2,8 +2,11 @@ name: Build Pyromod
 
 on:
   push:
+    branches: [ "master' ]
     tags:
       - v**
+  pull_request:
+    branches: [ "master" ]
 
 jobs:
   build-pyromod:
@@ -19,7 +22,7 @@ jobs:
         echo "MOD_NAME=${MOD_NAME#*/}" >> $GITHUB_ENV
         # remove 'v' from version string
         echo "MOD_VERSION=${MOD_VERSION:1}" >> $GITHUB_ENV
-    - uses:  0ad-matters/gh-action-build-pyromod@trunk
+    - uses:  0ad-matters/gh-action-build-pyromod@v1
       with:
         name: ${{ env.MOD_NAME }}
         version: ${{ env.MOD_VERSION }}
@@ -30,6 +33,7 @@ jobs:
         cd output
         sha256sum $OUTPUT_FILE > $OUTPUT_FILE.sha256sum
     - name: Release PyroMod
+      if: ${{ github.ref_type == "tag" }}
       uses: ncipollo/release-action@v1
       with:
         allowUpdates: True
