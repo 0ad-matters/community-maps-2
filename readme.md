@@ -1,3 +1,5 @@
+[![Build Pyromod](https://github.com/0ad-matters/community-maps-2/actions/workflows/release_pyromod.yml/badge.svg)](https://github.com/0ad-matters/community-maps-2/actions/workflows/release_pyromod.yml)
+
 # 0 A.D. Community Maps 2
 
 (Forked from [community maps](https://github.com/cwrtl/community_maps))
