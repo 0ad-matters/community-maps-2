@@ -283,7 +283,7 @@ createBalancedStoneMines(
 var [forestTrees, stragglerTrees] = getTreeCounts(...rBiomeTreeCount(1));
 createDefaultForests(
 	[tMainTerrain, tForestFloor1, tForestFloor2, pForest1, pForest2],
-	avoidClasses(clHill, 2, clPath, 0, clMetal, 2, clRock, 2, clBlood, 10, clPlayer, 20, clForest, 10),
+	avoidClasses(clHill, 6, clPath, 0, clMetal, 2, clRock, 2, clBlood, 10, clPlayer, 20, clForest, 10),
 	clForest,
 	forestTrees);
 
