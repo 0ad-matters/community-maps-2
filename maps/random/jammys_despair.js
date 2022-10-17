@@ -195,7 +195,7 @@ createArea(
 		new TileClassPainter(clHill),
 	],
 	[
-		new SlopeConstraint(2, Infinity)
+		new SlopeConstraint(3, Infinity)
 	]);
 
 if (!bSahara)

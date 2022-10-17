@@ -1,3 +1,8 @@
+2022-10-17
+
+    * random/jammys_despair.js: paint impassable areas more accurately
+    (change SlopeConstraint)
+
 2022-09-28
 
     * release v0.26.4
