@@ -414,19 +414,3 @@ function initTileClasses(newClasses)
 	for (var className of classNames)
 		g_TileClasses[className] = g_Map.createTileClass();
 }
-
-// replaces code on Mainland-type maps to generate both hills and mountains,
-// rather than what's used on vanilla mainland (using randbool to decide
-// one or the other)
-function createHillsAndMountains (hillCount, mountainCount)
-{
-	createHills([tCliff, tCliff, tHill],
-			avoidClasses(clPlayer, 20, clHill, 15, clCliff, 5),
-			clHill,
-			hillCount / 2),
-	createMountains(tCliff,
-		avoidClasses(clPlayer, 20, clHill, 15, clCliff, 5),
-		clHill,
-		//scaleByMapSize(3, 15)); // count
-		mountainCount / 2)
-}
