@@ -75,6 +75,7 @@ var clMetal = g_Map.createTileClass();
 var clFood = g_Map.createTileClass();
 var clBaseResource = g_Map.createTileClass();
 var clRavine = g_Map.createTileClass();
+var clShoreline = g_Map.createTileClass();
 
 const mapBounds = g_Map.getBounds();
 var startAngle = 0;
@@ -82,7 +83,9 @@ const mapCenter = g_Map.getCenter();
 const RAVINE_WIDTH = 0.15;
 const heightRavine = heightLand - 30;
 
-var heightWaterLevel = (g_MapSettings.mapName === "Yekaterinaville") ?
+const isWaterMap = (g_MapSettings.mapName === "Yekaterinaville");
+
+var heightWaterLevel = isWaterMap ?
 	heightWaterLevel = heightRavine * -1 + heightLand - 2 : 0;
 
 for (let x of [mapBounds.left, mapBounds.right])
@@ -155,6 +158,19 @@ createArea(
 		new SlopeConstraint(3, Infinity)
 	],
 	);
+
+if (isWaterMap) {
+	const heightShoreline = heightLand - 0.5;
+	g_Map.log("Painting shoreline");
+	createArea(
+		new MapBoundsPlacer(),
+		[
+			new TerrainPainter(g_Terrains.water),
+			new TileClassPainter(clShoreline)
+		],
+		new HeightConstraint(-Infinity, heightShoreline));
+}
+Engine.SetProgress(30);
 
 createHillsAndMountains(
 	scaleByMapSize(3 * randFloat(1, 3), 15 * randFloat(1, 2)),
@@ -317,7 +333,7 @@ createStragglerTrees(
 	clForest,
 	stragglerTrees);
 
-if (g_MapSettings.mapName === "Yekaterinaville") {
+if (isWaterMap) {
 	g_Map.log("Creating fish");
 	createObjectGroups(
 		new SimpleGroup([new SimpleObject(oFish, 1, 1, 0, 1)], true, clFood),
