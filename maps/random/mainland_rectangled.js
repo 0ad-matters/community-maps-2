@@ -61,7 +61,7 @@ const aBushSmall = g_Decoratives.bushSmall;
 const pForest1 = [tForestFloor2 + TERRAIN_SEPARATOR + oTree1, tForestFloor2 + TERRAIN_SEPARATOR + oTree2, tForestFloor2];
 const pForest2 = [tForestFloor1 + TERRAIN_SEPARATOR + oTree4, tForestFloor1 + TERRAIN_SEPARATOR + oTree5, tForestFloor1];
 
-const heightLand = 10;
+const heightLand = 1;
 var g_Map = new RandomMap(heightLand, tMainTerrain);
 
 const numPlayers = getNumPlayers();
@@ -81,7 +81,7 @@ const mapBounds = g_Map.getBounds();
 var startAngle = 0;
 const mapCenter = g_Map.getCenter();
 const RAVINE_WIDTH = 0.15;
-const heightRavine = heightLand - 30;
+const heightRavine = heightLand - 20;
 
 const isWaterMap = (g_MapSettings.mapName === "Yekaterinaville");
 
@@ -97,7 +97,7 @@ for (let x of [mapBounds.left, mapBounds.right])
 		"fadeDist": 5,
 		"deviation": 0,
 		"heightRiverbed": heightRavine,
-		"heightLand": heightLand,
+		"heightLand": isWaterMap ? heightLand : heightLand + 8,
 		"meanderShort": 8,
 		"meanderLong": 10,
 		"waterFunc": (position, height, z) => {
