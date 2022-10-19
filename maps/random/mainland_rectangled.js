@@ -80,7 +80,6 @@ var clFood = g_Map.createTileClass();
 var clBaseResource = g_Map.createTileClass();
 var clRavine = g_Map.createTileClass();
 var clShoreline = g_Map.createTileClass();
-var clRidge = g_Map.createTileClass();
 
 const mapBounds = g_Map.getBounds();
 var startAngle = 0;
@@ -197,7 +196,6 @@ else {
 	createArea(
 		new MapBoundsPlacer(),
 		new SmoothingPainter(1, 0.2, 5),
-		// new TileClassPainter(clRidge),
 		[
 			new HeightConstraint(heightRidge * 0.4, heightRidge * 1.6)
 		]);
