@@ -29,8 +29,6 @@ const tMainTerrain = g_Terrains.mainTerrain;
 const tForestFloor1 = g_Terrains.forestFloor1;
 const tForestFloor2 = g_Terrains.forestFloor2;
 const tCliff = g_Terrains.cliff;
-const tShore = g_Terrains.shore;
-const tWater = g_Terrains.water;
 const tTier1Terrain = g_Terrains.tier1Terrain;
 const tTier2Terrain = g_Terrains.tier2Terrain;
 const tTier3Terrain = g_Terrains.tier3Terrain;
@@ -82,6 +80,7 @@ var clFood = g_Map.createTileClass();
 var clBaseResource = g_Map.createTileClass();
 var clRavine = g_Map.createTileClass();
 var clShoreline = g_Map.createTileClass();
+var clRidge = g_Map.createTileClass();
 
 const mapBounds = g_Map.getBounds();
 var startAngle = 0;
@@ -90,6 +89,7 @@ const RAVINE_WIDTH = 0.15;
 
 const isWaterMap = (g_MapSettings.mapName === "Yekaterinaville");
 const heightRavine = heightLand - 20;
+const heightRidge = heightLand + 8;
 
 for (let x of [mapBounds.left, mapBounds.right])
 	paintRiver({
@@ -99,8 +99,8 @@ for (let x of [mapBounds.left, mapBounds.right])
 		"width": 2 * fractionToTiles(RAVINE_WIDTH),
 		"fadeDist": 5,
 		"deviation": 0,
-		"heightRiverbed": heightSeaGround + 0.1, // heightRavine,
-		"heightLand": isWaterMap ? heightLand : heightLand + 8,
+		"heightRiverbed": (bArctic && isWaterMap) ? heightSeaGround + 0.1 : heightRavine,
+		"heightLand": isWaterMap ? heightLand : heightRidge,
 		"meanderShort": 8,
 		"meanderLong": 10,
 		"waterFunc": (position, height, z) => {
@@ -150,18 +150,6 @@ Engine.SetProgress(20);
 
 createBumps(avoidClasses(clPlayer, 20));
 
-g_Map.log("Painting cliffs");
-createArea(
-	new MapBoundsPlacer(),
-	[
-		new TerrainPainter(g_Terrains.cliff),
-		new TileClassPainter(clHill),
-	],
-	[
-		new SlopeConstraint(3, Infinity)
-	],
-	);
-
 if (isWaterMap && bArctic) {
 	// Adapted from the Frozen Lakes biome of Gulf of Bothnia
 
@@ -204,6 +192,30 @@ if (isWaterMap) {
 		],
 		new HeightConstraint(-Infinity, heightShore));
 }
+else {
+	g_Map.log("Smoothing ridge");
+	createArea(
+		new MapBoundsPlacer(),
+		new SmoothingPainter(1, 0.2, 5),
+		// new TileClassPainter(clRidge),
+		[
+			new HeightConstraint(heightRidge * 0.4, heightRidge * 1.6)
+		]);
+}
+
+g_Map.log("Painting cliffs");
+createArea(
+	new MapBoundsPlacer(),
+	[
+		new TerrainPainter(g_Terrains.cliff),
+		new TileClassPainter(clHill),
+	],
+	[
+		new SlopeConstraint(3, Infinity)
+	],
+	);
+
+
 Engine.SetProgress(30);
 
 createHillsAndMountains(
@@ -322,7 +334,7 @@ createDecoration(
 	avoidClasses(
 		clForest, 0,
 		clPlayer, 0,
-		clHill, 1,
+		clHill, 3,
 		)
 	);
 
@@ -415,10 +427,11 @@ if (!bArctic) {
 	setWaterColor(0.024,0.262,0.224)
 	setWaterTint(0.133, 0.325,0.255)
 	setWaterMurkiness(.93);
+	setWaterWaviness(randIntInclusive(2, 8));
 }
 else {
 	setWaterColor(1, 1, 1)
-	setWaterWaviness(0);
+	setWaterWaviness(2);
 	setWaterTint(0.471, 0.75, 0.501961)
 	setWaterMurkiness(.97);
 }
