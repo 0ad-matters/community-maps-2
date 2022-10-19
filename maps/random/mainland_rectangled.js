@@ -7,6 +7,7 @@ Engine.LoadLibrary("rmgen2");
 Engine.LoadLibrary("rmbiome");
 
 setSelectedBiome();
+const bArctic = (currentBiome() == "generic/arctic");
 
 // replaces code on Mainland-type maps to generate both hills and mountains,
 // rather than what's used on vanilla mainland (using randbool to decide
@@ -81,12 +82,16 @@ const mapBounds = g_Map.getBounds();
 var startAngle = 0;
 const mapCenter = g_Map.getCenter();
 const RAVINE_WIDTH = 0.15;
-const heightRavine = heightLand - 20;
 
 const isWaterMap = (g_MapSettings.mapName === "Yekaterinaville");
 
+var heightRavine = (! bArctic && isWaterMap) ? heightLand - 20 : heightLand - 3;
+
 var heightWaterLevel = isWaterMap ?
-	heightWaterLevel = heightRavine * -1 + heightLand - 2 : 0;
+		heightWaterLevel = heightRavine * -1 + heightLand - 2 : 0;
+
+if (bArctic && isWaterMap)
+	heightWaterLevel = heightLand + 20;
 
 for (let x of [mapBounds.left, mapBounds.right])
 	paintRiver({
@@ -333,7 +338,7 @@ createStragglerTrees(
 	clForest,
 	stragglerTrees);
 
-if (isWaterMap) {
+if (isWaterMap && ! bArctic) {
 	g_Map.log("Creating fish");
 	createObjectGroups(
 		new SimpleGroup([new SimpleObject(oFish, 1, 1, 0, 1)], true, clFood),
@@ -357,7 +362,12 @@ placePlayersNomad(
 	);
 
 setWaterHeight(heightWaterLevel);
-setWaterColor(0.024,0.262,0.224);
+
+var waterColor = !bArctic ? setWaterColor(0.024,0.262,0.224) : setWaterColor(1,1,1);
+// setWaterColor(waterColor);
 setWaterTint(0.133, 0.325,0.255);
+setWaterWaviness(0);
+setWaterMurkiness(.93);
+setWaterType("lake");
 
 g_Map.ExportMap();
