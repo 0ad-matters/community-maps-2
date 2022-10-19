@@ -176,8 +176,8 @@ if (isWaterMap && bArctic) {
 		scaleByMapSize(10, 40)
 	);
 
-paintTerrainBasedOnHeight(heightShore, heightSeaGround, Elevation_ExcludeMin_ExcludeMax, "alpine_snow_02");
-paintTerrainBasedOnHeight(-Infinity, heightShore, Elevation_ExcludeMin_IncludeMax, "alpine_ice_01");
+	paintTerrainBasedOnHeight(heightShore, heightSeaGround, Elevation_ExcludeMin_ExcludeMax, "alpine_snow_02");
+	paintTerrainBasedOnHeight(-Infinity, heightShore, Elevation_ExcludeMin_IncludeMax, "alpine_ice_01");
 }
 
 if (isWaterMap) {
