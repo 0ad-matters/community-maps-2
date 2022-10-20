@@ -133,13 +133,23 @@ if (!bSahara)
 else
 	g_Map.log("Creating sand pits");
 
+g_Map.log("Painting cliffs");
+createArea(
+	new MapBoundsPlacer(),
+	[
+		new TerrainPainter(tCliff),
+		new TileClassPainter(clHill),
+	],
+	[
+		new SlopeConstraint(3, Infinity)
+	]);
+
 var bloodAreas = [];
 var numLakes = Math.round(scaleByMapSize(1,4) * numPlayers);
 var lakeSize;
 const lakeCoherence = 0.1 // coherence - How much the radius of the clump varies (1 = circle, 0 = very random).
 const lakeBorderSmoothness = 0.2; // smoothness - How smooth the border of the clump is (1 = few "peaks", 0 = very jagged).
-var lakeBlendRadius;
-var lakeMaxRndDiff;
+
 /* These lakes aren't very deep; units can walk over them, so it doesn't have to avoid clPath */
 for (let passes = 0; passes < 6; passes++)
 {
@@ -156,13 +166,16 @@ for (let passes = 0; passes < 6; passes++)
 			// new LayeredPainter([tShoreBlend, tShore, tWater], [1, 1]),
 			new SmoothElevationPainter(
 				ELEVATION_SET,
-				heightSeaGround - 1, // elevation - target height.
-				0, // blendRadius - How steep the elevation change is.
+				!bArctic ? heightSeaGround - 1 : heightSeaGround, // elevation - target height.
+				3 // blendRadius - How steep the elevation change is.
 				),
 			new TileClassPainter(clBlood)
 		],
-		avoidClasses(clPlayer, 24, clBlood, 12),
-		1
+		[
+			avoidClasses(clPlayer, 24, clBlood, 12),
+			new SlopeConstraint(-Infinity, heightLand)
+		],
+		2
 	).concat(bloodAreas);
 }
 
@@ -170,35 +183,24 @@ for (let passes = 0; passes < 6; passes++)
 for (let passes = 0; passes < numLakes; passes++)
 {
 	lakeSize = scaleByMapSize(randIntInclusive(40, 70), randIntInclusive(180, 280));
-	//lakeBlendRadius = randFloat(1.0, 4.0);
-	lakeMaxRndDiff = randFloat(1.0, 5.0);
-
 	bloodAreas = createAreas(
 		new ClumpPlacer(lakeSize, lakeCoherence, lakeBorderSmoothness, Infinity),
 		[
-			new LayeredPainter([tShoreBlend, tShore, tWater], [1, 1]),
+			// new LayeredPainter([tShoreBlend, tShore, tWater], [1, 1]),
 			new SmoothElevationPainter(
 				ELEVATION_SET,
 				!bArctic ? heightSeaGround - randIntInclusive(2, 6) : heightSeaGround,
-				0,
-				lakeMaxRndDiff),
+				2
+				),
 			new TileClassPainter(clBlood)
 		],
-		avoidClasses(clPath, 0, clPlayer, 24, clBlood, 12),
+		[
+			avoidClasses(clPath, 0, clPlayer, 24, clBlood, 12),
+			new SlopeConstraint(-Infinity, heightLand)
+		],
 		1
 	).concat(bloodAreas);
 }
-
-g_Map.log("Painting cliffs");
-createArea(
-	new MapBoundsPlacer(),
-	[
-		new TerrainPainter(tCliff),
-		new TileClassPainter(clHill),
-	],
-	[
-		new SlopeConstraint(3, Infinity)
-	]);
 
 //if (!bSahara)
 	//g_Map.log("Marking blood");
@@ -213,24 +215,19 @@ createArea(
 
 if (bArctic) {
 	// Adapted from the Frozen Lakes biome of Gulf of Bothnia
-
 	g_Map.log("Painting ice");
-
-	//createAreas(
-		//new ChainPlacer(
-			//1,
-			//4,
-			//scaleByMapSize(4, 10),
-			//0.3),
-		//[
-			//new ElevationPainter(-6),
-		//],
-		//stayClasses(clBlood, 2),
-		//scaleByMapSize(10, 40)
-	//);
-
-	paintTerrainBasedOnHeight(-Infinity, heightShore, Elevation_ExcludeMin_IncludeMax, "alpine_red_ice_01");
-	paintTerrainBasedOnHeight(heightShore, heightSeaGround, Elevation_ExcludeMin_ExcludeMax, "alpine_snow_02");
+	createAreas(
+		new ChainPlacer(
+			1,
+			4,
+			scaleByMapSize(4, 10),
+			0.3),
+		[
+			new ElevationPainter(-6),
+		],
+		stayClasses(clBlood, 2),
+		scaleByMapSize(10, 40)
+	);
 }
 
 g_Map.log("Marking land");
@@ -257,14 +254,20 @@ createArea(
 	//avoidClasses(clBlood, 0));
 //Engine.SetProgress(35);
 
-//g_Map.log("Painting shoreline");
-//createArea(
-	//new MapBoundsPlacer(),
-	//[
-		//new TerrainPainter(g_Terrains.water),
-		//new TileClassPainter(clShoreline)
-	//],
-	//new HeightConstraint(heightSeaGround, heightShore));
+if (!bArctic) {
+g_Map.log("Painting shoreline");
+createArea(
+	new MapBoundsPlacer(),
+	[
+		new TerrainPainter(g_Terrains.water),
+		new TileClassPainter(clShoreline)
+	],
+	new HeightConstraint(-Infinity, heightSeaGround));
+}
+else {
+	paintTerrainBasedOnHeight(heightShore, heightSeaGround, Elevation_ExcludeMin_ExcludeMax, g_Terrains.water);
+	paintTerrainBasedOnHeight(-Infinity, heightShore, Elevation_ExcludeMin_IncludeMax, "alpine_red_ice_01");
+}
 
 Engine.SetProgress(50);
 
