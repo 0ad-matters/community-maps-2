@@ -7,9 +7,11 @@ Engine.LoadLibrary("rmgen2");
 Engine.LoadLibrary("rmbiome");
 Engine.LoadLibrary("rmgen-helpers");
 
-TILE_CENTERED_HEIGHT_MAP = true;
+// TILE_CENTERED_HEIGHT_MAP = true;
 
 setSelectedBiome();
+const bSahara = (currentBiome() == "generic/sahara");
+const bArctic = (currentBiome() == "generic/arctic");
 
 const tMainTerrain = g_Terrains.mainTerrain;
 const tForestFloor1 = g_Terrains.forestFloor1;
@@ -54,10 +56,10 @@ const pForest2 = [tForestFloor1 + TERRAIN_SEPARATOR + oTree4, tForestFloor1 + TE
 
 const heightScale = num => num * g_MapSettings.Size / 320;
 
-const heightSeaGround = heightScale(-4);
-const heightWaterLevel = heightScale(0);
-const heightShoreline = heightScale(0.5);
-const heightLand = heightScale(1);
+const heightSeaGround = 0.05;
+const heightShore = 0.4;
+const heightLand = 0.6;
+const heightWaterLevel = -Infinity;
 
 var g_Map = new RandomMap(heightLand, tMainTerrain);
 var mapCenter = g_Map.getCenter();
@@ -74,8 +76,6 @@ var clBaseResource = g_Map.createTileClass();
 var clBlood = g_Map.createTileClass();
 var clLand = g_Map.createTileClass();
 
-const bSahara = (currentBiome() == "generic/sahara");
-
 initTileClasses(["shoreline", "path"]);
 var clPath = g_TileClasses.path;
 var clShoreline = g_TileClasses.shoreline;
@@ -83,6 +83,8 @@ var clShoreline = g_TileClasses.shoreline;
 g_Map.log("Creating mountains");
 g_Map.LoadHeightmapImage("jammys_despair.png", heightLand, 50);
 Engine.SetProgress(15);
+
+createBumps(avoidClasses(clHill, 2, clPlayer, 20), scaleByMapSize(20, 40), 1, 4, Math.floor(scaleByMapSize(2, 5))); // spread)
 
 const heightMapCenter = g_Map.getHeight(mapCenter);
 
@@ -151,12 +153,12 @@ for (let passes = 0; passes < 6; passes++)
 			Infinity
 			),
 		[
-			new LayeredPainter([tShoreBlend, tShore, tWater], [1, 1]),
+			// new LayeredPainter([tShoreBlend, tShore, tWater], [1, 1]),
 			new SmoothElevationPainter(
 				ELEVATION_SET,
-				heightWaterLevel - heightScale(1), // elevation - target height.
-				2, // blendRadius - How steep the elevation change is.
-				1), // randomElevation - maximum random elevation difference added to each vertex.
+				heightSeaGround - 1, // elevation - target height.
+				0, // blendRadius - How steep the elevation change is.
+				),
 			new TileClassPainter(clBlood)
 		],
 		avoidClasses(clPlayer, 24, clBlood, 12),
@@ -168,7 +170,7 @@ for (let passes = 0; passes < 6; passes++)
 for (let passes = 0; passes < numLakes; passes++)
 {
 	lakeSize = scaleByMapSize(randIntInclusive(40, 70), randIntInclusive(180, 280));
-	lakeBlendRadius = randFloat(1.0, 4.0);
+	//lakeBlendRadius = randFloat(1.0, 4.0);
 	lakeMaxRndDiff = randFloat(1.0, 5.0);
 
 	bloodAreas = createAreas(
@@ -177,8 +179,8 @@ for (let passes = 0; passes < numLakes; passes++)
 			new LayeredPainter([tShoreBlend, tShore, tWater], [1, 1]),
 			new SmoothElevationPainter(
 				ELEVATION_SET,
-				heightWaterLevel - heightScale(randIntInclusive(1, 5)),
-				lakeBlendRadius,
+				!bArctic ? heightSeaGround - randIntInclusive(2, 6) : heightSeaGround,
+				0,
 				lakeMaxRndDiff),
 			new TileClassPainter(clBlood)
 		],
@@ -198,24 +200,44 @@ createArea(
 		new SlopeConstraint(3, Infinity)
 	]);
 
-if (!bSahara)
-	g_Map.log("Marking blood");
-else
-	g_Map.log("Marking sand pits");
+//if (!bSahara)
+	//g_Map.log("Marking blood");
+//else
+	//g_Map.log("Marking sand pits");
 
-createArea(
-	new MapBoundsPlacer(),
-	new TileClassPainter(clBlood),
-	new HeightConstraint(-Infinity, heightWaterLevel));
-Engine.SetProgress(30);
+//createArea(
+	//new MapBoundsPlacer(),
+	//new TileClassPainter(clBlood),
+	//new HeightConstraint(-Infinity, heightSeaGround));
+//Engine.SetProgress(30);
+
+if (bArctic) {
+	// Adapted from the Frozen Lakes biome of Gulf of Bothnia
+
+	g_Map.log("Painting ice");
+
+	//createAreas(
+		//new ChainPlacer(
+			//1,
+			//4,
+			//scaleByMapSize(4, 10),
+			//0.3),
+		//[
+			//new ElevationPainter(-6),
+		//],
+		//stayClasses(clBlood, 2),
+		//scaleByMapSize(10, 40)
+	//);
+
+	paintTerrainBasedOnHeight(-Infinity, heightShore, Elevation_ExcludeMin_IncludeMax, "alpine_red_ice_01");
+	paintTerrainBasedOnHeight(heightShore, heightSeaGround, Elevation_ExcludeMin_ExcludeMax, "alpine_snow_02");
+}
 
 g_Map.log("Marking land");
 createArea(
 	new DiskPlacer(fractionToTiles(0.5), mapCenter),
 	new TileClassPainter(clLand),
 	avoidClasses(clBlood, 0));
-
-createBumps(avoidClasses(clBlood, 2, clHill, 2, clPlayer, 20), scaleByMapSize(20, 40), 1, 4, Math.floor(scaleByMapSize(2, 5))); // spread)
 
 ///* creating bumps may change the blood or land, so re-mark them */
 //if (!bSahara)
@@ -235,14 +257,14 @@ createBumps(avoidClasses(clBlood, 2, clHill, 2, clPlayer, 20), scaleByMapSize(20
 	//avoidClasses(clBlood, 0));
 //Engine.SetProgress(35);
 
-g_Map.log("Painting shoreline");
-createArea(
-	new MapBoundsPlacer(),
-	[
-		new TerrainPainter(g_Terrains.water),
-		new TileClassPainter(clShoreline)
-	],
-	new HeightConstraint(-0.2, heightShoreline));
+//g_Map.log("Painting shoreline");
+//createArea(
+	//new MapBoundsPlacer(),
+	//[
+		//new TerrainPainter(g_Terrains.water),
+		//new TileClassPainter(clShoreline)
+	//],
+	//new HeightConstraint(heightSeaGround, heightShore));
 
 Engine.SetProgress(50);
 
@@ -347,7 +369,7 @@ createStragglerTrees(
 
 placePlayersNomad(clPlayer, avoidClasses(clBlood, 2, clForest, 1, clMetal, 4, clRock, 4, clHill, 4, clFood, 2));
 
-if (!bSahara)
+if (!bSahara && !bArctic)
 {
 	g_Map.log("Boiling the blood");
 	const clBubbles = g_Map.createTileClass();
@@ -359,10 +381,8 @@ if (!bSahara)
 		50, // retry factor
 		bloodAreas
 		);
-
-	setWaterHeight(heightWaterLevel + SEA_LEVEL);
 }
-else
+else if (!bArctic)
 {
 	g_Map.log("Swirling the dust");
 	const clSand = g_Map.createTileClass();
@@ -374,7 +394,7 @@ else
 		bloodAreas
 		);
 
-	setWaterHeight(-100);
+	setWaterHeight(-Infinity);
 }
 
 setWaterTint(0.541, 0.012, 0.012);
