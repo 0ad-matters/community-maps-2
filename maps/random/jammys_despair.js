@@ -26,7 +26,6 @@ const tRoadWild = g_Terrains.roadWild;
 const tTier4Terrain = g_Terrains.tier4Terrain;
 const tDirt = g_Terrains.dirt;
 const tShoreBlend = g_Terrains.shoreBlend;
-const tShore = g_Terrains.shore;
 const tWater = g_Terrains.water;
 
 const oTree1 = g_Gaia.tree1;
@@ -57,8 +56,8 @@ const pForest2 = [tForestFloor1 + TERRAIN_SEPARATOR + oTree4, tForestFloor1 + TE
 const heightScale = num => num * g_MapSettings.Size / 320;
 
 const heightSeaGround = 0.05;
-const heightShore = 0.4;
-const heightLand = 0.6;
+const heightShore = 0.9;
+const heightLand = 1;
 const heightWaterLevel = -Infinity;
 
 var g_Map = new RandomMap(heightLand, tMainTerrain);
@@ -166,7 +165,7 @@ for (let passes = 0; passes < 6; passes++)
 			// new LayeredPainter([tShoreBlend, tShore, tWater], [1, 1]),
 			new SmoothElevationPainter(
 				ELEVATION_SET,
-				!bArctic ? heightSeaGround - 1 : heightSeaGround - randFloat(0.04, 0.3), // elevation - target height.
+				!bArctic ? heightSeaGround - 1 : heightSeaGround, // elevation - target height.
 				3 // blendRadius - How steep the elevation change is.
 				),
 			new TileClassPainter(clBlood)
@@ -194,7 +193,7 @@ for (let passes = 0; passes < numLakes; passes++)
 			// new LayeredPainter([tShoreBlend, tShore, tWater], [1, 1]),
 			new SmoothElevationPainter(
 				ELEVATION_SET,
-				!bArctic ? heightSeaGround - randIntInclusive(2, 6) : heightSeaGround - randFloat(0.04, 0.3),
+				!bArctic ? heightSeaGround - randIntInclusive(2, 6) : heightSeaGround,
 				2
 				),
 			new TileClassPainter(clBlood)
@@ -234,19 +233,19 @@ if (bArctic) {
  * @param {number[]} [queue] - When given, uses these radiuses for the first circles.
  */
 		new ChainPlacer(
-			.25,
-			2,
-			scaleByMapSize(8, 16),
+			1,
+			4,
+			scaleByMapSize(16, 40),
 			0.3),
 		[
 			new SmoothElevationPainter(
 				ELEVATION_SET,
 				-6,
-				2
+				1
 				),
 		],
 		stayClasses(clBlood, 2),
-		scaleByMapSize(20, 80)
+		scaleByMapSize(10, 40)
 	);
 }
 
@@ -286,7 +285,7 @@ createArea(
 	new HeightConstraint(-Infinity, heightSeaGround));
 }
 else {
-	paintTerrainBasedOnHeight(heightShore, heightSeaGround, Elevation_ExcludeMin_ExcludeMax, tShoreBlend);
+	paintTerrainBasedOnHeight(heightShore, heightSeaGround, Elevation_ExcludeMin_ExcludeMax, "alpine_snow_02");
 	paintTerrainBasedOnHeight(-Infinity, heightShore, Elevation_ExcludeMin_IncludeMax, "alpine_red_ice_01");
 }
 
@@ -421,12 +420,15 @@ else if (!bArctic)
 	setWaterHeight(-Infinity);
 }
 
-setWaterTint(0.541, 0.012, 0.012);
 setWaterColor(0.541, 0.012, 0.012);
-if (bArctic)
+if (bArctic) {
 	setWaterWaviness(8);
-else
+	setWaterTint(0.471, 0.75, 0.501961);
+}
+else {
 	setWaterWaviness(3);
+	setWaterTint(0.541, 0.012, 0.012);
+}
 
 setWaterMurkiness(1); // 0 - 1
 setWaterType("lake");
