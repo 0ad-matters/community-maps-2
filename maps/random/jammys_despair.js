@@ -147,7 +147,7 @@ createArea(
 var bloodAreas = [];
 var numLakes = Math.round(scaleByMapSize(1,4) * numPlayers);
 var lakeSize;
-const lakeCoherence = 0.1 // coherence - How much the radius of the clump varies (1 = circle, 0 = very random).
+const lakeCoherence = 0.1;
 const lakeBorderSmoothness = 0.2; // smoothness - How smooth the border of the clump is (1 = few "peaks", 0 = very jagged).
 
 /* These lakes aren't very deep; units can walk over them, so it doesn't have to avoid clPath */
@@ -166,7 +166,7 @@ for (let passes = 0; passes < 6; passes++)
 			// new LayeredPainter([tShoreBlend, tShore, tWater], [1, 1]),
 			new SmoothElevationPainter(
 				ELEVATION_SET,
-				!bArctic ? heightSeaGround - 1 : heightSeaGround, // elevation - target height.
+				!bArctic ? heightSeaGround - 1 : heightSeaGround - randFloat(0.04, 0.3), // elevation - target height.
 				3 // blendRadius - How steep the elevation change is.
 				),
 			new TileClassPainter(clBlood)
@@ -184,12 +184,17 @@ for (let passes = 0; passes < numLakes; passes++)
 {
 	lakeSize = scaleByMapSize(randIntInclusive(40, 70), randIntInclusive(180, 280));
 	bloodAreas = createAreas(
-		new ClumpPlacer(lakeSize, lakeCoherence, lakeBorderSmoothness, Infinity),
+		new ClumpPlacer(
+			lakeSize,
+			lakeCoherence,
+			lakeBorderSmoothness,
+			Infinity
+			),
 		[
 			// new LayeredPainter([tShoreBlend, tShore, tWater], [1, 1]),
 			new SmoothElevationPainter(
 				ELEVATION_SET,
-				!bArctic ? heightSeaGround - randIntInclusive(2, 6) : heightSeaGround,
+				!bArctic ? heightSeaGround - randIntInclusive(2, 6) : heightSeaGround - randFloat(0.04, 0.3),
 				2
 				),
 			new TileClassPainter(clBlood)
@@ -217,16 +222,31 @@ if (bArctic) {
 	// Adapted from the Frozen Lakes biome of Gulf of Bothnia
 	g_Map.log("Painting ice");
 	createAreas(
+/**
+ * Generates a more random clump of points. It randomly creates circles around the edges of the current clump.s
+ *
+ * @param {number} minRadius - minimum radius of the circles.
+ * @param {number} maxRadius - maximum radius of the circles.
+ * @param {number} numCircles - number of circles.
+ * @param {number} [failFraction] - Percentage of place attempts allowed to fail.
+ * @param {Vector2D} [centerPosition]
+ * @param {number} [maxDistance] - Farthest distance from the center.
+ * @param {number[]} [queue] - When given, uses these radiuses for the first circles.
+ */
 		new ChainPlacer(
-			1,
-			4,
-			scaleByMapSize(4, 10),
+			.25,
+			2,
+			scaleByMapSize(8, 16),
 			0.3),
 		[
-			new ElevationPainter(-6),
+			new SmoothElevationPainter(
+				ELEVATION_SET,
+				-6,
+				2
+				),
 		],
 		stayClasses(clBlood, 2),
-		scaleByMapSize(10, 40)
+		scaleByMapSize(20, 80)
 	);
 }
 
@@ -259,13 +279,14 @@ g_Map.log("Painting shoreline");
 createArea(
 	new MapBoundsPlacer(),
 	[
-		new TerrainPainter(g_Terrains.water),
+		// new TerrainPainter(g_Terrains.water),
+		new TerrainPainter(tShoreBlend),
 		new TileClassPainter(clShoreline)
 	],
 	new HeightConstraint(-Infinity, heightSeaGround));
 }
 else {
-	paintTerrainBasedOnHeight(heightShore, heightSeaGround, Elevation_ExcludeMin_ExcludeMax, g_Terrains.water);
+	paintTerrainBasedOnHeight(heightShore, heightSeaGround, Elevation_ExcludeMin_ExcludeMax, tShoreBlend);
 	paintTerrainBasedOnHeight(-Infinity, heightShore, Elevation_ExcludeMin_IncludeMax, "alpine_red_ice_01");
 }
 
@@ -402,7 +423,11 @@ else if (!bArctic)
 
 setWaterTint(0.541, 0.012, 0.012);
 setWaterColor(0.541, 0.012, 0.012);
-setWaterWaviness(8);
+if (bArctic)
+	setWaterWaviness(8);
+else
+	setWaterWaviness(3);
+
 setWaterMurkiness(1); // 0 - 1
 setWaterType("lake");
 
