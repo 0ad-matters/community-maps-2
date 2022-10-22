@@ -7,11 +7,16 @@ Engine.LoadLibrary("rmgen2");
 Engine.LoadLibrary("rmbiome");
 Engine.LoadLibrary("rmgen-helpers");
 
+// What does this do? I've seen it used on other maps
+// that import a heightmap...
 // TILE_CENTERED_HEIGHT_MAP = true;
 
 setSelectedBiome();
 const bSahara = (currentBiome() == "generic/sahara");
 const bArctic = (currentBiome() == "generic/arctic");
+
+if (bSahara)
+	setWaterHeight(-Infinity);
 
 const tMainTerrain = g_Terrains.mainTerrain;
 const tForestFloor1 = g_Terrains.forestFloor1;
@@ -73,18 +78,15 @@ var clMetal = g_Map.createTileClass();
 var clFood = g_Map.createTileClass();
 var clBaseResource = g_Map.createTileClass();
 var clBlood = g_Map.createTileClass();
-var clLand = g_Map.createTileClass();
 var clLake = g_Map.createTileClass();
 
 initTileClasses(["shoreline", "path"]);
 var clPath = g_TileClasses.path;
 var clShoreline = g_TileClasses.shoreline;
 
-g_Map.log("Creating mountains");
+g_Map.log("Importing heightmap");
 g_Map.LoadHeightmapImage("jammys_despair.png", heightLand, 50);
 Engine.SetProgress(15);
-
-createBumps(avoidClasses(clHill, 2, clPlayer, 20), scaleByMapSize(20, 40), 1, 4, Math.floor(scaleByMapSize(2, 5))); // spread)
 
 const heightMapCenter = g_Map.getHeight(mapCenter);
 
@@ -120,18 +122,12 @@ if (!isNomad())
 				-0.6,
 				0),
 			[
-				// new LayeredPainter([tRoad, tDirt, tRoad], [3, 6]),
 				new SmoothElevationPainter(ELEVATION_SET, heightLand, 0),
 				new SmoothElevationPainter(ELEVATION_MODIFY, heightScale(heightMapCenter), 50),
 				new TileClassPainter(clPath)
 			]);
 	}
 }
-
-if (!bSahara)
-	g_Map.log("Creating blood pools");
-else
-	g_Map.log("Creating sand pits");
 
 g_Map.log("Painting cliffs");
 createArea(
@@ -144,18 +140,22 @@ createArea(
 		new SlopeConstraint(3, Infinity)
 	]);
 
-var bloodAreas = [];
+if (!bSahara)
+	g_Map.log("Creating blood pools");
+else
+	g_Map.log("Creating sand pits");
+
 var numLakes = Math.round(scaleByMapSize(1,4) * numPlayers);
 var lakeSize;
 const lakeCoherence = 0.1;
 const lakeBorderSmoothness = 0.2; // smoothness - How smooth the border of the clump is (1 = few "peaks", 0 = very jagged).
 
-/* These lakes aren't very deep; units can walk over them, so it doesn't have to avoid clPath */
+/* These lakes aren't very deep; units can walk over them,
+/* so they don't have to avoid clPath */
 for (let passes = 0; passes < 6; passes++)
 {
 	lakeSize = scaleByMapSize(randIntInclusive(40, 70), randIntInclusive(180, 280));
-
-	bloodAreas = createAreas(
+	createAreas(
 		new ClumpPlacer(
 			lakeSize,
 			lakeCoherence,
@@ -163,7 +163,6 @@ for (let passes = 0; passes < 6; passes++)
 			Infinity
 			),
 		[
-			// new LayeredPainter([tShoreBlend, tShore, tWater], [1, 1]),
 			new SmoothElevationPainter(
 				ELEVATION_SET,
 				!bArctic ? heightSeaGround - 1 : heightSeaGround, // elevation - target height.
@@ -176,14 +175,14 @@ for (let passes = 0; passes < 6; passes++)
 			new SlopeConstraint(-Infinity, heightLand)
 		],
 		2
-	).concat(bloodAreas);
+	);
 }
 
 /* These may be a little deeper, so they won't be placed on any marked Paths */
 for (let passes = 0; passes < numLakes; passes++)
 {
 	lakeSize = scaleByMapSize(randIntInclusive(40, 70), randIntInclusive(180, 280));
-	bloodAreas = createAreas(
+	createAreas(
 		new ClumpPlacer(
 			lakeSize,
 			lakeCoherence,
@@ -191,7 +190,6 @@ for (let passes = 0; passes < numLakes; passes++)
 			Infinity
 			),
 		[
-			// new LayeredPainter([tShoreBlend, tShore, tWater], [1, 1]),
 			new SmoothElevationPainter(
 				ELEVATION_SET,
 				!bArctic ? heightSeaGround - randIntInclusive(2, 6) : heightSeaGround,
@@ -204,26 +202,14 @@ for (let passes = 0; passes < numLakes; passes++)
 			new SlopeConstraint(-Infinity, heightLand)
 		],
 		1
-	).concat(bloodAreas);
+	);
 }
-
-//if (!bSahara)
-	//g_Map.log("Marking blood");
-//else
-	//g_Map.log("Marking sand pits");
-
-//createArea(
-	//new MapBoundsPlacer(),
-	//new TileClassPainter(clBlood),
-	//new HeightConstraint(-Infinity, heightSeaGround));
-//Engine.SetProgress(30);
 
 if (bArctic) {
 	// Adapted from the Frozen Lakes biome of Gulf of Bothnia
 	g_Map.log("Painting ice");
 
-	bloodAreas = [];
-	bloodAreas = createAreas(
+	createAreas(
 /**
  * Generates a more random clump of points. It randomly creates circles around the edges of the current clump.s
  *
@@ -256,29 +242,26 @@ else {
 	clBlood = clLake;
 }
 
-g_Map.log("Marking land");
-createArea(
-	new DiskPlacer(fractionToTiles(0.5), mapCenter),
-	new TileClassPainter(clLand),
-	avoidClasses(clLake, 0));
+createBumps(
+	avoidClasses(
+		clHill, 2,
+		clPlayer, 20
+		),
+	scaleByMapSize(20, 40),
+	1,
+	4,
+	Math.floor(scaleByMapSize(2, 5)) // spread
+	);
 
-///* creating bumps may change the blood or land, so re-mark them */
-//if (!bSahara)
-	//g_Map.log("Marking blood");
-//else
-	//g_Map.log("Marking sand pits");
-
-//createArea(
-	//new MapBoundsPlacer(),
-	//new TileClassPainter(clBlood),
-	//new HeightConstraint(-Infinity, heightWaterLevel - 1));
-
-//g_Map.log("Marking land");
-//createArea(
-	//new DiskPlacer(fractionToTiles(0.5), mapCenter),
-	//new TileClassPainter(clLand),
-	//avoidClasses(clBlood, 0));
-//Engine.SetProgress(35);
+createBumps(
+	stayClasses(
+		clLake, 0,
+		),
+	scaleByMapSize(40, 60),
+	1,
+	4,
+	Math.floor(scaleByMapSize(2, 5)) // spread
+	);
 
 if (!bArctic) {
 g_Map.log("Painting shoreline");
@@ -410,13 +393,12 @@ if (!bSahara)
 	const clBubbles = g_Map.createTileClass();
 	const bubblesGroup = new SimpleGroup(
 		[new SimpleObject("actor|particle/jammys_despair_bubbles.xml", 1, 1, 0, 7)], false, clBubbles);
-			createObjectGroupsByAreas(bubblesGroup, 0,
+			createObjectGroups(bubblesGroup, 0,
 		[
 			new HeightConstraint(-Infinity, heightSeaGround - 2),
 		],
 		scaleByMapSize(10, 90), // amount
 		10, // retry factor
-		bloodAreas
 		);
 }
 else if (!bArctic)
@@ -424,16 +406,13 @@ else if (!bArctic)
 	g_Map.log("Swirling the dust");
 	const clSand = g_Map.createTileClass();
 	const sandGroup = new SimpleGroup([new SimpleObject("actor|particle/blowing_sand.xml", 1, 1, 0, 7)], false, clSand);
-	createObjectGroupsByAreas(sandGroup, 0,
+	createObjectGroups(sandGroup, 0,
 		[
 			new HeightConstraint(-Infinity, heightSeaGround)
 		],
-		scaleByMapSize(4, 32), // amount
-		30, // retry factor
-		bloodAreas
+		scaleByMapSize(20, 180), // amount
+		5, // retry factor
 		);
-
-	setWaterHeight(-Infinity);
 }
 
 setWaterColor(0.541, 0.012, 0.012);
