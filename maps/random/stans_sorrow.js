@@ -221,21 +221,22 @@ for (let size of [scaleByMapSize(50, 600), scaleByMapSize(50, 300), scaleByMapSi
 			50,
 			ravine);
 
-// FIXME: Some trees appear to grow from the cliffs
-
-		//createObjectGroupsByAreasDeprecated(
-			//new RandomGroup(
-				//[
-					//new SimpleObject(oTree1, 0, 1, 4, 5),
-					//new SimpleObject(oTree2, 0, 1, 4, 5),
-				//],
-				//true,
-				//clHillDeco
-				//),
-			//0,
-			//[avoidClasses(clHillDeco, 3), stayClasses(clHill, 3)],
-			//ravine.length * 5, 20,
-			//ravine);
+		createObjectGroupsByAreas(
+			new RandomGroup(
+				[
+					new SimpleObject(oTree1, 1, 4, 2, 5),
+					new SimpleObject(oTree2, 1, 4, 2, 5),
+				],
+				true,
+				clHillDeco
+				),
+			0,
+			[
+				avoidClasses(clHillDeco, 3),
+				new HeightConstraint(-Infinity, heightRavineValley)
+			],
+			ravine.length * 5, 20,
+			ravine);
 	}
 }
 
@@ -304,7 +305,7 @@ createArea(
 		new TileClassPainter(clHill),
 	],
 	[
-		new SlopeConstraint(1, Infinity)
+		new SlopeConstraint(3, Infinity)
 	]);
 
 var [forestTrees, stragglerTrees] = getTreeCounts(...rBiomeTreeCount(1));
