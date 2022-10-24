@@ -5,7 +5,7 @@
 		"Description" : "plenty of ridges",
 		"BaseTerrain" : ["taiga"],
 		"BaseHeight" : 10,
-		"Keywords": ["community"],
+		"Keywords": ["random","multiplayer", "community"],
 		"Preview" : "carpathian.png",
 		"CircularMap" : true
 	}
