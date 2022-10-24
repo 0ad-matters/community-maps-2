@@ -265,9 +265,9 @@ for (let position of playerPosition)
 {
 	createArea(
 		// new ClumpPlacer(diskArea(playerHillRadius), 0.95, 0.6, Infinity, position),
-		new ClumpPlacer(diskArea(playerHillRadius), 0.95, 0.1, Infinity, position),
+		new ClumpPlacer(diskArea(playerHillRadius), 0.95, 0.05, Infinity, position),
 		[
-			new SmoothElevationPainter(ELEVATION_SET, heightHill, 2),
+			new SmoothElevationPainter(ELEVATION_SET, heightHill, 4),
 		]);
 
 	let angle = position.angleTo(mapCenter) - Math.PI * 0.5;
