@@ -60,10 +60,9 @@ const pForest2 = [tForestFloor1 + TERRAIN_SEPARATOR + oTree4, tForestFloor1 + TE
 
 const heightScale = num => num * g_MapSettings.Size / 320;
 
-const heightSeaGround = 0.05;
-const heightShore = 0.4;
-const heightLand = .6;
-const heightWaterLevel = -Infinity;
+const heightSeaGround = heightScale(0.05);
+const heightShore = heightScale(0.4);
+const heightLand = heightScale(0.6);
 
 var g_Map = new RandomMap(heightLand, tMainTerrain);
 var mapCenter = g_Map.getCenter();
@@ -85,7 +84,7 @@ var clPath = g_TileClasses.path;
 var clShoreline = g_TileClasses.shoreline;
 
 g_Map.log("Importing heightmap");
-g_Map.LoadHeightmapImage("jammys_despair.png", heightLand, 50);
+g_Map.LoadHeightmapImage("jammys_despair.png", heightScale(1), 50);
 Engine.SetProgress(15);
 
 const heightMapCenter = g_Map.getHeight(mapCenter);
@@ -165,7 +164,7 @@ for (let passes = 0; passes < 6; passes++)
 		[
 			new SmoothElevationPainter(
 				ELEVATION_SET,
-				!bArctic ? heightSeaGround - 1 : heightSeaGround, // elevation - target height.
+				!bArctic ? heightSeaGround - 1 : heightSeaGround - 0.1, // elevation - target height.
 				3 // blendRadius - How steep the elevation change is.
 				),
 			new TileClassPainter(clLake)
@@ -192,7 +191,7 @@ for (let passes = 0; passes < numLakes; passes++)
 		[
 			new SmoothElevationPainter(
 				ELEVATION_SET,
-				!bArctic ? heightSeaGround - randIntInclusive(2, 6) : heightSeaGround,
+				!bArctic ? heightSeaGround - randIntInclusive(2, 6) : heightSeaGround - 0.1,
 				2
 				),
 			new TileClassPainter(clLake)
@@ -274,8 +273,18 @@ createArea(
 	new HeightConstraint(-Infinity, heightShore));
 }
 else {
-	paintTerrainBasedOnHeight(heightShore, heightSeaGround, Elevation_ExcludeMin_ExcludeMax, "alpine_snow_02");
-	paintTerrainBasedOnHeight(-Infinity, heightShore, Elevation_ExcludeMin_IncludeMax, "alpine_red_ice_01");
+	paintTerrainBasedOnHeight(
+		heightSeaGround,
+		heightShore + 0.1,
+		Elevation_ExcludeMin_IncludeMax,
+		"alpine_snow_02"
+		);
+	paintTerrainBasedOnHeight(
+		-Infinity,
+		heightShore,
+		Elevation_ExcludeMin_ExcludeMax,
+		"alpine_red_ice_01"
+		);
 	createArea(
 	new MapBoundsPlacer(),
 	[
