@@ -1,3 +1,26 @@
+2022-10-24
+
+    * random/carpathian.js:replace with newer version
+
+2022-10-17
+
+    * random/jammys_despair.js: paint impassable areas more accurately
+    (change SlopeConstraint)
+
+2022-09-28
+
+    * release v0.26.4
+
+2022-09-27
+
+    * remove maps that are already included in the feldmap mod
+    (see https://wildfiregames.com/forum/topic/53880-feldmap-a26/)
+
+2022-09-04
+
+    * maps/scenarios/Caledonia_2p: add new map by perfecto25
+    * maps/scenarios/Masada: add new map by perfecto25
+
 2022-08-08
 
     * release v0.26.3

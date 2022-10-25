@@ -11,6 +11,12 @@ Engine.LoadLibrary("heightmap");
 TILE_CENTERED_HEIGHT_MAP = true;
 
 setSelectedBiome();
+const bSahara = (currentBiome() == "generic/sahara");
+const bArctic = (currentBiome() == "generic/arctic");
+
+var tShore = g_Terrains.water;
+if (bArctic)
+	tShore = "alpine_snow_01"
 
 const tMainTerrain = g_Terrains.mainTerrain;
 const tForestFloor1 = g_Terrains.forestFloor1;
@@ -62,7 +68,6 @@ var clRock = g_Map.createTileClass();
 var clMetal = g_Map.createTileClass();
 var clFood = g_Map.createTileClass();
 var clBaseResource = g_Map.createTileClass();
-var clLand = g_Map.createTileClass();
 var clWater = g_Map.createTileClass();
 
 const mapBounds = g_Map.getBounds();
@@ -95,9 +100,10 @@ function placeMine(position, centerEntity,
 			randomAngle());
 }
 
-initTileClasses(["shoreline", "isthmus"]);
+initTileClasses(["shoreline", "isthmus", "ice"]);
 var clShoreline = g_TileClasses.shoreline;
 var clIsthmus = g_TileClasses.isthmus;
+var clIce = g_TileClasses.ice;
 
 g_Map.log("Loading hill heightmap");
 createArea(
@@ -111,11 +117,12 @@ createArea(
 		minHeightSource,
 		maxHeightSource));
 
-const heightSeaGround = heightScale(-4);
-const heightReedsMin = heightScale(-2);
-const heightReedsMax = heightScale(-0.5);
+const heightLand = heightScale(0.6);
+const heightSeaGround = heightScale(0.05);
+const heightShore = heightScale(0.4);
 const heightWaterLevel = heightScale(0);
-const heightShoreline = 0.5;
+if (bSahara)
+	setWaterHeight(heightWaterLevel + heightScale(SEA_LEVEL * 0.6));
 
 g_Map.log("Widening and marking the Isthmus");
 /**
@@ -134,7 +141,7 @@ createArea(
 	new ClumpPlacer(diskArea(scaleByMapSize(6, 20)), 0.6, 0.6, Infinity, mapCenter),
 	[
 		new TileClassPainter(clIsthmus),
-		new SmoothElevationPainter(ELEVATION_SET, heightWaterLevel + 5, 10)
+		new SmoothElevationPainter(ELEVATION_SET, heightSeaGround + 5, 10)
 	]);
 
 g_Map.log("Marking water");
@@ -143,20 +150,71 @@ createArea(
 	new TileClassPainter(clWater),
 	new HeightConstraint(-Infinity, heightWaterLevel));
 
-g_Map.log("Marking land");
-createArea(
-	new DiskPlacer(fractionToTiles(0.5), mapCenter),
-	new TileClassPainter(clLand),
-	avoidClasses(clWater, 0));
+if (!bArctic) {
+	g_Map.log("Painting shoreline");
+	createArea(
+		new MapBoundsPlacer(),
+		[
+			new TerrainPainter(tShore),
+			new TileClassPainter(clShoreline)
+		],
+		new HeightConstraint(-Infinity, heightShore));
+}
+else {
+	g_Map.log("Freezing water");
+	createArea(
+		new MapBoundsPlacer(),
+		[
+			new TerrainPainter("alpine_ice_01"),
+			new TileClassPainter(clIce),
+			new SmoothElevationPainter(ELEVATION_SET, heightSeaGround - 0.1, 0)
+		],
+		stayClasses(clWater, 0));
 
-g_Map.log("Painting shoreline");
-createArea(
-	new MapBoundsPlacer(),
-	[
-		new TerrainPainter(g_Terrains.water),
-		new TileClassPainter(clShoreline)
-	],
-	new HeightConstraint(-Infinity, heightShoreline));
+	createAreas(
+/**
+ * Generates a more random clump of points. It randomly creates circles around the edges of the current clump.s
+ *
+ * @param {number} minRadius - minimum radius of the circles.
+ * @param {number} maxRadius - maximum radius of the circles.
+ * @param {number} numCircles - number of circles.
+ * @param {number} [failFraction] - Percentage of place attempts allowed to fail.
+ * @param {Vector2D} [centerPosition]
+ * @param {number} [maxDistance] - Farthest distance from the center.
+ * @param {number[]} [queue] - When given, uses these radiuses for the first circles.
+ */
+		new ChainPlacer(
+			1,
+			3,
+			scaleByMapSize(8, 20),
+			0.3),
+		[
+			new ElevationPainter(-6)
+		],
+		stayClasses(clWater, 2),
+		scaleByMapSize(6, 24)
+	);
+
+	createBumps(
+		stayClasses(
+			clIce, 0,
+			),
+		scaleByMapSize(40, 60),
+		1,
+		4,
+		Math.floor(scaleByMapSize(2, 5)), // spread
+		0,
+		heightShore
+		);
+
+	paintTerrainBasedOnHeight(
+		heightSeaGround,
+		heightShore + 0.1,
+		Elevation_ExcludeMin_ExcludeMax,
+		tShore
+		);
+}
+
 Engine.SetProgress(30);
 
 var playerIDs = sortAllPlayers();
@@ -168,7 +226,7 @@ var playerPosition = playerPlacementArcs(
 	0.2 * Math.PI,
 	0.9 * Math.PI);
 
-const initBaseHeight = heightWaterLevel;
+const initBaseHeight = heightLand;
 const heightHill = 25;
 var playerHillRadius = defaultPlayerBaseRadius() / (isNomad() ? 1.5 : 1) * 1.2;
 g_Map.log("Flatten the initial CC area");
@@ -207,9 +265,9 @@ for (let position of playerPosition)
 {
 	createArea(
 		// new ClumpPlacer(diskArea(playerHillRadius), 0.95, 0.6, Infinity, position),
-		new ClumpPlacer(diskArea(playerHillRadius), 0.95, 0.1, Infinity, position),
+		new ClumpPlacer(diskArea(playerHillRadius), 0.95, 0.05, Infinity, position),
 		[
-			new SmoothElevationPainter(ELEVATION_SET, heightHill, 2),
+			new SmoothElevationPainter(ELEVATION_SET, heightHill, 4),
 		]);
 
 	let angle = position.angleTo(mapCenter) - Math.PI * 0.5;
@@ -241,7 +299,7 @@ createArea(
 	],
 	[
 		avoidClasses(clWater, 2),
-		new SlopeConstraint(2, Infinity)
+		new SlopeConstraint(3, Infinity)
 	]);
 
 placePlayerBases({
@@ -378,24 +436,33 @@ createStragglerTrees(
 	clForest,
 	stragglerTrees);
 
-g_Map.log("Creating fish");
-createObjectGroups(
-	new SimpleGroup([new SimpleObject(oFish, 1, 1, 0, 1)], true, clFood),
-	0,
-	[
-		avoidClasses(clFood, 10),
-		stayClasses(clWater, 4),
-		new HeightConstraint(-Infinity, heightWaterLevel)
-	],
-	scaleByMapSize(8, 32));
+if (!bArctic) {
+	g_Map.log("Creating fish");
+	createObjectGroups(
+		new SimpleGroup([new SimpleObject(oFish, 1, 1, 0, 1)], true, clFood),
+		0,
+		[
+			avoidClasses(clFood, 10),
+			new HeightConstraint(-Infinity, heightWaterLevel - 1)
+		],
+		scaleByMapSize(8, 32));
+}
 
 placePlayersNomad(clPlayer, avoidClasses(clWater, 5, clForest, 1, clMetal, 4, clRock, 4, clHill, 4, clFood, 2));
 
-setWaterHeight(heightWaterLevel + SEA_LEVEL);
-setWaterColor(0.120,0.125,0.221);
 setWaterTint(0.120, 0.125,0.221);
-setWaterWaviness(randIntInclusive(2, 8));
+
+if (!bArctic) {
+	setWaterWaviness(randIntInclusive(2, 8));
+	setWaterColor(0.120,0.125,0.221);
+	setWaterType("ocean");
+}
+else {
+	setWaterWaviness(3);
+	setWaterColor(0.0784314, 0.237059, 0.299608);
+	setWaterType("lake");
+}
+
 setWaterMurkiness(.93);
-setWaterType("ocean");
 
 g_Map.ExportMap();

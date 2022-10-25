@@ -1,3 +1,5 @@
+[![Build Pyromod](https://github.com/0ad-matters/community-maps-2/actions/workflows/release_pyromod.yml/badge.svg)](https://github.com/0ad-matters/community-maps-2/actions/workflows/release_pyromod.yml)
+
 # 0 A.D. Community Maps 2
 
 (Forked from [community maps](https://github.com/cwrtl/community_maps))
@@ -40,6 +42,7 @@ of this repo.
 
 | Map Name | Author | Link | Publication Date |
 |----------|--------|------|------------------|
+| Conquest of Hispania | perfecto25 | | 2022-10-17 
 | The Valley of Forgotten Temple | [Lion.Kanzen](https://wildfiregames.com/forum/profile/13202-lionkanzen/) | [Forum](https://wildfiregames.com/forum/topic/81151-skirmish-map-valley-of-forgotten-temple-01-4-players-map/) | 2022-05-23 |
 | Chess | [Jammyjamjamman](https://wildfiregames.com/forum/profile/33845-jammyjamjamman/) | [Forum](https://wildfiregames.com/forum/topic/61013-chess-map/) | 2021-10-23 |
 | Cliffs of Carnage|[andy5995](https://wildfiregames.com/forum/profile/21632-andy5995/)|[Forum](https://wildfiregames.com/forum/topic/30590-cliffs-of-carnage-new-4v4-pvp-map/)|2020-10-02|
@@ -65,6 +68,8 @@ of this repo.
 
 | Map Name | Author | Link | Publication Date |
 |----------|--------|------|------------------|
+| Siege of Masada | perfecto25 | | 2022-09-07 |
+| Conquest of Caledonia | perfecto25 |  |  2022-09-04 |
 | The Limes | [nifa](https://wildfiregames.com/forum/profile/33088-nifa/) | [Forum](https://wildfiregames.com/forum/topic/36065-new-scenario-map-the-limes/) | 2021-02-02 |
 | Asian Campaign III a.C. | [imperium](https://wildfiregames.com/forum/index.php?/profile/21662-imperium/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/25958-new-map-20-asia/) | 2019-05-12 |
 | Mappa Europea III Secolo a.C. | [imperium](https://wildfiregames.com/forum/index.php?/profile/21662-imperium/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/25413-new-map-europe/) | 2019-02-26 |

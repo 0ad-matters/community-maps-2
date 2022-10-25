@@ -1,7 +1,7 @@
 {
 	"settings" : {
 		"Name" : "Yekaterinaville",
-		"Script" : "yekaterinaville.js",
+		"Script" : "mainland_rectangled.js",
 		"Description" : "A typical map with rivers along the side.",
 		"Preview" : "yekaterinaville.png",
 		"SupportedBiomes": "generic/",
