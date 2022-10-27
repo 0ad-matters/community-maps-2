@@ -47,7 +47,6 @@
   "PlayerData": [
     "",
     {
-      "Civ": "athen",
       "StartingCamera": {
         "Position": {
           "x": 110.477,
@@ -62,7 +61,6 @@
       }
     },
     {
-      "Civ": "cart",
       "StartingCamera": {
         "Position": {
           "x": 564.148,
