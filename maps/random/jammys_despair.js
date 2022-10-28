@@ -171,7 +171,7 @@ for (let passes = 0; passes < 6; passes++)
 		],
 		[
 			avoidClasses(clPlayer, 24, clLake, 12),
-			new SlopeConstraint(-Infinity, heightLand)
+			new HeightConstraint(heightLand, heightLand + 2)
 		],
 		2
 	);
@@ -198,7 +198,7 @@ for (let passes = 0; passes < numLakes; passes++)
 		],
 		[
 			avoidClasses(clPath, 0, clPlayer, 24, clLake, 12),
-			new SlopeConstraint(-Infinity, heightLand)
+			new HeightConstraint(heightLand, heightLand + 2)
 		],
 		1
 	);
