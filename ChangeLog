@@ -1,3 +1,11 @@
+2022-10-27
+
+    * remove Civ presets from six skirmish maps
+
+2022-10-25
+
+    * skirmishes/{a_path_beyond_ii_8p , x_8p}: add new maps by @Grapjas93
+
 2022-10-24
 
     * random/carpathian.js:replace with newer version
