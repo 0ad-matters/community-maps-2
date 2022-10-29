@@ -123,7 +123,8 @@ if (!isNomad())
 			[
 				new SmoothElevationPainter(ELEVATION_SET, heightLand, 0),
 				new SmoothElevationPainter(ELEVATION_MODIFY, heightScale(heightMapCenter), 50),
-				new TileClassPainter(clPath)
+				new TileClassPainter(clPath),
+				new TerrainPainter(tRoad),
 			]);
 	}
 }
@@ -300,7 +301,14 @@ createLayeredPatches(
  [scaleByMapSize(3, 6), scaleByMapSize(5, 10), scaleByMapSize(8, 21)],
  [[tMainTerrain,tTier1Terrain],[tTier1Terrain,tTier2Terrain], [tTier2Terrain,tTier3Terrain]],
  [1, 1],
- avoidClasses(clLake, 1, clForest, 0, clHill, 0, clDirt, 5, clPlayer, 12),
+ avoidClasses(
+	clLake, 1,
+	clForest, 0,
+	clHill, 0,
+	clDirt, 5,
+	clPlayer, 12,
+	clPath, 0
+	),
  scaleByMapSize(15, 45),
  clDirt);
 
@@ -308,7 +316,14 @@ g_Map.log("Creating grass patches");
 createPatches(
  [scaleByMapSize(2, 4), scaleByMapSize(3, 7), scaleByMapSize(5, 15)],
  tTier4Terrain,
- avoidClasses(clLake, 1, clForest, 0, clHill, 0, clDirt, 5, clPlayer, 12),
+ avoidClasses(
+	clLake, 1,
+	clForest, 0,
+	clHill, 0,
+	clDirt, 5,
+	clPlayer, 12,
+	clPath, 0
+	),
  scaleByMapSize(15, 45),
  clDirt);
 Engine.SetProgress(55);
@@ -358,7 +373,14 @@ createDecoration(
 		planetm * scaleByMapSize(13, 200),
 		planetm * scaleByMapSize(13, 200)
 	],
-	avoidClasses(clForest, 0, clPlayer, 0, clHill, 0, clLake, 1));
+	avoidClasses(
+		clForest, 0,
+		clPlayer, 0,
+		clHill, 0,
+		clLake, 1,
+		clPath, 0
+		)
+	);
 
 Engine.SetProgress(70);
 
@@ -390,7 +412,16 @@ Engine.SetProgress(85);
 
 createStragglerTrees(
 	[oTree1, oTree2, oTree4, oTree3],
-	avoidClasses(clLake, 2, clForest, 8, clHill, 4, clPlayer, 12, clMetal, 6, clRock, 6, clFood, 1),
+	avoidClasses(
+		clLake, 2,
+		clForest, 8,
+		clHill, 4,
+		clPlayer, 12,
+		clMetal, 1,
+		clRock, 1,
+		clFood, 1,
+		clPath, 0
+		),
 	clForest,
 	stragglerTrees);
 
