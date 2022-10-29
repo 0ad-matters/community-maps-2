@@ -42,11 +42,11 @@ of this repo.
 
 | Map Name | Author | Link | Publication Date |
 |----------|--------|------|------------------|
-| A Path Beyond II | Grapjas93 | | 2022-10-25
-| X | [Grapjas93](https://github.com/Grapjas93) | | 2022-10-25
 | Conquest of Hispania | perfecto25 | | 2022-10-17
 | The Valley of Forgotten Temple | [Lion.Kanzen](https://wildfiregames.com/forum/profile/13202-lionkanzen/) | [Forum](https://wildfiregames.com/forum/topic/81151-skirmish-map-valley-of-forgotten-temple-01-4-players-map/) | 2022-05-23 |
 | Chess | [Jammyjamjamman](https://wildfiregames.com/forum/profile/33845-jammyjamjamman/) | [Forum](https://wildfiregames.com/forum/topic/61013-chess-map/) | 2021-10-23 |
+| A Path Beyond II | [Grapjas](https://github.com/Grapjas93) | [Forum](https://wildfiregames.com/forum/topic/35913-skirmish-map-a-path-beyond-ii) | 2021-01-29
+| X | [Grapjas](https://github.com/Grapjas93) | [Forum](https://wildfiregames.com/forum/topic/31711-skirmish-map-x-~balanced) | 2020-10-17
 | Cliffs of Carnage|[andy5995](https://wildfiregames.com/forum/profile/21632-andy5995/)|[Forum](https://wildfiregames.com/forum/topic/30590-cliffs-of-carnage-new-4v4-pvp-map/)|2020-10-02|
 | Caribbean Island (6)|[Marcus Brutus Bombastus](https://wildfiregames.com/forum/index.php?/profile/30405-marcus-brutus-bombastus/)|[Forum](https://wildfiregames.com/forum/index.php?/topic/27363-first-try-caribbean-island/)|2019-12-17|
 | Northern Islands (4) | [Scarecrow](https://wildfiregames.com/forum/index.php?/profile/29189-scarecrow/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/25698-atlas-map-northern-islands-4/) | 2019-04-18 |
