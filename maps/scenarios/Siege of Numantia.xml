@@ -3318,203 +3318,203 @@
 			<Actor seed="45052"/>
 		</Entity>
 		<Entity uid="774">
-			<Template>gaia/fruit/olive</Template>
+			<Template>gaia/tree/olive</Template>
 			<Player>0</Player>
 			<Position x="581.86237" z="60.26378"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="30420"/>
 		</Entity>
 		<Entity uid="775">
-			<Template>gaia/fruit/olive</Template>
+			<Template>gaia/tree/olive</Template>
 			<Player>0</Player>
 			<Position x="643.00306" z="75.99195"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="18808"/>
 		</Entity>
 		<Entity uid="776">
-			<Template>gaia/fruit/olive</Template>
+			<Template>gaia/tree/olive</Template>
 			<Player>0</Player>
 			<Position x="815.63215" z="247.65961"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="44722"/>
 		</Entity>
 		<Entity uid="777">
-			<Template>gaia/fruit/olive</Template>
+			<Template>gaia/tree/olive</Template>
 			<Player>0</Player>
 			<Position x="824.23102" z="198.37366"/>
 			<Orientation y="2.12192"/>
 			<Actor seed="57450"/>
 		</Entity>
 		<Entity uid="778">
-			<Template>gaia/fruit/olive</Template>
+			<Template>gaia/tree/olive</Template>
 			<Player>0</Player>
 			<Position x="855.98035" z="189.27134"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="48238"/>
 		</Entity>
 		<Entity uid="780">
-			<Template>gaia/fruit/olive</Template>
+			<Template>gaia/tree/olive</Template>
 			<Player>0</Player>
 			<Position x="891.60932" z="343.75696"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="1856"/>
 		</Entity>
 		<Entity uid="781">
-			<Template>gaia/fruit/olive</Template>
+			<Template>gaia/tree/olive</Template>
 			<Player>0</Player>
 			<Position x="833.73462" z="560.94452"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="15406"/>
 		</Entity>
 		<Entity uid="782">
-			<Template>gaia/fruit/olive</Template>
+			<Template>gaia/tree/olive</Template>
 			<Player>0</Player>
 			<Position x="935.92438" z="514.35438"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="32388"/>
 		</Entity>
 		<Entity uid="783">
-			<Template>gaia/fruit/olive</Template>
+			<Template>gaia/tree/olive</Template>
 			<Player>0</Player>
 			<Position x="907.85065" z="550.60859"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="6648"/>
 		</Entity>
 		<Entity uid="784">
-			<Template>gaia/fruit/olive</Template>
+			<Template>gaia/tree/olive</Template>
 			<Player>0</Player>
 			<Position x="896.37989" z="558.2417"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="45580"/>
 		</Entity>
 		<Entity uid="785">
-			<Template>gaia/fruit/olive</Template>
+			<Template>gaia/tree/olive</Template>
 			<Player>0</Player>
 			<Position x="673.23804" z="802.5102"/>
 			<Orientation y="1.60061"/>
 			<Actor seed="29924"/>
 		</Entity>
 		<Entity uid="786">
-			<Template>gaia/fruit/olive</Template>
+			<Template>gaia/tree/olive</Template>
 			<Player>0</Player>
 			<Position x="769.63184" z="801.2829"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="44036"/>
 		</Entity>
 		<Entity uid="787">
-			<Template>gaia/fruit/olive</Template>
+			<Template>gaia/tree/olive</Template>
 			<Player>0</Player>
 			<Position x="787.41785" z="803.39228"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="42256"/>
 		</Entity>
 		<Entity uid="788">
-			<Template>gaia/fruit/olive</Template>
+			<Template>gaia/tree/olive</Template>
 			<Player>0</Player>
 			<Position x="779.14075" z="864.72455"/>
 			<Orientation y="0.0326"/>
 			<Actor seed="1682"/>
 		</Entity>
 		<Entity uid="789">
-			<Template>gaia/fruit/olive</Template>
+			<Template>gaia/tree/olive</Template>
 			<Player>0</Player>
 			<Position x="784.86152" z="894.33332"/>
 			<Orientation y="2.09304"/>
 			<Actor seed="1142"/>
 		</Entity>
 		<Entity uid="790">
-			<Template>gaia/fruit/olive</Template>
+			<Template>gaia/tree/olive</Template>
 			<Player>0</Player>
 			<Position x="833.45386" z="856.34626"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="2660"/>
 		</Entity>
 		<Entity uid="791">
-			<Template>gaia/fruit/olive</Template>
+			<Template>gaia/tree/olive</Template>
 			<Player>0</Player>
 			<Position x="696.7649" z="583.68488"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="17706"/>
 		</Entity>
 		<Entity uid="792">
-			<Template>gaia/fruit/olive</Template>
+			<Template>gaia/tree/olive</Template>
 			<Player>0</Player>
 			<Position x="744.90998" z="578.73798"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="19724"/>
 		</Entity>
 		<Entity uid="793">
-			<Template>gaia/fruit/olive</Template>
+			<Template>gaia/tree/olive</Template>
 			<Player>0</Player>
 			<Position x="641.12751" z="952.18616"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="45860"/>
 		</Entity>
 		<Entity uid="794">
-			<Template>gaia/fruit/olive</Template>
+			<Template>gaia/tree/olive</Template>
 			<Player>0</Player>
 			<Position x="542.35773" z="984.00818"/>
 			<Orientation y="1.64423"/>
 			<Actor seed="38020"/>
 		</Entity>
 		<Entity uid="795">
-			<Template>gaia/fruit/olive</Template>
+			<Template>gaia/tree/olive</Template>
 			<Player>0</Player>
 			<Position x="176.87012" z="739.82862"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="36558"/>
 		</Entity>
 		<Entity uid="796">
-			<Template>gaia/fruit/olive</Template>
+			<Template>gaia/tree/olive</Template>
 			<Player>0</Player>
 			<Position x="252.5366" z="829.86091"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="47250"/>
 		</Entity>
 		<Entity uid="797">
-			<Template>gaia/fruit/olive</Template>
+			<Template>gaia/tree/olive</Template>
 			<Player>0</Player>
 			<Position x="132.19678" z="779.87842"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="38350"/>
 		</Entity>
 		<Entity uid="798">
-			<Template>gaia/fruit/olive</Template>
+			<Template>gaia/tree/olive</Template>
 			<Player>0</Player>
 			<Position x="121.13898" z="752.39148"/>
 			<Orientation y="-0.02048"/>
 			<Actor seed="33124"/>
 		</Entity>
 		<Entity uid="799">
-			<Template>gaia/fruit/olive</Template>
+			<Template>gaia/tree/olive</Template>
 			<Player>0</Player>
 			<Position x="141.30701" z="810.01618"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="64544"/>
 		</Entity>
 		<Entity uid="800">
-			<Template>gaia/fruit/olive</Template>
+			<Template>gaia/tree/olive</Template>
 			<Player>0</Player>
 			<Position x="72.61976" z="732.35853"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="64840"/>
 		</Entity>
 		<Entity uid="801">
-			<Template>gaia/fruit/olive</Template>
+			<Template>gaia/tree/olive</Template>
 			<Player>0</Player>
 			<Position x="139.42371" z="314.0323"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="43036"/>
 		</Entity>
 		<Entity uid="802">
-			<Template>gaia/fruit/olive</Template>
+			<Template>gaia/tree/olive</Template>
 			<Player>0</Player>
 			<Position x="154.58729" z="329.70197"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="5540"/>
 		</Entity>
 		<Entity uid="803">
-			<Template>gaia/fruit/olive</Template>
+			<Template>gaia/tree/olive</Template>
 			<Player>0</Player>
 			<Position x="198.95893" z="455.67695"/>
 			<Orientation y="2.35621"/>
@@ -10059,7 +10059,7 @@
 			<Actor seed="7572"/>
 		</Entity>
 		<Entity uid="1802">
-			<Template>gaia/fruit/olive</Template>
+			<Template>gaia/tree/olive</Template>
 			<Player>0</Player>
 			<Position x="252.7815" z="311.8545"/>
 			<Orientation y="2.35621"/>

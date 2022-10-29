@@ -1802,21 +1802,21 @@
 			<Actor seed="64800"/>
 		</Entity>
 		<Entity uid="286">
-			<Template>gaia/fruit/olive</Template>
+			<Template>gaia/tree/olive</Template>
 			<Player>0</Player>
 			<Position x="152.20102" z="189.8722"/>
 			<Orientation y="-1.91376"/>
 			<Actor seed="33384"/>
 		</Entity>
 		<Entity uid="287">
-			<Template>gaia/fruit/olive</Template>
+			<Template>gaia/tree/olive</Template>
 			<Player>0</Player>
 			<Position x="208.56891" z="363.5836"/>
 			<Orientation y="-0.16465"/>
 			<Actor seed="41552"/>
 		</Entity>
 		<Entity uid="288">
-			<Template>gaia/fruit/olive</Template>
+			<Template>gaia/tree/olive</Template>
 			<Player>0</Player>
 			<Position x="377.45612" z="276.86683"/>
 			<Orientation y="1.43168"/>

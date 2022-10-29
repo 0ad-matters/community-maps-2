@@ -1300,7 +1300,7 @@
 			<Actor seed="35888"/>
 		</Entity>
 		<Entity uid="237">
-			<Template>gaia/fruit/olive</Template>
+			<Template>gaia/tree/olive</Template>
 			<Player>0</Player>
 			<Position x="138.33307" z="139.88279"/>
 			<Orientation y="-1.86048"/>
@@ -4562,7 +4562,7 @@
 			<Actor seed="40204"/>
 		</Entity>
 		<Entity uid="767">
-			<Template>gaia/fruit/olive</Template>
+			<Template>gaia/tree/olive</Template>
 			<Player>0</Player>
 			<Position x="358.42725" z="331.4066"/>
 			<Orientation y="-1.86048"/>
