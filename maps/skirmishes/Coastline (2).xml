@@ -4207,28 +4207,28 @@
 			<Actor seed="56796"/>
 		</Entity>
 		<Entity uid="680">
-			<Template>gaia/fruit/olive</Template>
+			<Template>gaia/tree/olive</Template>
 			<Player>0</Player>
 			<Position x="77.07375" z="527.95124"/>
 			<Orientation y="1.08193"/>
 			<Actor seed="5248"/>
 		</Entity>
 		<Entity uid="681">
-			<Template>gaia/fruit/olive</Template>
+			<Template>gaia/tree/olive</Template>
 			<Player>0</Player>
 			<Position x="646.68067" z="213.28586"/>
 			<Orientation y="0.30558"/>
 			<Actor seed="31794"/>
 		</Entity>
 		<Entity uid="682">
-			<Template>gaia/fruit/olive</Template>
+			<Template>gaia/tree/olive</Template>
 			<Player>0</Player>
 			<Position x="591.18964" z="430.11182"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="58276"/>
 		</Entity>
 		<Entity uid="683">
-			<Template>gaia/fruit/olive</Template>
+			<Template>gaia/tree/olive</Template>
 			<Player>0</Player>
 			<Position x="408.99952" z="587.64838"/>
 			<Orientation y="2.35621"/>
