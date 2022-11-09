@@ -70,6 +70,7 @@ of this repo.
 
 | Map Name | Author | Link | Publication Date |
 |----------|--------|------|------------------|
+| Troy | perfecto25 | | 2022-10-30 |
 | Siege of Masada | perfecto25 | | 2022-09-07 |
 | Conquest of Caledonia | perfecto25 |  |  2022-09-04 |
 | The Limes | [nifa](https://wildfiregames.com/forum/profile/33088-nifa/) | [Forum](https://wildfiregames.com/forum/topic/36065-new-scenario-map-the-limes/) | 2021-02-02 |
