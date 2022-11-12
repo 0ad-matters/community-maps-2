@@ -1,6 +1,12 @@
 2022-11-12
 
     * skirmishes/Agean Archipelago:add new map by Yavin
+    * Some random maps now have ice instead of water if Arctic biome is selected
+      * Corinthian Isthmus II
+      * Yekaterinaville
+      * Homer's Delight
+      * Jammy's Despair
+    * release v0.26.5
 
 2022-11-09
 
