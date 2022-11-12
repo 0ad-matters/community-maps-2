@@ -7,6 +7,8 @@ Engine.LoadLibrary("rmgen-common");
 Engine.LoadLibrary("rmbiome");
 
 setSelectedBiome();
+const bSahara = (currentBiome() == "generic/sahara");
+const bArctic = (currentBiome() == "generic/arctic");
 
 const tMainTerrain = g_Terrains.mainTerrain;
 const tForestFloor1 = g_Terrains.forestFloor1;
@@ -19,8 +21,8 @@ const tHill = g_Terrains.hill;
 const tRoad = g_Terrains.road;
 const tRoadWild = g_Terrains.roadWild;
 const tTier4Terrain = g_Terrains.tier4Terrain;
-const tShore = g_Terrains.shore;
-const tWater = g_Terrains.water;
+const tShore = !bArctic ? g_Terrains.shore : "alpine_snow_01";
+const tWater = !bArctic ? g_Terrains.water : "alpine_ice_01";
 
 const oTree1 = g_Gaia.tree1;
 const oTree2 = g_Gaia.tree2;
@@ -46,8 +48,14 @@ const aBushSmall = g_Decoratives.bushSmall;
 const pForest1 = [tForestFloor2 + TERRAIN_SEPARATOR + oTree1, tForestFloor2 + TERRAIN_SEPARATOR + oTree2, tForestFloor2];
 const pForest2 = [tForestFloor1 + TERRAIN_SEPARATOR + oTree4, tForestFloor1 + TERRAIN_SEPARATOR + oTree5, tForestFloor1];
 
-const heightSeaGround = -5;
-const heightLand = 3;
+const heightScale = num => num * g_MapSettings.Size / 320;
+const heightLand = heightScale(3);
+const heightShore = heightScale(2);
+var heightSeaGround = bArctic ? heightScale(.05) : heightScale(-5);
+const heightWaterLevel = heightScale(0);
+
+if (bSahara)
+	setWaterHeight(SEA_LEVEL - heightScale(4.5));
 
 var g_Map = new RandomMap(heightSeaGround, tWater);
 
@@ -62,6 +70,7 @@ var clDirt = g_Map.createTileClass();
 var clRock = g_Map.createTileClass();
 var clMetal = g_Map.createTileClass();
 var clFood = g_Map.createTileClass();
+var clFish = g_Map.createTileClass();
 var clBaseResource = g_Map.createTileClass();
 var clLand = g_Map.createTileClass();
 
@@ -90,19 +99,45 @@ createArea(
  * @param {number} [failfraction] - Percentage of place attempts allowed to fail.
  * @param {Vector2D} [centerPosition] - Tile coordinates of placer center.
  */
-// This doesn't actually mark the entire isthmus, but enough that we
-// can have trees and rocks avoid it, thereby preventing a bottleneck.
 createArea(
-	new ClumpPlacer(diskArea(scaleByMapSize(6,56)), 0.5, 0.6, Infinity, mapCenter),
+	new ClumpPlacer(diskArea(scaleByMapSize(6,56)), 0.5, 0.6, 5, mapCenter),
 	[
-		new SmoothElevationPainter(ELEVATION_SET, heightSeaGround - 20, 10)
+		new SmoothElevationPainter(ELEVATION_SET, heightSeaGround, 2),
+		new TerrainPainter(tWater)
 	]);
 
 g_Map.log("Marking land");
 createArea(
 	new MapBoundsPlacer(),
 	new TileClassPainter(clLand),
-	new HeightConstraint(heightLand + heightSeaGround, Infinity));
+	new HeightConstraint(heightWaterLevel + 0.1, Infinity));
+
+if (bArctic) {
+	createAreas(
+		new ChainPlacer(
+			1,
+			4,
+			scaleByMapSize(16, 40),
+			0.3),
+		[
+			new ElevationPainter(-6)
+		],
+		avoidClasses(clLand, 0),
+		scaleByMapSize(6, 24)
+	);
+
+	createBumps(
+		avoidClasses(
+			clLand, 0,
+			),
+		scaleByMapSize(40, 60),
+		1,
+		4,
+		Math.floor(scaleByMapSize(2, 5)), // spread
+		0,
+		heightShore
+		);
+}
 
 var [playerIDs, playerPosition] = playerPlacementCircle(fractionToTiles(0.25));
 
@@ -124,9 +159,24 @@ for (let i = 0; i < numPlayers; ++i)
 
 Engine.SetProgress(20);
 
-paintTerrainBasedOnHeight(3, 4, 3, tMainTerrain);
-paintTerrainBasedOnHeight(1, 3, 0, tShore);
-paintTerrainBasedOnHeight(-8, 1, 2, tWater);
+paintTerrainBasedOnHeight(
+	heightShore,
+	Infinity,
+	Elevation_ExcludeMin_ExcludeMax,
+	tMainTerrain
+	);
+paintTerrainBasedOnHeight(
+	heightSeaGround + 0.1,
+	heightShore,
+	Elevation_ExcludeMin_ExcludeMax,
+	tShore
+	);
+paintTerrainBasedOnHeight(
+	heightWaterLevel - .05,
+	heightSeaGround,
+	Elevation_ExcludeMin_ExcludeMax,
+	tWater
+	)
 
 placePlayerBases({
 	"PlayerPlacement": [playerIDs, playerPosition],
@@ -256,15 +306,15 @@ createFood(
 	[avoidClasses(clForest, 0, clPlayer, 20, clHill, 1, clFood, 10), stayClasses(clLand, 5)],
 	clFood);
 
-createFood(
+g_Map.log("Creating fish");
+createObjectGroups(
+	new SimpleGroup([new SimpleObject(oFish, 1, 1, 0, 1)], true, clFish),
+	0,
 	[
-		[new SimpleObject(oFish, 2, 3, 0, 2)]
+		avoidClasses(clFish, 10),
+		new HeightConstraint(-Infinity, heightWaterLevel - 1)
 	],
-	[
-		25 * numPlayers
-	],
-	avoidClasses(clLand, 2, clFood, 20),
-	clFood);
+	scaleByMapSize(8, 32));
 
 Engine.SetProgress(85);
 
@@ -278,7 +328,7 @@ placePlayersNomad(
 	clPlayer,
 	[stayClasses(clLand, 4), avoidClasses(clForest, 1, clMetal, 4, clRock, 4, clHill, 4, clFood, 2)]);
 
-setWaterWaviness(1.0);
+setWaterWaviness(randIntInclusive(2,8));
 setWaterType("ocean");
 
 g_Map.ExportMap();
