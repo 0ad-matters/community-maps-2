@@ -21,7 +21,7 @@ jobs:
       MOD_VERSION: ${{ github.sha }}
     steps:
     - uses: actions/checkout@v3
-    - uses:  0ad-matters/gh-action-build-pyromod@v1
+    - uses: 0ad-matters/gh-action-build-pyromod@v1
       with:
         name: ${{ env.MOD_NAME }}
         version: ${{ env.MOD_VERSION }}
@@ -37,7 +37,6 @@ jobs:
     if: ${{ github.ref_type == 'tag' }}
     runs-on: ubuntu-latest
     env:
-      MOD_NAME: ${{ github.repository }}
       MOD_VERSION: ${{ github.ref_name }}
     steps:
     - uses: actions/checkout@v3
