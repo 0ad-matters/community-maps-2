@@ -1,6 +1,7 @@
 var disabledTemplates = (civ) => [
 	"structures/" + civ + "/wonder",
 	"structures/" + civ + "/wallset_stone",
+	"structures/" + civ + "/wallset_palisade",
 	"structures/rome/wallset_siege",
 	"structures/wallset_palisade",
 ];
