@@ -1,0 +1,9 @@
+{
+	"settings" : {
+		"Name" : "Northern Lights II",
+		"Script" : "northern_lights_ii.js",
+		"Description" : "Players start in a tough map to play with scarce wood and dangerous polar animals.",
+		"Preview" : "northern_lights.png",
+		"CircularMap" : true
+	}
+}
