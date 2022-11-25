@@ -20,6 +20,8 @@ const oStoneSmall = "gaia/rock/alpine_small";
 const oMetalLarge = "gaia/ore/alpine_large";
 const oFish = "gaia/fish/generic";
 const oWalrus = "gaia/fauna_walrus";
+const oFruitBush = "gaia/fruit/berry_01";
+const oSheep = "gaia/fauna_sheep";
 const oArcticWolf = "gaia/fauna_wolf_arctic";
 
 const aIceberg = "actor|props/special/eyecandy/iceberg.xml";
@@ -60,11 +62,17 @@ placePlayerBases({
 	],
 	"PlayerTileClass": clPlayer,
 	"BaseResourceClass": clBaseResource,
+	"Walls" : mapSize >= 360,
 	"CityPatch": {
 		"outerTerrain": tRoadWild,
 		"innerTerrain": tRoad
 	},
-	// No chicken, no berries
+	"StartingAnimal": {
+			"template": oSheep,
+	},
+	"Berries": {
+		"template": oFruitBush,
+	},
 	"Mines": {
 		"types": [
 			{ "template": oMetalLarge },
@@ -150,13 +158,13 @@ createAreas(
 );
 
 g_Map.log("Creating forests");
-var [forestTrees, stragglerTrees] = getTreeCounts(100, 625, 0.7);
+var [forestTrees, stragglerTrees] = getTreeCounts(500, 2000, .7);
 var types = [
 	[[tSnowA, tSnowA, tSnowA, tSnowA, pForestD], [tSnowA, tSnowA, tSnowA, pForestD]],
 	[[tSnowA, tSnowA, tSnowA, tSnowA, pForestS], [tSnowA, tSnowA, tSnowA, pForestS]]
 ];
 
-var size = forestTrees / (scaleByMapSize(3,6) * numPlayers);
+var size = forestTrees / (scaleByMapSize(3,24) * numPlayers);
 
 var num = Math.floor(size / types.length);
 for (let type of types)
@@ -166,7 +174,7 @@ for (let type of types)
 			new LayeredPainter(type, [2]),
 			new TileClassPainter(clForest)
 		],
-		avoidClasses(clPlayer, 20, clForest, 20, clHill, 0, clWater, 8),
+		avoidClasses(clPlayer, 20, clForest, 16, clHill, 2, clWater, 4),
 		num);
 
 g_Map.log("Creating iceberg");
@@ -251,7 +259,7 @@ Engine.SetProgress(90);
 
 g_Map.log("Creating sheep");
 group = new SimpleGroup(
-	[new SimpleObject(oArcticWolf, 2,3, 0,2)],
+	[new SimpleObject(oSheep, 2,3, 0,2)],
 	true, clFood
 );
 createObjectGroupsDeprecated(group, 0,
