@@ -13,6 +13,7 @@ const tRoadWild = "new_alpine_citytile";
 const tShoreBlend = "alpine_shore_rocks_icy";
 const tShore = "alpine_shore_rocks";
 const tWater = "alpine_shore_rocks";
+const aSnow = "actor|particle/snow_storm.xml";
 
 const oPine = "gaia/tree/pine_w";
 const oStoneLarge = "gaia/rock/alpine_large";
@@ -51,6 +52,7 @@ var clRock = g_Map.createTileClass();
 var clMetal = g_Map.createTileClass();
 var clFood = g_Map.createTileClass();
 var clBaseResource = g_Map.createTileClass();
+var clSnow = g_Map.createTileClass();
 
 var startAngle = randomAngle();
 
@@ -277,10 +279,20 @@ createObjectGroupsDeprecated(group, 0,
 	25 * numPlayers, 60
 );
 
+
+g_Map.log("Creating snow");
+createObjectGroups(
+	new SimpleGroup([new SimpleObject(aSnow, 1, 1, 1, 4)], true, clSnow),
+	0,
+	avoidClasses(clSnow, 5),
+	scaleByMapSize(20, 60));
+
+
 placePlayersNomad(clPlayer, avoidClasses(clWater, 4, clForest, 1, clMetal, 4, clRock, 4, clHill, 4, clFood, 2, clIsland, 4));
 
 setSunColor(0.6, 0.6, 0.6);
-setSunElevation(Math.PI/ 6);
+setSunElevation(Math.PI/ 1.1);
+// setSkySet("dark");
 
 setWaterColor(0.02, 0.17, 0.52);
 setWaterTint(0.494, 0.682, 0.808);
