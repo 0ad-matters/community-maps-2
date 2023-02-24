@@ -478,7 +478,7 @@ if (true) {
 	}
 
 	if (true) {
-		// random displacement of start and ende of the ridge
+		// random displacement of start and end of the ridge
 		// set this to zero to get a plain view on the math
 		var rndP = 0;
 		// inner free circle (this is already a good value)

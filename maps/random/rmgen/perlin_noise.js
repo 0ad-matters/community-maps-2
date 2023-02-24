@@ -1,11 +1,11 @@
 /*
- *Perlin noise. Returns 1D array list of heights for each point given. With default paramenters returns in the range of [-1,1]
+ *Perlin noise. Returns 1D array list of heights for each point given. With default parameters returns in the range of [-1,1]
  *@param {Array} points - Points
  *@param {Number} frequency - float value >= 1. Noise size, higher value makes noise more compact
  *@param {Number} octaves - int value >= 1Sub noise levels, higher the value gives noise more definition **can be as high as desired while the original frequcny doesn't reach < 1
  *@param {Number} scale - Scale size of the perlin noise (in the three axis) 
  *@param {Number} vertical_scale - Scale size of the perlin noise (in the vertical axis)
- *@param {Bool} positive - Returns only on the range of [0,1] (in the case of default paremeters)
+ *@param {Bool} positive - Returns only on the range of [0,1] (in the case of default parameters)
  *@return {Array}
  */
 function perlin_noise(points, frequency = 10, octaves = 1, scale = 1, vertical_scale = 1, positive = false)
