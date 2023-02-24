@@ -96,7 +96,7 @@
         "g": 128,
         "r": 0
       },
-      "Name": "Team 1 (Trader, See map discription)",
+      "Name": "Team 1 (Trader, See map description)",
       "StartingCamera": {
         "Position": {
           "x": 876.81,
@@ -140,7 +140,7 @@
         "g": 230,
         "r": 230
       },
-      "Name": "Team 2 (Trader, See map discription)",
+      "Name": "Team 2 (Trader, See map description)",
       "Team": 1
     },
     {

@@ -49,10 +49,10 @@ function quadRast(v0, v1, v2, v3, h0, h1, h2, h3, setCondition)
 /**
  * Makes an arc
  * @param {Function} shaper - Returns the height of that point.
- * Is feeded (normalizedAngle, normalizedRadius) as arguemnts.
+ * Is fed (normalizedAngle, normalizedRadius) as arguments.
  * @param {Function} [setCondition] - Returns whether wether place
- * or not that height at the position. Is feeded (point,pointHeight)
- * as arguemnts.
+ * or not that height at the position. Is fed (point,pointHeight)
+ * as arguments.
  */
 function arcRast(center, minRadius, maxRadius, minAngle, maxAngle, shaper, setCondition)
 {
@@ -83,10 +83,10 @@ function arcRast(center, minRadius, maxRadius, minAngle, maxAngle, shaper, setCo
 /**
  * Makes an arc
  * @param {Function} shaper - Returns the height of that point.
- * Is feeded (normalizedAngle) as arguemnts.
+ * Is fed (normalizedAngle) as arguments.
  * @param {Function} [setCondition] - Returns whether wether place
- * or not that height at the position. Is feeded (point,pointHeight)
- * as arguemnts.
+ * or not that height at the position. Is fed (point,pointHeight)
+ * as arguments.
  */
 function spiralRast(center, width, startRadius, endRadius, startAngle, endAngle, shaper, setCondition)
 {

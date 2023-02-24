@@ -52,7 +52,7 @@ function PolygonPlacer(points)
 
 PolygonPlacer.prototype.isInside = function(lines, point)
 {
-	// % 2 returns wheter the number is odd or not
+	// % 2 returns whether the number is odd or not
 	return lines.filter((line) => line.cross(point)).length % 2;
 }
 

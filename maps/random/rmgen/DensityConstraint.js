@@ -74,11 +74,11 @@ DensityDirection.prototype.probability = function(position)
 };
 
 /*
- * Density custom defiend function
+ * Density custom defined function
  */
 function DensityCustom(customFunction, stepDensityFunction = undefined)
 {
-	this.customFunction = cusotmFuntion;
+	this.customFunction = customFunction;
 }
 
 DensityCustom.prototype.probability = function(position)

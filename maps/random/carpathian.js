@@ -51,13 +51,13 @@ var saveDistanceLoop = 2;
 // 	outside forest there still can be trees
 // 	forest are evenly distributed over the map with a certain random displacement
 //	there is a superstructure, that regulates the distribution of forests, outside this superstructure forest become less dense
-// densitityForestMin is the density of forests
-// densitityForestMax is the density elsewhere
+// densityForestMin is the density of forests
+// densityForestMax is the density elsewhere
 // 0.0	no trees, landscape is barren
-// 1.0	normal, troops normaly don't get stuck
+// 1.0	normal, troops normally don't get stuck
 // 5.0	insane dense
-var densitityForestMin = 1.0;
-var densitityForestMax = 2.0;
+var densityForestMin = 1.0;
+var densityForestMax = 2.0;
 // distance between forest-centers (in fields)
 var margin_trees1 = 30;
 // size_trees1 = diameter of a forest
@@ -307,8 +307,8 @@ setSunElevation(0.5 * Math.PI);
 	
 if (true) {
 	// taiga
-	densitityForestMin = 1.0;
-	densitityForestMax = 2.0;
+	densityForestMin = 1.0;
+	densityForestMax = 2.0;
 	// the transition between the textures for low and medium altitude 
 	// is gradual with random favoring one list above the other with rising altitude
 	texture_default = ["polar_tundra", "polar_tundra", "polar_tundra", "alpine_grass_d", "alpine_grass_d_wild", "alpine_grass_e", "alpine_dirt"];
@@ -454,7 +454,7 @@ function renderCell(self, pass) {
 	var dx = self.x - 0.5 * dd, dy = self.y - 0.5 * dd;
 	var w = Math.atan2(dy,dx);
 	var d = Math.sqrt(dx*dx + dy*dy)
-	// parameter 1 is added to the generell height and create some wavyness to the landscape
+	// parameter 1 is added to the general height and create some wavyness to the landscape
 	var par1 = 0;
 	// parameter 2 is added to the edges of the cliffs and make them look not that straight
 	var par2 = 0, par2Raw = 0;
@@ -463,7 +463,7 @@ function renderCell(self, pass) {
 		par2Raw = Math.cos((0.5 + 0.07 * Math.sin(7*w)) * d)
 		par2 = 0.1 * par2Raw;
 		if (0.1 < self.base) {
-			// the surounding of bases are flattened
+			// the surrounding of bases are flattened
 			par1 *= (1.0 - self.base);
 		}
 	}
@@ -719,7 +719,7 @@ function renderCell(self, pass) {
 		}
 		if (pass == 1) {
 			var density = self.forestD;
-			density = densitityForestMin - 1 + 2 * (densitityForestMax - densitityForestMin) * density;
+			density = densityForestMin - 1 + 2 * (densityForestMax - densityForestMin) * density;
 			if (2.0 * Math.random() < self.forest2 + 5.0 * density && self.path < 0.5 && self.base < 0.6) {
 				// the bushy outside
 				var textureT = pickRandom(texture_trees1_outer);
@@ -922,7 +922,7 @@ function AreaMap(mapTypePar, fieldSizePar) {
 					//	active	...
 					//	type	...
 					// 	x,y	Basekoordinates without Rotation
-					//	rx,ry	Koordinates after Random-Displacement without Rotation
+					//	rx,ry	Coordinates after Random-Displacement without Rotation
 					//		the Random-Displacement changes after randomize()
 					//	ra	the amount of randomize, 0 = no Random for this field
 					//	height	after random [0,1]
@@ -1035,7 +1035,7 @@ function AreaMap(mapTypePar, fieldSizePar) {
 	}}}
 
 	this.getElement = function(x,y) {
-		// more precisly: get field (change that name)
+		// more precisely: get field (change that name)
 		var result = null;
 		try {
 			if (typeof field[y] != 'undefined' && typeof field[y][x] != 'undefined') {
@@ -1555,7 +1555,7 @@ function setHillD(ro, roC, index, x, y, owner, elevationLevel) {
  * set brushes with a certain size on the map
  * 		patternnr	distance between two brushes
  * 		brushSize	amount of elements, that are effected
- * 		callback	always takes three elements, x-ccordinate, y-coordinate, distance-value from center of the brush, the distance-value is 1.0 in the center of the brush, and 0.0 at the edge
+ * 		callback	always takes three elements, x-coordinate, y-coordinate, distance-value from center of the brush, the distance-value is 1.0 in the center of the brush, and 0.0 at the edge
  */ 
 
 function setPattern1(patternr, brushSize, callback, randMax) {
@@ -1664,9 +1664,9 @@ function line(x0,y0,x1,y1, callback, parameter) {
  * 	addStart		internal parameter, do not set
  * 	randomDisplacement	add some zigzag, 0.0 = straight line
  * 				good value to start some randomness is 0.1
- * 	targetDist		maximum distance between two points, the algoritm ends, when the distance between two points are below this value
+ * 	targetDist		maximum distance between two points, the algorithm ends, when the distance between two points are below this value
  * 
- * result			an array with 2-typel of x,y-coordiantes
+ * result			an array with 2-typel of x,y-coordinates
  */ 
 function fractalLine(x0,y0,x1,y1, parameter) {
 	var result = [];
