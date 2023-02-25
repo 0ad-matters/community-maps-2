@@ -1858,7 +1858,7 @@
 			<Actor seed="60500"/>
 		</Entity>
 		<Entity uid="314">
-			<Template>structures/hellenic_royal_stoa</Template>
+			<Template>structures/athen/royal_stoa</Template>
 			<Player>3</Player>
 			<Position x="755.93061" z="1437.74549"/>
 			<Orientation y="8.64876"/>
@@ -3482,8 +3482,8 @@
 			<Actor seed="60593"/>
 		</Entity>
 		<Entity uid="556">
-			<Template>structures/unfinished_greek_temple</Template>
-			<Player>3</Player>
+			<Template>gaia/ruins/unfinished_greek_temple</Template>
+			<Player>0</Player>
 			<Position x="713.89972" z="1226.22046"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="22083"/>
@@ -7363,175 +7363,175 @@
 			<Actor seed="65357"/>
 		</Entity>
 		<Entity uid="1216">
-			<Template>actor|flora/trees/lumbardypoplar.xml</Template>
+			<Template>actor|flora/trees/poplar_lombardy.xml</Template>
 			<Position x="592.72248" z="1213.18934"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="44424"/>
 		</Entity>
 		<Entity uid="1217">
-			<Template>actor|flora/trees/lumbardypoplar.xml</Template>
+			<Template>actor|flora/trees/poplar_lombardy.xml</Template>
 			<Position x="581.03205" z="1221.25806"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="12349"/>
 		</Entity>
 		<Entity uid="1218">
-			<Template>actor|flora/trees/lumbardypoplar.xml</Template>
+			<Template>actor|flora/trees/poplar_lombardy.xml</Template>
 			<Position x="604.2823" z="1205.32557"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="22193"/>
 		</Entity>
 		<Entity uid="1219">
-			<Template>actor|flora/trees/lumbardypoplar.xml</Template>
+			<Template>actor|flora/trees/poplar_lombardy.xml</Template>
 			<Position x="616.02692" z="1198.1012"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="56901"/>
 		</Entity>
 		<Entity uid="1220">
-			<Template>actor|flora/trees/lumbardypoplar.xml</Template>
+			<Template>actor|flora/trees/poplar_lombardy.xml</Template>
 			<Position x="627.18982" z="1190.28736"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="53588"/>
 		</Entity>
 		<Entity uid="1221">
-			<Template>actor|flora/trees/lumbardypoplar.xml</Template>
+			<Template>actor|flora/trees/poplar_lombardy.xml</Template>
 			<Position x="646.04554" z="1219.39759"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="46151"/>
 		</Entity>
 		<Entity uid="1222">
-			<Template>actor|flora/trees/lumbardypoplar.xml</Template>
+			<Template>actor|flora/trees/poplar_lombardy.xml</Template>
 			<Position x="635.40516" z="1226.91883"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="47212"/>
 		</Entity>
 		<Entity uid="1223">
-			<Template>actor|flora/trees/lumbardypoplar.xml</Template>
+			<Template>actor|flora/trees/poplar_lombardy.xml</Template>
 			<Position x="622.91773" z="1236.46094"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="48845"/>
 		</Entity>
 		<Entity uid="1224">
-			<Template>actor|flora/trees/lumbardypoplar.xml</Template>
+			<Template>actor|flora/trees/poplar_lombardy.xml</Template>
 			<Position x="609.03834" z="1245.09595"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="42609"/>
 		</Entity>
 		<Entity uid="1225">
-			<Template>actor|flora/trees/lumbardypoplar.xml</Template>
+			<Template>actor|flora/trees/poplar_lombardy.xml</Template>
 			<Position x="635.54334" z="1191.55555"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="53889"/>
 		</Entity>
 		<Entity uid="1226">
-			<Template>actor|flora/trees/lumbardypoplar.xml</Template>
+			<Template>actor|flora/trees/poplar_lombardy.xml</Template>
 			<Position x="641.66761" z="1200.94727"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="16909"/>
 		</Entity>
 		<Entity uid="1227">
-			<Template>actor|flora/trees/lumbardypoplar.xml</Template>
+			<Template>actor|flora/trees/poplar_lombardy.xml</Template>
 			<Position x="649.20496" z="1212.16724"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="17485"/>
 		</Entity>
 		<Entity uid="1228">
-			<Template>actor|flora/trees/lumbardypoplar.xml</Template>
+			<Template>actor|flora/trees/poplar_lombardy.xml</Template>
 			<Position x="655.15455" z="1220.5475"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="18285"/>
 		</Entity>
 		<Entity uid="1229">
-			<Template>actor|flora/trees/lumbardypoplar.xml</Template>
+			<Template>actor|flora/trees/poplar_lombardy.xml</Template>
 			<Position x="661.25348" z="1228.97327"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="34153"/>
 		</Entity>
 		<Entity uid="1230">
-			<Template>actor|flora/trees/lumbardypoplar.xml</Template>
+			<Template>actor|flora/trees/poplar_lombardy.xml</Template>
 			<Position x="667.5788" z="1238.94117"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="37519"/>
 		</Entity>
 		<Entity uid="1231">
-			<Template>actor|flora/trees/lumbardypoplar.xml</Template>
+			<Template>actor|flora/trees/poplar_lombardy.xml</Template>
 			<Position x="610.47242" z="1274.80909"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="14860"/>
 		</Entity>
 		<Entity uid="1232">
-			<Template>actor|flora/trees/lumbardypoplar.xml</Template>
+			<Template>actor|flora/trees/poplar_lombardy.xml</Template>
 			<Position x="614.59125" z="1284.02991"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="26428"/>
 		</Entity>
 		<Entity uid="1233">
-			<Template>actor|flora/trees/lumbardypoplar.xml</Template>
+			<Template>actor|flora/trees/poplar_lombardy.xml</Template>
 			<Position x="620.48743" z="1292.51478"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="19412"/>
 		</Entity>
 		<Entity uid="1234">
-			<Template>actor|flora/trees/lumbardypoplar.xml</Template>
+			<Template>actor|flora/trees/poplar_lombardy.xml</Template>
 			<Position x="625.46052" z="1299.87708"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="22195"/>
 		</Entity>
 		<Entity uid="1235">
-			<Template>actor|flora/trees/lumbardypoplar.xml</Template>
+			<Template>actor|flora/trees/poplar_lombardy.xml</Template>
 			<Position x="630.31525" z="1307.62696"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="29137"/>
 		</Entity>
 		<Entity uid="1237">
-			<Template>actor|flora/trees/lumbardypoplar.xml</Template>
+			<Template>actor|flora/trees/poplar_lombardy.xml</Template>
 			<Position x="644.3379" z="1260.61524"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="25290"/>
 		</Entity>
 		<Entity uid="1238">
-			<Template>actor|flora/trees/lumbardypoplar.xml</Template>
+			<Template>actor|flora/trees/poplar_lombardy.xml</Template>
 			<Position x="656.84992" z="1282.95264"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="52240"/>
 		</Entity>
 		<Entity uid="1239">
-			<Template>actor|flora/trees/lumbardypoplar.xml</Template>
+			<Template>actor|flora/trees/poplar_lombardy.xml</Template>
 			<Position x="746.78522" z="1325.99207"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="60643"/>
 		</Entity>
 		<Entity uid="1240">
-			<Template>actor|flora/trees/lumbardypoplar.xml</Template>
+			<Template>actor|flora/trees/poplar_lombardy.xml</Template>
 			<Position x="760.44013" z="1322.93982"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="23307"/>
 		</Entity>
 		<Entity uid="1241">
-			<Template>actor|flora/trees/lumbardypoplar.xml</Template>
+			<Template>actor|flora/trees/poplar_lombardy.xml</Template>
 			<Position x="783.73707" z="1321.24231"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="39731"/>
 		</Entity>
 		<Entity uid="1242">
-			<Template>actor|flora/trees/lumbardypoplar.xml</Template>
+			<Template>actor|flora/trees/poplar_lombardy.xml</Template>
 			<Position x="803.39728" z="1333.30701"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="64755"/>
 		</Entity>
 		<Entity uid="1243">
-			<Template>actor|flora/trees/lumbardypoplar.xml</Template>
+			<Template>actor|flora/trees/poplar_lombardy.xml</Template>
 			<Position x="811.02411" z="1344.54346"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="49050"/>
 		</Entity>
 		<Entity uid="1244">
-			<Template>actor|flora/trees/lumbardypoplar.xml</Template>
+			<Template>actor|flora/trees/poplar_lombardy.xml</Template>
 			<Position x="856.68366" z="1392.17725"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="61032"/>
 		</Entity>
 		<Entity uid="1245">
-			<Template>actor|flora/trees/lumbardypoplar.xml</Template>
+			<Template>actor|flora/trees/poplar_lombardy.xml</Template>
 			<Position x="839.34388" z="1368.2356"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="27987"/>
@@ -8856,49 +8856,49 @@
 			<Actor seed="19413"/>
 		</Entity>
 		<Entity uid="1462">
-			<Template>actor|flora/trees/lumbardypoplar.xml</Template>
+			<Template>actor|flora/trees/poplar_lombardy.xml</Template>
 			<Position x="624.43866" z="959.0716"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="14312"/>
 		</Entity>
 		<Entity uid="1463">
-			<Template>actor|flora/trees/lumbardypoplar.xml</Template>
+			<Template>actor|flora/trees/poplar_lombardy.xml</Template>
 			<Position x="633.46314" z="975.43293"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="46535"/>
 		</Entity>
 		<Entity uid="1464">
-			<Template>actor|flora/trees/lumbardypoplar.xml</Template>
+			<Template>actor|flora/trees/poplar_lombardy.xml</Template>
 			<Position x="648.19721" z="995.16102"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="21809"/>
 		</Entity>
 		<Entity uid="1465">
-			<Template>actor|flora/trees/lumbardypoplar.xml</Template>
+			<Template>actor|flora/trees/poplar_lombardy.xml</Template>
 			<Position x="581.19416" z="965.0539"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="46608"/>
 		</Entity>
 		<Entity uid="1466">
-			<Template>actor|flora/trees/lumbardypoplar.xml</Template>
+			<Template>actor|flora/trees/poplar_lombardy.xml</Template>
 			<Position x="569.16901" z="965.26667"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="22960"/>
 		</Entity>
 		<Entity uid="1467">
-			<Template>actor|flora/trees/lumbardypoplar.xml</Template>
+			<Template>actor|flora/trees/poplar_lombardy.xml</Template>
 			<Position x="595.15748" z="1029.02637"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="40812"/>
 		</Entity>
 		<Entity uid="1468">
-			<Template>actor|flora/trees/lumbardypoplar.xml</Template>
+			<Template>actor|flora/trees/poplar_lombardy.xml</Template>
 			<Position x="611.38685" z="1038.34498"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="24536"/>
 		</Entity>
 		<Entity uid="1469">
-			<Template>actor|flora/trees/lumbardypoplar.xml</Template>
+			<Template>actor|flora/trees/poplar_lombardy.xml</Template>
 			<Position x="563.86567" z="1059.32081"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="48185"/>
@@ -11155,7 +11155,7 @@
 			<Actor seed="13459"/>
 		</Entity>
 		<Entity uid="1912">
-			<Template>structures/pers/stables</Template>
+			<Template>structures/pers/stable</Template>
 			<Player>2</Player>
 			<Position x="183.80896" z="1440.45875"/>
 			<Orientation y="-3.13706"/>
