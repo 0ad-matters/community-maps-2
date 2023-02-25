@@ -17706,7 +17706,7 @@
 			<Actor seed="47701"/>
 		</Entity>
 		<Entity uid="3047">
-			<Template>actor|props/units/rome/scorpio_weapon.xml</Template>
+			<Template>actor|props/units/rome_scorpio_weapon.xml</Template>
 			<Position x="800.11579" z="513.11799"/>
 			<Orientation y="-0.36722"/>
 			<Actor seed="53399"/>
@@ -17724,7 +17724,7 @@
 			<Actor seed="39624"/>
 		</Entity>
 		<Entity uid="3051">
-			<Template>actor|props/units/rome/scorpio_weapon.xml</Template>
+			<Template>actor|props/units/rome_scorpio_weapon.xml</Template>
 			<Position x="802.98719" z="510.46793"/>
 			<Orientation y="0.40348"/>
 			<Actor seed="22605"/>
