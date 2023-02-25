@@ -269,25 +269,25 @@
 			<Actor seed="17472"/>
 		</Entity>
 		<Entity uid="150">
-			<Template>actor|props/units/rome/scorpio_weapon.xml</Template>
+			<Template>actor|props/units/rome_scorpio_weapon.xml</Template>
 			<Position x="885.38215" z="730.77332"/>
 			<Orientation y="4.97904"/>
 			<Actor seed="8533"/>
 		</Entity>
 		<Entity uid="151">
-			<Template>actor|props/units/rome/scorpio_weapon.xml</Template>
+			<Template>actor|props/units/rome_scorpio_weapon.xml</Template>
 			<Position x="904.16248" z="557.59662"/>
 			<Orientation y="4.97904"/>
 			<Actor seed="49223"/>
 		</Entity>
 		<Entity uid="152">
-			<Template>actor|props/units/rome/scorpio_weapon.xml</Template>
+			<Template>actor|props/units/rome_scorpio_weapon.xml</Template>
 			<Position x="709.32856" z="231.14545"/>
 			<Orientation y="4.97904"/>
 			<Actor seed="2709"/>
 		</Entity>
 		<Entity uid="153">
-			<Template>actor|props/units/rome/scorpio_weapon.xml</Template>
+			<Template>actor|props/units/rome_scorpio_weapon.xml</Template>
 			<Position x="579.8086" z="45.5074"/>
 			<Orientation y="4.97904"/>
 			<Actor seed="15091"/>
