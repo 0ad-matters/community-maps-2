@@ -16730,21 +16730,21 @@
 			<Actor seed="51604"/>
 		</Entity>
 		<Entity uid="2551">
-			<Template>gaia/special_treasure_food_barrels_buried</Template>
+			<Template>gaia/treasure/food_barrels_buried</Template>
 			<Player>2</Player>
 			<Position x="1090.80726" z="893.99512"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="6958"/>
 		</Entity>
 		<Entity uid="2554">
-			<Template>structures/special_treasure_shipwreck_ram_bow</Template>
+			<Template>gaia/treasure/shipwreck_ram_bow</Template>
 			<Player>2</Player>
 			<Position x="557.41083" z="1114.60962"/>
 			<Orientation y="-1.12935"/>
 			<Actor seed="260"/>
 		</Entity>
 		<Entity uid="2555">
-			<Template>structures/special_treasure_shipwreck_debris</Template>
+			<Template>gaia/treasure/shipwreck_debris</Template>
 			<Player>2</Player>
 			<Position x="552.68964" z="1129.96338"/>
 			<Orientation y="2.35621"/>
@@ -20279,21 +20279,21 @@
 			<Actor seed="35412"/>
 		</Entity>
 		<Entity uid="3338">
-			<Template>gaia/special_treasure_golden_fleece</Template>
+			<Template>gaia/treasure/golden_fleece</Template>
 			<Player>0</Player>
 			<Position x="1653.06104" z="818.67396"/>
 			<Orientation y="-1.82544"/>
 			<Actor seed="57930"/>
 		</Entity>
 		<Entity uid="3341">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="1655.5785" z="830.35822"/>
 			<Orientation y="-2.427"/>
 			<Actor seed="2020"/>
 		</Entity>
 		<Entity uid="3342">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="1654.27967" z="826.43085"/>
 			<Orientation y="2.35621"/>
@@ -20538,21 +20538,21 @@
 			<Actor seed="37390"/>
 		</Entity>
 		<Entity uid="3456">
-			<Template>gaia/special_treasure_standing_stone</Template>
+			<Template>gaia/treasure/standing_stone</Template>
 			<Player>0</Player>
 			<Position x="598.31073" z="429.7418"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="40152"/>
 		</Entity>
 		<Entity uid="3467">
-			<Template>gaia/special_ruins_standing_stone</Template>
+			<Template>gaia/ruins/standing_stone</Template>
 			<Player>0</Player>
 			<Position x="604.92054" z="421.74396"/>
 			<Orientation y="0.67531"/>
 			<Actor seed="54350"/>
 		</Entity>
 		<Entity uid="3468">
-			<Template>gaia/special_ruins_standing_stone</Template>
+			<Template>gaia/ruins/standing_stone</Template>
 			<Player>0</Player>
 			<Position x="608.0746" z="430.77457"/>
 			<Orientation y="0.39179"/>
@@ -20566,21 +20566,21 @@
 			<Actor seed="30104"/>
 		</Entity>
 		<Entity uid="3471">
-			<Template>gaia/special_ruins_standing_stone</Template>
+			<Template>gaia/ruins/standing_stone</Template>
 			<Player>0</Player>
 			<Position x="1430.88184" z="1512.3755"/>
 			<Orientation y="-2.56708"/>
 			<Actor seed="59658"/>
 		</Entity>
 		<Entity uid="3472">
-			<Template>gaia/special_ruins_standing_stone</Template>
+			<Template>gaia/ruins/standing_stone</Template>
 			<Player>0</Player>
 			<Position x="1428.07715" z="1498.82764"/>
 			<Orientation y="-2.973"/>
 			<Actor seed="55490"/>
 		</Entity>
 		<Entity uid="3473">
-			<Template>gaia/special_ruins_standing_stone</Template>
+			<Template>gaia/ruins/standing_stone</Template>
 			<Player>0</Player>
 			<Position x="1443.4386" z="1506.34534"/>
 			<Orientation y="0.34925"/>

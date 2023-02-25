@@ -7560,91 +7560,91 @@
 			<Actor seed="19336"/>
 		</Entity>
 		<Entity uid="2591">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="591.44214" z="1249.99085"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="14694"/>
 		</Entity>
 		<Entity uid="2592">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="590.05604" z="1248.68567"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="45756"/>
 		</Entity>
 		<Entity uid="2593">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="588.78522" z="1247.37964"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="33870"/>
 		</Entity>
 		<Entity uid="2594">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="575.46607" z="1234.17347"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="15940"/>
 		</Entity>
 		<Entity uid="2595">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="576.64521" z="1235.50281"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="20038"/>
 		</Entity>
 		<Entity uid="2596">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="577.92731" z="1236.66016"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="34544"/>
 		</Entity>
 		<Entity uid="2597">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="622.6714" z="1230.5951"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="48064"/>
 		</Entity>
 		<Entity uid="2598">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="621.22028" z="1229.10901"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="46662"/>
 		</Entity>
 		<Entity uid="2599">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="619.6714" z="1227.63099"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="56240"/>
 		</Entity>
 		<Entity uid="2600">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="660.82563" z="1128.79957"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="3292"/>
 		</Entity>
 		<Entity uid="2601">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="662.02295" z="1130.01465"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="29690"/>
 		</Entity>
 		<Entity uid="2602">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="653.00208" z="1135.86841"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="12828"/>
 		</Entity>
 		<Entity uid="2603">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="654.17438" z="1137.15162"/>
 			<Orientation y="2.35621"/>
@@ -7678,14 +7678,14 @@
 			<Actor seed="970"/>
 		</Entity>
 		<Entity uid="2608">
-			<Template>gaia/special_treasure_food_crate</Template>
+			<Template>gaia/treasure/food_crate</Template>
 			<Player>0</Player>
 			<Position x="575.89484" z="1203.77247"/>
 			<Orientation y="1.07232"/>
 			<Actor seed="42310"/>
 		</Entity>
 		<Entity uid="2609">
-			<Template>gaia/special_treasure_food_crate</Template>
+			<Template>gaia/treasure/food_crate</Template>
 			<Player>0</Player>
 			<Position x="576.94361" z="1202.17481"/>
 			<Orientation y="2.35621"/>
@@ -7790,56 +7790,56 @@
 			<Actor seed="39846"/>
 		</Entity>
 		<Entity uid="2624">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="602.57972" z="1206.74537"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="54"/>
 		</Entity>
 		<Entity uid="2625">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="601.1626" z="1205.47657"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="4314"/>
 		</Entity>
 		<Entity uid="2626">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="603.08747" z="1203.5188"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="36020"/>
 		</Entity>
 		<Entity uid="2627">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="604.4928" z="1204.80909"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="36276"/>
 		</Entity>
 		<Entity uid="2628">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="605.05915" z="1201.6388"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="13160"/>
 		</Entity>
 		<Entity uid="2629">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="606.42414" z="1202.95777"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="46346"/>
 		</Entity>
 		<Entity uid="2630">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="606.94263" z="1199.51343"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="4424"/>
 		</Entity>
 		<Entity uid="2631">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="608.34553" z="1200.875"/>
 			<Orientation y="2.35621"/>
@@ -7944,77 +7944,77 @@
 			<Actor seed="20464"/>
 		</Entity>
 		<Entity uid="2646">
-			<Template>gaia/special_treasure_food_persian_big</Template>
+			<Template>gaia/treasure/food_persian_big</Template>
 			<Player>0</Player>
 			<Position x="653.92414" z="1120.96839"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="46154"/>
 		</Entity>
 		<Entity uid="2647">
-			<Template>gaia/special_treasure_food_persian_big</Template>
+			<Template>gaia/treasure/food_persian_big</Template>
 			<Player>0</Player>
 			<Position x="719.99164" z="1150.95984"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="8810"/>
 		</Entity>
 		<Entity uid="2648">
-			<Template>gaia/special_treasure_food_persian_big</Template>
+			<Template>gaia/treasure/food_persian_big</Template>
 			<Player>0</Player>
 			<Position x="759.08112" z="1178.11292"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="54466"/>
 		</Entity>
 		<Entity uid="2649">
-			<Template>gaia/special_treasure_food_persian_big</Template>
+			<Template>gaia/treasure/food_persian_big</Template>
 			<Player>0</Player>
 			<Position x="738.16663" z="1194.83545"/>
 			<Orientation y="-2.3155"/>
 			<Actor seed="44268"/>
 		</Entity>
 		<Entity uid="2650">
-			<Template>gaia/special_treasure_food_crate</Template>
+			<Template>gaia/treasure/food_crate</Template>
 			<Player>0</Player>
 			<Position x="776.07886" z="1183.62757"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="11274"/>
 		</Entity>
 		<Entity uid="2651">
-			<Template>gaia/special_treasure_food_crate</Template>
+			<Template>gaia/treasure/food_crate</Template>
 			<Player>0</Player>
 			<Position x="777.27161" z="1182.4253"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="28436"/>
 		</Entity>
 		<Entity uid="2652">
-			<Template>gaia/special_treasure_food_crate</Template>
+			<Template>gaia/treasure/food_crate</Template>
 			<Player>0</Player>
 			<Position x="778.51557" z="1181.27454"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="25584"/>
 		</Entity>
 		<Entity uid="2653">
-			<Template>gaia/special_treasure_food_crate</Template>
+			<Template>gaia/treasure/food_crate</Template>
 			<Player>0</Player>
 			<Position x="779.80079" z="1180.03638"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="60626"/>
 		</Entity>
 		<Entity uid="2654">
-			<Template>gaia/special_treasure_food_crate</Template>
+			<Template>gaia/treasure/food_crate</Template>
 			<Player>0</Player>
 			<Position x="779.09845" z="1183.1316"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="47020"/>
 		</Entity>
 		<Entity uid="2655">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="777.15833" z="1185.09913"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="34872"/>
 		</Entity>
 		<Entity uid="2656">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="780.5625" z="1181.98011"/>
 			<Orientation y="2.35621"/>
@@ -8456,70 +8456,70 @@
 			<Actor seed="1942"/>
 		</Entity>
 		<Entity uid="2720">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="721.58814" z="1060.89039"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="23592"/>
 		</Entity>
 		<Entity uid="2721">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="722.88044" z="1062.23926"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="52878"/>
 		</Entity>
 		<Entity uid="2722">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="724.2685" z="1063.73914"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="23914"/>
 		</Entity>
 		<Entity uid="2723">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="725.51014" z="1064.87745"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="33416"/>
 		</Entity>
 		<Entity uid="2724">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="726.9015" z="1066.14112"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="37498"/>
 		</Entity>
 		<Entity uid="2725">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="723.34198" z="1059.01246"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="34726"/>
 		</Entity>
 		<Entity uid="2726">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="724.51886" z="1060.22938"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="53382"/>
 		</Entity>
 		<Entity uid="2727">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="726.0113" z="1061.65625"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="13974"/>
 		</Entity>
 		<Entity uid="2728">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="727.21595" z="1062.92457"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="38068"/>
 		</Entity>
 		<Entity uid="2729">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="728.63343" z="1064.34485"/>
 			<Orientation y="2.35621"/>
@@ -8594,14 +8594,14 @@
 			<Actor seed="46632"/>
 		</Entity>
 		<Entity uid="2740">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="805.72516" z="1095.40821"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="31256"/>
 		</Entity>
 		<Entity uid="2741">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="804.34272" z="1094.20276"/>
 			<Orientation y="2.35621"/>
@@ -21966,77 +21966,77 @@
 			<Actor seed="49912"/>
 		</Entity>
 		<Entity uid="5089">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="758.48395" z="1086.03016"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="53396"/>
 		</Entity>
 		<Entity uid="5090">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="757.11017" z="1084.65333"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="38034"/>
 		</Entity>
 		<Entity uid="5091">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="759.78235" z="1083.55738"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="49464"/>
 		</Entity>
 		<Entity uid="5092">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="750.70893" z="1082.9231"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="22206"/>
 		</Entity>
 		<Entity uid="5093">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="749.2032" z="1081.58851"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="13214"/>
 		</Entity>
 		<Entity uid="5094">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="747.81263" z="1079.84693"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="29966"/>
 		</Entity>
 		<Entity uid="5095">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="793.62391" z="1174.44983"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="38772"/>
 		</Entity>
 		<Entity uid="5096">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="791.94623" z="1172.81019"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="44930"/>
 		</Entity>
 		<Entity uid="5097">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="807.57605" z="1126.1045"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="53112"/>
 		</Entity>
 		<Entity uid="5098">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="806.18396" z="1124.8567"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="1426"/>
 		</Entity>
 		<Entity uid="5099">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="804.70514" z="1123.54847"/>
 			<Orientation y="2.35621"/>
@@ -22156,70 +22156,70 @@
 			<Actor seed="13490"/>
 		</Entity>
 		<Entity uid="5169">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>1</Player>
 			<Position x="994.16639" z="781.54133"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="56508"/>
 		</Entity>
 		<Entity uid="5170">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>1</Player>
 			<Position x="993.0597" z="780.45917"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="1636"/>
 		</Entity>
 		<Entity uid="5171">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>1</Player>
 			<Position x="995.48963" z="782.61384"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="22130"/>
 		</Entity>
 		<Entity uid="5172">
-			<Template>gaia/special_treasure_food_persian_small</Template>
+			<Template>gaia/treasure/food_persian_small</Template>
 			<Player>1</Player>
 			<Position x="986.95734" z="775.25464"/>
 			<Orientation y="-0.89271"/>
 			<Actor seed="17182"/>
 		</Entity>
 		<Entity uid="5173">
-			<Template>gaia/special_treasure_food_persian_small</Template>
+			<Template>gaia/treasure/food_persian_small</Template>
 			<Player>1</Player>
 			<Position x="1000.02631" z="780.65967"/>
 			<Orientation y="-0.32189"/>
 			<Actor seed="38404"/>
 		</Entity>
 		<Entity uid="5174">
-			<Template>gaia/special_treasure_food_persian_small</Template>
+			<Template>gaia/treasure/food_persian_small</Template>
 			<Player>1</Player>
 			<Position x="1007.33863" z="774.19361"/>
 			<Orientation y="-0.16037"/>
 			<Actor seed="13770"/>
 		</Entity>
 		<Entity uid="5175">
-			<Template>gaia/special_treasure_food_persian_big</Template>
+			<Template>gaia/treasure/food_persian_big</Template>
 			<Player>1</Player>
 			<Position x="1008.42615" z="763.11683"/>
 			<Orientation y="0.33643"/>
 			<Actor seed="48250"/>
 		</Entity>
 		<Entity uid="5176">
-			<Template>gaia/special_treasure_food_persian_big</Template>
+			<Template>gaia/treasure/food_persian_big</Template>
 			<Player>1</Player>
 			<Position x="998.90864" z="738.89399"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="19416"/>
 		</Entity>
 		<Entity uid="5177">
-			<Template>gaia/special_treasure_food_persian_big</Template>
+			<Template>gaia/treasure/food_persian_big</Template>
 			<Player>1</Player>
 			<Position x="990.25062" z="740.87964"/>
 			<Orientation y="-2.77451"/>
 			<Actor seed="36124"/>
 		</Entity>
 		<Entity uid="5178">
-			<Template>gaia/special_treasure_food_persian_small</Template>
+			<Template>gaia/treasure/food_persian_small</Template>
 			<Player>1</Player>
 			<Position x="989.64576" z="746.28956"/>
 			<Orientation y="-1.12087"/>
@@ -22240,35 +22240,35 @@
 			<Actor seed="12416"/>
 		</Entity>
 		<Entity uid="5181">
-			<Template>gaia/treasure/metal_persian_bigl</Template>
+			<Template>gaia/treasure/metal_persian_big</Template>
 			<Player>1</Player>
 			<Position x="1004.62513" z="794.60712"/>
 			<Orientation y="-3.1124"/>
 			<Actor seed="61780"/>
 		</Entity>
 		<Entity uid="5182">
-			<Template>gaia/treasure/metal_persian_bigl</Template>
+			<Template>gaia/treasure/metal_persian_big</Template>
 			<Player>1</Player>
 			<Position x="1016.53736" z="767.51771"/>
 			<Orientation y="0.02604"/>
 			<Actor seed="6294"/>
 		</Entity>
 		<Entity uid="5183">
-			<Template>gaia/treasure/metal_persian_bigl</Template>
+			<Template>gaia/treasure/metal_persian_big</Template>
 			<Player>1</Player>
 			<Position x="1012.65076" z="751.96753"/>
 			<Orientation y="-1.51432"/>
 			<Actor seed="57564"/>
 		</Entity>
 		<Entity uid="5184">
-			<Template>gaia/special_treasure_pegasus</Template>
+			<Template>gaia/treasure/pegasus</Template>
 			<Player>1</Player>
 			<Position x="1028.10108" z="793.00092"/>
 			<Orientation y="1.83683"/>
 			<Actor seed="23086"/>
 		</Entity>
 		<Entity uid="5186">
-			<Template>gaia/special_treasure_pegasus</Template>
+			<Template>gaia/treasure/pegasus</Template>
 			<Player>1</Player>
 			<Position x="1066.66395" z="878.24738"/>
 			<Orientation y="-0.02878"/>
@@ -22394,91 +22394,91 @@
 			<Actor seed="5318"/>
 		</Entity>
 		<Entity uid="5204">
-			<Template>gaia/special_treasure_food_persian_small</Template>
+			<Template>gaia/treasure/food_persian_small</Template>
 			<Player>1</Player>
 			<Position x="1098.29346" z="713.3805"/>
 			<Orientation y="0.23519"/>
 			<Actor seed="8096"/>
 		</Entity>
 		<Entity uid="5207">
-			<Template>gaia/special_treasure_food_jars</Template>
+			<Template>gaia/treasure/food_jars</Template>
 			<Player>1</Player>
 			<Position x="1125.6554" z="712.41645"/>
 			<Orientation y="0.01371"/>
 			<Actor seed="13432"/>
 		</Entity>
 		<Entity uid="5208">
-			<Template>gaia/special_treasure_food_jars</Template>
+			<Template>gaia/treasure/food_jars</Template>
 			<Player>1</Player>
 			<Position x="1129.61536" z="694.7823"/>
 			<Orientation y="-0.38781"/>
 			<Actor seed="41962"/>
 		</Entity>
 		<Entity uid="5209">
-			<Template>gaia/special_treasure_food_jars</Template>
+			<Template>gaia/treasure/food_jars</Template>
 			<Player>1</Player>
 			<Position x="1122.48047" z="712.24299"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="33948"/>
 		</Entity>
 		<Entity uid="5210">
-			<Template>gaia/special_treasure_golden_fleece</Template>
+			<Template>gaia/treasure/golden_fleece</Template>
 			<Player>1</Player>
 			<Position x="1121.72144" z="714.11463"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="12088"/>
 		</Entity>
 		<Entity uid="5211">
-			<Template>gaia/special_treasure_golden_fleece</Template>
+			<Template>gaia/treasure/golden_fleece</Template>
 			<Player>1</Player>
 			<Position x="1117.9463" z="712.31135"/>
 			<Orientation y="1.32903"/>
 			<Actor seed="41302"/>
 		</Entity>
 		<Entity uid="5212">
-			<Template>gaia/special_treasure_golden_fleece</Template>
+			<Template>gaia/treasure/golden_fleece</Template>
 			<Player>1</Player>
 			<Position x="1128.97461" z="711.32923"/>
 			<Orientation y="-1.06557"/>
 			<Actor seed="8144"/>
 		</Entity>
 		<Entity uid="5213">
-			<Template>gaia/special_treasure_golden_fleece</Template>
+			<Template>gaia/treasure/golden_fleece</Template>
 			<Player>1</Player>
 			<Position x="1126.63868" z="715.14338"/>
 			<Orientation y="-2.78422"/>
 			<Actor seed="44874"/>
 		</Entity>
 		<Entity uid="5214">
-			<Template>gaia/special_treasure_golden_fleece</Template>
+			<Template>gaia/treasure/golden_fleece</Template>
 			<Player>1</Player>
 			<Position x="1123.95423" z="714.64588"/>
 			<Orientation y="2.89478"/>
 			<Actor seed="50182"/>
 		</Entity>
 		<Entity uid="5215">
-			<Template>gaia/special_treasure_golden_fleece</Template>
+			<Template>gaia/treasure/golden_fleece</Template>
 			<Player>1</Player>
 			<Position x="1131.72217" z="697.22748"/>
 			<Orientation y="-1.6025"/>
 			<Actor seed="4276"/>
 		</Entity>
 		<Entity uid="5216">
-			<Template>gaia/special_treasure_golden_fleece</Template>
+			<Template>gaia/treasure/golden_fleece</Template>
 			<Player>1</Player>
 			<Position x="1132.46998" z="693.91114"/>
 			<Orientation y="-1.16874"/>
 			<Actor seed="36062"/>
 		</Entity>
 		<Entity uid="5217">
-			<Template>gaia/special_treasure_golden_fleece</Template>
+			<Template>gaia/treasure/golden_fleece</Template>
 			<Player>1</Player>
 			<Position x="1132.86341" z="695.58045"/>
 			<Orientation y="-1.50605"/>
 			<Actor seed="26908"/>
 		</Entity>
 		<Entity uid="5218">
-			<Template>gaia/special_treasure_golden_fleece</Template>
+			<Template>gaia/treasure/golden_fleece</Template>
 			<Player>1</Player>
 			<Position x="1130.99" z="691.97693"/>
 			<Orientation y="-0.14158"/>
@@ -23059,97 +23059,97 @@
 			<Actor seed="52088"/>
 		</Entity>
 		<Entity uid="5303">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="922.5445" z="928.43964"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="45954"/>
 		</Entity>
 		<Entity uid="5304">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="923.59186" z="930.0326"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="55104"/>
 		</Entity>
 		<Entity uid="5305">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="923.96113" z="928.62305"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="20576"/>
 		</Entity>
 		<Entity uid="5306">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="925.69684" z="931.28852"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="54994"/>
 		</Entity>
 		<Entity uid="5307">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="927.07209" z="930.59046"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="4456"/>
 		</Entity>
 		<Entity uid="5308">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="927.06037" z="931.88233"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="36288"/>
 		</Entity>
 		<Entity uid="5309">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="936.91877" z="930.07441"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="21186"/>
 		</Entity>
 		<Entity uid="5310">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="938.79517" z="930.48511"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="39548"/>
 		</Entity>
 		<Entity uid="5311">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="938.1886" z="929.248"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="45176"/>
 		</Entity>
 		<Entity uid="5312">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="935.55756" z="930.67121"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="4838"/>
 		</Entity>
 		<Entity uid="5313">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="937.8647" z="900.81495"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="15060"/>
 		</Entity>
 		<Entity uid="5314">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="937.90363" z="902.56464"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="41034"/>
 		</Entity>
 		<Entity uid="5315">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="936.75373" z="901.66877"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="63364"/>
 		</Entity>
 		<Entity uid="5316">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="917.94745" z="912.57288"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="31960"/>
 		</Entity>
 		<Entity uid="5317">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="917.26691" z="913.72193"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="26168"/>
 		</Entity>
 		<Entity uid="5318">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="918.62458" z="914.10334"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="28402"/>
@@ -23401,67 +23401,67 @@
 			<Actor seed="56876"/>
 		</Entity>
 		<Entity uid="5362">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="898.72706" z="861.32264"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="4888"/>
 		</Entity>
 		<Entity uid="5363">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="900.43519" z="861.39814"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="13604"/>
 		</Entity>
 		<Entity uid="5364">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="899.51667" z="862.3686"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="60862"/>
 		</Entity>
 		<Entity uid="5365">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="888.70838" z="866.05311"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="21142"/>
 		</Entity>
 		<Entity uid="5366">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="903.60456" z="871.07679"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="14200"/>
 		</Entity>
 		<Entity uid="5367">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="902.03412" z="871.18702"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="36988"/>
 		</Entity>
 		<Entity uid="5368">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="902.92768" z="869.59198"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="10444"/>
 		</Entity>
 		<Entity uid="5369">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="915.84125" z="869.94153"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="50850"/>
 		</Entity>
 		<Entity uid="5370">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="935.771" z="861.17878"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="17974"/>
 		</Entity>
 		<Entity uid="5371">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="933.844" z="861.21888"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="37916"/>
 		</Entity>
 		<Entity uid="5372">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="934.49286" z="862.14863"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="15584"/>
@@ -23949,91 +23949,91 @@
 			<Actor seed="22408"/>
 		</Entity>
 		<Entity uid="5453">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="938.58558" z="786.96491"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="18878"/>
 		</Entity>
 		<Entity uid="5454">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="928.75464" z="781.88172"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="20280"/>
 		</Entity>
 		<Entity uid="5455">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="928.87348" z="784.49152"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="4686"/>
 		</Entity>
 		<Entity uid="5456">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="929.9781" z="783.11658"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="1498"/>
 		</Entity>
 		<Entity uid="5457">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="938.2287" z="781.49323"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="52914"/>
 		</Entity>
 		<Entity uid="5458">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="938.84302" z="779.8083"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="64540"/>
 		</Entity>
 		<Entity uid="5459">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="937.33082" z="779.9516"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="1250"/>
 		</Entity>
 		<Entity uid="5460">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="939.20093" z="778.47712"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="15592"/>
 		</Entity>
 		<Entity uid="5461">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="938.95173" z="776.97425"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="3498"/>
 		</Entity>
 		<Entity uid="5462">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="937.86371" z="777.66205"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="24914"/>
 		</Entity>
 		<Entity uid="5463">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="922.85053" z="741.5807"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="874"/>
 		</Entity>
 		<Entity uid="5464">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="924.17853" z="741.36713"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="63812"/>
 		</Entity>
 		<Entity uid="5465">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="923.68964" z="743.05445"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="59706"/>
 		</Entity>
 		<Entity uid="5466">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="925.80384" z="741.45844"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="62262"/>
 		</Entity>
 		<Entity uid="5467">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="927.19422" z="741.4787"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="56452"/>
@@ -24435,199 +24435,199 @@
 			<Actor seed="39118"/>
 		</Entity>
 		<Entity uid="5537">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="927.57624" z="676.8025"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="49552"/>
 		</Entity>
 		<Entity uid="5538">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="939.85468" z="682.51514"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="33288"/>
 		</Entity>
 		<Entity uid="5539">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="929.07667" z="702.2613"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="6476"/>
 		</Entity>
 		<Entity uid="5540">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="928.7226" z="700.0868"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="51166"/>
 		</Entity>
 		<Entity uid="5541">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="930.11384" z="701.03303"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="58356"/>
 		</Entity>
 		<Entity uid="5542">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="939.05042" z="707.30793"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="2474"/>
 		</Entity>
 		<Entity uid="5543">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="938.99024" z="709.1844"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="54908"/>
 		</Entity>
 		<Entity uid="5544">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="937.85413" z="708.25684"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="12940"/>
 		</Entity>
 		<Entity uid="5545">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="928.81775" z="723.1485"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="57772"/>
 		</Entity>
 		<Entity uid="5546">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="929.42048" z="721.1543"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="59836"/>
 		</Entity>
 		<Entity uid="5547">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="929.53309" z="725.20661"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="62240"/>
 		</Entity>
 		<Entity uid="5548">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="930.00782" z="722.44922"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="52376"/>
 		</Entity>
 		<Entity uid="5549">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="930.51728" z="723.84388"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="53276"/>
 		</Entity>
 		<Entity uid="5550">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="929.17273" z="726.99"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="17194"/>
 		</Entity>
 		<Entity uid="5551">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="917.71802" z="665.96558"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="26892"/>
 		</Entity>
 		<Entity uid="5552">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="918.30628" z="664.50727"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="4774"/>
 		</Entity>
 		<Entity uid="5553">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="917.86994" z="663.36164"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="31484"/>
 		</Entity>
 		<Entity uid="5554">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="939.08344" z="684.50995"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="28154"/>
 		</Entity>
 		<Entity uid="5555">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="938.6764" z="683.22522"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="32472"/>
 		</Entity>
 		<Entity uid="5556">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="937.94593" z="655.43494"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="50448"/>
 		</Entity>
 		<Entity uid="5557">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="936.75416" z="654.06592"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="25810"/>
 		</Entity>
 		<Entity uid="5558">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="935.67658" z="654.68201"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="6060"/>
 		</Entity>
 		<Entity uid="5559">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="934.95002" z="653.59986"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="3236"/>
 		</Entity>
 		<Entity uid="5560">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="941.89167" z="660.49958"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="14742"/>
 		</Entity>
 		<Entity uid="5561">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="942.4073" z="662.4272"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="29196"/>
 		</Entity>
 		<Entity uid="5562">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="940.9336" z="661.66694"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="25120"/>
 		</Entity>
 		<Entity uid="5563">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="960.9911" z="664.60285"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="48994"/>
 		</Entity>
 		<Entity uid="5564">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="958.94147" z="664.75806"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="45436"/>
 		</Entity>
 		<Entity uid="5565">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="959.97333" z="666.13038"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="34422"/>
 		</Entity>
 		<Entity uid="5566">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="956.9521" z="664.57032"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="11020"/>
 		</Entity>
 		<Entity uid="5567">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="969.70777" z="665.21924"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="58018"/>
 		</Entity>
 		<Entity uid="5568">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="977.88202" z="661.1496"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="7224"/>
 		</Entity>
 		<Entity uid="5570">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="979.00556" z="660.25281"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="9170"/>
@@ -24927,55 +24927,55 @@
 			<Actor seed="50856"/>
 		</Entity>
 		<Entity uid="5625">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1042.48536" z="665.14423"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="64662"/>
 		</Entity>
 		<Entity uid="5626">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1041.0022" z="665.19794"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="1592"/>
 		</Entity>
 		<Entity uid="5627">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1041.75208" z="666.3595"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="32628"/>
 		</Entity>
 		<Entity uid="5628">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1042.32215" z="674.86225"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="1470"/>
 		</Entity>
 		<Entity uid="5629">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1044.53467" z="675.07691"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="65487"/>
 		</Entity>
 		<Entity uid="5630">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1046.13428" z="675.20002"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="49714"/>
 		</Entity>
 		<Entity uid="5631">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1043.83411" z="674.04603"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="58152"/>
 		</Entity>
 		<Entity uid="5632">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1045.16065" z="674.06586"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="23106"/>
 		</Entity>
 		<Entity uid="5633">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1017.21857" z="674.41065"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="64052"/>
@@ -25269,91 +25269,91 @@
 			<Actor seed="4514"/>
 		</Entity>
 		<Entity uid="5685">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1061.42359" z="653.33582"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="16352"/>
 		</Entity>
 		<Entity uid="5686">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1062.1875" z="654.44788"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="59272"/>
 		</Entity>
 		<Entity uid="5687">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1060.01966" z="653.35816"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="15318"/>
 		</Entity>
 		<Entity uid="5688">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1065.28687" z="655.04072"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="2556"/>
 		</Entity>
 		<Entity uid="5689">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1052.49708" z="655.22248"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="47040"/>
 		</Entity>
 		<Entity uid="5690">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1050.58509" z="656.10065"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="31158"/>
 		</Entity>
 		<Entity uid="5691">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1052.61158" z="653.92743"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="5732"/>
 		</Entity>
 		<Entity uid="5692">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1052.32386" z="656.68158"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="19344"/>
 		</Entity>
 		<Entity uid="5693">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1045.43567" z="660.51429"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="61908"/>
 		</Entity>
 		<Entity uid="5694">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1038.50098" z="684.62946"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="30604"/>
 		</Entity>
 		<Entity uid="5695">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1039.011" z="682.93006"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="7990"/>
 		</Entity>
 		<Entity uid="5696">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1040.15772" z="684.21241"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="5798"/>
 		</Entity>
 		<Entity uid="5697">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1039.08399" z="686.10401"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="6760"/>
 		</Entity>
 		<Entity uid="5698">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1038.69947" z="687.60114"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="45250"/>
 		</Entity>
 		<Entity uid="5699">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1040.67896" z="682.85651"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="26942"/>
@@ -25689,73 +25689,73 @@
 			<Actor seed="54370"/>
 		</Entity>
 		<Entity uid="5760">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1191.17933" z="658.27167"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="38378"/>
 		</Entity>
 		<Entity uid="5761">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1187.17383" z="654.20917"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="63324"/>
 		</Entity>
 		<Entity uid="5762">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1195.76404" z="662.25391"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="41224"/>
 		</Entity>
 		<Entity uid="5763">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1196.07984" z="663.67786"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="48348"/>
 		</Entity>
 		<Entity uid="5764">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1169.43982" z="674.37244"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="5696"/>
 		</Entity>
 		<Entity uid="5765">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1179.5105" z="674.891"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="40284"/>
 		</Entity>
 		<Entity uid="5766">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1180.58497" z="673.51825"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="140"/>
 		</Entity>
 		<Entity uid="5767">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1182.33143" z="673.1648"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="22094"/>
 		</Entity>
 		<Entity uid="5768">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1178.0713" z="674.77729"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="7284"/>
 		</Entity>
 		<Entity uid="5769">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1190.34644" z="674.28937"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="9120"/>
 		</Entity>
 		<Entity uid="5770">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1208.57898" z="665.02192"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="29084"/>
 		</Entity>
 		<Entity uid="5771">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1207.06495" z="664.86097"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="35854"/>
@@ -25923,187 +25923,187 @@
 			<Actor seed="30398"/>
 		</Entity>
 		<Entity uid="5802">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="957.91334" z="969.32062"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="65365"/>
 		</Entity>
 		<Entity uid="5803">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="959.54554" z="969.42341"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="24690"/>
 		</Entity>
 		<Entity uid="5804">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="958.89106" z="970.23176"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="3764"/>
 		</Entity>
 		<Entity uid="5805">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="957.72144" z="978.51392"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="11886"/>
 		</Entity>
 		<Entity uid="5806">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="956.85273" z="979.05701"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="61860"/>
 		</Entity>
 		<Entity uid="5807">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="955.44843" z="979.08387"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="56118"/>
 		</Entity>
 		<Entity uid="5808">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="956.19874" z="977.72486"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="13758"/>
 		</Entity>
 		<Entity uid="5809">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="976.1529" z="978.72034"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="19922"/>
 		</Entity>
 		<Entity uid="5810">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="974.93934" z="979.16974"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="50802"/>
 		</Entity>
 		<Entity uid="5811">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="975.20154" z="977.85114"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="62050"/>
 		</Entity>
 		<Entity uid="5812">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="979.59211" z="970.3979"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="41984"/>
 		</Entity>
 		<Entity uid="5813">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="978.27527" z="970.25446"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="35382"/>
 		</Entity>
 		<Entity uid="5814">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="977.28846" z="969.71912"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="37952"/>
 		</Entity>
 		<Entity uid="5815">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="977.15851" z="970.90601"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="46722"/>
 		</Entity>
 		<Entity uid="5816">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="930.37678" z="969.24506"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="43896"/>
 		</Entity>
 		<Entity uid="5817">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="930.55024" z="970.59742"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="58058"/>
 		</Entity>
 		<Entity uid="5818">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="928.78913" z="969.43561"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="65058"/>
 		</Entity>
 		<Entity uid="5819">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="927.04957" z="969.07441"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="56454"/>
 		</Entity>
 		<Entity uid="5820">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="936.2331" z="985.91956"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="54010"/>
 		</Entity>
 		<Entity uid="5821">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="935.08588" z="986.58753"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="21026"/>
 		</Entity>
 		<Entity uid="5822">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="923.16175" z="989.91102"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="59130"/>
 		</Entity>
 		<Entity uid="5823">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="922.20228" z="989.19813"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="50144"/>
 		</Entity>
 		<Entity uid="5824">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="923.33045" z="988.76142"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="25544"/>
 		</Entity>
 		<Entity uid="5825">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="924.20606" z="990.42737"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="17822"/>
 		</Entity>
 		<Entity uid="5826">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1005.32288" z="983.21705"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="43846"/>
 		</Entity>
 		<Entity uid="5827">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1006.00922" z="981.7259"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="59702"/>
 		</Entity>
 		<Entity uid="5828">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1004.58857" z="982.0702"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="45458"/>
 		</Entity>
 		<Entity uid="5829">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1010.18055" z="979.10846"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="58708"/>
 		</Entity>
 		<Entity uid="5830">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1008.77485" z="979.42823"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="59750"/>
 		</Entity>
 		<Entity uid="5831">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1009.30353" z="977.97077"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="44424"/>
 		</Entity>
 		<Entity uid="5832">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1012.46283" z="979.02814"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="25852"/>
@@ -26421,193 +26421,193 @@
 			<Actor seed="28548"/>
 		</Entity>
 		<Entity uid="5893">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1061.81836" z="969.15705"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="2532"/>
 		</Entity>
 		<Entity uid="5894">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1061.20765" z="970.63587"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="24202"/>
 		</Entity>
 		<Entity uid="5895">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1057.3274" z="970.36158"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="40080"/>
 		</Entity>
 		<Entity uid="5896">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1054.87671" z="969.11963"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="18422"/>
 		</Entity>
 		<Entity uid="5897">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1105.84913" z="969.21247"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="18740"/>
 		</Entity>
 		<Entity uid="5898">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1106.76539" z="970.58008"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="8080"/>
 		</Entity>
 		<Entity uid="5899">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1103.84083" z="969.05738"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="57622"/>
 		</Entity>
 		<Entity uid="5900">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1106.86573" z="977.45673"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="54804"/>
 		</Entity>
 		<Entity uid="5901">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1106.3451" z="975.56592"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="46152"/>
 		</Entity>
 		<Entity uid="5902">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1105.38038" z="976.40284"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="9348"/>
 		</Entity>
 		<Entity uid="5903">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1091.34107" z="978.69245"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="27690"/>
 		</Entity>
 		<Entity uid="5904">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1089.50696" z="978.82764"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="8598"/>
 		</Entity>
 		<Entity uid="5905">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1090.04883" z="977.50397"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="56340"/>
 		</Entity>
 		<Entity uid="5906">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1092.96265" z="968.69935"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="7342"/>
 		</Entity>
 		<Entity uid="5907">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1094.3152" z="968.86811"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="35212"/>
 		</Entity>
 		<Entity uid="5908">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1093.5713" z="969.93653"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="47702"/>
 		</Entity>
 		<Entity uid="5909">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1071.55994" z="978.73688"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="14250"/>
 		</Entity>
 		<Entity uid="5910">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1070.1742" z="968.81843"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="44784"/>
 		</Entity>
 		<Entity uid="5911">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1069.30079" z="983.37275"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="41012"/>
 		</Entity>
 		<Entity uid="5913">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1067.75245" z="984.61927"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="22282"/>
 		</Entity>
 		<Entity uid="5914">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1067.55115" z="983.46363"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="58420"/>
 		</Entity>
 		<Entity uid="5915">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1067.3003" z="986.05518"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="57270"/>
 		</Entity>
 		<Entity uid="5916">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1020.45026" z="978.80164"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="6676"/>
 		</Entity>
 		<Entity uid="5917">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1024.97522" z="978.76331"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="47154"/>
 		</Entity>
 		<Entity uid="5918">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="988.30054" z="989.67707"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="64148"/>
 		</Entity>
 		<Entity uid="5919">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="987.29914" z="988.77393"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="20496"/>
 		</Entity>
 		<Entity uid="5920">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="985.61823" z="987.49646"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="8470"/>
 		</Entity>
 		<Entity uid="5921">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="984.47004" z="986.46106"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="17272"/>
 		</Entity>
 		<Entity uid="5922">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="986.83417" z="987.99988"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="32342"/>
 		</Entity>
 		<Entity uid="5923">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="986.98493" z="986.41126"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="16534"/>
 		</Entity>
 		<Entity uid="5924">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="985.75171" z="985.86512"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="5792"/>
 		</Entity>
 		<Entity uid="5925">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="983.74909" z="985.21778"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="24078"/>
@@ -26697,13 +26697,13 @@
 			<Actor seed="16422"/>
 		</Entity>
 		<Entity uid="5941">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1162.86292" z="971.16749"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="40080"/>
 		</Entity>
 		<Entity uid="5942">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1166.74317" z="971.44178"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="24202"/>
@@ -26733,13 +26733,13 @@
 			<Actor seed="35714"/>
 		</Entity>
 		<Entity uid="5947">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1170.69898" z="971.6355"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="40080"/>
 		</Entity>
 		<Entity uid="5948">
-			<Template>actor|props/structures/hellenes/forge_spears.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_spears.xml</Template>
 			<Position x="1174.57923" z="971.9098"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="24202"/>
@@ -30139,42 +30139,42 @@
 			<Actor seed="54166"/>
 		</Entity>
 		<Entity uid="8751">
-			<Template>gaia/special_ruins_column_doric</Template>
+			<Template>gaia/ruins/column_doric</Template>
 			<Player>0</Player>
 			<Position x="681.2284" z="830.45258"/>
 			<Orientation y="1.56612"/>
 			<Actor seed="13538"/>
 		</Entity>
 		<Entity uid="8752">
-			<Template>gaia/special_ruins</Template>
+			<Template>gaia/ruins/column_doric</Template>
 			<Player>0</Player>
 			<Position x="682.34687" z="844.25684"/>
 			<Orientation y="1.4407"/>
 			<Actor seed="19950"/>
 		</Entity>
 		<Entity uid="8753">
-			<Template>gaia/special_ruins</Template>
+			<Template>gaia/ruins/column_doric</Template>
 			<Player>0</Player>
 			<Position x="691.77778" z="843.21833"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="24546"/>
 		</Entity>
 		<Entity uid="8754">
-			<Template>gaia/special_ruins_column_doric</Template>
+			<Template>gaia/ruins/column_doric</Template>
 			<Player>0</Player>
 			<Position x="700.19501" z="821.54261"/>
 			<Orientation y="0.5509"/>
 			<Actor seed="42168"/>
 		</Entity>
 		<Entity uid="8755">
-			<Template>gaia/special_ruins_stone_statues_roman</Template>
+			<Template>gaia/ruins/stone_statues_roman</Template>
 			<Player>0</Player>
 			<Position x="698.56653" z="823.88062"/>
 			<Orientation y="-2.1055"/>
 			<Actor seed="19230"/>
 		</Entity>
 		<Entity uid="8757">
-			<Template>gaia/special_ruins_stone_statues_roman</Template>
+			<Template>gaia/ruins/stone_statues_roman</Template>
 			<Player>0</Player>
 			<Position x="693.94446" z="846.73615"/>
 			<Orientation y="0.38616"/>

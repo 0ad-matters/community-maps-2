@@ -1849,28 +1849,28 @@
 			<Actor seed="20612"/>
 		</Entity>
 		<Entity uid="307">
-			<Template>structures/special_treasure_shipwreck</Template>
+			<Template>gaia/treasure/shipwreck</Template>
 			<Player>2</Player>
 			<Position x="156.13929" z="454.12226"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="36122"/>
 		</Entity>
 		<Entity uid="308">
-			<Template>structures/special_treasure_shipwreck_debris</Template>
+			<Template>gaia/treasure/shipwreck_debris</Template>
 			<Player>0</Player>
 			<Position x="166.97028" z="358.28193"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="47846"/>
 		</Entity>
 		<Entity uid="309">
-			<Template>structures/special_treasure_shipwreck_debris</Template>
+			<Template>gaia/treasure/shipwreck_debris</Template>
 			<Player>0</Player>
 			<Position x="236.87003" z="255.76368"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="48434"/>
 		</Entity>
 		<Entity uid="313">
-			<Template>structures/special_treasure_shipwreck_sail_boat</Template>
+			<Template>gaia/treasure/shipwreck_sail_boat</Template>
 			<Player>0</Player>
 			<Position x="345.89798" z="177.61167"/>
 			<Orientation y="2.35621"/>
@@ -7811,7 +7811,7 @@
 			<Actor seed="44040"/>
 		</Entity>
 		<Entity uid="1315">
-			<Template>structures/special_treasure_shipwreck_sail_boat_cut</Template>
+			<Template>gaia/treasure/shipwreck_sail_boat_cut</Template>
 			<Player>2</Player>
 			<Position x="425.56333" z="506.58945"/>
 			<Orientation y="2.35621"/>
@@ -10327,7 +10327,7 @@
 			<Actor seed="22102"/>
 		</Entity>
 		<Entity uid="1783">
-			<Template>gaia/treasure/metal_persian_bigl</Template>
+			<Template>gaia/treasure/metal_persian_big</Template>
 			<Player>2</Player>
 			<Position x="691.39631" z="552.42493"/>
 			<Orientation y="2.35621"/>
@@ -11699,14 +11699,14 @@
 			<Actor seed="10720"/>
 		</Entity>
 		<Entity uid="2007">
-			<Template>gaia/special_treasure_golden_fleece</Template>
+			<Template>gaia/treasure/golden_fleece</Template>
 			<Player>2</Player>
 			<Position x="546.24274" z="634.44336"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="58444"/>
 		</Entity>
 		<Entity uid="2008">
-			<Template>gaia/special_treasure_golden_fleece</Template>
+			<Template>gaia/treasure/golden_fleece</Template>
 			<Player>2</Player>
 			<Position x="568.73945" z="660.42341"/>
 			<Orientation y="2.35621"/>
@@ -18361,21 +18361,21 @@
 			<Actor seed="37034"/>
 		</Entity>
 		<Entity uid="3110">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="1334.2505" z="828.62098"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="7366"/>
 		</Entity>
 		<Entity uid="3111">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="1337.8888" z="832.39399"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="10640"/>
 		</Entity>
 		<Entity uid="3112">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="1341.80823" z="836.84577"/>
 			<Orientation y="2.35621"/>
@@ -19726,21 +19726,21 @@
 			<Actor seed="6858"/>
 		</Entity>
 		<Entity uid="3317">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="1338.38233" z="823.30695"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="7366"/>
 		</Entity>
 		<Entity uid="3318">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="1342.02063" z="827.07996"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="10640"/>
 		</Entity>
 		<Entity uid="3319">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="1345.94007" z="831.53174"/>
 			<Orientation y="2.35622"/>
