@@ -20782,15 +20782,8 @@
 			<Orientation y="2.35621"/>
 			<Actor seed="31916"/>
 		</Entity>
-		<Entity uid="3603">
-			<Template>structures/brit/kennel</Template>
-			<Player>1</Player>
-			<Position x="1669.0741" z="843.5152"/>
-			<Orientation y="-1.6029"/>
-			<Actor seed="10036"/>
-		</Entity>
 		<Entity uid="3604">
-			<Template>units/brit/war_dog_b</Template>
+			<Template>units/brit/war_dog</Template>
 			<Player>1</Player>
 			<Position x="1662.51368" z="841.33002"/>
 			<Orientation y="-2.30988"/>
