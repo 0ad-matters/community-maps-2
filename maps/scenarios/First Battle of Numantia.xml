@@ -12051,14 +12051,14 @@
 			<Actor seed="29824"/>
 		</Entity>
 		<Entity uid="2191">
-			<Template>units/rome/mechanical_siege_ballista_unpacked</Template>
+			<Template>units/rome/siege_ballista_unpacked</Template>
 			<Player>2</Player>
 			<Position x="649.65894" z="261.52405"/>
 			<Orientation y="-0.37673"/>
 			<Actor seed="36350"/>
 		</Entity>
 		<Entity uid="2192">
-			<Template>units/rome/mechanical_siege_ballista_unpacked</Template>
+			<Template>units/rome/siege_ballista_unpacked</Template>
 			<Player>2</Player>
 			<Position x="635.84534" z="256.37967"/>
 			<Orientation y="-0.45881"/>
@@ -13191,14 +13191,14 @@
 			<Actor seed="44844"/>
 		</Entity>
 		<Entity uid="2600">
-			<Template>units/rome/mechanical_siege_scorpio_unpacked</Template>
+			<Template>units/rome/siege_scorpio_unpacked</Template>
 			<Player>2</Player>
 			<Position x="729.27021" z="264.92511"/>
 			<Orientation y="1.1709"/>
 			<Actor seed="33638"/>
 		</Entity>
 		<Entity uid="2603">
-			<Template>units/rome/mechanical_siege_scorpio_unpacked</Template>
+			<Template>units/rome/siege_scorpio_unpacked</Template>
 			<Player>2</Player>
 			<Position x="727.40406" z="269.75934"/>
 			<Orientation y="1.17089"/>
