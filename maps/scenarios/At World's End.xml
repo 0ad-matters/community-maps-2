@@ -9170,7 +9170,7 @@
 			<Actor seed="8158"/>
 		</Entity>
 		<Entity uid="2184">
-			<Template>structures/maur/elephant_stables</Template>
+			<Template>structures/maur/elephant_stable</Template>
 			<Player>3</Player>
 			<Position x="461.1297" z="156.08242"/>
 			<Orientation y="-0.33893"/>
@@ -9395,7 +9395,7 @@
 			<Actor seed="62716"/>
 		</Entity>
 		<Entity uid="2259">
-			<Template>structures/maur/wall</Template>
+			<Template>structures/maur/wall_medium</Template>
 			<Player>3</Player>
 			<Position x="521.07508" z="158.31618"/>
 			<Orientation y="0.49708"/>
@@ -9403,7 +9403,7 @@
 			<Actor seed="50540"/>
 		</Entity>
 		<Entity uid="2260">
-			<Template>structures/maur/wall</Template>
+			<Template>structures/maur/wall_medium</Template>
 			<Player>3</Player>
 			<Position x="541.63904" z="146.9408"/>
 			<Orientation y="-2.63186"/>
@@ -32742,7 +32742,7 @@
 			<Actor seed="11834"/>
 		</Entity>
 		<Entity uid="6494">
-			<Template>units/maur/hero_maurya</Template>
+			<Template>units/maur/hero_chandragupta</Template>
 			<Player>3</Player>
 			<Position x="733.19239" z="164.76838"/>
 			<Orientation y="-0.46518"/>
@@ -32889,7 +32889,7 @@
 			<Actor seed="20800"/>
 		</Entity>
 		<Entity uid="6515">
-			<Template>units/maur/hero_maurya</Template>
+			<Template>units/maur/hero_chandragupta</Template>
 			<Player>4</Player>
 			<Position x="888.18622" z="456.74503"/>
 			<Orientation y="2.35621"/>
@@ -32987,7 +32987,7 @@
 			<Actor seed="27342"/>
 		</Entity>
 		<Entity uid="6529">
-			<Template>units/maur/hero_maurya</Template>
+			<Template>units/maur/hero_chandragupta</Template>
 			<Player>4</Player>
 			<Position x="727.56043" z="548.32172"/>
 			<Orientation y="-0.81112"/>
