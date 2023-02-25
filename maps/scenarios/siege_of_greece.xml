@@ -8333,7 +8333,7 @@
 			<Actor seed="60142"/>
 		</Entity>
 		<Entity uid="2703">
-			<Template>actor|props/structures/construction/scaf_cart_sentry_tower.xml</Template>
+			<Template>actor|props/structures/construction/scaf_cart_wooden_tower.xml</Template>
 			<Position x="659.89496" z="1084.02161"/>
 			<Orientation y="1.48087"/>
 			<Actor seed="63046"/>
@@ -19895,7 +19895,7 @@
 			<Actor seed="2096"/>
 		</Entity>
 		<Entity uid="4743">
-			<Template>actor|props/structures/construction/scaf_cart_sentry_tower.xml</Template>
+			<Template>actor|props/structures/construction/scaf_cart_wooden_tower.xml</Template>
 			<Position x="801.16114" z="1069.71302"/>
 			<Orientation y="0.31876"/>
 			<Actor seed="63046"/>
