@@ -20370,28 +20370,28 @@
 			<Actor seed="9112"/>
 		</Entity>
 		<Entity uid="3386">
-			<Template>units/rome/legionnaire_marian</Template>
+			<Template>units/rome/champion_infantry_swordsman_02</Template>
 			<Player>2</Player>
 			<Position x="931.80396" z="724.93097"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="51816"/>
 		</Entity>
 		<Entity uid="3387">
-			<Template>units/rome/legionnaire_marian</Template>
+			<Template>units/rome/champion_infantry_swordsman_02</Template>
 			<Player>2</Player>
 			<Position x="935.25525" z="728.79682"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="7202"/>
 		</Entity>
 		<Entity uid="3388">
-			<Template>units/rome/legionnaire_marian</Template>
+			<Template>units/rome/champion_infantry_swordsman_02</Template>
 			<Player>2</Player>
 			<Position x="938.17066" z="732.06196"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="21412"/>
 		</Entity>
 		<Entity uid="3389">
-			<Template>units/rome/legionnaire_marian</Template>
+			<Template>units/rome/champion_infantry_swordsman_02</Template>
 			<Player>2</Player>
 			<Position x="928.52253" z="721.1247"/>
 			<Orientation y="2.35621"/>
@@ -20895,14 +20895,14 @@
 			<Actor seed="27190"/>
 		</Entity>
 		<Entity uid="3658">
-			<Template>units/rome/mechanical_siege_scorpio_unpacked</Template>
+			<Template>units/rome/siege_scorpio_unpacked</Template>
 			<Player>2</Player>
 			<Position x="962.16224" z="733.91895"/>
 			<Orientation y="0.78537"/>
 			<Actor seed="21188"/>
 		</Entity>
 		<Entity uid="3662">
-			<Template>units/rome/mechanical_siege_scorpio_unpacked</Template>
+			<Template>units/rome/siege_scorpio_unpacked</Template>
 			<Player>2</Player>
 			<Position x="957.78522" z="738.79737"/>
 			<Orientation y="0.69243"/>

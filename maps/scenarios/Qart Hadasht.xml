@@ -17824,70 +17824,70 @@
 			<Orientation y="2.35622"/>
 		</Entity>
 		<Entity uid="3023">
-			<Template>units/rome/legionnaire_imperial</Template>
+			<Template>units/rome/champion_infantry_swordsman_03</Template>
 			<Player>1</Player>
 			<Position x="1422.22706" z="826.61548"/>
 			<Orientation y="3.97248"/>
 			<Actor seed="62856"/>
 		</Entity>
 		<Entity uid="3024">
-			<Template>units/rome/legionnaire_imperial</Template>
+			<Template>units/rome/champion_infantry_swordsman_03</Template>
 			<Player>1</Player>
 			<Position x="1425.71692" z="822.88605"/>
 			<Orientation y="3.97248"/>
 			<Actor seed="34204"/>
 		</Entity>
 		<Entity uid="3025">
-			<Template>units/rome/legionnaire_imperial</Template>
+			<Template>units/rome/champion_infantry_swordsman_03</Template>
 			<Player>1</Player>
 			<Position x="1428.9563" z="818.26264"/>
 			<Orientation y="3.97248"/>
 			<Actor seed="4244"/>
 		</Entity>
 		<Entity uid="3026">
-			<Template>units/rome/legionnaire_imperial</Template>
+			<Template>units/rome/champion_infantry_swordsman_03</Template>
 			<Player>1</Player>
 			<Position x="1432.83887" z="813.90876"/>
 			<Orientation y="3.97248"/>
 			<Actor seed="14964"/>
 		</Entity>
 		<Entity uid="3027">
-			<Template>units/rome/legionnaire_imperial</Template>
+			<Template>units/rome/champion_infantry_swordsman_03</Template>
 			<Player>1</Player>
 			<Position x="1426.57264" z="831.09687"/>
 			<Orientation y="3.97248"/>
 			<Actor seed="26466"/>
 		</Entity>
 		<Entity uid="3028">
-			<Template>units/rome/legionnaire_imperial</Template>
+			<Template>units/rome/champion_infantry_swordsman_03</Template>
 			<Player>1</Player>
 			<Position x="1429.7793" z="827.62281"/>
 			<Orientation y="3.97248"/>
 			<Actor seed="16456"/>
 		</Entity>
 		<Entity uid="3029">
-			<Template>units/rome/legionnaire_imperial</Template>
+			<Template>units/rome/champion_infantry_swordsman_03</Template>
 			<Player>1</Player>
 			<Position x="1433.20801" z="823.14063"/>
 			<Orientation y="3.97248"/>
 			<Actor seed="63592"/>
 		</Entity>
 		<Entity uid="3030">
-			<Template>units/rome/legionnaire_imperial</Template>
+			<Template>units/rome/champion_infantry_swordsman_03</Template>
 			<Player>1</Player>
 			<Position x="1436.76075" z="818.37366"/>
 			<Orientation y="3.97248"/>
 			<Actor seed="25074"/>
 		</Entity>
 		<Entity uid="3034">
-			<Template>units/rome/mechanical_siege_scorpio_packed</Template>
+			<Template>units/rome/siege_scorpio_packed</Template>
 			<Player>1</Player>
 			<Position x="1464.31226" z="850.45765"/>
 			<Orientation y="-2.40566"/>
 			<Actor seed="45554"/>
 		</Entity>
 		<Entity uid="3035">
-			<Template>units/rome/mechanical_siege_scorpio_packed</Template>
+			<Template>units/rome/siege_scorpio_packed</Template>
 			<Player>1</Player>
 			<Position x="1452.93787" z="860.27656"/>
 			<Orientation y="-2.44068"/>

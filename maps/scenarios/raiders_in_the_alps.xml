@@ -16090,84 +16090,84 @@
 			<Actor seed="32341"/>
 		</Entity>
 		<Entity uid="2704">
-			<Template>units/rome/legionnaire_marian</Template>
+			<Template>units/rome/champion_infantry_swordsman_02</Template>
 			<Player>2</Player>
 			<Position x="798.84449" z="552.56666"/>
 			<Orientation y="4.09429"/>
 			<Actor seed="32801"/>
 		</Entity>
 		<Entity uid="2705">
-			<Template>units/rome/legionnaire_marian</Template>
+			<Template>units/rome/champion_infantry_swordsman_02</Template>
 			<Player>2</Player>
 			<Position x="800.04126" z="551.15363"/>
 			<Orientation y="4.09429"/>
 			<Actor seed="3081"/>
 		</Entity>
 		<Entity uid="2706">
-			<Template>units/rome/legionnaire_marian</Template>
+			<Template>units/rome/champion_infantry_swordsman_02</Template>
 			<Player>2</Player>
 			<Position x="801.30304" z="549.83967"/>
 			<Orientation y="4.09429"/>
 			<Actor seed="33700"/>
 		</Entity>
 		<Entity uid="2707">
-			<Template>units/rome/legionnaire_marian</Template>
+			<Template>units/rome/champion_infantry_swordsman_02</Template>
 			<Player>2</Player>
 			<Position x="802.2884" z="548.5835"/>
 			<Orientation y="4.09429"/>
 			<Actor seed="24648"/>
 		</Entity>
 		<Entity uid="2708">
-			<Template>units/rome/legionnaire_marian</Template>
+			<Template>units/rome/champion_infantry_swordsman_02</Template>
 			<Player>2</Player>
 			<Position x="803.40357" z="547.41535"/>
 			<Orientation y="4.09429"/>
 			<Actor seed="13437"/>
 		</Entity>
 		<Entity uid="2709">
-			<Template>units/rome/legionnaire_marian</Template>
+			<Template>units/rome/champion_infantry_swordsman_02</Template>
 			<Player>2</Player>
 			<Position x="804.44751" z="546.12916"/>
 			<Orientation y="4.09429"/>
 			<Actor seed="12666"/>
 		</Entity>
 		<Entity uid="2710">
-			<Template>units/rome/legionnaire_marian</Template>
+			<Template>units/rome/champion_infantry_swordsman_02</Template>
 			<Player>2</Player>
 			<Position x="805.7259" z="547.28303"/>
 			<Orientation y="4.09429"/>
 			<Actor seed="30672"/>
 		</Entity>
 		<Entity uid="2711">
-			<Template>units/rome/legionnaire_marian</Template>
+			<Template>units/rome/champion_infantry_swordsman_02</Template>
 			<Player>2</Player>
 			<Position x="804.77503" z="548.70368"/>
 			<Orientation y="4.09429"/>
 			<Actor seed="19287"/>
 		</Entity>
 		<Entity uid="2712">
-			<Template>units/rome/legionnaire_marian</Template>
+			<Template>units/rome/champion_infantry_swordsman_02</Template>
 			<Player>2</Player>
 			<Position x="803.6595" z="550.03797"/>
 			<Orientation y="4.09429"/>
 			<Actor seed="5585"/>
 		</Entity>
 		<Entity uid="2713">
-			<Template>units/rome/legionnaire_marian</Template>
+			<Template>units/rome/champion_infantry_swordsman_02</Template>
 			<Player>2</Player>
 			<Position x="802.59266" z="551.2132"/>
 			<Orientation y="4.09429"/>
 			<Actor seed="51580"/>
 		</Entity>
 		<Entity uid="2714">
-			<Template>units/rome/legionnaire_marian</Template>
+			<Template>units/rome/champion_infantry_swordsman_02</Template>
 			<Player>2</Player>
 			<Position x="801.43207" z="552.43525"/>
 			<Orientation y="4.09429"/>
 			<Actor seed="21344"/>
 		</Entity>
 		<Entity uid="2715">
-			<Template>units/rome/legionnaire_marian</Template>
+			<Template>units/rome/champion_infantry_swordsman_02</Template>
 			<Player>2</Player>
 			<Position x="800.37775" z="553.86506"/>
 			<Orientation y="4.09429"/>
@@ -18146,84 +18146,84 @@
 			<Actor seed="49575"/>
 		</Entity>
 		<Entity uid="3293">
-			<Template>units/rome/legionnaire_marian</Template>
+			<Template>units/rome/champion_infantry_swordsman_02</Template>
 			<Player>2</Player>
 			<Position x="815.82844" z="536.34974"/>
 			<Orientation y="4.0557"/>
 			<Actor seed="22750"/>
 		</Entity>
 		<Entity uid="3294">
-			<Template>units/rome/legionnaire_marian</Template>
+			<Template>units/rome/champion_infantry_swordsman_02</Template>
 			<Player>2</Player>
 			<Position x="816.85584" z="535.03388"/>
 			<Orientation y="4.0557"/>
 			<Actor seed="55413"/>
 		</Entity>
 		<Entity uid="3295">
-			<Template>units/rome/legionnaire_marian</Template>
+			<Template>units/rome/champion_infantry_swordsman_02</Template>
 			<Player>2</Player>
 			<Position x="817.87568" z="533.6725"/>
 			<Orientation y="4.0557"/>
 			<Actor seed="4054"/>
 		</Entity>
 		<Entity uid="3296">
-			<Template>units/rome/legionnaire_marian</Template>
+			<Template>units/rome/champion_infantry_swordsman_02</Template>
 			<Player>2</Player>
 			<Position x="814.50501" z="535.10169"/>
 			<Orientation y="4.0557"/>
 			<Actor seed="31868"/>
 		</Entity>
 		<Entity uid="3297">
-			<Template>units/rome/legionnaire_marian</Template>
+			<Template>units/rome/champion_infantry_swordsman_02</Template>
 			<Player>2</Player>
 			<Position x="815.60987" z="533.86738"/>
 			<Orientation y="4.0557"/>
 			<Actor seed="42768"/>
 		</Entity>
 		<Entity uid="3298">
-			<Template>units/rome/legionnaire_marian</Template>
+			<Template>units/rome/champion_infantry_swordsman_02</Template>
 			<Player>2</Player>
 			<Position x="816.71021" z="532.63935"/>
 			<Orientation y="4.0557"/>
 			<Actor seed="46450"/>
 		</Entity>
 		<Entity uid="3299">
-			<Template>units/rome/legionnaire_marian</Template>
+			<Template>units/rome/champion_infantry_swordsman_02</Template>
 			<Player>2</Player>
 			<Position x="813.6236" z="536.63044"/>
 			<Orientation y="4.05571"/>
 			<Actor seed="46450"/>
 		</Entity>
 		<Entity uid="3300">
-			<Template>units/rome/legionnaire_marian</Template>
+			<Template>units/rome/champion_infantry_swordsman_02</Template>
 			<Player>2</Player>
 			<Position x="812.52332" z="537.85846"/>
 			<Orientation y="4.05571"/>
 			<Actor seed="42768"/>
 		</Entity>
 		<Entity uid="3301">
-			<Template>units/rome/legionnaire_marian</Template>
+			<Template>units/rome/champion_infantry_swordsman_02</Template>
 			<Player>2</Player>
 			<Position x="811.41846" z="539.09278"/>
 			<Orientation y="4.05571"/>
 			<Actor seed="31868"/>
 		</Entity>
 		<Entity uid="3302">
-			<Template>units/rome/legionnaire_marian</Template>
+			<Template>units/rome/champion_infantry_swordsman_02</Template>
 			<Player>2</Player>
 			<Position x="814.78913" z="537.66358"/>
 			<Orientation y="4.05571"/>
 			<Actor seed="4054"/>
 		</Entity>
 		<Entity uid="3303">
-			<Template>units/rome/legionnaire_marian</Template>
+			<Template>units/rome/champion_infantry_swordsman_02</Template>
 			<Player>2</Player>
 			<Position x="813.7693" z="539.02497"/>
 			<Orientation y="4.05571"/>
 			<Actor seed="55413"/>
 		</Entity>
 		<Entity uid="3304">
-			<Template>units/rome/legionnaire_marian</Template>
+			<Template>units/rome/champion_infantry_swordsman_02</Template>
 			<Player>2</Player>
 			<Position x="812.74183" z="540.34083"/>
 			<Orientation y="4.05571"/>
