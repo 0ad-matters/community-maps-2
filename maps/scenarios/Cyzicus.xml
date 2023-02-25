@@ -2411,7 +2411,7 @@
 			<Actor seed="39018"/>
 		</Entity>
 		<Entity uid="400">
-			<Template>structures/athen/theatron</Template>
+			<Template>structures/athen/theater</Template>
 			<Player>3</Player>
 			<Position x="731.22248" z="1265.80542"/>
 			<Orientation y="-5.5225"/>

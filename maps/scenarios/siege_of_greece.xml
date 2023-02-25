@@ -4471,7 +4471,7 @@
 			<Actor seed="56556"/>
 		</Entity>
 		<Entity uid="709">
-			<Template>structures/athen/theatron</Template>
+			<Template>structures/athen/theater</Template>
 			<Player>1</Player>
 			<Position x="993.51587" z="835.64216"/>
 			<Orientation y="4.72925"/>
@@ -24051,7 +24051,7 @@
 			<Actor seed="6554"/>
 		</Entity>
 		<Entity uid="5470">
-			<Template>actor|props/structures/carthaginians/market.xml</Template>
+			<Template>actor|props/structures/carthaginians/market_old.xml</Template>
 			<Position x="1011.6236" z="737.28864"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="56710"/>
