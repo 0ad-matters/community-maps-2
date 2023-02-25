@@ -23739,43 +23739,43 @@
 			<Actor seed="43214"/>
 		</Entity>
 		<Entity uid="5418">
-			<Template>actor|props/units/shields/athen/round_marine.xml</Template>
+			<Template>actor|props/units/shields/aspis_athen_t.xml</Template>
 			<Position x="929.10462" z="807.69404"/>
 			<Orientation y="2.72452"/>
 			<Actor seed="18630"/>
 		</Entity>
 		<Entity uid="5419">
-			<Template>actor|props/units/shields/athen/round_marine.xml</Template>
+			<Template>actor|props/units/shields/aspis_athen_t.xml</Template>
 			<Position x="930.03614" z="807.88404"/>
 			<Orientation y="2.9448"/>
 			<Actor seed="26124"/>
 		</Entity>
 		<Entity uid="5420">
-			<Template>actor|props/units/shields/athen/round_marine.xml</Template>
+			<Template>actor|props/units/shields/aspis_athen_t.xml</Template>
 			<Position x="935.39936" z="805.98987"/>
 			<Orientation y="-2.7857"/>
 			<Actor seed="28970"/>
 		</Entity>
 		<Entity uid="5421">
-			<Template>actor|props/units/shields/athen/round_epilektos.xml</Template>
+			<Template>actor|props/units/shields/aspis_athen_c.xml</Template>
 			<Position x="917.44941" z="807.65687"/>
 			<Orientation y="-3.06595"/>
 			<Actor seed="10488"/>
 		</Entity>
 		<Entity uid="5422">
-			<Template>actor|props/units/shields/athen/round_epilektos.xml</Template>
+			<Template>actor|props/units/shields/aspis_athen_c.xml</Template>
 			<Position x="938.9162" z="800.94013"/>
 			<Orientation y="-1.5713"/>
 			<Actor seed="6624"/>
 		</Entity>
 		<Entity uid="5423">
-			<Template>actor|props/units/shields/athen/round_epilektos.xml</Template>
+			<Template>actor|props/units/shields/aspis_athen_c.xml</Template>
 			<Position x="929.64155" z="872.75434"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="48892"/>
 		</Entity>
 		<Entity uid="5424">
-			<Template>actor|props/units/shields/athen/round_epilektos.xml</Template>
+			<Template>actor|props/units/shields/aspis_athen_c.xml</Template>
 			<Position x="904.11255" z="870.10462"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="35088"/>
