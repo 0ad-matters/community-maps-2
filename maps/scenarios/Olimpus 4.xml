@@ -49578,35 +49578,35 @@
 			<Actor seed="18379"/>
 		</Entity>
 		<Entity uid="9607">
-			<Template>gaia/special_ruins_column_doric</Template>
+			<Template>gaia/ruins/column_doric</Template>
 			<Player>0</Player>
 			<Position x="135.96589" z="614.21851"/>
 			<Orientation y="0.1893"/>
 			<Actor seed="43001"/>
 		</Entity>
 		<Entity uid="9611">
-			<Template>gaia/special_ruins_column_doric</Template>
+			<Template>gaia/ruins/column_doric</Template>
 			<Player>0</Player>
 			<Position x="124.73176" z="626.02472"/>
 			<Orientation y="1.11472"/>
 			<Actor seed="18595"/>
 		</Entity>
 		<Entity uid="9612">
-			<Template>gaia/special_ruins_column_doric</Template>
+			<Template>gaia/ruins/column_doric</Template>
 			<Player>0</Player>
 			<Position x="139.48905" z="591.92945"/>
 			<Orientation y="1.18686"/>
 			<Actor seed="14530"/>
 		</Entity>
 		<Entity uid="9613">
-			<Template>gaia/special_ruins_column_doric</Template>
+			<Template>gaia/ruins/column_doric</Template>
 			<Player>0</Player>
 			<Position x="134.25599" z="601.92579"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="48382"/>
 		</Entity>
 		<Entity uid="9614">
-			<Template>gaia/special_ruins_column_doric</Template>
+			<Template>gaia/ruins/column_doric</Template>
 			<Player>0</Player>
 			<Position x="124.8004" z="605.09919"/>
 			<Orientation y="0.6804"/>

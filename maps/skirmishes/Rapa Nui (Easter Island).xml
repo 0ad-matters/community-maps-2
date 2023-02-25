@@ -6841,168 +6841,168 @@
 			<Actor seed="60044"/>
 		</Entity>
 		<Entity uid="3391">
-			<Template>structures/special_treasure_shipwreck_sail_boat_cut</Template>
+			<Template>gaia/treasure/shipwreck_sail_boat_cut</Template>
 			<Player>0</Player>
 			<Position x="574.40821" z="810.94459"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="13836"/>
 		</Entity>
 		<Entity uid="3392">
-			<Template>structures/special_treasure_shipwreck_debris</Template>
+			<Template>gaia/treasure/shipwreck_debris</Template>
 			<Player>0</Player>
 			<Position x="251.68467" z="849.54725"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="35682"/>
 		</Entity>
 		<Entity uid="3393">
-			<Template>structures/special_treasure_shipwreck_debris</Template>
+			<Template>gaia/treasure/shipwreck_debris</Template>
 			<Player>0</Player>
 			<Position x="194.8141" z="894.59827"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="47276"/>
 		</Entity>
 		<Entity uid="3394">
-			<Template>structures/special_treasure_shipwreck_sail_boat_cut</Template>
+			<Template>gaia/treasure/shipwreck_sail_boat_cut</Template>
 			<Player>0</Player>
 			<Position x="212.37891" z="577.50556"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="27782"/>
 		</Entity>
 		<Entity uid="3395">
-			<Template>structures/special_treasure_shipwreck_debris</Template>
+			<Template>gaia/treasure/shipwreck_debris</Template>
 			<Player>0</Player>
 			<Position x="123.16185" z="398.45917"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="33968"/>
 		</Entity>
 		<Entity uid="3396">
-			<Template>structures/special_treasure_shipwreck_debris</Template>
+			<Template>gaia/treasure/shipwreck_debris</Template>
 			<Player>0</Player>
 			<Position x="115.88483" z="402.1616"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="11782"/>
 		</Entity>
 		<Entity uid="3397">
-			<Template>structures/special_treasure_shipwreck_debris</Template>
+			<Template>gaia/treasure/shipwreck_debris</Template>
 			<Player>0</Player>
 			<Position x="113.61533" z="389.33201"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="34298"/>
 		</Entity>
 		<Entity uid="3398">
-			<Template>structures/special_treasure_shipwreck_debris</Template>
+			<Template>gaia/treasure/shipwreck_debris</Template>
 			<Player>0</Player>
 			<Position x="307.51636" z="157.98154"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="15766"/>
 		</Entity>
 		<Entity uid="3399">
-			<Template>structures/special_treasure_shipwreck_debris</Template>
+			<Template>gaia/treasure/shipwreck_debris</Template>
 			<Player>0</Player>
 			<Position x="312.02872" z="165.62235"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="9782"/>
 		</Entity>
 		<Entity uid="3400">
-			<Template>structures/special_treasure_shipwreck_debris</Template>
+			<Template>gaia/treasure/shipwreck_debris</Template>
 			<Player>0</Player>
 			<Position x="599.68653" z="248.09134"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="54368"/>
 		</Entity>
 		<Entity uid="3401">
-			<Template>structures/special_treasure_shipwreck_debris</Template>
+			<Template>gaia/treasure/shipwreck_debris</Template>
 			<Player>0</Player>
 			<Position x="607.37397" z="242.43207"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="20136"/>
 		</Entity>
 		<Entity uid="3402">
-			<Template>structures/special_treasure_shipwreck_sail_boat_cut</Template>
+			<Template>gaia/treasure/shipwreck_sail_boat_cut</Template>
 			<Player>0</Player>
 			<Position x="695.40741" z="229.51642"/>
 			<Orientation y="0.77108"/>
 			<Actor seed="10436"/>
 		</Entity>
 		<Entity uid="3403">
-			<Template>structures/special_treasure_shipwreck_sail_boat_cut</Template>
+			<Template>gaia/treasure/shipwreck_sail_boat_cut</Template>
 			<Player>0</Player>
 			<Position x="894.50428" z="192.45185"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="48064"/>
 		</Entity>
 		<Entity uid="3405">
-			<Template>structures/special_treasure_shipwreck</Template>
+			<Template>gaia/treasure/shipwreck</Template>
 			<Player>0</Player>
 			<Position x="941.42658" z="401.43107"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="14166"/>
 		</Entity>
 		<Entity uid="3406">
-			<Template>structures/special_treasure_shipwreck_ram_bow</Template>
+			<Template>gaia/treasure/shipwreck_ram_bow</Template>
 			<Player>0</Player>
 			<Position x="775.3683" z="937.45813"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="20980"/>
 		</Entity>
 		<Entity uid="3407">
-			<Template>structures/special_treasure_shipwreck_debris</Template>
+			<Template>gaia/treasure/shipwreck_debris</Template>
 			<Player>0</Player>
 			<Position x="668.3866" z="660.31153"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="28958"/>
 		</Entity>
 		<Entity uid="3408">
-			<Template>structures/special_treasure_shipwreck_debris</Template>
+			<Template>gaia/treasure/shipwreck_debris</Template>
 			<Player>0</Player>
 			<Position x="665.08875" z="669.18226"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="33998"/>
 		</Entity>
 		<Entity uid="3409">
-			<Template>structures/special_treasure_shipwreck_debris</Template>
+			<Template>gaia/treasure/shipwreck_debris</Template>
 			<Player>0</Player>
 			<Position x="820.00678" z="563.51691"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="2636"/>
 		</Entity>
 		<Entity uid="3410">
-			<Template>structures/special_treasure_shipwreck_debris</Template>
+			<Template>gaia/treasure/shipwreck_debris</Template>
 			<Player>0</Player>
 			<Position x="226.28498" z="893.75007"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="4"/>
 		</Entity>
 		<Entity uid="3413">
-			<Template>structures/special_treasure_shipwreck_debris</Template>
+			<Template>gaia/treasure/shipwreck_debris</Template>
 			<Player>0</Player>
 			<Position x="205.1056" z="823.34296"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="292"/>
 		</Entity>
 		<Entity uid="3414">
-			<Template>structures/special_treasure_shipwreck_debris</Template>
+			<Template>gaia/treasure/shipwreck_debris</Template>
 			<Player>0</Player>
 			<Position x="278.87897" z="869.3069"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="29038"/>
 		</Entity>
 		<Entity uid="3415">
-			<Template>structures/special_treasure_shipwreck_debris</Template>
+			<Template>gaia/treasure/shipwreck_debris</Template>
 			<Player>0</Player>
 			<Position x="262.44257" z="896.57178"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="14244"/>
 		</Entity>
 		<Entity uid="3416">
-			<Template>structures/special_treasure_shipwreck_debris</Template>
+			<Template>gaia/treasure/shipwreck_debris</Template>
 			<Player>0</Player>
 			<Position x="238.39524" z="804.30127"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="9508"/>
 		</Entity>
 		<Entity uid="3418">
-			<Template>structures/special_treasure_shipwreck_debris</Template>
+			<Template>gaia/treasure/shipwreck_debris</Template>
 			<Player>0</Player>
 			<Position x="225.84351" z="873.36951"/>
 			<Orientation y="2.35621"/>

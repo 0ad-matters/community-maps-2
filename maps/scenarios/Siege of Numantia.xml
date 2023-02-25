@@ -342,14 +342,14 @@
 			<Actor seed="31621"/>
 		</Entity>
 		<Entity uid="199">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="470.01124" z="720.67255"/>
 			<Orientation y="4.08239"/>
 			<Actor seed="48649"/>
 		</Entity>
 		<Entity uid="200">
-			<Template>gaia/special_treasure_food_crate</Template>
+			<Template>gaia/treasure/food_crate</Template>
 			<Player>0</Player>
 			<Position x="467.36997" z="718.91755"/>
 			<Orientation y="4.08239"/>
@@ -377,56 +377,56 @@
 			<Actor seed="24061"/>
 		</Entity>
 		<Entity uid="204">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="464.8" z="717.56672"/>
 			<Orientation y="4.08239"/>
 			<Actor seed="13167"/>
 		</Entity>
 		<Entity uid="205">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="467.99589" z="723.04395"/>
 			<Orientation y="4.08239"/>
 			<Actor seed="56702"/>
 		</Entity>
 		<Entity uid="206">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="464.65827" z="721.53382"/>
 			<Orientation y="4.08239"/>
 			<Actor seed="59630"/>
 		</Entity>
 		<Entity uid="207">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="470.123" z="713.00898"/>
 			<Orientation y="4.08239"/>
 			<Actor seed="30939"/>
 		</Entity>
 		<Entity uid="208">
-			<Template>gaia/special_treasure_food_barrels_buried</Template>
+			<Template>gaia/treasure/food_barrels_buried</Template>
 			<Player>0</Player>
 			<Position x="462.27454" z="708.80884"/>
 			<Orientation y="4.08239"/>
 			<Actor seed="48163"/>
 		</Entity>
 		<Entity uid="209">
-			<Template>gaia/special_treasure_food_crate</Template>
+			<Template>gaia/treasure/food_crate</Template>
 			<Player>0</Player>
 			<Position x="463.86704" z="713.24958"/>
 			<Orientation y="4.08239"/>
 			<Actor seed="63579"/>
 		</Entity>
 		<Entity uid="210">
-			<Template>gaia/special_treasure_food_crate</Template>
+			<Template>gaia/treasure/food_crate</Template>
 			<Player>0</Player>
 			<Position x="461.97248" z="715.64808"/>
 			<Orientation y="4.08239"/>
 			<Actor seed="5986"/>
 		</Entity>
 		<Entity uid="211">
-			<Template>gaia/special_treasure_food_jars</Template>
+			<Template>gaia/treasure/food_jars</Template>
 			<Player>0</Player>
 			<Position x="474.72046" z="714.94471"/>
 			<Orientation y="4.08239"/>

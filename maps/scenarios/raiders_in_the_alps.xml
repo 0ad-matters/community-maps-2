@@ -16691,14 +16691,14 @@
 			<Actor seed="50912"/>
 		</Entity>
 		<Entity uid="2826">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="770.67505" z="546.79645"/>
 			<Orientation y="0.84823"/>
 			<Actor seed="60567"/>
 		</Entity>
 		<Entity uid="2827">
-			<Template>gaia/special_treasure_food_crate</Template>
+			<Template>gaia/treasure/food_crate</Template>
 			<Player>0</Player>
 			<Position x="768.82496" z="548.43055"/>
 			<Orientation y="0.84823"/>
@@ -16733,77 +16733,77 @@
 			<Actor seed="48123"/>
 		</Entity>
 		<Entity uid="2832">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="772.3938" z="550.51734"/>
 			<Orientation y="-1.1203"/>
 			<Actor seed="40777"/>
 		</Entity>
 		<Entity uid="2833">
-			<Template>gaia/special_treasure_food_jars</Template>
+			<Template>gaia/treasure/food_jars</Template>
 			<Player>0</Player>
 			<Position x="775.9292" z="542.11365"/>
 			<Orientation y="0.84823"/>
 			<Actor seed="43843"/>
 		</Entity>
 		<Entity uid="2834">
-			<Template>gaia/special_treasure_golden_fleece</Template>
+			<Template>gaia/treasure/golden_fleece</Template>
 			<Player>0</Player>
 			<Position x="331.90143" z="798.78003"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="54185"/>
 		</Entity>
 		<Entity uid="2837">
-			<Template>gaia/special_treasure_standing_stone</Template>
+			<Template>gaia/treasure/standing_stone</Template>
 			<Player>0</Player>
 			<Position x="250.79743" z="176.35627"/>
 			<Orientation y="0.4931"/>
 			<Actor seed="36218"/>
 		</Entity>
 		<Entity uid="2838">
-			<Template>gaia/special_treasure_standing_stone</Template>
+			<Template>gaia/treasure/standing_stone</Template>
 			<Player>0</Player>
 			<Position x="256.04926" z="173.56907"/>
 			<Orientation y="-2.50358"/>
 			<Actor seed="64621"/>
 		</Entity>
 		<Entity uid="2839">
-			<Template>gaia/special_treasure_standing_stone</Template>
+			<Template>gaia/treasure/standing_stone</Template>
 			<Player>0</Player>
 			<Position x="258.95908" z="168.37061"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="26152"/>
 		</Entity>
 		<Entity uid="2840">
-			<Template>gaia/special_treasure_standing_stone</Template>
+			<Template>gaia/treasure/standing_stone</Template>
 			<Player>0</Player>
 			<Position x="258.47556" z="163.44956"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="7846"/>
 		</Entity>
 		<Entity uid="2841">
-			<Template>gaia/special_treasure_standing_stone</Template>
+			<Template>gaia/treasure/standing_stone</Template>
 			<Player>0</Player>
 			<Position x="253.68802" z="161.92386"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="2606"/>
 		</Entity>
 		<Entity uid="2844">
-			<Template>gaia/special_treasure_standing_stone</Template>
+			<Template>gaia/treasure/standing_stone</Template>
 			<Player>0</Player>
 			<Position x="248.74433" z="164.30631"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="27677"/>
 		</Entity>
 		<Entity uid="2845">
-			<Template>gaia/special_treasure_standing_stone</Template>
+			<Template>gaia/treasure/standing_stone</Template>
 			<Player>0</Player>
 			<Position x="246.54789" z="173.71976"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="55217"/>
 		</Entity>
 		<Entity uid="2846">
-			<Template>gaia/special_treasure_standing_stone</Template>
+			<Template>gaia/treasure/standing_stone</Template>
 			<Player>0</Player>
 			<Position x="245.16797" z="168.73368"/>
 			<Orientation y="2.35621"/>
@@ -16864,14 +16864,14 @@
 			<Actor seed="59740"/>
 		</Entity>
 		<Entity uid="2861">
-			<Template>gaia/special_treasure_food_barrels_buried</Template>
+			<Template>gaia/treasure/food_barrels_buried</Template>
 			<Player>1</Player>
 			<Position x="256.51316" z="758.46479"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="10875"/>
 		</Entity>
 		<Entity uid="2862">
-			<Template>gaia/special_treasure_food_crate</Template>
+			<Template>gaia/treasure/food_crate</Template>
 			<Player>1</Player>
 			<Position x="260.33173" z="764.3407"/>
 			<Orientation y="2.35621"/>

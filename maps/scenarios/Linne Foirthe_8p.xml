@@ -925,14 +925,14 @@
 			<Actor seed="23594"/>
 		</Entity>
 		<Entity uid="148">
-			<Template>structures/special_treasure_shipwreck_sail_boat</Template>
+			<Template>gaia/treasure/shipwreck_sail_boat</Template>
 			<Player>0</Player>
 			<Position x="1595.0149" z="1005.91236"/>
 			<Orientation y="7.14568"/>
 			<Actor seed="15372"/>
 		</Entity>
 		<Entity uid="149">
-			<Template>structures/special_treasure_shipwreck_sail_boat_cut</Template>
+			<Template>gaia/treasure/shipwreck_sail_boat_cut</Template>
 			<Player>0</Player>
 			<Position x="1946.98511" z="761.9217"/>
 			<Orientation y="2.35621"/>
@@ -13756,49 +13756,49 @@
 			<Actor seed="34162"/>
 		</Entity>
 		<Entity uid="1991">
-			<Template>gaia/special_treasure_food_crate</Template>
+			<Template>gaia/treasure/food_crate</Template>
 			<Player>0</Player>
 			<Position x="1579.98804" z="1023.15522"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="54792"/>
 		</Entity>
 		<Entity uid="1992">
-			<Template>gaia/special_treasure_food_crate</Template>
+			<Template>gaia/treasure/food_crate</Template>
 			<Player>0</Player>
 			<Position x="1582.18628" z="1024.11915"/>
 			<Orientation y="1.17841"/>
 			<Actor seed="4332"/>
 		</Entity>
 		<Entity uid="1993">
-			<Template>gaia/special_treasure_food_crate</Template>
+			<Template>gaia/treasure/food_crate</Template>
 			<Player>0</Player>
 			<Position x="1574.40796" z="1022.10987"/>
 			<Orientation y="0.68963"/>
 			<Actor seed="26272"/>
 		</Entity>
 		<Entity uid="1994">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="1577.76087" z="1021.02967"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="59602"/>
 		</Entity>
 		<Entity uid="1995">
-			<Template>gaia/special_ruins_standing_stone</Template>
+			<Template>gaia/ruins/standing_stone</Template>
 			<Player>0</Player>
 			<Position x="1563.77796" z="981.1225"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="17652"/>
 		</Entity>
 		<Entity uid="1996">
-			<Template>gaia/special_ruins_standing_stone</Template>
+			<Template>gaia/ruins/standing_stone</Template>
 			<Player>0</Player>
 			<Position x="1568.37159" z="977.54688"/>
 			<Orientation y="-0.60175"/>
 			<Actor seed="23816"/>
 		</Entity>
 		<Entity uid="1998">
-			<Template>gaia/special_ruins_standing_stone</Template>
+			<Template>gaia/ruins/standing_stone</Template>
 			<Player>0</Player>
 			<Position x="1571.97767" z="975.05396"/>
 			<Orientation y="2.35621"/>
@@ -43727,14 +43727,14 @@
 			<Actor seed="16538"/>
 		</Entity>
 		<Entity uid="6341">
-			<Template>gaia/treasure/metal_persian_bigl</Template>
+			<Template>gaia/treasure/metal_persian_big</Template>
 			<Player>0</Player>
 			<Position x="1583.64466" z="1014.44562"/>
 			<Orientation y="1.52604"/>
 			<Actor seed="23152"/>
 		</Entity>
 		<Entity uid="6342">
-			<Template>gaia/special_treasure_food_persian_big</Template>
+			<Template>gaia/treasure/food_persian_big</Template>
 			<Player>0</Player>
 			<Position x="1573.52063" z="1009.23285"/>
 			<Orientation y="1.50078"/>
@@ -46673,7 +46673,7 @@
 			<Actor seed="64540"/>
 		</Entity>
 		<Entity uid="6836">
-			<Template>gaia/special_treasure_golden_fleece</Template>
+			<Template>gaia/treasure/golden_fleece</Template>
 			<Player>0</Player>
 			<Position x="1919.05567" z="1143.50135"/>
 			<Orientation y="1.5707"/>
@@ -87474,7 +87474,7 @@
 			<Actor seed="58678"/>
 		</Entity>
 		<Entity uid="13220">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>0</Player>
 			<Position x="362.11854" z="832.77216"/>
 			<Orientation y="-1.8406"/>
@@ -94422,21 +94422,21 @@
 			<Actor seed="35770"/>
 		</Entity>
 		<Entity uid="14290">
-			<Template>gaia/special_treasure_standing_stone</Template>
+			<Template>gaia/treasure/standing_stone</Template>
 			<Player>0</Player>
 			<Position x="28.38164" z="969.0818"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="27410"/>
 		</Entity>
 		<Entity uid="14291">
-			<Template>gaia/special_treasure_standing_stone</Template>
+			<Template>gaia/treasure/standing_stone</Template>
 			<Player>0</Player>
 			<Position x="23.04107" z="969.11103"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="35686"/>
 		</Entity>
 		<Entity uid="14292">
-			<Template>gaia/special_treasure_standing_stone</Template>
+			<Template>gaia/treasure/standing_stone</Template>
 			<Player>0</Player>
 			<Position x="16.68432" z="969.27747"/>
 			<Orientation y="2.35621"/>
@@ -94464,14 +94464,14 @@
 			<Actor seed="42302"/>
 		</Entity>
 		<Entity uid="14297">
-			<Template>gaia/treasure/metal_persian_bigl</Template>
+			<Template>gaia/treasure/metal_persian_big</Template>
 			<Player>0</Player>
 			<Position x="23.57447" z="983.84375"/>
 			<Orientation y="0.84137"/>
 			<Actor seed="61384"/>
 		</Entity>
 		<Entity uid="14298">
-			<Template>gaia/special_treasure_food_jars</Template>
+			<Template>gaia/treasure/food_jars</Template>
 			<Player>0</Player>
 			<Position x="29.84583" z="989.12513"/>
 			<Orientation y="2.35621"/>

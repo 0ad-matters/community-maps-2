@@ -6282,7 +6282,7 @@
 			<Actor seed="60164"/>
 		</Entity>
 		<Entity uid="1032">
-			<Template>gaia/special_treasure_food_bin</Template>
+			<Template>gaia/treasure/food_bin</Template>
 			<Player>1</Player>
 			<Position x="622.05268" z="156.8744"/>
 			<Orientation y="-3.0891"/>
@@ -10480,35 +10480,35 @@
 			<Actor seed="12476"/>
 		</Entity>
 		<Entity uid="1732">
-			<Template>gaia/special_ruins_standing_stone</Template>
+			<Template>gaia/ruins/standing_stone</Template>
 			<Player>0</Player>
 			<Position x="603.9126" z="1023.92347"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="58734"/>
 		</Entity>
 		<Entity uid="1733">
-			<Template>gaia/special_ruins_standing_stone</Template>
+			<Template>gaia/ruins/standing_stone</Template>
 			<Player>0</Player>
 			<Position x="613.21991" z="1031.88868"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="45065"/>
 		</Entity>
 		<Entity uid="1734">
-			<Template>gaia/special_ruins_standing_stone</Template>
+			<Template>gaia/ruins/standing_stone</Template>
 			<Player>0</Player>
 			<Position x="604.93201" z="980.36915"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="58274"/>
 		</Entity>
 		<Entity uid="1735">
-			<Template>gaia/special_ruins_standing_stone</Template>
+			<Template>gaia/ruins/standing_stone</Template>
 			<Player>0</Player>
 			<Position x="595.02369" z="1051.24195"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="20259"/>
 		</Entity>
 		<Entity uid="1736">
-			<Template>gaia/special_ruins_standing_stone</Template>
+			<Template>gaia/ruins/standing_stone</Template>
 			<Player>0</Player>
 			<Position x="586.1114" z="1043.53516"/>
 			<Orientation y="2.35621"/>
@@ -14695,7 +14695,7 @@
 			<Actor seed="51374"/>
 		</Entity>
 		<Entity uid="2458">
-			<Template>structures/special_treasure_shipwreck_sail_boat_cut</Template>
+			<Template>gaia/treasure/shipwreck_sail_boat_cut</Template>
 			<Player>0</Player>
 			<Position x="1117.49708" z="1575.57227"/>
 			<Orientation y="-0.87191"/>
