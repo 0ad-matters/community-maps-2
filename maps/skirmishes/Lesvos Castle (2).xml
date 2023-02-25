@@ -174,13 +174,13 @@
 			<Actor seed="64210"/>
 		</Entity>
 		<Entity uid="28">
-			<Template>actor|structures/hellenes/sentry_tower.xml</Template>
+			<Template>actor|structures/hellenes/wooden_tower.xml</Template>
 			<Position x="255.96692" z="201.0127"/>
 			<Orientation y="3.14939"/>
 			<Actor seed="2202"/>
 		</Entity>
 		<Entity uid="29">
-			<Template>actor|structures/hellenes/sentry_tower.xml</Template>
+			<Template>actor|structures/hellenes/wooden_tower.xml</Template>
 			<Position x="254.84726" z="208.79627"/>
 			<Orientation y="-0.16704"/>
 			<Actor seed="56592"/>
@@ -282,7 +282,7 @@
 			<Actor seed="19480"/>
 		</Entity>
 		<Entity uid="48">
-			<Template>actor|structures/hellenes/forge.xml</Template>
+			<Template>actor|structures/hellenes/blacksmith.xml</Template>
 			<Position x="267.85975" z="224.284"/>
 			<Orientation y="-0.51041"/>
 			<Actor seed="35418"/>
