@@ -14982,14 +14982,14 @@
 			<Actor seed="35176"/>
 		</Entity>
 		<Entity uid="2466">
-			<Template>units/brit/war_dog_b</Template>
+			<Template>units/brit/war_dog</Template>
 			<Player>3</Player>
 			<Position x="584.18891" z="37.85616"/>
 			<Orientation y="6.74958"/>
 			<Actor seed="27413"/>
 		</Entity>
 		<Entity uid="2468">
-			<Template>units/brit/war_dog_e</Template>
+			<Template>units/brit/war_dog</Template>
 			<Player>3</Player>
 			<Position x="578.61109" z="41.09609"/>
 			<Orientation y="6.71937"/>
@@ -15175,13 +15175,6 @@
 			<Position x="611.64197" z="81.71737"/>
 			<Orientation y="7.43456"/>
 			<Actor seed="6785"/>
-		</Entity>
-		<Entity uid="2518">
-			<Template>structures/brit/kennel</Template>
-			<Player>3</Player>
-			<Position x="567.45966" z="22.77407"/>
-			<Orientation y="0.19094"/>
-			<Actor seed="48004"/>
 		</Entity>
 		<Entity uid="2519">
 			<Template>structures/brit/market</Template>
