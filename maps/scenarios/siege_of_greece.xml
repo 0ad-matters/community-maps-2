@@ -22999,61 +22999,61 @@
 			<Actor seed="1826"/>
 		</Entity>
 		<Entity uid="5293">
-			<Template>actor|props/structures/celts/forge_armorstand_wood.xml</Template>
+			<Template>actor|props/structures/celts/blacksmith_armorstand_wood.xml</Template>
 			<Position x="924.72547" z="909.48536"/>
 			<Orientation y="-0.50058"/>
 			<Actor seed="52088"/>
 		</Entity>
 		<Entity uid="5294">
-			<Template>actor|props/structures/celts/forge_armorstand_armor.xml</Template>
+			<Template>actor|props/structures/celts/blacksmith_armorstand_armor.xml</Template>
 			<Position x="924.79218" z="909.50696"/>
 			<Orientation y="-0.46924"/>
 			<Actor seed="42644"/>
 		</Entity>
 		<Entity uid="5295">
-			<Template>actor|props/structures/celts/forge_armorstand_armor.xml</Template>
+			<Template>actor|props/structures/celts/blacksmith_armorstand_armor.xml</Template>
 			<Position x="922.2945" z="911.1081"/>
 			<Orientation y="-0.46924"/>
 			<Actor seed="42644"/>
 		</Entity>
 		<Entity uid="5296">
-			<Template>actor|props/structures/celts/forge_armorstand_wood.xml</Template>
+			<Template>actor|props/structures/celts/blacksmith_armorstand_wood.xml</Template>
 			<Position x="922.22779" z="911.0865"/>
 			<Orientation y="-0.50058"/>
 			<Actor seed="52088"/>
 		</Entity>
 		<Entity uid="5297">
-			<Template>actor|props/structures/celts/forge_armorstand_armor.xml</Template>
+			<Template>actor|props/structures/celts/blacksmith_armorstand_armor.xml</Template>
 			<Position x="938.04224" z="905.99122"/>
 			<Orientation y="-2.50728"/>
 			<Actor seed="42644"/>
 		</Entity>
 		<Entity uid="5298">
-			<Template>actor|props/structures/celts/forge_armorstand_wood.xml</Template>
+			<Template>actor|props/structures/celts/blacksmith_armorstand_wood.xml</Template>
 			<Position x="938.09156" z="905.94135"/>
 			<Orientation y="-2.53862"/>
 			<Actor seed="52088"/>
 		</Entity>
 		<Entity uid="5299">
-			<Template>actor|props/structures/celts/forge_armorstand_armor.xml</Template>
+			<Template>actor|props/structures/celts/blacksmith_armorstand_armor.xml</Template>
 			<Position x="957.12177" z="914.1756"/>
 			<Orientation y="-0.43561"/>
 			<Actor seed="42644"/>
 		</Entity>
 		<Entity uid="5300">
-			<Template>actor|props/structures/celts/forge_armorstand_wood.xml</Template>
+			<Template>actor|props/structures/celts/blacksmith_armorstand_wood.xml</Template>
 			<Position x="957.05433" z="914.1562"/>
 			<Orientation y="-0.46695"/>
 			<Actor seed="52088"/>
 		</Entity>
 		<Entity uid="5301">
-			<Template>actor|props/structures/celts/forge_armorstand_armor.xml</Template>
+			<Template>actor|props/structures/celts/blacksmith_armorstand_armor.xml</Template>
 			<Position x="966.68995" z="907.32715"/>
 			<Orientation y="-1.17728"/>
 			<Actor seed="42644"/>
 		</Entity>
 		<Entity uid="5302">
-			<Template>actor|props/structures/celts/forge_armorstand_wood.xml</Template>
+			<Template>actor|props/structures/celts/blacksmith_armorstand_wood.xml</Template>
 			<Position x="966.65333" z="907.26734"/>
 			<Orientation y="-1.20862"/>
 			<Actor seed="52088"/>
@@ -23173,13 +23173,13 @@
 			<Actor seed="16698"/>
 		</Entity>
 		<Entity uid="5322">
-			<Template>actor|props/structures/celts/forge_barrels.xml</Template>
+			<Template>actor|props/structures/celts/blacksmith_barrels.xml</Template>
 			<Position x="926.91157" z="904.28882"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="16252"/>
 		</Entity>
 		<Entity uid="5323">
-			<Template>actor|props/structures/celts/forge_barrels.xml</Template>
+			<Template>actor|props/structures/celts/blacksmith_barrels.xml</Template>
 			<Position x="938.26307" z="917.63678"/>
 			<Orientation y="-2.7668"/>
 			<Actor seed="22830"/>
@@ -23281,19 +23281,19 @@
 			<Actor seed="53072"/>
 		</Entity>
 		<Entity uid="5340">
-			<Template>actor|props/structures/celts/forge_barrels.xml</Template>
+			<Template>actor|props/structures/celts/blacksmith_barrels.xml</Template>
 			<Position x="921.70453" z="907.85907"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="26912"/>
 		</Entity>
 		<Entity uid="5342">
-			<Template>actor|props/structures/celts/forge_barrels.xml</Template>
+			<Template>actor|props/structures/celts/blacksmith_barrels.xml</Template>
 			<Position x="940.54621" z="885.42322"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="65172"/>
 		</Entity>
 		<Entity uid="5343">
-			<Template>actor|props/structures/celts/forge_barrels.xml</Template>
+			<Template>actor|props/structures/celts/blacksmith_barrels.xml</Template>
 			<Position x="943.71778" z="885.3094"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="9518"/>
@@ -23311,13 +23311,13 @@
 			<Actor seed="1362"/>
 		</Entity>
 		<Entity uid="5346">
-			<Template>actor|props/structures/celts/forge_barrels.xml</Template>
+			<Template>actor|props/structures/celts/blacksmith_barrels.xml</Template>
 			<Position x="913.69526" z="871.03986"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="37162"/>
 		</Entity>
 		<Entity uid="5348">
-			<Template>actor|props/structures/celts/forge_barrels.xml</Template>
+			<Template>actor|props/structures/celts/blacksmith_barrels.xml</Template>
 			<Position x="917.58851" z="871.31"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="4948"/>
@@ -23691,31 +23691,31 @@
 			<Actor seed="44244"/>
 		</Entity>
 		<Entity uid="5410">
-			<Template>actor|props/structures/celts/forge_barrels.xml</Template>
+			<Template>actor|props/structures/celts/blacksmith_barrels.xml</Template>
 			<Position x="889.78376" z="796.33814"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="44324"/>
 		</Entity>
 		<Entity uid="5411">
-			<Template>actor|props/structures/celts/forge_barrels.xml</Template>
+			<Template>actor|props/structures/celts/blacksmith_barrels.xml</Template>
 			<Position x="890.87867" z="807.34241"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="17470"/>
 		</Entity>
 		<Entity uid="5412">
-			<Template>actor|props/structures/celts/forge_barrels.xml</Template>
+			<Template>actor|props/structures/celts/blacksmith_barrels.xml</Template>
 			<Position x="894.2646" z="807.53107"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="54514"/>
 		</Entity>
 		<Entity uid="5413">
-			<Template>actor|props/structures/celts/forge_barrels.xml</Template>
+			<Template>actor|props/structures/celts/blacksmith_barrels.xml</Template>
 			<Position x="890.15632" z="806.41987"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="23208"/>
 		</Entity>
 		<Entity uid="5414">
-			<Template>actor|props/structures/celts/forge_barrels.xml</Template>
+			<Template>actor|props/structures/celts/blacksmith_barrels.xml</Template>
 			<Position x="936.09845" z="806.97266"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="62580"/>
@@ -24099,103 +24099,103 @@
 			<Actor seed="22216"/>
 		</Entity>
 		<Entity uid="5478">
-			<Template>actor|props/structures/celts/forge_barrels.xml</Template>
+			<Template>actor|props/structures/celts/blacksmith_barrels.xml</Template>
 			<Position x="927.20197" z="769.13147"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="44072"/>
 		</Entity>
 		<Entity uid="5479">
-			<Template>actor|props/structures/celts/forge_armorstand_wood.xml</Template>
+			<Template>actor|props/structures/celts/blacksmith_armorstand_wood.xml</Template>
 			<Position x="929.33857" z="770.91596"/>
 			<Orientation y="1.92856"/>
 			<Actor seed="39202"/>
 		</Entity>
 		<Entity uid="5480">
-			<Template>actor|props/structures/celts/forge_armorstand_wood.xml</Template>
+			<Template>actor|props/structures/celts/blacksmith_armorstand_wood.xml</Template>
 			<Position x="935.72126" z="783.19623"/>
 			<Orientation y="-1.59656"/>
 			<Actor seed="17740"/>
 		</Entity>
 		<Entity uid="5481">
-			<Template>actor|props/structures/celts/forge_bucket.xml</Template>
+			<Template>actor|props/structures/celts/blacksmith_bucket.xml</Template>
 			<Position x="920.31806" z="861.4593"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="50186"/>
 		</Entity>
 		<Entity uid="5482">
-			<Template>actor|props/structures/celts/forge_bucket.xml</Template>
+			<Template>actor|props/structures/celts/blacksmith_bucket.xml</Template>
 			<Position x="922.2751" z="870.86799"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="4204"/>
 		</Entity>
 		<Entity uid="5483">
-			<Template>actor|props/structures/celts/forge_bucket_water.xml</Template>
+			<Template>actor|props/structures/celts/blacksmith_bucket_water.xml</Template>
 			<Position x="922.28754" z="870.91047"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="21348"/>
 		</Entity>
 		<Entity uid="5484">
-			<Template>actor|props/structures/hellenes/forge_barrel.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_barrel.xml</Template>
 			<Position x="924.17658" z="871.08613"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="28088"/>
 		</Entity>
 		<Entity uid="5485">
-			<Template>actor|props/structures/hellenes/forge_barrel.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_barrel.xml</Template>
 			<Position x="937.52637" z="805.55005"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="26784"/>
 		</Entity>
 		<Entity uid="5486">
-			<Template>actor|props/structures/hellenes/forge_barrel.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_barrel.xml</Template>
 			<Position x="937.95832" z="804.28364"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="23722"/>
 		</Entity>
 		<Entity uid="5487">
-			<Template>actor|props/structures/hellenes/forge_barrel.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_barrel.xml</Template>
 			<Position x="936.2671" z="804.78364"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="28456"/>
 		</Entity>
 		<Entity uid="5488">
-			<Template>actor|props/structures/hellenes/forge_barrel_shield.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_barrel_shield.xml</Template>
 			<Position x="928.70917" z="733.28199"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="3634"/>
 		</Entity>
 		<Entity uid="5489">
-			<Template>actor|props/structures/hellenes/forge_barrel_shield.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_barrel_shield.xml</Template>
 			<Position x="929.04883" z="732.43342"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="22046"/>
 		</Entity>
 		<Entity uid="5490">
-			<Template>actor|props/structures/hellenes/forge_barrel_shield.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_barrel_shield.xml</Template>
 			<Position x="929.0915" z="731.0011"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="35032"/>
 		</Entity>
 		<Entity uid="5491">
-			<Template>actor|props/structures/hellenes/forge_shields.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_shields.xml</Template>
 			<Position x="929.88868" z="733.45429"/>
 			<Orientation y="-0.31037"/>
 			<Actor seed="7068"/>
 		</Entity>
 		<Entity uid="5492">
-			<Template>actor|props/structures/hellenes/forge_shields.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_shields.xml</Template>
 			<Position x="929.54078" z="731.39997"/>
 			<Orientation y="0.40113"/>
 			<Actor seed="24132"/>
 		</Entity>
 		<Entity uid="5493">
-			<Template>actor|props/structures/hellenes/forge_shields.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_shields.xml</Template>
 			<Position x="925.36805" z="742.36225"/>
 			<Orientation y="-1.15621"/>
 			<Actor seed="3014"/>
 		</Entity>
 		<Entity uid="5495">
-			<Template>actor|props/structures/hellenes/forge_swords.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_swords.xml</Template>
 			<Position x="938.30524" z="738.5384"/>
 			<Orientation y="-3.01636"/>
 			<Actor seed="59200"/>
@@ -24231,31 +24231,31 @@
 			<Actor seed="28902"/>
 		</Entity>
 		<Entity uid="5502">
-			<Template>actor|props/structures/hellenes/forge_bucket.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_bucket.xml</Template>
 			<Position x="919.54688" z="767.39728"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="24274"/>
 		</Entity>
 		<Entity uid="5503">
-			<Template>actor|props/structures/hellenes/forge_bucket.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_bucket.xml</Template>
 			<Position x="916.57758" z="765.35352"/>
 			<Orientation y="1.92168"/>
 			<Actor seed="20980"/>
 		</Entity>
 		<Entity uid="5504">
-			<Template>actor|props/structures/hellenes/forge_barrel_shield.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_barrel_shield.xml</Template>
 			<Position x="938.90357" z="746.23652"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="25760"/>
 		</Entity>
 		<Entity uid="5505">
-			<Template>actor|props/structures/hellenes/forge_barrel_shield.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_barrel_shield.xml</Template>
 			<Position x="938.76124" z="747.93592"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="54522"/>
 		</Entity>
 		<Entity uid="5506">
-			<Template>actor|props/structures/hellenes/forge_barrel_shield.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_barrel_shield.xml</Template>
 			<Position x="937.25208" z="747.4347"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="27056"/>
@@ -24297,19 +24297,19 @@
 			<Actor seed="57290"/>
 		</Entity>
 		<Entity uid="5513">
-			<Template>actor|props/structures/hellenes/forge_shield.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_shield.xml</Template>
 			<Position x="935.73798" z="753.30182"/>
 			<Orientation y="0.25147"/>
 			<Actor seed="23068"/>
 		</Entity>
 		<Entity uid="5514">
-			<Template>actor|props/structures/hellenes/forge_shield1.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_shield1.xml</Template>
 			<Position x="936.07166" z="756.74305"/>
 			<Orientation y="1.19748"/>
 			<Actor seed="41580"/>
 		</Entity>
 		<Entity uid="5515">
-			<Template>actor|props/structures/hellenes/forge_shields.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_shields.xml</Template>
 			<Position x="935.71406" z="748.27674"/>
 			<Orientation y="-2.83552"/>
 			<Actor seed="38186"/>
@@ -24381,55 +24381,55 @@
 			<Actor seed="9520"/>
 		</Entity>
 		<Entity uid="5528">
-			<Template>actor|props/structures/celts/forge_armorstand_wood.xml</Template>
+			<Template>actor|props/structures/celts/blacksmith_armorstand_wood.xml</Template>
 			<Position x="928.67225" z="676.32886"/>
 			<Orientation y="1.22097"/>
 			<Actor seed="63018"/>
 		</Entity>
 		<Entity uid="5529">
-			<Template>actor|props/structures/celts/forge_bucket.xml</Template>
+			<Template>actor|props/structures/celts/blacksmith_bucket.xml</Template>
 			<Position x="922.91047" z="676.15961"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="61162"/>
 		</Entity>
 		<Entity uid="5530">
-			<Template>actor|props/structures/hellenes/forge_bucket.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_bucket.xml</Template>
 			<Position x="924.48816" z="655.09321"/>
 			<Orientation y="0.88175"/>
 			<Actor seed="40524"/>
 		</Entity>
 		<Entity uid="5531">
-			<Template>actor|props/structures/hellenes/forge_bucket.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_bucket.xml</Template>
 			<Position x="929.35151" z="682.41736"/>
 			<Orientation y="1.04934"/>
 			<Actor seed="4162"/>
 		</Entity>
 		<Entity uid="5532">
-			<Template>actor|props/structures/hellenes/forge_bucket.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_bucket.xml</Template>
 			<Position x="937.8808" z="692.47687"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="3930"/>
 		</Entity>
 		<Entity uid="5533">
-			<Template>actor|props/structures/hellenes/forge_bucket.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_bucket.xml</Template>
 			<Position x="942.64667" z="678.95752"/>
 			<Orientation y="-1.78127"/>
 			<Actor seed="55672"/>
 		</Entity>
 		<Entity uid="5534">
-			<Template>actor|props/structures/hellenes/forge_swords.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_swords.xml</Template>
 			<Position x="940.21888" z="679.99927"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="27944"/>
 		</Entity>
 		<Entity uid="5535">
-			<Template>actor|props/structures/hellenes/forge_swords.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_swords.xml</Template>
 			<Position x="929.66956" z="679.64496"/>
 			<Orientation y="0.10062"/>
 			<Actor seed="26788"/>
 		</Entity>
 		<Entity uid="5536">
-			<Template>actor|props/structures/iberians/forge_shields1.xml</Template>
+			<Template>actor|props/structures/iberians/blacksmith_shields1.xml</Template>
 			<Position x="925.7801" z="676.9065"/>
 			<Orientation y="1.19257"/>
 			<Actor seed="39118"/>
@@ -24633,85 +24633,85 @@
 			<Actor seed="9170"/>
 		</Entity>
 		<Entity uid="5571">
-			<Template>actor|props/structures/iberians/forge_spear.xml</Template>
+			<Template>actor|props/structures/iberians/blacksmith_spear.xml</Template>
 			<Position x="978.52417" z="662.0625"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="404"/>
 		</Entity>
 		<Entity uid="5572">
-			<Template>actor|props/structures/celts/forge_armorstand_wood.xml</Template>
+			<Template>actor|props/structures/celts/blacksmith_armorstand_wood.xml</Template>
 			<Position x="979.75568" z="662.87336"/>
 			<Orientation y="0.5839"/>
 			<Actor seed="12840"/>
 		</Entity>
 		<Entity uid="5574">
-			<Template>actor|props/structures/romans/forge_shields.xml</Template>
+			<Template>actor|props/structures/romans/blacksmith_shields.xml</Template>
 			<Position x="985.33149" z="674.961"/>
 			<Orientation y="1.78672"/>
 			<Actor seed="23564"/>
 		</Entity>
 		<Entity uid="5575">
-			<Template>actor|props/structures/romans/forge_bucket.xml</Template>
+			<Template>actor|props/structures/romans/blacksmith_bucket.xml</Template>
 			<Position x="988.02009" z="673.89661"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="2412"/>
 		</Entity>
 		<Entity uid="5576">
-			<Template>actor|props/structures/romans/forge_bucket_water.xml</Template>
+			<Template>actor|props/structures/romans/blacksmith_bucket_water.xml</Template>
 			<Position x="988.1147" z="673.68714"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="52812"/>
 		</Entity>
 		<Entity uid="5577">
-			<Template>actor|props/structures/romans/forge_bucket.xml</Template>
+			<Template>actor|props/structures/romans/blacksmith_bucket.xml</Template>
 			<Position x="1003.67664" z="661.8003"/>
 			<Orientation y="-0.79064"/>
 			<Actor seed="33812"/>
 		</Entity>
 		<Entity uid="5578">
-			<Template>actor|props/structures/romans/forge_bucket.xml</Template>
+			<Template>actor|props/structures/romans/blacksmith_bucket.xml</Template>
 			<Position x="1003.95978" z="664.4596"/>
 			<Orientation y="-0.9565"/>
 			<Actor seed="60890"/>
 		</Entity>
 		<Entity uid="5580">
-			<Template>actor|props/structures/romans/forge_armorstand_wood.xml</Template>
+			<Template>actor|props/structures/romans/blacksmith_armorstand_wood.xml</Template>
 			<Position x="999.46332" z="673.92554"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="3590"/>
 		</Entity>
 		<Entity uid="5582">
-			<Template>actor|props/structures/romans/forge_armorstand_wood.xml</Template>
+			<Template>actor|props/structures/romans/blacksmith_armorstand_wood.xml</Template>
 			<Position x="980.6703" z="661.29487"/>
 			<Orientation y="0.54998"/>
 			<Actor seed="60748"/>
 		</Entity>
 		<Entity uid="5583">
-			<Template>actor|props/structures/iberians/forge_shields1.xml</Template>
+			<Template>actor|props/structures/iberians/blacksmith_shields1.xml</Template>
 			<Position x="1008.2696" z="665.75013"/>
 			<Orientation y="-1.38494"/>
 			<Actor seed="18642"/>
 		</Entity>
 		<Entity uid="5584">
-			<Template>actor|props/structures/iberians/forge_shields1.xml</Template>
+			<Template>actor|props/structures/iberians/blacksmith_shields1.xml</Template>
 			<Position x="1007.92792" z="664.72004"/>
 			<Orientation y="-1.26438"/>
 			<Actor seed="44488"/>
 		</Entity>
 		<Entity uid="5585">
-			<Template>actor|props/structures/iberians/forge_bucket.xml</Template>
+			<Template>actor|props/structures/iberians/blacksmith_bucket.xml</Template>
 			<Position x="1007.0683" z="665.5517"/>
 			<Orientation y="-0.61922"/>
 			<Actor seed="30702"/>
 		</Entity>
 		<Entity uid="5586">
-			<Template>actor|props/structures/iberians/forge_bucket.xml</Template>
+			<Template>actor|props/structures/iberians/blacksmith_bucket.xml</Template>
 			<Position x="1009.47681" z="665.12848"/>
 			<Orientation y="2.00918"/>
 			<Actor seed="51700"/>
 		</Entity>
 		<Entity uid="5588">
-			<Template>actor|props/structures/iberians/forge_bucket.xml</Template>
+			<Template>actor|props/structures/iberians/blacksmith_bucket.xml</Template>
 			<Position x="1006.42511" z="664.72815"/>
 			<Orientation y="-1.193"/>
 			<Actor seed="5676"/>
@@ -24783,13 +24783,13 @@
 			<Actor seed="53472"/>
 		</Entity>
 		<Entity uid="5601">
-			<Template>actor|props/structures/celts/forge_barrels.xml</Template>
+			<Template>actor|props/structures/celts/blacksmith_barrels.xml</Template>
 			<Position x="972.41157" z="674.86445"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="30590"/>
 		</Entity>
 		<Entity uid="5602">
-			<Template>actor|props/structures/celts/forge_barrels.xml</Template>
+			<Template>actor|props/structures/celts/blacksmith_barrels.xml</Template>
 			<Position x="992.94916" z="675.00293"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="6394"/>
@@ -24891,37 +24891,37 @@
 			<Actor seed="36798"/>
 		</Entity>
 		<Entity uid="5619">
-			<Template>actor|props/structures/celts/forge_armorstand_wood.xml</Template>
+			<Template>actor|props/structures/celts/blacksmith_armorstand_wood.xml</Template>
 			<Position x="1047.68531" z="662.11316"/>
 			<Orientation y="0.05434"/>
 			<Actor seed="56470"/>
 		</Entity>
 		<Entity uid="5620">
-			<Template>actor|props/structures/hellenes/forge_bucket.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_bucket.xml</Template>
 			<Position x="1045.44336" z="662.84931"/>
 			<Orientation y="-0.00431"/>
 			<Actor seed="59416"/>
 		</Entity>
 		<Entity uid="5621">
-			<Template>actor|props/structures/hellenes/forge_bucket.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_bucket.xml</Template>
 			<Position x="1035.73035" z="665.38025"/>
 			<Orientation y="-1.07311"/>
 			<Actor seed="43860"/>
 		</Entity>
 		<Entity uid="5622">
-			<Template>actor|props/structures/hellenes/forge_shield.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_shield.xml</Template>
 			<Position x="1000.10303" z="660.7876"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="29940"/>
 		</Entity>
 		<Entity uid="5623">
-			<Template>actor|props/structures/hellenes/forge_shield1.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_shield1.xml</Template>
 			<Position x="1003.11524" z="665.14142"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="29830"/>
 		</Entity>
 		<Entity uid="5624">
-			<Template>actor|props/structures/hellenes/forge_shield_back.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_shield_back.xml</Template>
 			<Position x="1033.71705" z="664.36902"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="50856"/>
@@ -25011,13 +25011,13 @@
 			<Actor seed="55066"/>
 		</Entity>
 		<Entity uid="5640">
-			<Template>actor|props/structures/romans/forge_barrels.xml</Template>
+			<Template>actor|props/structures/romans/blacksmith_barrels.xml</Template>
 			<Position x="1075.29969" z="665.11097"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="24896"/>
 		</Entity>
 		<Entity uid="5641">
-			<Template>actor|props/structures/romans/forge_barrels.xml</Template>
+			<Template>actor|props/structures/romans/blacksmith_barrels.xml</Template>
 			<Position x="1076.95545" z="664.99006"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="36790"/>
@@ -25035,43 +25035,43 @@
 			<Actor seed="64368"/>
 		</Entity>
 		<Entity uid="5644">
-			<Template>actor|props/structures/celts/forge_barrels.xml</Template>
+			<Template>actor|props/structures/celts/blacksmith_barrels.xml</Template>
 			<Position x="1072.11365" z="664.31324"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="44532"/>
 		</Entity>
 		<Entity uid="5645">
-			<Template>actor|props/structures/celts/forge_barrels.xml</Template>
+			<Template>actor|props/structures/celts/blacksmith_barrels.xml</Template>
 			<Position x="1093.13624" z="675.04468"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="60228"/>
 		</Entity>
 		<Entity uid="5646">
-			<Template>actor|props/structures/celts/forge_barrels.xml</Template>
+			<Template>actor|props/structures/celts/blacksmith_barrels.xml</Template>
 			<Position x="1093.04444" z="664.76105"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="28580"/>
 		</Entity>
 		<Entity uid="5647">
-			<Template>actor|props/structures/hellenes/forge_barrel_shield.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_barrel_shield.xml</Template>
 			<Position x="1090.964" z="664.17023"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="18356"/>
 		</Entity>
 		<Entity uid="5648">
-			<Template>actor|props/structures/hellenes/forge_barrel_shield.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_barrel_shield.xml</Template>
 			<Position x="1094.81922" z="665.31623"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="13772"/>
 		</Entity>
 		<Entity uid="5649">
-			<Template>actor|props/structures/hellenes/forge_barrel_shield.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_barrel_shield.xml</Template>
 			<Position x="1093.21778" z="665.61628"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="36152"/>
 		</Entity>
 		<Entity uid="5650">
-			<Template>actor|props/structures/hellenes/forge_barrel_shield.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_barrel_shield.xml</Template>
 			<Position x="1088.8335" z="664.03089"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="39216"/>
@@ -25371,13 +25371,13 @@
 			<Actor seed="41864"/>
 		</Entity>
 		<Entity uid="5702">
-			<Template>actor|props/structures/hellenes/forge_swords.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_swords.xml</Template>
 			<Position x="1067.87073" z="673.1371"/>
 			<Orientation y="1.34786"/>
 			<Actor seed="60146"/>
 		</Entity>
 		<Entity uid="5703">
-			<Template>actor|props/structures/hellenes/forge_swords.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_swords.xml</Template>
 			<Position x="1083.79017" z="665.54511"/>
 			<Orientation y="-1.60846"/>
 			<Actor seed="58926"/>
@@ -25425,85 +25425,85 @@
 			<Actor seed="54818"/>
 		</Entity>
 		<Entity uid="5712">
-			<Template>actor|props/structures/hellenes/forge_shield1.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_shield1.xml</Template>
 			<Position x="998.92511" z="660.25568"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="43148"/>
 		</Entity>
 		<Entity uid="5713">
-			<Template>actor|props/structures/hellenes/forge_bucket.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_bucket.xml</Template>
 			<Position x="991.34553" z="673.58124"/>
 			<Orientation y="1.56366"/>
 			<Actor seed="40710"/>
 		</Entity>
 		<Entity uid="5714">
-			<Template>actor|props/structures/hellenes/forge_bucket.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_bucket.xml</Template>
 			<Position x="953.63367" z="689.09168"/>
 			<Orientation y="-0.34746"/>
 			<Actor seed="9356"/>
 		</Entity>
 		<Entity uid="5716">
-			<Template>actor|props/structures/hellenes/forge_bucket.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_bucket.xml</Template>
 			<Position x="953.18543" z="680.52265"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="46278"/>
 		</Entity>
 		<Entity uid="5717">
-			<Template>actor|props/structures/hellenes/forge_bucket.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_bucket.xml</Template>
 			<Position x="937.94611" z="727.70618"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="63354"/>
 		</Entity>
 		<Entity uid="5718">
-			<Template>actor|props/structures/hellenes/forge_bucket.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_bucket.xml</Template>
 			<Position x="938.11756" z="729.94507"/>
 			<Orientation y="1.52767"/>
 			<Actor seed="60746"/>
 		</Entity>
 		<Entity uid="5719">
-			<Template>actor|props/structures/hellenes/forge_shield.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_shield.xml</Template>
 			<Position x="936.96686" z="736.96692"/>
 			<Orientation y="-0.28847"/>
 			<Actor seed="41694"/>
 		</Entity>
 		<Entity uid="5720">
-			<Template>actor|props/structures/celts/forge_armorstand_wood.xml</Template>
+			<Template>actor|props/structures/celts/blacksmith_armorstand_wood.xml</Template>
 			<Position x="1170.57837" z="670.91968"/>
 			<Orientation y="0.82464"/>
 			<Actor seed="65154"/>
 		</Entity>
 		<Entity uid="5721">
-			<Template>actor|props/structures/celts/forge_bucket.xml</Template>
+			<Template>actor|props/structures/celts/blacksmith_bucket.xml</Template>
 			<Position x="1169.50135" z="669.40137"/>
 			<Orientation y="1.17878"/>
 			<Actor seed="17982"/>
 		</Entity>
 		<Entity uid="5722">
-			<Template>actor|props/structures/celts/forge_armorstand_wood.xml</Template>
+			<Template>actor|props/structures/celts/blacksmith_armorstand_wood.xml</Template>
 			<Position x="1169.31385" z="662.52625"/>
 			<Orientation y="0.48998"/>
 			<Actor seed="61244"/>
 		</Entity>
 		<Entity uid="5723">
-			<Template>actor|props/structures/hellenes/forge_barrel_shield.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_barrel_shield.xml</Template>
 			<Position x="939.21888" z="689.70112"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="15124"/>
 		</Entity>
 		<Entity uid="5724">
-			<Template>actor|props/structures/hellenes/forge_barrel_shield.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_barrel_shield.xml</Template>
 			<Position x="939.14734" z="693.52552"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="16348"/>
 		</Entity>
 		<Entity uid="5725">
-			<Template>actor|props/structures/hellenes/forge_barrel_shield.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_barrel_shield.xml</Template>
 			<Position x="939.18348" z="688.22083"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="14680"/>
 		</Entity>
 		<Entity uid="5726">
-			<Template>actor|props/structures/hellenes/forge_barrel_shield.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_barrel_shield.xml</Template>
 			<Position x="938.22376" z="689.25806"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="20802"/>
@@ -25641,49 +25641,49 @@
 			<Actor seed="38972"/>
 		</Entity>
 		<Entity uid="5752">
-			<Template>actor|props/structures/iberians/forge_barrel.xml</Template>
+			<Template>actor|props/structures/iberians/blacksmith_barrel.xml</Template>
 			<Position x="1225.88892" z="664.81855"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="51490"/>
 		</Entity>
 		<Entity uid="5753">
-			<Template>actor|props/structures/iberians/forge_barrel.xml</Template>
+			<Template>actor|props/structures/iberians/blacksmith_barrel.xml</Template>
 			<Position x="1227.32764" z="664.99415"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="64390"/>
 		</Entity>
 		<Entity uid="5754">
-			<Template>actor|props/structures/iberians/forge_barrel.xml</Template>
+			<Template>actor|props/structures/iberians/blacksmith_barrel.xml</Template>
 			<Position x="1226.49085" z="665.94282"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="36270"/>
 		</Entity>
 		<Entity uid="5755">
-			<Template>actor|props/structures/iberians/forge_barrel.xml</Template>
+			<Template>actor|props/structures/iberians/blacksmith_barrel.xml</Template>
 			<Position x="1201.31666" z="674.86738"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="5020"/>
 		</Entity>
 		<Entity uid="5756">
-			<Template>actor|props/structures/iberians/forge_barrel.xml</Template>
+			<Template>actor|props/structures/iberians/blacksmith_barrel.xml</Template>
 			<Position x="1202.87098" z="674.62513"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="9082"/>
 		</Entity>
 		<Entity uid="5757">
-			<Template>actor|props/structures/iberians/forge_barrel.xml</Template>
+			<Template>actor|props/structures/iberians/blacksmith_barrel.xml</Template>
 			<Position x="1201.99048" z="673.57801"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="35404"/>
 		</Entity>
 		<Entity uid="5758">
-			<Template>actor|props/structures/iberians/forge_barrel.xml</Template>
+			<Template>actor|props/structures/iberians/blacksmith_barrel.xml</Template>
 			<Position x="1198.08777" z="674.88508"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="41084"/>
 		</Entity>
 		<Entity uid="5759">
-			<Template>actor|props/structures/iberians/forge_barrel.xml</Template>
+			<Template>actor|props/structures/iberians/blacksmith_barrel.xml</Template>
 			<Position x="1192.61805" z="658.81476"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="54370"/>
@@ -25887,13 +25887,13 @@
 			<Actor seed="15230"/>
 		</Entity>
 		<Entity uid="5794">
-			<Template>actor|props/structures/celts/forge_barrels.xml</Template>
+			<Template>actor|props/structures/celts/blacksmith_barrels.xml</Template>
 			<Position x="938.69282" z="985.60987"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="22452"/>
 		</Entity>
 		<Entity uid="5795">
-			<Template>actor|props/structures/celts/forge_barrels.xml</Template>
+			<Template>actor|props/structures/celts/blacksmith_barrels.xml</Template>
 			<Position x="937.17896" z="969.84205"/>
 			<Orientation y="2.51671"/>
 			<Actor seed="15522"/>
@@ -25905,19 +25905,19 @@
 			<Actor seed="15440"/>
 		</Entity>
 		<Entity uid="5798">
-			<Template>actor|props/structures/hellenes/forge_swords.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_swords.xml</Template>
 			<Position x="940.48084" z="983.7317"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="55032"/>
 		</Entity>
 		<Entity uid="5800">
-			<Template>actor|props/structures/hellenes/forge_swords.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_swords.xml</Template>
 			<Position x="954.87183" z="969.70246"/>
 			<Orientation y="-1.50358"/>
 			<Actor seed="8030"/>
 		</Entity>
 		<Entity uid="5801">
-			<Template>actor|props/structures/hellenes/forge_swords.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_swords.xml</Template>
 			<Position x="951.96821" z="969.64344"/>
 			<Orientation y="-1.97995"/>
 			<Actor seed="30398"/>
@@ -26181,91 +26181,91 @@
 			<Actor seed="19294"/>
 		</Entity>
 		<Entity uid="5851">
-			<Template>actor|props/structures/romans/forge_bucket.xml</Template>
+			<Template>actor|props/structures/romans/blacksmith_bucket.xml</Template>
 			<Position x="931.48377" z="989.27881"/>
 			<Orientation y="-2.75976"/>
 			<Actor seed="33812"/>
 		</Entity>
 		<Entity uid="5852">
-			<Template>actor|props/structures/romans/forge_bucket.xml</Template>
+			<Template>actor|props/structures/romans/blacksmith_bucket.xml</Template>
 			<Position x="928.9228" z="988.50837"/>
 			<Orientation y="-2.92562"/>
 			<Actor seed="60890"/>
 		</Entity>
 		<Entity uid="5853">
-			<Template>actor|props/structures/hellenes/forge_shield.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_shield.xml</Template>
 			<Position x="933.80329" z="986.37781"/>
 			<Orientation y="0.38711"/>
 			<Actor seed="29940"/>
 		</Entity>
 		<Entity uid="5854">
-			<Template>actor|props/structures/hellenes/forge_shield1.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_shield1.xml</Template>
 			<Position x="928.62195" z="987.46546"/>
 			<Orientation y="0.38711"/>
 			<Actor seed="29830"/>
 		</Entity>
 		<Entity uid="5855">
-			<Template>actor|props/structures/hellenes/forge_shield1.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_shield1.xml</Template>
 			<Position x="934.75043" z="985.49842"/>
 			<Orientation y="0.38711"/>
 			<Actor seed="43148"/>
 		</Entity>
 		<Entity uid="5856">
-			<Template>actor|props/structures/hellenes/forge_shields.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_shields.xml</Template>
 			<Position x="922.042" z="987.7588"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="63180"/>
 		</Entity>
 		<Entity uid="5857">
-			<Template>actor|props/structures/hellenes/forge_shields.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_shields.xml</Template>
 			<Position x="954.48255" z="977.64954"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="14732"/>
 		</Entity>
 		<Entity uid="5858">
-			<Template>actor|props/structures/hellenes/forge_shields.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_shields.xml</Template>
 			<Position x="973.56836" z="978.14246"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="52508"/>
 		</Entity>
 		<Entity uid="5859">
-			<Template>actor|props/structures/hellenes/forge_shields.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_shields.xml</Template>
 			<Position x="970.80933" z="978.95997"/>
 			<Orientation y="1.77892"/>
 			<Actor seed="32102"/>
 		</Entity>
 		<Entity uid="5860">
-			<Template>actor|props/structures/hellenes/forge_shields.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_shields.xml</Template>
 			<Position x="972.45191" z="978.60822"/>
 			<Orientation y="2.0672"/>
 			<Actor seed="12402"/>
 		</Entity>
 		<Entity uid="5861">
-			<Template>actor|props/structures/hellenes/forge_shields.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_shields.xml</Template>
 			<Position x="977.23786" z="978.46473"/>
 			<Orientation y="0.9252"/>
 			<Actor seed="15590"/>
 		</Entity>
 		<Entity uid="5862">
-			<Template>actor|props/structures/iberians/forge_bucket.xml</Template>
+			<Template>actor|props/structures/iberians/blacksmith_bucket.xml</Template>
 			<Position x="968.74695" z="978.97571"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="56468"/>
 		</Entity>
 		<Entity uid="5863">
-			<Template>actor|props/structures/celts/forge_armorstand_wood.xml</Template>
+			<Template>actor|props/structures/celts/blacksmith_armorstand_wood.xml</Template>
 			<Position x="959.77588" z="978.50507"/>
 			<Orientation y="2.01734"/>
 			<Actor seed="10358"/>
 		</Entity>
 		<Entity uid="5864">
-			<Template>actor|props/structures/hellenes/forge_swords.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_swords.xml</Template>
 			<Position x="1086.2688" z="969.53376"/>
 			<Orientation y="-0.33806"/>
 			<Actor seed="60170"/>
 		</Entity>
 		<Entity uid="5865">
-			<Template>actor|props/structures/hellenes/forge_swords.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_swords.xml</Template>
 			<Position x="1084.08948" z="969.84534"/>
 			<Orientation y="-1.63266"/>
 			<Actor seed="50758"/>
@@ -26367,31 +26367,31 @@
 			<Actor seed="53866"/>
 		</Entity>
 		<Entity uid="5883">
-			<Template>actor|props/structures/hellenes/forge_barrel.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_barrel.xml</Template>
 			<Position x="1037.26001" z="978.90601"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="49568"/>
 		</Entity>
 		<Entity uid="5885">
-			<Template>actor|props/structures/hellenes/forge_barrel.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_barrel.xml</Template>
 			<Position x="1037.90467" z="977.8246"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="40074"/>
 		</Entity>
 		<Entity uid="5886">
-			<Template>actor|props/structures/hellenes/forge_barrel.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_barrel.xml</Template>
 			<Position x="1043.31177" z="970.20051"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="49470"/>
 		</Entity>
 		<Entity uid="5887">
-			<Template>actor|props/structures/hellenes/forge_barrel.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_barrel.xml</Template>
 			<Position x="1044.72022" z="968.89704"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="46042"/>
 		</Entity>
 		<Entity uid="5888">
-			<Template>actor|props/structures/hellenes/forge_barrel.xml</Template>
+			<Template>actor|props/structures/hellenes/blacksmith_barrel.xml</Template>
 			<Position x="1044.95667" z="970.27497"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="60998"/>
@@ -26415,7 +26415,7 @@
 			<Actor seed="28482"/>
 		</Entity>
 		<Entity uid="5892">
-			<Template>actor|props/structures/iberians/forge_barrels.xml</Template>
+			<Template>actor|props/structures/iberians/blacksmith_barrels.xml</Template>
 			<Position x="1056.0105" z="969.18928"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="28548"/>
@@ -26709,7 +26709,7 @@
 			<Actor seed="24202"/>
 		</Entity>
 		<Entity uid="5943">
-			<Template>actor|props/structures/iberians/forge_barrels.xml</Template>
+			<Template>actor|props/structures/iberians/blacksmith_barrels.xml</Template>
 			<Position x="1161.54603" z="969.99518"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="28548"/>
@@ -26745,7 +26745,7 @@
 			<Actor seed="24202"/>
 		</Entity>
 		<Entity uid="5949">
-			<Template>actor|props/structures/iberians/forge_barrels.xml</Template>
+			<Template>actor|props/structures/iberians/blacksmith_barrels.xml</Template>
 			<Position x="1169.38209" z="970.4632"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="28548"/>
@@ -26805,13 +26805,13 @@
 			<Actor seed="7188"/>
 		</Entity>
 		<Entity uid="5960">
-			<Template>actor|props/structures/celts/forge_bucket.xml</Template>
+			<Template>actor|props/structures/celts/blacksmith_bucket.xml</Template>
 			<Position x="1083.56714" z="978.25074"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="3402"/>
 		</Entity>
 		<Entity uid="5961">
-			<Template>actor|props/structures/celts/forge_bucket_water.xml</Template>
+			<Template>actor|props/structures/celts/blacksmith_bucket_water.xml</Template>
 			<Position x="1083.61414" z="978.2115"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="38960"/>
