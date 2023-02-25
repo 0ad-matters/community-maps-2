@@ -638,7 +638,7 @@
 			<Actor seed="60444"/>
 		</Entity>
 		<Entity uid="273">
-			<Template>structures/iber/wall</Template>
+			<Template>structures/iber/wall_medium</Template>
 			<Player>1</Player>
 			<Position x="585.12616" z="775.1482"/>
 			<Orientation y="-2.15067"/>
@@ -646,7 +646,7 @@
 			<Actor seed="43616"/>
 		</Entity>
 		<Entity uid="274">
-			<Template>structures/iber/wall</Template>
+			<Template>structures/iber/wall_medium</Template>
 			<Player>1</Player>
 			<Position x="539.01075" z="784.35492"/>
 			<Orientation y="-3.38833"/>
@@ -654,7 +654,7 @@
 			<Actor seed="8731"/>
 		</Entity>
 		<Entity uid="275">
-			<Template>structures/iber/wall</Template>
+			<Template>structures/iber/wall_medium</Template>
 			<Player>1</Player>
 			<Position x="599.98261" z="749.3653"/>
 			<Orientation y="1.20899"/>
@@ -662,7 +662,7 @@
 			<Actor seed="4452"/>
 		</Entity>
 		<Entity uid="276">
-			<Template>structures/iber/wall</Template>
+			<Template>structures/iber/wall_medium</Template>
 			<Player>1</Player>
 			<Position x="604.74305" z="721.64496"/>
 			<Orientation y="1.53226"/>
