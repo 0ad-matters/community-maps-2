@@ -23251,19 +23251,19 @@
 			<Actor seed="55258"/>
 		</Entity>
 		<Entity uid="5335">
-			<Template>actor|props/special/eyecandy/Box_Pile.xml</Template>
+			<Template>actor|props/special/eyecandy/box_pile.xml</Template>
 			<Position x="938.58667" z="913.85785"/>
 			<Orientation y="-1.70989"/>
 			<Actor seed="41846"/>
 		</Entity>
 		<Entity uid="5336">
-			<Template>actor|props/special/eyecandy/Box_Pile.xml</Template>
+			<Template>actor|props/special/eyecandy/box_pile.xml</Template>
 			<Position x="929.43055" z="930.97065"/>
 			<Orientation y="0.08672"/>
 			<Actor seed="22190"/>
 		</Entity>
 		<Entity uid="5337">
-			<Template>actor|props/special/eyecandy/Box_Pile.xml</Template>
+			<Template>actor|props/special/eyecandy/box_pile.xml</Template>
 			<Position x="920.04438" z="926.81366"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="18546"/>
@@ -23467,49 +23467,49 @@
 			<Actor seed="15584"/>
 		</Entity>
 		<Entity uid="5373">
-			<Template>actor|props/special/eyecandy/Box_Pile.xml</Template>
+			<Template>actor|props/special/eyecandy/box_pile.xml</Template>
 			<Position x="938.67432" z="871.67322"/>
 			<Orientation y="-1.57456"/>
 			<Actor seed="36734"/>
 		</Entity>
 		<Entity uid="5374">
-			<Template>actor|props/special/eyecandy/Box_Pile.xml</Template>
+			<Template>actor|props/special/eyecandy/box_pile.xml</Template>
 			<Position x="909.27259" z="871.61579"/>
 			<Orientation y="-3.1415"/>
 			<Actor seed="15906"/>
 		</Entity>
 		<Entity uid="5375">
-			<Template>actor|props/special/eyecandy/Box_Pile.xml</Template>
+			<Template>actor|props/special/eyecandy/box_pile.xml</Template>
 			<Position x="928.6963" z="874.22852"/>
 			<Orientation y="1.51417"/>
 			<Actor seed="58302"/>
 		</Entity>
 		<Entity uid="5376">
-			<Template>actor|props/special/eyecandy/Box.xml</Template>
+			<Template>actor|props/special/eyecandy/box.xml</Template>
 			<Position x="938.67505" z="874.43195"/>
 			<Orientation y="-2.8601"/>
 			<Actor seed="50550"/>
 		</Entity>
 		<Entity uid="5377">
-			<Template>actor|props/special/eyecandy/Box.xml</Template>
+			<Template>actor|props/special/eyecandy/box.xml</Template>
 			<Position x="927.63837" z="925.29609"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="63670"/>
 		</Entity>
 		<Entity uid="5378">
-			<Template>actor|props/special/eyecandy/Box.xml</Template>
+			<Template>actor|props/special/eyecandy/box.xml</Template>
 			<Position x="928.65796" z="924.24567"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="56586"/>
 		</Entity>
 		<Entity uid="5379">
-			<Template>actor|props/special/eyecandy/Box.xml</Template>
+			<Template>actor|props/special/eyecandy/box.xml</Template>
 			<Position x="929.63691" z="923.28125"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="30896"/>
 		</Entity>
 		<Entity uid="5380">
-			<Template>actor|props/special/eyecandy/Box.xml</Template>
+			<Template>actor|props/special/eyecandy/box.xml</Template>
 			<Position x="929.15705" z="925.43537"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="812"/>
@@ -23895,25 +23895,25 @@
 			<Actor seed="54284"/>
 		</Entity>
 		<Entity uid="5444">
-			<Template>actor|props/special/eyecandy/Box_Pile.xml</Template>
+			<Template>actor|props/special/eyecandy/box_pile.xml</Template>
 			<Position x="922.49524" z="797.21296"/>
 			<Orientation y="-0.27057"/>
 			<Actor seed="6976"/>
 		</Entity>
 		<Entity uid="5445">
-			<Template>actor|props/special/eyecandy/Box_Pile.xml</Template>
+			<Template>actor|props/special/eyecandy/box_pile.xml</Template>
 			<Position x="914.4665" z="807.09394"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="25738"/>
 		</Entity>
 		<Entity uid="5446">
-			<Template>actor|props/special/eyecandy/Box_Pile.xml</Template>
+			<Template>actor|props/special/eyecandy/box_pile.xml</Template>
 			<Position x="904.62275" z="806.94721"/>
 			<Orientation y="-3.0962"/>
 			<Actor seed="52842"/>
 		</Entity>
 		<Entity uid="5447">
-			<Template>actor|props/special/eyecandy/Box_Pile.xml</Template>
+			<Template>actor|props/special/eyecandy/box_pile.xml</Template>
 			<Position x="889.26539" z="798.74732"/>
 			<Orientation y="1.15398"/>
 			<Actor seed="36974"/>
@@ -24087,13 +24087,13 @@
 			<Actor seed="42242"/>
 		</Entity>
 		<Entity uid="5476">
-			<Template>actor|props/special/eyecandy/Box_Pile.xml</Template>
+			<Template>actor|props/special/eyecandy/box_pile.xml</Template>
 			<Position x="928.83619" z="773.60688"/>
 			<Orientation y="1.48813"/>
 			<Actor seed="39552"/>
 		</Entity>
 		<Entity uid="5477">
-			<Template>actor|props/special/eyecandy/Box_Pile.xml</Template>
+			<Template>actor|props/special/eyecandy/box_pile.xml</Template>
 			<Position x="926.97651" z="770.84217"/>
 			<Orientation y="0.0158"/>
 			<Actor seed="22216"/>
@@ -24795,55 +24795,55 @@
 			<Actor seed="6394"/>
 		</Entity>
 		<Entity uid="5603">
-			<Template>actor|props/special/eyecandy/Box_Pile.xml</Template>
+			<Template>actor|props/special/eyecandy/box_pile.xml</Template>
 			<Position x="970.04828" z="674.00788"/>
 			<Orientation y="-2.7318"/>
 			<Actor seed="28390"/>
 		</Entity>
 		<Entity uid="5604">
-			<Template>actor|props/special/eyecandy/Box_Pile.xml</Template>
+			<Template>actor|props/special/eyecandy/box_pile.xml</Template>
 			<Position x="978.42908" z="674.47181"/>
 			<Orientation y="-1.86971"/>
 			<Actor seed="24884"/>
 		</Entity>
 		<Entity uid="5605">
-			<Template>actor|props/special/eyecandy/Box_Pile.xml</Template>
+			<Template>actor|props/special/eyecandy/box_pile.xml</Template>
 			<Position x="1009.48438" z="674.06293"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="19614"/>
 		</Entity>
 		<Entity uid="5606">
-			<Template>actor|props/special/eyecandy/Box_Pile.xml</Template>
+			<Template>actor|props/special/eyecandy/box_pile.xml</Template>
 			<Position x="1011.24805" z="673.63672"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="43080"/>
 		</Entity>
 		<Entity uid="5607">
-			<Template>actor|props/special/eyecandy/Box_Pile.xml</Template>
+			<Template>actor|props/special/eyecandy/box_pile.xml</Template>
 			<Position x="1013.09748" z="673.58436"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="36090"/>
 		</Entity>
 		<Entity uid="5608">
-			<Template>actor|props/special/eyecandy/Box.xml</Template>
+			<Template>actor|props/special/eyecandy/box.xml</Template>
 			<Position x="1007.95759" z="674.50532"/>
 			<Orientation y="2.95897"/>
 			<Actor seed="36234"/>
 		</Entity>
 		<Entity uid="5609">
-			<Template>actor|props/special/eyecandy/Box.xml</Template>
+			<Template>actor|props/special/eyecandy/box.xml</Template>
 			<Position x="1015.39368" z="674.4513"/>
 			<Orientation y="-3.13192"/>
 			<Actor seed="37090"/>
 		</Entity>
 		<Entity uid="5610">
-			<Template>actor|props/special/eyecandy/Box.xml</Template>
+			<Template>actor|props/special/eyecandy/box.xml</Template>
 			<Position x="1015.03931" z="672.81446"/>
 			<Orientation y="1.79703"/>
 			<Actor seed="58240"/>
 		</Entity>
 		<Entity uid="5611">
-			<Template>actor|props/special/eyecandy/Box.xml</Template>
+			<Template>actor|props/special/eyecandy/box.xml</Template>
 			<Position x="1011.11445" z="665.40278"/>
 			<Orientation y="-0.0697"/>
 			<Actor seed="6034"/>
@@ -25227,43 +25227,43 @@
 			<Actor seed="17090"/>
 		</Entity>
 		<Entity uid="5678">
-			<Template>actor|props/special/eyecandy/Box_Pile.xml</Template>
+			<Template>actor|props/special/eyecandy/box_pile.xml</Template>
 			<Position x="1089.5553" z="698.073"/>
 			<Orientation y="-2.98661"/>
 			<Actor seed="58484"/>
 		</Entity>
 		<Entity uid="5679">
-			<Template>actor|props/special/eyecandy/Box_Pile.xml</Template>
+			<Template>actor|props/special/eyecandy/box_pile.xml</Template>
 			<Position x="1090.71143" z="690.83118"/>
 			<Orientation y="1.80799"/>
 			<Actor seed="46304"/>
 		</Entity>
 		<Entity uid="5680">
-			<Template>actor|props/special/eyecandy/Box_Pile.xml</Template>
+			<Template>actor|props/special/eyecandy/box_pile.xml</Template>
 			<Position x="1094.86011" z="671.83466"/>
 			<Orientation y="1.48893"/>
 			<Actor seed="54070"/>
 		</Entity>
 		<Entity uid="5681">
-			<Template>actor|props/special/eyecandy/Box_Pile.xml</Template>
+			<Template>actor|props/special/eyecandy/box_pile.xml</Template>
 			<Position x="1068.53748" z="675.08667"/>
 			<Orientation y="-0.00644"/>
 			<Actor seed="13262"/>
 		</Entity>
 		<Entity uid="5682">
-			<Template>actor|props/special/eyecandy/Box_Pile.xml</Template>
+			<Template>actor|props/special/eyecandy/box_pile.xml</Template>
 			<Position x="1066.2621" z="674.81611"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="8212"/>
 		</Entity>
 		<Entity uid="5683">
-			<Template>actor|props/special/eyecandy/Box_Pile.xml</Template>
+			<Template>actor|props/special/eyecandy/box_pile.xml</Template>
 			<Position x="1064.48816" z="675.06586"/>
 			<Orientation y="1.34939"/>
 			<Actor seed="61044"/>
 		</Entity>
 		<Entity uid="5684">
-			<Template>actor|props/special/eyecandy/Box_Pile.xml</Template>
+			<Template>actor|props/special/eyecandy/box_pile.xml</Template>
 			<Position x="1063.85584" z="653.50593"/>
 			<Orientation y="-0.60657"/>
 			<Actor seed="4514"/>
@@ -25509,79 +25509,79 @@
 			<Actor seed="20802"/>
 		</Entity>
 		<Entity uid="5727">
-			<Template>actor|props/special/eyecandy/Box_Pile.xml</Template>
+			<Template>actor|props/special/eyecandy/box_pile.xml</Template>
 			<Position x="1191.40931" z="656.41657"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="37340"/>
 		</Entity>
 		<Entity uid="5728">
-			<Template>actor|props/special/eyecandy/Box_Pile.xml</Template>
+			<Template>actor|props/special/eyecandy/box_pile.xml</Template>
 			<Position x="1189.0835" z="654.0445"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="62990"/>
 		</Entity>
 		<Entity uid="5729">
-			<Template>actor|props/special/eyecandy/Box_Pile.xml</Template>
+			<Template>actor|props/special/eyecandy/box_pile.xml</Template>
 			<Position x="1189.14893" z="656.06824"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="12658"/>
 		</Entity>
 		<Entity uid="5730">
-			<Template>actor|props/special/eyecandy/Box_Pile.xml</Template>
+			<Template>actor|props/special/eyecandy/box_pile.xml</Template>
 			<Position x="1182.2162" z="674.92853"/>
 			<Orientation y="-3.10456"/>
 			<Actor seed="47548"/>
 		</Entity>
 		<Entity uid="5731">
-			<Template>actor|props/special/eyecandy/Box_Pile.xml</Template>
+			<Template>actor|props/special/eyecandy/box_pile.xml</Template>
 			<Position x="1184.44922" z="674.08191"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="39522"/>
 		</Entity>
 		<Entity uid="5732">
-			<Template>actor|props/special/eyecandy/Box_Pile.xml</Template>
+			<Template>actor|props/special/eyecandy/box_pile.xml</Template>
 			<Position x="1187.6023" z="674.54694"/>
 			<Orientation y="-3.06365"/>
 			<Actor seed="37192"/>
 		</Entity>
 		<Entity uid="5733">
-			<Template>actor|props/special/eyecandy/Box_Pile.xml</Template>
+			<Template>actor|props/special/eyecandy/box_pile.xml</Template>
 			<Position x="1251.28211" z="657.8125"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="20966"/>
 		</Entity>
 		<Entity uid="5734">
-			<Template>actor|props/special/eyecandy/Box_Pile.xml</Template>
+			<Template>actor|props/special/eyecandy/box_pile.xml</Template>
 			<Position x="1253.46375" z="660.2641"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="20602"/>
 		</Entity>
 		<Entity uid="5735">
-			<Template>actor|props/special/eyecandy/Box_Pile.xml</Template>
+			<Template>actor|props/special/eyecandy/box_pile.xml</Template>
 			<Position x="1251.33448" z="659.87824"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="33364"/>
 		</Entity>
 		<Entity uid="5736">
-			<Template>actor|props/special/eyecandy/Box_Pile.xml</Template>
+			<Template>actor|props/special/eyecandy/box_pile.xml</Template>
 			<Position x="1249.09253" z="655.66358"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="5992"/>
 		</Entity>
 		<Entity uid="5737">
-			<Template>actor|props/special/eyecandy/Box_Pile.xml</Template>
+			<Template>actor|props/special/eyecandy/box_pile.xml</Template>
 			<Position x="1256.2594" z="662.01398"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="15916"/>
 		</Entity>
 		<Entity uid="5738">
-			<Template>actor|props/special/eyecandy/Box.xml</Template>
+			<Template>actor|props/special/eyecandy/box.xml</Template>
 			<Position x="1242.07972" z="673.71552"/>
 			<Orientation y="3.1129"/>
 			<Actor seed="44494"/>
 		</Entity>
 		<Entity uid="5739">
-			<Template>actor|props/special/eyecandy/Box.xml</Template>
+			<Template>actor|props/special/eyecandy/box.xml</Template>
 			<Position x="1240.4485" z="673.29206"/>
 			<Orientation y="-3.03798"/>
 			<Actor seed="22838"/>

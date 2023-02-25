@@ -11454,12 +11454,12 @@
 			<Actor seed="61055"/>
 		</Entity>
 		<Entity uid="1723">
-			<Template>actor|props/special/eyecandy/Vase.xml</Template>
+			<Template>actor|props/special/eyecandy/vase.xml</Template>
 			<Position x="664.62385" z="778.80756"/>
 			<Orientation y="2.35621"/>
 		</Entity>
 		<Entity uid="1724">
-			<Template>actor|props/special/eyecandy/Vase.xml</Template>
+			<Template>actor|props/special/eyecandy/vase.xml</Template>
 			<Position x="664.33552" z="770.59296"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="17095"/>
