@@ -12330,12 +12330,6 @@
 			<Orientation y="2.35621"/>
 			<Actor seed="60428"/>
 		</Entity>
-		<Entity uid="2368">
-			<Template>gaia/fauna_chicken</Template>
-			<Player>-1</Player>
-			<Position x="0" z="0"/>
-			<Orientation y="0"/>
-		</Entity>
 		<Entity uid="2464">
 			<Template>units/iber/cavalry_javelineer_b</Template>
 			<Player>1</Player>

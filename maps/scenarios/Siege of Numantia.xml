@@ -12497,12 +12497,6 @@
 			<Orientation y="2.35621"/>
 			<Actor seed="60428"/>
 		</Entity>
-		<Entity uid="2368">
-			<Template>gaia/fauna_chicken</Template>
-			<Player>-1</Player>
-			<Position x="0" z="0"/>
-			<Orientation y="0"/>
-		</Entity>
 		<Entity uid="2384">
 			<Template>units/rome/infantry_javelineer_e</Template>
 			<Player>2</Player>
