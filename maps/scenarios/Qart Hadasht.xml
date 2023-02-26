@@ -11313,20 +11313,6 @@
 			<Orientation y="2.35621"/>
 			<Actor seed="20292"/>
 		</Entity>
-		<Entity uid="1936">
-			<Template>special/territory_pull</Template>
-			<Player>0</Player>
-			<Position x="0" z="0"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="40102"/>
-		</Entity>
-		<Entity uid="1937">
-			<Template>special/territory_pull</Template>
-			<Player>0</Player>
-			<Position x="0" z="0"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="61638"/>
-		</Entity>
 		<Entity uid="1938">
 			<Template>gaia/fauna_boar</Template>
 			<Player>0</Player>
