@@ -15978,56 +15978,56 @@
 			<Actor seed="65531"/>
 		</Entity>
 		<Entity uid="2688">
-			<Template>units/rome/centurio_imperial</Template>
+			<Template>units/rome/champion_infantry_swordsman_04</Template>
 			<Player>2</Player>
 			<Position x="835.8849" z="622.40308"/>
 			<Orientation y="-2.39386"/>
 			<Actor seed="20663"/>
 		</Entity>
 		<Entity uid="2689">
-			<Template>units/rome/centurio_imperial</Template>
+			<Template>units/rome/champion_infantry_swordsman_04</Template>
 			<Player>2</Player>
 			<Position x="837.35175" z="620.84736"/>
 			<Orientation y="-2.39386"/>
 			<Actor seed="16583"/>
 		</Entity>
 		<Entity uid="2690">
-			<Template>units/rome/centurio_imperial</Template>
+			<Template>units/rome/champion_infantry_swordsman_04</Template>
 			<Player>2</Player>
 			<Position x="838.93183" z="619.38697"/>
 			<Orientation y="-2.39386"/>
 			<Actor seed="50912"/>
 		</Entity>
 		<Entity uid="2691">
-			<Template>units/rome/centurio_imperial</Template>
+			<Template>units/rome/champion_infantry_swordsman_04</Template>
 			<Player>2</Player>
 			<Position x="840.17914" z="618.07288"/>
 			<Orientation y="-2.39386"/>
 			<Actor seed="52555"/>
 		</Entity>
 		<Entity uid="2692">
-			<Template>units/rome/centurio_imperial</Template>
+			<Template>units/rome/champion_infantry_swordsman_04</Template>
 			<Player>2</Player>
 			<Position x="834.52527" z="621.25501"/>
 			<Orientation y="-2.39386"/>
 			<Actor seed="2120"/>
 		</Entity>
 		<Entity uid="2693">
-			<Template>units/rome/centurio_imperial</Template>
+			<Template>units/rome/champion_infantry_swordsman_04</Template>
 			<Player>2</Player>
 			<Position x="836.00391" z="619.67975"/>
 			<Orientation y="-2.39386"/>
 			<Actor seed="43505"/>
 		</Entity>
 		<Entity uid="2694">
-			<Template>units/rome/centurio_imperial</Template>
+			<Template>units/rome/champion_infantry_swordsman_04</Template>
 			<Player>2</Player>
 			<Position x="837.3266" z="618.07947"/>
 			<Orientation y="-2.39386"/>
 			<Actor seed="2075"/>
 		</Entity>
 		<Entity uid="2695">
-			<Template>units/rome/centurio_imperial</Template>
+			<Template>units/rome/champion_infantry_swordsman_04</Template>
 			<Player>2</Player>
 			<Position x="838.628" z="616.71851"/>
 			<Orientation y="-2.39386"/>
@@ -16663,28 +16663,28 @@
 			<Actor seed="41867"/>
 		</Entity>
 		<Entity uid="2812">
-			<Template>units/rome/centurio_imperial</Template>
+			<Template>units/rome/champion_infantry_swordsman_04</Template>
 			<Player>2</Player>
 			<Position x="841.201" z="613.92597"/>
 			<Orientation y="-2.39386"/>
 			<Actor seed="3558"/>
 		</Entity>
 		<Entity uid="2813">
-			<Template>units/rome/centurio_imperial</Template>
+			<Template>units/rome/champion_infantry_swordsman_04</Template>
 			<Player>2</Player>
 			<Position x="839.89954" z="615.28705"/>
 			<Orientation y="-2.39386"/>
 			<Actor seed="2075"/>
 		</Entity>
 		<Entity uid="2814">
-			<Template>units/rome/centurio_imperial</Template>
+			<Template>units/rome/champion_infantry_swordsman_04</Template>
 			<Player>2</Player>
 			<Position x="842.7522" z="615.28034"/>
 			<Orientation y="-2.39386"/>
 			<Actor seed="52555"/>
 		</Entity>
 		<Entity uid="2815">
-			<Template>units/rome/centurio_imperial</Template>
+			<Template>units/rome/champion_infantry_swordsman_04</Template>
 			<Player>2</Player>
 			<Position x="841.50477" z="616.59449"/>
 			<Orientation y="-2.39386"/>
@@ -18118,7 +18118,7 @@
 			<Actor seed="45298"/>
 		</Entity>
 		<Entity uid="3247">
-			<Template>units/rome/champion_infantry_spearman</Template>
+			<Template>units/rome/champion_infantry_swordsman</Template>
 			<Player>2</Player>
 			<Position x="799.68165" z="547.25971"/>
 			<Orientation y="-2.15928"/>
@@ -18132,14 +18132,14 @@
 			<Actor seed="19318"/>
 		</Entity>
 		<Entity uid="3285">
-			<Template>units/rome/champion_infantry_spearman</Template>
+			<Template>units/rome/champion_infantry_swordsman</Template>
 			<Player>2</Player>
 			<Position x="835.93659" z="615.3628"/>
 			<Orientation y="-8.4842"/>
 			<Actor seed="49575"/>
 		</Entity>
 		<Entity uid="3286">
-			<Template>units/rome/champion_infantry_spearman</Template>
+			<Template>units/rome/champion_infantry_swordsman</Template>
 			<Player>2</Player>
 			<Position x="811.92823" z="533.96735"/>
 			<Orientation y="-2.1593"/>
@@ -18230,13 +18230,13 @@
 			<Actor seed="22750"/>
 		</Entity>
 		<Entity uid="3328">
-			<Template>actor|props/structures/romans/rome/tent.xml</Template>
+			<Template>actor|props/structures/romans/rome_tent.xml</Template>
 			<Position x="865.28174" z="619.40491"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="27093"/>
 		</Entity>
 		<Entity uid="3339">
-			<Template>actor|props/structures/romans/rome/tent.xml</Template>
+			<Template>actor|props/structures/romans/rome_tent.xml</Template>
 			<Position x="857.8924" z="611.43726"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="23732"/>
@@ -18535,91 +18535,91 @@
 			<Actor seed="46581"/>
 		</Entity>
 		<Entity uid="3456">
-			<Template>units/rome/champion_infantry_spearman</Template>
+			<Template>units/rome/champion_infantry_swordsman</Template>
 			<Player>2</Player>
 			<Position x="845.71454" z="605.47913"/>
 			<Orientation y="-8.52007"/>
 			<Actor seed="49575"/>
 		</Entity>
 		<Entity uid="3457">
-			<Template>units/rome/centurio_imperial</Template>
+			<Template>units/rome/champion_infantry_swordsman_04</Template>
 			<Player>2</Player>
 			<Position x="851.23493" z="606.90973"/>
 			<Orientation y="-2.42974"/>
 			<Actor seed="50912"/>
 		</Entity>
 		<Entity uid="3458">
-			<Template>units/rome/centurio_imperial</Template>
+			<Template>units/rome/champion_infantry_swordsman_04</Template>
 			<Player>2</Player>
 			<Position x="852.52875" z="605.64118"/>
 			<Orientation y="-2.42974"/>
 			<Actor seed="52555"/>
 		</Entity>
 		<Entity uid="3459">
-			<Template>units/rome/centurio_imperial</Template>
+			<Template>units/rome/champion_infantry_swordsman_04</Template>
 			<Player>2</Player>
 			<Position x="849.67768" z="605.54554"/>
 			<Orientation y="-2.42974"/>
 			<Actor seed="2075"/>
 		</Entity>
 		<Entity uid="3460">
-			<Template>units/rome/centurio_imperial</Template>
+			<Template>units/rome/champion_infantry_swordsman_04</Template>
 			<Player>2</Player>
 			<Position x="851.0271" z="604.23206"/>
 			<Orientation y="-2.42974"/>
 			<Actor seed="3558"/>
 		</Entity>
 		<Entity uid="3461">
-			<Template>units/rome/centurio_imperial</Template>
+			<Template>units/rome/champion_infantry_swordsman_04</Template>
 			<Player>2</Player>
 			<Position x="848.3556" z="606.93049"/>
 			<Orientation y="-2.42974"/>
 			<Actor seed="3558"/>
 		</Entity>
 		<Entity uid="3462">
-			<Template>units/rome/centurio_imperial</Template>
+			<Template>units/rome/champion_infantry_swordsman_04</Template>
 			<Player>2</Player>
 			<Position x="847.00623" z="608.2439"/>
 			<Orientation y="-2.42974"/>
 			<Actor seed="2075"/>
 		</Entity>
 		<Entity uid="3463">
-			<Template>units/rome/centurio_imperial</Template>
+			<Template>units/rome/champion_infantry_swordsman_04</Template>
 			<Player>2</Player>
 			<Position x="845.62696" z="609.79572"/>
 			<Orientation y="-2.42974"/>
 			<Actor seed="43505"/>
 		</Entity>
 		<Entity uid="3464">
-			<Template>units/rome/centurio_imperial</Template>
+			<Template>units/rome/champion_infantry_swordsman_04</Template>
 			<Player>2</Player>
 			<Position x="844.09278" z="611.3169"/>
 			<Orientation y="-2.42974"/>
 			<Actor seed="2120"/>
 		</Entity>
 		<Entity uid="3465">
-			<Template>units/rome/centurio_imperial</Template>
+			<Template>units/rome/champion_infantry_swordsman_04</Template>
 			<Player>2</Player>
 			<Position x="849.85718" z="608.3396"/>
 			<Orientation y="-2.42974"/>
 			<Actor seed="52555"/>
 		</Entity>
 		<Entity uid="3466">
-			<Template>units/rome/centurio_imperial</Template>
+			<Template>units/rome/champion_infantry_swordsman_04</Template>
 			<Player>2</Player>
 			<Position x="848.56354" z="609.60816"/>
 			<Orientation y="-2.42974"/>
 			<Actor seed="50912"/>
 		</Entity>
 		<Entity uid="3467">
-			<Template>units/rome/centurio_imperial</Template>
+			<Template>units/rome/champion_infantry_swordsman_04</Template>
 			<Player>2</Player>
 			<Position x="846.93207" z="611.01093"/>
 			<Orientation y="-2.42974"/>
 			<Actor seed="16583"/>
 		</Entity>
 		<Entity uid="3468">
-			<Template>units/rome/centurio_imperial</Template>
+			<Template>units/rome/champion_infantry_swordsman_04</Template>
 			<Player>2</Player>
 			<Position x="845.41034" z="612.51301"/>
 			<Orientation y="-2.42974"/>
