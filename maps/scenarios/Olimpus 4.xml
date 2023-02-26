@@ -93,7 +93,7 @@
         "g": 4,
         "r": 139
       },
-      "Name": "Cartago\t",
+      "Name": "Cartago",
       "PopulationLimit": 3000,
       "Resources": {
         "food": 3000,
@@ -47850,28 +47850,28 @@
 			<Actor seed="40508"/>
 		</Entity>
 		<Entity uid="9175">
-			<Template>mirage|gaia/rock/mediterranean_large</Template>
+			<Template>gaia/rock/mediterranean_large</Template>
 			<Player>0</Player>
 			<Position x="400.15284" z="988.65418"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="40508"/>
 		</Entity>
 		<Entity uid="9176">
-			<Template>mirage|gaia/rock/mediterranean_large</Template>
+			<Template>gaia/rock/mediterranean_large</Template>
 			<Player>0</Player>
 			<Position x="400.15284" z="988.65418"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="40508"/>
 		</Entity>
 		<Entity uid="9177">
-			<Template>mirage|gaia/rock/mediterranean_large</Template>
+			<Template>gaia/rock/mediterranean_large</Template>
 			<Player>0</Player>
 			<Position x="368.00268" z="1052.70742"/>
 			<Orientation y="-2.97924"/>
 			<Actor seed="176"/>
 		</Entity>
 		<Entity uid="9178">
-			<Template>mirage|gaia/rock/mediterranean_large</Template>
+			<Template>gaia/rock/mediterranean_large</Template>
 			<Player>0</Player>
 			<Position x="368.00268" z="1052.70742"/>
 			<Orientation y="-2.97924"/>
@@ -49495,7 +49495,6 @@
 		</Entity>
 		<Entity uid="9490">
 			<Template>actor|props/special/eyecandy/bridge_edge_wooden.xml</Template>
-			<Player>0</Player>
 			<Position x="634.58985" z="389.20438"/>
 			<Orientation y="1.251"/>
 			<Actor seed="64587"/>
@@ -50320,7 +50319,7 @@
 		<Entity uid="9732">
 			<Template>gaia/fauna_peacock</Template>
 			<Player>0</Player>
-			<Position x="1650.25019" z="1042.54847"/>
+			<Position x="1665.79371" z="1049.53992"/>
 			<Orientation y="-2.87714"/>
 			<Actor seed="6426"/>
 		</Entity>
@@ -52470,13 +52469,6 @@
 			<Orientation y="2.35621"/>
 			<Actor seed="45779"/>
 		</Entity>
-		<Entity uid="10066">
-			<Template>gaia/geology_stonemine_savanna_huge</Template>
-			<Player>0</Player>
-			<Position x="1169.37159" z="500.34705"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="19170"/>
-		</Entity>
 		<Entity uid="10067">
 			<Template>gaia/rock/savanna_large</Template>
 			<Player>0</Player>
@@ -52518,34 +52510,6 @@
 			<Position x="1142.57508" z="583.29517"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="56834"/>
-		</Entity>
-		<Entity uid="10073">
-			<Template>gaia/flora_grove_palm_desert_01</Template>
-			<Player>0</Player>
-			<Position x="97.55758" z="1288.43982"/>
-			<Orientation y="1.39123"/>
-			<Actor seed="30113"/>
-		</Entity>
-		<Entity uid="10074">
-			<Template>gaia/flora_grove_palm_desert_01</Template>
-			<Player>0</Player>
-			<Position x="97.35172" z="1371.75245"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="11347"/>
-		</Entity>
-		<Entity uid="10075">
-			<Template>gaia/flora_grove_palm_medit_01</Template>
-			<Player>0</Player>
-			<Position x="84.08318" z="1333.6908"/>
-			<Orientation y="2.35621"/>
-			<Actor seed="49081"/>
-		</Entity>
-		<Entity uid="10076">
-			<Template>gaia/flora_grove_palm_medit_01</Template>
-			<Player>0</Player>
-			<Position x="65.7186" z="1313.40125"/>
-			<Orientation y="1.20316"/>
-			<Actor seed="43270"/>
 		</Entity>
 		<Entity uid="10077">
 			<Template>gaia/fish/generic</Template>
