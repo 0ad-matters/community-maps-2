@@ -1,0 +1,22 @@
+name: checkrefs
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  checkrefs:
+    runs-on: bullseye
+    steps:
+    - uses: actions/checkout@v3
+    - run: |
+        FILES=$(git log -1 -p -- maps -- simulation | grep +++ | cut -d '/' -f 2-| sed -e 's|dev/null||g')
+        echo "$FILES"
+        if [ -n "$FILES" ]; then
+          cd /0ad/source/tools/entity
+          python3 ./checkrefs.py -m "${GITHUB_WORKSPACE}" -tax
+        fi
