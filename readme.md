@@ -113,10 +113,6 @@ release section on the GitHub repo.
 Note: If you use "Download Zip" from the repo home page, the zip file
 will not be installable by 0ad and you'll receive an error.
 
-If you use the Arch user repository, you can install the
-[0ad-community-maps-2
-package](https://aur.archlinux.org/packages/0ad-community-maps-2/).
-
 ## Map-making Tips
 
 * [Creating a map preview](https://trac.wildfiregames.com/wiki/Atlas_Manual_Map_Preview)
