@@ -41,7 +41,7 @@ jobs:
             [[ $i =~ ^WARNING ]] && echo "::warning:: $i"
             [[ $i =~ ^ERROR ]] && echo "::error:: $i"
           done
-          [[ "${array[*]}" =~ (WARNING|ERROR) ]] && exit 1
+          [[ "${array[*]}" =~ (WARNING|ERROR) ]] && exit 1 || exit 0
   typos:
     name: Spell Check with Typos
     runs-on: ubuntu-latest
