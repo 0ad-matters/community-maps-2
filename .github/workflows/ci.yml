@@ -1,0 +1,70 @@
+---
+# Run the checkrefs.py script and check for typos.
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+  workflow_dispatch:
+jobs:
+  python-script:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get latest release tag of 0 A.D.
+        id: tag_name
+        run: |
+          echo "release_tag=$(curl -s https://api.github.com/repos/0ad/0ad/releases/latest | jq -r '.tag_name')" >> $GITHUB_OUTPUT
+      - name: Check out repo - 0 A.D. (latest release)
+        uses: actions/checkout@v3
+        with:
+          repository: 0ad/0ad
+          path: 0ad_directory
+          ref: ${{ steps.tag_name.outputs.release_tag }}
+          clean: true
+      - name: Check out repo - community maps 2
+        uses: actions/checkout@v3
+        with:
+          path: community_maps_2_directory
+      - uses: actions/setup-python@v4
+        with:
+          python-version: 3.x
+      - name: Install necessary Python module lxml
+        run: |
+          python -m pip install --upgrade pip
+          pip install lxml
+      - name: Run Python script
+        id: errors_warnings
+        shell: sh
+        # Filter the output of the python script for stderr
+        # Save (multiline) output in an environment variable
+        # https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#multiline-strings
+        run: |-
+          cd "${GITHUB_WORKSPACE}/0ad_directory/source/tools/entity" || exit 1
+          EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
+          echo "PYTHON_ERROR_WARNINGS_OUTPUT<<$EOF" >> $GITHUB_ENV
+          python checkrefs.py -m "${GITHUB_WORKSPACE}/community_maps_2_directory" -tax 2>> $GITHUB_ENV
+          echo "$EOF" >> $GITHUB_ENV
+      - name: Print error and warnings
+        # TODO: use Markdown summaries https://github.blog/2022-05-09-supercharging-github-actions-with-job-summaries/
+        # warning/error messages are limited to 10 each
+        run: |-
+          array=()
+          while IFS='' read -r line; do array+=("$line"); done < <(echo "$PYTHON_ERROR_WARNINGS_OUTPUT")
+          for i in "${array[@]}"; do
+            [[ $i =~ ^WARNING ]] && echo "::warning:: $i"
+            [[ $i =~ ^ERROR ]] && echo "::error:: $i"
+          done
+          if [[ "${array[*]}" =~ (WARNING|ERROR) ]]; then
+            echo "Issues have been found!"
+            exit 1
+          fi
+  typos:
+    name: Spell Check with Typos
+    runs-on: ubuntu-latest
+    # jobs run in parallel by default, checking out 0 A.D. takes a while
+    steps:
+      - uses: hmarr/debug-action@v2
+      - uses: actions/checkout@v3
+      - uses: crate-ci/typos@master
+        with:
+          config: .github/typos.toml
