@@ -31,8 +31,6 @@ jobs:
           python-version: 3.x
       - run: pip install lxml
       - name: Run Python script
-          # TODO: use Markdown summaries https://github.blog/2022-05-09-supercharging-github-actions-with-job-summaries/
-          # warning/error messages are limited to 10 each
         run: |-
           cd "$GITHUB_WORKSPACE/0ad_directory/source/tools/entity" || exit 1
           array=()
