@@ -3,10 +3,18 @@ name: checkrefs
 on:
   push:
     branches:
-      - master
+    - master
+    paths:
+    - 'art/**'
+    - 'maps/**'
+    - 'simulation/**'
   pull_request:
     branches:
-      - master
+    - master
+    paths:
+    - 'art/**'
+    - 'maps/**'
+    - 'simulation/**'
 
 jobs:
   checkrefs:
@@ -14,9 +22,9 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - run: |
-        FILES=$(git log -1 -p -- maps -- simulation | grep +++ | cut -d '/' -f 2-| sed -e 's|dev/null||g')
-        echo "$FILES"
-        if [ -n "$FILES" ]; then
-          cd /0ad/source/tools/entity
-          python3 ./checkrefs.py -m "${GITHUB_WORKSPACE}" -tax
-        fi
+        ERRLOG="${GITHUB_WORKSPACE}/errlog.txt"
+        cd /0ad/source/tools/entity
+        python3 ./checkrefs.py -m "${GITHUB_WORKSPACE}" -tax 2> $ERRLOG
+        cat $ERRLOG
+        grep -i error $ERRLOG && exit 1
+        grep -i warning $ERRLOG && exit 1

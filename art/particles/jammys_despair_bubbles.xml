@@ -15,7 +15,6 @@
     <uniform name="velocity.y" min="10.0" max="10.5"/>
     <uniform name="velocity.z" min="-0.5" max="0.5"/>
     <uniform name="velocity.angle" min="-2.0" max="2.0"/>
-
     <uniform name="size" min="2.5" max="4.5"/>
 
     <force y="-0.3"/>
