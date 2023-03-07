@@ -26,10 +26,14 @@ jobs:
     runs-on: bullseye
     steps:
     - uses: actions/checkout@v3
-    - run: |
+    - name: Run checkrefs.py
+      run: |
         ERRLOG="${GITHUB_WORKSPACE}/errlog.txt"
         cd /0ad/source/tools/entity
         python3 ./checkrefs.py -m "${GITHUB_WORKSPACE}" -tax 2> $ERRLOG
-        cat $ERRLOG
-        grep -i error $ERRLOG && exit 1
-        grep -i warning $ERRLOG && exit 1
+        LOG_CONTENTS=$(cat $ERRLOG)
+        if [ -z "$LOG_CONTENTS" ]; then
+          exit 0
+        fi
+        echo $LOG_CONTENTS
+        exit 1
