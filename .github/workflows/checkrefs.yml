@@ -38,9 +38,19 @@ jobs:
           echo $LOG_CONTENTS
           exit 1
 
-      - uses: jitterbit/get-changed-files@v1
-      - run: |
-          for file in ${{ steps.files.outputs.all }}; do
+      - uses: tj-actions/changed-files@v35
+        id: changed-files
+        with:
+          separator: ","
+      - name: Check changed file names
+        run: |
+          IFS=$',' read -a changed_file_array <<< "${{ steps.changed-files.outputs.all_changed_files }}"
+          wrong_file_array=()
+          for file in "${changed_file_array[@]}"; do
             [[ "$file" =~ ^maps/(random|scenarios|skirmishes)/[^/]+$ ]] || continue
-            [[ $(basename "${file%.*}") =~ ^[0-9a-z_]+$ ]] || exit 1
+            [[ $(basename "${file%.*}") =~ ^[0-9a-z_]+$ ]] || wrong_file_array+=("$file")
           done
+          if [ ${#wrong_file_array[@]} -gt 0 ]; then
+            echo "::error:: Regex for file names doesn't match: ${wrong_file_array[@]} "
+            exit 1
+          fi
