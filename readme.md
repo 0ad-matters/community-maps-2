@@ -93,12 +93,10 @@ Checked all forum threads updated from 2016 onwards.
 
 If you are one of the authors and want your map removed from this mod, or want
 something to be changed either in the map or in the way credit is given,
-please let me know by opening an issue on this GitHub repo or by letting me on
-the 0ad forum
-[andy5995](https://wildfiregames.com/forum/profile/21632-andy5995/). If you
-have a custom map and would like it included here, you may submit it as a
-[pull request](https://guides.github.com/introduction/flow/) (if you're not a
-GitHub user, you may have someone submit the map on your behalf).
+please open an issue on this GitHub repo. If you have a custom map and would
+like it included here, you may submit it as a [pull
+request](https://guides.github.com/introduction/flow/) (if you're not a GitHub
+user, you may have someone submit the map on your behalf).
 
 ## Installing
 
