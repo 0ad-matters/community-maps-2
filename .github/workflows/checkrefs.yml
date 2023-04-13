@@ -25,15 +25,22 @@ jobs:
   checkrefs:
     runs-on: bullseye
     steps:
-    - uses: actions/checkout@v3
-    - name: Run checkrefs.py
-      run: |
-        ERRLOG="${GITHUB_WORKSPACE}/errlog.txt"
-        cd /0ad/source/tools/entity
-        python3 ./checkrefs.py -m "${GITHUB_WORKSPACE}" -tax 2> $ERRLOG
-        LOG_CONTENTS=$(cat $ERRLOG)
-        if [ -z "$LOG_CONTENTS" ]; then
-          exit 0
-        fi
-        echo $LOG_CONTENTS
-        exit 1
+      - uses: actions/checkout@v3
+      - name: Run checkrefs.py
+        run: |
+          ERRLOG="${GITHUB_WORKSPACE}/errlog.txt"
+          cd /0ad/source/tools/entity
+          python3 ./checkrefs.py -m "${GITHUB_WORKSPACE}" -tax 2> $ERRLOG
+          LOG_CONTENTS=$(cat $ERRLOG)
+          if [ -z "$LOG_CONTENTS" ]; then
+            exit 0
+          fi
+          echo $LOG_CONTENTS
+          exit 1
+
+      - uses: jitterbit/get-changed-files@v1
+      - run: |
+          for file in ${{ steps.files.outputs.all }}; do
+            [[ "$file" =~ ^maps/(random|scenarios|skirmishes)/[^/]+$ ]] || continue
+            [[ $(basename "${file%.*}") =~ ^[0-9a-z_]+$ ]] || exit 1
+          done
