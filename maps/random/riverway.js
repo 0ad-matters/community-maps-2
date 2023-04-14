@@ -85,7 +85,7 @@ function valueRanges(t, values, ranges)
 	{
 		if (t < range) return values[i];
 	}
-	return values.at(-1);
+	return values[values.length - 1];
 }
 
 var ritualParticipants = [

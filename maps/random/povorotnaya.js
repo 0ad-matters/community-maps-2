@@ -421,7 +421,7 @@ if (enabled)
 	// set the bases
 	for (let i = 1; i < (numPlayers + 1); i++)
 	{
-		const w = 2 * Math.PI * i / numPlayers + 0.25 * Math.PI;
+		var w = 2 * Math.PI * i / numPlayers + 0.25 * Math.PI;
 		var w0 = 2 * Math.PI * (i + 0.5) / numPlayers + 0.25 * Math.PI;
 		var w1 = 2 * Math.PI * (i + 0.45) / numPlayers + 0.25 * Math.PI;
 		var w2 = 2 * Math.PI * (i + 0.55) / numPlayers + 0.25 * Math.PI;
@@ -677,7 +677,6 @@ function placeBaseElement(player, angle, x, y, entity)
 		g_Map.placeEntityAnywhere(entity, player, { "x": vx, "y": vy }, randomAngle());
 	}
 	return { "x": vx, "y": vy };
-
 }
 
 // g_Environment.victoryConditions="conquest";

@@ -127,7 +127,7 @@ ConvexPolygonPlacer.prototype.getConvexHull = function(points)
 
 	for (var i = 0; i < sortedPoints.length; i++)
 	{
-		while (lower.length >= 2 && this.cross(lower.at(-2), lower.at(-1), sortedPoints[i]) <= 0)
+		while (lower.length >= 2 && this.cross(lower[lower.length - 2], lower[lower.length - 1], sortedPoints[i]) <= 0)
 		{
 			lower.pop();
 		}
@@ -136,7 +136,7 @@ ConvexPolygonPlacer.prototype.getConvexHull = function(points)
 
 	for (var i = sortedPoints.length - 1; i >= 0; i--)
 	{
-		while (upper.length >= 2 && this.cross(upper.at(-2), upper.at(-1), sortedPoints[i]) <= 0)
+		while (upper.length >= 2 && this.cross(upper[upper.length - 2], upper[upper.length - 1], sortedPoints[i]) <= 0)
 		{
 			upper.pop();
 		}

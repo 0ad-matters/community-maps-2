@@ -1059,7 +1059,7 @@ function AreaMap(mapTypePar, fieldSizePar)
 		if (h < 0) h = l + h;
 		var k1 = Object.keys(field).sort(function(a, b) { return Number.parseInt(a, 10) - Number.parseInt(b, 10); });
 		var k2 = Object.keys(field[k1[h]]).sort(function(a, b) { return Number.parseInt(a, 10) - Number.parseInt(b, 10); });
-		var result = [Number.parseInt(k2[0], 10), Number.parseInt(k2.at(-1), 10)];
+		var result = [Number.parseInt(k2[0], 10), Number.parseInt(k2[k2.length - 1], 10)];
 		// g_Map.log("boundaries: " + String(h) + JSON.stringify(result) + '\t' + JSON.stringify(k2));
 		return result;
 	};
@@ -1074,8 +1074,8 @@ function AreaMap(mapTypePar, fieldSizePar)
 		{
 			var k2 = Object.keys(field[element]).map(x => Number.parseInt(x, 10)).sort(function(a, b) { return Number.parseInt(a, 10) - Number.parseInt(b, 10); });
 			fieldMin = Math.min(fieldMin, k2[0]);
-			fieldMax = Math.max(fieldMax, k2.at(-1));
-			g_Map.log("log:\t" + String(i) + ":\t" + String(k2[0]) + "\t" + String(k2.at(-1)));
+			fieldMax = Math.max(fieldMax, k2[k2.length - 1]);
+			g_Map.log("log:\t" + String(i) + ":\t" + String(k2[0]) + "\t" + String(k2[k2.length - 1]));
 		}
 		g_Map.log("logMap:\t" + String(k1.length) + ":\t" + String(fieldMin) + "\t" + String(fieldMax));
 	};
