@@ -83,7 +83,7 @@ PathPlacer.prototype.place = function(constraint)
 	for (let j = 0; j < segments1.length - 1; ++j)
 	{
 		let points = new ConvexPolygonPlacer( [segments1[j], segments1[j + 1], segments2[j], segments2[j + 1]],Infinity).place(new NullConstraint());
-	
+
 		//let points = [...new TrianglePlacer(segments1[j], segments2[j], segments2[j + 1]).place(new NullConstraint()),...new TrianglePlacer(segments1[j], segments2[j + 1], segments1[j + 1]).place(new NullConstraint())];
 		//let points = new PolygonPlacer( [segments1[j], segments2[j], segments2[j + 1],segments1[j + 1]]).place(new NullConstraint());
 

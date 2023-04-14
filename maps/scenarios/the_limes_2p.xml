@@ -102,7 +102,7 @@
 			<Player>1</Player>
 			<Turrets>
 				<Turret turret="One" uid="7813"/>
-			</Turrets>			
+			</Turrets>
 			<Position x="666.02417" z="562.90821"/>
 			<Orientation y="2.16536"/>
 			<Actor seed="22698"/>

@@ -13,7 +13,7 @@ function DunePainter(type = ELEVATION_MODIFY, scale = 1, vertical_scale = 1)
  *Dune base shape
  *@param {Number} - x [0,1] value
  *@param {Number} - xm [0,1] position of the dune crest
- *@param {Bool} - d true for dune false for dome 
+ *@param {Bool} - d true for dune false for dome
  */
 DunePainter.prototype.dune = function(x, crest_x = 0.75, dune = true)
 {
