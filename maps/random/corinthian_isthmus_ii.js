@@ -16,7 +16,7 @@ const bArctic = (currentBiome() == "generic/arctic");
 
 var tShore = g_Terrains.water;
 if (bArctic)
-	tShore = "alpine_snow_01"
+	tShore = "alpine_snow_01";
 
 const tMainTerrain = g_Terrains.mainTerrain;
 const tForestFloor1 = g_Terrains.forestFloor1;
@@ -90,8 +90,8 @@ function placeMine(position, centerEntity,
 {
 	g_Map.placeEntityPassable(centerEntity, 0, position, randomAngle());
 
-	let quantity = randIntInclusive(11, 23);
-	let dAngle = 2 * Math.PI / quantity;
+	const quantity = randIntInclusive(11, 23);
+	const dAngle = 2 * Math.PI / quantity;
 	for (let i = 0; i < quantity; ++i)
 		g_Map.placeEntityPassable(
 			pickRandom(decorativeActors),
@@ -150,7 +150,8 @@ createArea(
 	new TileClassPainter(clWater),
 	new HeightConstraint(-Infinity, heightWaterLevel));
 
-if (!bArctic) {
+if (!bArctic)
+{
 	g_Map.log("Painting shoreline");
 	createArea(
 		new MapBoundsPlacer(),
@@ -160,7 +161,8 @@ if (!bArctic) {
 		],
 		new HeightConstraint(-Infinity, heightShore));
 }
-else {
+else
+{
 	g_Map.log("Freezing water");
 	createArea(
 		new MapBoundsPlacer(),
@@ -172,7 +174,7 @@ else {
 		stayClasses(clWater, 0));
 
 	createAreas(
-/**
+		/**
  * Generates a more random clump of points. It randomly creates circles around the edges of the current clump.s
  *
  * @param {number} minRadius - minimum radius of the circles.
@@ -197,22 +199,22 @@ else {
 
 	createBumps(
 		stayClasses(
-			clIce, 0,
-			),
+			clIce, 0
+		),
 		scaleByMapSize(40, 60),
 		1,
 		4,
 		Math.floor(scaleByMapSize(2, 5)), // spread
 		0,
 		heightShore
-		);
+	);
 
 	paintTerrainBasedOnHeight(
 		heightSeaGround,
 		heightShore + 0.1,
 		Elevation_ExcludeMin_ExcludeMax,
 		tShore
-		);
+	);
 }
 
 Engine.SetProgress(30);
@@ -230,7 +232,7 @@ const initBaseHeight = heightLand;
 const heightHill = 25;
 var playerHillRadius = defaultPlayerBaseRadius() / (isNomad() ? 1.5 : 1) * 1.2;
 g_Map.log("Flatten the initial CC area");
-for (let position of playerPosition)
+for (const position of playerPosition)
 {
 	createArea(
 		new ClumpPlacer(diskArea(playerHillRadius * 2), 0.85, 0.45, Infinity, position),
@@ -243,42 +245,42 @@ for (let position of playerPosition)
 if (g_Map.size >= mediumMapSize)
 {
 	g_Map.log("Placing large mines for each player");
-	for (let position of playerPosition)
+	for (const position of playerPosition)
 	{
 		placeMine(
 			Vector2D.add(
 				position,
-				new Vector2D(mineDistToCC, 0)).rotateAround(position.angleTo(mapCenter)-Math.PI*0.44,
+				new Vector2D(mineDistToCC, 0)).rotateAround(position.angleTo(mapCenter) - Math.PI * 0.44,
 				position),
 			oMetalLarge);
 		placeMine(
 			Vector2D.add(
 				position,
-				new Vector2D(mineDistToCC, 0)).rotateAround(position.angleTo(mapCenter)-Math.PI*0.56,
+				new Vector2D(mineDistToCC, 0)).rotateAround(position.angleTo(mapCenter) - Math.PI * 0.56,
 				position),
 			oStoneLarge);
 	}
 }
 
 g_Map.log("Creating player hills and ramps");
-for (let position of playerPosition)
+for (const position of playerPosition)
 {
 	createArea(
 		// new ClumpPlacer(diskArea(playerHillRadius), 0.95, 0.6, Infinity, position),
 		new ClumpPlacer(diskArea(playerHillRadius), 0.95, 0.05, Infinity, position),
 		[
-			new SmoothElevationPainter(ELEVATION_SET, heightHill, 4),
+			new SmoothElevationPainter(ELEVATION_SET, heightHill, 4)
 		]);
 
-	let angle = position.angleTo(mapCenter) - Math.PI * 0.5;
-	let distanceFromCC = playerHillRadius * 0.80;
-	let distanceFromEdge = playerHillRadius / 8;
+	const angle = position.angleTo(mapCenter) - Math.PI * 0.5;
+	const distanceFromCC = playerHillRadius * 0.80;
+	const distanceFromEdge = playerHillRadius / 8;
 	createPassage({
 		"start": Vector2D.add(position, new Vector2D(playerHillRadius + distanceFromEdge, 0).rotate(angle)),
 		"end": Vector2D.add(position, new Vector2D(playerHillRadius - distanceFromCC, 0).rotate(angle)),
 		"startWidth": 12,
 		"endWidth": 20,
-		"smoothWidth": 4,
+		"smoothWidth": 4
 	});
 
 	createPassage({
@@ -286,7 +288,7 @@ for (let position of playerPosition)
 		"end": Vector2D.add(position, new Vector2D(playerHillRadius - distanceFromCC, 0).rotate(angle + Math.PI)),
 		"startWidth": 12,
 		"endWidth": 20,
-		"smoothWidth": 4,
+		"smoothWidth": 4
 	});
 }
 
@@ -295,7 +297,7 @@ createArea(
 	new MapBoundsPlacer(),
 	[
 		new TerrainPainter(g_Terrains.cliff),
-		new TileClassPainter(clHill),
+		new TileClassPainter(clHill)
 	],
 	[
 		avoidClasses(clWater, 2),
@@ -320,12 +322,12 @@ placePlayerBases({
 	"Mines": {
 		"types": [
 			{ "template": oMetalSmall },
-			{ "template": oStoneSmall },
+			{ "template": oStoneSmall }
 			// distance value is completely ignored
 			// https://wildfiregames.com/forum/topic/60993-suggestion-players-should-not-start-with-5000-stone-and-5000-metal-right-next-to-their-cc/?do=findComment&comment=462533
 			// { "template": oMetalLarge, "distance": defaultPlayerBaseRadius() * 1.5 },
 			// { "template": oStoneLarge, "distance": defaultPlayerBaseRadius() * 1.5 }
-		],
+		]
 	},
 	"Trees": {
 		"template": oTree1,
@@ -342,29 +344,29 @@ createBumps(avoidClasses(clPlayer, 20, clWater, 1));
 
 g_Map.log("Creating dirt patches");
 createLayeredPatches(
- [scaleByMapSize(3, 6), scaleByMapSize(5, 10), scaleByMapSize(8, 21)],
- [[tMainTerrain,tTier1Terrain],[tTier1Terrain,tTier2Terrain], [tTier2Terrain,tTier3Terrain]],
- [1, 1],
- avoidClasses(clWater, 5, clForest, 0, clHill, 0, clDirt, 5, clPlayer, 12),
- scaleByMapSize(15, 45),
- clDirt);
+	[scaleByMapSize(3, 6), scaleByMapSize(5, 10), scaleByMapSize(8, 21)],
+	[[tMainTerrain, tTier1Terrain], [tTier1Terrain, tTier2Terrain], [tTier2Terrain, tTier3Terrain]],
+	[1, 1],
+	avoidClasses(clWater, 5, clForest, 0, clHill, 0, clDirt, 5, clPlayer, 12),
+	scaleByMapSize(15, 45),
+	clDirt);
 
 g_Map.log("Creating grass patches");
 createPatches(
- [scaleByMapSize(2, 4), scaleByMapSize(3, 7), scaleByMapSize(5, 15)],
- tTier4Terrain,
- avoidClasses(clWater, 5, clHill, 0, clDirt, 5, clPlayer, 12),
- scaleByMapSize(15, 45),
- clDirt);
+	[scaleByMapSize(2, 4), scaleByMapSize(3, 7), scaleByMapSize(5, 15)],
+	tTier4Terrain,
+	avoidClasses(clWater, 5, clHill, 0, clDirt, 5, clPlayer, 12),
+	scaleByMapSize(15, 45),
+	clDirt);
 Engine.SetProgress(45);
 
 g_Map.log("Establishing forests");
 var [forestTrees, stragglerTrees] = getTreeCounts(...rBiomeTreeCount(1));
 createForests(
- [tMainTerrain, tForestFloor1, tForestFloor2, pForest1, pForest2],
- avoidClasses(clIsthmus, 2, clRock, 1, clMetal, 1, clWater, 2, clPlayer, scaleByMapSize(18, 30), clForest, 12, clHill, 3),
- clForest,
- forestTrees);
+	[tMainTerrain, tForestFloor1, tForestFloor2, pForest1, pForest2],
+	avoidClasses(clIsthmus, 2, clRock, 1, clMetal, 1, clWater, 2, clPlayer, scaleByMapSize(18, 30), clForest, 12, clHill, 3),
+	clForest,
+	forestTrees);
 Engine.SetProgress(50);
 
 g_Map.log("Creating metal mines");
@@ -395,7 +397,7 @@ createDecoration(
 		[new SimpleObject(aRockMedium, 1, 3, 0, 1)],
 		[new SimpleObject(aRockLarge, 1, 2, 0, 1), new SimpleObject(aRockMedium, 1, 3, 0, 2)],
 		[new SimpleObject(aGrassShort, 1, 2, 0, 1)],
-		[new SimpleObject(aGrass, 2, 4, 0, 1.8), new SimpleObject(aGrassShort, 3,6, 1.2, 2.5)],
+		[new SimpleObject(aGrass, 2, 4, 0, 1.8), new SimpleObject(aGrassShort, 3, 6, 1.2, 2.5)],
 		[new SimpleObject(aBushMedium, 1, 2, 0, 2), new SimpleObject(aBushSmall, 2, 4, 0, 2)]
 	],
 	[
@@ -436,7 +438,8 @@ createStragglerTrees(
 	clForest,
 	stragglerTrees);
 
-if (!bArctic) {
+if (!bArctic)
+{
 	g_Map.log("Creating fish");
 	createObjectGroups(
 		new SimpleGroup([new SimpleObject(oFish, 1, 1, 0, 1)], true, clFood),
@@ -450,19 +453,21 @@ if (!bArctic) {
 
 placePlayersNomad(clPlayer, avoidClasses(clWater, 5, clForest, 1, clMetal, 4, clRock, 4, clHill, 4, clFood, 2));
 
-setWaterTint(0.120, 0.125,0.221);
+setWaterTint(0.120, 0.125, 0.221);
 
-if (!bArctic) {
+if (!bArctic)
+{
 	setWaterWaviness(randIntInclusive(2, 8));
-	setWaterColor(0.120,0.125,0.221);
+	setWaterColor(0.120, 0.125, 0.221);
 	setWaterType("ocean");
 }
-else {
+else
+{
 	setWaterWaviness(3);
 	setWaterColor(0.0784314, 0.237059, 0.299608);
 	setWaterType("lake");
 }
 
-setWaterMurkiness(.93);
+setWaterMurkiness(0.93);
 
 g_Map.ExportMap();

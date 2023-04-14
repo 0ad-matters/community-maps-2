@@ -51,7 +51,7 @@ const pForest2 = [tForestFloor1 + TERRAIN_SEPARATOR + oTree4, tForestFloor1 + TE
 const heightScale = num => num * g_MapSettings.Size / 320;
 const heightLand = heightScale(3);
 const heightShore = heightScale(2);
-var heightSeaGround = bArctic ? heightScale(.05) : heightScale(-5);
+var heightSeaGround = bArctic ? heightScale(0.05) : heightScale(-5);
 const heightWaterLevel = heightScale(0);
 
 if (bSahara)
@@ -85,7 +85,7 @@ createArea(
 		0,
 		[Math.floor(fractionToTiles(0.33))]),
 	[
-		new SmoothElevationPainter(ELEVATION_SET, heightLand, 4),
+		new SmoothElevationPainter(ELEVATION_SET, heightLand, 4)
 		// new TileClassPainter(clLand)
 	]);
 
@@ -100,7 +100,7 @@ createArea(
  * @param {Vector2D} [centerPosition] - Tile coordinates of placer center.
  */
 createArea(
-	new ClumpPlacer(diskArea(scaleByMapSize(6,56)), 0.5, 0.6, 5, mapCenter),
+	new ClumpPlacer(diskArea(scaleByMapSize(6, 56)), 0.5, 0.6, 5, mapCenter),
 	[
 		new SmoothElevationPainter(ELEVATION_SET, heightSeaGround, 2),
 		new TerrainPainter(tWater)
@@ -112,7 +112,8 @@ createArea(
 	new TileClassPainter(clLand),
 	new HeightConstraint(heightWaterLevel + 0.1, Infinity));
 
-if (bArctic) {
+if (bArctic)
+{
 	createAreas(
 		new ChainPlacer(
 			1,
@@ -128,15 +129,15 @@ if (bArctic) {
 
 	createBumps(
 		avoidClasses(
-			clLand, 0,
-			),
+			clLand, 0
+		),
 		scaleByMapSize(40, 60),
 		1,
 		4,
 		Math.floor(scaleByMapSize(2, 5)), // spread
 		0,
 		heightShore
-		);
+	);
 }
 
 var [playerIDs, playerPosition] = playerPlacementCircle(fractionToTiles(0.25));
@@ -164,19 +165,19 @@ paintTerrainBasedOnHeight(
 	Infinity,
 	Elevation_ExcludeMin_ExcludeMax,
 	tMainTerrain
-	);
+);
 paintTerrainBasedOnHeight(
 	heightSeaGround + 0.1,
 	heightShore,
 	Elevation_ExcludeMin_ExcludeMax,
 	tShore
-	);
+);
 paintTerrainBasedOnHeight(
-	heightWaterLevel - .05,
+	heightWaterLevel - 0.05,
 	heightSeaGround,
 	Elevation_ExcludeMin_ExcludeMax,
 	tWater
-	)
+);
 
 placePlayerBases({
 	"PlayerPlacement": [playerIDs, playerPosition],
@@ -217,7 +218,7 @@ else
 var [forestTrees, stragglerTrees] = getTreeCounts(...rBiomeTreeCount(1));
 createDefaultForests(
 	[tMainTerrain, tForestFloor1, tForestFloor2, pForest1, pForest2],
-	[avoidClasses(clPlayer, 20, clForest, 17, clHill, 0, clBaseResource,2), stayClasses(clLand, 4)],
+	[avoidClasses(clPlayer, 20, clForest, 17, clHill, 0, clBaseResource, 2), stayClasses(clLand, 4)],
 	clForest,
 	forestTrees);
 
@@ -225,20 +226,20 @@ Engine.SetProgress(50);
 
 g_Map.log("Creating dirt patches");
 createLayeredPatches(
- [scaleByMapSize(3, 6), scaleByMapSize(5, 10), scaleByMapSize(8, 21)],
- [[tMainTerrain,tTier1Terrain],[tTier1Terrain,tTier2Terrain], [tTier2Terrain,tTier3Terrain]],
- [1,1],
- [avoidClasses(clForest, 0, clHill, 0, clDirt, 5, clPlayer, 12), stayClasses(clLand, 5)],
- scaleByMapSize(15, 45),
- clDirt);
+	[scaleByMapSize(3, 6), scaleByMapSize(5, 10), scaleByMapSize(8, 21)],
+	[[tMainTerrain, tTier1Terrain], [tTier1Terrain, tTier2Terrain], [tTier2Terrain, tTier3Terrain]],
+	[1, 1],
+	[avoidClasses(clForest, 0, clHill, 0, clDirt, 5, clPlayer, 12), stayClasses(clLand, 5)],
+	scaleByMapSize(15, 45),
+	clDirt);
 
 g_Map.log("Creating grass patches");
 createPatches(
- [scaleByMapSize(2, 4), scaleByMapSize(3, 7), scaleByMapSize(5, 15)],
- tTier4Terrain,
- [avoidClasses(clForest, 0, clHill, 0, clDirt, 5, clPlayer, 12), stayClasses(clLand, 5)],
- scaleByMapSize(15, 45),
- clDirt);
+	[scaleByMapSize(2, 4), scaleByMapSize(3, 7), scaleByMapSize(5, 15)],
+	tTier4Terrain,
+	[avoidClasses(clForest, 0, clHill, 0, clDirt, 5, clPlayer, 12), stayClasses(clLand, 5)],
+	scaleByMapSize(15, 45),
+	clDirt);
 Engine.SetProgress(55);
 
 g_Map.log("Creating metal mines");
@@ -246,7 +247,7 @@ createBalancedMetalMines(
 	oMetalSmall,
 	oMetalLarge,
 	clMetal,
-	[stayClasses(clLand, 6), avoidClasses(clForest, 1, clPlayer, scaleByMapSize(20, 35), clHill, 1)],
+	[stayClasses(clLand, 6), avoidClasses(clForest, 1, clPlayer, scaleByMapSize(20, 35), clHill, 1)]
 );
 
 g_Map.log("Creating stone mines");
@@ -328,7 +329,7 @@ placePlayersNomad(
 	clPlayer,
 	[stayClasses(clLand, 4), avoidClasses(clForest, 1, clMetal, 4, clRock, 4, clHill, 4, clFood, 2)]);
 
-setWaterWaviness(randIntInclusive(2,8));
+setWaterWaviness(randIntInclusive(2, 8));
 setWaterType("ocean");
 
 g_Map.ExportMap();

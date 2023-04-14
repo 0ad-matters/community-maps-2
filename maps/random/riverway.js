@@ -39,7 +39,6 @@ const oSkirmisher = "units/gaul/infantry_javelineer_b";
 const oNakedFanatic = "units/gaul/champion_fanatic";
 const oGoat = "gaia/fauna_goat";
 
-
 const aGrass = g_Decoratives.grass;
 const aGrassShort = g_Decoratives.grassShort;
 const aRockLarge = g_Decoratives.rockLarge;
@@ -84,11 +83,10 @@ function valueRanges(t, values, ranges)
 {
 	for (let i = 0; i < ranges.length; i++)
 	{
-		if( t <  ranges[i] ) return values[i];
+		if(t < ranges[i]) return values[i];
 	}
-	return values[values.length-1];
+	return values[values.length - 1];
 }
-
 
 var ritualParticipants = [
 	{
@@ -128,32 +126,31 @@ var ritualParticipants = [
 	}
 ];
 
+function addGaiaRitual(center, radius)
+{
 
-function addGaiaRitual( center , radius ){
+	new createArea(
+		new DiskPlacer(10, center), [
+			new TerrainPainter(oTreasure),
+			new TileClassPainter(clForest)
 
+		], [
+			new DensityConstraint(new DensityRadius(
+				center,
+				radius,
+				(t, h) => valueRanges(t, [0, 0.9, 0, 0.15, 0], [0.3, 0.4, 0.8, 0.9])
+			))
+		]
+	);
 
-		new createArea(
-			new DiskPlacer(10, center), [
-				new TerrainPainter(oTreasure),
-				new TileClassPainter(clForest)
+	g_Map.placeEntityAnywhere(aCampfire, 0, center, randomAngle());
 
-			], [
-				new DensityConstraint(new DensityRadius(
-					center,
-					radius,
-					(t, h) => valueRanges(t,[0,0.9,0,0.15,0],[0.3,0.4,0.8,0.9])
-				))
-			]
-		);
-
-		g_Map.placeEntityAnywhere(aCampfire, 0, center, randomAngle());
-
-		for (let participants of ritualParticipants)
-		{
-			let [positions, angles] = distributePointsOnCircle(participants.count, 0, participants.radius * radius, center);
-			for (let i = 0; i < positions.length; ++i)
-				g_Map.placeEntityPassable(pickRandom(participants.templates), 0, positions[i], angles[i] + participants.angle);
-		}
+	for (const participants of ritualParticipants)
+	{
+		const [positions, angles] = distributePointsOnCircle(participants.count, 0, participants.radius * radius, center);
+		for (let i = 0; i < positions.length; ++i)
+			g_Map.placeEntityPassable(pickRandom(participants.templates), 0, positions[i], angles[i] + participants.angle);
+	}
 }
 
 function playerPlacementCircleCustom(radius, startingAngle = undefined, center = undefined)
@@ -162,8 +159,8 @@ function playerPlacementCircleCustom(radius, startingAngle = undefined, center =
 	const numPlayersEachSide = Math.ceil(numPlayers / 2);
 	const angleEachSide = Math.PI * 0.6;
 	const angleStep = angleEachSide / (numPlayersEachSide + 1);
-	let playerPosition = [];
-	let playerAngle = [];
+	const playerPosition = [];
+	const playerAngle = [];
 	for (let i = 1; i < numPlayersEachSide + 1; i++)
 	{
 		const angle = (Math.PI - angleEachSide) / 2 + angleEachSide * i / (numPlayersEachSide + 1);
@@ -183,41 +180,41 @@ function playerPlacementCircleCustom(radius, startingAngle = undefined, center =
 }
 
 placePlayerBases(
-{
-	"PlayerPlacement": playerPlacementCircleCustom(fractionToTiles(0.35)),
-	"PlayerTileClass": clPlayer,
-	"BaseResourceClass": clBaseResource,
-	"CityPatch":
+	{
+		"PlayerPlacement": playerPlacementCircleCustom(fractionToTiles(0.35)),
+		"PlayerTileClass": clPlayer,
+		"BaseResourceClass": clBaseResource,
+		"CityPatch":
 	{
 		"outerTerrain": tRoadWild,
 		"innerTerrain": tRoad
 	},
-	"StartingAnimal":
+		"StartingAnimal":
 	{},
-	"Berries":
+		"Berries":
 	{
 		"template": oFruitBush
 	},
-	"Mines":
+		"Mines":
 	{
 		"types": [
-		{
-			"template": oMetalLarge
-		},
-		{
-			"template": oStoneLarge
-		}]
+			{
+				"template": oMetalLarge
+			},
+			{
+				"template": oStoneLarge
+			}]
 	},
-	"Trees":
+		"Trees":
 	{
 		"template": oTree1,
 		"count": 5
 	},
-	"Decoratives":
+		"Decoratives":
 	{
 		"template": aGrassShort
 	}
-});
+	});
 
 var stonesGroup = new SimpleGroup([
 	new SimpleObject("actor|geology/gray1.xml", 1, 2, 1, 4),
@@ -242,11 +239,9 @@ var metalMineral = new SimpleGroup([
 	new SimpleObject(oMetalSmall, 2, 4, 1, 3)
 ]);
 
-
-
 Engine.SetProgress(10);
 g_Map.log("Making river");
-let river = {};
+const river = {};
 river.width = 26;
 river.startPos = new Vector2D(mapSize / 2, -10);
 river.endPos = new Vector2D(mapSize / 2, mapSize + 10);
@@ -264,8 +259,6 @@ Engine.SetProgress(15);
 g_Map.log("Making bumps");
 createBumps(new HeightConstraint(-Infinity, 0), 100, undefined, undefined, undefined, 0, -river.depth);
 
-
-
 Engine.SetProgress(20);
 g_Map.log("Making passage");
 const riverDis = new Vector2D(river.width / 2, 0).mult(0.6);
@@ -273,7 +266,7 @@ const passageArea = new createArea(
 	new PathPlacer(new Vector2D(0, mapSize / 2), new Vector2D(mapSize, mapSize / 2), 7, 0.4, 1.0, 0.1, 0, Infinity), [
 		new SmoothElevationPainter(ELEVATION_SET, 0, 1),
 		new TerrainPainter(tRoadWild),
-		new TileClassPainter(g_TileClasses.forest),
+		new TileClassPainter(g_TileClasses.forest)
 
 	], [
 		new HeightConstraint(-0.2, Infinity)
@@ -281,7 +274,7 @@ const passageArea = new createArea(
 
 Engine.SetProgress(25);
 g_Map.log("Making bluffs");
-let bluffs = {};
+const bluffs = {};
 bluffs.constraints = [
 	new HeightConstraint(0, Infinity),
 	new BorderTileClassConstraint(clRiver, 5, 35),
@@ -296,7 +289,7 @@ addBluffs(bluffs.constraints, bluffs.size, bluffs.sizeDeviation, bluffs.areaFill
 
 Engine.SetProgress(40);
 g_Map.log("Making bluffs");
-let riverTrees = {};
+const riverTrees = {};
 riverTrees.width = 40 * scaleByMapSize(1, 3);
 riverTrees.density = (t, h) => linearInterpolation(bezier_quadratic(0.0, 1.3, 0.05, (1 - t) * (1 - t) * (1 - t)), 0, h / 15) * 0.6;
 riverTrees.placerLeft = new RectPlacer(new Vector2D(mapSize / 2, mapSize).add(riverDis), new Vector2D(mapSize / 2, 0).add(riverDis).add(new Vector2D(riverTrees.width, 0)));
@@ -314,7 +307,7 @@ riverTrees.constraints = [
 
 Engine.SetProgress(45);
 g_Map.log("Making trees left side");
-let treesLeftArea = new createArea(
+const treesLeftArea = new createArea(
 	riverTrees.placerLeft,
 	riverTrees.painters, [
 		...riverTrees.constraints,
@@ -329,7 +322,7 @@ let treesLeftArea = new createArea(
 
 Engine.SetProgress(50);
 g_Map.log("Making trees right side");
-let treesRightArea = new createArea(
+const treesRightArea = new createArea(
 	riverTrees.placerRight,
 	riverTrees.painters, [
 		...riverTrees.constraints,
@@ -342,7 +335,7 @@ let treesRightArea = new createArea(
 	]
 );
 
-let treesAreas = [treesLeftArea, treesRightArea];
+const treesAreas = [treesLeftArea, treesRightArea];
 
 Engine.SetProgress(55);
 g_Map.log("Painting water and shoreline");
@@ -375,16 +368,15 @@ createObjectGroupsByAreas(metalMineral, 0, [
 	new SlopeConstraint(0, 2)
 ], scaleByMapSize(5, 35), 200, treesAreas);
 
-
 Engine.SetProgress(70);
 g_Map.log("Calculating areas");
-let noRiverForestArea = new createArea(
+const noRiverForestArea = new createArea(
 	new MapBoundsPlacer(), [], [
 		new AvoidTileClassConstraint(clRiver, riverTrees.width * 0.7)
 	]
 );
 
-let gaia = {};
+const gaia = {};
 gaia.constraints = [
 	new StayAreasConstraint([noRiverForestArea]),
 	new AvoidTileClassConstraint(clPlayer, 5)
@@ -428,22 +420,19 @@ Engine.SetProgress(92);
 g_Map.log("Adding addBerries");
 addBerries(gaia.constraints, 1, 0, 0.2);
 
-
 Engine.SetProgress(95);
 g_Map.log("Adding treasures and gaia rituals");
-let treasuresSettings = {};
+const treasuresSettings = {};
 treasuresSettings.radius = 10;
 treasuresSettings.posTop = new Vector2D(mapSize / 2, treasuresSettings.radius + 4);
 treasuresSettings.posBottom = new Vector2D(mapSize / 2, mapSize - treasuresSettings.radius - 4);
 
-addGaiaRitual( treasuresSettings.posTop , treasuresSettings.radius );
-addGaiaRitual( treasuresSettings.posBottom , treasuresSettings.radius );
-
+addGaiaRitual(treasuresSettings.posTop, treasuresSettings.radius);
+addGaiaRitual(treasuresSettings.posBottom, treasuresSettings.radius);
 
 Engine.SetProgress(98);
 g_Map.log("Finishing");
 placePlayersNomad(g_Map.createTileClass());
-
 
 setWaterWaviness(5);
 setWindAngle(Math.PI / 2);

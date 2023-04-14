@@ -10,7 +10,7 @@ Engine.LoadLibrary("rmgen-helpers");
 setSelectedBiome();
 
 const heightScale = num => num * g_MapSettings.Size / 320;
-const heightLand =  30;
+const heightLand = 30;
 const heightRavineValley = 2;
 const heightRavineHill = 40;
 const heightHill = 50;
@@ -50,10 +50,10 @@ function createBasesRandomHeights(playerIDs, playerPosition, walls)
 			},
 			"StartingAnimal": {
 				"template": randBool() ? oPig : oSheep,
-				"count": randIntInclusive(5,20)
+				"count": randIntInclusive(5, 20)
 			},
 			"Berries": {
-				"template": fruit[randIntInclusive(0, fruit.length - 1)], "count": randIntInclusive(1,4)
+				"template": fruit[randIntInclusive(0, fruit.length - 1)], "count": randIntInclusive(1, 4)
 			},
 			"Mines": {
 				"types": [
@@ -120,7 +120,7 @@ var clBaseResource = g_Map.createTileClass();
 var playerPosition = [];
 if (!isNomad())
 {
-	let pattern = g_MapSettings.TeamPlacement || pickRandom(Object.keys(g_PlayerbaseTypes));
+	const pattern = g_MapSettings.TeamPlacement || pickRandom(Object.keys(g_PlayerbaseTypes));
 	var [playerIDs, playerPosition] = createBasesByPattern(
 		pattern,
 		g_PlayerbaseTypes[pattern].distance,
@@ -146,8 +146,8 @@ for (var ix = 0; ix < mapSize; ix++)
 {
 	for (var iz = 0; iz < mapSize; iz++)
 	{
-		let position = new Vector2D(ix, iz);
-		let h = g_Map.getHeight(position);
+		const position = new Vector2D(ix, iz);
+		const h = g_Map.getHeight(position);
 		if (h > heightRavineHill)
 		{
 			clHill.add(position);
@@ -162,9 +162,9 @@ for (var ix = 0; ix < mapSize; ix++)
 }
 
 g_Map.log("Creating ravines");
-for (let size of [scaleByMapSize(50, 600), scaleByMapSize(50, 300), scaleByMapSize(50, 400), scaleByMapSize(10, 30), scaleByMapSize(10, 30)])
+for (const size of [scaleByMapSize(50, 600), scaleByMapSize(50, 300), scaleByMapSize(50, 400), scaleByMapSize(10, 30), scaleByMapSize(10, 30)])
 {
-	let ravine = createAreas(
+	const ravine = createAreas(
 		new ClumpPlacer(size, 0.1, 0.2, 0.1),
 		[
 			new LayeredPainter([tCliff, tForestFloor1], [2]),
@@ -225,11 +225,11 @@ for (let size of [scaleByMapSize(50, 600), scaleByMapSize(50, 300), scaleByMapSi
 			new RandomGroup(
 				[
 					new SimpleObject(oTree1, 1, 4, 2, 5),
-					new SimpleObject(oTree2, 1, 4, 2, 5),
+					new SimpleObject(oTree2, 1, 4, 2, 5)
 				],
 				true,
 				clHillDeco
-				),
+			),
 			0,
 			[
 				avoidClasses(clHillDeco, 3),
@@ -246,7 +246,7 @@ for (let passes = 0; passes < 200; passes++)
 	const centerPosition = new Vector2D(
 		randIntInclusive (mapBounds.left, mapBounds.right),
 		randIntInclusive (mapBounds.top, mapBounds.bottom)
-		);
+	);
 	const size = randFloat(1, scaleByMapSize(2, 16));
 	const coherence = randFloat(0.05, 0.35); // How much the radius of the clump varies (1 = circle, 0 = very random).
 	const smoothness = randFloat(0.1, 0.6); // How smooth the border of the clump is (1 = few "peaks", 0 = very jagged).
@@ -256,11 +256,11 @@ for (let passes = 0; passes < 200; passes++)
 	createArea(
 		new ClumpPlacer(diskArea(size), coherence, smoothness, Infinity, centerPosition),
 		[
-			new SmoothElevationPainter(ELEVATION_MODIFY, height, size * 1.1),
+			new SmoothElevationPainter(ELEVATION_MODIFY, height, size * 1.1)
 			// new SmoothingPainter(4, 1, 8),
 		],
 		avoidClasses(clPlayer, playerBaseRadius * 1.2, clHill, 8)
-		);
+	);
 }
 
 g_Map.log("Smoothing heightmap");
@@ -275,8 +275,8 @@ for (var ix = 0; ix < mapSize; ix++)
 {
 	for (var iz = 0; iz < mapSize; iz++)
 	{
-		let position = new Vector2D(ix, iz);
-		let h = g_Map.getHeight(position);
+		const position = new Vector2D(ix, iz);
+		const h = g_Map.getHeight(position);
 		if (h > heightLand + 2 && !clHill.has(position))
 		{
 			// Don't add it yet, let it happen during the cliff painting
@@ -302,7 +302,7 @@ createArea(
 	new MapBoundsPlacer(),
 	[
 		new TerrainPainter(g_Terrains.cliff),
-		new TileClassPainter(clHill),
+		new TileClassPainter(clHill)
 	],
 	[
 		new SlopeConstraint(3, Infinity)
@@ -319,20 +319,20 @@ Engine.SetProgress(50);
 
 g_Map.log("Creating dirt patches");
 createLayeredPatches(
- [scaleByMapSize(3, 6), scaleByMapSize(5, 10), scaleByMapSize(8, 21)],
- [[tMainTerrain,tTier1Terrain],[tTier1Terrain,tTier2Terrain], [tTier2Terrain,tTier3Terrain]],
- [1, 1],
- avoidClasses(clForest, 0, clHill, 0, clDirt, 5, clPlayer, 12),
- scaleByMapSize(15, 45),
- clDirt);
+	[scaleByMapSize(3, 6), scaleByMapSize(5, 10), scaleByMapSize(8, 21)],
+	[[tMainTerrain, tTier1Terrain], [tTier1Terrain, tTier2Terrain], [tTier2Terrain, tTier3Terrain]],
+	[1, 1],
+	avoidClasses(clForest, 0, clHill, 0, clDirt, 5, clPlayer, 12),
+	scaleByMapSize(15, 45),
+	clDirt);
 
 g_Map.log("Creating grass patches");
 createPatches(
- [scaleByMapSize(2, 4), scaleByMapSize(3, 7), scaleByMapSize(5, 15)],
- tTier4Terrain,
- avoidClasses(clForest, 0, clHill, 0, clDirt, 5, clPlayer, 12),
- scaleByMapSize(15, 45),
- clDirt);
+	[scaleByMapSize(2, 4), scaleByMapSize(3, 7), scaleByMapSize(5, 15)],
+	tTier4Terrain,
+	avoidClasses(clForest, 0, clHill, 0, clDirt, 5, clPlayer, 12),
+	scaleByMapSize(15, 45),
+	clDirt);
 Engine.SetProgress(55);
 
 g_Map.log("Creating metal mines");
@@ -363,7 +363,7 @@ createDecoration(
 		[new SimpleObject(aRockMedium, 1, 3, 0, 1)],
 		[new SimpleObject(aRockLarge, 1, 2, 0, 1), new SimpleObject(aRockMedium, 1, 3, 0, 2)],
 		[new SimpleObject(aGrassShort, 1, 2, 0, 1)],
-		[new SimpleObject(aGrass, 2, 4, 0, 1.8), new SimpleObject(aGrassShort, 3,6, 1.2, 2.5)],
+		[new SimpleObject(aGrass, 2, 4, 0, 1.8), new SimpleObject(aGrassShort, 3, 6, 1.2, 2.5)],
 		[new SimpleObject(aBushMedium, 1, 2, 0, 2), new SimpleObject(aBushSmall, 2, 4, 0, 2)]
 	],
 	[

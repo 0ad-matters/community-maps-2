@@ -19,7 +19,7 @@ var g_Sizes = {
 	"small": 0.75,
 	"normal": 1,
 	"big": 1.25,
-	"huge": 1.5,
+	"huge": 1.5
 };
 
 var g_AllAmounts = Object.keys(g_Amounts);
@@ -92,7 +92,7 @@ var g_PlayerbaseTypes = {
  */
 function addElements(elements)
 {
-	for (let element of elements)
+	for (const element of elements)
 		element.func(
 			[
 				avoidClasses.apply(null, element.avoid),
@@ -109,7 +109,7 @@ function addElements(elements)
  */
 function pickAmount(amounts)
 {
-	let amount = pickRandom(amounts);
+	const amount = pickRandom(amounts);
 
 	if (amount in g_Amounts)
 		return g_Amounts[amount];
@@ -122,7 +122,7 @@ function pickAmount(amounts)
  */
 function pickMix(mixes)
 {
-	let mix = pickRandom(mixes);
+	const mix = pickRandom(mixes);
 
 	if (mix in g_Mixes)
 		return g_Mixes[mix];
@@ -135,7 +135,7 @@ function pickMix(mixes)
  */
 function pickSize(sizes)
 {
-	let size = pickRandom(sizes);
+	const size = pickRandom(sizes);
 
 	if (size in g_Sizes)
 		return g_Sizes[size];
@@ -153,10 +153,10 @@ function pickSize(sizes)
  * @param {function} createBaseFunc - function to create a base for a single player (optional).
  * @returns {Array|undefined} - If successful, each element is an object that contains id, angle, x, z for each player
  */
-function createBasesByPattern(type, distance, groupedDistance, startAngle, createBasesFunc=createBases)
+function createBasesByPattern(type, distance, groupedDistance, startAngle, createBasesFunc = createBases)
 {
-	let [playerIDs, playerPosition, playerAngle] = g_PlayerbaseTypes[type].getPosition(distance, groupedDistance, startAngle);
-	let playerPosData = createBasesFunc(playerIDs, playerPosition, g_PlayerbaseTypes[type].walls);
+	const [playerIDs, playerPosition, playerAngle] = g_PlayerbaseTypes[type].getPosition(distance, groupedDistance, startAngle);
+	const playerPosData = createBasesFunc(playerIDs, playerPosition, g_PlayerbaseTypes[type].walls);
 	playerPosData.push(playerAngle);
 	return playerPosData;
 }
@@ -225,7 +225,7 @@ function getTeamsArray()
 	var teams = [];
 	for (let i = 0; i < numPlayers; ++i)
 	{
-		let team = getPlayerTeam(playerIDs[i]);
+		const team = getPlayerTeam(playerIDs[i]);
 		if (team == -1)
 			continue;
 
@@ -256,11 +256,11 @@ function getTeamsArray()
  */
 function placeLine(teamsArray, distance, groupedDistance, startAngle)
 {
-	let playerIDs = [];
-	let playerPosition = [];
+	const playerIDs = [];
+	const playerPosition = [];
 
-	let mapCenter = g_Map.getCenter();
-	let dist = fractionToTiles(0.45);
+	const mapCenter = g_Map.getCenter();
+	const dist = fractionToTiles(0.45);
 
 	for (let i = 0; i < teamsArray.length; ++i)
 	{
@@ -292,8 +292,8 @@ function placeStronghold(teamsArray, distance, groupedDistance, startAngle)
 {
 	var mapCenter = g_Map.getCenter();
 
-	let playerIDs = [];
-	let playerPosition = [];
+	const playerIDs = [];
+	const playerPosition = [];
 
 	for (let i = 0; i < teamsArray.length; ++i)
 	{
@@ -332,26 +332,28 @@ function placeStronghold(teamsArray, distance, groupedDistance, startAngle)
  * e.g. 0.8 means the ratio team gap:team player gap is 8:2. n.b. < 0.5 means enemies are closer
  * than team members are to each other
  */
-function playerPlacementMultiArcs(playerIDs, radius, mapAngle, teamGapFrac) {
+function playerPlacementMultiArcs(playerIDs, radius, mapAngle, teamGapFrac)
+{
 	var mapCenter = g_Map.getCenter();
-	let playerTeams = playerIDs.map(getPlayerTeam);
-	let uniqueTeams = new Set(playerTeams);
-	let nTeams = uniqueTeams.size;
-	let nPlayers = playerIDs.length;
+	const playerTeams = playerIDs.map(getPlayerTeam);
+	const uniqueTeams = new Set(playerTeams);
+	const nTeams = uniqueTeams.size;
+	const nPlayers = playerIDs.length;
 
-	let teamIntMap = {};
-	let teamFreqPlayers = {};
-	let teamPlayersIntMap = {};
+	const teamIntMap = {};
+	const teamFreqPlayers = {};
+	const teamPlayersIntMap = {};
 
 	// Shuffle team order.
-	let teamShuffle = function(length) {
+	const teamShuffle = function(length) {
 		let i = 0;
-		let array = Array.from(Array(length), () => i++);
-			for(let i = array.length - 1; i > 0; i--){
-		  	const j = Math.round(Math.random() * (array.length-1))
-		  	const temp = array[i]
-		  	array[i] = array[j]
-		  	array[j] = temp
+		const array = Array.from(Array(length), () => i++);
+		for(let i = array.length - 1; i > 0; i--)
+		{
+		  	const j = Math.round(Math.random() * (array.length - 1));
+		  	const temp = array[i];
+		  	array[i] = array[j];
+		  	array[j] = temp;
 		}
 		return array;
 	}(nTeams);
@@ -366,12 +368,17 @@ function playerPlacementMultiArcs(playerIDs, radius, mapAngle, teamGapFrac) {
 	// I don't know at this point. Trust my brain. It's smarter than my brain.
 	// Something-something add the previous team player combos.
 	// It's some kind of "cumulative frequency" of player teams idk.
-	for (let key in teamPlayersIntMap) {
-		if (teamPlayersIntMap.hasOwnProperty(key)) {
-			for (let key2 in teamPlayersIntMap) {
-				if (teamPlayersIntMap.hasOwnProperty(key)) {
-					if (teamIntMap[key2] > teamIntMap[key]) {
-						teamPlayersIntMap[key2] += teamFreqPlayers[key]-1;
+	for (const key in teamPlayersIntMap)
+	{
+		if (teamPlayersIntMap.hasOwnProperty(key))
+		{
+			for (const key2 in teamPlayersIntMap)
+			{
+				if (teamPlayersIntMap.hasOwnProperty(key))
+				{
+					if (teamIntMap[key2] > teamIntMap[key])
+					{
+						teamPlayersIntMap[key2] += teamFreqPlayers[key] - 1;
 					}
 				}
 			}
@@ -380,15 +387,15 @@ function playerPlacementMultiArcs(playerIDs, radius, mapAngle, teamGapFrac) {
 
 	const teamPlayerGapFrac = 1 - teamGapFrac;
 
-	const totalGapCount = teamGapFrac*nTeams + teamPlayerGapFrac*(nPlayers-nTeams);
+	const totalGapCount = teamGapFrac * nTeams + teamPlayerGapFrac * (nPlayers - nTeams);
 
-	const teamGapAngle = 2*Math.PI*teamGapFrac/totalGapCount;
-	const teamPlayerGapAngle = 2*Math.PI*teamPlayerGapFrac/totalGapCount;
+	const teamGapAngle = 2 * Math.PI * teamGapFrac / totalGapCount;
+	const teamPlayerGapAngle = 2 * Math.PI * teamPlayerGapFrac / totalGapCount;
 
+	function playerAngle(i)
+	{
 
-	function playerAngle(i) {
-
-		return mapAngle + teamGapAngle*teamIntMap[playerTeams[i]] + teamPlayerGapAngle*((teamPlayersIntMap[playerTeams[i]]++));
+		return mapAngle + teamGapAngle * teamIntMap[playerTeams[i]] + teamPlayerGapAngle * ((teamPlayersIntMap[playerTeams[i]]++));
 	}
 
 	return playerPlacementCustomAngle(

@@ -77,7 +77,7 @@ var clBaseResource = g_Map.createTileClass();
 function weierstrassVolcano(a, r)
 {
 	const q = 0.6;
-	const w = 4.5 - r * 0.01
+	const w = 4.5 - r * 0.01;
 
 	let sum = 0;
 	for (let n = 0; n < 20; ++n)
@@ -87,27 +87,25 @@ function weierstrassVolcano(a, r)
 
 var volcano = {
 	"maxRadius": () => fractionToTiles(0.5 * 0.65),
-	"minRadius": function ()
+	"minRadius": function()
 	{
-		return this.maxRadius * 0.1
+		return this.maxRadius * 0.1;
 	},
-	"height": function ()
+	"height": function()
 	{
 		return 150 * this.maxRadius / 100;
 	},
-	"craterDepth": function ()
+	"craterDepth": function()
 	{
 		return 30 * this.height / 100;
 	},
-	"position": () => g_Map.getCenter(),
+	"position": () => g_Map.getCenter()
 };
 
-for (let key in volcano)
+for (const key in volcano)
 	volcano[key] = volcano[key]();
 
-
-var coneShaper = (a, r) =>
-{
+var coneShaper = (a, r) => {
 	return Math.max(
 		volcano.height * Math.pow(r, 3) +
 		weierstrassVolcano(1 * (a - 0.5), r) * 8 * r +
@@ -117,13 +115,12 @@ var coneShaper = (a, r) =>
 arcRast(volcano.position, volcano.maxRadius, volcano.minRadius,
 	0, 2 * Math.PI, coneShaper);
 
-var craterShaper = (a, r) =>
-{
+var craterShaper = (a, r) => {
 	return volcano.height - volcano.craterDepth * (1 - Math.pow(r, 4));
 };
-arcRast(volcano.position, 0, volcano.minRadius, 0, 2 * Math.PI, craterShaper)
+arcRast(volcano.position, 0, volcano.minRadius, 0, 2 * Math.PI, craterShaper);
 
-let num = Math.floor(diskArea(scaleByMapSize(3, 5)));
+const num = Math.floor(diskArea(scaleByMapSize(3, 5)));
 createObjectGroup(
 	new SimpleGroup(
 		[new SimpleObject("actor|particle/smoke.xml", num, num, 0, 12)],
@@ -152,9 +149,9 @@ var g_WaterArea = new createArea(
 var numReefs = scaleByMapSize(2, 5) * 20;
 for (let nReef = 0; nReef < numReefs; ++nReef)
 {
-	let rad = 2 * Math.PI * nReef / numReefs + (Math.random() - 0.5);
-	let dist = volcano.maxRadius + (fractionToTiles(0.5) - volcano.maxRadius) * Math.random();
-	let pos = new Vector2D(1, 0).rotate(rad).mult(dist).add(g_Map.getCenter());
+	const rad = 2 * Math.PI * nReef / numReefs + (Math.random() - 0.5);
+	const dist = volcano.maxRadius + (fractionToTiles(0.5) - volcano.maxRadius) * Math.random();
+	const pos = new Vector2D(1, 0).rotate(rad).mult(dist).add(g_Map.getCenter());
 
 	createArea(
 		// new ClumpPlacer(diskArea(15), 0.98, 0.04, Infinity, pos),
@@ -248,12 +245,10 @@ placePlayerBases({
 	}
 });
 
-
 Engine.SetProgress(20);
 
 for (let n = 0; n < 2; ++n)
 	createBumps(avoidClasses(clPlayer, 20));
-
 
 var [forestTrees, stragglerTrees] = getTreeCounts(...rBiomeTreeCount(1));
 
@@ -276,7 +271,7 @@ createLayeredPatches(
 	[1, 1],
 	[
 		new avoidClasses(clForest, 0, clHill, 0, clDirt, 5, clPlayer, 12),
-		new HeightConstraint(3, volcano.height * 0.65),
+		new HeightConstraint(3, volcano.height * 0.65)
 	],
 	scaleByMapSize(15, 45),
 	clDirt);
@@ -287,7 +282,7 @@ createPatches(
 	tTier4Terrain,
 	[
 		new avoidClasses(clForest, 0, clHill, 0, clDirt, 5, clPlayer, 12),
-		new HeightConstraint(3, volcano.height * 0.65),
+		new HeightConstraint(3, volcano.height * 0.65)
 	],
 	scaleByMapSize(15, 45),
 	clDirt);
@@ -377,19 +372,18 @@ createFood(
 
 Engine.SetProgress(85);
 
-
 g_Map.log("Creating decorative rocks");
 createObjectGroupsDeprecated(
 	new SimpleGroup(
 		[
 			new SimpleObject(aRock, 1, 3, 1, 5),
-			new SimpleObject(aLargeRock, 1, 3, 0.5, 3),
+			new SimpleObject(aLargeRock, 1, 3, 0.5, 3)
 		],
 		true
 	),
 	0,
 	[
-		new HeightConstraint(-Infinity, -1),
+		new HeightConstraint(-Infinity, -1)
 	],
 	scaleByMapSize(1, 10) * 100,
 	Infinity

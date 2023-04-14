@@ -21,6 +21,6 @@ PerlinPainter.prototype.paint = function(area)
 	const points = area.getPoints();
 	const length = points.length;
 	const perlinHeights = perlin_noise(points, this.frequency, this.octaves, this.scale, this.vertical_scale, this.positive);
-	let elevation_type = this.type ? (i) => g_Map.getHeight(points[i]) : () => 0;
-	points.forEach( (point,i) => g_Map.setHeight(point, perlinHeights[i] + elevation_type(i) ) );
-}
+	const elevation_type = this.type ? (i) => g_Map.getHeight(points[i]) : () => 0;
+	points.forEach((point, i) => g_Map.setHeight(point, perlinHeights[i] + elevation_type(i)));
+};

@@ -98,7 +98,7 @@ createArea(
 	new MapBoundsPlacer(),
 	[
 		new TerrainPainter(g_Terrains.cliff),
-		new TileClassPainter(g_TileClasses.mountain),
+		new TileClassPainter(g_TileClasses.mountain)
 	],
 	[
 		avoidClasses(g_TileClasses.water, 2),
@@ -110,16 +110,16 @@ const startAngle = 0.05 * Math.PI;
 if (!isNomad())
 {
 	g_Map.log("Placing players");
-	//let [playerIDs, playerPosition] = createBases(
-		//...playerPlacementRandom(
-			//sortAllPlayers(),
-			//[
-				//avoidClasses(g_TileClasses.mountain, 10),
-				//stayClasses(g_TileClasses.land, defaultPlayerBaseRadius())
-			//]),
-		//false);
-	let playerIDs = sortAllPlayers();
-	let playerPosition = playerPlacementArcs(
+	// let [playerIDs, playerPosition] = createBases(
+	// ...playerPlacementRandom(
+	// sortAllPlayers(),
+	// [
+	// avoidClasses(g_TileClasses.mountain, 10),
+	// stayClasses(g_TileClasses.land, defaultPlayerBaseRadius())
+	// ]),
+	// false);
+	const playerIDs = sortAllPlayers();
+	const playerPosition = playerPlacementArcs(
 		playerIDs,
 		mapCenter,
 		fractionToTiles(0.40),
@@ -128,7 +128,7 @@ if (!isNomad())
 		0.9 * Math.PI);
 
 	g_Map.log("Flatten the initial CC area");
-	for (let position of playerPosition)
+	for (const position of playerPosition)
 		createArea(
 			new ClumpPlacer(diskArea(defaultPlayerBaseRadius() * 1.5), 0.95, 0.6, Infinity, position),
 			new SmoothElevationPainter(ELEVATION_SET, g_Map.getHeight(position), 20));
@@ -143,23 +143,23 @@ if (!isNomad())
 			"innerTerrain": g_Terrains.road
 		},
 		"Berries": {
-			"template": g_Gaia.fruitBush,
+			"template": g_Gaia.fruitBush
 		},
 		"StartingAnimal": {
-				"template": "gaia/fauna_sheep",
+			"template": "gaia/fauna_sheep"
 		},
 		"Mines": {
 			"types": [
 				{ "template": g_Gaia.metalLarge },
-				{ "template": g_Gaia.stoneLarge },
-			],
+				{ "template": g_Gaia.stoneLarge }
+			]
 		},
 		"Trees": {
 			"template": g_Gaia.tree1,
 			"count": 5
 		},
 		"Decoratives": {
-			"template": g_Decoratives.grassShort,
+			"template": g_Decoratives.grassShort
 		}
 	});
 	Engine.SetProgress(55);
@@ -326,7 +326,7 @@ var dirtPatches = [
 		"terrain": g_Terrains.additionalDirt2
 	}
 ];
-for (let dirtPatch of dirtPatches)
+for (const dirtPatch of dirtPatches)
 	createPatches(
 		dirtPatch.sizes,
 		dirtPatch.terrain,
@@ -389,9 +389,9 @@ setFogFactor(0);
 setFogThickness(0);
 setFogColor(0.69, 0.616, 0.541);
 
-//setPPEffect("hdr");
-//setPPContrast(0.67);
-//setPPSaturation(0.42);
-//setPPBloom(0.23);
+// setPPEffect("hdr");
+// setPPContrast(0.67);
+// setPPSaturation(0.42);
+// setPPBloom(0.23);
 
 g_Map.ExportMap();

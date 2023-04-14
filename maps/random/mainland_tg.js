@@ -99,7 +99,7 @@ var clBaseResource = g_Map.createTileClass();
 
 if (!isNomad())
 {
-	let pattern = g_MapSettings.TeamPlacement || pickRandom(Object.keys(g_PlayerbaseTypes));
+	const pattern = g_MapSettings.TeamPlacement || pickRandom(Object.keys(g_PlayerbaseTypes));
 	createBasesByPattern(
 		pattern,
 		g_PlayerbaseTypes[pattern].distance,
@@ -128,24 +128,25 @@ Engine.SetProgress(50);
 
 g_Map.log("Creating dirt patches");
 createLayeredPatches(
- [scaleByMapSize(3, 6), scaleByMapSize(5, 10), scaleByMapSize(8, 21)],
- [[tMainTerrain,tTier1Terrain],[tTier1Terrain,tTier2Terrain], [tTier2Terrain,tTier3Terrain]],
- [1, 1],
- avoidClasses(clForest, 0, clHill, 0, clDirt, 5, clPlayer, 12),
- scaleByMapSize(15, 45),
- clDirt);
+	[scaleByMapSize(3, 6), scaleByMapSize(5, 10), scaleByMapSize(8, 21)],
+	[[tMainTerrain, tTier1Terrain], [tTier1Terrain, tTier2Terrain], [tTier2Terrain, tTier3Terrain]],
+	[1, 1],
+	avoidClasses(clForest, 0, clHill, 0, clDirt, 5, clPlayer, 12),
+	scaleByMapSize(15, 45),
+	clDirt);
 
 g_Map.log("Creating grass patches");
 createPatches(
- [scaleByMapSize(2, 4), scaleByMapSize(3, 7), scaleByMapSize(5, 15)],
- tTier4Terrain,
- avoidClasses(clForest, 0, clHill, 0, clDirt, 5, clPlayer, 12),
- scaleByMapSize(15, 45),
- clDirt);
+	[scaleByMapSize(2, 4), scaleByMapSize(3, 7), scaleByMapSize(5, 15)],
+	tTier4Terrain,
+	avoidClasses(clForest, 0, clHill, 0, clDirt, 5, clPlayer, 12),
+	scaleByMapSize(15, 45),
+	clDirt);
 Engine.SetProgress(55);
 
 var resCount = 1;
-if (g_MapSettings.mapName === "Mainland TG (traders disabled)") {
+if (g_MapSettings.mapName === "Mainland TG (traders disabled)")
+{
 	// More res if markets are disabled
 	resCount = 1.25;
 }
@@ -180,7 +181,7 @@ createDecoration(
 		[new SimpleObject(aRockMedium, 1, 3, 0, 1)],
 		[new SimpleObject(aRockLarge, 1, 2, 0, 1), new SimpleObject(aRockMedium, 1, 3, 0, 2)],
 		[new SimpleObject(aGrassShort, 1, 2, 0, 1)],
-		[new SimpleObject(aGrass, 2, 4, 0, 1.8), new SimpleObject(aGrassShort, 3,6, 1.2, 2.5)],
+		[new SimpleObject(aGrass, 2, 4, 0, 1.8), new SimpleObject(aGrassShort, 3, 6, 1.2, 2.5)],
 		[new SimpleObject(aBushMedium, 1, 2, 0, 2), new SimpleObject(aBushSmall, 2, 4, 0, 2)]
 	],
 	[

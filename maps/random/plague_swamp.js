@@ -66,11 +66,11 @@ placePlayerBases({
 		"outerTerrain": tRoadWild,
 		"innerTerrain": tRoad,
 		"radius": 10,
-		"width": 3,
-	}});
+		"width": 3
+	} });
 
 // Elevating the land around the player slightly, as they would have settled on high-ground. And it would look better when water rises.
-for (let position of playerPosition)
+for (const position of playerPosition)
 	createArea(
 		new ClumpPlacer(10, 0.1, 0.6, 0.8, position),
 		[
@@ -85,7 +85,7 @@ g_Map.log("Creating marshes");
 createAreas(
 	new ChainPlacer(2, Math.floor(scaleByMapSize(10, 25)), Math.floor(scaleByMapSize(20, 60)), 0.8),
 	[
-		new LayeredPainter([tShoreBlend, tShore, tWater],[1, 1]),
+		new LayeredPainter([tShoreBlend, tShore, tWater], [1, 1]),
 		new SmoothElevationPainter(ELEVATION_SET, swampBed, 3),
 		new TileClassPainter(clWater)
 	],
@@ -94,10 +94,10 @@ createAreas(
 
 g_Map.log("Creating reeds");
 createObjectGroups(
-	new SimpleGroup([new SimpleObject(aReeds, 5,10, 0,4), new SimpleObject(aLillies, 5, 10, 0,4)], true),
+	new SimpleGroup([new SimpleObject(aReeds, 5, 10, 0, 4), new SimpleObject(aLillies, 5, 10, 0, 4)], true),
 	0,
 	stayClasses(clWater, 1),
-	scaleByMapSize(400,2000), 100);
+	scaleByMapSize(400, 2000), 100);
 
 Engine.SetProgress(40);
 
@@ -118,7 +118,7 @@ createForests(
 Engine.SetProgress(50);
 
 g_Map.log("Creating mud patches");
-for (let size of [scaleByMapSize(3, 6), scaleByMapSize(5, 10), scaleByMapSize(8, 21)])
+for (const size of [scaleByMapSize(3, 6), scaleByMapSize(5, 10), scaleByMapSize(8, 21)])
 	createAreas(
 		new ChainPlacer(1, Math.floor(scaleByMapSize(3, 5)), size, 1),
 		[
@@ -132,29 +132,29 @@ Engine.SetProgress(55);
 
 g_Map.log("Creating stone mines");
 createObjectGroups(
-	new SimpleGroup([new SimpleObject(oStoneSmall, 0,2, 0,4), new SimpleObject(oStoneLarge, 1,1, 0,4)], true, clRock),
+	new SimpleGroup([new SimpleObject(oStoneSmall, 0, 2, 0, 4), new SimpleObject(oStoneLarge, 1, 1, 0, 4)], true, clRock),
 	0,
 	[avoidClasses(clWater, 0, clForest, 1, clPlayer, 20, clRock, 10, clHill, 1)],
-	scaleByMapSize(4,16), 100);
+	scaleByMapSize(4, 16), 100);
 
 createObjectGroups(
-	new SimpleGroup([new SimpleObject(oStoneSmall, 2,5, 1,3)], true, clRock),
+	new SimpleGroup([new SimpleObject(oStoneSmall, 2, 5, 1, 3)], true, clRock),
 	0,
 	[avoidClasses(clForest, 1, clPlayer, 20, clRock, 10, clHill, 1)],
-	scaleByMapSize(4,16), 100);
+	scaleByMapSize(4, 16), 100);
 
 g_Map.log("Creating metal mines");
 createObjectGroups(
-	new SimpleGroup([new SimpleObject(oMetalLarge, 1,1, 0,4)], true, clMetal),
+	new SimpleGroup([new SimpleObject(oMetalLarge, 1, 1, 0, 4)], true, clMetal),
 	0,
 	[avoidClasses(clWater, 0, clForest, 1, clPlayer, 20, clMetal, 10, clRock, 5, clHill, 1)],
-	scaleByMapSize(4,16), 100);
+	scaleByMapSize(4, 16), 100);
 
 Engine.SetProgress(70);
 
 g_Map.log("Creating decorative plants");
 createObjectGroups(
-	new SimpleGroup([new SimpleObject(aPlant, 1,2, 0,1)],true),
+	new SimpleGroup([new SimpleObject(aPlant, 1, 2, 0, 1)], true),
 	0,
 	avoidClasses(clPlayer, 1, clHill, 2),
 	scaleByMapSize(16, 262), 50);
@@ -164,23 +164,23 @@ createObjectGroups(
 // and https://wildfiregames.com/forum/topic/25808-community-maps-mod-problems/?do=findComment&comment=373966
 // I also removed maps/random/plague_swamp_triggers.js
 
-//g_Map.log("Creating insect swarms");
-//for (let i = 0; i < numPlayers; ++i)
-	//g_Map.placeEntityPassable(
-		//oSwarm,
-		//0,
-		//new Vector2D((g_Map.getSize()/2) + randIntInclusive(-15, 15), (g_Map.getSize()/2) + randIntInclusive(-15, 15)));
+// g_Map.log("Creating insect swarms");
+// for (let i = 0; i < numPlayers; ++i)
+// g_Map.placeEntityPassable(
+// oSwarm,
+// 0,
+// new Vector2D((g_Map.getSize()/2) + randIntInclusive(-15, 15), (g_Map.getSize()/2) + randIntInclusive(-15, 15)));
 
 g_Map.log("Creating small decorative rocks");
 createObjectGroups(
-	new SimpleGroup([new SimpleObject(aRockMedium, 1,3, 0,1)],true),
+	new SimpleGroup([new SimpleObject(aRockMedium, 1, 3, 0, 1)], true),
 	0,
 	avoidClasses(clWater, 0, clForest, 0, clPlayer, 0, clHill, 0),
 	scaleByMapSize(16, 262), 50);
 
 g_Map.log("Creating large decorative rocks");
 createObjectGroups(
-	new SimpleGroup([new SimpleObject(aRockLarge, 1,2, 0,1), new SimpleObject(aRockMedium, 1,3, 0,2)],true),
+	new SimpleGroup([new SimpleObject(aRockLarge, 1, 2, 0, 1), new SimpleObject(aRockMedium, 1, 3, 0, 2)], true),
 	0,
 	avoidClasses(clWater, 0, clForest, 0, clPlayer, 0, clHill, 0),
 	scaleByMapSize(8, 131), 50);
@@ -189,21 +189,21 @@ Engine.SetProgress(80);
 
 g_Map.log("Creating deer");
 createObjectGroups(
-	new SimpleGroup([new SimpleObject(oDeer, 5,7, 0,4)],true, clFood),
+	new SimpleGroup([new SimpleObject(oDeer, 5, 7, 0, 4)], true, clFood),
 	0,
 	avoidClasses(clWater, 0, clForest, 0, clPlayer, 20, clHill, 1, clFood, 13),
 	6 * numPlayers, 50);
 
 g_Map.log("Creating rabbit");
 createObjectGroups(
-	new SimpleGroup([new SimpleObject(oRabbit, 5,7, 0,2)],true, clFood),
+	new SimpleGroup([new SimpleObject(oRabbit, 5, 7, 0, 2)], true, clFood),
 	0,
 	avoidClasses(clWater, 0, clForest, 0, clPlayer, 20, clHill, 1, clFood, 13),
 	6 * numPlayers, 50);
 
 g_Map.log("Creating crocodiles");
 createObjectGroups(
-	new SimpleGroup([new SimpleObject(oCrocodile, 1,3, 0,4)],true, clFood),
+	new SimpleGroup([new SimpleObject(oCrocodile, 1, 3, 0, 4)], true, clFood),
 	0,
 	avoidClasses(clPlayer, 10),
 	6 * numPlayers, 50);
@@ -225,35 +225,34 @@ createObjectGroups(
 
 g_Map.log("Creating small grass tufts");
 createObjectGroups(
-	new SimpleGroup([new SimpleObject(aGrassShort, 1,2, 0,1, -Math.PI/8,Math.PI/8)]),
+	new SimpleGroup([new SimpleObject(aGrassShort, 1, 2, 0, 1, -Math.PI / 8, Math.PI / 8)]),
 	0,
 	avoidClasses(clWater, 2, clHill, 2, clPlayer, 13, clDirt, 0),
 	scaleByMapSize(13, 200));
 
 g_Map.log("Creating large grass tufts");
 createObjectGroups(
-	new SimpleGroup([new SimpleObject(aGrass, 2,4, 0,1.8, -Math.PI/8,Math.PI/8), new SimpleObject(aGrassShort, 3,6, 1.2,2.5, -Math.PI/8,Math.PI/8)]),
+	new SimpleGroup([new SimpleObject(aGrass, 2, 4, 0, 1.8, -Math.PI / 8, Math.PI / 8), new SimpleObject(aGrassShort, 3, 6, 1.2, 2.5, -Math.PI / 8, Math.PI / 8)]),
 	0,
 	avoidClasses(clWater, 3, clHill, 2, clPlayer, 13, clDirt, 1, clForest, 0),
 	scaleByMapSize(13, 200));
 
 Engine.SetProgress(95);
 
-
 g_Map.log("Creating bushes");
 createObjectGroups(
-	new SimpleGroup([new SimpleObject(aBushMedium, 1,2, 0,2), new SimpleObject(aBushSmall, 2,4, 0,2)]),
+	new SimpleGroup([new SimpleObject(aBushMedium, 1, 2, 0, 2), new SimpleObject(aBushSmall, 2, 4, 0, 2)]),
 	0,
 	avoidClasses(clWater, 1, clHill, 1, clPlayer, 13, clDirt, 1),
 	scaleByMapSize(13, 200), 50);
 
 g_Map.log("Creating trigger points \"A\"");
-for (let position of playerPosition)
+for (const position of playerPosition)
 	g_Map.placeEntityPassable("trigger/trigger_point_A", 0, position);
 
 setSkySet("dark");
-setWaterColor(0.243,0.533,0.270);
-setWaterTint(0.161,0.514,0.635);
+setWaterColor(0.243, 0.533, 0.270);
+setWaterTint(0.161, 0.514, 0.635);
 setWaterMurkiness(0.8);
 setWaterWaviness(1.0);
 setWaterType("clap");

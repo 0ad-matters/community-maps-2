@@ -10,7 +10,7 @@ function playerPlacementMultiArcs(playerIDs, radius, mapAngle)
 		const teamID = getPlayerTeam(playerID);
 		// If teamID is -1 (which is None), set to any unique number.
 		// This can be any number above 3. (The max 0ad teamID is 3.)
-		return teamID === -1 ? 1000+i : teamID;
+		return teamID === -1 ? 1000 + i : teamID;
 	});
 	const uniqueTeams = new Set(teamIDs);
 	const nTeams = uniqueTeams.size;
@@ -24,7 +24,7 @@ function playerPlacementMultiArcs(playerIDs, radius, mapAngle)
 	const teamShuffle = Array.from(Array(nTeams), () => i++);
 	for(i = teamShuffle.length - 1; i > 0; i--)
 	{
-		const j = Math.round(Math.random() * (teamShuffle.length-1));
+		const j = Math.round(Math.random() * (teamShuffle.length - 1));
 		const temp = teamShuffle[i];
 		teamShuffle[i] = teamShuffle[j];
 		teamShuffle[j] = temp;
@@ -56,7 +56,7 @@ function playerPlacementMultiArcs(playerIDs, radius, mapAngle)
 					if (teamIntMap[key2] > teamIntMap[key])
 					{
 						// -1 because e.g. if there's 3 allies, there's only 2 gaps between them.
-						teamPlayersIntMap[key2] += teamFreqPlayers[key]-1;
+						teamPlayersIntMap[key2] += teamFreqPlayers[key] - 1;
 					}
 				}
 			}
@@ -65,11 +65,11 @@ function playerPlacementMultiArcs(playerIDs, radius, mapAngle)
 
 	// The gap is dependent on the value of radius(g_PlayerbaseTypes[pattern].distance)
 	const allyGapAngle = 0.6303860648814489;
-	const teamGapAngle = (2 * Math.PI - allyGapAngle * (playerIDs.length-nTeams)) / nTeams;
+	const teamGapAngle = (2 * Math.PI - allyGapAngle * (playerIDs.length - nTeams)) / nTeams;
 
 	const playerAngleFunc = function(idx)
 	{
-		return mapAngle + teamGapAngle*teamIntMap[teamIDs[idx]] + allyGapAngle*((teamPlayersIntMap[teamIDs[idx]]++));
+		return mapAngle + teamGapAngle * teamIntMap[teamIDs[idx]] + allyGapAngle * ((teamPlayersIntMap[teamIDs[idx]]++));
 	};
 
 	const [playerPosition, playerAngle] = playerPlacementCustomAngle(radius, g_Map.getCenter(), playerAngleFunc);

@@ -3,22 +3,22 @@ function ConvexPolygonPlacer(points, failFraction = 0)
 	this.polygonVertices = this.getConvexHull(points.map(point => point.clone().round()));
 	this.polyLen = this.polygonVertices.length;
 	this.failFraction = failFraction;
-};
+}
 
 ConvexPolygonPlacer.prototype.orient = function(a, b, c)
 {
 	return (b.x - a.x) * (c.y - a.y) - (b.y - a.y) * (c.x - a.x);
-}
+};
 
-//https://fgiesen.wordpress.com/2013/02/10/optimizing-the-basic-rasterizer/
+// https://fgiesen.wordpress.com/2013/02/10/optimizing-the-basic-rasterizer/
 ConvexPolygonPlacer.prototype.place = function(constraint)
 {
-	let points = [];
+	const points = [];
 	let count = 0;
 	let failed = 0;
 
 	if (!this.polyLen)
-		return undefined
+		return undefined;
 
 	const minx = Math.max(this.polygonVertices[0].x, 0);
 	const v0 = this.polygonVertices[0];
@@ -26,7 +26,7 @@ ConvexPolygonPlacer.prototype.place = function(constraint)
 
 	for (var i = 1; i < this.polyLen - 1; i++)
 	{
-		/// triangle filling procedure
+		// / triangle filling procedure
 		const v1 = this.polygonVertices[i];
 		const v2 = this.polygonVertices[i + 1];
 
@@ -41,7 +41,7 @@ ConvexPolygonPlacer.prototype.place = function(constraint)
 		const A20 = v2.y - v0.y;
 		const B20 = v0.x - v2.x;
 
-		let p = new Vector2D(minx, miny);
+		const p = new Vector2D(minx, miny);
 		w0_row = this.orient(v1, v2, p);
 		w1_row = this.orient(v2, v0, p);
 		w2_row = this.orient(v0, v1, p);
@@ -55,32 +55,32 @@ ConvexPolygonPlacer.prototype.place = function(constraint)
 			{
 				if ((w0 | w1 | w2) >= 0)
 				{
-					let point = p.clone();
+					const point = p.clone();
 					++count;
 					if (constraint.allows(point))
 						points.push(point);
 					else
 						++failed;
 				}
-				w0 += A12
-				w1 += A20
-				w2 += A01
+				w0 += A12;
+				w1 += A20;
+				w2 += A01;
 			}
-			w0_row += B12
-			w1_row += B20
-			w2_row += B01
+			w0_row += B12;
+			w1_row += B20;
+			w2_row += B01;
 		}
 	}
 	return failed <= this.failFraction * count ? points : undefined;
 };
 
-//http://mindthenerd.blogspot.com/2012/05/fastest-convex-hull-algorithm-ever.html
+// http://mindthenerd.blogspot.com/2012/05/fastest-convex-hull-algorithm-ever.html
 ConvexPolygonPlacer.prototype.pruning = function(points)
 {
 	if (points.length < 15)
 		return points.slice();
 
-	let plist = [];
+	const plist = [];
 	let A = points[0].clone();
 	let B = points[0].clone();
 	let C = points[0].clone();
@@ -92,31 +92,31 @@ ConvexPolygonPlacer.prototype.pruning = function(points)
 		if (B.x + B.y <= p.x + p.y) B = p;
 		if (C.x - C.y >= p.x - p.y) C = p;
 		if (D.x + D.y >= p.x + p.y) D = p;
-	})
+	});
 
-	const x1 = Math.max(C.x, D.x)
-	const x2 = Math.max(A.x, B.x)
-	const y1 = Math.max(A.y, D.y)
-	const y2 = Math.max(B.y, C.y)
+	const x1 = Math.max(C.x, D.x);
+	const x2 = Math.max(A.x, B.x);
+	const y1 = Math.max(A.y, D.y);
+	const y2 = Math.max(B.y, C.y);
 
 	points.forEach(function(p)
 	{
 		if (!(p.x > x1 && p.x < x2 && p.y > y1 && p.y < y2))
-			plist.push(p)
-	})
+			plist.push(p);
+	});
 
 	return plist;
-}
+};
 
 ConvexPolygonPlacer.prototype.cross = function(a, b, o)
 {
-	return (a.x - o.x) * (b.y - o.y) - (a.y - o.y) * (b.x - o.x)
-}
+	return (a.x - o.x) * (b.y - o.y) - (a.y - o.y) * (b.x - o.x);
+};
 
-//https://en.wikibooks.org/wiki/Algorithm_Implementation/Geometry/Convex_hull/Monotone_chain#JavaScript
+// https://en.wikibooks.org/wiki/Algorithm_Implementation/Geometry/Convex_hull/Monotone_chain#JavaScript
 ConvexPolygonPlacer.prototype.getConvexHull = function(points)
 {
-	let sortedPoints = this.pruning(points)
+	const sortedPoints = this.pruning(points);
 	var lower = [];
 	var upper = [];
 
