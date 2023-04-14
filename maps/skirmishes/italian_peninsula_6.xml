@@ -45,97 +45,12 @@
   "LockTeams": false,
   "Name": "Italian Peninsula (6)",
   "PlayerData": [
-    null,
-    {
-      "Civ": "athen",
-      "StartingCamera": {
-        "Position": {
-          "x": 1300.87,
-          "y": 192,
-          "z": 1589.01
-        },
-        "Rotation": {
-          "x": 35,
-          "y": 41.6746,
-          "z": -0.00000342912
-        }
-      }
-    },
-    {
-      "Civ": "cart",
-      "StartingCamera": {
-        "Position": {
-          "x": 1398.26,
-          "y": 192,
-          "z": 858.948
-        },
-        "Rotation": {
-          "x": 35,
-          "y": 0,
-          "z": 0
-        }
-      }
-    },
-    {
-      "Civ": "gaul",
-      "StartingCamera": {
-        "Position": {
-          "x": 1298.42,
-          "y": 192,
-          "z": 268.547
-        },
-        "Rotation": {
-          "x": 35,
-          "y": 0,
-          "z": 0
-        }
-      }
-    },
-    {
-      "Civ": "iber",
-      "StartingCamera": {
-        "Position": {
-          "x": 581.018,
-          "y": 192,
-          "z": 1202.89
-        },
-        "Rotation": {
-          "x": 35,
-          "y": 41.2162,
-          "z": 0.00000113499
-        }
-      }
-    },
-    {
-      "Civ": "mace",
-      "StartingCamera": {
-        "Position": {
-          "x": 380.89,
-          "y": 192,
-          "z": 545.154
-        },
-        "Rotation": {
-          "x": 35,
-          "y": 0,
-          "z": 0
-        }
-      }
-    },
-    {
-      "Civ": "maur",
-      "StartingCamera": {
-        "Position": {
-          "x": 509.313,
-          "y": 192,
-          "z": 1563.04
-        },
-        "Rotation": {
-          "x": 35,
-          "y": 0,
-          "z": 0
-        }
-      }
-    }
+    {},
+    {},
+    {},
+    {},
+    {},
+    {}
   ],
   "Preview": "italian_peninsula.png",
   "RevealMap": false,
