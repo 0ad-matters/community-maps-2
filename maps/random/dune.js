@@ -40,7 +40,6 @@ Engine.SetProgress(10);
 const pForest1 = [tForestFloor2 + TERRAIN_SEPARATOR + oTree1, tForestFloor2 + TERRAIN_SEPARATOR + oTree2, tForestFloor2];
 const pForest2 = [tForestFloor1 + TERRAIN_SEPARATOR + oTree4, tForestFloor1 + TERRAIN_SEPARATOR + oTree5, tForestFloor1];
 
-
 const heightLand = 0;
 var g_Map = new RandomMap(heightLand, tSand);
 const numPlayers = getNumPlayers();
@@ -72,7 +71,7 @@ createArea(
 	new MapBoundsPlacer(), [
 		new DunePainter()
 	],
-	null
+	undefined
 );
 
 Engine.SetProgress(30);
@@ -81,27 +80,27 @@ var p1a = new createArea(
 	new ClumpPlacer(diskArea(50) * scaleByMapSize(1, 2), 0.8, 0.06, Infinity, centerPos), [
 		new SmoothElevationPainter(ELEVATION_SET, 1, 16)
 	],
-	null
+	undefined
 );
 var p2a = new createArea(
 	new ClumpPlacer(diskArea(30) * scaleByMapSize(1, 2), 0.8, 0.06, Infinity, centerPos), [
 		new SmoothElevationPainter(ELEVATION_SET, 0, 16)
 	],
-	null
+	undefined
 );
 var pw1a = new createArea(
 	new ClumpPlacer(diskArea(8) * scaleByMapSize(1, 2), 0.1, 0.1, Infinity, centerPos), [
 		new SmoothElevationPainter(ELEVATION_SET, -15, 6),
 		new TileClassPainter(clWater)
 	],
-	null
+	undefined
 );
 var pw2a = new createArea(
 	new ClumpPlacer(diskArea(8) * scaleByMapSize(1, 2), 0.1, 0.3, Infinity, new Vector2D(centerPos.x, centerPos.y + getRandomDeviation(10, 5))), [
 		new SmoothElevationPainter(ELEVATION_SET, -10, 5),
 		new TileClassPainter(clWater)
 	],
-	null
+	undefined
 );
 
 var playerPlacement = playerPlacementCircle(fractionToTiles(0.35));
@@ -110,36 +109,36 @@ var playersPos = playerPlacement[1];
 Engine.SetProgress(50);
 
 placePlayerBases(
-{
-	"PlayerPlacement": playerPlacement,
-	"PlayerTileClass": clPlayer,
-	"BaseResourceClass": clBaseResource,
-	"CityPatch":
+	{
+		"PlayerPlacement": playerPlacement,
+		"PlayerTileClass": clPlayer,
+		"BaseResourceClass": clBaseResource,
+		"CityPatch":
 	{
 		"outerTerrain": tRoadWild,
 		"innerTerrain": tRoad
 	},
-	"Berries":
+		"Berries":
 	{
 		"template": oFruitBush
 	},
-	"Mines":
+		"Mines":
 	{
 		"types": [
-		{
-			"template": oMetalLarge
-		},
-		{
-			"template": oStoneLarge
-		}]
+			{
+				"template": oMetalLarge
+			},
+			{
+				"template": oStoneLarge
+			}]
 	},
-	"Walls": false,
-	"Trees":
+		"Walls": false,
+		"Trees":
 	{
 		"template": oTree1,
 		"count": 15
 	}
-});
+	});
 
 Engine.SetProgress(60);
 var pwb1a = new createArea(
@@ -242,12 +241,12 @@ var minMaxHeight = getMinAndMaxHeight();
 g_Map.log("Adding dust");
 createObjectGroups(
 	new SimpleGroup([
-			new SimpleObject(aDust, 1, 1, 15, 40)
-		],
-		false
+		new SimpleObject(aDust, 1, 1, 15, 40)
+	],
+	false
 	),
 	0, [
-		new HeightConstraint(minMaxHeight["min"], linearInterpolation(minMaxHeight["min"], minMaxHeight["max"], 0.8)),
+		new HeightConstraint(minMaxHeight.min, linearInterpolation(minMaxHeight.min, minMaxHeight.max, 0.8)),
 		new AvoidAreasConstraint([p1a, p2a])
 	],
 	scaleByMapSize(20, 20), scaleByMapSize(20, 30)
@@ -258,7 +257,7 @@ createObjectGroups(
 	new SimpleGroup([new SimpleObject(oCamel, 3, 6, 2, 3)], true, clFood),
 	0, [
 		avoidCollisions,
-		new HeightConstraint(linearInterpolation(minMaxHeight["min"], minMaxHeight["max"], 0.9), minMaxHeight["max"])
+		new HeightConstraint(linearInterpolation(minMaxHeight.min, minMaxHeight.max, 0.9), minMaxHeight.max)
 	],
 	Math.max(1, numPlayers * scaleByMapSize(2, 3)),
 	500
@@ -275,11 +274,11 @@ createObjectGroups(
 );
 
 Engine.SetProgress(98);
-setSunElevation(2 * Math.PI * 0.25 / 10.0)
-setAmbientColor(0.8, 0.55, 0.55)
-setFogThickness(0.3)
-setSkySet("sunset 2")
-setSunColor(0.7, 0.55, 0.55)
+setSunElevation(2 * Math.PI * 0.25 / 10);
+setAmbientColor(0.8, 0.55, 0.55);
+setFogThickness(0.3);
+setSkySet("sunset 2");
+setSunColor(0.7, 0.55, 0.55);
 setWaterWaviness(0.1);
 setWaterMurkiness(0.9);
 setWaterTint(0.9, 0.5, 0.5);

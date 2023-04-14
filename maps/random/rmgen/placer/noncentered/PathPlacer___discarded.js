@@ -87,7 +87,6 @@ PathPlacer.prototype.place = function(constraint)
 		//let points = [...new TrianglePlacer(segments1[j], segments2[j], segments2[j + 1]).place(new NullConstraint()),...new TrianglePlacer(segments1[j], segments2[j + 1], segments1[j + 1]).place(new NullConstraint())];
 		//let points = new PolygonPlacer( [segments1[j], segments2[j], segments2[j + 1],segments1[j + 1]]).place(new NullConstraint());
 
-
 		if (!points)
 			continue;
 
@@ -113,12 +112,10 @@ PathPlacer.prototype.place = function(constraint)
 	return failed > this.failFraction * this.width * pathLength ? undefined : retVec;
 };
 
-
 function TrianglePlacer(v0, v1, v2)
 {
 	[this.A,this.B,this.C] = [v0, v1, v2].sort((a, b) => a.y - b.y);
 }
-
 
 Vector2D.prototype.ceil = function()
 {
@@ -145,7 +142,6 @@ TrianglePlacer.prototype.place = function(constraint)
 	const dx1 = (this.B.y - this.A.y) > 0 ? parseInt((this.B.x - this.A.x) / (this.B.y - this.A.y)) : 0;
 	const dx2 = (this.C.y - this.A.y) > 0 ? parseInt((this.C.x - this.A.x) / (this.C.y - this.A.y)) : 0;
 	const dx3 = (this.C.y - this.B.y) > 0 ? parseInt((this.C.x - this.B.x) / (this.C.y - this.B.y)) : 0;
-
 
 	let S = this.A.ceil();
 	let E = S.ceil();

@@ -85,8 +85,8 @@ function placeMine(position, centerEntity,
 {
 	g_Map.placeEntityPassable(centerEntity, 0, position, randomAngle());
 
-	let quantity = randIntInclusive(11, 23);
-	let dAngle = 2 * Math.PI / quantity;
+	const quantity = randIntInclusive(11, 23);
+	const dAngle = 2 * Math.PI / quantity;
 	for (let i = 0; i < quantity; ++i)
 		g_Map.placeEntityPassable(
 			pickRandom(decorativeActors),
@@ -145,7 +145,7 @@ createArea(
 	new MapBoundsPlacer(),
 	[
 		new TerrainPainter(g_Terrains.cliff),
-		new TileClassPainter(clHill),
+		new TileClassPainter(clHill)
 	],
 	[
 		avoidClasses(clShoreline, 0),
@@ -156,7 +156,7 @@ Engine.SetProgress(35);
 
 g_Map.log("Placing players");
 placePlayerBases({
-	"PlayerPlacement": playerPlacementRiver(Math.PI/2, fractionToTiles(.75)),
+	"PlayerPlacement": playerPlacementRiver(Math.PI / 2, fractionToTiles(0.75)),
 	"PlayerTileClass": clPlayer,
 	"BaseResourceClass": clBaseResource,
 	"Walls": false,
@@ -165,11 +165,11 @@ placePlayerBases({
 		"innerTerrain": tRoad
 	},
 	"StartingAnimal": {
-			"template": randBool() ? oPig : oSheep,
-			"count": randIntInclusive(5,20)
+		"template": randBool() ? oPig : oSheep,
+		"count": randIntInclusive(5, 20)
 	},
 	"Berries": {
-		"template": fruit[randIntInclusive(0, fruit.length - 1)], "count": randIntInclusive(1,4)
+		"template": fruit[randIntInclusive(0, fruit.length - 1)], "count": randIntInclusive(1, 4)
 	},
 	"Mines": {
 		"types": [
@@ -189,20 +189,20 @@ Engine.SetProgress(40);
 
 g_Map.log("Creating dirt patches");
 createLayeredPatches(
- [scaleByMapSize(3, 6), scaleByMapSize(5, 10), scaleByMapSize(8, 21)],
- [[tMainTerrain,tTier1Terrain],[tTier1Terrain,tTier2Terrain], [tTier2Terrain,tTier3Terrain]],
- [1, 1],
- avoidClasses(clWater, 5, clForest, 0, clHill, 0, clDirt, 5, clPlayer, 12),
- scaleByMapSize(15, 45),
- clDirt);
+	[scaleByMapSize(3, 6), scaleByMapSize(5, 10), scaleByMapSize(8, 21)],
+	[[tMainTerrain, tTier1Terrain], [tTier1Terrain, tTier2Terrain], [tTier2Terrain, tTier3Terrain]],
+	[1, 1],
+	avoidClasses(clWater, 5, clForest, 0, clHill, 0, clDirt, 5, clPlayer, 12),
+	scaleByMapSize(15, 45),
+	clDirt);
 
 g_Map.log("Creating grass patches");
 createPatches(
- [scaleByMapSize(2, 4), scaleByMapSize(3, 7), scaleByMapSize(5, 15)],
- tTier4Terrain,
- avoidClasses(clWater, 5, clHill, 0, clDirt, 5, clPlayer, 12),
- scaleByMapSize(15, 45),
- clDirt);
+	[scaleByMapSize(2, 4), scaleByMapSize(3, 7), scaleByMapSize(5, 15)],
+	tTier4Terrain,
+	avoidClasses(clWater, 5, clHill, 0, clDirt, 5, clPlayer, 12),
+	scaleByMapSize(15, 45),
+	clDirt);
 Engine.SetProgress(45);
 
 g_Map.log("Creating metal mines");
@@ -212,13 +212,13 @@ createBalancedMetalMines(
 	clMetal,
 	avoidClasses(
 		clPlayer, scaleByMapSize(18, 32),
-		clMetal, randIntInclusive(8,12),
+		clMetal, randIntInclusive(8, 12),
 		clHill, 1,
 		clWater, 12, // This is what's used to keep the resources off the ramps near the corner lakes
-		clShoreline, 6,
+		clShoreline, 6
 		// count (multiplier; default is 1)
-		)
-	);
+	)
+);
 
 g_Map.log("Creating stone mines");
 createBalancedStoneMines(
@@ -227,25 +227,25 @@ createBalancedStoneMines(
 	clRock,
 	avoidClasses(clPlayer, scaleByMapSize(18, 32),
 		clHill, 1,
-		clRock, randIntInclusive(8,12),
-		clMetal, randIntInclusive(4,8),
+		clRock, randIntInclusive(8, 12),
+		clMetal, randIntInclusive(4, 8),
 		clWater, 12,
-		clShoreline, 6,
+		clShoreline, 6
 		// count (multiplier)
-		)
-	);
+	)
+);
 Engine.SetProgress(50);
 
 g_Map.log("Establishing forests");
 var [forestTrees, stragglerTrees] = getTreeCounts(...rBiomeTreeCount(1));
 createForests(
- [tMainTerrain, tForestFloor1, tForestFloor2, pForest1, pForest2],
- avoidClasses(clWater, 5, clPlayer, scaleByMapSize(20, 35), clForest, randIntInclusive(10,14), clHill, 5,
-	clRock, 1,
-	clMetal, 1
+	[tMainTerrain, tForestFloor1, tForestFloor2, pForest1, pForest2],
+	avoidClasses(clWater, 5, clPlayer, scaleByMapSize(20, 35), clForest, randIntInclusive(10, 14), clHill, 5,
+		clRock, 1,
+		clMetal, 1
 	),
- clForest,
- forestTrees);
+	clForest,
+	forestTrees);
 Engine.SetProgress(60);
 
 var planetm = 1;
@@ -259,7 +259,7 @@ createDecoration(
 		[new SimpleObject(aRockMedium, 1, 3, 0, 1)],
 		[new SimpleObject(aRockLarge, 1, 2, 0, 1), new SimpleObject(aRockMedium, 1, 3, 0, 2)],
 		[new SimpleObject(aGrassShort, 1, 2, 0, 1)],
-		[new SimpleObject(aGrass, 2, 4, 0, 1.8), new SimpleObject(aGrassShort, 3,6, 1.2, 2.5)],
+		[new SimpleObject(aGrass, 2, 4, 0, 1.8), new SimpleObject(aGrassShort, 3, 6, 1.2, 2.5)],
 		[new SimpleObject(aBushMedium, 1, 2, 0, 2), new SimpleObject(aBushSmall, 2, 4, 0, 2)]
 	],
 	[
@@ -283,7 +283,7 @@ createFood(
 	[
 		3 * numPlayers,
 		3 * numPlayers,
-		randIntInclusive(1,4) * numPlayers,
+		randIntInclusive(1, 4) * numPlayers
 	],
 	avoidClasses(clWater, 6, clForest, 0, clPlayer, scaleByMapSize(23, 38), clHill, 1, clMetal, 4, clRock, 4, clFood, 20),
 	clFood);
@@ -302,7 +302,7 @@ createStragglerTrees(
 		clFood, 1),
 	clForest,
 	stragglerTrees
-	);
+);
 
 g_Map.log("Creating fish");
 createObjectGroups(
@@ -323,16 +323,16 @@ function placePlayersNomad_cm2(playerClass, constraints)
 
 	g_Map.log("Placing nomad starting units");
 
-	let distance = scaleByMapSize(60, 240);
-	let constraint = new StaticConstraint(constraints);
+	const distance = scaleByMapSize(60, 240);
+	const constraint = new StaticConstraint(constraints);
 
-	let numPlayers = getNumPlayers();
-	let playerIDs = shuffleArray(sortAllPlayers());
-	let playerPosition = [];
+	const numberPlayers = getNumPlayers();
+	const playerIDs = shuffleArray(sortAllPlayers());
+	const playerPosition = [];
 
-	for (let i = 0; i < numPlayers; ++i)
+	for (let i = 0; i < numberPlayers; ++i)
 	{
-		let objects = getStartingEntities(playerIDs[i]).filter(ents => ents.Template.startsWith("units/")).map(
+		const objects = getStartingEntities(playerIDs[i]).filter(ents => ents.Template.startsWith("units/")).map(
 			ents => new SimpleObject(ents.Template, ents.Count || 1, ents.Count || 1, 1, 4));
 
 		// This works, but what's the *correct* way?
@@ -341,12 +341,12 @@ function placePlayersNomad_cm2(playerClass, constraints)
 		// warn(uneval(objects));
 
 		// Add treasure if too few resources for a civic center
-		let ccCost = Engine.GetTemplate("structures/" + getCivCode(playerIDs[i]) + "/civil_centre").Cost.Resources;
-		for (let resourceType in ccCost)
+		const ccCost = Engine.GetTemplate("structures/" + getCivCode(playerIDs[i]) + "/civil_centre").Cost.Resources;
+		for (const resourceType in ccCost)
 		{
-			let treasureTemplate = g_NomadTreasureTemplates[resourceType];
+			const treasureTemplate = g_NomadTreasureTemplates[resourceType];
 
-			let count = Math.max(0, Math.ceil(
+			const count = Math.max(0, Math.ceil(
 				(ccCost[resourceType] - (g_MapSettings.StartingResources || 0)) /
 				Engine.GetTemplate(treasureTemplate).Treasure.Resources[resourceType]));
 
@@ -354,9 +354,9 @@ function placePlayersNomad_cm2(playerClass, constraints)
 		}
 
 		// Try place these entities at a random location
-		let group = new SimpleGroup(objects, true, playerClass);
+		const group = new SimpleGroup(objects, true, playerClass);
 		let success = false;
-		for (let distanceFactor of [1, 1/2, 1/4, 0])
+		for (const distanceFactor of [1, 1 / 2, 1 / 4, 0])
 			if (createObjectGroups(group, playerIDs[i], new AndConstraint([constraint, avoidClasses(playerClass, distance * distanceFactor)]), 1, 200, false).length)
 			{
 				success = true;
@@ -374,10 +374,10 @@ function placePlayersNomad_cm2(playerClass, constraints)
 placePlayersNomad_cm2(clPlayer, avoidClasses(clWater, 5, clForest, 1, clMetal, 4, clRock, 4, clHill, 4, clFood, 2));
 
 setWaterHeight(heightWaterLevel + SEA_LEVEL);
-setWaterColor(0.089,0.157,0.212);
-setWaterTint(0.089, 0.157,0.212);
+setWaterColor(0.089, 0.157, 0.212);
+setWaterTint(0.089, 0.157, 0.212);
 setWaterWaviness(randIntInclusive(2, 8));
-setWaterMurkiness(0.90);
+setWaterMurkiness(0.9);
 setWaterType("lake");
 
 g_Map.ExportMap();

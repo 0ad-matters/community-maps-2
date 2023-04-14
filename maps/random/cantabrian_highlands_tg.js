@@ -74,11 +74,11 @@ var clBaseResource = g_Map.createTileClass();
 
 var playerHillRadius = defaultPlayerBaseRadius() / (isNomad() ? 1.5 : 1);
 
-//var [playerIDs, playerPosition, playerAngle] = playerPlacementCircle(fractionToTiles(0.35));
+// var [playerIDs, playerPosition, playerAngle] = playerPlacementCircle(fractionToTiles(0.35));
 
 if (!isNomad())
 {
-	let pattern = "besideAllies";
+	const pattern = "besideAllies";
 	var [playerIDs, playerPosition, playerAngle] = createBasesByPattern(
 		pattern,
 		g_PlayerbaseTypes[pattern].distance,
@@ -98,7 +98,7 @@ for (let i = 0; i < numPlayers; ++i)
 			new TileClassPainter(clPlayer)
 		]);
 
-	let angle = playerAngle[i] + Math.PI * (1 + randFloat(-1, 1) / 8);
+	const angle = playerAngle[i] + Math.PI * (1 + randFloat(-1, 1) / 8);
 	createPassage({
 		"start": Vector2D.add(playerPosition[i], new Vector2D(playerHillRadius + 15, 0).rotate(-angle)),
 		"end": Vector2D.add(playerPosition[i], new Vector2D(playerHillRadius - 3, 0).rotate(-angle)),
@@ -111,13 +111,13 @@ for (let i = 0; i < numPlayers; ++i)
 	});
 }
 
-function createBasesCantabrianHighlands(playerIDs, playerPosition, walls)
+function createBasesCantabrianHighlands(playerIds, playerPos, walls)
 {
 	for (let i = 0; i < getNumPlayers(); ++i)
 	{
 		placePlayerBase({
-			"playerID": playerIDs[i],
-			"playerPosition": playerPosition[i],
+			"playerID": playerIds[i],
+			"playerPosition": playerPos[i],
 			"PlayerTileClass": clPlayer,
 			"BaseResourceClass": clBaseResource,
 			"Walls": false,
@@ -125,8 +125,7 @@ function createBasesCantabrianHighlands(playerIDs, playerPosition, walls)
 				"outerTerrain": tRoadWild,
 				"innerTerrain": tRoad
 			},
-			"StartingAnimal": {
-			},
+			"StartingAnimal": {},
 			"Berries": {
 				"template": oBerryBush
 			},
@@ -145,12 +144,12 @@ function createBasesCantabrianHighlands(playerIDs, playerPosition, walls)
 			}
 		});
 	}
-	return [playerIDs, playerPosition];
+	return [playerIds, playerPos];
 }
 Engine.SetProgress(10);
 
 g_Map.log("Creating lakes");
-var numLakes = Math.round(scaleByMapSize(1,4) * numPlayers);
+var numLakes = Math.round(scaleByMapSize(1, 4) * numPlayers);
 var waterAreas = createAreas(
 	new ClumpPlacer(scaleByMapSize(100, 250), 0.8, 0.1, Infinity),
 	[
@@ -165,7 +164,7 @@ Engine.SetProgress(15);
 
 g_Map.log("Creating reeds");
 var group = new SimpleGroup(
-	[new SimpleObject(aReeds, 5,10, 0,4), new SimpleObject(aLillies, 0,1, 0,4)], true
+	[new SimpleObject(aReeds, 5, 10, 0, 4), new SimpleObject(aLillies, 0, 1, 0, 4)], true
 );
 createObjectGroupsByAreas(group, 0,
 	[borderClasses(clWater, 3, 0), stayClasses(clWater, 1)],
@@ -177,11 +176,11 @@ Engine.SetProgress(20);
 g_Map.log("Creating fish");
 createObjectGroupsByAreas(
 	new SimpleGroup(
-		[new SimpleObject(oFish, 1,1, 0,1)],
+		[new SimpleObject(oFish, 1, 1, 0, 1)],
 		true, clFood
 	),
 	0,
-	[stayClasses(clWater, 4),  avoidClasses(clFood, 8)],
+	[stayClasses(clWater, 4), avoidClasses(clFood, 8)],
 	numLakes / 4,
 	50,
 	waterAreas
@@ -204,22 +203,22 @@ Engine.SetProgress(40);
 
 g_Map.log("Creating dirt patches");
 createLayeredPatches(
- [scaleByMapSize(3, 6), scaleByMapSize(5, 10), scaleByMapSize(8, 21)],
- [[tGrass,tGrassA],[tGrassA,tGrassB], [tGrassB,tGrassC]],
- [1,1],
- avoidClasses(clWater, 1, clForest, 0, clHill, 0, clDirt, 5, clPlayer, 0),
- scaleByMapSize(15, 45),
- clDirt);
+	[scaleByMapSize(3, 6), scaleByMapSize(5, 10), scaleByMapSize(8, 21)],
+	[[tGrass, tGrassA], [tGrassA, tGrassB], [tGrassB, tGrassC]],
+	[1, 1],
+	avoidClasses(clWater, 1, clForest, 0, clHill, 0, clDirt, 5, clPlayer, 0),
+	scaleByMapSize(15, 45),
+	clDirt);
 Engine.SetProgress(45);
 
 g_Map.log("Creating grass patches");
 createLayeredPatches(
- [scaleByMapSize(2, 4), scaleByMapSize(3, 7), scaleByMapSize(5, 15)],
- [tGrassPatchBlend, tGrassPatch],
- [1],
- avoidClasses(clWater, 1, clForest, 0, clHill, 0, clDirt, 5, clPlayer, 0),
- scaleByMapSize(15, 45),
- clDirt);
+	[scaleByMapSize(2, 4), scaleByMapSize(3, 7), scaleByMapSize(5, 15)],
+	[tGrassPatchBlend, tGrassPatch],
+	[1],
+	avoidClasses(clWater, 1, clForest, 0, clHill, 0, clDirt, 5, clPlayer, 0),
+	scaleByMapSize(15, 45),
+	clDirt);
 Engine.SetProgress(50);
 
 g_Map.log("Creating metal mines");
@@ -294,8 +293,8 @@ placePlayersNomad(clPlayer, avoidClasses(clWater, 4, clForest, 1, clMetal, 4, cl
 setSkySet("cirrus");
 setWaterColor(0.447, 0.412, 0.322);			// muddy brown
 setWaterTint(0.447, 0.412, 0.322);
-setWaterMurkiness(1.0);
-setWaterWaviness(3.0);
+setWaterMurkiness(1);
+setWaterWaviness(3);
 setWaterType("lake");
 
 setFogThickness(0.25);

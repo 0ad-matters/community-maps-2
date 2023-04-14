@@ -94,23 +94,23 @@ if (!isNomad())
 	var [playerIDs, playerPosition] = createBasesByPattern(
 		"besideAllies",
 		fractionToTiles(0.35),
-		g_PlayerbaseTypes["besideAllies"].groupedDistance,
+		g_PlayerbaseTypes.besideAllies.groupedDistance,
 		randomAngle());
 
 	clPlayer = g_TileClasses.player;
 
 	g_Map.log("Flatten the initial CC area");
-	for (let position of playerPosition)
+	for (const position of playerPosition)
 		createArea(
 			new ClumpPlacer(diskArea(defaultPlayerBaseRadius() * 1.6), 0.95, 0.6, Infinity, position),
 			new SmoothElevationPainter(ELEVATION_SET, heightLand, 6));
 
-	for (let position of playerPosition)
+	for (const position of playerPosition)
 	{
 		let relPos = Vector2D.sub(position, mapCenter);
-		relPos = relPos.normalize().mult(scaleByMapSize(4,8));
+		relPos = relPos.normalize().mult(scaleByMapSize(4, 8));
 		// Path from player to neighbor
-		let area = createArea(
+		const area = createArea(
 			new PathPlacer(
 				Vector2D.sub(position, relPos),
 				mapCenter,
@@ -124,7 +124,7 @@ if (!isNomad())
 				new SmoothElevationPainter(ELEVATION_SET, heightLand, 0),
 				new SmoothElevationPainter(ELEVATION_MODIFY, heightScale(heightMapCenter), 50),
 				new TileClassPainter(clPath),
-				new TerrainPainter(tRoad),
+				new TerrainPainter(tRoad)
 			]);
 	}
 }
@@ -134,18 +134,18 @@ createArea(
 	new MapBoundsPlacer(),
 	[
 		new TerrainPainter(tCliff),
-		new TileClassPainter(clHill),
+		new TileClassPainter(clHill)
 	],
 	[
 		new SlopeConstraint(3, Infinity)
 	]);
 
-if (!bSahara)
-	g_Map.log("Creating blood pools");
-else
+if (bSahara)
 	g_Map.log("Creating sand pits");
+else
+	g_Map.log("Creating blood pools");
 
-var numLakes = Math.round(scaleByMapSize(1,4) * numPlayers);
+var numLakes = Math.round(scaleByMapSize(1, 4) * numPlayers);
 var lakeSize;
 const lakeCoherence = 0.1;
 const lakeBorderSmoothness = 0.2; // smoothness - How smooth the border of the clump is (1 = few "peaks", 0 = very jagged).
@@ -161,13 +161,13 @@ for (let passes = 0; passes < 6; passes++)
 			lakeCoherence,
 			lakeBorderSmoothness,
 			Infinity
-			),
+		),
 		[
 			new SmoothElevationPainter(
 				ELEVATION_SET,
-				!bArctic ? heightSeaGround - 1 : heightSeaGround - 0.1, // elevation - target height.
+				bArctic ? heightSeaGround - 0.1 : heightSeaGround - 1, // elevation - target height.
 				3 // blendRadius - How steep the elevation change is.
-				),
+			),
 			new TileClassPainter(clLake)
 		],
 		[
@@ -188,13 +188,13 @@ for (let passes = 0; passes < numLakes; passes++)
 			lakeCoherence,
 			lakeBorderSmoothness,
 			Infinity
-			),
+		),
 		[
 			new SmoothElevationPainter(
 				ELEVATION_SET,
-				!bArctic ? heightSeaGround - randIntInclusive(2, 6) : heightSeaGround - 0.1,
+				bArctic ? heightSeaGround - 0.1 : heightSeaGround - randIntInclusive(2, 6),
 				2
-				),
+			),
 			new TileClassPainter(clLake)
 		],
 		[
@@ -205,12 +205,13 @@ for (let passes = 0; passes < numLakes; passes++)
 	);
 }
 
-if (bArctic) {
+if (bArctic)
+{
 	// Adapted from the Frozen Lakes biome of Gulf of Bothnia
 	g_Map.log("Painting ice");
 
 	createAreas(
-/**
+		/**
  * Generates a more random clump of points. It randomly creates circles around the edges of the current clump.s
  *
  * @param {number} minRadius - minimum radius of the circles.
@@ -231,14 +232,15 @@ if (bArctic) {
 				ELEVATION_SET,
 				-6,
 				1
-				),
+			),
 			new TileClassPainter(clBlood)
 		],
 		stayClasses(clLake, 2),
 		scaleByMapSize(10, 40)
 	);
 }
-else {
+else
+{
 	clBlood = clLake;
 }
 
@@ -246,86 +248,88 @@ createBumps(
 	avoidClasses(
 		clHill, 2,
 		clPlayer, 20
-		),
+	),
 	scaleByMapSize(20, 40),
 	1,
 	4,
 	Math.floor(scaleByMapSize(2, 5)) // spread
-	);
+);
 
 createBumps(
 	stayClasses(
-		clLake, 0,
-		),
+		clLake, 0
+	),
 	scaleByMapSize(40, 60),
 	1,
 	4,
 	Math.floor(scaleByMapSize(2, 5)) // spread
-	);
+);
 
-if (!bArctic) {
-g_Map.log("Painting shoreline");
-createArea(
-	new MapBoundsPlacer(),
-	[
-		new TerrainPainter(g_Terrains.water),
-		new TileClassPainter(clShoreline)
-	],
-	new HeightConstraint(-Infinity, heightShore));
+if (!bArctic)
+{
+	g_Map.log("Painting shoreline");
+	createArea(
+		new MapBoundsPlacer(),
+		[
+			new TerrainPainter(g_Terrains.water),
+			new TileClassPainter(clShoreline)
+		],
+		new HeightConstraint(-Infinity, heightShore));
 }
-else {
+else
+{
 	paintTerrainBasedOnHeight(
 		heightSeaGround,
 		heightShore + 0.1,
 		Elevation_ExcludeMin_IncludeMax,
 		"alpine_snow_02"
-		);
+	);
 	paintTerrainBasedOnHeight(
 		-Infinity,
 		heightShore,
 		Elevation_ExcludeMin_ExcludeMax,
 		"alpine_red_ice_01"
-		);
+	);
 	createArea(
-	new MapBoundsPlacer(),
-	[
-		new TileClassPainter(clShoreline)
-	],
-	new HeightConstraint(-Infinity, heightShore));
+		new MapBoundsPlacer(),
+		[
+			new TileClassPainter(clShoreline)
+		],
+		new HeightConstraint(-Infinity, heightShore));
 }
 
 Engine.SetProgress(50);
 
 g_Map.log("Creating dirt patches");
 createLayeredPatches(
- [scaleByMapSize(3, 6), scaleByMapSize(5, 10), scaleByMapSize(8, 21)],
- [[tMainTerrain,tTier1Terrain],[tTier1Terrain,tTier2Terrain], [tTier2Terrain,tTier3Terrain]],
- [1, 1],
- avoidClasses(
-	clLake, 1,
-	clForest, 0,
-	clHill, 0,
-	clDirt, 5,
-	clPlayer, 12,
-	clPath, 0
+	[scaleByMapSize(3, 6), scaleByMapSize(5, 10), scaleByMapSize(8, 21)],
+	[[tMainTerrain, tTier1Terrain], [tTier1Terrain, tTier2Terrain], [tTier2Terrain, tTier3Terrain]],
+	[1, 1],
+	avoidClasses(
+		clLake, 1,
+		clForest, 0,
+		clHill, 0,
+		clDirt, 5,
+		clPlayer, 12,
+		clPath, 0
 	),
- scaleByMapSize(15, 45),
- clDirt);
+	scaleByMapSize(15, 45),
+	clDirt);
 
 g_Map.log("Creating grass patches");
 createPatches(
- [scaleByMapSize(2, 4), scaleByMapSize(3, 7), scaleByMapSize(5, 15)],
- tTier4Terrain,
- avoidClasses(
-	clLake, 1,
-	clForest, 0,
-	clHill, 0,
-	clDirt, 5,
-	clPlayer, 12,
-	clPath, 0
+	[scaleByMapSize(2, 4), scaleByMapSize(3, 7), scaleByMapSize(5, 15)],
+	tTier4Terrain,
+	avoidClasses(
+		clLake, 1,
+		clForest, 0,
+		clHill, 0,
+		clDirt, 5,
+		clPlayer, 12,
+		clPath, 0
 	),
- scaleByMapSize(15, 45),
- clDirt);
+	scaleByMapSize(15, 45),
+	clDirt);
 Engine.SetProgress(55);
 
 g_Map.log("Creating metal mines");
@@ -363,7 +367,7 @@ createDecoration(
 		[new SimpleObject(aRockMedium, 1, 3, 0, 1)],
 		[new SimpleObject(aRockLarge, 1, 2, 0, 1), new SimpleObject(aRockMedium, 1, 3, 0, 2)],
 		[new SimpleObject(aGrassShort, 1, 2, 0, 1)],
-		[new SimpleObject(aGrass, 2, 4, 0, 1.8), new SimpleObject(aGrassShort, 3,6, 1.2, 2.5)],
+		[new SimpleObject(aGrass, 2, 4, 0, 1.8), new SimpleObject(aGrassShort, 3, 6, 1.2, 2.5)],
 		[new SimpleObject(aBushMedium, 1, 2, 0, 2), new SimpleObject(aBushSmall, 2, 4, 0, 2)]
 	],
 	[
@@ -379,8 +383,8 @@ createDecoration(
 		clHill, 0,
 		clLake, 1,
 		clPath, 0
-		)
-	);
+	)
+);
 
 Engine.SetProgress(70);
 
@@ -421,7 +425,7 @@ createStragglerTrees(
 		clRock, 1,
 		clFood, 1,
 		clPath, 0
-		),
+	),
 	clForest,
 	stragglerTrees);
 
@@ -433,13 +437,13 @@ if (!bSahara)
 	const clBubbles = g_Map.createTileClass();
 	const bubblesGroup = new SimpleGroup(
 		[new SimpleObject("actor|particle/jammys_despair_bubbles.xml", 1, 1, 0, 7)], false, clBubbles);
-			createObjectGroups(bubblesGroup, 0,
+	createObjectGroups(bubblesGroup, 0,
 		[
-			new HeightConstraint(-Infinity, heightSeaGround - 2),
+			new HeightConstraint(-Infinity, heightSeaGround - 2)
 		],
 		scaleByMapSize(10, 90), // amount
-		10, // retry factor
-		);
+		10 // retry factor
+	);
 }
 else if (!bArctic)
 {
@@ -451,16 +455,18 @@ else if (!bArctic)
 			new HeightConstraint(-Infinity, heightSeaGround)
 		],
 		scaleByMapSize(20, 180), // amount
-		5, // retry factor
-		);
+		5 // retry factor
+	);
 }
 
 setWaterColor(0.541, 0.012, 0.012);
-if (bArctic) {
+if (bArctic)
+{
 	setWaterWaviness(8);
 	setWaterTint(0.471, 0.75, 0.501961);
 }
-else {
+else
+{
 	setWaterWaviness(3);
 	setWaterTint(0.541, 0.012, 0.012);
 }

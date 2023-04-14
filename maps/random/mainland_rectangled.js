@@ -9,22 +9,6 @@ Engine.LoadLibrary("rmbiome");
 setSelectedBiome();
 const bArctic = (currentBiome() == "generic/arctic");
 
-// replaces code on Mainland-type maps to generate both hills and mountains,
-// rather than what's used on vanilla mainland (using randbool to decide
-// one or the other)
-function createHillsAndMountains (hillCount, mountainCount, constraint)
-{
-	createHills([tCliff, tCliff, tHill],
-			constraint,
-			clHill,
-			hillCount / 2),
-	createMountains(tCliff,
-		constraint,
-		clHill,
-		//scaleByMapSize(3, 15)); // count
-		mountainCount / 2)
-}
-
 const tMainTerrain = g_Terrains.mainTerrain;
 const tForestFloor1 = g_Terrains.forestFloor1;
 const tForestFloor2 = g_Terrains.forestFloor2;
@@ -90,7 +74,23 @@ const isWaterMap = (g_MapSettings.mapName === "Yekaterinaville");
 const heightRavine = heightLand - 20;
 const heightRidge = heightLand + 8;
 
-for (let x of [mapBounds.left, mapBounds.right])
+// replaces code on Mainland-type maps to generate both hills and mountains,
+// rather than what's used on vanilla mainland (using randbool to decide
+// one or the other)
+function createHillsAndMountains(hillCount, mountainCount, constraint)
+{
+	return createHills([tCliff, tCliff, tHill],
+		constraint,
+		clHill,
+		hillCount / 2),
+	createMountains(tCliff,
+		constraint,
+		clHill,
+		// scaleByMapSize(3, 15)); // count
+		mountainCount / 2);
+}
+
+for (const x of [mapBounds.left, mapBounds.right])
 	paintRiver({
 		"parallel": true,
 		"start": new Vector2D(x, mapBounds.top).rotateAround(startAngle, mapCenter),
@@ -149,18 +149,19 @@ Engine.SetProgress(20);
 
 createBumps(avoidClasses(clPlayer, 20));
 
-if (isWaterMap && bArctic) {
+if (isWaterMap && bArctic)
+{
 	// Adapted from the Frozen Lakes biome of Gulf of Bothnia
 
 	g_Map.log("Painting ice");
 	createArea(
 		new MapBoundsPlacer(),
 		[
-			new TerrainPainter("alpine_snow_01"),
+			new TerrainPainter("alpine_snow_01")
 		],
 		[
-			stayClasses(clRavine, 0),
-		],
+			stayClasses(clRavine, 0)
+		]
 	);
 
 	createAreas(
@@ -170,7 +171,7 @@ if (isWaterMap && bArctic) {
 			scaleByMapSize(16, 40),
 			0.3),
 		[
-			new ElevationPainter(-6),
+			new ElevationPainter(-6)
 		],
 		stayClasses(clRavine, 2),
 		scaleByMapSize(10, 40)
@@ -180,8 +181,9 @@ if (isWaterMap && bArctic) {
 	paintTerrainBasedOnHeight(-Infinity, heightShore, Elevation_ExcludeMin_IncludeMax, "alpine_ice_01");
 }
 
-if (isWaterMap) {
-	const heightShore = heightLand - 0.5;
+if (isWaterMap)
+{
+	const heightHere = heightLand - 0.5;
 	g_Map.log("Painting shoreline");
 	createArea(
 		new MapBoundsPlacer(),
@@ -189,9 +191,10 @@ if (isWaterMap) {
 			new TerrainPainter(g_Terrains.water),
 			new TileClassPainter(clShoreline)
 		],
-		new HeightConstraint(-Infinity, heightShore));
+		new HeightConstraint(-Infinity, heightHere));
 }
-else {
+else
+{
 	g_Map.log("Smoothing ridge");
 	createArea(
 		new MapBoundsPlacer(),
@@ -206,13 +209,12 @@ createArea(
 	new MapBoundsPlacer(),
 	[
 		new TerrainPainter(g_Terrains.cliff),
-		new TileClassPainter(clHill),
+		new TileClassPainter(clHill)
 	],
 	[
 		new SlopeConstraint(3, Infinity)
-	],
-	);
-
+	]
+);
 
 Engine.SetProgress(30);
 
@@ -223,25 +225,25 @@ createHillsAndMountains(
 		clPlayer, 20,
 		clHill, 15,
 		clRavine, 0
-		)
-	);
+	)
+);
 
-//if (bArctic && isWaterMap) {
-	//const areas = createAreas(
-		//new ChainPlacer(
-			//1,
-			//4,
-			//scaleByMapSize(16, 40),
-			//0.3),
-		//[
-			//new ElevationPainter(-6),
-		//],
-		//stayClasses(clRavine, 2),
-		//scaleByMapSize(10, 40));
+// if (bArctic && isWaterMap) {
+// const areas = createAreas(
+// new ChainPlacer(
+// 1,
+// 4,
+// scaleByMapSize(16, 40),
+// 0.3),
+// [
+// new ElevationPainter(-6),
+// ],
+// stayClasses(clRavine, 2),
+// scaleByMapSize(10, 40));
 
-	//paintTerrainBasedOnHeight(heightShore, heightLand, Elevation_ExcludeMin_ExcludeMax, tShore);
-	//paintTerrainBasedOnHeight(-Infinity, heightShore, Elevation_ExcludeMin_IncludeMax, tWater);
-//}
+// paintTerrainBasedOnHeight(heightShore, heightLand, Elevation_ExcludeMin_ExcludeMax, tShore);
+// paintTerrainBasedOnHeight(-Infinity, heightShore, Elevation_ExcludeMin_IncludeMax, tWater);
+// }
 
 var [forestTrees, stragglerTrees] = getTreeCounts(...rBiomeTreeCount(1));
 createForests(
@@ -250,8 +252,8 @@ createForests(
 		clRavine, 2,
 		clPlayer, 20,
 		clForest, 18,
-		clHill, 2,
-		),
+		clHill, 2
+	),
 	clForest,
 	forestTrees);
 
@@ -259,30 +261,30 @@ Engine.SetProgress(50);
 
 g_Map.log("Creating dirt patches");
 createLayeredPatches(
- [scaleByMapSize(3, 6), scaleByMapSize(5, 10), scaleByMapSize(8, 21)],
- [[tMainTerrain,tTier1Terrain],[tTier1Terrain,tTier2Terrain], [tTier2Terrain,tTier3Terrain]],
- [1, 1],
-avoidClasses(
-	clForest, 0,
-	clHill, 1,
-	clDirt, 5,
-	clPlayer, 12
+	[scaleByMapSize(3, 6), scaleByMapSize(5, 10), scaleByMapSize(8, 21)],
+	[[tMainTerrain, tTier1Terrain], [tTier1Terrain, tTier2Terrain], [tTier2Terrain, tTier3Terrain]],
+	[1, 1],
+	avoidClasses(
+		clForest, 0,
+		clHill, 1,
+		clDirt, 5,
+		clPlayer, 12
 	),
- scaleByMapSize(15, 45),
- clDirt);
+	scaleByMapSize(15, 45),
+	clDirt);
 
 g_Map.log("Creating grass patches");
 createPatches(
- [scaleByMapSize(2, 4), scaleByMapSize(3, 7), scaleByMapSize(5, 15)],
- tTier4Terrain,
- avoidClasses(
-	clForest, 0,
-	clHill, 1,
-	clDirt, 5,
-	clPlayer, 12,
+	[scaleByMapSize(2, 4), scaleByMapSize(3, 7), scaleByMapSize(5, 15)],
+	tTier4Terrain,
+	avoidClasses(
+		clForest, 0,
+		clHill, 1,
+		clDirt, 5,
+		clPlayer, 12
 	),
- scaleByMapSize(15, 45),
- clDirt);
+	scaleByMapSize(15, 45),
+	clDirt);
 Engine.SetProgress(55);
 
 g_Map.log("Creating metal mines");
@@ -290,7 +292,7 @@ createBalancedMetalMines(
 	oMetalSmall,
 	oMetalLarge,
 	clMetal,
-	avoidClasses(clRavine, 2, clForest, 1, clPlayer, 20, clHill, 2),
+	avoidClasses(clRavine, 2, clForest, 1, clPlayer, 20, clHill, 2)
 );
 
 g_Map.log("Creating stone mines");
@@ -303,9 +305,9 @@ createBalancedStoneMines(
 		clForest, 1,
 		clPlayer, 20,
 		clMetal, 10,
-		clHill, 2,
-		),
-	);
+		clHill, 2
+	)
+);
 
 Engine.SetProgress(65);
 
@@ -319,7 +321,7 @@ createDecoration(
 		[new SimpleObject(aRockMedium, 1, 3, 0, 1)],
 		[new SimpleObject(aRockLarge, 1, 2, 0, 1), new SimpleObject(aRockMedium, 1, 3, 0, 2)],
 		[new SimpleObject(aGrassShort, 1, 2, 0, 1)],
-		[new SimpleObject(aGrass, 2, 4, 0, 1.8), new SimpleObject(aGrassShort, 3,6, 1.2, 2.5)],
+		[new SimpleObject(aGrass, 2, 4, 0, 1.8), new SimpleObject(aGrassShort, 3, 6, 1.2, 2.5)],
 		[new SimpleObject(aBushMedium, 1, 2, 0, 2), new SimpleObject(aBushSmall, 2, 4, 0, 2)]
 	],
 	[
@@ -332,9 +334,9 @@ createDecoration(
 	avoidClasses(
 		clForest, 0,
 		clPlayer, 0,
-		clHill, 3,
-		)
-	);
+		clHill, 3
+	)
+);
 
 Engine.SetProgress(70);
 
@@ -354,8 +356,8 @@ createFood(
 		clHill, 2,
 		clMetal, 4,
 		clRock, 4,
-		clFood, 20,
-		),
+		clFood, 20
+	),
 	clFood);
 
 Engine.SetProgress(75);
@@ -374,8 +376,8 @@ createFood(
 		clHill, 2,
 		clMetal, 4,
 		clRock, 4,
-		clFood, 10,
-		),
+		clFood, 10
+	),
 	clFood);
 
 Engine.SetProgress(85);
@@ -389,12 +391,13 @@ createStragglerTrees(
 		clMetal, 6,
 		clRock, 6,
 		clFood, 1,
-		clRavine, 2,
-		),
+		clRavine, 2
+	),
 	clForest,
 	stragglerTrees);
 
-if (isWaterMap && ! bArctic) {
+if (isWaterMap && !bArctic)
+{
 	g_Map.log("Creating fish");
 	createObjectGroups(
 		new SimpleGroup([new SimpleObject(oFish, 1, 1, 0, 1)], true, clFood),
@@ -413,25 +416,27 @@ placePlayersNomad(
 		clMetal, 4,
 		clRock, 4,
 		clHill, 4,
-		clFood, 2,
-		)
-	);
+		clFood, 2
+	)
+);
 
 if (!isWaterMap)
 	setWaterHeight(-Infinity);
 
 setWaterType("lake");
-if (!bArctic) {
-	setWaterColor(0.024,0.262,0.224)
-	setWaterTint(0.133, 0.325,0.255)
-	setWaterMurkiness(.93);
+if (!bArctic)
+{
+	setWaterColor(0.024, 0.262, 0.224);
+	setWaterTint(0.133, 0.325, 0.255);
+	setWaterMurkiness(0.93);
 	setWaterWaviness(randIntInclusive(2, 8));
 }
-else {
-	setWaterColor(1, 1, 1)
+else
+{
+	setWaterColor(1, 1, 1);
 	setWaterWaviness(2);
-	setWaterTint(0.471, 0.75, 0.501961)
-	setWaterMurkiness(.97);
+	setWaterTint(0.471, 0.75, 0.501961);
+	setWaterMurkiness(0.97);
 }
 
 g_Map.ExportMap();
