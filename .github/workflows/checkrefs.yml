@@ -37,10 +37,20 @@ jobs:
           fi
           echo $LOG_CONTENTS
           exit 1
-
-      - uses: jitterbit/get-changed-files@v1
-      - run: |
-          for file in ${{ steps.files.outputs.all }}; do
-            [[ "$file" =~ ^maps/(random|scenarios|skirmishes)/[^/]+$ ]] || continue
-            [[ $(basename "${file%.*}") =~ ^[0-9a-z_]+$ ]] || exit 1
+      - uses: tj-actions/changed-files@v35
+        id: changed-files-glob
+        with:
+          separator: ','
+          files: |
+            **/maps/{random,skirmishes,scenarios}/*.{js,json,pmp,xml}
+      - name: Check changed file names
+        run: |-
+          IFS=$',' read -ra filesArray <<< "${{ steps.changed-files-glob.outputs.all_changed_files }}"
+          errorFiles=()
+          for file in "${filesArray[@]}"; do
+            [[ $(basename "${file%.*}") =~ ^[0-9a-z_]+[0-9a-z]$ ]] || errorFiles+=("$file")
           done
+          if [ ${#errorFiles[@]} -gt 0 ]; then
+            echo "::error:: Regex for file names doesn't match: ${errorFiles[@]}"
+            exit 1
+          fi
