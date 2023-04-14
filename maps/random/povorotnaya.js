@@ -580,12 +580,12 @@ function setPattern2(patternr, brushSize, callback, randMax)
 	for (let r = 1; r < 100; r++)
 	{
 		var wm = 2 * Math.PI / (6 * r);
-		for (let w = 0; w < 6 * r; w++)
+		for (let i = 0; i < 6 * r; i++)
 		{
 			var randx = randMax * (Math.random() - 0.5);
 			var randy = randMax * (Math.random() - 0.5);
-			var xm = Math.round(0.5 * dd + patternr * (r * Math.sin(w * wm) + randx));
-			var ym = Math.round(0.5 * dd + patternr * (r * Math.cos(w * wm) + randy));
+			var xm = Math.round(0.5 * dd + patternr * (r * Math.sin(i * wm) + randx));
+			var ym = Math.round(0.5 * dd + patternr * (r * Math.cos(i * wm) + randy));
 			for (const element of b1)
 			{
 				var xmm = xm + element.x;
