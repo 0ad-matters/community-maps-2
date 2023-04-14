@@ -56,7 +56,7 @@ const genMapFertWithMountain = function(isMountain)
 
 	const clamp = (val, min, max) => Math.min(Math.max(val, min), max);
 	const linearScale = (val, min, max) => min + val * (max - min);
-	const scaleByNumberOfPlayers = (a, b) => linearScale(getNumPlayers() / 8.0, a, b);
+	const scaleByNumberOfPlayers = (a, b) => linearScale(getNumPlayers() / 8, a, b);
 
 	function bezier_quadratic(p0, p1, p2, t)
 	{
@@ -77,12 +77,12 @@ const genMapFertWithMountain = function(isMountain)
 
 	Engine.SetProgress(10);
 
-	g_Map.placeEntityPassable("undeletable|disableHealthReplaceResistance|disableGarrisonHolder|structures/brit/wonder", 0, new Vector2D(g_Map.size / 2, g_Map.size / 2), 0.0);
+	g_Map.placeEntityPassable("undeletable|disableHealthReplaceResistance|disableGarrisonHolder|structures/brit/wonder", 0, new Vector2D(g_Map.size / 2, g_Map.size / 2), 0);
 
 	var mountain = {};
-	mountain.height = isMountain ? 100.0 * getNumPlayers() / 8.0 : 0;
+	mountain.height = isMountain ? 100 * getNumPlayers() / 8 : 0;
 	mountain.heightBase = 24;
-	mountain.twist = Math.PI * scaleByMapSize(1.0, 2.0);
+	mountain.twist = Math.PI * scaleByMapSize(1, 2);
 	mountain.spiralWidth = 20;
 	mountain.minRadius = 18;
 	mountain.maxRadius = mountain.minRadius + getNumPlayers() * mountain.twist;
@@ -109,8 +109,8 @@ const genMapFertWithMountain = function(isMountain)
 		// Player base area
 		const baseRadius = g_Map.size / 2 - mountain.maxRadius;
 
-		const arcAngleLength = 2 * Math.PI / 4.0;
-		const littlePassageRadPod = arcAngleLength * 0.7 * linearScale(1 - getNumPlayers() / 8.0, 1, 0.7);
+		const arcAngleLength = 2 * Math.PI / 4;
+		const littlePassageRadPod = arcAngleLength * 0.7 * linearScale(1 - getNumPlayers() / 8, 1, 0.7);
 		const baseCenter = new Vector2D(1, 0).rotate(startAngle).mult(g_Map.size / 2).add(g_Map.getCenter());
 
 		const anglemin = Math.PI + startAngle;
@@ -173,30 +173,30 @@ const genMapFertWithMountain = function(isMountain)
 			"Walls": false,
 			"BaseResourceClass": clBaseResource,
 			"CityPatch":
-            {
-            	"outerTerrain": tRoadWild,
-            	"innerTerrain": tRoad
-            },
+			{
+				"outerTerrain": tRoadWild,
+				"innerTerrain": tRoad
+			},
 			"StartingAnimal": {},
 			"Berries":
-            {
-            	"template": oFruitBush
-            },
+			{
+				"template": oFruitBush
+			},
 			"Mines":
-            {
-            	"types": [
-            		{ "template": oMetalLarge },
-            		{ "template": oStoneLarge }]
-            },
+			{
+				"types": [
+					{ "template": oMetalLarge },
+					{ "template": oStoneLarge }]
+			},
 			"Trees":
-            {
-            	"template": oTree1,
-            	"count": 25
-            },
+			{
+				"template": oTree1,
+				"count": 25
+			},
 			"Decoratives":
-            {
-            	"template": aGrassShort
-            }
+			{
+				"template": aGrassShort
+			}
 		}
 	);
 
@@ -226,7 +226,7 @@ const genMapFertWithMountain = function(isMountain)
 		const controlPoint = spiralEndPos[i].
 			clone().
 			sub(g_Map.getCenter()).
-			rotate(-Math.PI / 2.0).
+			rotate(-Math.PI / 2).
 			mult(3 * scaleByNumberOfPlayers(2.3, 0.6) * scaleByMapSize(0.8, 1.2)).
 			add(spiralEndPos[i]);
 

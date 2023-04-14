@@ -25,7 +25,7 @@ function triRast(v0, v1, v2, h0, h1, h2, setCondition)
 			const d21 = t2.dot(t1);
 			const w1 = (d11 * d20 - d01 * d21) * invdenom;
 			const w2 = (d00 * d21 - d01 * d20) * invdenom;
-			const w0 = 1.0 - w2 - w1;
+			const w0 = 1 - w2 - w1;
 			// 0.000001 mini overlap (prevents cases of point being inbetween two triangles and not being picked up)
 			if (w0 >= -0.00001 && w1 >= -0.00001 && w2 >= -0.00001)
 			{

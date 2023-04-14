@@ -189,9 +189,9 @@ createObjectGroupsDeprecated(
 Engine.SetProgress(70);
 
 g_Map.log("Creating dirt patches");
-for (const size of [scaleByMapSize(3, 6), scaleByMapSize(5, 10), scaleByMapSize(8, 21)])
+for (const sizeDirt of [scaleByMapSize(3, 6), scaleByMapSize(5, 10), scaleByMapSize(8, 21)])
 	createAreas(
-		new ChainPlacer(1, Math.floor(scaleByMapSize(3, 5)), size, 0.5),
+		new ChainPlacer(1, Math.floor(scaleByMapSize(3, 5)), sizeDirt, 0.5),
 		[
 			new LayeredPainter([tSnowD, tSnowB, tSnowC], [2, 1]),
 			new TileClassPainter(clDirt)
@@ -204,9 +204,9 @@ for (const size of [scaleByMapSize(3, 6), scaleByMapSize(5, 10), scaleByMapSize(
 			clDirt, 16),
 		scaleByMapSize(20, 80));
 
-for (const size of [scaleByMapSize(2, 4), scaleByMapSize(3, 7), scaleByMapSize(5, 15)])
+for (const sizeDirt of [scaleByMapSize(2, 4), scaleByMapSize(3, 7), scaleByMapSize(5, 15)])
 	createAreas(
-		new ChainPlacer(1, Math.floor(scaleByMapSize(3, 5)), size, 0.5),
+		new ChainPlacer(1, Math.floor(scaleByMapSize(3, 5)), sizeDirt, 0.5),
 		[
 			new TerrainPainter(tSnowE),
 			new TileClassPainter(clDirt)

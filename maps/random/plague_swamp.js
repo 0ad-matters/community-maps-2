@@ -251,10 +251,10 @@ for (const position of playerPosition)
 	g_Map.placeEntityPassable("trigger/trigger_point_A", 0, position);
 
 setSkySet("dark");
-setWaterColor(0.243, 0.533, 0.270);
+setWaterColor(0.243, 0.533, 0.27);
 setWaterTint(0.161, 0.514, 0.635);
 setWaterMurkiness(0.8);
-setWaterWaviness(1.0);
+setWaterWaviness(1);
 setWaterType("clap");
 
 setFogThickness(2.65);

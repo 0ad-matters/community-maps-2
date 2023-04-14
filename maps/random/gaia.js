@@ -25,7 +25,7 @@ Engine.SetProgress(10);
 
 var playerIDs;
 var playerPosition;
-if(!isNomad())
+if (!isNomad())
 {
 	const pattern = g_MapSettings.TeamPlacement || pickRandom(Object.keys(g_PlayerbaseTypes));
 	[playerIDs, playerPosition] = createBasesByPattern(
@@ -43,7 +43,7 @@ Engine.SetProgress(20);
 createBumps(avoidClasses(g_TileClasses.player, 0), scaleByMapSize(10, 250), 1, 8, 4, 0, 5);
 
 var clPath = g_Map.createTileClass();
-if(!isNomad())
+if (!isNomad())
 {
 	for (let i = 0; i < playerPosition.length; ++i)
 	{
@@ -53,11 +53,11 @@ if(!isNomad())
 
 		// Roads get more worn based on length
 		var tex = g_Terrains.road;
-		if(dist >= scaleByMapSize(10, 500))
+		if (dist >= scaleByMapSize(10, 500))
 			tex = g_Terrains.forestFloor2;
-		else if(dist >= scaleByMapSize(10, 250))
+		else if (dist >= scaleByMapSize(10, 250))
 			tex = g_Terrains.forestFloor1;
-		else if(dist >= scaleByMapSize(10, 100))
+		else if (dist >= scaleByMapSize(10, 100))
 			tex = g_Terrains.roadWild;
 
 		createArea(new RandomPathPlacer(pos1, pos2, 2, 5, true),
@@ -625,7 +625,7 @@ g_Map.log("Generating daytime and weather");
 Engine.SetProgress(90);
 
 // Day is default, only override settings specified by the biome when necessary
-if(g_MapSettings.Daytime == "day")
+if (g_MapSettings.Daytime == "day")
 {
 	setSunColor(1, 1, 1);
 	setSunRotation(randomAngle());
@@ -636,7 +636,7 @@ if(g_MapSettings.Daytime == "day")
 
 	setSkySet(pickRandom(["sunny", "cloudless", "cirrus"]));
 }
-else if(g_MapSettings.Daytime == "dawn")
+else if (g_MapSettings.Daytime == "dawn")
 {
 	setSunColor(1, 0.875, 0.625);
 	setSunRotation(randomAngle());
@@ -647,7 +647,7 @@ else if(g_MapSettings.Daytime == "dawn")
 
 	setSkySet(pickRandom(["sunset", "mountainous"]));
 }
-else if(g_MapSettings.Daytime == "sunrise")
+else if (g_MapSettings.Daytime == "sunrise")
 {
 	setSunColor(0.5, 0.125, 0);
 	setSunRotation(randomAngle());
@@ -658,18 +658,18 @@ else if(g_MapSettings.Daytime == "sunrise")
 
 	setSkySet(pickRandom(["fog"]));
 }
-else if(g_MapSettings.Daytime == "night")
+else if (g_MapSettings.Daytime == "night")
 {
 	setSunColor(0.125, 0.125, 0.125);
 	setSunRotation(randomAngle());
 	setSunElevation(randFloat(0.1, 0.25) * Math.PI);
 	setAmbientColor(0.125, 0.125, 0.25);
 
-	setFogColor(0.05, 0.075, 0.100);
+	setFogColor(0.05, 0.075, 0.1);
 
 	setSkySet(pickRandom(["dark"]));
 }
-else if(g_MapSettings.Daytime == "cloudy")
+else if (g_MapSettings.Daytime == "cloudy")
 {
 	setSunColor(0.25, 0.25, 0.25);
 	setSunRotation(0);
@@ -682,7 +682,7 @@ else if(g_MapSettings.Daytime == "cloudy")
 
 	setSkySet(pickRandom(["stratus", "cumulus"]));
 }
-else if(g_MapSettings.Daytime == "stormy")
+else if (g_MapSettings.Daytime == "stormy")
 {
 	setSunColor(0.125, 0.125, 0.125);
 	setSunRotation(0);
@@ -696,7 +696,7 @@ else if(g_MapSettings.Daytime == "stormy")
 	setSkySet(pickRandom(["overcast", "rain", "stormy"]));
 
 	// Choose precipitation type and amount
-	if(currentBiome() == "generic/arctic")
+	if (currentBiome() == "generic/arctic")
 	{
 		createObjectGroups(
 			new SimpleGroup([new SimpleObject("actor|particle/snow_mist.xml", 1, 1, 0, 5)], true),
@@ -705,7 +705,7 @@ else if(g_MapSettings.Daytime == "stormy")
 			scaleByMapSize(1, randIntInclusive(50, 100))
 		);
 	}
-	else if(currentBiome() == "generic/sahara" || currentBiome() == "generic/nubia")
+	else if (currentBiome() == "generic/sahara" || currentBiome() == "generic/nubia")
 	{
 		createObjectGroups(
 			new SimpleGroup([new SimpleObject("actor|particle/blowing_sand.xml", 1, 1, 0, 5)], true),

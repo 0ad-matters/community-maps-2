@@ -179,22 +179,22 @@ createArea(
 );
 
 var g_IslandArea2 = new createArea(
-	new ClumpPlacer(diskArea(volcano.maxRadius * 0.7), 0.90, 0.009, Infinity, volcano.position),
+	new ClumpPlacer(diskArea(volcano.maxRadius * 0.7), 0.9, 0.009, Infinity, volcano.position),
 	[new TerrainPainter(g_Terrains.tier4Terrain)]
 );
 
 var g_IslandArea3 = new createArea(
-	new ClumpPlacer(diskArea(volcano.maxRadius * 0.3), 0.10, 0.005, Infinity, volcano.position),
+	new ClumpPlacer(diskArea(volcano.maxRadius * 0.3), 0.1, 0.005, Infinity, volcano.position),
 	[new TerrainPainter(g_Terrains.mainTerrain)]
 );
 
 var g_IslandArea4 = new createArea(
-	new ClumpPlacer(diskArea(volcano.maxRadius * 0.2), 0.10, 0, Infinity, volcano.position),
+	new ClumpPlacer(diskArea(volcano.maxRadius * 0.2), 0.1, 0, Infinity, volcano.position),
 	[new TerrainPainter(g_Terrains.forestFloor2)]
 );
 
 var g_IslandArea5 = new createArea(
-	new ClumpPlacer(diskArea(volcano.maxRadius * 0.15), 0.10, 0, Infinity, volcano.position),
+	new ClumpPlacer(diskArea(volcano.maxRadius * 0.15), 0.1, 0, Infinity, volcano.position),
 	[new TerrainPainter(g_Terrains.cliff)]
 );
 
@@ -219,14 +219,13 @@ var g_IslandArea9 = new createArea(
 );
 
 placePlayerBases({
-	"PlayerPlacement": playerPlacementCircle(volcano.maxRadius * 0.80),
+	"PlayerPlacement": playerPlacementCircle(volcano.maxRadius * 0.8),
 	"PlayerTileClass": clPlayer,
 	"BaseResourceClass": clBaseResource,
 	"CityPatch": {
 		"outerTerrain": tRoadWild
 	},
-	"StartingAnimal": {
-	},
+	"StartingAnimal": {},
 	"Berries": {
 		"template": oFruitBush
 	},

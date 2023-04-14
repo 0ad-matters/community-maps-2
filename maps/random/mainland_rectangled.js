@@ -9,22 +9,6 @@ Engine.LoadLibrary("rmbiome");
 setSelectedBiome();
 const bArctic = (currentBiome() == "generic/arctic");
 
-// replaces code on Mainland-type maps to generate both hills and mountains,
-// rather than what's used on vanilla mainland (using randbool to decide
-// one or the other)
-function createHillsAndMountains(hillCount, mountainCount, constraint)
-{
-	createHills([tCliff, tCliff, tHill],
-		constraint,
-		clHill,
-		hillCount / 2),
-	createMountains(tCliff,
-		constraint,
-		clHill,
-		// scaleByMapSize(3, 15)); // count
-		mountainCount / 2);
-}
-
 const tMainTerrain = g_Terrains.mainTerrain;
 const tForestFloor1 = g_Terrains.forestFloor1;
 const tForestFloor2 = g_Terrains.forestFloor2;
@@ -89,6 +73,22 @@ const RAVINE_WIDTH = 0.15;
 const isWaterMap = (g_MapSettings.mapName === "Yekaterinaville");
 const heightRavine = heightLand - 20;
 const heightRidge = heightLand + 8;
+
+// replaces code on Mainland-type maps to generate both hills and mountains,
+// rather than what's used on vanilla mainland (using randbool to decide
+// one or the other)
+function createHillsAndMountains(hillCount, mountainCount, constraint)
+{
+	return createHills([tCliff, tCliff, tHill],
+		constraint,
+		clHill,
+		hillCount / 2),
+	createMountains(tCliff,
+		constraint,
+		clHill,
+		// scaleByMapSize(3, 15)); // count
+		mountainCount / 2);
+}
 
 for (const x of [mapBounds.left, mapBounds.right])
 	paintRiver({
@@ -183,7 +183,7 @@ if (isWaterMap && bArctic)
 
 if (isWaterMap)
 {
-	const heightShore = heightLand - 0.5;
+	const heightHere = heightLand - 0.5;
 	g_Map.log("Painting shoreline");
 	createArea(
 		new MapBoundsPlacer(),
@@ -191,7 +191,7 @@ if (isWaterMap)
 			new TerrainPainter(g_Terrains.water),
 			new TileClassPainter(clShoreline)
 		],
-		new HeightConstraint(-Infinity, heightShore));
+		new HeightConstraint(-Infinity, heightHere));
 }
 else
 {

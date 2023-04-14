@@ -1,4 +1,4 @@
-var disabledTemplates = (civ) => [
+var disabledTemplates = civ => [
 	"structures/" + civ + "/dock",
 	"structures/brit/crannog" // brit island settlement
 ];

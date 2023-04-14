@@ -22,7 +22,7 @@ jobs:
           separator: ','
           files: |
             **/maps/{random,skirmishes,scenarios}/*.{js,json,pmp,xml}
-      - name: Check changed file names
+      - name: Check changed file names in map folder
         run: |-
           IFS=$',' read -ra filesArray <<< "${{ steps.changed-files-glob.outputs.all_changed_files }}"
           errorFiles=()
@@ -41,15 +41,15 @@ jobs:
           npm install eslint --save-dev
           npm install eslint-plugin-brace-rules --save-dev
       - name: Download custom ESLint config from 0ad
-        run: curl -Lo eslintrc.json https://raw.githubusercontent.com/0ad/0ad/master/build/arclint/configs/eslintrc.json
+        run: |
+          curl -fLo eslintrc.json https://raw.githubusercontent.com/0ad/0ad/master/build/arclint/configs/eslintrc.json || exit 1
       - name: Run reviewdog/action-eslint
         uses: reviewdog/action-eslint@master
         with:
           fail_on_error: true
           github_token: ${{ secrets.GITHUB_TOKEN }}
           reporter: github-pr-review
-          # TODO: once all eslint issues have been fixed, set the filter to "added"
-          filter_mode: nofilter
+          filter_mode: added
           # 0ad's eslint config is used primarily, but we add 3 additional rules:
           # https://eslint.org/docs/latest/rules/comma-dangle
           # https://eslint.org/docs/latest/rules/space-infix-ops

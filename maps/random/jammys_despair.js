@@ -140,10 +140,10 @@ createArea(
 		new SlopeConstraint(3, Infinity)
 	]);
 
-if (!bSahara)
-	g_Map.log("Creating blood pools");
-else
+if (bSahara)
 	g_Map.log("Creating sand pits");
+else
+	g_Map.log("Creating blood pools");
 
 var numLakes = Math.round(scaleByMapSize(1, 4) * numPlayers);
 var lakeSize;
@@ -165,7 +165,7 @@ for (let passes = 0; passes < 6; passes++)
 		[
 			new SmoothElevationPainter(
 				ELEVATION_SET,
-				!bArctic ? heightSeaGround - 1 : heightSeaGround - 0.1, // elevation - target height.
+				bArctic ? heightSeaGround - 0.1 : heightSeaGround - 1, // elevation - target height.
 				3 // blendRadius - How steep the elevation change is.
 			),
 			new TileClassPainter(clLake)
@@ -192,7 +192,7 @@ for (let passes = 0; passes < numLakes; passes++)
 		[
 			new SmoothElevationPainter(
 				ELEVATION_SET,
-				!bArctic ? heightSeaGround - randIntInclusive(2, 6) : heightSeaGround - 0.1,
+				bArctic ? heightSeaGround - 0.1 : heightSeaGround - randIntInclusive(2, 6),
 				2
 			),
 			new TileClassPainter(clLake)

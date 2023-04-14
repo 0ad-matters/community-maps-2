@@ -345,25 +345,26 @@ function playerPlacementMultiArcs(playerIDs, radius, mapAngle, teamGapFrac)
 	const teamPlayersIntMap = {};
 
 	// Shuffle team order.
-	const teamShuffle = function(length) {
+	const teamShuffle = function(length)
+	{
 		let i = 0;
-		const array = Array.from(Array(length), () => i++);
-		for(let i = array.length - 1; i > 0; i--)
+		const array = Array.from(new Array(length), () => i++);
+		for (i = array.length - 1; i > 0; i--)
 		{
-		  	const j = Math.round(Math.random() * (array.length - 1));
-		  	const temp = array[i];
-		  	array[i] = array[j];
-		  	array[j] = temp;
+			const j = Math.round(Math.random() * (array.length - 1));
+			const temp = array[i];
+			array[i] = array[j];
+			array[j] = temp;
 		}
 		return array;
 	}(nTeams);
 
 	// Team to array (random) index map.
-	Array.from(uniqueTeams).map((val, i) => {teamIntMap[val] = teamShuffle[i];});
+	Array.from(uniqueTeams).map((val, i) => { teamIntMap[val] = teamShuffle[i]; });
 	// Player frequency in teams.
-	playerTeams.map((v) => teamFreqPlayers[v] ? teamFreqPlayers[v] += 1 : teamFreqPlayers[v] = 1);
+	playerTeams.forEach((v) => teamFreqPlayers[v] ? (teamFreqPlayers[v] += 1) : (teamFreqPlayers[v] = 1));
 	// Team player int map. This is useful when positioning players on a team.
-	Array.from(uniqueTeams).map((val) => {teamPlayersIntMap[val] = 0;});
+	Array.from(uniqueTeams).map(val => { teamPlayersIntMap[val] = 0; });
 
 	// I don't know at this point. Trust my brain. It's smarter than my brain.
 	// Something-something add the previous team player combos.
@@ -374,12 +375,9 @@ function playerPlacementMultiArcs(playerIDs, radius, mapAngle, teamGapFrac)
 		{
 			for (const key2 in teamPlayersIntMap)
 			{
-				if (teamPlayersIntMap.hasOwnProperty(key))
+				if (teamPlayersIntMap.hasOwnProperty(key) && teamIntMap[key2] > teamIntMap[key])
 				{
-					if (teamIntMap[key2] > teamIntMap[key])
-					{
-						teamPlayersIntMap[key2] += teamFreqPlayers[key] - 1;
-					}
+					teamPlayersIntMap[key2] += teamFreqPlayers[key] - 1;
 				}
 			}
 		}

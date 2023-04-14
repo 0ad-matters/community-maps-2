@@ -86,24 +86,24 @@ ConvexPolygonPlacer.prototype.pruning = function(points)
 	let C = points[0].clone();
 	let D = points[0].clone();
 
-	points.forEach(function(p)
+	for (const p of points)
 	{
 		if (A.x - A.y <= p.x - p.y) A = p;
 		if (B.x + B.y <= p.x + p.y) B = p;
 		if (C.x - C.y >= p.x - p.y) C = p;
 		if (D.x + D.y >= p.x + p.y) D = p;
-	});
+	}
 
 	const x1 = Math.max(C.x, D.x);
 	const x2 = Math.max(A.x, B.x);
 	const y1 = Math.max(A.y, D.y);
 	const y2 = Math.max(B.y, C.y);
 
-	points.forEach(function(p)
+	for (const p of points)
 	{
 		if (!(p.x > x1 && p.x < x2 && p.y > y1 && p.y < y2))
 			plist.push(p);
-	});
+	}
 
 	return plist;
 };
@@ -127,7 +127,7 @@ ConvexPolygonPlacer.prototype.getConvexHull = function(points)
 
 	for (var i = 0; i < sortedPoints.length; i++)
 	{
-		while (lower.length >= 2 && this.cross(lower[lower.length - 2], lower[lower.length - 1], sortedPoints[i]) <= 0)
+		while (lower.length >= 2 && this.cross(lower.at(-2), lower.at(-1), sortedPoints[i]) <= 0)
 		{
 			lower.pop();
 		}
@@ -136,7 +136,7 @@ ConvexPolygonPlacer.prototype.getConvexHull = function(points)
 
 	for (var i = sortedPoints.length - 1; i >= 0; i--)
 	{
-		while (upper.length >= 2 && this.cross(upper[upper.length - 2], upper[upper.length - 1], sortedPoints[i]) <= 0)
+		while (upper.length >= 2 && this.cross(upper.at(-2), upper.at(-1), sortedPoints[i]) <= 0)
 		{
 			upper.pop();
 		}

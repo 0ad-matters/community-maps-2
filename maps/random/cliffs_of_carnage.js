@@ -326,11 +326,11 @@ function placePlayersNomad_cm2(playerClass, constraints)
 	const distance = scaleByMapSize(60, 240);
 	const constraint = new StaticConstraint(constraints);
 
-	const numPlayers = getNumPlayers();
+	const numberPlayers = getNumPlayers();
 	const playerIDs = shuffleArray(sortAllPlayers());
 	const playerPosition = [];
 
-	for (let i = 0; i < numPlayers; ++i)
+	for (let i = 0; i < numberPlayers; ++i)
 	{
 		const objects = getStartingEntities(playerIDs[i]).filter(ents => ents.Template.startsWith("units/")).map(
 			ents => new SimpleObject(ents.Template, ents.Count || 1, ents.Count || 1, 1, 4));
@@ -377,7 +377,7 @@ setWaterHeight(heightWaterLevel + SEA_LEVEL);
 setWaterColor(0.089, 0.157, 0.212);
 setWaterTint(0.089, 0.157, 0.212);
 setWaterWaviness(randIntInclusive(2, 8));
-setWaterMurkiness(0.90);
+setWaterMurkiness(0.9);
 setWaterType("lake");
 
 g_Map.ExportMap();

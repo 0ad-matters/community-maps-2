@@ -223,7 +223,7 @@ var playerIDs = sortAllPlayers();
 var playerPosition = playerPlacementArcs(
 	playerIDs,
 	mapCenter,
-	fractionToTiles(0.30),
+	fractionToTiles(0.3),
 	startAngle - 0.75 * Math.PI,
 	0.2 * Math.PI,
 	0.9 * Math.PI);
@@ -273,7 +273,7 @@ for (const position of playerPosition)
 		]);
 
 	const angle = position.angleTo(mapCenter) - Math.PI * 0.5;
-	const distanceFromCC = playerHillRadius * 0.80;
+	const distanceFromCC = playerHillRadius * 0.8;
 	const distanceFromEdge = playerHillRadius / 8;
 	createPassage({
 		"start": Vector2D.add(position, new Vector2D(playerHillRadius + distanceFromEdge, 0).rotate(angle)),
@@ -453,7 +453,7 @@ if (!bArctic)
 
 placePlayersNomad(clPlayer, avoidClasses(clWater, 5, clForest, 1, clMetal, 4, clRock, 4, clHill, 4, clFood, 2));
 
-setWaterTint(0.120, 0.125, 0.221);
+setWaterTint(0.12, 0.125, 0.221);
 
 if (!bArctic)
 {

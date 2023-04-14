@@ -2,6 +2,7 @@ Engine.LoadLibrary("rmgen");
 Engine.LoadLibrary("rmgen-common");
 
 TILE_CENTERED_HEIGHT_MAP = true;
+const enabled = true;
 
 // testMap
 //	0	playing  not Testing
@@ -56,8 +57,8 @@ var saveDistanceLoop = 2;
 // 0.0	no trees, landscape is barren
 // 1.0	normal, troops normally don't get stuck
 // 5.0	insane dense
-var densityForestMin = 1.0;
-var densityForestMax = 2.0;
+var densityForestMin = 1;
+var densityForestMax = 2;
 // distance between forest-centers (in fields)
 var margin_trees1 = 30;
 // size_trees1 = diameter of a forest
@@ -205,7 +206,7 @@ mapLayout[5] = emptyMap0;
 mapLayout[6] = emptyMap0;
 mapLayout[7] = emptyMap0;
 
-if (true)
+if (enabled)
 {
 	mapLayout[0] = emptyMap0;
 	mapAssign[128] = [0, 0, 2, 2, 2, 2, 2, 1, 1];
@@ -303,11 +304,11 @@ setSunElevation(0.5 * Math.PI);
 // if two hills have the same owner and are on the same level, there will be no cliff
 // so these hills will merge, this should enable complex valleys
 
-if (true)
+if (enabled)
 {
 	// taiga
-	densityForestMin = 1.0;
-	densityForestMax = 2.0;
+	densityForestMin = 1;
+	densityForestMax = 2;
 	// the transition between the textures for low and medium altitude
 	// is gradual with random favoring one list above the other with rising altitude
 	texture_default = ["polar_tundra", "polar_tundra", "polar_tundra", "alpine_grass_d", "alpine_grass_d_wild", "alpine_grass_e", "alpine_dirt"];
@@ -360,10 +361,10 @@ if (true)
 	setSunElevation(0.2 * Math.PI);
 	setSunColor(0.6, 0.6, 0.6);
 	setSkySet("overcast");
-	setFogColor(0.90, 0.85, 1.00);
+	setFogColor(0.9, 0.85, 1);
 	// setFogFactor(0.2);
-	setFogThickness(0.0);
-	setFogFactor(0.0);
+	setFogThickness(0);
+	setFogFactor(0);
 	// setPPEffect("DOF");
 }
 
@@ -459,7 +460,7 @@ function renderCell(self, pass)
 	var texture, textureOverwrite;
 	var element;
 	var slopeMake = true;
-	if (typeof pass == 'undefined') pass = 0;
+	if (pass === undefined) pass = 0;
 	var ramp_color = color_6;
 
 	var dx = self.x - 0.5 * dd, dy = self.y - 0.5 * dd;
@@ -477,7 +478,7 @@ function renderCell(self, pass)
 		if (self.base > 0.1)
 		{
 			// the surrounding of bases are flattened
-			par1 *= (1.0 - self.base);
+			par1 *= (1 - self.base);
 		}
 	}
 
@@ -510,15 +511,15 @@ function renderCell(self, pass)
 		}
 	}
 
-	if (typeof self.texture != "undefined" && testColoring == 0)
+	if (self.texture !== undefined && testColoring == 0)
 	{
 		texture = self.texture;
 	}
 
-	if (pass == 0 && typeof self.d != "undefined")
+	if (pass == 0 && self.d !== undefined)
 	{
 		// calculate the cliffs and slopes
-		self.d.sort(function(a, b){return a.d - b.d;});
+		self.d.sort(function(a, b) { return a.d - b.d; });
 		var hPlateau = 0;
 		var h = 0;
 		if (self.d.length > 0)
@@ -531,23 +532,23 @@ function renderCell(self, pass)
 			var elevationLevel = 0;
 			var elevationLevelSec = -1;
 			var notFoundOwner = true;
-			for (var hic = 0; hic < hills.length; hic += 1)
+			for (const hill of hills)
 			{
 				// find the cell, that owns the field
-				if (hills[hic].owner == self.d[0].p)
+				if (hill.owner == self.d[0].p)
 				{
 					notFoundOwner = false;
-					elevationLevel = hills[hic].elevation;
-					if (typeof hills[hic].slope != "undefined")
+					elevationLevel = hill.elevation;
+					if (hill.slope !== undefined)
 					{
-						slopeMake = hills[hic].slope;
+						slopeMake = hill.slope;
 						// slopeMake = false;
 						// slopeMake = true;
 					}
 				}
-				if (self.d.length > 1 && hills[hic].owner == self.d[1].p)
+				if (self.d.length > 1 && hill.owner == self.d[1].p)
 				{
-					elevationLevelSec = hills[hic].elevation;
+					elevationLevelSec = hill.elevation;
 				}
 			}
 			//
@@ -640,28 +641,18 @@ function renderCell(self, pass)
 				if (self.d[0].d > 20) textureOverwrite = color_2;
 				if (self.d[0].d > 30) textureOverwrite = color_6;
 			}
-			if (testColoring == 5)
+
+			// distance for base and random active fields the white
+			if (testColoring == 5 && self.d[0].d < 10)
 			{
-				// distance for base and random active fields
-				// the white
-				if (self.d[0].d < 10)
+				var indexP = self.d[0].p % 1000;
+				if (indexP < 50)
 				{
-					var indexP = self.d[0].p % 1000;
-					if (indexP < 50)
-					{
-						if (slopeMake)
-						{
-							textureOverwrite = color_1;
-						}
-						else
-						{
-							textureOverwrite = color_7;
-						}
-					}
-					else
-					{
-						textureOverwrite = color_3;
-					}
+					textureOverwrite = slopeMake ? color_1 : color_7;
+				}
+				else
+				{
+					textureOverwrite = color_3;
 				}
 			}
 			if (testColoring == 3)
@@ -713,14 +704,14 @@ function renderCell(self, pass)
 					var slopeAscent = 0.25;
 					// mathematical not totally correct
 					var rampBroadFactor = Math.max(1, (rampSize - relSize - 2) / rampSize);
-					var rampFactor = Math.max(0.0, Math.min(1.0, (slopeStart * vorWidthV - slopeAscent * diff) / vorWidthV));
+					var rampFactor = Math.max(0, Math.min(1, (slopeStart * vorWidthV - slopeAscent * diff) / vorWidthV));
 					h = (cliffHeight + 0.05 * par1) * rampFactor + hPlateau * (1 - rampFactor);
 
 					if (rampSize > relSize && rampFactor > 0.1)
 					{
 						// texture value, do not change
 						var pathPar = 2;
-						self.path = Math.max(1.0, pathPar - Math.abs(pathPar - 2 * pathPar * rampFactor));
+						self.path = Math.max(1, pathPar - Math.abs(pathPar - 2 * pathPar * rampFactor));
 					}
 					ramp_color = color_7;
 					if (rampFactor > 0.1 && rampFactor < 0.9)
@@ -739,7 +730,7 @@ function renderCell(self, pass)
 
 	if (pass == 1 && testColoring == 0)
 	{
-		if (self.base > 0.6 || self.mine > 0.0)
+		if (self.base > 0.6 || self.mine > 0)
 		{
 			self.allowElements = false;
 		}
@@ -757,30 +748,27 @@ function renderCell(self, pass)
 			}
 		}
 	}
-	if (self.forest1 > 0.0 && testColoring == 0)
+	if (self.forest1 > 0 && testColoring == 0)
 	{
 		// small depression with shrubs
 		if (pass == 0)
 		{
 			self.height += height_depression * Math.sqrt(self.forest1);
 		}
-		if (pass == 1)
+		if (pass == 1 && self.path < 0.5 && self.base < 0.6)
 		{
-			if (self.path < 0.5 && self.base < 0.6)
+			if (Math.random() < self.forest1)
 			{
-				if (Math.random() < self.forest1)
-				{
-					texture = pickRandom(texture_depression_outer);
-				}
-				if (0.8 * Math.random() < self.forest1)
-				{
-					texture = pickRandom(texture_depression_inner);
-					element = pickRandom(objects_depression_inner);
-				}
+				texture = pickRandom(texture_depression_outer);
+			}
+			if (0.8 * Math.random() < self.forest1)
+			{
+				texture = pickRandom(texture_depression_inner);
+				element = pickRandom(objects_depression_inner);
 			}
 		}
 	}
-	if (self.forest2 > 0.0 && testColoring == 0)
+	if (self.forest2 > 0 && testColoring == 0)
 	{
 		// small elevations with trees
 		if (pass == 0)
@@ -791,7 +779,7 @@ function renderCell(self, pass)
 		{
 			var density = self.forestD;
 			density = densityForestMin - 1 + 2 * (densityForestMax - densityForestMin) * density;
-			if (2.0 * Math.random() < self.forest2 + 5.0 * density && self.path < 0.5 && self.base < 0.6)
+			if (2 * Math.random() < self.forest2 + 5 * density && self.path < 0.5 && self.base < 0.6)
 			{
 				// the bushy outside
 				var textureT = pickRandom(texture_trees1_outer);
@@ -799,7 +787,7 @@ function renderCell(self, pass)
 				if (textureT.length > 1) texture = textureT;
 			}
 
-			if (5.0 * Math.random() < self.forest2 + density && self.path < 0.5 && self.base < 0.6)
+			if (5 * Math.random() < self.forest2 + density && self.path < 0.5 && self.base < 0.6)
 			{
 				texture = pickRandom(texture_trees1_inner);
 				element = pickRandom(objects_trees1_inner);
@@ -810,12 +798,9 @@ function renderCell(self, pass)
 			}
 		}
 	}
-	if (self.mine > 0.0 && testColoring == 0)
+	if (self.mine > 0 && testColoring == 0 && Math.random() < self.mine + 0.2)
 	{
-		if (Math.random() < self.mine + 0.2)
-		{
-			texture = pickRandom(texture_mine);
-		}
+		texture = pickRandom(texture_mine);
 	}
 
 	if (pass == 1 && testColoring == 0)
@@ -828,7 +813,7 @@ function renderCell(self, pass)
 			{
 				element = null;
 			}
-			if (self.path > 0.8 && self.slope > 2.0)
+			if (self.path > 0.8 && self.slope > 2)
 			{
 				texturePath = pickRandom(texture_path);
 				if (timberline > 0)
@@ -844,11 +829,11 @@ function renderCell(self, pass)
 		// texture for slope
 		if (self.slope > 0.1 && self.path < 0.5)
 		{
-			if (self.slope > 1.0)
+			if (self.slope > 1)
 			{
 				self.allowElements = false;
 			}
-			if (self.slope > 2.0)
+			if (self.slope > 2)
 			{
 				element = null;
 			}
@@ -860,7 +845,7 @@ function renderCell(self, pass)
 				// slope is going down
 				// texture = "red";
 			}
-			if (self.slope > 3.0)
+			if (self.slope > 3)
 			{
 				// very close to the ridge
 				texture = pickRandom(texture_cliff1_outer);
@@ -881,11 +866,11 @@ function renderCell(self, pass)
 			}
 		}
 	}
-	if (typeof textureOverwrite != "undefined")
+	if (textureOverwrite !== undefined)
 	{
 		self.texture = textureOverwrite;
 	}
-	if (typeof self.texture != "undefined")
+	if (self.texture !== undefined)
 	{
 		texture = self.texture;
 	}
@@ -898,11 +883,11 @@ function renderCell(self, pass)
 	{
 		// g_Map.log("height 2:" + self.hill1 + " " + height);
 
-		if (typeof texture != "undefined")
+		if (texture !== undefined)
 		{
 			g_Map.setTexture({ "x": self.x, "y": self.y }, texture);
 		}
-		if (self.allowElements && (typeof element != "undefined") && element != null)
+		if (self.allowElements && (element !== undefined) && element != undefined)
 		{
 			g_Map.placeEntityAnywhere(element, 0, { "x": self.x, "y": self.y }, randomAngle());
 			self.allowElements = false;
@@ -928,7 +913,7 @@ function Cell(paramx, paramy, paramheight)
 	this.forest1 = 0;
 	this.forest2 = 0;
 	// density
-	this.forestD = 0.0;
+	this.forestD = 0;
 	// this.forest3 = 0;
 	// this.flatland1 = 0;
 	// this.flatland2 = 0;
@@ -953,10 +938,10 @@ function AreaMap(mapTypePar, fieldSizePar)
 	var index = 50;
 	var mapType = mapTypePar;
 	var playerIndex = 0;
-	var numPlayers = getNumPlayers();
+	var numberPlayers = getNumPlayers();
 	var mapSize = g_Map.getSize();
 	var field = {};
-	if (typeof fieldSizePar != 'undefined')
+	if (fieldSizePar !== undefined)
 	{
 		fieldSize = fieldSizePar;
 	}
@@ -965,14 +950,14 @@ function AreaMap(mapTypePar, fieldSizePar)
 
 	var maxh = Math.floor(0.8 * mapSize / fieldSize);
 	var maxw = 40;
-	var maxr = Math.PI / numPlayers;
+	var maxr = Math.PI / numberPlayers;
 
 	// create Field
-	for (var maxhi = 0; maxhi < 2 * maxh; maxhi += 1)
+	for (let maxhi = 0; maxhi < 2 * maxh; maxhi += 1)
 	{
-		for (var maxwi = -maxw; maxwi < maxw + 1; maxwi += 1)
+		for (let maxwi = -maxw; maxwi < maxw + 1; maxwi += 1)
 		{
-			var w = 0, x = 0, y = 0;
+			let w = 0, x = 0, y = 0;
 			var legal = true;
 			var mapTypeM = Math.floor(mapType / 10);
 			var mapTypeR = mapType % 10;
@@ -1018,7 +1003,7 @@ function AreaMap(mapTypePar, fieldSizePar)
 			if (legal && d <= mapSizeDist2)
 			{
 				// var w = Math.abs(Math.atan2(x, y));
-				var w = Math.abs(Math.atan2(x, y));
+				w = Math.abs(Math.atan2(x, y));
 				var wTest = Math.sin(maxr - w) * d;
 				if (0.275 * fieldSize < wTest)
 				{
@@ -1038,7 +1023,7 @@ function AreaMap(mapTypePar, fieldSizePar)
 					//	height	after random [0,1]
 					//	[heightFixed]	optional
 					//	slope	...
-					field[maxhi][maxwi] = { 'id': index, 'x': x, 'y': y, 'rx': x, 'ry': y, 'type': '', 'active': false, 'slope': true, 'ra': defaultRandom, 'height': 1 };
+					field[maxhi][maxwi] = { "id": index, "x": x, "y": y, "rx": x, "ry": y, "type": "", "active": false, "slope": true, "ra": defaultRandom, "height": 1 };
 					index += 1;
 					// g_Map.log("setField:" + maxhi + "," + maxwi + "<=" + (wTest / fieldSize));
 				}
@@ -1046,67 +1031,73 @@ function AreaMap(mapTypePar, fieldSizePar)
 		}
 	}
 
-	self.rotate = function(x, y) {
+	self.rotate = function(x, y)
+	{
 		var wOffset = -0.25 * Math.PI;
-		var w = 2 * Math.PI * (playerIndex - 1) / numPlayers + wOffset;
+		var w = 2 * Math.PI * (playerIndex - 1) / numberPlayers + wOffset;
 		var xTrans = 0.5 * mapSize + x * Math.cos(w) - y * Math.sin(w);
 		var yTrans = 0.5 * mapSize + x * Math.sin(w) + y * Math.cos(w);
-		return { 'x': xTrans, 'y': yTrans };
+		return { "x": xTrans, "y": yTrans };
 	};
 
-	this.setPlayer = function(p) {
+	this.setPlayer = function(p)
+	{
 		playerIndex = p;
 		return this;
 	};
 
-	this.getAreaSizeH = function() {
+	this.getAreaSizeH = function()
+	{
 		// height
 		return Object.keys(field).length;
 	};
 
-	this.getAreaBoundariesAt = function(h) {
+	this.getAreaBoundariesAt = function(h)
+	{
 		var l = self.getAreaSizeH();
 		if (l <= Math.abs(h)) return [];
 		if (h < 0) h = l + h;
-		var k1 = Object.keys(field).sort(function(a, b){return parseInt(a, 10) - parseInt(b, 10);});
-		var k2 = Object.keys(field[k1[h]]).sort(function(a, b){return parseInt(a, 10) - parseInt(b, 10);});
-		var result = [parseInt(k2[0], 10), parseInt(k2[k2.length - 1], 10)];
+		var k1 = Object.keys(field).sort(function(a, b) { return Number.parseInt(a, 10) - Number.parseInt(b, 10); });
+		var k2 = Object.keys(field[k1[h]]).sort(function(a, b) { return Number.parseInt(a, 10) - Number.parseInt(b, 10); });
+		var result = [Number.parseInt(k2[0], 10), Number.parseInt(k2.at(-1), 10)];
 		// g_Map.log("boundaries: " + String(h) + JSON.stringify(result) + '\t' + JSON.stringify(k2));
 		return result;
 	};
 
-	this.print = function() {
+	this.print = function()
+	{
 		// print the dimensions to the console
-		var miniMap = Array();
+		var miniMap = new Array();
 		var fieldMin = 0, fieldMax = 0;
-		var k1 = Object.keys(field).map(x => parseInt(x, 10)).sort(function(a, b){return parseInt(a, 10) - parseInt(b, 10);});
-		for (var i = 0; i < k1.length; i += 1)
+		var k1 = Object.keys(field).map(x => Number.parseInt(x, 10)).sort(function(a, b) { return Number.parseInt(a, 10) - Number.parseInt(b, 10); });
+		for (const [i, element] of k1.entries())
 		{
-			var k2 = Object.keys(field[k1[i]]).map(x => parseInt(x, 10)).sort(function(a, b){return parseInt(a, 10) - parseInt(b, 10);});
+			var k2 = Object.keys(field[element]).map(x => Number.parseInt(x, 10)).sort(function(a, b) { return Number.parseInt(a, 10) - Number.parseInt(b, 10); });
 			fieldMin = Math.min(fieldMin, k2[0]);
-			fieldMax = Math.max(fieldMax, k2[k2.length - 1]);
-			g_Map.log("log:\t" + String(i) + ":\t" + String(k2[0]) + "\t" + String(k2[k2.length - 1]));
+			fieldMax = Math.max(fieldMax, k2.at(-1));
+			g_Map.log("log:\t" + String(i) + ":\t" + String(k2[0]) + "\t" + String(k2.at(-1)));
 		}
 		g_Map.log("logMap:\t" + String(k1.length) + ":\t" + String(fieldMin) + "\t" + String(fieldMax));
 	};
 
-	this.setMap = function(mapData) {
+	this.setMap = function(mapData)
+	{
 		// mapData = ['', '', '', ...]
-		g_Map.log('mapData:' + JSON.stringify(mapData));
+		g_Map.log("mapData:" + JSON.stringify(mapData));
 		var areaDimY = self.getAreaSizeH();
-		for (var iy = 0; iy < areaDimY; iy += 1)
+		for (let iy = 0; iy < areaDimY; iy += 1)
 		{
 			var iyh = iy;
 			var areaBoundaries = self.getAreaBoundariesAt(iy);
 			if (areaBoundaries.length > 1)
 			{
-				for (var ix = areaBoundaries[0]; ix < areaBoundaries[1] + 1; ix += 1)
+				for (let ix = areaBoundaries[0]; ix < areaBoundaries[1] + 1; ix += 1)
 				{
 					var resultType = "§1";
-					if (typeof field[iy] != 'undefined')
+					if (field[iy] !== undefined)
 					{
 						resultType = "§2";
-						if (typeof field[iy][ix] != 'undefined')
+						if (field[iy][ix] !== undefined)
 						{
 							resultType = "§3";
 							var testMarker = true;
@@ -1136,7 +1127,7 @@ function AreaMap(mapTypePar, fieldSizePar)
 							}
 							if (testMarker)
 							{
-								field[iy][ix].type = '';
+								field[iy][ix].type = "";
 							}
 						}
 					}
@@ -1146,101 +1137,114 @@ function AreaMap(mapTypePar, fieldSizePar)
 		}
 	};
 
-	this.activeAll = function() {
+	this.activeAll = function()
+	{
 		var him = Object.keys(field);
-		for (var hi = 0; hi < him.length; hi += 1)
+		for (const element of him)
 		{
-			var wim = Object.keys(field[him[hi]]);
-			for (var wi = 0; wi < wim.length; wi += 1)
+			var wim = Object.keys(field[element]);
+			for (const element_ of wim)
 			{
-				var f = field[him[hi]][wim[wi]];
+				var f = field[element][element_];
 				f.active = true;
-			}}};
+			}
+		}
+	};
 
-	this.getElement = function(x, y) {
+	this.getElement = function(x, y)
+	{
 		// more precisely: get field (change that name)
 		var result = null;
-		try {
-			if (typeof field[y] != 'undefined' && typeof field[y][x] != 'undefined')
+		try
+		{
+			if (field[y] !== undefined && field[y][x] !== undefined)
 			{
 				result = field[y][x];
 			}
 		}
-		catch (e) {
+		catch {
+			g_Map.log("Exception creating the map ");
 		}
-		if (result == null)
+		if (result == undefined)
 		{
 			// g_Map.log("\ngetElement == null:" + y + "," + x + "\n");
 		}
 		return result;
 	};
 
-	this.getElementPosition = function(x, y, yOffs, xOffs) {
-		if (typeof xOffs == 'undefined') xOffs = 0;
-		if (typeof yOffs == 'undefined') yOffs = 0;
+	this.getElementPosition = function(x, y, yOffs, xOffs)
+	{
+		if (xOffs === undefined) xOffs = 0;
+		if (yOffs === undefined) yOffs = 0;
 		var f = self.getElement(x, y);
-		if (f == 0 || f == null) return null;
+		if (f == 0 || f == undefined) return null;
 		return self.rotate(f.rx + xOffs, f.ry + yOffs);
 	};
 
-	this.setElementHome = function(x, y, entity, yOffs, xOffs) {
+	this.setElementHome = function(x, y, entity, yOffs, xOffs)
+	{
 		// align the angle of the element to a multiple of 90 degrees
 		var p = self.getElementPosition(x, y, yOffs, xOffs);
-		if (p == null) return self;
+		if (p == undefined) return self;
 		if (testMap != 6)
 		{
-			var angle = 0.5 * Math.PI * Math.floor(4 * (playerIndex - 1) / numPlayers) - 0.75 * Math.PI;
+			var angle = 0.5 * Math.PI * Math.floor(4 * (playerIndex - 1) / numberPlayers) - 0.75 * Math.PI;
 			g_Map.placeEntityAnywhere(entity, playerIndex, { "x": p.x, "y": p.y }, angle);
 		}
 		return p;
 	};
 
-	this.setElement = function(x, y, entity, yOffs, xOffs) {
+	this.setElement = function(x, y, entity, yOffs, xOffs)
+	{
 		// set an element for the player
 		// RandomAngle
 		var p = self.getElementPosition(x, y, yOffs, xOffs);
-		if (p != null && testMap != 6) g_Map.placeEntityAnywhere(entity, playerIndex, { "x": p.x, "y": p.y }, randomAngle());
+		if (p != undefined && testMap != 6) g_Map.placeEntityAnywhere(entity, playerIndex, { "x": p.x, "y": p.y }, randomAngle());
 		return p;
 	};
 
-	this.setElementGaia = function(x, y, entity, yOffs, xOffs) {
+	this.setElementGaia = function(x, y, entity, yOffs, xOffs)
+	{
 		// set an Element for Gaia (Player 0)
 		// RandomAgle and no Player
 		var p = self.getElementPosition(x, y, yOffs, xOffs);
 		// g_Map.log("setGaia: " + JSON.stringify([x,y,p]));
-		if (p != null && testMap != 6) g_Map.placeEntityAnywhere(entity, 0, { "x": p.x, "y": p.y }, randomAngle());
+		if (p != undefined && testMap != 6) g_Map.placeEntityAnywhere(entity, 0, { "x": p.x, "y": p.y }, randomAngle());
 		return p;
 	};
 
-	this.setHeight = function(x, y, height) {
+	this.setHeight = function(x, y, height)
+	{
 		// terrain has two heights
 		// 	0	normal
 		//	1	elevated
 		// if the height is not explicitly set, it is random
 		var f = self.getElement(x, y);
 		// g_Map.log("setHeight: " + JSON.stringify([height,x,y,f]));
-		if (f != null) f.heightFixed = height;
+		if (f != undefined) f.heightFixed = height;
 		return self;
 	};
 
-	this.setId = function(x, y, _id) {
+	this.setId = function(x, y, _id)
+	{
 		var f = self.getElement(x, y);
-		if (f != null) f.id = _id;
+		if (f != undefined) f.id = _id;
 		return self;
 	};
 
-	this.getTopo = function() {
+	this.getTopo = function()
+	{
 		// makes a List with all Hills
 		// {'x': float, 'y': float, 'owner': [1xxx..8xxx], 'elevation': [0..1], 'slope': true/false}
 		// Math.floor(Math.random() * 2)
 		var result = [];
 		var him = Object.keys(field);
-		for (var hi = 0; hi < him.length; hi += 1)
+		for (const element of him)
 		{
-			var wim = Object.keys(field[him[hi]]);
-			for (var wi = 0; wi < wim.length; wi += 1)
+			var wim = Object.keys(field[element]);
+			for (const element_ of wim)
 			{
-				var f = field[him[hi]][wim[wi]];
+				var f = field[element][element_];
 				if (f.active)
 				{
 					var t = self.rotate(f.rx, f.ry);
@@ -1249,27 +1253,28 @@ function AreaMap(mapTypePar, fieldSizePar)
 					{
 						globalIndex += 1000 * playerIndex;
 					}
-					result.push({ 'x': t.x, 'y': t.y, 'owner': globalIndex, 'elevation': f.height, 'slope': f.slope });
+					result.push({ "x": t.x, "y": t.y, "owner": globalIndex, "elevation": f.height, "slope": f.slope });
 				}
 			}
 		}
 		return result;
 	};
 
-	this.placeObjects = function() {
+	this.placeObjects = function()
+	{
 		// place all the data, including random hills
 		var _id = 50;
 		var _idBase = 20;
 		var stringDisplay = {};
 		var areaDimY = self.getAreaSizeH();
-		for (var iy = 0; iy < areaDimY; iy += 1)
+		for (let iy = 0; iy < areaDimY; iy += 1)
 		{
 			var stringDisplayRow = "";
 			var iyh = areaDimY - iy;
 			var areaBoundaries = self.getAreaBoundariesAt(iy);
 			if (areaBoundaries.length > 1)
 			{
-				for (var ix = areaBoundaries[0]; ix < areaBoundaries[1] + 1; ix += 1)
+				for (let ix = areaBoundaries[0]; ix < areaBoundaries[1] + 1; ix += 1)
 				{
 					var stringDisplayElem = "@";
 					var testMarker = true;
@@ -1280,7 +1285,7 @@ function AreaMap(mapTypePar, fieldSizePar)
 					//	2	mapped Element active
 					var isMappedElement = 0;
 					_id += 1;
-					if (fa != null)
+					if (fa != undefined)
 					{
 
 						stringDisplayElem = ".";
@@ -1289,23 +1294,23 @@ function AreaMap(mapTypePar, fieldSizePar)
 						fa.ra = 2.2;
 						if (fa.type.length > 0)
 						{
-							if ('!?'.includes(fa.type))
+							if ("!?".includes(fa.type))
 							{
 								_idBase += 1;
 							}
-							if ('fguwxyFGW.!?'.includes(fa.type))
+							if ("fguwxyFGW.!?".includes(fa.type))
 							{
 								fa.ra = 0;
 							}
-							if ('XY'.includes(fa.type))
+							if ("XY".includes(fa.type))
 							{
 								fa.ra = 0.6;
 							}
-							if ('o'.includes(fa.type))
+							if ("o".includes(fa.type))
 							{
-								fa.ra = 1.0;
+								fa.ra = 1;
 							}
-							if ('O'.includes(fa.type))
+							if ("O".includes(fa.type))
 							{
 								fa.ra = defaultRandom;
 							}
@@ -1322,13 +1327,13 @@ function AreaMap(mapTypePar, fieldSizePar)
 						{
 							randHeight = 0;
 						}
-						if (typeof fa.heightFixed != 'undefined') randHeight = fa.heightFixed;
+						if (fa.heightFixed !== undefined) randHeight = fa.heightFixed;
 						fa.rx = fa.x + randD * Math.cos(randW);
 						fa.ry = fa.y + randD * Math.sin(randW);
 						fa.height = randHeight;
 						if (fa.type.length > 0)
 						{
-							if (!' @'.includes(fa.type))
+							if (!" @".includes(fa.type))
 							{
 								// default for all mapped Element
 								// space/at takes the default structure
@@ -1338,7 +1343,7 @@ function AreaMap(mapTypePar, fieldSizePar)
 							}
 							// g_Map.log("field: " + ix + ', ' + iy + ' ' + JSON.stringify(fa));
 							// g_Map.log("field: " + ix + ', ' + iy + ' ' + fa.type);
-							if ('.'.includes(fa.type))
+							if (".".includes(fa.type))
 							{
 								// deactivate field
 								field[iy][ix].id = _id;
@@ -1346,7 +1351,7 @@ function AreaMap(mapTypePar, fieldSizePar)
 								// self.setElement(ix,iy,"other/obelisk",  0, 0);
 								// self.setElementGaia(ix,iy,"other/obelisk", 0, 0);
 							}
-							if ('!?'.includes(fa.type))
+							if ("!?".includes(fa.type))
 							{
 								// field claimed by base
 								// is not actually the base, but terrain, that is part of the base
@@ -1355,13 +1360,13 @@ function AreaMap(mapTypePar, fieldSizePar)
 								field[iy][ix].active = true;
 								field[iy][ix].height = 0;
 								field[iy][ix].slope = true;
-								if ('?'.includes(fa.type))
+								if ("?".includes(fa.type))
 								{
 									field[iy][ix].slope = false;
 								}
 								isMappedElement = 2;
 							}
-							if ('wW'.includes(fa.type))
+							if ("wW".includes(fa.type))
 							{
 								// civilCentre
 								var base = self.setElementHome(ix, iy, civilCentre);
@@ -1376,7 +1381,7 @@ function AreaMap(mapTypePar, fieldSizePar)
 								self.setElement(ix, iy, infantry_melee, -6, 6);
 								field[iy][ix].id = _id;
 								field[iy][ix].active = false;
-								if ('W'.includes(fa.type))
+								if ("W".includes(fa.type))
 								{
 									self.setElementGaia(ix, iy, food1, 9, -2);
 									self.setElementGaia(ix, iy, food1, 9, -3);
@@ -1389,7 +1394,7 @@ function AreaMap(mapTypePar, fieldSizePar)
 									setPoint(ms2.y, ms2.x, 5, setMine);
 									setPoint(ms2.y, ms2.x, 120, setForestD);
 								}
-								if ('-'.includes(fa.type))
+								if ("-".includes(fa.type))
 								{
 									// additional mines
 									var ms1 = self.setElementGaia(ix, iy, mine_stone, -2, -18);
@@ -1399,14 +1404,14 @@ function AreaMap(mapTypePar, fieldSizePar)
 								}
 								isMappedElement = 1;
 							}
-							if ('fF'.includes(fa.type))
+							if ("fF".includes(fa.type))
 							{
 								// food
 								self.setElementGaia(ix, iy, food1, 1, 0);
 								self.setElementGaia(ix, iy, food1, -1, 0);
 								self.setElementGaia(ix, iy, food1, 0, 1);
 								self.setElementGaia(ix, iy, food1, 0, -1);
-								if ('F'.includes(fa.type))
+								if ("F".includes(fa.type))
 								{
 									self.setElementGaia(ix, iy, food1, 2, 0);
 									self.setElementGaia(ix, iy, food1, -2, 0);
@@ -1414,12 +1419,12 @@ function AreaMap(mapTypePar, fieldSizePar)
 									self.setElementGaia(ix, iy, food1, -1, -1);
 								}
 							}
-							if ('gG'.includes(fa.type))
+							if ("gG".includes(fa.type))
 							{
 								// predator
 								self.setElementGaia(ix, iy, predator1, 1, 0);
 								self.setElementGaia(ix, iy, predator1, -1, 0);
-								if ('G'.includes(fa.type))
+								if ("G".includes(fa.type))
 								{
 									self.setElementGaia(ix, iy, predator1, 0, -1);
 									self.setElementGaia(ix, iy, predator1, 0, 1);
@@ -1429,7 +1434,7 @@ function AreaMap(mapTypePar, fieldSizePar)
 									self.setElementGaia(ix, iy, predator1, -1, 1);
 								}
 							}
-							if ('-'.includes(fa.type))
+							if ("-".includes(fa.type))
 							{
 								// base - mine Metall
 								var ms1 = self.setElementGaia(ix, iy, mine_metal);
@@ -1438,7 +1443,7 @@ function AreaMap(mapTypePar, fieldSizePar)
 								field[iy][ix].id = _idBase;
 								field[iy][ix].active = false;
 							}
-							if ('-'.includes(fa.type))
+							if ("-".includes(fa.type))
 							{
 								// base - mine Stone
 								var ms1 = self.setElementGaia(ix, iy, mine_stone);
@@ -1447,7 +1452,7 @@ function AreaMap(mapTypePar, fieldSizePar)
 								field[iy][ix].id = _idBase;
 								field[iy][ix].active = false;
 							}
-							if ('u'.includes(fa.type))
+							if ("u".includes(fa.type))
 							{
 								// base - mine Stone
 								var ms1 = self.setElementGaia(ix, iy, mine_stone, 0, -3);
@@ -1459,13 +1464,13 @@ function AreaMap(mapTypePar, fieldSizePar)
 								field[iy][ix].active = false;
 								isMappedElement = 2;
 							}
-							if ('xXyYoO'.includes(fa.type))
+							if ("xXyYoO".includes(fa.type))
 							{
 								// hills
 								// g_Map.log("field: " + ix + ', ' + iy + ' ' + fa.type);
 								field[iy][ix].id = _id;
 								field[iy][ix].active = true;
-								if ('yYoO'.includes(fa.type))
+								if ("yYoO".includes(fa.type))
 								{
 									var pf = self.getElementPosition(ix, iy);
 									setPoint(pf.y, pf.x, 120, setForestD);
@@ -1538,13 +1543,13 @@ function AreaMap(mapTypePar, fieldSizePar)
 			var ResultString1 = "";
 			var ResultString2 = "";
 			var maxLength = 0;
-			for (var mapKeysI = 0; mapKeysI < mapKeys.length; mapKeysI += 1)
+			for (const mapKey of mapKeys)
 			{
-				maxLength = Math.max(maxLength, stringDisplay[mapKeys[mapKeysI]].length);
+				maxLength = Math.max(maxLength, stringDisplay[mapKey].length);
 			}
-			for (var mapKeysI = 0; mapKeysI < mapKeys.length; mapKeysI += 1)
+			for (const mapKey of mapKeys)
 			{
-				var sD = stringDisplay[mapKeys[mapKeysI]];
+				var sD = stringDisplay[mapKey];
 				ResultString2 += "\"" + sD + "\",";
 				while (sD.length < maxLength) sD = " " + sD + " ";
 				ResultString1 += "\"" + sD + "\",\n";
@@ -1559,17 +1564,18 @@ function AreaMap(mapTypePar, fieldSizePar)
 function Brush()
 {
 	var val = [];
-	for (var y = 0; y < 80; y++)
+	for (let y = 0; y < 80; y++)
 	{
-		for (var x = 0; x < 80; x++)
+		for (let x = 0; x < 80; x++)
 		{
 			var r = Math.sqrt(x * x + y * y);
 			val.push({ "r": r, "x": x, "y": y });
 		}
 	}
-	val.sort(function(a, b){return a.r - b.r;});
+	val.sort(function(a, b) { return a.r - b.r; });
 
-	this.get = function(maxV) {
+	this.get = function(maxV)
+	{
 		// get a list of all fields to a certain distance
 		// the result is a cone, with value 1.0 at the center, and value 0.0 at the edge
 		var result = [];
@@ -1578,10 +1584,7 @@ function Brush()
 		{
 			if (val[i].r < maxV)
 			{
-				result.push({ "x": val[i].x, "y": val[i].y, "v": 1 - val[i].r / maxV, "d": val[i].r });
-				result.push({ "x": -val[i].x, "y": val[i].y, "v": 1 - val[i].r / maxV, "d": val[i].r });
-				result.push({ "x": val[i].x, "y": -val[i].y, "v": 1 - val[i].r / maxV, "d": val[i].r });
-				result.push({ "x": -val[i].x, "y": -val[i].y, "v": 1 - val[i].r / maxV, "d": val[i].r });
+				result.push({ "x": val[i].x, "y": val[i].y, "v": 1 - val[i].r / maxV, "d": val[i].r }, { "x": -val[i].x, "y": val[i].y, "v": 1 - val[i].r / maxV, "d": val[i].r }, { "x": val[i].x, "y": -val[i].y, "v": 1 - val[i].r / maxV, "d": val[i].r }, { "x": -val[i].x, "y": -val[i].y, "v": 1 - val[i].r / maxV, "d": val[i].r });
 				i++;
 			}
 			else i = val.length;
@@ -1597,14 +1600,15 @@ function Distance(fromCenterPar, distanceMinPar, distanceMaxPar)
 	// distanceMaxPar	fromCenterPar=True	minimumDistance from the edge
 	// var di = Distance(True, 20, 10)
 	// var di1 = di.get(20)
-	if (typeof fromCenterPar == "undefined") fromCenterPar = True;
-	if (typeof distanceMinPar == "undefined") distanceMinPar = 0;
-	if (typeof distanceMaxPar == "undefined") distanceMaxPar = 0;
+	if (fromCenterPar === undefined) fromCenterPar = True;
+	if (distanceMinPar === undefined) distanceMinPar = 0;
+	if (distanceMaxPar === undefined) distanceMaxPar = 0;
 	var fromCenter = fromCenterPar;
 	var distanceMin = distanceMinPar;
 	var distanceMax = distanceMaxPar;
 
-	this.getDist = function(width) {
+	this.getDist = function(width)
+	{
 		var result = distanceMin;
 		var maxDist = 0.5 * dd - distanceMax;
 		if (numPlayers > 2)
@@ -1628,18 +1632,19 @@ function dBrush()
 	// brush with information distance and direction
 	var val = [];
 	var valMax = 270;
-	for (var y = -valMax; y < valMax + 1; y++)
+	for (let y = -valMax; y < valMax + 1; y++)
 	{
-		for (var x = -valMax; x < valMax + 1; x++)
+		for (let x = -valMax; x < valMax + 1; x++)
 		{
 			var r = Math.sqrt(x * x + y * y);
 			var w = Math.atan2(y, x);
 			val.push({ "w": w, "r": r, "x": x, "y": y });
 		}
 	}
-	val.sort(function(a, b){return a.r - b.r;});
+	val.sort(function(a, b) { return a.r - b.r; });
 
-	this.get = function(maxV) {
+	this.get = function(maxV)
+	{
 		// get a list of all fields to a certain distance
 		// the result is a cone, with value 1.0 at the center, and value 0.0 at the edge
 		var result = [];
@@ -1659,30 +1664,254 @@ function dBrush()
 	return this;
 }
 
+var dbrush = new dBrush();
+var dbrushB = dbrush.get(180);
+
+if (enabled)
+{
+	// main - program
+	var brush = new Brush();
+	var citycenterXY = [];
+	var mineXY = [];
+	var createTopo = true;
+
+	try
+	{
+		// initialize all cells
+		var map = new Array();
+		for (let i = 0; i < dd; i++)
+		{
+			var row = new Array();
+			for (let j = 0; j < dd; j++)
+			{
+				// height is a sigmoid from the distance from the center
+				// this is a multi-spiral that elevates the height a little
+				const dx = j - 0.5 * dd, dy = i - 0.5 * dd;
+				var d = Math.sqrt(dx * dx + dy * dy);
+				var de = Math.exp(5 * (0.6 - d / dd));
+				// make the height profil a spirale from the center
+				var ww = Math.atan2(dy, dx);
+				// raise the height to the edges by maximal 12 for very large maps
+				var addHeight = 12 * Math.max(0, Math.cos(numPlayers * ww + d / 20)) / (1 + de);
+				row.push(new Cell(i, j, heightLand + addHeight));
+			}
+			map.push(row);
+		}
+	}
+	catch {
+		g_Map.log("Exception creating the map ");
+	}
+	Engine.SetProgress(2);
+
+	if (testMap < 3)
+	{
+		// trees on a small hill
+		setPattern1(margin_trees1, size_trees1, setForest2, 0.8);
+	}
+
+	if (testMap < 3)
+	{
+		// depression, swamps
+		setPattern2(margin_depression, size_depression, setForest1, 0.8);
+	}
+	Engine.SetProgress(5);
+
+	if (enabled)
+	{
+		// create the topography
+		const a = new AreaMap(areaMapTyp);
+		var areaDimY = a.getAreaSizeH();
+
+		a.setMap(mapLayout[mapAssign[dd][numPlayers]]);
+
+		for (let i = 1; i < (numPlayers + 1); i++)
+		{
+			var aa = a.setPlayer(i);
+			aa.placeObjects();
+
+			var localHills = aa.getTopo();
+			hills.push(...localHills);
+		}
+
+		for (let jj = 0; jj < saveDistanceLoop; jj += 1)
+		{
+			// replace hills to ensure a save distance
+			var moveDistance = 0;
+			var replace = {};
+			for (let j1 = 0; j1 < hills.length; j1 += 1)
+			{
+				var ownerIndex = hills[j1].owner % 1000;
+				if (ownerIndex >= 50)
+				{
+					replace[j1] = { "x": 0, "y": 0 };
+					for (let j2 = 0; j2 < hills.length; j2 += 1)
+					{
+						if (j1 != j2)
+						{
+							var ownerIndex2 = hills[j2].owner % 1000;
+							const dx = hills[j1].x - hills[j2].x;
+							const dy = hills[j1].y - hills[j2].y;
+							var ddist = dx * dx + dy * dy;
+							var d = Math.sqrt(ddist);
+							// distance between Hills
+							var dfac = 2;
+							var drad = 10;
+							// distance from BaseObjects
+							if (ownerIndex2 < 50)
+							{
+								dfac = 15;
+								drad = 25;
+							}
+							if (d > 0 && d < drad)
+							{
+								replace[j1].x += dfac * dx / dd;
+								replace[j1].y += dfac * dy / dd;
+							}
+							// g_Map.log("^^^" + JSON.stringify(hills[j]));
+						}
+					}
+				}
+			}
+			for (const [j1, hill] of hills.entries())
+			{
+				if (j1 in replace)
+				{
+					// g_Map.log("^^^" + JSON.stringify(replace[j1]));
+					var rx = replace[j1].x;
+					var ry = replace[j1].y;
+					moveDistance += Math.sqrt(rx * rx + ry * ry);
+					hill.x += rx;
+					hill.y += ry;
+				}
+			}
+			// g_Map.log("safety: moveDistance" + moveDistance);
+		}
+
+		Engine.SetProgress(15);
+
+		if (([0, 1, 4, 5].includes(testMap)) && createTopo)
+		{
+			// turn the hills-data in Topographie,
+			// this takes nearly 80% of the time
+			let roC = 1;
+			if (dd > 384) roC = 2;
+			var mcTotal = roC * hills.length * dbrushB.length;
+			var mcTotali = 0, progressLastValue = 0;
+			for (let ro = 0; ro < roC; ro += 1)
+			{
+				for (let j = 0; j < dbrushB.length; j++)
+				{
+					// g_Map.log("^^^" + j + "/" + dbrushB.length);
+					for (const hill of hills)
+					{
+						// g_Map.log("generating hills: " + hills[i].owner + " " + i + "/" + hills.length);
+						setHillD(ro, roC, j, hill.y, hill.x, hill.owner, hill.elevation);
+						// var mcActual = ro * hills.length + i;
+						// making hills is one of the most time-consuming tasks, so there are regular updates
+						var progressHill = Math.round((85 - 15) * mcTotali / mcTotal + 15);
+						if (progressHill > progressLastValue)
+						{
+							Engine.SetProgress(progressHill);
+							progressLastValue = progressHill;
+						}
+					}
+				}
+
+				g_Map.log("generating heights");
+				for (let i = 0; i < dd; i++)
+				{
+					for (let j = 0; j < dd; j++)
+					{
+						if (map[i][j] !== undefined)
+						{
+							// g_Map.log("rendering:" + i + " " + j);
+							renderCell(map[i][j], 0);
+							delete map[i][j].d;
+						}
+					}
+				}
+			}
+		}
+		// for (let j=0; j < hills.length; j+= 1) {
+		//	g_Map.log("^^^" + JSON.stringify(hills[j]));
+		// }
+	}
+
+	// render pass 2 (slopes)
+	Engine.SetProgress(85);
+	g_Map.log("calculating slopes");
+	for (let i = 0; i < dd; i++)
+	{
+		for (let j = 0; j < dd; j++)
+		{
+			var centerH = heightLand;
+			if (map[i][j] !== undefined)
+			{
+				centerH = getHeight(map[i][j]);
+				var diffMax = 0;
+				var diffMin = 0;
+				for (let iDiff = -2; iDiff < 3; iDiff++)
+				{
+					for (let jDiff = -2; jDiff < 3; jDiff++)
+					{
+						var diff = iDiff * iDiff + jDiff * jDiff;
+						if (diff > 0.1 && diff < 5.1)
+						{
+							// only take fields in the distanze of sqrt(5.1)
+							var ip = i + iDiff;
+							var jp = j + jDiff;
+							if (ip >= 0 && ip < dd && jp >= 0 && jp < dd && map[ip][jp] !== undefined)
+							{
+								var diffHeight = (getHeight(map[ip][jp]) - centerH) / diff;
+								diffMax = Math.max(diffMax, diffHeight);
+								diffMin = Math.min(diffMin, diffHeight);
+							}
+						}
+					}
+				}
+				setSlope(map[i][j], diffMax - diffMin, -diffMin);
+				// if (0.0 < diffMax - diffMin) g_Map.log("cliff:" + (diffMax - diffMin) + " " + diffMax + " " + diffMin);
+			}
+		}
+	}
+	Engine.SetProgress(95);
+
+	// rendering pass 3 (textures and objects)
+	g_Map.log("generating textures and objects");
+	for (let i = 0; i < dd; i++)
+	{
+		for (let j = 0; j < dd; j++)
+		{
+			if (map[i][j] !== undefined)
+			{
+				// g_Map.log("rendering:" + i + " " + j);
+				renderCell(map[i][j], 1);
+			}
+		}
+	}
+}
+
 function setPoint(x, y, brushSize, callback)
 {
 	// for one special Element (base, mines)
 	var b1 = brush.get(brushSize);
-	for (var j = 0; j < b1.length; j++)
+	for (const element of b1)
 	{
-		var xmm = Math.round(x) + b1[j].x;
-		var ymm = Math.round(y) + b1[j].y;
+		var xmm = Math.round(x) + element.x;
+		var ymm = Math.round(y) + element.y;
 		if (xmm >= 0 && xmm < dd && ymm >= 0 && ymm < dd)
 		{
-			if (typeof map[ymm][xmm] == "undefined")
+			if (map[ymm][xmm] === undefined)
 			{
 				map[ymm][xmm] = new Cell(xmm, ymm, heightLand);
 			}
-			callback(map[ymm][xmm], b1[j].v);
+			callback(map[ymm][xmm], element.v);
 		}
 	}
 	b1 = null;
 }
 
-var dbrush = new dBrush();
-var dbrushB = dbrush.get(180);
-
-function setHillD(ro, roC, index, x, y, owner, elevationLevel)
+function setHillD(ro, roC, index, x, y, ownerId, elevationLevel)
 {
 	// due to memory restriction, not all hills can be rendered at once
 	// ro and roc make a selection which hills to render
@@ -1690,57 +1919,54 @@ function setHillD(ro, roC, index, x, y, owner, elevationLevel)
 	//	elevationLevel = Math.random() < 0.5?0:1;
 	// }
 	// g_Map.log("setHillD: " + owner + ' ' + y + ', ' + x);
-	// for (var j=0; j < dbrushB.length; j++) {
+	// for (let j=0; j < dbrushB.length; j++) {
 	var xmm = Math.round(x) + dbrushB[index].x;
 	var ymm = Math.round(y) + dbrushB[index].y;
-	if (xmm >= 0 && xmm < dd && ymm >= 0 && ymm < dd)
+	if (xmm >= 0 && xmm < dd && ymm >= 0 && ymm < dd && (xmm + ymm) % roC == ro)
 	{
-		if ((xmm + ymm) % roC == ro)
+		if (map[ymm][xmm].d === undefined)
 		{
-			if (typeof map[ymm][xmm].d == "undefined")
-			{
-				// map[ymm][xmm].d = new Cell(xmm,ymm,heightLand);
-				// g_Map.log("new Cell");
-				// return
-				map[ymm][xmm].d = new Array();
-			}
-			// callback(map[ymm][xmm],b1[j]['v']);
-			// difference: vorWidth + 1
-			// everything that is smaller is a potential slope
-
-			// var wdiff = Math.abs(self.d[0].w - self.d[1].w);
-			// if (wdiff > Math.PI) wdiff = Math.abs(2 * Math.PI - wdiff);
-			// var relSize = Math.cos(0.5 * wdiff) * self.d[0].d;
-			// everything for relSize < 2 is potential path
-
-			var addElement = false;
-
-			if (map[ymm][xmm].d.length == 0)
-			{
-				addElement = true;
-			}
-			else
-			{
-				var deltaD = Math.abs(dbrushB[index].d - map[ymm][xmm].d[0].d);
-				var deltaW = Math.abs(dbrushB[index].w - map[ymm][xmm].d[0].w);
-				if (deltaW > Math.PI) deltaW = Math.abs(2 * Math.PI - deltaW);
-				var relSize = Math.cos(0.5 * deltaW) * map[ymm][xmm].d[0].d;
-				if (deltaD < vorWidth + 3) addElement = true;
-				if (relSize < rampSize && deltaD < vorWidth + 50) addElement = true;
-			}
-			if (addElement)
-			{
-				map[ymm][xmm].d.push({ "d": dbrushB[index].d, "w": dbrushB[index].w, "p": owner });
-				if (map[ymm][xmm].d.length > 2)
-				{
-					map[ymm][xmm].d.sort(function(a, b){return a.d - b.d;});
-					map[ymm][xmm].d.pop();
-					// g_Map.log("pop:" + cP);
-				}
-			}
-
-			// g_Map.log("map[ymm][xmm]:" + map[ymm][xmm]["d"].join(', '));
+			// map[ymm][xmm].d = new Cell(xmm,ymm,heightLand);
+			// g_Map.log("new Cell");
+			// return
+			map[ymm][xmm].d = new Array();
 		}
+		// callback(map[ymm][xmm],b1[j]['v']);
+		// difference: vorWidth + 1
+		// everything that is smaller is a potential slope
+
+		// var wdiff = Math.abs(self.d[0].w - self.d[1].w);
+		// if (wdiff > Math.PI) wdiff = Math.abs(2 * Math.PI - wdiff);
+		// var relSize = Math.cos(0.5 * wdiff) * self.d[0].d;
+		// everything for relSize < 2 is potential path
+
+		var addElement = false;
+
+		if (map[ymm][xmm].d.length == 0)
+		{
+			addElement = true;
+		}
+		else
+		{
+			var deltaD = Math.abs(dbrushB[index].d - map[ymm][xmm].d[0].d);
+			var deltaW = Math.abs(dbrushB[index].w - map[ymm][xmm].d[0].w);
+			if (deltaW > Math.PI) deltaW = Math.abs(2 * Math.PI - deltaW);
+			var relSize = Math.cos(0.5 * deltaW) * map[ymm][xmm].d[0].d;
+			if (deltaD < vorWidth + 3) addElement = true;
+			if (relSize < rampSize && deltaD < vorWidth + 50) addElement = true;
+		}
+		if (addElement)
+		{
+			map[ymm][xmm].d.push({ "d": dbrushB[index].d, "w": dbrushB[index].w, "p": ownerId });
+			if (map[ymm][xmm].d.length > 2)
+			{
+				map[ymm][xmm].d.sort(function(a, b) { return a.d - b.d; });
+				map[ymm][xmm].d.pop();
+				// g_Map.log("pop:" + cP);
+			}
+		}
+
+		// g_Map.log("map[ymm][xmm]:" + map[ymm][xmm]["d"].join(', '));
 	}
 	// }
 }
@@ -1757,58 +1983,64 @@ function setHillD(ro, roC, index, x, y, owner, elevationLevel)
 function setPattern1(patternr, brushSize, callback, randMax)
 {
 	// hexagons patterns
-	if (typeof randMax == "undefined") randMax = 0.0;
+	if (randMax === undefined) randMax = 0;
 	var b1 = brush.get(brushSize);
-	for (var y = -60; y < 61; y++)
+	for (let y = -60; y < 61; y++)
 	{
-		for (var x = -50; x < 51; x++)
+		for (let x = -50; x < 51; x++)
 		{
 			var randx = randMax * (Math.random() - 0.5);
 			var randy = randMax * (Math.random() - 0.5);
 			var xm = Math.round(0.5 * dd + patternr * (randx + x + 0.5 * (y % 2)));
 			var ym = Math.round(0.5 * dd + patternr * 0.8660255 * (randy + y));
-			for (var j = 0; j < b1.length; j++)
+			for (const element of b1)
 			{
-				var xmm = xm + b1[j].x;
-				var ymm = ym + b1[j].y;
+				var xmm = xm + element.x;
+				var ymm = ym + element.y;
 				if (xmm >= 0 && xmm < dd && ymm >= 0 && ymm < dd)
 				{
-					if (typeof map[ymm][xmm] == "undefined") map[ymm][xmm] = new Cell(xmm, ymm, heightLand);
-					callback(map[ymm][xmm], b1[j].v);
-				}}}}
+					if (map[ymm][xmm] === undefined) map[ymm][xmm] = new Cell(xmm, ymm, heightLand);
+					callback(map[ymm][xmm], element.v);
+				}
+			}
+		}
+	}
 	b1 = null;
 }
 
 function setPattern2(patternr, brushSize, callback, randMax)
 {
 	// circlur patterns
-	if (typeof randMax == "undefined") randMax = 0.0;
+	if (randMax === undefined) randMax = 0;
 	var b1 = brush.get(brushSize);
-	for (var r = 1; r < 100; r++)
+	for (let r = 1; r < 100; r++)
 	{
 		var wm = 2 * Math.PI / (6 * r);
-		for (var w = 0; w < 6 * r; w++)
+		for (let w = 0; w < 6 * r; w++)
 		{
 			var randx = randMax * (Math.random() - 0.5);
 			var randy = randMax * (Math.random() - 0.5);
 			var xm = Math.round(0.5 * dd + patternr * (r * Math.sin(w * wm) + randx));
 			var ym = Math.round(0.5 * dd + patternr * (r * Math.cos(w * wm) + randy));
-			for (var j = 0; j < b1.length; j++)
+			for (const element of b1)
 			{
-				var xmm = xm + b1[j].x;
-				var ymm = ym + b1[j].y;
+				var xmm = xm + element.x;
+				var ymm = ym + element.y;
 				if (xmm >= 0 && xmm < dd && ymm >= 0 && ymm < dd)
 				{
-					if (typeof map[ymm][xmm] == "undefined") map[ymm][xmm] = new Cell(xmm, ymm, heightLand);
-					callback(map[ymm][xmm], b1[j].v);
-				}}}}
+					if (map[ymm][xmm] === undefined) map[ymm][xmm] = new Cell(xmm, ymm, heightLand);
+					callback(map[ymm][xmm], element.v);
+				}
+			}
+		}
+	}
 	b1 = null;
 }
 
 // draw a line, deprecated, use fractalLine
 function line(x0, y0, x1, y1, callback, parameter)
 {
-	if (typeof parameter == "undefined")
+	if (parameter === undefined)
 	{
 		parameter = {};
 	}
@@ -1817,7 +2049,7 @@ function line(x0, y0, x1, y1, callback, parameter)
 	var randomDisplacement = parameter.randomDisplacement;
 	var b1 = brush.get(brushSize);
 	// result are the points of the line
-	var result = Array();
+	var result = new Array();
 	result.push({ "x": Math.round(x0), "y": Math.round(y0) });
 	var dx = x1 - x0, dy = y1 - y0;
 	var d0 = Math.sqrt(dx * dx + dy * dy);
@@ -1856,20 +2088,20 @@ function line(x0, y0, x1, y1, callback, parameter)
 		}
 	}
 	// g_Map.log("line:" + result);
-	for (var i = 0; i < result.length; i++)
+	for (const i of result)
 	{
-		for (var j = 0; j < b1.length; j++)
+		for (const j of b1)
 		{
-			var xmm = result[i].x + b1[j].x;
-			var ymm = result[i].y + b1[j].y;
+			var xmm = i.x + j.x;
+			var ymm = i.y + j.y;
 			if (xmm >= 0 && ymm >= 0 && xmm < dd && ymm < dd)
 			{
-				if (typeof map[ymm][xmm] == "undefined")
+				if (map[ymm][xmm] === undefined)
 				{
 					map[ymm][xmm] = new Cell(xmm, ymm, heightLand);
 				}
 				// g_Map.log("set:" + ymm + " " + xmm + " " + b1[j]['v']);
-				callback(map[ymm][xmm], b1[j].v);
+				callback(map[ymm][xmm], j.v);
 			}
 		}
 	}
@@ -1889,7 +2121,7 @@ function line(x0, y0, x1, y1, callback, parameter)
 function fractalLine(x0, y0, x1, y1, parameter)
 {
 	var result = [];
-	parameter = parameter || { "targetDist": 10, "randomDisplacement": 0.0, "addStart": true };
+	parameter = parameter || { "targetDist": 10, "randomDisplacement": 0, "addStart": true };
 	// g_Map.log("fLine:" + x0 + ", " + y0 + ", " + x1 + ", " + y1 + " - " + JSON.stringify(parameter));
 	if (parameter.addStart)
 	{
@@ -1911,230 +2143,6 @@ function fractalLine(x0, y0, x1, y1, parameter)
 	result = result.concat(fractalLine(mx, my, x1, y1, parameterSub));
 	// g_Map.log("fLineR:" + JSON.stringify(result));
 	return result;
-}
-
-if (true)
-{
-	// main - program
-	var brush = new Brush();
-	var citycenterXY = [];
-	var mineXY = [];
-	var createTopo = true;
-
-	try {
-		// initialize all cells
-		var map = Array();
-		for (var i = 0; i < dd; i++)
-		{
-			var row = Array();
-			for (var j = 0; j < dd; j++)
-			{
-				// height is a sigmoid from the distance from the center
-				// this is a multi-spiral that elevates the height a little
-				var dx = j - 0.5 * dd, dy = i - 0.5 * dd;
-				var d = Math.sqrt(dx * dx + dy * dy);
-				var de = Math.exp(5 * (0.6 - d / dd));
-				// make the height profil a spirale from the center
-				var ww = Math.atan2(dy, dx);
-				// raise the height to the edges by maximal 12 for very large maps
-				var addHeight = 12 * Math.max(0, Math.cos(numPlayers * ww + d / 20)) / (1 + de);
-				row.push(new Cell(i, j, heightLand + addHeight));
-			}
-			map.push(row);
-		}
-	}
-	catch (e) {
-		g_Map.log("Exception creating the map ");
-	}
-	Engine.SetProgress(2);
-
-	if (testMap < 3)
-	{
-		// trees on a small hill
-		setPattern1(margin_trees1, size_trees1, setForest2, 0.8);
-	}
-
-	if (testMap < 3)
-	{
-		// depression, swamps
-		setPattern2(margin_depression, size_depression, setForest1, 0.8);
-	}
-	Engine.SetProgress(5);
-
-	if (true)
-	{
-		// create the topography
-		var a = new AreaMap(areaMapTyp);
-		var areaDimY = a.getAreaSizeH();
-
-		a.setMap(mapLayout[mapAssign[dd][numPlayers]]);
-
-		for (var i = 1; i < (numPlayers + 1); i++)
-		{
-			var aa = a.setPlayer(i);
-			aa.placeObjects();
-
-			var localHills = aa.getTopo();
-			hills.push(...localHills);
-		}
-
-		for (var jj = 0; jj < saveDistanceLoop; jj += 1)
-		{
-			// replace hills to ensure a save distance
-			var moveDistance = 0;
-			var replace = {};
-			for (var j1 = 0; j1 < hills.length; j1 += 1)
-			{
-				var ownerIndex = hills[j1].owner % 1000;
-				if (ownerIndex >= 50)
-				{
-					replace[j1] = { 'x': 0, 'y': 0 };
-					for (var j2 = 0; j2 < hills.length; j2 += 1)
-					{
-						if (j1 != j2)
-						{
-							var ownerIndex2 = hills[j2].owner % 1000;
-							var dx = hills[j1].x - hills[j2].x;
-							var dy = hills[j1].y - hills[j2].y;
-							var ddist = dx * dx + dy * dy;
-							var d = Math.sqrt(ddist);
-							// distance between Hills
-							var dfac = 2.0;
-							var drad = 10;
-							// distance from BaseObjects
-							if (ownerIndex2 < 50)
-							{
-								dfac = 15.0;
-								drad = 25;
-							}
-							if (d > 0 && d < drad)
-							{
-								replace[j1].x += dfac * dx / dd;
-								replace[j1].y += dfac * dy / dd;
-							}
-							// g_Map.log("^^^" + JSON.stringify(hills[j]));
-						}
-					}
-				}
-			}
-			for (var j1 = 0; j1 < hills.length; j1 += 1)
-			{
-				if (j1 in replace)
-				{
-					// g_Map.log("^^^" + JSON.stringify(replace[j1]));
-					var rx = replace[j1].x;
-					var ry = replace[j1].y;
-					moveDistance += Math.sqrt(rx * rx + ry * ry);
-					hills[j1].x += rx;
-					hills[j1].y += ry;
-
-				}
-			}
-			// g_Map.log("safety: moveDistance" + moveDistance);
-		}
-
-		Engine.SetProgress(15);
-
-		if (([0, 1, 4, 5].includes(testMap)) && createTopo)
-		{
-			// turn the hills-data in Topographie,
-			// this takes nearly 80% of the time
-			var roC = 1;
-			if (dd > 384) roC = 2;
-			var mcTotal = roC * hills.length * dbrushB.length;
-			var mcTotali = 0, progressLastValue = 0;
-			for (var ro = 0; ro < roC; ro += 1)
-			{
-				for (var j = 0; j < dbrushB.length; j++)
-				{
-					// g_Map.log("^^^" + j + "/" + dbrushB.length);
-					for (var i = 0; i < hills.length; i += 1)
-					{
-						// g_Map.log("generating hills: " + hills[i].owner + " " + i + "/" + hills.length);
-						setHillD(ro, roC, j, hills[i].y, hills[i].x, hills[i].owner, hills[i].elevation);
-						// var mcActual = ro * hills.length + i;
-						// making hills is one of the most time-consuming tasks, so there are regular updates
-						var progressHill = Math.round((85 - 15) * mcTotali / mcTotal + 15);
-						if (progressHill > progressLastValue)
-						{
-							Engine.SetProgress(progressHill);
-							progressLastValue = progressHill;
-						}
-					}
-				}
-
-				g_Map.log("generating heights");
-				for (var i = 0; i < dd; i++)
-				{
-					for (var j = 0; j < dd; j++)
-					{
-						if (typeof map[i][j] != "undefined")
-						{
-							// g_Map.log("rendering:" + i + " " + j);
-							renderCell(map[i][j], 0);
-							delete map[i][j].d;
-						}
-					}
-				}
-			}
-		}
-		// for (var j=0; j < hills.length; j+= 1) {
-		//	g_Map.log("^^^" + JSON.stringify(hills[j]));
-		// }
-	}
-
-	// render pass 2 (slopes)
-	Engine.SetProgress(85);
-	g_Map.log("calculating slopes");
-	for (var i = 0; i < dd; i++)
-	{
-		for (var j = 0; j < dd; j++)
-		{
-			var centerH = heightLand;
-			if (typeof map[i][j] != "undefined")
-			{
-				centerH = getHeight(map[i][j]);
-				var diffMax = 0;
-				var diffMin = 0;
-				for (var iDiff = -2; iDiff < 3; iDiff++)
-				{
-					for (var jDiff = -2; jDiff < 3; jDiff++)
-					{
-						var diff = iDiff * iDiff + jDiff * jDiff;
-						if (diff > 0.1 && diff < 5.1)
-						{
-							// only take fields in the distanze of sqrt(5.1)
-							var ip = i + iDiff;
-							var jp = j + jDiff;
-							if (ip >= 0 && ip < dd && jp >= 0 && jp < dd && typeof map[ip][jp] != "undefined")
-							{
-								var diffHeight = (getHeight(map[ip][jp]) - centerH) / diff;
-								diffMax = Math.max(diffMax, diffHeight);
-								diffMin = Math.min(diffMin, diffHeight);
-							}
-						}
-					}
-				}
-				setSlope(map[i][j], diffMax - diffMin, -diffMin);
-				// if (0.0 < diffMax - diffMin) g_Map.log("cliff:" + (diffMax - diffMin) + " " + diffMax + " " + diffMin);
-			}
-		}
-	}
-	Engine.SetProgress(95);
-
-	// rendering pass 3 (textures and objects)
-	g_Map.log("generating textures and objects");
-	for (var i = 0; i < dd; i++)
-	{
-		for (var j = 0; j < dd; j++)
-		{
-			if (typeof map[i][j] != "undefined")
-			{
-				// g_Map.log("rendering:" + i + " " + j);
-				renderCell(map[i][j], 1);
-			}
-		}
-	}
 }
 
 g_Map.log("maxVoronoiDistance:" + maxVoronoiDistance);

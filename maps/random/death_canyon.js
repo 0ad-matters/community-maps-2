@@ -122,7 +122,7 @@ if (!isNomad())
 	const playerPosition = playerPlacementArcs(
 		playerIDs,
 		mapCenter,
-		fractionToTiles(0.40),
+		fractionToTiles(0.4),
 		startAngle - 0.15 * Math.PI,
 		0.2 * Math.PI,
 		0.9 * Math.PI);

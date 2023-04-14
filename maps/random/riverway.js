@@ -75,17 +75,17 @@ function linearInterpolation(min, max, t)
 
 function bezier_quadratic(p0, p1, p2, t)
 {
-	const t1 = 1.0 - t;
+	const t1 = 1 - t;
 	return p0 * t1 * t1 + p1 * 2 * t1 * t + p2 * t * t;
 }
 
 function valueRanges(t, values, ranges)
 {
-	for (let i = 0; i < ranges.length; i++)
+	for (const [i, range] of ranges.entries())
 	{
-		if(t < ranges[i]) return values[i];
+		if (t < range) return values[i];
 	}
-	return values[values.length - 1];
+	return values.at(-1);
 }
 
 var ritualParticipants = [
@@ -128,8 +128,7 @@ var ritualParticipants = [
 
 function addGaiaRitual(center, radius)
 {
-
-	new createArea(
+	createArea(
 		new DiskPlacer(10, center), [
 			new TerrainPainter(oTreasure),
 			new TileClassPainter(clForest)
@@ -263,7 +262,7 @@ Engine.SetProgress(20);
 g_Map.log("Making passage");
 const riverDis = new Vector2D(river.width / 2, 0).mult(0.6);
 const passageArea = new createArea(
-	new PathPlacer(new Vector2D(0, mapSize / 2), new Vector2D(mapSize, mapSize / 2), 7, 0.4, 1.0, 0.1, 0, Infinity), [
+	new PathPlacer(new Vector2D(0, mapSize / 2), new Vector2D(mapSize, mapSize / 2), 7, 0.4, 1, 0.1, 0, Infinity), [
 		new SmoothElevationPainter(ELEVATION_SET, 0, 1),
 		new TerrainPainter(tRoadWild),
 		new TileClassPainter(g_TileClasses.forest)
@@ -291,7 +290,7 @@ Engine.SetProgress(40);
 g_Map.log("Making bluffs");
 const riverTrees = {};
 riverTrees.width = 40 * scaleByMapSize(1, 3);
-riverTrees.density = (t, h) => linearInterpolation(bezier_quadratic(0.0, 1.3, 0.05, (1 - t) * (1 - t) * (1 - t)), 0, h / 15) * 0.6;
+riverTrees.density = (t, h) => linearInterpolation(bezier_quadratic(0, 1.3, 0.05, (1 - t) * (1 - t) * (1 - t)), 0, h / 15) * 0.6;
 riverTrees.placerLeft = new RectPlacer(new Vector2D(mapSize / 2, mapSize).add(riverDis), new Vector2D(mapSize / 2, 0).add(riverDis).add(new Vector2D(riverTrees.width, 0)));
 riverTrees.placerRight = new RectPlacer(new Vector2D(mapSize / 2, mapSize).sub(riverDis), new Vector2D(mapSize / 2, 0).sub(riverDis).sub(new Vector2D(riverTrees.width, 0)));
 riverTrees.painters = [

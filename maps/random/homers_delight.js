@@ -21,8 +21,8 @@ const tHill = g_Terrains.hill;
 const tRoad = g_Terrains.road;
 const tRoadWild = g_Terrains.roadWild;
 const tTier4Terrain = g_Terrains.tier4Terrain;
-const tShore = !bArctic ? g_Terrains.shore : "alpine_snow_01";
-const tWater = !bArctic ? g_Terrains.water : "alpine_ice_01";
+const tShore = bArctic ? "alpine_snow_01" : g_Terrains.shore;
+const tWater = bArctic ? "alpine_ice_01" : g_Terrains.water;
 
 const oTree1 = g_Gaia.tree1;
 const oTree2 = g_Gaia.tree2;
@@ -187,8 +187,7 @@ placePlayerBases({
 		"outerTerrain": tRoadWild,
 		"innerTerrain": tRoad
 	},
-	"StartingAnimal": {
-	},
+	"StartingAnimal": {},
 	"Berries": {
 		"template": oFruitBush
 	},

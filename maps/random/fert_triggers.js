@@ -1,4 +1,4 @@
-var disabledTemplates = (civ) => [
+var disabledTemplates = civ => [
 	"structures/" + civ + "/wonder",
 	"structures/" + civ + "/wallset_stone",
 	"structures/" + civ + "/wallset_palisade",

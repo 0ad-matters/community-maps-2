@@ -3,6 +3,8 @@ Engine.LoadLibrary("rmgen-common");
 
 TILE_CENTERED_HEIGHT_MAP = true;
 
+const enabled = true;
+
 // if (g_MapSettings.Biome)
 //	setSelectedBiome();
 // else
@@ -52,7 +54,7 @@ setSunElevation(0.5 * Math.PI);
 // setPPSaturation(0.51);
 // setPPBloom(0.12);
 
-if (false)
+if (!enabled)
 {
 	texture_default = ["savanna_grass_a", "savanna_grass_b", "savanna_shrubs_a", "savanna_shrubs_b"];
 	texture_base_inner = ["savanna_tile_a"];
@@ -73,7 +75,7 @@ if (false)
 	flora_berry = "gaia/flora_bush_berry_desert";
 }
 
-if (false)
+if (!enabled)
 {
 	// savanna 2
 	texture_default = ["clay_01", "clay_02", "dirt_broken_rocks", "savanna_mud_a"];
@@ -94,7 +96,7 @@ if (false)
 	flora_berry = "gaia/flora_bush_berry_desert";
 }
 
-if (true)
+if (enabled)
 {
 	// sibiria
 	texture_default = ["polar_snow_a", "polar_snow_b"];
@@ -116,9 +118,9 @@ if (true)
 	setSunElevation(0.07 * Math.PI);
 	// setSunColor(0.4, 0.4, 0.4);
 	setSkySet("overcast");
-	setFogColor(0.90, 0.85, 1.00);
+	setFogColor(0.9, 0.85, 1);
 	setFogFactor(0.2);
-	setFogThickness(0.00);
+	setFogThickness(0);
 	// setPPEffect("DOF");
 }
 
@@ -194,7 +196,7 @@ function renderCell(self)
 	var allowElements = true;
 	var element;
 	var height = 0;
-	if (self.base > 0.4 || self.mine > 0.0)
+	if (self.base > 0.4 || self.mine > 0)
 	{
 		allowElements = false;
 	}
@@ -213,7 +215,7 @@ function renderCell(self)
 	}
 	else
 	{
-		if (self.forest1 > 0.0)
+		if (self.forest1 > 0)
 		{
 			// small depression with shrubs
 			height += height_depression * Math.sqrt(self.forest1);
@@ -227,7 +229,7 @@ function renderCell(self)
 				element = pickRandom(objects_depression_inner);
 			}
 		}
-		if (self.forest2 > 0.0)
+		if (self.forest2 > 0)
 		{
 			// small elevations with trees
 			height += height_trees1 * Math.sqrt(self.forest2);
@@ -242,7 +244,7 @@ function renderCell(self)
 				element = pickRandom(objects_trees1_inner);
 			}
 		}
-		if (self.flatland1 > 0.0)
+		if (self.flatland1 > 0)
 		{
 			if (self.flatland1 > 0)
 			{
@@ -257,13 +259,13 @@ function renderCell(self)
 				texture = "whiteness";
 			}
 		}
-		if (self.hill1 > 0.0 && self.base < 0.02 && self.mine < 0.02)
+		if (self.hill1 > 0 && self.base < 0.02 && self.mine < 0.02)
 		{
 			texture = pickRandom(texture_cliff1_inner);
 			height += 20 * self.hill1 * self.hill1;
 			element = null;
 		}
-		if (self.mine > 0.0)
+		if (self.mine > 0)
 		{
 			if (Math.random() < self.mine + 0.2)
 			{
@@ -273,11 +275,11 @@ function renderCell(self)
 		}
 	}
 	// g_Map.log("height 2:" + self.hill1 + " " + height);
-	if (typeof texture != "undefined")
+	if (texture !== undefined)
 	{
 		g_Map.setTexture({ "x": self.x, "y": self.y }, texture);
 	}
-	if (allowElements && (typeof element != "undefined") && element != null)
+	if (allowElements && (element !== undefined) && element != undefined)
 	{
 		g_Map.placeEntityAnywhere(element, 0, { "x": self.x, "y": self.y }, randomAngle());
 	}
@@ -308,27 +310,25 @@ function Cell(paramx, paramy, paramheight)
 function Brush()
 {
 	var val = [];
-	for (var y = 0; y < 40; y++)
+	for (let y = 0; y < 40; y++)
 	{
-		for (var x = 0; x < 40; x++)
+		for (let x = 0; x < 40; x++)
 		{
 			var r = Math.sqrt(x * x + y * y);
 			val.push({ "r": r, "x": x, "y": y });
 		}
 	}
-	val.sort(function(a, b){return a.r - b.r;});
+	val.sort(function(a, b) { return a.r - b.r; });
 
-	this.get = function(maxV) {
+	this.get = function(maxV)
+	{
 		var result = [];
 		var i = 0;
 		while (i < val.length)
 		{
 			if (val[i].r < maxV)
 			{
-				result.push({ "x": val[i].x, "y": val[i].y, "v": 1 - val[i].r / maxV });
-				result.push({ "x": -val[i].x, "y": val[i].y, "v": 1 - val[i].r / maxV });
-				result.push({ "x": val[i].x, "y": -val[i].y, "v": 1 - val[i].r / maxV });
-				result.push({ "x": -val[i].x, "y": -val[i].y, "v": 1 - val[i].r / maxV });
+				result.push({ "x": val[i].x, "y": val[i].y, "v": 1 - val[i].r / maxV }, { "x": -val[i].x, "y": val[i].y, "v": 1 - val[i].r / maxV }, { "x": val[i].x, "y": -val[i].y, "v": 1 - val[i].r / maxV }, { "x": -val[i].x, "y": -val[i].y, "v": 1 - val[i].r / maxV });
 				i++;
 			}
 			else i = val.length;
@@ -338,221 +338,58 @@ function Brush()
 	return this;
 }
 
-function setPoint(x, y, brushSize, callback)
-{
-	// for one special Element (base, mines)
-	var b1 = brush.get(brushSize);
-	for (var j = 0; j < b1.length; j++)
-	{
-		var xmm = Math.round(x) + b1[j].x;
-		var ymm = Math.round(y) + b1[j].y;
-		if (xmm >= 0 && xmm < dd && ymm >= 0 && ymm < dd)
-		{
-			if (typeof map[ymm][xmm] == "undefined")
-			{
-				map[ymm][xmm] = new Cell(xmm, ymm, heightLand);
-			}
-			callback(map[ymm][xmm], b1[j].v);
-		}
-	}
-}
-
-function setPattern1(patternr, brushSize, callback, randMax)
-{
-	// hexagons
-	if (typeof randMax == "undefined")
-	{
-		randMax = 0.0;
-	}
-	var b1 = brush.get(brushSize);
-	for (var y = -60; y < 61; y++)
-	{
-		for (var x = -50; x < 51; x++)
-		{
-			var randx = randMax * (Math.random() - 0.5);
-			var randy = randMax * (Math.random() - 0.5);
-			var xm = Math.round(0.5 * dd + patternr * (randx + x + 0.5 * (y % 2)));
-			var ym = Math.round(0.5 * dd + patternr * 0.8660255 * (randy + y));
-			for (var j = 0; j < b1.length; j++)
-			{
-				var xmm = xm + b1[j].x;
-				var ymm = ym + b1[j].y;
-				if (xmm >= 0 && xmm < dd && ymm >= 0 && ymm < dd)
-				{
-					if (typeof map[ymm][xmm] == "undefined")
-					{
-						map[ymm][xmm] = new Cell(xmm, ymm, heightLand);
-					}
-					callback(map[ymm][xmm], b1[j].v);
-				}
-			}
-		}
-	}
-}
-
-function setPattern2(patternr, brushSize, callback, randMax)
-{
-	// circles
-	if (typeof randMax == "undefined")
-	{
-		randMax = 0.0;
-	}
-	var b1 = brush.get(brushSize);
-	for (var r = 1; r < 100; r++)
-	{
-		var wm = 2 * Math.PI / (6 * r);
-		for (var w = 0; w < 6 * r; w++)
-		{
-			var randx = randMax * (Math.random() - 0.5);
-			var randy = randMax * (Math.random() - 0.5);
-			var xm = Math.round(0.5 * dd + patternr * (r * Math.sin(w * wm) + randx));
-			var ym = Math.round(0.5 * dd + patternr * (r * Math.cos(w * wm) + randy));
-			for (var j = 0; j < b1.length; j++)
-			{
-				var xmm = xm + b1[j].x;
-				var ymm = ym + b1[j].y;
-				if (xmm >= 0 && xmm < dd && ymm >= 0 && ymm < dd)
-				{
-					if (typeof map[ymm][xmm] == "undefined")
-					{
-						map[ymm][xmm] = new Cell(xmm, ymm, heightLand);
-					}
-					callback(map[ymm][xmm], b1[j].v);
-				}
-			}
-		}
-	}
-}
-
-// draw a line
-function line(x0, y0, x1, y1, brushSize, callback)
-{
-	var b1 = brush.get(brushSize);
-	var result = Array();
-	result.push({ "x": Math.round(x0), "y": Math.round(y0) });
-	var dx = x1 - x0, dy = y1 - y0;
-	var d0 = Math.sqrt(dx * dx + dy * dy);
-	var dx0 = dx / d0, dy0 = dy / d0;
-	var t = 0;
-	var lastdd = 10000, actualdd = 9999;
-	while (actualdd < lastdd)
-	{
-		lastdd = actualdd;
-		actualdd = Math.abs(x1 - x0) + Math.abs(y1 - y0);
-		// console.log(dd,x0,y0);
-		if (actualdd > 0)
-		{
-			if (dy == 0)
-			{
-				// horizontal line
-				x0 += (dx < 0) ? -1 : 1;
-			}
-			else
-			{
-				if (t < 0)
-				{
-					t += Math.abs(dy);
-					x0 += (dx < 0) ? -1 : 1;
-				}
-				else
-				{
-					t -= Math.abs(dx);
-					y0 += (dy < 0) ? -1 : 1;
-				}
-			}
-			var r = Math.random() * 4 - 2;
-			// g_Map.log(x0 + " " + y0 + " " + r * dy0 + " " + r * dx0);
-			result.push({ "x": Math.round(x0 - r * dy0), "y": Math.round(y0 + r * dx0) });
-		}
-	}
-	// g_Map.log("line:" + result);
-	for (var i = 0; i < result.length; i++)
-	{
-		for (var j = 0; j < b1.length; j++)
-		{
-			var xmm = result[i].x + b1[j].x;
-			var ymm = result[i].y + b1[j].y;
-			if (xmm >= 0 && ymm >= 0 && xmm < dd && ymm < dd)
-			{
-				if (typeof map[ymm][xmm] == "undefined")
-				{
-					map[ymm][xmm] = new Cell(xmm, ymm, heightLand);
-				}
-				// g_Map.log("set:" + ymm + " " + xmm + " " + b1[j]['v']);
-				callback(map[ymm][xmm], b1[j].v);
-			}
-		}
-	}
-	return result;
-}
-
-function placeBaseElement(player, angle, x, y, entity)
-{
-	var dd = g_Map.getSize();
-	var sw = Math.sin(w), cw = Math.cos(w);
-	var px = 0.5 * dd + (0.5 * dd - 40) * sw;
-	var py = 0.5 * dd + (0.5 * dd - 40) * cw;
-	var vx = px + x * sw + y * cw;
-	var vy = py + x * cw - y * sw;
-	if (entity.length > 0)
-	{
-		g_Map.placeEntityAnywhere(entity, player, { "x": vx, "y": vy }, randomAngle());
-	}
-	return { "x": vx, "y": vy };
-
-}
-
-if (true)
+if (enabled)
 {
 	var brush = new Brush();
 
 	// create the map of Objects
-	try {
-		var map = Array();
-		for (var i = 0; i < dd; i++)
+	try
+	{
+		var map = new Array();
+		for (let i = 0; i < dd; i++)
 		{
-			var row = Array();
-			for (var j = 0; j < dd; j++)
+			var row = new Array();
+			for (let j = 0; j < dd; j++)
 			{
 				row.push(undefined);
 			}
 			map.push(row);
 		}
 	}
-	catch (e) {
+	catch {
 		g_Map.log("Exception creating the map ");
 	}
 
-	if (true)
+	if (enabled)
 	{
 		setPattern1(margin_trees1, size_trees1, setForest2, 0.8);
 	}
 
-	if (true)
+	if (enabled)
 	{
 		setPattern2(30, 10, setForest1, 0.8);
 	}
 
-	if (false)
+	if (!enabled)
 	{
 		// some ridges to deter movements for multi player to the next base
 		var wStep = 2 * Math.PI / numPlayers;
-		for (var i = 0; i < numPlayers; i++)
+		for (let i = 0; i < numPlayers; i++)
 		{
-			var w = (i + 0.5) * wStep;
-			var sw0 = Math.sin(w), cw0 = Math.cos(w);
-			var sw1 = Math.sin(w), cw1 = Math.cos(w);
-			var sw2 = Math.sin(w), cw2 = Math.cos(w);
-			var px0 = 0.5 * dd + (0.5 * dd - 1) * sw0;
-			var py0 = 0.5 * dd + (0.5 * dd - 1) * cw0;
-			var px1 = 0.5 * dd + Math.max(0.2 * dd, 0.5 * dd - 30) * sw0;
-			var py1 = 0.5 * dd + Math.max(0.2 * dd, 0.5 * dd - 30) * cw0;
+			const w = (i + 0.5) * wStep;
+			const sw0 = Math.sin(w), cw0 = Math.cos(w);
+			const sw1 = Math.sin(w), cw1 = Math.cos(w);
+			const sw2 = Math.sin(w), cw2 = Math.cos(w);
+			const px0 = 0.5 * dd + (0.5 * dd - 1) * sw0;
+			const py0 = 0.5 * dd + (0.5 * dd - 1) * cw0;
+			const px1 = 0.5 * dd + Math.max(0.2 * dd, 0.5 * dd - 30) * sw0;
+			const py1 = 0.5 * dd + Math.max(0.2 * dd, 0.5 * dd - 30) * cw0;
 			// g_Map.log("line " + px0 + "," + py0 + " " + px1 + "," + py1);
 			line(px0, py0, px1, py1, 3, setHill1);
 		}
 	}
 
-	if (true)
+	if (enabled)
 	{
 		// random displacement of start and end of the ridge
 		// set this to zero to get a plain view on the math
@@ -564,8 +401,8 @@ if (true)
 			// amount of ridges, bigger values, less ridges, 100 is a good start
 			ri += 80 / ri;
 			// speed of circling, values more than 0.5 look very random
-			var ris1 = 0.2 * Math.PI * ri + 1.0 * (Math.random());
-			var ris2 = ris1 + 0.2 * (Math.random() - 0.0);
+			var ris1 = 0.2 * Math.PI * ri + 1 * (Math.random());
+			var ris2 = ris1 + 0.2 * (Math.random() - 0);
 			var ris3 = ris2 + 0.5 * (Math.random() - 0.5);
 			var rnx0 = ri * Math.sin(ris1) + 0.5 * dd;
 			var rny0 = ri * Math.cos(ris1) + 0.5 * dd;
@@ -582,25 +419,25 @@ if (true)
 	}
 
 	// set the bases
-	for (var i = 1; i < (numPlayers + 1); i++)
+	for (let i = 1; i < (numPlayers + 1); i++)
 	{
-		var w = 2 * Math.PI * i / numPlayers + 0.25 * Math.PI;
+		const w = 2 * Math.PI * i / numPlayers + 0.25 * Math.PI;
 		var w0 = 2 * Math.PI * (i + 0.5) / numPlayers + 0.25 * Math.PI;
 		var w1 = 2 * Math.PI * (i + 0.45) / numPlayers + 0.25 * Math.PI;
 		var w2 = 2 * Math.PI * (i + 0.55) / numPlayers + 0.25 * Math.PI;
-		var w3 = 2 * Math.PI * (i + 0.40) / numPlayers + 0.25 * Math.PI;
-		var w4 = 2 * Math.PI * (i + 0.60) / numPlayers + 0.25 * Math.PI;
-		var sw = Math.sin(w), cw = Math.cos(w);
+		var w3 = 2 * Math.PI * (i + 0.4) / numPlayers + 0.25 * Math.PI;
+		var w4 = 2 * Math.PI * (i + 0.6) / numPlayers + 0.25 * Math.PI;
+		const sw = Math.sin(w), cw = Math.cos(w);
 		var sw0 = Math.sin(w0), cw0 = Math.cos(w0);
 		var sw1 = Math.sin(w1), cw1 = Math.cos(w1);
 		var sw2 = Math.sin(w2), cw2 = Math.cos(w2);
 		var sw3 = Math.sin(w3), cw3 = Math.cos(w3);
 		var sw4 = Math.sin(w4), cw4 = Math.cos(w4);
-		var px = 0.5 * dd + (0.5 * dd - 40) * sw;
-		var py = 0.5 * dd + (0.5 * dd - 40) * cw;
+		const px = 0.5 * dd + (0.5 * dd - 40) * sw;
+		const py = 0.5 * dd + (0.5 * dd - 40) * cw;
 		g_Map.placeEntityAnywhere("skirmish/structures/default_civil_centre", i, { "x": px, "y": py }, -w + 1.5 * Math.PI);
 
-		if (true)
+		if (enabled)
 		{
 			setPoint(px, py, 32, setBase);
 
@@ -667,17 +504,179 @@ if (true)
 
 	// render
 	g_Map.log("start rendering");
-	for (var i = 0; i < dd; i++)
+	for (let i = 0; i < dd; i++)
 	{
-		for (var j = 0; j < dd; j++)
+		for (let j = 0; j < dd; j++)
 		{
-			if (typeof map[i][j] != "undefined")
+			if (map[i][j] !== undefined)
 			{
 				// g_Map.log("rendering:" + i + " " + j);
 				renderCell(map[i][j]);
 			}
 		}
 	}
+}
+
+function setPoint(x, y, brushSize, callback)
+{
+	// for one special Element (base, mines)
+	var b1 = brush.get(brushSize);
+	for (const element of b1)
+	{
+		var xmm = Math.round(x) + element.x;
+		var ymm = Math.round(y) + element.y;
+		if (xmm >= 0 && xmm < dd && ymm >= 0 && ymm < dd)
+		{
+			if (map[ymm][xmm] === undefined)
+			{
+				map[ymm][xmm] = new Cell(xmm, ymm, heightLand);
+			}
+			callback(map[ymm][xmm], element.v);
+		}
+	}
+}
+
+function setPattern1(patternr, brushSize, callback, randMax)
+{
+	// hexagons
+	if (randMax === undefined)
+	{
+		randMax = 0;
+	}
+	var b1 = brush.get(brushSize);
+	for (let y = -60; y < 61; y++)
+	{
+		for (let x = -50; x < 51; x++)
+		{
+			var randx = randMax * (Math.random() - 0.5);
+			var randy = randMax * (Math.random() - 0.5);
+			var xm = Math.round(0.5 * dd + patternr * (randx + x + 0.5 * (y % 2)));
+			var ym = Math.round(0.5 * dd + patternr * 0.8660255 * (randy + y));
+			for (const element of b1)
+			{
+				var xmm = xm + element.x;
+				var ymm = ym + element.y;
+				if (xmm >= 0 && xmm < dd && ymm >= 0 && ymm < dd)
+				{
+					if (map[ymm][xmm] === undefined)
+					{
+						map[ymm][xmm] = new Cell(xmm, ymm, heightLand);
+					}
+					callback(map[ymm][xmm], element.v);
+				}
+			}
+		}
+	}
+}
+
+function setPattern2(patternr, brushSize, callback, randMax)
+{
+	// circles
+	if (randMax === undefined)
+	{
+		randMax = 0;
+	}
+	var b1 = brush.get(brushSize);
+	for (let r = 1; r < 100; r++)
+	{
+		var wm = 2 * Math.PI / (6 * r);
+		for (let w = 0; w < 6 * r; w++)
+		{
+			var randx = randMax * (Math.random() - 0.5);
+			var randy = randMax * (Math.random() - 0.5);
+			var xm = Math.round(0.5 * dd + patternr * (r * Math.sin(w * wm) + randx));
+			var ym = Math.round(0.5 * dd + patternr * (r * Math.cos(w * wm) + randy));
+			for (const element of b1)
+			{
+				var xmm = xm + element.x;
+				var ymm = ym + element.y;
+				if (xmm >= 0 && xmm < dd && ymm >= 0 && ymm < dd)
+				{
+					if (map[ymm][xmm] === undefined)
+					{
+						map[ymm][xmm] = new Cell(xmm, ymm, heightLand);
+					}
+					callback(map[ymm][xmm], element.v);
+				}
+			}
+		}
+	}
+}
+
+// draw a line
+function line(x0, y0, x1, y1, brushSize, callback)
+{
+	var b1 = brush.get(brushSize);
+	var result = new Array();
+	result.push({ "x": Math.round(x0), "y": Math.round(y0) });
+	var dx = x1 - x0, dy = y1 - y0;
+	var d0 = Math.sqrt(dx * dx + dy * dy);
+	var dx0 = dx / d0, dy0 = dy / d0;
+	var t = 0;
+	var lastdd = 10000, actualdd = 9999;
+	while (actualdd < lastdd)
+	{
+		lastdd = actualdd;
+		actualdd = Math.abs(x1 - x0) + Math.abs(y1 - y0);
+		// console.log(dd,x0,y0);
+		if (actualdd > 0)
+		{
+			if (dy == 0)
+			{
+				// horizontal line
+				x0 += (dx < 0) ? -1 : 1;
+			}
+			else
+			{
+				if (t < 0)
+				{
+					t += Math.abs(dy);
+					x0 += (dx < 0) ? -1 : 1;
+				}
+				else
+				{
+					t -= Math.abs(dx);
+					y0 += (dy < 0) ? -1 : 1;
+				}
+			}
+			var r = Math.random() * 4 - 2;
+			// g_Map.log(x0 + " " + y0 + " " + r * dy0 + " " + r * dx0);
+			result.push({ "x": Math.round(x0 - r * dy0), "y": Math.round(y0 + r * dx0) });
+		}
+	}
+	// g_Map.log("line:" + result);
+	for (const element of result)
+	{
+		for (const element_ of b1)
+		{
+			var xmm = element.x + element_.x;
+			var ymm = element.y + element_.y;
+			if (xmm >= 0 && ymm >= 0 && xmm < dd && ymm < dd)
+			{
+				if (map[ymm][xmm] === undefined)
+				{
+					map[ymm][xmm] = new Cell(xmm, ymm, heightLand);
+				}
+				// g_Map.log("set:" + ymm + " " + xmm + " " + b1[j]['v']);
+				callback(map[ymm][xmm], element_.v);
+			}
+		}
+	}
+	return result;
+}
+
+function placeBaseElement(player, angle, x, y, entity)
+{
+	var sw = Math.sin(w), cw = Math.cos(w);
+	var px = 0.5 * dd + (0.5 * dd - 40) * sw;
+	var py = 0.5 * dd + (0.5 * dd - 40) * cw;
+	var vx = px + x * sw + y * cw;
+	var vy = py + x * cw - y * sw;
+	if (entity.length > 0)
+	{
+		g_Map.placeEntityAnywhere(entity, player, { "x": vx, "y": vy }, randomAngle());
+	}
+	return { "x": vx, "y": vy };
 
 }
 

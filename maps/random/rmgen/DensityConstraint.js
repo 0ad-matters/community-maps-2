@@ -23,7 +23,7 @@ function DensityConstraint(density)
 	this.density = density;
 	if (this.density.step === undefined)
 	{
-		this.density.step = (t) => t;
+		this.density.step = t => t;
 	}
 }
 

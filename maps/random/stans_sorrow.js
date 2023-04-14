@@ -34,46 +34,6 @@ const oMetalLarge = g_Gaia.metalLarge;
 const oMetalSmall = g_Gaia.metalSmall;
 const fruit = [oFruitBush, oGrapes, oApples];
 
-function createBasesRandomHeights(playerIDs, playerPosition, walls)
-{
-	for (let i = 0; i < getNumPlayers(); ++i)
-	{
-		placePlayerBase({
-			"playerID": playerIDs[i],
-			"playerPosition": playerPosition[i],
-			"PlayerTileClass": clPlayer,
-			"BaseResourceClass": clBaseResource,
-			"Walls": false,
-			"CityPatch": {
-				"outerTerrain": tRoadWild,
-				"innerTerrain": tRoad
-			},
-			"StartingAnimal": {
-				"template": randBool() ? oPig : oSheep,
-				"count": randIntInclusive(5, 20)
-			},
-			"Berries": {
-				"template": fruit[randIntInclusive(0, fruit.length - 1)], "count": randIntInclusive(1, 4)
-			},
-			"Mines": {
-				"types": [
-					{ "template": oMetalLarge },
-					{ "template": oStoneLarge }
-				]
-			},
-			"Trees": {
-				"template": oTree1,
-				"count": 5
-			},
-			"Decoratives": {
-				"template": aGrassShort
-			}
-		});
-	}
-
-	return [playerIDs, playerPosition];
-}
-
 const tMainTerrain = g_Terrains.mainTerrain;
 const tForestFloor1 = g_Terrains.forestFloor1;
 const tForestFloor2 = g_Terrains.forestFloor2;
@@ -117,6 +77,46 @@ var clMetal = g_Map.createTileClass();
 var clFood = g_Map.createTileClass();
 var clBaseResource = g_Map.createTileClass();
 
+function createBasesRandomHeights(playerIDs, playerPosition, walls)
+{
+	for (let i = 0; i < getNumPlayers(); ++i)
+	{
+		placePlayerBase({
+			"playerID": playerIDs[i],
+			"playerPosition": playerPosition[i],
+			"PlayerTileClass": clPlayer,
+			"BaseResourceClass": clBaseResource,
+			"Walls": false,
+			"CityPatch": {
+				"outerTerrain": tRoadWild,
+				"innerTerrain": tRoad
+			},
+			"StartingAnimal": {
+				"template": randBool() ? oPig : oSheep,
+				"count": randIntInclusive(5, 20)
+			},
+			"Berries": {
+				"template": fruit[randIntInclusive(0, fruit.length - 1)], "count": randIntInclusive(1, 4)
+			},
+			"Mines": {
+				"types": [
+					{ "template": oMetalLarge },
+					{ "template": oStoneLarge }
+				]
+			},
+			"Trees": {
+				"template": oTree1,
+				"count": 5
+			},
+			"Decoratives": {
+				"template": aGrassShort
+			}
+		});
+	}
+
+	return [playerIDs, playerPosition];
+}
+
 var playerPosition = [];
 if (!isNomad())
 {
@@ -153,8 +153,8 @@ for (var ix = 0; ix < mapSize; ix++)
 			clHill.add(position);
 
 			// Add hill noise
-			var x = ix / (mapSize + 1.0);
-			var z = iz / (mapSize + 1.0);
+			var x = ix / (mapSize + 1);
+			var z = iz / (mapSize + 1);
 			var n = (noise0.get(x, z) - 0.5) * heightRavineHill;
 			g_Map.setHeight(position, h + n);
 		}
@@ -283,9 +283,9 @@ for (var ix = 0; ix < mapSize; ix++)
 			// clHill.add(position);
 
 			// Add hill noise
-			var x = ix / (mapSize + 1.0);
-			var z = iz / (mapSize + 1.0);
-			var n = (noise0.get(x, z) - 0.50) * heightRavineHill;
+			var x = ix / (mapSize + 1);
+			var z = iz / (mapSize + 1);
+			var n = (noise0.get(x, z) - 0.5) * heightRavineHill;
 			g_Map.setHeight(position, h + n);
 		}
 	}

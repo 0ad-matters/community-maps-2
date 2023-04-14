@@ -71,7 +71,7 @@ createArea(
 	new MapBoundsPlacer(), [
 		new DunePainter()
 	],
-	null
+	undefined
 );
 
 Engine.SetProgress(30);
@@ -80,27 +80,27 @@ var p1a = new createArea(
 	new ClumpPlacer(diskArea(50) * scaleByMapSize(1, 2), 0.8, 0.06, Infinity, centerPos), [
 		new SmoothElevationPainter(ELEVATION_SET, 1, 16)
 	],
-	null
+	undefined
 );
 var p2a = new createArea(
 	new ClumpPlacer(diskArea(30) * scaleByMapSize(1, 2), 0.8, 0.06, Infinity, centerPos), [
 		new SmoothElevationPainter(ELEVATION_SET, 0, 16)
 	],
-	null
+	undefined
 );
 var pw1a = new createArea(
 	new ClumpPlacer(diskArea(8) * scaleByMapSize(1, 2), 0.1, 0.1, Infinity, centerPos), [
 		new SmoothElevationPainter(ELEVATION_SET, -15, 6),
 		new TileClassPainter(clWater)
 	],
-	null
+	undefined
 );
 var pw2a = new createArea(
 	new ClumpPlacer(diskArea(8) * scaleByMapSize(1, 2), 0.1, 0.3, Infinity, new Vector2D(centerPos.x, centerPos.y + getRandomDeviation(10, 5))), [
 		new SmoothElevationPainter(ELEVATION_SET, -10, 5),
 		new TileClassPainter(clWater)
 	],
-	null
+	undefined
 );
 
 var playerPlacement = playerPlacementCircle(fractionToTiles(0.35));
@@ -274,7 +274,7 @@ createObjectGroups(
 );
 
 Engine.SetProgress(98);
-setSunElevation(2 * Math.PI * 0.25 / 10.0);
+setSunElevation(2 * Math.PI * 0.25 / 10);
 setAmbientColor(0.8, 0.55, 0.55);
 setFogThickness(0.3);
 setSkySet("sunset 2");

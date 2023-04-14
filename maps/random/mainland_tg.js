@@ -9,44 +9,6 @@ Engine.LoadLibrary("rmgen-helpers");
 
 setSelectedBiome();
 
-function createBasesMainland(playerIDs, playerPosition, walls)
-{
-	for (let i = 0; i < getNumPlayers(); ++i)
-	{
-		placePlayerBase({
-			"playerID": playerIDs[i],
-			"playerPosition": playerPosition[i],
-			"PlayerTileClass": clPlayer,
-			"BaseResourceClass": clBaseResource,
-			"Walls": g_Map.getSize() > 192 && walls, // Whether or not iberian gets starting walls
-			"CityPatch": {
-				"outerTerrain": tRoadWild,
-				"innerTerrain": tRoad
-			},
-			"StartingAnimal": {
-			},
-			"Berries": {
-				"template": oFruitBush
-			},
-			"Mines": {
-				"types": [
-					{ "template": oMetalLarge },
-					{ "template": oStoneLarge }
-				]
-			},
-			"Trees": {
-				"template": oTree1,
-				"count": 5
-			},
-			"Decoratives": {
-				"template": aGrassShort
-			}
-		});
-	}
-
-	return [playerIDs, playerPosition];
-}
-
 const tMainTerrain = g_Terrains.mainTerrain;
 const tForestFloor1 = g_Terrains.forestFloor1;
 const tForestFloor2 = g_Terrains.forestFloor2;
@@ -96,6 +58,43 @@ var clRock = g_Map.createTileClass();
 var clMetal = g_Map.createTileClass();
 var clFood = g_Map.createTileClass();
 var clBaseResource = g_Map.createTileClass();
+
+function createBasesMainland(playerIDs, playerPosition, walls)
+{
+	for (let i = 0; i < getNumPlayers(); ++i)
+	{
+		placePlayerBase({
+			"playerID": playerIDs[i],
+			"playerPosition": playerPosition[i],
+			"PlayerTileClass": clPlayer,
+			"BaseResourceClass": clBaseResource,
+			"Walls": g_Map.getSize() > 192 && walls, // Whether or not iberian gets starting walls
+			"CityPatch": {
+				"outerTerrain": tRoadWild,
+				"innerTerrain": tRoad
+			},
+			"StartingAnimal": {},
+			"Berries": {
+				"template": oFruitBush
+			},
+			"Mines": {
+				"types": [
+					{ "template": oMetalLarge },
+					{ "template": oStoneLarge }
+				]
+			},
+			"Trees": {
+				"template": oTree1,
+				"count": 5
+			},
+			"Decoratives": {
+				"template": aGrassShort
+			}
+		});
+	}
+
+	return [playerIDs, playerPosition];
+}
 
 if (!isNomad())
 {

@@ -11,7 +11,7 @@
 function perlin_noise(points, frequency = 10, octaves = 1, scale = 1, vertical_scale = 1, positive = false)
 {
 	const size = points.length;
-	const heights = Array(size).fill(0);
+	const heights = new Array(size).fill(0);
 	frequency /= scale;
 	let weight = 1;
 	const frequency_multiplier = 1.333333;
@@ -22,8 +22,8 @@ function perlin_noise(points, frequency = 10, octaves = 1, scale = 1, vertical_s
 		const noise2D = new Noise2D(frequency);
 		for (let i = 0; i < size; i++)
 		{
-			const ix = (points[i].x / 256.0) % 1;
-			const iy = (points[i].y / 256.0) % 1;
+			const ix = (points[i].x / 256) % 1;
+			const iy = (points[i].y / 256) % 1;
 			// noise2D gives values between [0.15,0.85]
 			// transform to a range of [-1,1]
 			const val = (noise2D.get(ix, iy) - 0.15) / 0.7 * 2 - 1;
@@ -32,12 +32,14 @@ function perlin_noise(points, frequency = 10, octaves = 1, scale = 1, vertical_s
 		frequency *= frequency_multiplier;
 		weight *= weight_multiplier;
 	}
-	heights.forEach((v, i, a) => a[i] *= scale * vertical_scale);
+	for (const [i, v] of heights.entries())
+		heights[i] = v * scale * vertical_scale;
 
 	if (positive)
 	{
-		const hdisp = vertical_scale * scale * Array(octaves).fill().map((e, i) => Math.pow(weight_multiplier, i + 1)).reduce((a, b) => a + b);
-		heights.forEach((v, i, a) => a[i] = (v + hdisp) * 0.5);
+		const hdisp = vertical_scale * scale * new Array(octaves).fill().map((e, i) => Math.pow(weight_multiplier, i + 1)).reduce((a, b) => a + b);
+		for (const [i, v] of heights.entries())
+			heights[i] = (v + hdisp) * 0.5;
 	}
 
 	return heights;
@@ -68,7 +70,7 @@ function perlin_noise_point(frequency = 10, octaves = 1, scale = 1, vertical_sca
 		weight_i *= this.weight_multiplier;
 	}
 
-	this.hdisp = this.vertical_scale * this.scale * Array(this.octaves).fill().map((e, i) => Math.pow(this.weight_multiplier, i + 1)).reduce((a, b) => a + b);
+	this.hdisp = this.vertical_scale * this.scale * new Array(this.octaves).fill().map((e, i) => Math.pow(this.weight_multiplier, i + 1)).reduce((a, b) => a + b);
 }
 
 perlin_noise_point.prototype.get = function(point)
@@ -76,8 +78,8 @@ perlin_noise_point.prototype.get = function(point)
 	let height = 0;
 	for (let i = 0; i < this.octaves; i++)
 	{
-		const x = (point.x / 256.0) % 1;
-		const y = (point.y / 256.0) % 1;
+		const x = (point.x / 256) % 1;
+		const y = (point.y / 256) % 1;
 		// noise2D gives values between [0.15,0.85]
 		// give range  [-1,1]
 		const val = (this.noise2D[i].get(x, y) - 0.15) / 0.7 * 2 - 1;

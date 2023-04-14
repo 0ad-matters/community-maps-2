@@ -21,8 +21,8 @@ function playerPlacementMultiArcs(playerIDs, radius, mapAngle)
 
 	// Shuffle team order.
 	let i = 0;
-	const teamShuffle = Array.from(Array(nTeams), () => i++);
-	for(i = teamShuffle.length - 1; i > 0; i--)
+	const teamShuffle = Array.from(new Array(nTeams), () => i++);
+	for (i = teamShuffle.length - 1; i > 0; i--)
 	{
 		const j = Math.round(Math.random() * (teamShuffle.length - 1));
 		const temp = teamShuffle[i];
@@ -32,16 +32,17 @@ function playerPlacementMultiArcs(playerIDs, radius, mapAngle)
 
 	// Team to array (random) index map + team player int map.
 	// This is used when positioning players on a team.
-	Array.from(uniqueTeams).forEach(function(val, idx) {
+	for (const [idx, val] of Array.from(uniqueTeams).entries())
+	{
 		teamIntMap[val] = teamShuffle[idx];
 		teamPlayersIntMap[val] = 0;
-	});
+	}
 
 	// teamPlayersIntMap and teamIntMap is used to calculate how much angle to
 	// add to a player, based on what order in the circle they're placed.
 
 	// Player frequency in teams.
-	teamIDs.forEach(function(v) { teamFreqPlayers[v] = (teamFreqPlayers[v] || 0) + 1; });
+	for (const v of teamIDs) { teamFreqPlayers[v] = (teamFreqPlayers[v] || 0) + 1; }
 
 	// teamPlayersIntMap gives the number of ally gaps between players
 	// placed at an earlier point around the circle.
@@ -51,13 +52,10 @@ function playerPlacementMultiArcs(playerIDs, radius, mapAngle)
 		{
 			for (const key2 in teamPlayersIntMap)
 			{
-				if (teamPlayersIntMap.hasOwnProperty(key))
+				if (teamPlayersIntMap.hasOwnProperty(key) && teamIntMap[key2] > teamIntMap[key])
 				{
-					if (teamIntMap[key2] > teamIntMap[key])
-					{
-						// -1 because e.g. if there's 3 allies, there's only 2 gaps between them.
-						teamPlayersIntMap[key2] += teamFreqPlayers[key] - 1;
-					}
+					// -1 because e.g. if there's 3 allies, there's only 2 gaps between them.
+					teamPlayersIntMap[key2] += teamFreqPlayers[key] - 1;
 				}
 			}
 		}

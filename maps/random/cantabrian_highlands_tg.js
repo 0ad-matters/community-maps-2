@@ -111,13 +111,13 @@ for (let i = 0; i < numPlayers; ++i)
 	});
 }
 
-function createBasesCantabrianHighlands(playerIDs, playerPosition, walls)
+function createBasesCantabrianHighlands(playerIds, playerPos, walls)
 {
 	for (let i = 0; i < getNumPlayers(); ++i)
 	{
 		placePlayerBase({
-			"playerID": playerIDs[i],
-			"playerPosition": playerPosition[i],
+			"playerID": playerIds[i],
+			"playerPosition": playerPos[i],
 			"PlayerTileClass": clPlayer,
 			"BaseResourceClass": clBaseResource,
 			"Walls": false,
@@ -125,8 +125,7 @@ function createBasesCantabrianHighlands(playerIDs, playerPosition, walls)
 				"outerTerrain": tRoadWild,
 				"innerTerrain": tRoad
 			},
-			"StartingAnimal": {
-			},
+			"StartingAnimal": {},
 			"Berries": {
 				"template": oBerryBush
 			},
@@ -145,7 +144,7 @@ function createBasesCantabrianHighlands(playerIDs, playerPosition, walls)
 			}
 		});
 	}
-	return [playerIDs, playerPosition];
+	return [playerIds, playerPos];
 }
 Engine.SetProgress(10);
 
@@ -294,8 +293,8 @@ placePlayersNomad(clPlayer, avoidClasses(clWater, 4, clForest, 1, clMetal, 4, cl
 setSkySet("cirrus");
 setWaterColor(0.447, 0.412, 0.322);			// muddy brown
 setWaterTint(0.447, 0.412, 0.322);
-setWaterMurkiness(1.0);
-setWaterWaviness(3.0);
+setWaterMurkiness(1);
+setWaterWaviness(3);
 setWaterType("lake");
 
 setFogThickness(0.25);
