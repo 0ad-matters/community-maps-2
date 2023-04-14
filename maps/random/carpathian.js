@@ -7,10 +7,10 @@ TILE_CENTERED_HEIGHT_MAP = true;
 //	0	playing  not Testing
 //	1	no random, all topo low level, all elements, all textures, good for topographic structure
 //	2	no random, no topo, pyramids as cell-markers, all elements, all textures
-//	3	no random, no topos, no trees, alle elements from the map (mines, towncenters), fields outside of the map - good for resources
+//	3	no random, no topos, no trees, all elements from the map (mines, towncenters), fields outside of the map - good for resources
 //	4	no random, all topo low level, no trees, basic texture (like 1 but without trees and decorative texture)
 //	5	random, topo, no trees, all elements, basic texture, good for ramps, good for object testing, use it with testColoring = 4
-//	6	no Random, no topo, no trees, show markers for active 
+//	6	no Random, no topo, no trees, show markers for active
 var testMap = 0;
 
 // testColoring
@@ -47,7 +47,7 @@ var defaultRandom = 4;
 var saveDistanceLoop = 2;
 
 // trees are grouped in forests
-//	forests are just denser 
+//	forests are just denser
 // 	outside forest there still can be trees
 // 	forest are evenly distributed over the map with a certain random displacement
 //	there is a superstructure, that regulates the distribution of forests, outside this superstructure forest become less dense
@@ -68,11 +68,11 @@ var height_trees1 = 0;
 
 /*
  * creating the Map-Layout
- * 
+ *
  * the difference between active and not active is, that active elements assure their own cell
  * so not active elements  must be close to an assured cell, or they could end up on a cliff
  * cells of the type "base" are special - they have always altitude low, and two bordering cells are joined. Thus cells can get expanded by all other cells of the type base
- * cells of the type hill are active cells with 
+ * cells of the type hill are active cells with
 	<space>	do nothing
 	@	do nothing
 	.	passive, removes natural hills
@@ -91,7 +91,7 @@ var height_trees1 = 0;
 	Y	hill, small Random, forest
 	o	hill, medium Random, forest
 	O	hill, big Random, forest
-	
+
 	free:
 		bBcCdDeEhHiIjJkKlLmMnNpPqQrRsStTuUvVzZ
 */
@@ -301,20 +301,20 @@ setSunElevation(0.5 * Math.PI);
 
 // every hill gets an ownernumber
 // the number have to be set manually, every time a hill is created
-// if two hills have the same owner and are on the same level, there will be no cliff 
+// if two hills have the same owner and are on the same level, there will be no cliff
 // so these hills will merge, this should enable complex valleys
 
-	
+
 if (true) {
 	// taiga
 	densityForestMin = 1.0;
 	densityForestMax = 2.0;
-	// the transition between the textures for low and medium altitude 
+	// the transition between the textures for low and medium altitude
 	// is gradual with random favoring one list above the other with rising altitude
 	texture_default = ["polar_tundra", "polar_tundra", "polar_tundra", "alpine_grass_d", "alpine_grass_d_wild", "alpine_grass_e", "alpine_dirt"];
 	texture_default_medium = ["polar_tundra_snow", "polar_tundra_snow", "polar_snow_a", "polar_snow_b", "alpine_dirt_snow", "alpine_snow_a", "alpine_snow_b"];
 	// depression, elevation of forests above the ground
-	
+
 	texture_depression_inner = ["polar_ice_snow", "polar_ice_b"];
 	texture_depression_outer = ["polar_ice_snow", "polar_grass_snow"];
 	height_depression = -2;
@@ -322,32 +322,32 @@ if (true) {
 	margin_depression = 50;
 	// size_depression = diameter of the depression
 	size_depression = 10;
-	
+
 	// forests, elevation of forests above the ground
-	
+
 	texture_trees1_inner = ["alpine_forrestfloor", "aegean_dirt_rocks_01", "aegean_forestfloor_01"];
 	texture_trees1_outer = ["alpine_forrestfloor"];
 	texture_trees1_outer_high = ["alpine_forrestfloor_snow"];
 	objects_trees1_inner = ["gaia/tree/fir", "gaia/tree/fir_sapling", "gaia/tree/fir", "gaia/tree/fir_sapling", "gaia/tree/temperate"];
 	objects_trees1_inner_high = ["gaia/tree/fir_winter", "gaia/tree/fir_winter", "gaia/tree/temperate_autumn", "gaia/tree/temperate_winter"];
-	
+
 	height_trees1 = 2;
 	margin_trees1 = 20;
 	// size_trees1 = diameter of a forest
 	// higher numbers = bigger forests = more trees
 	size_trees1 = 10;
 	// cliffs
-	
+
 	texture_cliff1_inner = ["polar_cliff_a", "polar_cliff_b"];
 	texture_cliff1_inner_high = ["polar_cliff_b", "polar_cliff_snow"];
 	texture_cliff1_outer = ["polar_snow_rocks"];
 	texture_cliff1_outer_high = ["polar_snow_rocks"];
-	
+
 	// path
-	
+
 	texture_path = ["alpine_dirt", "alpine_dirt_grass_50", "alpine_dirt", "alpine_dirt_grass_50", "aegean_rocks_dirt_01", "aegean_rocks_dirt_02"];
 	texture_path_high = ["alpine_dirt_grass_50", "alpine_dirt_snow", "alpine_dirt_grass_50", "alpine_dirt_snow", "aegean_rocks_dirt_01", "aegean_rocks_dirt_02"];
-	
+
 	// texture around the base and the mines
 	texture_base_inner = ["temp_road_muddy", "tropic_citytile_a", "alpine_dirt_grass_50", "alpine_cliff_c", "alpine_grass_d"];
 	texture_base_outer = ["tropic_citytile_a", "polar_tundra", "alpine_dirt", "alpine_dirt_grass_50", "alpine_cliff_c", "alpine_grass_d_wild"];
@@ -355,7 +355,7 @@ if (true) {
 	// special objects
 	mine_stone = "gaia/rock/alpine_large";
 	mine_metal = "gaia/ore/alpine_large";
-	
+
 	food1 = "gaia/fauna_muskox";
 	predator1 = "gaia/fauna_wolf";
 	setSunElevation(0.2 * Math.PI);
@@ -450,7 +450,7 @@ function renderCell(self, pass) {
 	var slopeMake = true;
 	if (typeof pass == 'undefined') pass = 0;
 	var ramp_color=color_6;
-	
+
 	var dx = self.x - 0.5 * dd, dy = self.y - 0.5 * dd;
 	var w = Math.atan2(dy,dx);
 	var d = Math.sqrt(dx*dx + dy*dy)
@@ -467,7 +467,7 @@ function renderCell(self, pass) {
 			par1 *= (1.0 - self.base);
 		}
 	}
-		
+
 	var timberline = 0;
 	// default-terrain
 	if (testColoring == 0) {
@@ -490,11 +490,11 @@ function renderCell(self, pass) {
 			textureOverwrite = "green";
 		}
 	}
-	
+
 	if (typeof self.texture != "undefined" && testColoring == 0) {
 		texture = self.texture;
 	}
-	
+
 	if (pass == 0 && typeof self.d != "undefined") {
 		// calculate the cliffs and slopes
 		self.d.sort(function(a,b){return a.d - b.d});
@@ -524,7 +524,7 @@ function renderCell(self, pass) {
 					elevationLevelSec = hills[hic].elevation;
 				}
 			}
-			// 
+			//
 			if (elevationLevel == 1) {
 				hPlateau = 2 * cliffHeight - par1;
 				h = 2 * cliffHeight - par1;
@@ -541,7 +541,7 @@ function renderCell(self, pass) {
 			// if a field have the values of two cells, than there is a ramp
 			// the first cell (self.d[0]) is the cells with the center closer field
 			maxVoronoiDistance = Math.max(maxVoronoiDistance, self.d[1].d);
-			
+
 			// differenz between the two distances from the centerpoint of the cells
 			var diff = Math.abs(self.d[0].d - self.d[1].d);
 			if ( 0 < self.d[0].d ) {
@@ -555,7 +555,7 @@ function renderCell(self, pass) {
 			// while (wdiff > Math.PI) {
 			// 	wdiff -= Math.PI;
 			// }
-			
+
 			var makeRim = true;
 			if (testColoring > 0) {
 				textureOverwrite = color_5;
@@ -586,7 +586,7 @@ function renderCell(self, pass) {
 					}
 				}
 			}
-			
+
 			if (testColoring == 1) {
 				// angle
 				if (1.3 < wdiff) textureOverwrite = color_3;
@@ -603,7 +603,7 @@ function renderCell(self, pass) {
 			}
 			if (testColoring == 5) {
 				// distance for base and random active fields
-				// the white 
+				// the white
 				if (10 > self.d[0].d) {
 					var indexP = self.d[0].p % 1000;
 					if (indexP < 50) {
@@ -640,7 +640,7 @@ function renderCell(self, pass) {
 				}
 
 				// g_Map.log("dSort:" + JSON.stringify(self.d) + " " + diff);
-				
+
 				var vorWidthV = vorWidth + par2;
 				if (diff < vorWidthV) {
 					// interim level
@@ -661,7 +661,7 @@ function renderCell(self, pass) {
 					var rampBroadFactor = Math.max(1, (rampSize - relSize - 2) / rampSize);
 					var rampFactor = Math.max(0.0, Math.min(1.0, (slopeStart * vorWidthV - slopeAscent * diff) / vorWidthV));
 					h = (cliffHeight + 0.05 * par1) * rampFactor + hPlateau * (1 - rampFactor);
-					
+
 					if (rampSize > relSize && rampFactor > 0.1) {
 						// texture value, do not change
 						var pathPar = 2;
@@ -679,7 +679,7 @@ function renderCell(self, pass) {
 			self.height += h;
 		}
 	}
-	
+
 	if (pass == 1 && testColoring == 0) {
 		if (0.6 < self.base || 0.0 < self.mine) {
 			self.allowElements=false;
@@ -726,7 +726,7 @@ function renderCell(self, pass) {
 				if (0 < timberline) textureT = pickRandom(texture_trees1_outer_high);
 				if (1 < textureT.length) texture = textureT;
 			}
-			
+
 			if (5.0 * Math.random() < self.forest2 + density && self.path < 0.5 && self.base < 0.6) {
 				texture = pickRandom(texture_trees1_inner);
 				element = pickRandom(objects_trees1_inner);
@@ -741,7 +741,7 @@ function renderCell(self, pass) {
 			texture = pickRandom(texture_mine);
 		}
 	}
-	
+
 	if (pass == 1 && testColoring == 0) {
 		// textur for path
 		if (0.01 < self.path) {
@@ -803,7 +803,7 @@ function renderCell(self, pass) {
 	}
 	if (pass == 1) {
 		// g_Map.log("height 2:" + self.hill1 + " " + height);
-		
+
 		if (typeof texture != "undefined") {
 			g_Map.setTexture({"x":self.x, "y":self.y}, texture);
 		}
@@ -813,7 +813,7 @@ function renderCell(self, pass) {
 		}
 		// g_Map.log("height:" + self.height);
 	}
-	
+
 	if (pass == 0) {
 		g_Map.setHeight({"x":self.x, "y":self.y}, self.height);
 	}
@@ -829,7 +829,7 @@ function Cell(paramx,paramy,paramheight) {
 	this.owner = 0;
 	this.forest1 = 0;
 	this.forest2 = 0;
-	// density 
+	// density
 	this.forestD = 0.0;
 	// this.forest3 = 0;
 	// this.flatland1 = 0;
@@ -849,8 +849,8 @@ function Cell(paramx,paramy,paramheight) {
 }
 
 function AreaMap(mapTypePar, fieldSizePar) {
-	// index 0..19 are reserved for global costum typology
-	// index 20..49 are reserved for local costum typology
+	// index 0..19 are reserved for global typology
+	// index 20..49 are reserved for local typology
 	var index = 50;
 	var mapType = mapTypePar;
 	var playerIndex = 0;
@@ -862,11 +862,11 @@ function AreaMap(mapTypePar, fieldSizePar) {
 	}
 	var mapSizeDist2 = 0.5 * mapSize;
 	var self = this;
-	
+
 	var maxh = Math.floor(0.8 * mapSize / fieldSize);
 	var maxw = 40;
-	var maxr = Math.PI / numPlayers; 
-	
+	var maxr = Math.PI / numPlayers;
+
 	// create Field
 	for (var maxhi = 0; maxhi < 2 * maxh; maxhi += 1) {
 		for (var maxwi = -maxw; maxwi < maxw + 1; maxwi += 1) {
@@ -953,7 +953,7 @@ function AreaMap(mapTypePar, fieldSizePar) {
 		// height
 		return Object.keys(field).length;
 	}
-	
+
 	this.getAreaBoundariesAt = function(h) {
 		var l = self.getAreaSizeH();
 		if (l <= Math.abs(h)) return [];
@@ -964,7 +964,7 @@ function AreaMap(mapTypePar, fieldSizePar) {
 		// g_Map.log("boundaries: " + String(h) + JSON.stringify(result) + '\t' + JSON.stringify(k2));
 		return result;
 	}
-	
+
 	this.print = function() {
 		// print the dimensions to the console
 		var miniMap = Array();
@@ -1001,7 +1001,7 @@ function AreaMap(mapTypePar, fieldSizePar) {
 									// g_Map.log("field set:\t" + String(ix) + "\t" + String(iy) + "\t" + String(posOnMap));
 									testMarker = false;
 									resultType = mapData[iyh][posOnMap];
-									
+
 									field[iy][ix]['type'] = resultType;
 								}
 								else {
@@ -1024,7 +1024,7 @@ function AreaMap(mapTypePar, fieldSizePar) {
 			}
 		}
 	}
-	
+
 	this.activeAll = function() {
 		var him = Object.keys(field);
 		for (var hi = 0; hi < him.length; hi += 1) {
@@ -1068,7 +1068,7 @@ function AreaMap(mapTypePar, fieldSizePar) {
 		}
 		return p;
 	}
-	
+
 	this.setElement = function(x,y, entity, yOffs, xOffs) {
 		// set an element for the player
 		// RandomAngle
@@ -1076,7 +1076,7 @@ function AreaMap(mapTypePar, fieldSizePar) {
 		if (p != null && testMap != 6) g_Map.placeEntityAnywhere(entity, playerIndex, {"x":p.x, "y":p.y}, randomAngle());
 		return p;
 	}
-	
+
 	this.setElementGaia = function(x,y, entity, yOffs, xOffs) {
 		// set an Element for Gaia (Player 0)
 		// RandomAgle and no Player
@@ -1085,7 +1085,7 @@ function AreaMap(mapTypePar, fieldSizePar) {
 		if (p != null && testMap != 6) g_Map.placeEntityAnywhere(entity, 0, {"x":p.x, "y":p.y}, randomAngle());
 		return p;
 	}
-	
+
 	this.setHeight = function(x,y, height) {
 		// terrain has two heights
 		// 	0	normal
@@ -1096,13 +1096,13 @@ function AreaMap(mapTypePar, fieldSizePar) {
 		if (f != null) f['heightFixed'] = height;
 		return self;
 	}
-	
+
 	this.setId = function(x,y, _id) {
 		var f = self.getElement(x,y);
 		if (f != null) f['id'] = _id;
 		return self;
 	}
-	
+
 	this.getTopo = function() {
 		// makes a List with all Hills
 		// {'x': float, 'y': float, 'owner': [1xxx..8xxx], 'elevation': [0..1], 'slope': true/false}
@@ -1123,9 +1123,9 @@ function AreaMap(mapTypePar, fieldSizePar) {
 				}
 			}
 		}
-		return result;		
+		return result;
 	}
-	
+
 	this.placeObjects = function() {
 		// place all the data, including random hills
 		var _id  = 50;
@@ -1148,10 +1148,10 @@ function AreaMap(mapTypePar, fieldSizePar) {
 					var isMappedElement = 0;
 					_id += 1;
 					if (fa != null) {
-						
+
 						stringDisplayElem = ".";
 						// set Random
-						
+
 						fa.ra = 2.2;
 						if (fa.type.length > 0 ) {
 							if ('!?'.indexOf(fa.type) > -1) {
@@ -1314,7 +1314,7 @@ function AreaMap(mapTypePar, fieldSizePar) {
 								isMappedElement = 2;
 							}
 						}
-						
+
 						if (testMarker || testMap == 6) {
 							var setHillFlag = false;
 							if (mapTypeR == 1) setHillFlag = (iy % 5 == 1 && ix % 5 == 0);
@@ -1326,9 +1326,9 @@ function AreaMap(mapTypePar, fieldSizePar) {
 							if (mapTypeR == 7) setHillFlag = (iy % 8 == 1 && ix % 8 == 0);
 							if (mapTypeR == 8) setHillFlag = (iy % 8 == 1 && (ix + iy) % 8 == 0);
 							if (mapTypeR == 9) setHillFlag = (iy % 6 == 1 && ix % 8 == 0);
-							
+
 							if (0 < isMappedElement) {
-								// has the Element 
+								// has the Element
 								setHillFlag = false;
 								if (1 < isMappedElement) {
 									setHillFlag = true;
@@ -1337,7 +1337,7 @@ function AreaMap(mapTypePar, fieldSizePar) {
 							else {
 								if (setHillFlag) stringDisplayElem = "O";
 							}
-							
+
 							if (setHillFlag) {
 								if ([2,3,6].indexOf(testMap) > -1) {
 									// self.setElement(ix,iy,"campaigns/campaign_city_test",  0, 0);
@@ -1395,7 +1395,7 @@ function Brush() {
 		}
 	}
 	val.sort(function(a,b){return a["r"]-b["r"]});
-	
+
 	this.get = function(maxV) {
 		// get a list of all fields to a certain distance
 		// the result is a cone, with value 1.0 at the center, and value 0.0 at the edge
@@ -1410,7 +1410,7 @@ function Brush() {
 				i++;
 			}
 			else i = val.length;
-		} 
+		}
 		return result;
 	}
 	return this;
@@ -1427,7 +1427,7 @@ function Distance(fromCenterPar, distanceMinPar, distanceMaxPar) {
 	var fromCenter = fromCenterPar;
 	var distanceMin = distanceMinPar;
 	var distanceMax = distanceMaxPar;
-	
+
 	this.getDist = function(width) {
 		var result = distanceMin;
 		var maxDist = 0.5 * dd - distanceMax;
@@ -1457,7 +1457,7 @@ function dBrush() {
 		}
 	}
 	val.sort(function(a,b){return a["r"]-b["r"]});
-	
+
 	this.get = function(maxV) {
 		// get a list of all fields to a certain distance
 		// the result is a cone, with value 1.0 at the center, and value 0.0 at the edge
@@ -1465,12 +1465,12 @@ function dBrush() {
 		var i = 0;
 		while (i < val.length) {
 			if (val[i]["r"] < maxV) {
-				// "v": 1-val[i]["r"] / maxV, 
+				// "v": 1-val[i]["r"] / maxV,
 				result.push({"x":val[i]["x"], "y":val[i]["y"], "d":val[i]["r"], "w":val[i]["w"] });
 				i++;
 			}
 			else i = val.length;
-		} 
+		}
 		return result;
 	}
 	return this;
@@ -1515,15 +1515,15 @@ function setHillD(ro, roC, index, x, y, owner, elevationLevel) {
 				}
 				// callback(map[ymm][xmm],b1[j]['v']);
 				// difference: vorWidth + 1
-				// alles kleiner ist potential slope
-				
+				// everything that is smaller is a potential slope
+
 				// var wdiff = Math.abs(self.d[0].w - self.d[1].w);
 				// if (wdiff > Math.PI) wdiff = Math.abs(2 * Math.PI - wdiff);
 				// var relSize = Math.cos(0.5 * wdiff) * self.d[0].d;
-				// alles relSize < 2 is potential path
-				
+				// everything for relSize < 2 is potential path
+
 				var addElement = false;
-				
+
 				if (map[ymm][xmm].d.length == 0) {
 					addElement = true;
 				} else {
@@ -1542,7 +1542,7 @@ function setHillD(ro, roC, index, x, y, owner, elevationLevel) {
 						// g_Map.log("pop:" + cP);
 					}
 				}
-				
+
 				// g_Map.log("map[ymm][xmm]:" + map[ymm][xmm]["d"].join(', '));
 			}
 		}
@@ -1551,12 +1551,12 @@ function setHillD(ro, roC, index, x, y, owner, elevationLevel) {
 
 /*
  * create forests and all kind of decoration
- * 
+ *
  * set brushes with a certain size on the map
  * 		patternnr	distance between two brushes
  * 		brushSize	amount of elements, that are effected
  * 		callback	always takes three elements, x-coordinate, y-coordinate, distance-value from center of the brush, the distance-value is 1.0 in the center of the brush, and 0.0 at the edge
- */ 
+ */
 
 function setPattern1(patternr, brushSize, callback, randMax) {
 	// hexagons patterns
@@ -1665,9 +1665,9 @@ function line(x0,y0,x1,y1, callback, parameter) {
  * 	randomDisplacement	add some zigzag, 0.0 = straight line
  * 				good value to start some randomness is 0.1
  * 	targetDist		maximum distance between two points, the algorithm ends, when the distance between two points are below this value
- * 
+ *
  * result			an array with 2-typel of x,y-coordinates
- */ 
+ */
 function fractalLine(x0,y0,x1,y1, parameter) {
 	var result = [];
 	parameter = parameter || {"targetDist": 10, "randomDisplacement": 0.0, "addStart": true };
@@ -1682,7 +1682,7 @@ function fractalLine(x0,y0,x1,y1, parameter) {
 		result.push([x1,y1]);
 		return result;
 	}
-	var parameterSub = Object.assign({}, parameter); 
+	var parameterSub = Object.assign({}, parameter);
 	parameterSub.addStart = false;
 	var randomVa = randomV * (Math.random() - 0.5);
 	var mx = 0.5 * (x1 + x0) + dy * randomVa, my = 0.5 * (y1 + y0) - dx * randomVa;
@@ -1698,7 +1698,7 @@ if (true) {
 	var citycenterXY = [];
 	var mineXY = [];
 	var createTopo = true;
-	
+
 	try {
 		// initialize all cells
 		var map = Array();
@@ -1723,12 +1723,12 @@ if (true) {
 		g_Map.log("Exception creating the map ");
 	};
 	Engine.SetProgress(2);
-	
+
 	if (testMap < 3) {
 		// trees on a small hill
 		setPattern1(margin_trees1, size_trees1, setForest2, 0.8);
 	}
-	
+
 	if (testMap < 3) {
 		// depression, swamps
 		setPattern2(margin_depression, size_depression, setForest1, 0.8);
@@ -1739,9 +1739,9 @@ if (true) {
 		// create the topography
 		var a = new AreaMap(areaMapTyp);
 		var areaDimY = a.getAreaSizeH();
-		
+
 		a.setMap(mapLayout[mapAssign[dd][numPlayers]]);
-		
+
 		for (var i = 1; i < (numPlayers + 1); i++) {
 			var aa = a.setPlayer(i);
 			aa.placeObjects();
@@ -1749,7 +1749,7 @@ if (true) {
 			var localHills = aa.getTopo();
 			hills.push(...localHills);
 		}
-		
+
 		for (var jj=0; jj < saveDistanceLoop; jj += 1) {
 			// replace hills to ensure a save distance
 			var moveDistance = 0;
@@ -1795,9 +1795,9 @@ if (true) {
 			}
 			// g_Map.log("safety: moveDistance" + moveDistance);
 		}
-		
+
 		Engine.SetProgress(15);
-		
+
 		if (([0,1,4,5].indexOf(testMap) > -1) && createTopo) {
 			// turn the hills-data in Topographie,
 			// this takes nearly 80% of the time
@@ -1812,7 +1812,7 @@ if (true) {
 						// g_Map.log("generating hills: " + hills[i].owner + " " + i + "/" + hills.length);
 						setHillD(ro, roC, j, hills[i].y, hills[i].x, hills[i].owner, hills[i].elevation);
 						// var mcActual = ro * hills.length + i;
-						// making the hills is one of the most time consuming tasks, that's why there are regulary updates
+						// making hills is one of the most time-consuming tasks, so there are regular updates
 						var progressHill = Math.round((85 - 15) * mcTotali / mcTotal + 15);
 						if (progressHill > progressLastValue) {
 							Engine.SetProgress(progressHill);
@@ -1820,7 +1820,7 @@ if (true) {
 						}
 					}
 				}
-				
+
 				g_Map.log("generating heights");
 				for (var i=0; i<dd; i++) {
 					for (var j=0; j<dd; j++) {
@@ -1828,7 +1828,7 @@ if (true) {
 							// g_Map.log("rendering:" + i + " " + j);
 							renderCell(map[i][j], 0);
 							delete map[i][j].d;
-						} 
+						}
 					}
 				}
 			}
@@ -1869,7 +1869,7 @@ if (true) {
 		}
 	}
 	Engine.SetProgress(95);
-	
+
 	// rendering pass 3 (textures and objects)
 	g_Map.log("generating textures and objects");
 	for (var i=0; i<dd; i++) {

@@ -3,7 +3,7 @@
  *@param {Array} points - Points
  *@param {Number} frequency - float value >= 1. Noise size, higher value makes noise more compact
  *@param {Number} octaves - int value >= 1Sub noise levels, higher the value gives noise more definition **can be as high as desired while the original frequcny doesn't reach < 1
- *@param {Number} scale - Scale size of the perlin noise (in the three axis) 
+ *@param {Number} scale - Scale size of the perlin noise (in the three axis)
  *@param {Number} vertical_scale - Scale size of the perlin noise (in the vertical axis)
  *@param {Bool} positive - Returns only on the range of [0,1] (in the case of default parameters)
  */
