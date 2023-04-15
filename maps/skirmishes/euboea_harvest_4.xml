@@ -12894,7 +12894,7 @@
 		</Entity>
 		<Entity uid="2021">
 			<Template>gaia/tree/bush_badlands</Template>
-			<Player>3</Player>
+			<Player>0</Player>
 			<Position x="860.29255" z="741.66816"/>
 			<Orientation y="2.00358"/>
 			<Obstruction group="2067"/>
@@ -13374,7 +13374,7 @@
 		</Entity>
 		<Entity uid="2107">
 			<Template>gaia/tree/bush_badlands</Template>
-			<Player>4</Player>
+			<Player>0</Player>
 			<Position x="836.91749" z="247.14652"/>
 			<Orientation y="3.65351"/>
 			<Actor seed="23494"/>

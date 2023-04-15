@@ -1348,14 +1348,14 @@
 		</Entity>
 		<Entity uid="226">
 			<Template>gaia/fruit/berry_03</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="2887.61866" z="801.12836"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="4993"/>
 		</Entity>
 		<Entity uid="227">
 			<Template>gaia/fruit/berry_03</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="2898.2732" z="801.79712"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="51640"/>
@@ -3084,14 +3084,14 @@
 		</Entity>
 		<Entity uid="475">
 			<Template>rubble/rubble_stone_5x5</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="1885.67676" z="2310.521"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="719"/>
 		</Entity>
 		<Entity uid="476">
 			<Template>rubble/rubble_stone_5x5</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="2335.99585" z="2715.00391"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="6032"/>
@@ -3511,7 +3511,7 @@
 		</Entity>
 		<Entity uid="538">
 			<Template>gaia/fish/tilapia</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="3034.43775" z="1406.98182"/>
 			<Orientation y="1.97963"/>
 			<Actor seed="32631"/>
@@ -3672,21 +3672,21 @@
 		</Entity>
 		<Entity uid="561">
 			<Template>gaia/fish/generic</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="1765.8943" z="1249.29444"/>
 			<Orientation y="2.48717"/>
 			<Actor seed="32064"/>
 		</Entity>
 		<Entity uid="562">
 			<Template>gaia/fish/generic</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="1574.75501" z="1209.6233"/>
 			<Orientation y="2.61773"/>
 			<Actor seed="50991"/>
 		</Entity>
 		<Entity uid="563">
 			<Template>gaia/fish/generic</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="1657.83277" z="1492.08423"/>
 			<Orientation y="-0.13852"/>
 			<Actor seed="58849"/>
@@ -3721,7 +3721,7 @@
 		</Entity>
 		<Entity uid="568">
 			<Template>gaia/fish/generic</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="1300.65992" z="925.98871"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="26553"/>
@@ -3735,7 +3735,7 @@
 		</Entity>
 		<Entity uid="570">
 			<Template>gaia/fish/generic</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="190.46546" z="1825.91041"/>
 			<Orientation y="0.86802"/>
 			<Actor seed="25935"/>
@@ -3791,14 +3791,14 @@
 		</Entity>
 		<Entity uid="578">
 			<Template>gaia/fish/generic</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="1733.5127" z="1996.20337"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="42909"/>
 		</Entity>
 		<Entity uid="579">
 			<Template>gaia/fish/generic</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="1612.56702" z="1649.20484"/>
 			<Orientation y="2.09871"/>
 			<Actor seed="21816"/>
@@ -3819,7 +3819,7 @@
 		</Entity>
 		<Entity uid="582">
 			<Template>gaia/fish/tuna</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="1636.40296" z="1356.46338"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="38364"/>
@@ -3854,21 +3854,21 @@
 		</Entity>
 		<Entity uid="587">
 			<Template>gaia/fish/tuna</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="416.04883" z="2079.75831"/>
 			<Orientation y="2.34273"/>
 			<Actor seed="7038"/>
 		</Entity>
 		<Entity uid="588">
 			<Template>gaia/fish/tuna</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="1793.01172" z="1128.41749"/>
 			<Orientation y="1.78556"/>
 			<Actor seed="1217"/>
 		</Entity>
 		<Entity uid="589">
 			<Template>gaia/fish/tuna</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="1640.66211" z="244.82609"/>
 			<Orientation y="1.79217"/>
 			<Actor seed="33894"/>
@@ -4274,7 +4274,7 @@
 		</Entity>
 		<Entity uid="647">
 			<Template>gaia/fauna_whale_humpback</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="1688.97205" z="1522.85645"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="24436"/>
@@ -6180,7 +6180,7 @@
 		</Entity>
 		<Entity uid="949">
 			<Template>gaia/tree/pine_black</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="2415.1067" z="2235.2085"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="10617"/>
@@ -6509,7 +6509,7 @@
 		</Entity>
 		<Entity uid="996">
 			<Template>gaia/tree/pine_black</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="2605.89234" z="2013.74476"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="30089"/>
@@ -8070,14 +8070,14 @@
 		</Entity>
 		<Entity uid="1220">
 			<Template>gaia/tree/temperate</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="2696.46412" z="1100.27942"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="62417"/>
 		</Entity>
 		<Entity uid="1221">
 			<Template>gaia/tree/temperate</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="2675.02417" z="1101.80787"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="27636"/>
@@ -8112,7 +8112,7 @@
 		</Entity>
 		<Entity uid="1226">
 			<Template>gaia/tree/temperate</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="2669.73902" z="1090.5027"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="37221"/>
@@ -9155,7 +9155,7 @@
 		</Entity>
 		<Entity uid="1375">
 			<Template>gaia/tree/temperate</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="2456.40137" z="955.87879"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="53635"/>
@@ -9897,7 +9897,7 @@
 		</Entity>
 		<Entity uid="1481">
 			<Template>gaia/tree/poplar_lombardy_autumn</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="2881.6443" z="1649.34205"/>
 			<Orientation y="1.57081"/>
 			<Actor seed="25904"/>
@@ -12494,7 +12494,7 @@
 		</Entity>
 		<Entity uid="1853">
 			<Template>gaia/tree/euro_birch</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="2081.06568" z="2361.43506"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="37062"/>
@@ -31144,7 +31144,7 @@
 		</Entity>
 		<Entity uid="4989">
 			<Template>gaia/fish/tuna</Template>
-			<Player>2</Player>
+			<Player>0</Player>
 			<Position x="2017.74061" z="3631.84571"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="60103"/>

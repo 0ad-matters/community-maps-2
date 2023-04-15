@@ -31633,42 +31633,42 @@
 		</Entity>
 		<Entity uid="6318">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="231.02799" z="661.92042"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="41398"/>
 		</Entity>
 		<Entity uid="6319">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="217.83616" z="666.16376"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="51884"/>
 		</Entity>
 		<Entity uid="6320">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="398.3491" z="413.56281"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="12866"/>
 		</Entity>
 		<Entity uid="6321">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="400.34339" z="418.12323"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="6646"/>
 		</Entity>
 		<Entity uid="6322">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="760.75165" z="851.76984"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="13782"/>
 		</Entity>
 		<Entity uid="6323">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="763.51911" z="857.02698"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="24108"/>

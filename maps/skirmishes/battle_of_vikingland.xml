@@ -8925,896 +8925,896 @@
 		</Entity>
 		<Entity uid="1538">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1330.61463" z="987.67286"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="45586"/>
 		</Entity>
 		<Entity uid="1539">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1333.1847" z="991.43989"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="51632"/>
 		</Entity>
 		<Entity uid="1540">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1334.85718" z="996.11823"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="26722"/>
 		</Entity>
 		<Entity uid="1541">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1329.83875" z="998.11963"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="37768"/>
 		</Entity>
 		<Entity uid="1542">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1327.26258" z="993.93396"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="21704"/>
 		</Entity>
 		<Entity uid="1543">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1324.90857" z="989.60633"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="49114"/>
 		</Entity>
 		<Entity uid="1544">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1350.50977" z="562.10016"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="36244"/>
 		</Entity>
 		<Entity uid="1545">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1353.72925" z="558.8368"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="9582"/>
 		</Entity>
 		<Entity uid="1546">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1346.54822" z="559.69715"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="20770"/>
 		</Entity>
 		<Entity uid="1547">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1350.21949" z="555.06629"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="37152"/>
 		</Entity>
 		<Entity uid="1548">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1343.32288" z="556.4585"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="12600"/>
 		</Entity>
 		<Entity uid="1549">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1346.44861" z="551.65314"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="46240"/>
 		</Entity>
 		<Entity uid="1550">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1018.36164" z="218.66468"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="62386"/>
 		</Entity>
 		<Entity uid="1551">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1013.76246" z="215.63032"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="32124"/>
 		</Entity>
 		<Entity uid="1552">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1010.58136" z="213.20435"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="41602"/>
 		</Entity>
 		<Entity uid="1553">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1014.36408" z="209.1402"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="42532"/>
 		</Entity>
 		<Entity uid="1554">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1017.61689" z="212.2292"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="38282"/>
 		</Entity>
 		<Entity uid="1555">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1021.76307" z="215.29004"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="24912"/>
 		</Entity>
 		<Entity uid="1556">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="631.43409" z="252.08783"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="5490"/>
 		</Entity>
 		<Entity uid="1557">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="627.55835" z="255.89792"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="33428"/>
 		</Entity>
 		<Entity uid="1558">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="635.14954" z="256.24543"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="44786"/>
 		</Entity>
 		<Entity uid="1559">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="630.8152" z="259.15528"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="7528"/>
 		</Entity>
 		<Entity uid="1560">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="638.39747" z="259.5037"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="35518"/>
 		</Entity>
 		<Entity uid="1561">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="635.13495" z="262.74585"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="56948"/>
 		</Entity>
 		<Entity uid="1562">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="275.23676" z="512.76905"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="16006"/>
 		</Entity>
 		<Entity uid="1563">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="278.81678" z="518.02186"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="394"/>
 		</Entity>
 		<Entity uid="1564">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="282.03473" z="521.69355"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="45110"/>
 		</Entity>
 		<Entity uid="1565">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="285.09614" z="517.67591"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="22766"/>
 		</Entity>
 		<Entity uid="1566">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="282.32911" z="514.88526"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="60648"/>
 		</Entity>
 		<Entity uid="1567">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="279.1117" z="510.77918"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="376"/>
 		</Entity>
 		<Entity uid="1568">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="235.65851" z="938.28602"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="25012"/>
 		</Entity>
 		<Entity uid="1569">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="239.91926" z="934.92505"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="47392"/>
 		</Entity>
 		<Entity uid="1570">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="242.29947" z="939.07935"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="54494"/>
 		</Entity>
 		<Entity uid="1571">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="238.46094" z="941.53846"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="64638"/>
 		</Entity>
 		<Entity uid="1572">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="241.0983" z="945.32569"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="62070"/>
 		</Entity>
 		<Entity uid="1573">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="245.64768" z="942.95032"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="45536"/>
 		</Entity>
 		<Entity uid="1574">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="532.9087" z="1290.39942"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="22526"/>
 		</Entity>
 		<Entity uid="1575">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="536.46875" z="1294.48975"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="57202"/>
 		</Entity>
 		<Entity uid="1576">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="540.39826" z="1298.84595"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="59158"/>
 		</Entity>
 		<Entity uid="1577">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="542.94068" z="1295.91016"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="21516"/>
 		</Entity>
 		<Entity uid="1578">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="540.31067" z="1291.82093"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="59356"/>
 		</Entity>
 		<Entity uid="1579">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="537.41584" z="1288.0912"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="59714"/>
 		</Entity>
 		<Entity uid="1580">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1029.8932" z="1277.11951"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="18408"/>
 		</Entity>
 		<Entity uid="1581">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1025.77332" z="1273.7588"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="46918"/>
 		</Entity>
 		<Entity uid="1582">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1022.29853" z="1271.12378"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="11174"/>
 		</Entity>
 		<Entity uid="1583">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1026.02125" z="1267.33863"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="55808"/>
 		</Entity>
 		<Entity uid="1584">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1030.03418" z="1271.02552"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="13282"/>
 		</Entity>
 		<Entity uid="1585">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1033.30103" z="1273.9469"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="57670"/>
 		</Entity>
 		<Entity uid="1586">
 			<Template>gaia/rock/alpine_large</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1285.32374" z="964.69794"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="21594"/>
 		</Entity>
 		<Entity uid="1587">
 			<Template>gaia/rock/alpine_large</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1248.86109" z="596.2544"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="56330"/>
 		</Entity>
 		<Entity uid="1588">
 			<Template>gaia/rock/alpine_large</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="933.98371" z="314.89335"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="29598"/>
 		</Entity>
 		<Entity uid="1589">
 			<Template>gaia/rock/alpine_large</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="573.08301" z="371.55726"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="41302"/>
 		</Entity>
 		<Entity uid="1590">
 			<Template>gaia/rock/alpine_large</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="260.71387" z="615.24201"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="14774"/>
 		</Entity>
 		<Entity uid="1591">
 			<Template>gaia/rock/alpine_large</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="292.81061" z="980.18714"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="36698"/>
 		</Entity>
 		<Entity uid="1592">
 			<Template>gaia/rock/alpine_large</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="563.46058" z="1277.64917"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="10244"/>
 		</Entity>
 		<Entity uid="1593">
 			<Template>gaia/rock/alpine_large</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="962.64258" z="1193.17469"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="12202"/>
 		</Entity>
 		<Entity uid="1594">
 			<Template>gaia/rock/alpine_large</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="774.50037" z="512.60584"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="18604"/>
 		</Entity>
 		<Entity uid="1595">
 			<Template>gaia/rock/alpine_large</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="979.30036" z="609.172"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="65318"/>
 		</Entity>
 		<Entity uid="1596">
 			<Template>gaia/rock/alpine_large</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1091.65955" z="809.08375"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="41750"/>
 		</Entity>
 		<Entity uid="1597">
 			<Template>gaia/rock/alpine_large</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="959.90253" z="987.1963"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="32148"/>
 		</Entity>
 		<Entity uid="1598">
 			<Template>gaia/rock/alpine_large</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="756.49622" z="1116.3971"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="50708"/>
 		</Entity>
 		<Entity uid="1599">
 			<Template>gaia/rock/alpine_large</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="575.16541" z="1008.17585"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="25608"/>
 		</Entity>
 		<Entity uid="1600">
 			<Template>gaia/rock/alpine_large</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="465.14081" z="827.99585"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="42406"/>
 		</Entity>
 		<Entity uid="1601">
 			<Template>gaia/rock/alpine_large</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="612.87024" z="649.0951"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="35006"/>
 		</Entity>
 		<Entity uid="1602">
 			<Template>gaia/rock/alpine_large</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="836.73444" z="832.4773"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="30858"/>
 		</Entity>
 		<Entity uid="1603">
 			<Template>gaia/rock/alpine_large</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="802.5337" z="861.74781"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="43848"/>
 		</Entity>
 		<Entity uid="1604">
 			<Template>gaia/rock/alpine_large</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="755.29566" z="855.28907"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="9344"/>
 		</Entity>
 		<Entity uid="1605">
 			<Template>gaia/rock/alpine_large</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="836.24732" z="784.93262"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="48356"/>
 		</Entity>
 		<Entity uid="1606">
 			<Template>gaia/rock/alpine_large</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="783.64039" z="762.68384"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="48764"/>
 		</Entity>
 		<Entity uid="1607">
 			<Template>gaia/rock/alpine_large</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="734.35541" z="819.76606"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="21698"/>
 		</Entity>
 		<Entity uid="1608">
 			<Template>gaia/rock/alpine_large</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="741.38801" z="782.58814"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="20144"/>
 		</Entity>
 		<Entity uid="1609">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="811.95289" z="767.3531"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="1706"/>
 		</Entity>
 		<Entity uid="1610">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="761.05866" z="772.26563"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="10570"/>
 		</Entity>
 		<Entity uid="1611">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="736.97614" z="803.58631"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="2644"/>
 		</Entity>
 		<Entity uid="1612">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="745.37323" z="837.7425"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="24796"/>
 		</Entity>
 		<Entity uid="1613">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="783.05787" z="866.1283"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="29496"/>
 		</Entity>
 		<Entity uid="1614">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="823.62208" z="853.07032"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="29088"/>
 		</Entity>
 		<Entity uid="1615">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="844.02302" z="807.13501"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="61394"/>
 		</Entity>
 		<Entity uid="1616">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="893.6341" z="764.87684"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="15198"/>
 		</Entity>
 		<Entity uid="1617">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="895.11097" z="783.49982"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="61230"/>
 		</Entity>
 		<Entity uid="1618">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="862.64588" z="694.01783"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="54730"/>
 		</Entity>
 		<Entity uid="1619">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="845.64533" z="690.4209"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="19382"/>
 		</Entity>
 		<Entity uid="1620">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="773.57435" z="717.50019"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="23826"/>
 		</Entity>
 		<Entity uid="1621">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="765.59235" z="726.1424"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="32384"/>
 		</Entity>
 		<Entity uid="1622">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="711.69397" z="789.7256"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="36102"/>
 		</Entity>
 		<Entity uid="1623">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="716.2923" z="776.89417"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="12002"/>
 		</Entity>
 		<Entity uid="1624">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="674.07453" z="895.20923"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="61278"/>
 		</Entity>
 		<Entity uid="1625">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="675.69764" z="909.74585"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="4252"/>
 		</Entity>
 		<Entity uid="1626">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="699.33002" z="968.38434"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="1584"/>
 		</Entity>
 		<Entity uid="1627">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="709.20051" z="973.24708"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="5488"/>
 		</Entity>
 		<Entity uid="1628">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="794.05225" z="951.53614"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="42026"/>
 		</Entity>
 		<Entity uid="1629">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="791.57001" z="943.90857"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="40302"/>
 		</Entity>
 		<Entity uid="1630">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="809.31543" z="933.58497"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="45218"/>
 		</Entity>
 		<Entity uid="1631">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="791.6056" z="939.07703"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="11232"/>
 		</Entity>
 		<Entity uid="1632">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="902.24073" z="861.93476"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="1538"/>
 		</Entity>
 		<Entity uid="1633">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="909.4001" z="845.72382"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="54504"/>
 		</Entity>
 		<Entity uid="1634">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1284.20105" z="651.03974"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="21706"/>
 		</Entity>
 		<Entity uid="1635">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1276.36561" z="648.58051"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="10504"/>
 		</Entity>
 		<Entity uid="1636">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="998.2339" z="332.87085"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="45668"/>
 		</Entity>
 		<Entity uid="1637">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="999.28681" z="325.8871"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="49646"/>
 		</Entity>
 		<Entity uid="1638">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="656.00794" z="343.75107"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="55000"/>
 		</Entity>
 		<Entity uid="1639">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="657.16065" z="335.64838"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="31334"/>
 		</Entity>
 		<Entity uid="1640">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="336.36063" z="564.4903"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="25134"/>
 		</Entity>
 		<Entity uid="1641">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="335.15482" z="554.87031"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="18268"/>
 		</Entity>
 		<Entity uid="1642">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="283.60969" z="897.15326"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="1702"/>
 		</Entity>
 		<Entity uid="1643">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="276.28376" z="897.07306"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="12088"/>
 		</Entity>
 		<Entity uid="1644">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="510.47785" z="1226.40101"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="59786"/>
 		</Entity>
 		<Entity uid="1645">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="518.8155" z="1222.29078"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="26716"/>
 		</Entity>
 		<Entity uid="1646">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="915.91205" z="1224.42823"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="34036"/>
 		</Entity>
 		<Entity uid="1647">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="915.95032" z="1234.46631"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="64730"/>
 		</Entity>
 		<Entity uid="1648">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1232.77125" z="1023.1438"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="57728"/>
 		</Entity>
 		<Entity uid="1649">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1236.89112" z="1030.05542"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="44650"/>
 		</Entity>
 		<Entity uid="1650">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1107.38733" z="756.26478"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="14198"/>
 		</Entity>
 		<Entity uid="1651">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1110.9452" z="879.63508"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="11220"/>
 		</Entity>
 		<Entity uid="1652">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1028.52576" z="981.44459"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="916"/>
 		</Entity>
 		<Entity uid="1653">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="926.58936" z="1053.71143"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="45986"/>
 		</Entity>
 		<Entity uid="1654">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="863.33313" z="1144.98877"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="31732"/>
 		</Entity>
 		<Entity uid="1655">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="720.85718" z="1128.15333"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="40554"/>
 		</Entity>
 		<Entity uid="1656">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="560.30561" z="1127.8407"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="13858"/>
 		</Entity>
 		<Entity uid="1657">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="457.38999" z="974.72413"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="40330"/>
 		</Entity>
 		<Entity uid="1658">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="394.50766" z="886.09217"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="55290"/>
 		</Entity>
 		<Entity uid="1659">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="436.12034" z="758.08204"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="24984"/>
 		</Entity>
 		<Entity uid="1660">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="524.07911" z="652.41028"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="63824"/>
 		</Entity>
 		<Entity uid="1661">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="605.96015" z="577.86347"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="30300"/>
 		</Entity>
 		<Entity uid="1662">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="705.50757" z="481.6146"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="3324"/>
 		</Entity>
 		<Entity uid="1663">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="800.07911" z="494.00412"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="4262"/>
 		</Entity>
 		<Entity uid="1664">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="974.57294" z="456.50886"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="23656"/>
 		</Entity>
 		<Entity uid="1665">
 			<Template>gaia/ore/alpine_small</Template>
-			<Player>8</Player>
+			<Player>0</Player>
 			<Position x="1018.78132" z="611.67396"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="60620"/>
