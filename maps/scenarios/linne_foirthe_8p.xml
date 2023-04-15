@@ -94983,70 +94983,70 @@
 		</Entity>
 		<Entity uid="14374">
 			<Template>gaia/fruit/grapes</Template>
-			<Player>6</Player>
+			<Player>0</Player>
 			<Position x="1383.86512" z="156.9087"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="44838"/>
 		</Entity>
 		<Entity uid="14375">
 			<Template>gaia/fruit/grapes</Template>
-			<Player>6</Player>
+			<Player>0</Player>
 			<Position x="1378.20716" z="153.0832"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="49480"/>
 		</Entity>
 		<Entity uid="14376">
 			<Template>gaia/fruit/grapes</Template>
-			<Player>6</Player>
+			<Player>0</Player>
 			<Position x="1371.93226" z="149.04966"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="1286"/>
 		</Entity>
 		<Entity uid="14377">
 			<Template>gaia/fruit/grapes</Template>
-			<Player>6</Player>
+			<Player>0</Player>
 			<Position x="1365.08228" z="144.48295"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="50114"/>
 		</Entity>
 		<Entity uid="14378">
 			<Template>gaia/fruit/grapes</Template>
-			<Player>6</Player>
+			<Player>0</Player>
 			<Position x="1375.9452" z="164.046"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="32904"/>
 		</Entity>
 		<Entity uid="14379">
 			<Template>gaia/fruit/grapes</Template>
-			<Player>6</Player>
+			<Player>0</Player>
 			<Position x="1370.62281" z="159.70496"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="6834"/>
 		</Entity>
 		<Entity uid="14380">
 			<Template>gaia/fruit/grapes</Template>
-			<Player>6</Player>
+			<Player>0</Player>
 			<Position x="1365.02576" z="156.61692"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="10404"/>
 		</Entity>
 		<Entity uid="14381">
 			<Template>gaia/fruit/grapes</Template>
-			<Player>6</Player>
+			<Player>0</Player>
 			<Position x="1358.6753" z="152.55631"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="65495"/>
 		</Entity>
 		<Entity uid="14382">
 			<Template>gaia/ore/tropical_large</Template>
-			<Player>6</Player>
+			<Player>0</Player>
 			<Position x="892.13312" z="788.91321"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="33912"/>
 		</Entity>
 		<Entity uid="14383">
 			<Template>gaia/ore/tropical_large</Template>
-			<Player>6</Player>
+			<Player>0</Player>
 			<Position x="1293.24878" z="770.02802"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="46946"/>

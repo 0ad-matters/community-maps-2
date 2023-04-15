@@ -359,7 +359,7 @@
 		</Entity>
 		<Entity uid="131">
 			<Template>gaia/ore/savanna_large</Template>
-			<Player>2</Player>
+			<Player>0</Player>
 			<Position x="985.39997" z="679.39594"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="22881"/>
@@ -380,14 +380,14 @@
 		</Entity>
 		<Entity uid="136">
 			<Template>gaia/treasure/stone_pile_sandstone</Template>
-			<Player>2</Player>
+			<Player>0</Player>
 			<Position x="1109.4159" z="811.04456"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="16979"/>
 		</Entity>
 		<Entity uid="137">
 			<Template>gaia/treasure/stone</Template>
-			<Player>2</Player>
+			<Player>0</Player>
 			<Position x="947.81336" z="774.21381"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="31109"/>
@@ -1206,35 +1206,35 @@
 		</Entity>
 		<Entity uid="681">
 			<Template>gaia/treasure/food_crate</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="349.80738" z="580.63971"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="56951"/>
 		</Entity>
 		<Entity uid="682">
 			<Template>gaia/treasure/food_crate</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="638.49885" z="649.71161"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="63337"/>
 		</Entity>
 		<Entity uid="683">
 			<Template>gaia/treasure/food_crate</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="699.33326" z="839.24463"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="47903"/>
 		</Entity>
 		<Entity uid="684">
 			<Template>gaia/treasure/food_crate</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="640.4137" z="831.46985"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="6333"/>
 		</Entity>
 		<Entity uid="685">
 			<Template>gaia/treasure/food_crate</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="659.66773" z="1005.2165"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="42904"/>
@@ -1290,7 +1290,7 @@
 		</Entity>
 		<Entity uid="693">
 			<Template>gaia/treasure/food_jars</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="1151.61231" z="384.4795"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="33574"/>
@@ -1304,7 +1304,7 @@
 		</Entity>
 		<Entity uid="695">
 			<Template>gaia/treasure/food_jars</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="1265.06177" z="195.21906"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="35640"/>
@@ -1430,7 +1430,7 @@
 		</Entity>
 		<Entity uid="713">
 			<Template>gaia/treasure/metal</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="909.54432" z="1112.8888"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="39220"/>
@@ -1486,14 +1486,14 @@
 		</Entity>
 		<Entity uid="721">
 			<Template>gaia/treasure/metal</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="1309.09473" z="273.43525"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="5414"/>
 		</Entity>
 		<Entity uid="722">
 			<Template>gaia/treasure/metal</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="995.9419" z="167.80488"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="48337"/>
@@ -1528,14 +1528,14 @@
 		</Entity>
 		<Entity uid="727">
 			<Template>gaia/treasure/stone_pile_sandstone</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="572.0835" z="786.30103"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="8187"/>
 		</Entity>
 		<Entity uid="728">
 			<Template>gaia/treasure/stone_pile_sandstone</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="352.1898" z="1136.12354"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="45166"/>
@@ -1563,7 +1563,7 @@
 		</Entity>
 		<Entity uid="732">
 			<Template>gaia/treasure/stone_pile_sandstone</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="1308.62452" z="1286.28956"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="19126"/>
@@ -1584,14 +1584,14 @@
 		</Entity>
 		<Entity uid="735">
 			<Template>gaia/treasure/wood_lumber</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="1770.25" z="1370.24646"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="43179"/>
 		</Entity>
 		<Entity uid="736">
 			<Template>gaia/treasure/wood_lumber</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="1406.98243" z="992.68781"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="9824"/>
@@ -1626,14 +1626,14 @@
 		</Entity>
 		<Entity uid="741">
 			<Template>gaia/treasure/wood_lumber</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="403.67035" z="514.90052"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="21639"/>
 		</Entity>
 		<Entity uid="742">
 			<Template>gaia/treasure/wood_lumber</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="839.06165" z="415.56482"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="24176"/>
@@ -2725,7 +2725,7 @@
 		</Entity>
 		<Entity uid="899">
 			<Template>gaia/ore/desert_large</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="793.31373" z="1597.50806"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="23238"/>
@@ -3649,91 +3649,91 @@
 		</Entity>
 		<Entity uid="1036">
 			<Template>rubble/rubble_field</Template>
-			<Player>2</Player>
+			<Player>0</Player>
 			<Position x="1371.39441" z="1121.54273"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="5031"/>
 		</Entity>
 		<Entity uid="1037">
 			<Template>rubble/rubble_field</Template>
-			<Player>2</Player>
+			<Player>0</Player>
 			<Position x="1405.47156" z="1147.65064"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="60198"/>
 		</Entity>
 		<Entity uid="1038">
 			<Template>rubble/rubble_field</Template>
-			<Player>2</Player>
+			<Player>0</Player>
 			<Position x="1395.63917" z="1097.61268"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="55060"/>
 		</Entity>
 		<Entity uid="1039">
 			<Template>rubble/rubble_field</Template>
-			<Player>2</Player>
+			<Player>0</Player>
 			<Position x="1421.74366" z="1119.49402"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="38460"/>
 		</Entity>
 		<Entity uid="1040">
 			<Template>rubble/rubble_field</Template>
-			<Player>2</Player>
+			<Player>0</Player>
 			<Position x="1778.80152" z="941.72626"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="16522"/>
 		</Entity>
 		<Entity uid="1041">
 			<Template>rubble/rubble_field</Template>
-			<Player>2</Player>
+			<Player>0</Player>
 			<Position x="1752.9319" z="966.97034"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="50341"/>
 		</Entity>
 		<Entity uid="1042">
 			<Template>rubble/rubble_field</Template>
-			<Player>2</Player>
+			<Player>0</Player>
 			<Position x="1730.57667" z="577.36622"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="21797"/>
 		</Entity>
 		<Entity uid="1043">
 			<Template>rubble/rubble_stone_2x2</Template>
-			<Player>2</Player>
+			<Player>0</Player>
 			<Position x="1300.37415" z="571.29365"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="32830"/>
 		</Entity>
 		<Entity uid="1044">
 			<Template>rubble/rubble_stone_2x2</Template>
-			<Player>2</Player>
+			<Player>0</Player>
 			<Position x="1245.5011" z="1334.37208"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="22236"/>
 		</Entity>
 		<Entity uid="1045">
 			<Template>rubble/rubble_stone_4x2</Template>
-			<Player>2</Player>
+			<Player>0</Player>
 			<Position x="1490.64783" z="1375.49195"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="24117"/>
 		</Entity>
 		<Entity uid="1046">
 			<Template>rubble/rubble_stone_4x2</Template>
-			<Player>2</Player>
+			<Player>0</Player>
 			<Position x="1836.81324" z="450.05372"/>
 			<Orientation y="-0.11164"/>
 			<Actor seed="28148"/>
 		</Entity>
 		<Entity uid="1047">
 			<Template>rubble/rubble_wood_3x3</Template>
-			<Player>2</Player>
+			<Player>0</Player>
 			<Position x="1628.2074" z="403.95984"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="26263"/>
 		</Entity>
 		<Entity uid="1048">
 			<Template>rubble/rubble_rome_sb</Template>
-			<Player>2</Player>
+			<Player>0</Player>
 			<Position x="1748.92725" z="732.45258"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="52847"/>

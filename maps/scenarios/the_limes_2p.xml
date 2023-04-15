@@ -2410,21 +2410,21 @@
 		</Entity>
 		<Entity uid="453">
 			<Template>gaia/fauna_dog_wolfhound</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="759.59913" z="263.96732"/>
 			<Orientation y="1.0397"/>
 			<Actor seed="34062"/>
 		</Entity>
 		<Entity uid="454">
 			<Template>gaia/fauna_horse</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="757.32288" z="300.6561"/>
 			<Orientation y="1.6697"/>
 			<Actor seed="10550"/>
 		</Entity>
 		<Entity uid="455">
 			<Template>gaia/fauna_horse_marwari</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="749.62043" z="303.61057"/>
 			<Orientation y="0.09551"/>
 			<Actor seed="3478"/>
@@ -3940,14 +3940,14 @@
 		</Entity>
 		<Entity uid="752">
 			<Template>gaia/fauna_cattle_bull</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="818.34327" z="195.0352"/>
 			<Orientation y="0.40178"/>
 			<Actor seed="44120"/>
 		</Entity>
 		<Entity uid="753">
 			<Template>gaia/fauna_cattle_bull</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="824.03693" z="225.96741"/>
 			<Orientation y="-1.62313"/>
 			<Actor seed="27780"/>
@@ -3982,21 +3982,21 @@
 		</Entity>
 		<Entity uid="758">
 			<Template>gaia/fauna_chicken</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="762.57813" z="271.73288"/>
 			<Orientation y="0.588"/>
 			<Actor seed="15000"/>
 		</Entity>
 		<Entity uid="759">
 			<Template>gaia/fauna_chicken</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="764.48505" z="271.90973"/>
 			<Orientation y="-1.1396"/>
 			<Actor seed="10902"/>
 		</Entity>
 		<Entity uid="760">
 			<Template>gaia/fauna_chicken</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="764.88666" z="273.69993"/>
 			<Orientation y="-1.24901"/>
 			<Actor seed="19526"/>
@@ -13241,14 +13241,14 @@
 		</Entity>
 		<Entity uid="2288">
 			<Template>gaia/tree/pine</Template>
-			<Player>2</Player>
+			<Player>0</Player>
 			<Position x="335.31382" z="920.80274"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="21128"/>
 		</Entity>
 		<Entity uid="2289">
 			<Template>gaia/tree/pine</Template>
-			<Player>2</Player>
+			<Player>0</Player>
 			<Position x="355.93122" z="915.37616"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="36838"/>
@@ -39981,35 +39981,35 @@
 		</Entity>
 		<Entity uid="7027">
 			<Template>gaia/fauna_cattle_bull</Template>
-			<Player>2</Player>
+			<Player>0</Player>
 			<Position x="322.94083" z="829.12482"/>
 			<Orientation y="1.979"/>
 			<Actor seed="46958"/>
 		</Entity>
 		<Entity uid="7028">
 			<Template>gaia/fauna_cattle_bull</Template>
-			<Player>2</Player>
+			<Player>0</Player>
 			<Position x="331.51719" z="823.29157"/>
 			<Orientation y="-1.57049"/>
 			<Actor seed="30556"/>
 		</Entity>
 		<Entity uid="7029">
 			<Template>gaia/fauna_chicken</Template>
-			<Player>2</Player>
+			<Player>0</Player>
 			<Position x="322.1497" z="850.7566"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="21178"/>
 		</Entity>
 		<Entity uid="7030">
 			<Template>gaia/fauna_chicken</Template>
-			<Player>2</Player>
+			<Player>0</Player>
 			<Position x="324.55655" z="850.72962"/>
 			<Orientation y="-2.31145"/>
 			<Actor seed="30062"/>
 		</Entity>
 		<Entity uid="7031">
 			<Template>gaia/fauna_chicken</Template>
-			<Player>2</Player>
+			<Player>0</Player>
 			<Position x="321.53513" z="847.72413"/>
 			<Orientation y="1.34063"/>
 			<Actor seed="9866"/>
@@ -40058,14 +40058,14 @@
 		</Entity>
 		<Entity uid="7038">
 			<Template>gaia/fauna_dog_mastiff</Template>
-			<Player>2</Player>
+			<Player>0</Player>
 			<Position x="314.85279" z="848.99646"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="25448"/>
 		</Entity>
 		<Entity uid="7039">
 			<Template>gaia/fauna_donkey</Template>
-			<Player>2</Player>
+			<Player>0</Player>
 			<Position x="322.11167" z="841.85224"/>
 			<Orientation y="1.31032"/>
 			<Actor seed="32632"/>
@@ -40254,28 +40254,28 @@
 		</Entity>
 		<Entity uid="7066">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>2</Player>
+			<Player>0</Player>
 			<Position x="257.39094" z="842.8553"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="36784"/>
 		</Entity>
 		<Entity uid="7067">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>2</Player>
+			<Player>0</Player>
 			<Position x="257.8003" z="849.75867"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="35796"/>
 		</Entity>
 		<Entity uid="7068">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>2</Player>
+			<Player>0</Player>
 			<Position x="253.89856" z="835.89502"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="6980"/>
 		</Entity>
 		<Entity uid="7069">
 			<Template>gaia/fruit/berry_01</Template>
-			<Player>2</Player>
+			<Player>0</Player>
 			<Position x="262.9134" z="856.60071"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="49744"/>
@@ -40536,84 +40536,84 @@
 		</Entity>
 		<Entity uid="7113">
 			<Template>gaia/tree/bush_temperate</Template>
-			<Player>2</Player>
+			<Player>0</Player>
 			<Position x="662.1673" z="357.8613"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="1972"/>
 		</Entity>
 		<Entity uid="7114">
 			<Template>gaia/tree/bush_temperate</Template>
-			<Player>2</Player>
+			<Player>0</Player>
 			<Position x="629.98395" z="349.27482"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="8598"/>
 		</Entity>
 		<Entity uid="7115">
 			<Template>gaia/tree/bush_temperate</Template>
-			<Player>2</Player>
+			<Player>0</Player>
 			<Position x="594.40583" z="310.52726"/>
 			<Orientation y="1.96381"/>
 			<Actor seed="60944"/>
 		</Entity>
 		<Entity uid="7116">
 			<Template>gaia/tree/bush_temperate</Template>
-			<Player>2</Player>
+			<Player>0</Player>
 			<Position x="592.88874" z="305.36493"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="52934"/>
 		</Entity>
 		<Entity uid="7117">
 			<Template>gaia/tree/bush_temperate</Template>
-			<Player>2</Player>
+			<Player>0</Player>
 			<Position x="636.66382" z="353.22617"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="5610"/>
 		</Entity>
 		<Entity uid="7118">
 			<Template>gaia/tree/elm</Template>
-			<Player>2</Player>
+			<Player>0</Player>
 			<Position x="618.09247" z="336.15888"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="16030"/>
 		</Entity>
 		<Entity uid="7119">
 			<Template>gaia/tree/elm</Template>
-			<Player>2</Player>
+			<Player>0</Player>
 			<Position x="614.98163" z="335.51917"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="63546"/>
 		</Entity>
 		<Entity uid="7120">
 			<Template>gaia/tree/elm</Template>
-			<Player>2</Player>
+			<Player>0</Player>
 			<Position x="594.88929" z="316.11805"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="56680"/>
 		</Entity>
 		<Entity uid="7121">
 			<Template>gaia/tree/elm</Template>
-			<Player>2</Player>
+			<Player>0</Player>
 			<Position x="643.0199" z="351.78553"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="63472"/>
 		</Entity>
 		<Entity uid="7122">
 			<Template>gaia/tree/elm</Template>
-			<Player>2</Player>
+			<Player>0</Player>
 			<Position x="638.8213" z="350.80964"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="33582"/>
 		</Entity>
 		<Entity uid="7123">
 			<Template>gaia/tree/maple</Template>
-			<Player>2</Player>
+			<Player>0</Player>
 			<Position x="657.1855" z="358.1359"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="32178"/>
 		</Entity>
 		<Entity uid="7124">
 			<Template>gaia/tree/maple</Template>
-			<Player>2</Player>
+			<Player>0</Player>
 			<Position x="650.58594" z="357.50641"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="15634"/>
@@ -44341,28 +44341,28 @@
 		</Entity>
 		<Entity uid="7823">
 			<Template>gaia/fauna_deer</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="604.30372" z="69.12688"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="12712"/>
 		</Entity>
 		<Entity uid="7824">
 			<Template>gaia/fauna_deer</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="609.27637" z="71.24875"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="29674"/>
 		</Entity>
 		<Entity uid="7825">
 			<Template>gaia/fauna_deer</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="609.84723" z="68.09388"/>
 			<Orientation y="-2.33326"/>
 			<Actor seed="47200"/>
 		</Entity>
 		<Entity uid="7826">
 			<Template>gaia/fauna_deer</Template>
-			<Player>1</Player>
+			<Player>0</Player>
 			<Position x="602.2021" z="64.66813"/>
 			<Orientation y="1.27802"/>
 			<Actor seed="27652"/>

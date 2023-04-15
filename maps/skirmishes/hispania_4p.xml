@@ -39692,21 +39692,21 @@
 		</Entity>
 		<Entity uid="9572">
 			<Template>gaia/ore/temperate_small</Template>
-			<Player>2</Player>
+			<Player>0</Player>
 			<Position x="1444.80018" z="339.5124"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="14773"/>
 		</Entity>
 		<Entity uid="9573">
 			<Template>gaia/ore/temperate_small</Template>
-			<Player>2</Player>
+			<Player>0</Player>
 			<Position x="1482.82935" z="366.16511"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="18415"/>
 		</Entity>
 		<Entity uid="9574">
 			<Template>gaia/ore/temperate_small</Template>
-			<Player>2</Player>
+			<Player>0</Player>
 			<Position x="1462.58533" z="268.80097"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="49968"/>

@@ -4425,7 +4425,7 @@
 		</Entity>
 		<Entity uid="632">
 			<Template>gaia/fruit/fig</Template>
-			<Player>2</Player>
+			<Player>0</Player>
 			<Position x="526.47907" z="550.84418"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="35397"/>
@@ -4446,7 +4446,7 @@
 		</Entity>
 		<Entity uid="635">
 			<Template>gaia/fruit/fig</Template>
-			<Player>2</Player>
+			<Player>0</Player>
 			<Position x="480.56116" z="650.97864"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="63042"/>
@@ -4621,7 +4621,7 @@
 		</Entity>
 		<Entity uid="660">
 			<Template>gaia/tree/medit_fan_palm</Template>
-			<Player>2</Player>
+			<Player>0</Player>
 			<Position x="509.6396" z="621.72114"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="48529"/>
@@ -5636,7 +5636,7 @@
 		</Entity>
 		<Entity uid="805">
 			<Template>gaia/tree/date_palm</Template>
-			<Player>2</Player>
+			<Player>0</Player>
 			<Position x="547.61963" z="723.01148"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="44920"/>
@@ -5748,7 +5748,7 @@
 		</Entity>
 		<Entity uid="821">
 			<Template>gaia/tree/cretan_date_palm_tall</Template>
-			<Player>2</Player>
+			<Player>0</Player>
 			<Position x="459.68116" z="637.57313"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="6198"/>
@@ -5874,7 +5874,7 @@
 		</Entity>
 		<Entity uid="839">
 			<Template>gaia/tree/cretan_date_palm_tall</Template>
-			<Player>2</Player>
+			<Player>0</Player>
 			<Position x="698.00483" z="542.26154"/>
 			<Orientation y="-1.03232"/>
 			<Actor seed="35072"/>
@@ -8174,21 +8174,21 @@
 		</Entity>
 		<Entity uid="1286">
 			<Template>gaia/tree/dead</Template>
-			<Player>6</Player>
+			<Player>0</Player>
 			<Position x="1353.56128" z="693.21003"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="44500"/>
 		</Entity>
 		<Entity uid="1287">
 			<Template>gaia/tree/dead</Template>
-			<Player>6</Player>
+			<Player>0</Player>
 			<Position x="1351.8169" z="705.81727"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="15870"/>
 		</Entity>
 		<Entity uid="1288">
 			<Template>gaia/tree/dead</Template>
-			<Player>6</Player>
+			<Player>0</Player>
 			<Position x="1332.56104" z="664.29432"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="60478"/>
