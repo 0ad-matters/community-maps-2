@@ -15,7 +15,7 @@ jobs:
   general:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: tj-actions/changed-files@v35
         id: changed-files-glob
         with:
@@ -68,14 +68,14 @@ jobs:
         run: |
           echo "release_tag=$(curl -s https://api.github.com/repos/0ad/0ad/releases/latest | jq -r '.tag_name')" >> $GITHUB_OUTPUT
       - name: Check out 0 A.D. (${{ steps.tag_name.outputs.release_tag }})
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: 0ad/0ad
           path: 0ad_directory
           ref: ${{ steps.tag_name.outputs.release_tag }}
           clean: true
       - name: Check out community maps 2
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           path: community_maps_2_directory
       - uses: actions/setup-python@v4
