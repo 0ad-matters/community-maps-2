@@ -23,7 +23,7 @@ jobs:
         id: build-pyromod
       - name: Upload Artifacts
       # Uploads artifacts (combined into a zip file) to the workflow output page
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: ${{ env.MOD_NAME }}-${{ env.MOD_VERSION }}
           path: output/${{ env.MOD_NAME }}*.*
