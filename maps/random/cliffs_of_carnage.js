@@ -74,6 +74,7 @@ const mapCenter = g_Map.getCenter();
 const heightScale = num => num * g_MapSettings.Size / 320;
 const minHeightSource = -16;
 const maxHeightSource = 600;
+var heightBase;
 
 function placeMine(position, centerEntity,
 	decorativeActors = [
@@ -370,6 +371,21 @@ function placePlayersNomad_cm2(playerClass, constraints)
 
 	return [playerIDs, playerPosition];
 }
+
+heightBase = heightScale(48);
+
+g_Map.log("Forming waterfall");
+const clWaterfall = g_Map.createTileClass();
+const waterfallGroup = new SimpleGroup(
+	[new SimpleObject("actor|particle/waterfall_top.xml", 5, 12, 0, 1)], false, clWaterfall);
+		createObjectGroups(waterfallGroup, 0,
+	[
+		avoidClasses(clWaterfall, 0),
+		new HeightConstraint(heightBase, Infinity),
+	],
+	scaleByMapSize(30, 270), // amount
+	Infinity, // retry factor
+	);
 
 placePlayersNomad_cm2(clPlayer, avoidClasses(clWater, 5, clForest, 1, clMetal, 4, clRock, 4, clHill, 4, clFood, 2));
 
