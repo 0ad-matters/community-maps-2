@@ -157,7 +157,7 @@ if (!bArctic)
 		new MapBoundsPlacer(),
 		[
 			new TerrainPainter(tShore),
-			new TileClassPainter(clShoreline)
+			new TileClassPainter(clShoreline),
 		],
 		new HeightConstraint(-Infinity, heightShore));
 }
@@ -169,9 +169,21 @@ else
 		[
 			new TerrainPainter("alpine_ice_01"),
 			new TileClassPainter(clIce),
-			new SmoothElevationPainter(ELEVATION_SET, heightSeaGround - 0.1, 0)
+			new SmoothElevationPainter(ELEVATION_SET, heightSeaGround - 0.1, 0),
 		],
 		stayClasses(clWater, 0));
+
+	createDecoration(
+		[
+			[new SimpleObject("obstructors/placement", 1, 1, 0, 0)],
+		],
+		[
+			scaleByMapSize(600, 1800),
+		],
+		stayClasses(
+			clIce, 0,
+		)
+	);
 
 	createAreas(
 		/**
