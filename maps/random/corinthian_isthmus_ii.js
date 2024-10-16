@@ -164,7 +164,7 @@ if (!bArctic)
 else
 {
 	g_Map.log("Freezing water");
-	createArea(
+	const IceArea = new createArea(
 		new MapBoundsPlacer(),
 		[
 			new TerrainPainter("alpine_ice_01"),
@@ -173,17 +173,8 @@ else
 		],
 		stayClasses(clWater, 0));
 
-	createDecoration(
-		[
-			[new SimpleObject("obstructors/placement", 1, 1, 0, 0)],
-		],
-		[
-			scaleByMapSize(600, 1800),
-		],
-		stayClasses(
-			clIce, 0,
-		)
-	);
+	for (const position of IceArea.getPoints())
+		g_Map.placeEntityPassable("obstructors/placement", 0, position);
 
 	createAreas(
 		/**
