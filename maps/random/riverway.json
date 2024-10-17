@@ -7,7 +7,7 @@
 		"Preview": "riverway.png",
 		"SupportedBiomes": "generic/",
 		"CircularMap": true,
-		"Keywords": ["new", "community"],
+		"Keywords": ["community"],
 		"Version": "0.1"
 	}
 }

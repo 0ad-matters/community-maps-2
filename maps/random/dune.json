@@ -7,7 +7,7 @@
 		"Preview": "dune.png",
 		"SupportedBiomes": "generic/sahara",
 		"CircularMap": true,
-		"Keywords": ["new", "community"],
+		"Keywords": ["community"],
 		"Version": "0.3"
 	}
 }

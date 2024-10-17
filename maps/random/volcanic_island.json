@@ -6,7 +6,7 @@
 		"SupportedBiomes": "generic/",
 		"Preview" : "volcanic_island.png",
 		"CircularMap" : true,
-		"Keywords": ["new", "community"],
+		"Keywords": ["community"],
 		"Author" : "nani"
 	}
 }

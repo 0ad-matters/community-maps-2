@@ -7,7 +7,7 @@
 		"Preview": "fert.png",
 		"SupportedBiomes": "generic/",
 		"CircularMap": true,
-		"Keywords": ["new", "trigger", "community"],
+		"Keywords": ["trigger", "community"],
 		"TriggerScripts": [
 			"scripts/TriggerHelper.js",
 			"random/fert_triggers.js"
