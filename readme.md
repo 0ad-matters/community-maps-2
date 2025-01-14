@@ -114,5 +114,5 @@ will not be installable by 0ad and you'll receive an error.
 
 ## Map-making Tips
 
-* [Creating a map preview](https://trac.wildfiregames.com/wiki/Atlas_Manual_Map_Preview)
+* [Creating a map preview](https://gitea.wildfiregames.com/0ad/0ad/wiki/Atlas_Manual_Map_Preview)
 * [How to easily turn ANY Country into a 0AD Map](https://www.youtube.com/watch?v=yBFdxOE7UFw)
