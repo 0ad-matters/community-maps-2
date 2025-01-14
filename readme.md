@@ -67,6 +67,7 @@ of this repo.
 | Battles in the Dirt | [Lion.Kanzen](https://wildfiregames.com/forum/index.php?/profile/13202-lionkanzen/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/21613-battles-in-the-dirt/) | 2017-01-17 |
 | Rapa Nui (Easter Island) | [Grapjas](https://wildfiregames.com/forum/index.php?/profile/21464-grapjas/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/20674-you-guys-want-something-new-do-you-d-new-skirmish-mapupdated-to-v21/) | 2016-04-13 |
 | Devil's Horns | perfecto25 | | 2024-01-13 |
+| Endless Arena | [CulturedCait](https://wildfiregames.com/forum/profile/52922-culturedcait/) | [Forum](https://wildfiregames.com/forum/topic/126722-new-map-endless-arena-skirmish-scripted/) | 2025-01-14 |
 
 ## Scenarios
 

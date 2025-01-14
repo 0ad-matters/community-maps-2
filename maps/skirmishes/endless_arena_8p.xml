@@ -41,7 +41,7 @@
   "AISeed": 0,
   "AllyView": false,
   "CircularMap": true,
-  "Description": "Imagine a perfectly symmetrical world... \nWhere harmony is the most important virtue...\n\nCan you survive this seemingly endless war?\nCan you dominate the world?\n\n[color=\"yellow\"]Welcome to the Endless Arena![/color]\n\nFeatures:\n  * Automatic adjustment of allies/enemies depending on their current military power\n  * Fair support for weaker players\n  * Unique, strategy oriented gameplay\n  * High difficulty due to equilibrium oriented design\n  * The key to victory is to keep equlibrium and use your cunning. You'll have to use tricks and art of wars rather than sheer military power.\n\nNotes: recommended 64bit version of 0 A.D. Alternatively you can lower population limit in game setup if out of memory occurs during large battles.\n\nVersion  : 1.5\nMap Created  : 10/27/2024\nLast Edited  : 12/29/2024\nAuthor  : Przemek Błaszczyk \n\nTested @ 0 A.D. Alpha 26",
+  "Description": "Imagine a perfectly symmetrical world... \nWhere harmony is the most important virtue...\n\nCan you survive this seemingly endless war?\nCan you dominate the world?\n\n[color=\"yellow\"]Welcome to the Endless Arena![/color]\n\nFeatures:\n  * Automatic adjustment of allies/enemies depending on their current military power\n  * Fair support for weaker players\n  * Unique, strategy oriented gameplay\n  * High difficulty due to equilibrium oriented design\n  * The key to victory is to keep equlibrium and use your cunning. You'll have to use tricks and art of wars rather than sheer military power.\n\nNotes: recommended 64bit version of 0 A.D. Alternatively you can lower population limit in game setup if out of memory occurs during large battles.\n\nVersion  : 1.5.5\nMap Created  : 10/27/2024\nLast Edited  : 1/14/2025\nAuthor  : Przemek Błaszczyk \n\nTested @ 0 A.D. Alpha 26",
   "Keywords": [],
   "LockTeams": false,
   "Name": "Endless Arena (8)",
@@ -15175,7 +15175,7 @@
 			<Actor seed="30256"/>
 		</Entity>
 		<Entity uid="7617">
-			<Template>gaia/fauna_turkey</Template>
+			<Template>gaia/fauna_chicken</Template>
 			<Player>0</Player>
 			<Position x="1422.49912" z="1305.60547"/>
 			<Orientation y="1.614"/>
@@ -15210,14 +15210,14 @@
 			<Actor seed="37901"/>
 		</Entity>
 		<Entity uid="7622">
-			<Template>gaia/fauna_turkey</Template>
+			<Template>gaia/fauna_chicken</Template>
 			<Player>0</Player>
 			<Position x="1291.3046" z="1182.2627"/>
 			<Orientation y="0.80782"/>
 			<Actor seed="16503"/>
 		</Entity>
 		<Entity uid="7623">
-			<Template>gaia/fauna_turkey</Template>
+			<Template>gaia/fauna_chicken</Template>
 			<Player>0</Player>
 			<Position x="1450.11635" z="1301.53394"/>
 			<Orientation y="1.2351"/>
@@ -15231,7 +15231,7 @@
 			<Actor seed="2627"/>
 		</Entity>
 		<Entity uid="7625">
-			<Template>gaia/fauna_turkey</Template>
+			<Template>gaia/fauna_chicken</Template>
 			<Player>0</Player>
 			<Position x="1411.0997" z="1283.13396"/>
 			<Orientation y="1.36124"/>
@@ -15511,7 +15511,7 @@
 			<Actor seed="12404"/>
 		</Entity>
 		<Entity uid="7665">
-			<Template>gaia/fauna_turkey</Template>
+			<Template>gaia/fauna_chicken</Template>
 			<Player>0</Player>
 			<Position x="746.46605" z="1450.11635"/>
 			<Orientation y="-0.33568"/>
@@ -15588,7 +15588,7 @@
 			<Actor seed="40975"/>
 		</Entity>
 		<Entity uid="7676">
-			<Template>gaia/fauna_turkey</Template>
+			<Template>gaia/fauna_chicken</Template>
 			<Player>0</Player>
 			<Position x="557.18914" z="1143.69549"/>
 			<Orientation y="-1.5501"/>
@@ -15616,7 +15616,7 @@
 			<Actor seed="43384"/>
 		</Entity>
 		<Entity uid="7680">
-			<Template>gaia/fauna_turkey</Template>
+			<Template>gaia/fauna_chicken</Template>
 			<Player>0</Player>
 			<Position x="543.09343" z="1106.65627"/>
 			<Orientation y="-0.7422"/>
@@ -15896,7 +15896,7 @@
 			<Actor seed="15488"/>
 		</Entity>
 		<Entity uid="7720">
-			<Template>gaia/fauna_turkey</Template>
+			<Template>gaia/fauna_chicken</Template>
 			<Player>0</Player>
 			<Position x="951.89942" z="585.19234"/>
 			<Orientation y="-2.23942"/>
@@ -15924,14 +15924,14 @@
 			<Actor seed="20633"/>
 		</Entity>
 		<Entity uid="7724">
-			<Template>gaia/fauna_turkey</Template>
+			<Template>gaia/fauna_chicken</Template>
 			<Player>0</Player>
 			<Position x="957.01049" z="569.79117"/>
 			<Orientation y="-2.07517"/>
 			<Actor seed="19069"/>
 		</Entity>
 		<Entity uid="7725">
-			<Template>gaia/fauna_turkey</Template>
+			<Template>gaia/fauna_chicken</Template>
 			<Player>0</Player>
 			<Position x="911.95864" z="597.30672"/>
 			<Orientation y="-3.1787"/>
@@ -16043,7 +16043,7 @@
 			<Actor seed="10937"/>
 		</Entity>
 		<Entity uid="7741">
-			<Template>gaia/fauna_turkey</Template>
+			<Template>gaia/fauna_chicken</Template>
 			<Player>0</Player>
 			<Position x="1283.30106" z="662.73331"/>
 			<Orientation y="-3.0248"/>
@@ -16232,7 +16232,7 @@
 			<Actor seed="48464"/>
 		</Entity>
 		<Entity uid="7768">
-			<Template>gaia/fauna_turkey</Template>
+			<Template>gaia/fauna_chicken</Template>
 			<Player>0</Player>
 			<Position x="1549.44425" z="974.43078"/>
 			<Orientation y="-3.12226"/>
@@ -16379,7 +16379,7 @@
 			<Actor seed="37739"/>
 		</Entity>
 		<Entity uid="7789">
-			<Template>gaia/fauna_turkey</Template>
+			<Template>gaia/fauna_chicken</Template>
 			<Player>0</Player>
 			<Position x="1369.88762" z="1451.40868"/>
 			<Orientation y="2.09127"/>
@@ -16442,7 +16442,7 @@
 			<Actor seed="42451"/>
 		</Entity>
 		<Entity uid="7798">
-			<Template>gaia/fauna_turkey</Template>
+			<Template>gaia/fauna_chicken</Template>
 			<Player>0</Player>
 			<Position x="1213.9175" z="1319.4388"/>
 			<Orientation y="1.00081"/>
@@ -16512,7 +16512,7 @@
 			<Actor seed="20302"/>
 		</Entity>
 		<Entity uid="7808">
-			<Template>gaia/fauna_turkey</Template>
+			<Template>gaia/fauna_chicken</Template>
 			<Player>0</Player>
 			<Position x="906.19271" z="1546.51113"/>
 			<Orientation y="0.13863"/>
@@ -16526,7 +16526,7 @@
 			<Actor seed="9763"/>
 		</Entity>
 		<Entity uid="7810">
-			<Template>gaia/fauna_turkey</Template>
+			<Template>gaia/fauna_chicken</Template>
 			<Player>0</Player>
 			<Position x="966.3559" z="1570.80306"/>
 			<Orientation y="1.30587"/>
@@ -16582,7 +16582,7 @@
 			<Actor seed="24552"/>
 		</Entity>
 		<Entity uid="7818">
-			<Template>gaia/fauna_turkey</Template>
+			<Template>gaia/fauna_chicken</Template>
 			<Player>0</Player>
 			<Position x="924.8474" z="1403.95778"/>
 			<Orientation y="-0.19645"/>
@@ -16722,7 +16722,7 @@
 			<Actor seed="20605"/>
 		</Entity>
 		<Entity uid="7838">
-			<Template>gaia/fauna_turkey</Template>
+			<Template>gaia/fauna_chicken</Template>
 			<Player>0</Player>
 			<Position x="719.80472" z="1264.20539"/>
 			<Orientation y="0.40075"/>
@@ -16750,7 +16750,7 @@
 			<Actor seed="46448"/>
 		</Entity>
 		<Entity uid="7842">
-			<Template>gaia/fauna_turkey</Template>
+			<Template>gaia/fauna_chicken</Template>
 			<Player>0</Player>
 			<Position x="555.31386" z="954.04055"/>
 			<Orientation y="-0.69632"/>
@@ -16813,7 +16813,7 @@
 			<Actor seed="46435"/>
 		</Entity>
 		<Entity uid="7851">
-			<Template>gaia/fauna_turkey</Template>
+			<Template>gaia/fauna_chicken</Template>
 			<Player>0</Player>
 			<Position x="518.61307" z="940.61265"/>
 			<Orientation y="-0.84984"/>
@@ -16827,7 +16827,7 @@
 			<Actor seed="19606"/>
 		</Entity>
 		<Entity uid="7853">
-			<Template>gaia/fauna_turkey</Template>
+			<Template>gaia/fauna_chicken</Template>
 			<Player>0</Player>
 			<Position x="490.12587" z="905.76037"/>
 			<Orientation y="-1.39417"/>
@@ -16876,14 +16876,14 @@
 			<Actor seed="35268"/>
 		</Entity>
 		<Entity uid="7860">
-			<Template>gaia/fauna_turkey</Template>
+			<Template>gaia/fauna_chicken</Template>
 			<Player>0</Player>
 			<Position x="644.04221" z="924.8474"/>
 			<Orientation y="-1.76723"/>
 			<Actor seed="35425"/>
 		</Entity>
 		<Entity uid="7861">
-			<Template>gaia/fauna_turkey</Template>
+			<Template>gaia/fauna_chicken</Template>
 			<Player>0</Player>
 			<Position x="680.80124" z="949.38518"/>
 			<Orientation y="-1.35538"/>
@@ -17093,7 +17093,7 @@
 			<Actor seed="38664"/>
 		</Entity>
 		<Entity uid="7891">
-			<Template>gaia/fauna_turkey</Template>
+			<Template>gaia/fauna_chicken</Template>
 			<Player>0</Player>
 			<Position x="1143.11362" z="556.98906"/>
 			<Orientation y="-3.2827"/>
@@ -17107,7 +17107,7 @@
 			<Actor seed="11119"/>
 		</Entity>
 		<Entity uid="7893">
-			<Template>gaia/fauna_turkey</Template>
+			<Template>gaia/fauna_chicken</Template>
 			<Player>0</Player>
 			<Position x="1107.38735" z="518.61307"/>
 			<Orientation y="-2.42064"/>
@@ -17121,7 +17121,7 @@
 			<Actor seed="6335"/>
 		</Entity>
 		<Entity uid="7895">
-			<Template>gaia/fauna_turkey</Template>
+			<Template>gaia/fauna_chicken</Template>
 			<Player>0</Player>
 			<Position x="1142.23963" z="490.12587"/>
 			<Orientation y="-2.96496"/>
@@ -17149,7 +17149,7 @@
 			<Actor seed="48556"/>
 		</Entity>
 		<Entity uid="7899">
-			<Template>gaia/fauna_turkey</Template>
+			<Template>gaia/fauna_chicken</Template>
 			<Player>0</Player>
 			<Position x="1083.72835" z="603.24311"/>
 			<Orientation y="-2.19552"/>
@@ -17205,7 +17205,7 @@
 			<Actor seed="43382"/>
 		</Entity>
 		<Entity uid="7907">
-			<Template>gaia/fauna_turkey</Template>
+			<Template>gaia/fauna_chicken</Template>
 			<Player>0</Player>
 			<Position x="1285.10856" z="864.4826"/>
 			<Orientation y="-3.94065"/>
@@ -17324,7 +17324,7 @@
 			<Actor seed="28681"/>
 		</Entity>
 		<Entity uid="7924">
-			<Template>gaia/fauna_turkey</Template>
+			<Template>gaia/fauna_chicken</Template>
 			<Player>0</Player>
 			<Position x="1319.4388" z="834.0825"/>
 			<Orientation y="-3.71158"/>
@@ -17436,7 +17436,7 @@
 			<Actor seed="36082"/>
 		</Entity>
 		<Entity uid="7940">
-			<Template>gaia/fauna_turkey</Template>
+			<Template>gaia/fauna_chicken</Template>
 			<Player>0</Player>
 			<Position x="1383.4793" z="1060.45015"/>
 			<Orientation y="-3.3667"/>
@@ -17464,7 +17464,7 @@
 			<Actor seed="38959"/>
 		</Entity>
 		<Entity uid="7944">
-			<Template>gaia/fauna_turkey</Template>
+			<Template>gaia/fauna_chicken</Template>
 			<Player>0</Player>
 			<Position x="1403.95778" z="1123.1526"/>
 			<Orientation y="-4.90883"/>
