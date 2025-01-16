@@ -44,9 +44,9 @@ jobs:
         run: |
           curl -fLo eslintrc.json https://raw.githubusercontent.com/0ad/0ad/master/build/arclint/configs/eslintrc.json || exit 1
       - name: Run reviewdog/action-eslint
-        uses: reviewdog/action-eslint@master
+        uses: reviewdog/action-eslint@v1
         with:
-          fail_on_error: true
+          fail_level: any
           github_token: ${{ secrets.GITHUB_TOKEN }}
           reporter: github-pr-review
           filter_mode: added
