@@ -1,50 +1,50 @@
 {
-	"settings" : {
-		"Name" : "Gaia",
-		"Script" : "gaia.js",
-		"Description" : "Natural map with a variety of landscapes, intended for beauty and realism. Plentiful resources, includes ruins and treasure, players can encounter mercenary camps and units. Heavily randomized: Factions may start closer to different resources and dangers, luck plays a crucial role!",
-		"Preview" : "gaia_day.png",
-		"Keywords": ["community"],
-		"SupportedBiomes": "generic/",
-		"CircularMap" : true,
-		"TeamPlacements": ["radial", "line", "randomGroup", "stronghold"],
-		"Daytime": [
-			{
-				"Id": "day",
-				"Name": "Day",
-				"Description": "Daytime, very bright.",
-				"Preview" : "gaia_day.png"
-			},
-			{
-				"Id": "dawn",
-				"Name": "Dusk / Dawn",
-				"Description": "Dusk or dawn, moderately bright.",
-				"Preview" : "gaia_dawn.png"
-			},
-			{
-				"Id": "sunrise",
-				"Name": "Sunrise / Sunset",
-				"Description": "Sunrise or sunset, moderately dark.",
-				"Preview" : "gaia_sunrise.png"
-			},
-			{
-				"Id": "night",
-				"Name": "Night",
-				"Description": "Nighttime, very dark.",
-				"Preview" : "gaia_night.png"
-			},
-			{
-				"Id": "cloudy",
-				"Name": "Cloudy",
-				"Description": "Cloudy day, moderately bright.",
-				"Preview" : "gaia_cloudy.png"
-			},
-			{
-				"Id": "stormy",
-				"Name": "Stormy",
-				"Description": "Stormy day, moderately dark. Uses weather effects.",
-				"Preview" : "gaia_stormy.png"
-			}
-		]
-	}
+  "settings" : {
+    "Name" : "Gaia",
+    "Script" : "gaia.js",
+    "Description" : "Natural map with a variety of landscapes, intended for beauty and realism. Plentiful resources, includes ruins and treasure, players can encounter mercenary camps and units. Heavily randomized: Factions may start closer to different resources and dangers, luck plays a crucial role!",
+    "Preview" : "gaia_day.png",
+    "Keywords": ["community"],
+    "SupportedBiomes": "generic/",
+    "CircularMap" : true,
+    "PlayerPlacements": ["circle", "groupedLines", "randomGroup", "stronghold"],
+    "Daytime": [
+      {
+        "Id": "day",
+        "Name": "Day",
+        "Description": "Daytime, very bright.",
+        "Preview" : "gaia_day.png"
+      },
+      {
+        "Id": "dawn",
+        "Name": "Dusk / Dawn",
+        "Description": "Dusk or dawn, moderately bright.",
+        "Preview" : "gaia_dawn.png"
+      },
+      {
+        "Id": "sunrise",
+        "Name": "Sunrise / Sunset",
+        "Description": "Sunrise or sunset, moderately dark.",
+        "Preview" : "gaia_sunrise.png"
+      },
+      {
+        "Id": "night",
+        "Name": "Night",
+        "Description": "Nighttime, very dark.",
+        "Preview" : "gaia_night.png"
+      },
+      {
+        "Id": "cloudy",
+        "Name": "Cloudy",
+        "Description": "Cloudy day, moderately bright.",
+        "Preview" : "gaia_cloudy.png"
+      },
+      {
+        "Id": "stormy",
+        "Name": "Stormy",
+        "Description": "Stormy day, moderately dark. Uses weather effects.",
+        "Preview" : "gaia_stormy.png"
+      }
+    ]
+  }
 }
