@@ -5,11 +5,10 @@ Engine.LoadLibrary("rmgen");
 Engine.LoadLibrary("rmgen-common");
 Engine.LoadLibrary("rmgen2");
 Engine.LoadLibrary("rmbiome");
-Engine.LoadLibrary("rmgen-helpers");
 
 function* GenerateMap(mapSettings)
 {
-  setSelectedBiome();
+  setBiome(mapSettings.Biome);
 
   const heightScale = num => num * g_MapSettings.Size / 320;
   const heightLand = 30;
@@ -122,13 +121,14 @@ function* GenerateMap(mapSettings)
   var playerPosition = [];
   if (!isNomad())
   {
-    const pattern = g_MapSettings.TeamPlacement || pickRandom(Object.keys(g_PlayerbaseTypes));
-    var [playerIDs, playerPosition] = createBasesByPattern(
-      pattern,
-      g_PlayerbaseTypes[pattern].distance,
-      g_PlayerbaseTypes[pattern].groupedDistance,
-      randomAngle(),
-      createBasesRandomHeights);
+    var [playerIDs, playerPosition] = createBasesRandomHeights(
+      ...playerPlacementByPattern(
+        mapSettings.PlayerPlacement,
+        fractionToTiles(0.35),
+        fractionToTiles(0.1),
+        randomAngle(),
+        undefined),
+      false);
   }
 
   Engine.SetProgress(20);

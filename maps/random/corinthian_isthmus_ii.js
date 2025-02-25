@@ -12,7 +12,7 @@ TILE_CENTERED_HEIGHT_MAP = true;
 
 function* GenerateMap(mapSettings)
 {
-  setSelectedBiome();
+  setBiome(mapSettings.Biome);
   const bSahara = (currentBiome() == "generic/sahara");
   const bArctic = (currentBiome() == "generic/arctic");
 

@@ -8,7 +8,7 @@ Engine.LoadLibrary("rmbiome");
 
 function* GenerateMap(mapSettings)
 {
-  setSelectedBiome();
+  setBiome(mapSettings.Biome);
 
   const mapHeight = 1;
   globalThis.g_Map = new RandomMap(mapHeight, g_Terrains.mainTerrain);
@@ -30,13 +30,14 @@ function* GenerateMap(mapSettings)
   var playerPosition;
   if (!isNomad())
   {
-    const pattern = g_MapSettings.TeamPlacement || pickRandom(Object.keys(g_PlayerbaseTypes));
-    [playerIDs, playerPosition] = createBasesByPattern(
+    const pattern = mapSettings.PlayerPlacement; // || pickRandom(Object.keys(g_PlayerbaseTypes));
+    [playerIDs, playerPosition] = createBases(...playerPlacementByPattern(
       pattern,
-      g_PlayerbaseTypes[pattern].distance,
-      g_PlayerbaseTypes[pattern].groupedDistance,
-      randomAngle()
-    );
+      fractionToTiles(0.35),
+      fractionToTiles(0.1),
+      randomAngle(),
+      undefined
+    ), false);
     markPlayerAvoidanceArea(playerPosition, defaultPlayerBaseRadius());
   }
 
@@ -628,7 +629,7 @@ function* GenerateMap(mapSettings)
   Engine.SetProgress(90);
 
   // Day is default, only override settings specified by the biome when necessary
-  if (g_MapSettings.Daytime == "day")
+  if (mapSettings.Daytime == "day")
   {
     setSunColor(1, 1, 1);
     setSunRotation(randomAngle());
@@ -639,7 +640,7 @@ function* GenerateMap(mapSettings)
 
     setSkySet(pickRandom(["sunny", "cloudless", "cirrus"]));
   }
-  else if (g_MapSettings.Daytime == "dawn")
+  else if (mapSettings.Daytime == "dawn")
   {
     setSunColor(1, 0.875, 0.625);
     setSunRotation(randomAngle());
@@ -650,7 +651,7 @@ function* GenerateMap(mapSettings)
 
     setSkySet(pickRandom(["sunset", "mountainous"]));
   }
-  else if (g_MapSettings.Daytime == "sunrise")
+  else if (mapSettings.Daytime == "sunrise")
   {
     setSunColor(0.5, 0.125, 0);
     setSunRotation(randomAngle());
@@ -661,7 +662,7 @@ function* GenerateMap(mapSettings)
 
     setSkySet(pickRandom(["fog"]));
   }
-  else if (g_MapSettings.Daytime == "night")
+  else if (mapSettings.Daytime == "night")
   {
     setSunColor(0.125, 0.125, 0.125);
     setSunRotation(randomAngle());
@@ -672,7 +673,7 @@ function* GenerateMap(mapSettings)
 
     setSkySet(pickRandom(["dark"]));
   }
-  else if (g_MapSettings.Daytime == "cloudy")
+  else if (mapSettings.Daytime == "cloudy")
   {
     setSunColor(0.25, 0.25, 0.25);
     setSunRotation(0);
@@ -685,7 +686,7 @@ function* GenerateMap(mapSettings)
 
     setSkySet(pickRandom(["stratus", "cumulus"]));
   }
-  else if (g_MapSettings.Daytime == "stormy")
+  else if (mapSettings.Daytime == "stormy")
   {
     setSunColor(0.125, 0.125, 0.125);
     setSunRotation(0);
