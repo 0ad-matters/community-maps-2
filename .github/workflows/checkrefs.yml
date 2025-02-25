@@ -59,34 +59,36 @@ jobs:
             \ 1,maxBOF: 0,maxEOF: 0}]'"
   # this last job is the most time consuming,
   # if something goes wrong before, don't run this job
-  checkrefs:
-    runs-on: ubuntu-latest
-    needs: [general]
-    steps:
-      - name: Get latest release tag of 0 A.D.
-        id: tag_name
-        run: |
-          echo "release_tag=$(curl -s https://api.github.com/repos/0ad/0ad/releases/latest | jq -r '.tag_name')" >> $GITHUB_OUTPUT
-      - name: Check out 0 A.D. (${{ steps.tag_name.outputs.release_tag }})
-        uses: actions/checkout@v4
-        with:
-          repository: 0ad/0ad
-          path: 0ad_directory
-          ref: ${{ steps.tag_name.outputs.release_tag }}
-          clean: true
-      - name: Check out community maps 2
-        uses: actions/checkout@v4
-        with:
-          path: community_maps_2_directory
-      - uses: actions/setup-python@v5
-        with:
-          python-version: 3.x
-      - run: pip install lxml
-      - name: Run checkrefs.py
-        run: |-
-          ERRLOG="${GITHUB_WORKSPACE}/errlog.txt"
-          cd "$GITHUB_WORKSPACE/0ad_directory/source/tools/entity" || exit 1
-          python3 ./checkrefs.py -m "$GITHUB_WORKSPACE/community_maps_2_directory" -tax 2> $ERRLOG
-          LOG_CONTENTS=$(cat $ERRLOG)
-          [[ -z "$LOG_CONTENTS" ]] && exit 0
-          echo $LOG_CONTENTS && exit 1
+  #
+  # TODO: Download and cache 0ad 0.27.0 source and data
+  #checkrefs:
+    #runs-on: ubuntu-latest
+    #needs: [general]
+    #steps:
+      #- name: Get latest release tag of 0 A.D.
+        #id: tag_name
+        #run: |
+          #echo "release_tag=$(curl -s https://api.github.com/repos/0ad/0ad/releases/latest | jq -r '.tag_name')" >> $GITHUB_OUTPUT
+      #- name: Check out 0 A.D. (${{ steps.tag_name.outputs.release_tag }})
+        #uses: actions/checkout@v4
+        #with:
+          #repository: 0ad/0ad
+          #path: 0ad_directory
+          #ref: ${{ steps.tag_name.outputs.release_tag }}
+          #clean: true
+      #- name: Check out community maps 2
+        #uses: actions/checkout@v4
+        #with:
+          #path: community_maps_2_directory
+      #- uses: actions/setup-python@v5
+        #with:
+          #python-version: 3.x
+      #- run: pip install lxml
+      #- name: Run checkrefs.py
+        #run: |-
+          #ERRLOG="${GITHUB_WORKSPACE}/errlog.txt"
+          #cd "$GITHUB_WORKSPACE/0ad_directory/source/tools/entity" || exit 1
+          #python3 ./checkrefs.py -m "$GITHUB_WORKSPACE/community_maps_2_directory" -tax 2> $ERRLOG
+          #LOG_CONTENTS=$(cat $ERRLOG)
+          #[[ -z "$LOG_CONTENTS" ]] && exit 0
+          #echo $LOG_CONTENTS && exit 1
