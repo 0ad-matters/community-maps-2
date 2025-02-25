@@ -1,12 +1,12 @@
 {
-	"settings" : {
-		"Name" : "Stan's Sorrow",
-		"Script" : "stans_sorrow.js",
-		"Description" : "A map without any water; some heights are randomly generated.",
-		"Preview" : "stans_sorrow.png",
-		"Keywords": ["community"],
-		"SupportedBiomes": "generic/",
-		"CircularMap" : true,
-		"TeamPlacements": ["radial", "line", "stronghold", "besideAllies", "randomGroup"]
-	}
+  "settings" : {
+    "Name" : "Stan's Sorrow",
+    "Script" : "stans_sorrow.js",
+    "Description" : "A map without any water; some heights are randomly generated.",
+    "Preview" : "stans_sorrow.png",
+    "Keywords": ["community"],
+    "SupportedBiomes": "generic/",
+    "CircularMap" : true,
+    "PlayerPlacements": ["circle", "groupedLines", "randomGroup", "stronghold"]
+  }
 }

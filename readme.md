@@ -24,13 +24,11 @@ of this repo.
 | Carpathian | norjay |[Forum](https://wildfiregames.com/forum/topic/73639-random-carpathian/)| 2022-03-12|
 | Cliffs of Carnage | andy5995 |[Forum](https://wildfiregames.com/forum/topic/30590-cliffs-of-carnage-new-4v4-pvp-map/)|2022-03-09|
 | Povorotnaya | [norjay](https://wildfiregames.com/forum/profile/35479-norjay/) | [Forum](https://wildfiregames.com/forum/topic/63618-random-povorotnaya/) | 2021-11-27 |
-| Mainland balanced | [Feldfeld](https://wildfiregames.com/forum/profile/22154-feldfeld/) | [Forum](https://wildfiregames.com/forum/topic/53880-feldmap-a25/) | 2021-08-27 |
 | Alpine Mountains | [Feldfeld](https://wildfiregames.com/forum/profile/22154-feldfeld/) | [Forum](https://wildfiregames.com/forum/topic/53880-feldmap-a25/) | 2021-08-27 |
 | Jammy's Despair | andy5995, Jammyjamjamman | [Forum](https://wildfiregames.com/forum/topic/62726-jammys-despair/) | 2021-11-12 |
 | Corinthian Isthmus II | andy5995, Jammyjamjamman | [Forum](https://wildfiregames.com/forum/topic/61741-corinthian-isthmus-ii/) | 2021-10-30 |
 | Yekaterinaville | [andy5995](https://wildfiregames.com/forum/profile/21632-andy5995/) | [Forum](https://wildfiregames.com/forum/topic/60909-mainland-rectangled/?do=findComment&comment=461162) | 2021-10-23 |
 | Mainland Rectangled | [andy5995](https://wildfiregames.com/forum/profile/21632-andy5995/) | [Forum](https://wildfiregames.com/forum/topic/60909-mainland-rectangled/) | 2021-10-22 |
-| Mainland TG | [Jammyjamjamman](https://wildfiregames.com/forum/profile/33845-jammyjamjamman/) | [Forum](https://wildfiregames.com/forum/topic/28758-mainland-with-teammates-placed-closely-together/) | 2020-09-06 |
 | Volcanic Island | [nani](https://wildfiregames.com/forum/index.php?/profile/27866-nani/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/25695-random-map-volcanic-island/) | 2019-04-18 |
 | Dune | [nani](https://wildfiregames.com/forum/index.php?/profile/27866-nani/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/24638-random-map-dune-desert/) | 2018-08-25 |
 | Fert | [nani](https://wildfiregames.com/forum/index.php?/profile/27866-nani/) | [Forum](https://wildfiregames.com/forum/index.php?/topic/24621-random-map-fert-king-of-the-hill-variant/) | 2018-08-25 |
