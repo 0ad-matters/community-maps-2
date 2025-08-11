@@ -15,7 +15,7 @@ jobs:
     env:
       MOD_VERSION: ${{ github.sha }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: 0ad-matters/gh-action-build-pyromod@v2
         with:
           name: ${{ env.MOD_NAME }}
@@ -33,7 +33,7 @@ jobs:
     env:
       MOD_VERSION: ${{ github.ref_name }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Massage Variables
         run: |
           echo "MOD_VERSION=${MOD_VERSION:1}" >> $GITHUB_ENV
