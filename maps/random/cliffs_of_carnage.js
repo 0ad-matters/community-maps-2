@@ -4,11 +4,11 @@
 
 Engine.LoadLibrary("rmgen");
 Engine.LoadLibrary("rmgen-common");
-Engine.LoadLibrary("rmgen2");
+// Engine.LoadLibrary("rmgen2");
 Engine.LoadLibrary("rmbiome");
 Engine.LoadLibrary("heightmap");
 
-function* GenerateMap(mapSettings)
+export function* generateMap(mapSettings)
 {
   setBiome(mapSettings.Biome);
 
