@@ -42,7 +42,7 @@ var pForest2 = [tForestFloor2 + TERRAIN_SEPARATOR + oTree1, tForestFloor2 + TERR
 var baseHeight = 3;
 var swampBed = -2;
 
-var g_Map = new RandomMap(baseHeight, tPrimary);
+globalThis.g_Map = new RandomMap(baseHeight, tPrimary);
 
 var numPlayers = getNumPlayers();
 

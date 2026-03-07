@@ -1,12 +1,17 @@
 // License: GPL2
 // Authors: MirceaKitsune, James Sherratt (based on code written by the 0AD project)
 
+import { addAnimals, addBerries, addBluffs, addDecoration, addForests, addHills, addLakes, addMetal,
+	addMountains, addLayeredPatches, addPlateaus, addStone, addStragglerTrees, addValleys } from
+	"maps/random/rmgen2/gaia.js";
+import { addElements, allAmounts, allMixes, allSizes, createBases, playerbaseTypes, initTileClasses } from
+	"maps/random/rmgen2/setup.js";
+
 Engine.LoadLibrary("rmgen");
 Engine.LoadLibrary("rmgen-common");
-Engine.LoadLibrary("rmgen2");
 Engine.LoadLibrary("rmbiome");
 
-function* GenerateMap(mapSettings)
+export function* generateMap(mapSettings)
 {
   setBiome(mapSettings.Biome);
 
@@ -24,11 +29,11 @@ function* GenerateMap(mapSettings)
 
   globalThis.g
   g_Map.log("Positioning players");
-  Engine.SetProgress(10);
+  yield 10;
 
   var playerIDs;
   var playerPosition;
-  if (!isNomad())
+  if (!mapSettings.Nomad)
   {
     const pattern = mapSettings.PlayerPlacement; // || pickRandom(Object.keys(g_PlayerbaseTypes));
     [playerIDs, playerPosition] = createBases(...playerPlacementByPattern(
@@ -42,12 +47,12 @@ function* GenerateMap(mapSettings)
   }
 
   g_Map.log("Creating paths between players");
-  Engine.SetProgress(20);
+  yield 20;
 
   createBumps(avoidClasses(g_TileClasses.player, 0), scaleByMapSize(10, 250), 1, 8, 4, 0, 5);
 
   var clPath = g_Map.createTileClass();
-  if (!isNomad())
+  if (!mapSettings.Nomad)
   {
     for (let i = 0; i < playerPosition.length; ++i)
     {
@@ -74,7 +79,7 @@ function* GenerateMap(mapSettings)
   }
 
   g_Map.log("Creating terrain features");
-  Engine.SetProgress(30);
+  yield 30;
 
   addElements([
     // Bluffs
@@ -87,9 +92,9 @@ function* GenerateMap(mapSettings)
         g_TileClasses.water, 0,
         clPath, 1
       ],
-      "sizes": g_AllSizes,
-      "mixes": g_AllMixes,
-      "amounts": g_AllAmounts
+      "sizes": allSizes,
+      "mixes": allMixes,
+      "amounts": allAmounts
     },
     // Plateaus, form inside bluffs
     {
@@ -103,9 +108,9 @@ function* GenerateMap(mapSettings)
       "stay": [
         g_TileClasses.bluff, 0
       ],
-      "sizes": g_AllSizes,
-      "mixes": g_AllMixes,
-      "amounts": g_AllAmounts
+      "sizes": allSizes,
+      "mixes": allMixes,
+      "amounts": allAmounts
     },
     // Mountains, form insite plateaus
     {
@@ -119,9 +124,9 @@ function* GenerateMap(mapSettings)
       "stay": [
         g_TileClasses.plateau, 0
       ],
-      "sizes": g_AllSizes,
-      "mixes": g_AllMixes,
-      "amounts": g_AllAmounts
+      "sizes": allSizes,
+      "mixes": allMixes,
+      "amounts": allAmounts
     },
     // Valleys, form inside bluffs plateaus and mountains
     {
@@ -137,9 +142,9 @@ function* GenerateMap(mapSettings)
         g_TileClasses.plateau, 0,
         g_TileClasses.mountain, 0
       ],
-      "sizes": g_AllSizes,
-      "mixes": g_AllMixes,
-      "amounts": g_AllAmounts
+      "sizes": allSizes,
+      "mixes": allMixes,
+      "amounts": allAmounts
     },
     // Hills, form outside bluffs plateaus and mountains
     {
@@ -153,9 +158,9 @@ function* GenerateMap(mapSettings)
         g_TileClasses.water, 5,
         clPath, 1
       ],
-      "sizes": g_AllSizes,
-      "mixes": g_AllMixes,
-      "amounts": g_AllAmounts
+      "sizes": allSizes,
+      "mixes": allMixes,
+      "amounts": allAmounts
     },
     // Lakes, form outside bluffs plateaus and mountains
     {
@@ -168,14 +173,14 @@ function* GenerateMap(mapSettings)
         g_TileClasses.water, 5,
         clPath, 1
       ],
-      "sizes": g_AllSizes,
-      "mixes": g_AllMixes,
-      "amounts": g_AllAmounts
+      "sizes": allSizes,
+      "mixes": allMixes,
+      "amounts": allAmounts
     }
   ]);
 
   g_Map.log("Painting terrain");
-  Engine.SetProgress(40);
+  yield 40;
 
   addElements([
     {
@@ -189,14 +194,14 @@ function* GenerateMap(mapSettings)
         g_TileClasses.water, 0,
         clPath, 1
       ],
-      "sizes": g_AllSizes,
-      "mixes": g_AllMixes,
+      "sizes": allSizes,
+      "mixes": allMixes,
       "amounts": ["tons"]
     }
   ]);
 
   g_Map.log("Creating mines and plant resources");
-  Engine.SetProgress(60);
+  yield 60;
 
   addElements([
     {
@@ -213,8 +218,8 @@ function* GenerateMap(mapSettings)
         g_TileClasses.player, 15,
         clPath, 1
       ],
-      "sizes": g_AllSizes,
-      "mixes": g_AllMixes,
+      "sizes": allSizes,
+      "mixes": allMixes,
       "amounts": ["normal"]
     },
     {
@@ -232,8 +237,8 @@ function* GenerateMap(mapSettings)
         g_TileClasses.player, 15,
         clPath, 1
       ],
-      "sizes": g_AllSizes,
-      "mixes": g_AllMixes,
+      "sizes": allSizes,
+      "mixes": allMixes,
       "amounts": ["normal", "many", "tons"]
     },
     {
@@ -251,8 +256,8 @@ function* GenerateMap(mapSettings)
         g_TileClasses.player, 10,
         clPath, 1
       ],
-      "sizes": g_AllSizes,
-      "mixes": g_AllMixes,
+      "sizes": allSizes,
+      "mixes": allMixes,
       "amounts": ["normal", "many", "tons"]
     },
     {
@@ -270,8 +275,8 @@ function* GenerateMap(mapSettings)
         g_TileClasses.player, 20,
         clPath, 5
       ],
-      "sizes": g_AllSizes,
-      "mixes": g_AllMixes,
+      "sizes": allSizes,
+      "mixes": allMixes,
       "amounts": ["tons"]
     },
     {
@@ -289,14 +294,14 @@ function* GenerateMap(mapSettings)
         g_TileClasses.player, 20,
         clPath, 5
       ],
-      "sizes": g_AllSizes,
-      "mixes": g_AllMixes,
+      "sizes": allSizes,
+      "mixes": allMixes,
       "amounts": ["many"]
     }
   ]);
 
   g_Map.log("Creating wildlife");
-  Engine.SetProgress(70);
+  yield 70;
 
   addElements([
     {
@@ -313,8 +318,8 @@ function* GenerateMap(mapSettings)
         g_TileClasses.metal, 5,
         g_TileClasses.player, 10
       ],
-      "sizes": g_AllSizes,
-      "mixes": g_AllMixes,
+      "sizes": allSizes,
+      "mixes": allMixes,
       "amounts": ["tons"]
     },
     {
@@ -324,14 +329,14 @@ function* GenerateMap(mapSettings)
         g_TileClasses.player, 10
       ],
       "stay": [g_TileClasses.water, 5],
-      "sizes": g_AllSizes,
-      "mixes": g_AllMixes,
+      "sizes": allSizes,
+      "mixes": allMixes,
       "amounts": ["normal"]
     }
   ]);
 
   g_Map.log("Creating decorations");
-  Engine.SetProgress(80);
+  yield 80;
 
   addElements([
     {
@@ -345,8 +350,8 @@ function* GenerateMap(mapSettings)
         g_TileClasses.water, 0,
         clPath, 1
       ],
-      "sizes": g_AllSizes,
-      "mixes": g_AllMixes,
+      "sizes": allSizes,
+      "mixes": allMixes,
       "amounts": ["tons"]
     },
     {
@@ -360,8 +365,8 @@ function* GenerateMap(mapSettings)
         g_TileClasses.water, 0,
         clPath, 1
       ],
-      "sizes": g_AllSizes,
-      "mixes": g_AllMixes,
+      "sizes": allSizes,
+      "mixes": allMixes,
       "amounts": ["scarce"]
     }
   ]);
@@ -626,7 +631,7 @@ function* GenerateMap(mapSettings)
   ));
 
   g_Map.log("Generating daytime and weather");
-  Engine.SetProgress(90);
+  yield 90;
 
   // Day is default, only override settings specified by the biome when necessary
   if (mapSettings.Daytime == "day")

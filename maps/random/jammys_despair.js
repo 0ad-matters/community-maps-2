@@ -1,9 +1,14 @@
 // License: GPL2
 // Authors: Andy Alt, James Sherratt (based on code written by the 0AD project)
 
+import { addAnimals, addBerries, addBluffs, addDecoration, addForests, addHills, addLakes, addMetal,
+	addMountains, addLayeredPatches, addPlateaus, addStone, addStragglerTrees, addValleys } from
+	"maps/random/rmgen2/gaia.js";
+import { addElements, allAmounts, allMixes, allSizes, createBases, playerbaseTypes, initTileClasses } from
+	"maps/random/rmgen2/setup.js";
+
 Engine.LoadLibrary("rmgen");
 Engine.LoadLibrary("rmgen-common");
-//Engine.LoadLibrary("rmgen2");
 Engine.LoadLibrary("rmbiome");
 
 export function* generateMap(mapSettings)
@@ -86,11 +91,11 @@ export function* generateMap(mapSettings)
 
   g_Map.log("Importing heightmap");
   g_Map.LoadHeightmapImage("jammys_despair.png", heightScale(1), 50);
-  Engine.SetProgress(15);
+  yield 15;
 
   const heightMapCenter = g_Map.getHeight(mapCenter);
 
-  if (!isNomad())
+  if (!mapSettings.Nomad)
   {
     var [playerIDs, playerPosition] = createBases(
     	...playerPlacementByPattern(
@@ -301,7 +306,7 @@ export function* generateMap(mapSettings)
       new HeightConstraint(-Infinity, heightShore));
   }
 
-  Engine.SetProgress(50);
+  yield 50;
 
   g_Map.log("Creating dirt patches");
   createLayeredPatches(
@@ -333,7 +338,7 @@ export function* generateMap(mapSettings)
     ),
     scaleByMapSize(15, 45),
     clDirt);
-  Engine.SetProgress(55);
+  yield 55;
 
   g_Map.log("Creating metal mines");
   createBalancedMetalMines(
@@ -358,7 +363,7 @@ export function* generateMap(mapSettings)
     clForest,
     forestTrees);
 
-  Engine.SetProgress(65);
+  yield 65;
 
   var planetm = 1;
 
@@ -389,7 +394,7 @@ export function* generateMap(mapSettings)
     )
   );
 
-  Engine.SetProgress(70);
+  yield 70;
 
   createFood(
     [
@@ -403,7 +408,7 @@ export function* generateMap(mapSettings)
     avoidClasses(clLake, 2, clForest, 0, clPlayer, 10, clHill, 1, clMetal, 4, clRock, 4, clFood, 20),
     clFood);
 
-  Engine.SetProgress(75);
+  yield 75;
 
   createFood(
     [
@@ -415,7 +420,7 @@ export function* generateMap(mapSettings)
     avoidClasses(clPath, 2, clLake, 1, clForest, 0, clPlayer, 20, clHill, 1, clMetal, 4, clRock, 4, clFood, 10),
     clFood);
 
-  Engine.SetProgress(85);
+  yield 85;
 
   createStragglerTrees(
     [oTree1, oTree2, oTree4, oTree3],

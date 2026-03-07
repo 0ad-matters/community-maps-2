@@ -35,7 +35,7 @@ const heightLake = -4;
 const heightLand = 3;
 const heightHill = 25;
 
-var g_Map = new RandomMap(heightLand, tSnowA);
+globalThis.g_Map = new RandomMap(heightLand, tSnowA);
 
 const numPlayers = getNumPlayers();
 const mapSize = g_Map.getSize();

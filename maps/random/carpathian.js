@@ -375,7 +375,7 @@ if (enabled)
 var hills = [];
 var owner = 100;
 var heightLand = 25;
-var g_Map = new RandomMap(heightLand, texture_default);
+globalThis.g_Map = new RandomMap(heightLand, texture_default);
 
 const numPlayers = getNumPlayers();
 const mapCenter = g_Map.getCenter();

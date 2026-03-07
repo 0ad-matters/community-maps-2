@@ -2,15 +2,20 @@
 // License: GPL2
 // Authors: Andy Alt, James Sherratt (based on code written by the 0AD project)
 
+import { addAnimals, addBerries, addBluffs, addDecoration, addForests, addHills, addLakes, addMetal,
+	addMountains, addLayeredPatches, addPlateaus, addStone, addStragglerTrees, addValleys } from
+	"maps/random/rmgen2/gaia.js";
+import { addElements, allAmounts, allMixes, allSizes, createBases, playerbaseTypes, initTileClasses } from
+	"maps/random/rmgen2/setup.js";
+
 Engine.LoadLibrary("rmgen");
 Engine.LoadLibrary("rmgen-common");
-Engine.LoadLibrary("rmgen2");
 Engine.LoadLibrary("rmbiome");
 Engine.LoadLibrary("heightmap");
 
 TILE_CENTERED_HEIGHT_MAP = true;
 
-function* GenerateMap(mapSettings)
+export function* generateMap(mapSettings)
 {
   setBiome(mapSettings.Biome);
   const bSahara = (currentBiome() == "generic/sahara");
@@ -218,7 +223,7 @@ function* GenerateMap(mapSettings)
     );
   }
 
-  Engine.SetProgress(30);
+  yield 30;
 
   var playerIDs = sortAllPlayers();
   var playerPosition = playerPlacementArcs(
@@ -231,7 +236,7 @@ function* GenerateMap(mapSettings)
 
   const initBaseHeight = heightLand;
   const heightHill = 25;
-  var playerHillRadius = defaultPlayerBaseRadius() / (isNomad() ? 1.5 : 1) * 1.2;
+  var playerHillRadius = defaultPlayerBaseRadius() / (mapSettings.Nomad ? 1.5 : 1) * 1.2;
   g_Map.log("Flatten the initial CC area");
   for (const position of playerPosition)
   {
@@ -338,7 +343,7 @@ function* GenerateMap(mapSettings)
       "template": aGrassShort
     }
   });
-  Engine.SetProgress(35);
+  yield 35;
 
   g_Map.log("Bumpifying");
   createBumps(avoidClasses(clPlayer, 20, clWater, 1));
@@ -359,7 +364,7 @@ function* GenerateMap(mapSettings)
     avoidClasses(clWater, 5, clHill, 0, clDirt, 5, clPlayer, 12),
     scaleByMapSize(15, 45),
     clDirt);
-  Engine.SetProgress(45);
+  yield 45;
 
   g_Map.log("Establishing forests");
   var [forestTrees, stragglerTrees] = getTreeCounts(...rBiomeTreeCount(1));
@@ -368,7 +373,7 @@ function* GenerateMap(mapSettings)
     avoidClasses(clIsthmus, 2, clRock, 1, clMetal, 1, clWater, 2, clPlayer, scaleByMapSize(18, 30), clForest, 12, clHill, 3),
     clForest,
     forestTrees);
-  Engine.SetProgress(50);
+  yield 50;
 
   g_Map.log("Creating metal mines");
   createBalancedMetalMines(
@@ -385,7 +390,7 @@ function* GenerateMap(mapSettings)
     clRock,
     avoidClasses(clIsthmus, 1, clPlayer, scaleByMapSize(23, 38), clHill, 2, clRock, 10, clMetal, 5, clWater, 5)
   );
-  Engine.SetProgress(60);
+  yield 60;
 
   var planetm = 1;
 
@@ -410,7 +415,7 @@ function* GenerateMap(mapSettings)
     ],
     avoidClasses(clWater, 5, clForest, 0, clPlayer, 0, clHill, 0));
 
-  Engine.SetProgress(70);
+  yield 70;
 
   g_Map.log("Populating with food");
   createFood(
@@ -424,7 +429,7 @@ function* GenerateMap(mapSettings)
     ],
     avoidClasses(clWater, 20, clForest, 0, clPlayer, 20, clHill, 1, clMetal, 4, clRock, 4, clFood, 20),
     clFood);
-  Engine.SetProgress(75);
+  yield 75;
 
   createStragglerTrees(
     [oTree1, oTree2, oTree4, oTree3],
