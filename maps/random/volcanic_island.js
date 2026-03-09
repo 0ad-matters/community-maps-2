@@ -4,7 +4,7 @@ Engine.LoadLibrary("rmgen-common");
 Engine.LoadLibrary("rmgen2");
 Engine.LoadLibrary("rmbiome");
 
-setSelectedBiome();
+setBiome(mapSettings.Biome);
 
 const tMainTerrain = g_Terrains.mainTerrain;
 const tForestFloor1 = g_Terrains.forestFloor1;
@@ -58,7 +58,7 @@ const aLargeRock = "actor|geology/stone_granite_large.xml";
 const pForest1 = [tForestFloor2 + TERRAIN_SEPARATOR + oTree1, tForestFloor2 + TERRAIN_SEPARATOR + oTree2, tForestFloor2];
 const pForest2 = [tForestFloor1 + TERRAIN_SEPARATOR + oTree4, tForestFloor1 + TERRAIN_SEPARATOR + oTree5, tForestFloor1];
 
-var g_Map = new RandomMap(0, tMainTerrain);
+globalThis.g_Map = new RandomMap(0, tMainTerrain);
 initTileClasses();
 
 const numPlayers = getNumPlayers();

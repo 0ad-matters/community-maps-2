@@ -2,13 +2,14 @@
 // License: GPL2, Copyright 2022
 // Authors: Andy Alt, James Sherratt (based on code written by the 0AD project)
 
+import { initTileClasses } from "maps/random/rmgen2/setup.js";
+
 Engine.LoadLibrary("rmgen");
 Engine.LoadLibrary("rmgen-common");
-Engine.LoadLibrary("rmgen2");
 Engine.LoadLibrary("rmbiome");
 Engine.LoadLibrary("heightmap");
 
-function* GenerateMap(mapSettings)
+export function* generateMap(mapSettings)
 {
   setBiome(mapSettings.Biome);
 
@@ -139,7 +140,7 @@ function* GenerateMap(mapSettings)
       new TileClassPainter(clShoreline)
     ],
     new HeightConstraint(-Infinity, heightShoreline));
-  Engine.SetProgress(30);
+  yield 30;
 
   g_Map.log("Painting cliffs");
   createArea(
@@ -153,7 +154,7 @@ function* GenerateMap(mapSettings)
       new SlopeConstraint(2, Infinity)
     ]);
 
-  Engine.SetProgress(35);
+  yield 35;
 
   g_Map.log("Placing players");
   placePlayerBases({
@@ -186,7 +187,7 @@ function* GenerateMap(mapSettings)
       "template": aGrassShort
     }
   });
-  Engine.SetProgress(40);
+  yield 40;
 
   g_Map.log("Creating dirt patches");
   createLayeredPatches(
@@ -204,7 +205,7 @@ function* GenerateMap(mapSettings)
     avoidClasses(clWater, 5, clHill, 0, clDirt, 5, clPlayer, 12),
     scaleByMapSize(15, 45),
     clDirt);
-  Engine.SetProgress(45);
+  yield 45;
 
   g_Map.log("Creating metal mines");
   createBalancedMetalMines(
@@ -235,7 +236,7 @@ function* GenerateMap(mapSettings)
       // count (multiplier)
     )
   );
-  Engine.SetProgress(50);
+  yield 50;
 
   g_Map.log("Establishing forests");
   var [forestTrees, stragglerTrees] = getTreeCounts(...rBiomeTreeCount(1));
@@ -247,7 +248,7 @@ function* GenerateMap(mapSettings)
     ),
     clForest,
     forestTrees);
-  Engine.SetProgress(60);
+  yield 60;
 
   var planetm = 1;
 
@@ -272,7 +273,7 @@ function* GenerateMap(mapSettings)
     ],
     avoidClasses(clWater, 5, clForest, 0, clPlayer, 0, clHill, 0));
 
-  Engine.SetProgress(70);
+  yield 70;
 
   g_Map.log("Populating with food");
   createFood(
@@ -288,7 +289,7 @@ function* GenerateMap(mapSettings)
     ],
     avoidClasses(clWater, 6, clForest, 0, clPlayer, scaleByMapSize(23, 38), clHill, 1, clMetal, 4, clRock, 4, clFood, 20),
     clFood);
-  Engine.SetProgress(75);
+  yield 75;
 
   g_Map.log("Creating stragglers (trees)");
   createStragglerTrees(
@@ -319,7 +320,7 @@ function* GenerateMap(mapSettings)
   // slightly modified from the function in maps/random/rmgen-common/player.js
   function placePlayersNomad_cm2(playerClass, constraints)
   {
-    if (!isNomad())
+    if (!mapSettings.Nomad)
       return undefined;
 
     g_Map.log("Placing nomad starting units");

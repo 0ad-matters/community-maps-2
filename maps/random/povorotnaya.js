@@ -6,7 +6,7 @@ TILE_CENTERED_HEIGHT_MAP = true;
 const enabled = true;
 
 // if (g_MapSettings.Biome)
-//	setSelectedBiome();
+//	setBiome(mapSettings.Biome);
 // else
 // 	setBiome("generic/savanna");
 
@@ -141,7 +141,7 @@ if (enabled)
 // "gaia/flora_tree_cretan_date_palm_short", "gaia/flora_tree_acacia", "gaia/flora_tree_aleppo_pine", "gaia/flora_tree_carob", "gaia/flora_tree_euro_beech", "gaia/flora_tree_oak", "gaia/flora_tree_oak_large", "gaia/flora_tree_oak_new"
 
 var heightLand = 10;
-var g_Map = new RandomMap(heightLand, texture_default);
+globalThis.g_Map = new RandomMap(heightLand, texture_default);
 
 const numPlayers = getNumPlayers();
 const mapCenter = g_Map.getCenter();

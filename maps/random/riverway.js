@@ -4,7 +4,7 @@ Engine.LoadLibrary("rmgen-common");
 Engine.LoadLibrary("rmbiome");
 Engine.LoadLibrary("heightmap");
 
-setSelectedBiome();
+setBiome(mapSettings.Biome);
 
 const tMainTerrain = g_Terrains.mainTerrain;
 const tForestFloor1 = g_Terrains.forestFloor1;
@@ -53,7 +53,7 @@ const pForest1 = [tForestFloor2 + TERRAIN_SEPARATOR + oTree1, tForestFloor2 + TE
 const pForest2 = [tForestFloor1 + TERRAIN_SEPARATOR + oTree4, tForestFloor1 + TERRAIN_SEPARATOR + oTree5, tForestFloor1];
 
 const heightLand = 0;
-var g_Map = new RandomMap(heightLand, tMainTerrain);
+globalThis.g_Map = new RandomMap(heightLand, tMainTerrain);
 
 initTileClasses(["bluffsPassage"]);
 

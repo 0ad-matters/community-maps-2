@@ -4,7 +4,7 @@ Engine.LoadLibrary("rmgen-common");
 Engine.LoadLibrary("rmbiome");
 Engine.LoadLibrary("fert_common");
 
-function* GenerateMap(mapSettings)
+export function* generateMap(mapSettings)
 {
   genMapFertWithMountain(false, mapSettings);
   return g_Map;
