@@ -27974,21 +27974,21 @@
 			<Actor seed="26120"/>
 		</Entity>
 		<Entity uid="7560">
-			<Template>skirmish/units/default_ship_trireme</Template>
+			<Template>skirmish/units/default_ship_arrow</Template>
 			<Player>1</Player>
 			<Position x="1582.13135" z="1720.48707"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="33090"/>
 		</Entity>
 		<Entity uid="7561">
-			<Template>skirmish/units/default_ship_trireme</Template>
+			<Template>skirmish/units/default_ship_arrow</Template>
 			<Player>1</Player>
 			<Position x="1657.0365" z="1689.26587"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="57056"/>
 		</Entity>
 		<Entity uid="7562">
-			<Template>skirmish/units/default_ship_trireme</Template>
+			<Template>skirmish/units/default_ship_arrow</Template>
 			<Player>1</Player>
 			<Position x="1605.1631" z="1772.90552"/>
 			<Orientation y="2.35621"/>
@@ -40138,21 +40138,21 @@
 			<Actor seed="26162"/>
 		</Entity>
 		<Entity uid="9729">
-			<Template>skirmish/units/default_ship_trireme</Template>
+			<Template>skirmish/units/default_ship_arrow</Template>
 			<Player>2</Player>
 			<Position x="704.6872" z="235.0652"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="24992"/>
 		</Entity>
 		<Entity uid="9730">
-			<Template>skirmish/units/default_ship_trireme</Template>
+			<Template>skirmish/units/default_ship_arrow</Template>
 			<Player>2</Player>
 			<Position x="756.56061" z="151.42554"/>
 			<Orientation y="2.35622"/>
 			<Actor seed="57056"/>
 		</Entity>
 		<Entity uid="9731">
-			<Template>skirmish/units/default_ship_trireme</Template>
+			<Template>skirmish/units/default_ship_arrow</Template>
 			<Player>2</Player>
 			<Position x="681.65546" z="182.64673"/>
 			<Orientation y="0.47951"/>

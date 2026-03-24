@@ -33727,7 +33727,7 @@
 			<Actor seed="39500"/>
 		</Entity>
 		<Entity uid="4909">
-			<Template>units/ptol/ship_bireme</Template>
+			<Template>units/ptol/ship_scout</Template>
 			<Player>1</Player>
 			<Position x="284.59714" z="674.32923"/>
 			<Orientation y="-1.77295"/>
@@ -33867,7 +33867,7 @@
 			<Actor seed="48340"/>
 		</Entity>
 		<Entity uid="4933">
-			<Template>units/ptol/ship_bireme</Template>
+			<Template>units/ptol/ship_scout</Template>
 			<Player>1</Player>
 			<Position x="355.27808" z="839.71937"/>
 			<Orientation y="-2.28284"/>
@@ -37696,7 +37696,7 @@
 			<Actor seed="24778"/>
 		</Entity>
 		<Entity uid="5483">
-			<Template>units/athen/ship_trireme</Template>
+			<Template>units/athen/ship_ram</Template>
 			<Player>0</Player>
 			<Position x="166.27286" z="1078.88575"/>
 			<Orientation y="2.90706"/>

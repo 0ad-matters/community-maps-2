@@ -58,7 +58,7 @@ var clBaseResource = g_Map.createTileClass();
 var clRain = g_Map.createTileClass();
 var clTrigger = g_Map.createTileClass();
 
-var [playerIDs, playerPosition] = playerPlacementCircle(fractionToTiles(0.39));
+var { playerIDs, playerPosition } = playerPlacementCircle(fractionToTiles(0.39));
 
 placePlayerBases({
 	"PlayerPlacement": [playerIDs, playerPosition],

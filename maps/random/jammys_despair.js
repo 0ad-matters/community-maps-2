@@ -98,7 +98,7 @@ export function* generateMap(mapSettings)
   if (!mapSettings.Nomad)
   {
     var [playerIDs, playerPosition] = createBases(
-    	...playerPlacementByPattern(
+    	playerPlacementByPattern(
 	      "stronghold",
 	      fractionToTiles(0.35),
 	      fractionToTiles(0.1),

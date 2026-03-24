@@ -17440,70 +17440,70 @@
 			<Actor seed="7012"/>
 		</Entity>
 		<Entity uid="2948">
-			<Template>units/rome/ship_quinquereme</Template>
+			<Template>units/rome/ship_siege</Template>
 			<Player>1</Player>
 			<Position x="919.56196" z="129.70386"/>
 			<Orientation y="-0.2874"/>
 			<Actor seed="10330"/>
 		</Entity>
 		<Entity uid="2949">
-			<Template>units/rome/ship_quinquereme</Template>
+			<Template>units/rome/ship_siege</Template>
 			<Player>1</Player>
 			<Position x="868.50458" z="116.01012"/>
 			<Orientation y="-0.33916"/>
 			<Actor seed="5100"/>
 		</Entity>
 		<Entity uid="2950">
-			<Template>units/rome/ship_quinquereme</Template>
+			<Template>units/rome/ship_siege</Template>
 			<Player>1</Player>
 			<Position x="825.362" z="92.96767"/>
 			<Orientation y="-0.37346"/>
 			<Actor seed="52506"/>
 		</Entity>
 		<Entity uid="2951">
-			<Template>units/rome/ship_quinquereme</Template>
+			<Template>units/rome/ship_siege</Template>
 			<Player>1</Player>
 			<Position x="768.76496" z="61.0822"/>
 			<Orientation y="-0.4386"/>
 			<Actor seed="15174"/>
 		</Entity>
 		<Entity uid="2952">
-			<Template>units/rome/ship_quinquereme</Template>
+			<Template>units/rome/ship_siege</Template>
 			<Player>1</Player>
 			<Position x="705.02198" z="51.41021"/>
 			<Orientation y="-0.36774"/>
 			<Actor seed="31618"/>
 		</Entity>
 		<Entity uid="2953">
-			<Template>units/rome/ship_trireme</Template>
+			<Template>units/rome/ship_ram</Template>
 			<Player>1</Player>
 			<Position x="714.16254" z="114.04723"/>
 			<Orientation y="-0.63126"/>
 			<Actor seed="23700"/>
 		</Entity>
 		<Entity uid="2954">
-			<Template>units/rome/ship_trireme</Template>
+			<Template>units/rome/ship_ram</Template>
 			<Player>1</Player>
 			<Position x="776.51435" z="138.2942"/>
 			<Orientation y="-0.35859"/>
 			<Actor seed="30840"/>
 		</Entity>
 		<Entity uid="2955">
-			<Template>units/rome/ship_trireme</Template>
+			<Template>units/rome/ship_ram</Template>
 			<Player>1</Player>
 			<Position x="832.29371" z="162.8582"/>
 			<Orientation y="-0.44735"/>
 			<Actor seed="17030"/>
 		</Entity>
 		<Entity uid="2956">
-			<Template>units/rome/ship_trireme</Template>
+			<Template>units/rome/ship_ram</Template>
 			<Player>1</Player>
 			<Position x="879.19098" z="175.09021"/>
 			<Orientation y="-0.52074"/>
 			<Actor seed="64916"/>
 		</Entity>
 		<Entity uid="2957">
-			<Template>units/rome/ship_trireme</Template>
+			<Template>units/rome/ship_ram</Template>
 			<Player>1</Player>
 			<Position x="747.9297" z="132.1478"/>
 			<Orientation y="-0.49671"/>
@@ -17692,126 +17692,126 @@
 			<Actor seed="6152"/>
 		</Entity>
 		<Entity uid="2984">
-			<Template>units/cart/ship_quinquereme</Template>
+			<Template>units/cart/ship_siege</Template>
 			<Player>2</Player>
 			<Position x="181.22388" z="527.20282"/>
 			<Orientation y="-1.47158"/>
 			<Actor seed="29316"/>
 		</Entity>
 		<Entity uid="2985">
-			<Template>units/cart/ship_quinquereme</Template>
+			<Template>units/cart/ship_siege</Template>
 			<Player>2</Player>
 			<Position x="189.38453" z="498.53415"/>
 			<Orientation y="-1.63186"/>
 			<Actor seed="27482"/>
 		</Entity>
 		<Entity uid="2986">
-			<Template>units/cart/ship_quinquereme</Template>
+			<Template>units/cart/ship_siege</Template>
 			<Player>2</Player>
 			<Position x="200.26682" z="471.40174"/>
 			<Orientation y="-1.63349"/>
 			<Actor seed="41136"/>
 		</Entity>
 		<Entity uid="2987">
-			<Template>units/cart/ship_quinquereme</Template>
+			<Template>units/cart/ship_siege</Template>
 			<Player>2</Player>
 			<Position x="211.17954" z="451.30951"/>
 			<Orientation y="-1.68984"/>
 			<Actor seed="16386"/>
 		</Entity>
 		<Entity uid="2988">
-			<Template>units/cart/ship_quinquereme</Template>
+			<Template>units/cart/ship_siege</Template>
 			<Player>2</Player>
 			<Position x="228.1977" z="427.40943"/>
 			<Orientation y="-1.66593"/>
 			<Actor seed="18296"/>
 		</Entity>
 		<Entity uid="2989">
-			<Template>units/cart/ship_trireme</Template>
+			<Template>units/cart/ship_ram</Template>
 			<Player>2</Player>
 			<Position x="382.771" z="434.50043"/>
 			<Orientation y="1.24332"/>
 			<Actor seed="46740"/>
 		</Entity>
 		<Entity uid="2990">
-			<Template>units/cart/ship_trireme</Template>
+			<Template>units/cart/ship_ram</Template>
 			<Player>2</Player>
 			<Position x="387.3234" z="519.98829"/>
 			<Orientation y="1.67309"/>
 			<Actor seed="62244"/>
 		</Entity>
 		<Entity uid="2991">
-			<Template>units/cart/ship_trireme</Template>
+			<Template>units/cart/ship_ram</Template>
 			<Player>2</Player>
 			<Position x="380.94651" z="496.8343"/>
 			<Orientation y="1.57753"/>
 			<Actor seed="39456"/>
 		</Entity>
 		<Entity uid="2992">
-			<Template>units/cart/ship_trireme</Template>
+			<Template>units/cart/ship_ram</Template>
 			<Player>2</Player>
 			<Position x="388.75431" z="418.92829"/>
 			<Orientation y="1.15432"/>
 			<Actor seed="64274"/>
 		</Entity>
 		<Entity uid="2993">
-			<Template>units/cart/ship_trireme</Template>
+			<Template>units/cart/ship_ram</Template>
 			<Player>2</Player>
 			<Position x="376.28379" z="472.8484"/>
 			<Orientation y="1.4158"/>
 			<Actor seed="4848"/>
 		</Entity>
 		<Entity uid="2994">
-			<Template>units/cart/ship_trireme</Template>
+			<Template>units/cart/ship_ram</Template>
 			<Player>2</Player>
 			<Position x="379.05662" z="453.18448"/>
 			<Orientation y="1.29726"/>
 			<Actor seed="58898"/>
 		</Entity>
 		<Entity uid="2995">
-			<Template>units/cart/ship_quinquereme</Template>
+			<Template>units/cart/ship_siege</Template>
 			<Player>2</Player>
 			<Position x="174.08704" z="558.72925"/>
 			<Orientation y="-1.62262"/>
 			<Actor seed="61224"/>
 		</Entity>
 		<Entity uid="2996">
-			<Template>units/cart/ship_bireme</Template>
+			<Template>units/cart/ship_scout</Template>
 			<Player>2</Player>
 			<Position x="223.82471" z="402.08887"/>
 			<Orientation y="-1.73348"/>
 			<Actor seed="9414"/>
 		</Entity>
 		<Entity uid="2997">
-			<Template>units/cart/ship_bireme</Template>
+			<Template>units/cart/ship_scout</Template>
 			<Player>2</Player>
 			<Position x="235.99872" z="385.40232"/>
 			<Orientation y="-1.88096"/>
 			<Actor seed="61228"/>
 		</Entity>
 		<Entity uid="2998">
-			<Template>units/rome/ship_bireme</Template>
+			<Template>units/rome/ship_scout</Template>
 			<Player>1</Player>
 			<Position x="627.94239" z="100.95203"/>
 			<Orientation y="-0.80335"/>
 			<Actor seed="30886"/>
 		</Entity>
 		<Entity uid="2999">
-			<Template>units/rome/ship_bireme</Template>
+			<Template>units/rome/ship_scout</Template>
 			<Player>1</Player>
 			<Position x="658.93116" z="136.00684"/>
 			<Orientation y="-0.73357"/>
 			<Actor seed="10406"/>
 		</Entity>
 		<Entity uid="3000">
-			<Template>units/rome/ship_bireme</Template>
+			<Template>units/rome/ship_scout</Template>
 			<Player>1</Player>
 			<Position x="707.88501" z="184.27594"/>
 			<Orientation y="-0.73053"/>
 			<Actor seed="63666"/>
 		</Entity>
 		<Entity uid="3001">
-			<Template>units/rome/ship_bireme</Template>
+			<Template>units/rome/ship_scout</Template>
 			<Player>1</Player>
 			<Position x="599.18451" z="62.88233"/>
 			<Orientation y="2.35621"/>

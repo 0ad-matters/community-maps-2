@@ -143,7 +143,7 @@ export function* generateMap(mapSettings)
 		);
 	}
 
-	var [playerIDs, playerPosition] = playerPlacementCircle(fractionToTiles(0.25));
+	var { playerIDs, playerPosition } = playerPlacementCircle(fractionToTiles(0.25));
 
 	g_Map.log("Ensuring initial player land");
 	for (let i = 0; i < numPlayers; ++i)

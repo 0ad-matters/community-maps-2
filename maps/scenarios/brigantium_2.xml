@@ -20461,7 +20461,7 @@
 			<Actor seed="44048"/>
 		</Entity>
 		<Entity uid="3401">
-			<Template>units/rome/ship_bireme</Template>
+			<Template>units/rome/ship_scout</Template>
 			<Player>2</Player>
 			<Position x="507.27659" z="961.28681"/>
 			<Orientation y="2.35621"/>
@@ -21308,7 +21308,7 @@
 			<Actor seed="40130"/>
 		</Entity>
 		<Entity uid="3748">
-			<Template>units/rome/ship_bireme</Template>
+			<Template>units/rome/ship_scout</Template>
 			<Player>2</Player>
 			<Position x="445.00873" z="995.2923"/>
 			<Orientation y="2.85856"/>
