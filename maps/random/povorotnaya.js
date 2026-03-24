@@ -1,6 +1,9 @@
 Engine.LoadLibrary("rmgen");
 Engine.LoadLibrary("rmgen-common");
 
+export function* generateMap(mapSettings)
+{
+
 TILE_CENTERED_HEIGHT_MAP = true;
 
 const enabled = true;
@@ -680,4 +683,5 @@ function placeBaseElement(player, angle, x, y, entity)
 }
 
 // g_Environment.victoryConditions="conquest";
-g_Map.ExportMap();
+return g_Map;
+}
