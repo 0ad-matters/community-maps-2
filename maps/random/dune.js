@@ -1,5 +1,6 @@
 import { addAnimals, addBerries, addBluffs, addDecoration, addForests, addHills, addLakes, addMetal,
-	addMountains, addLayeredPatches, addPlateaus, addStone, addStragglerTrees, addValleys } from
+	addMountains, addLayeredPatches, addPlateaus, addStone, addStragglerTrees, addValleys,
+	getRandomDeviation } from
 	"maps/random/rmgen2/gaia.js";
 import { addElements, allAmounts, allMixes, allSizes, createBases, playerbaseTypes, initTileClasses } from
 	"maps/random/rmgen2/setup.js";
