@@ -1,3 +1,25 @@
+2026-03-24
+
+  * release v0.28.0
+  * update mod for compatibility with 0 A.D. 0.28.0:
+    * rename ship templates: trireme→ram, bireme→scout, quinquereme→siege
+    * rename siege_onager→siege_onager_unpacked in scenarios
+    * fix skirmish/units/default_ship_trireme→default_ship_arrow
+    * remove random/northern_lights_ii (broken preview, incompatible)
+    * fix missing/invalid map preview (olimpus_4)
+    * fix random maps: add export function* generateMap wrapper to
+      carpathian, plague_swamp, povorotnaya, riverway, volcanic_island
+    * fix random maps: replace Engine.SetProgress with yield
+    * fix random maps: replace Engine.LoadLibrary("rmgen2") with ES
+      module imports
+    * fix random maps: update playerPlacementCircle destructuring
+      (returns object, not array)
+    * fix random maps: update createBases call (spread operator removed)
+    * fix gaia.js: add missing imports (markPlayerAvoidanceArea, addFish,
+      addProps)
+    * fix fert maps: convert fert_common to ES module, make
+      genMapFertWithMountain a generator function
+
 2025-01-16
 
   * skirmishes/endless_arena_8p.xml: add new map by @culturedcait
