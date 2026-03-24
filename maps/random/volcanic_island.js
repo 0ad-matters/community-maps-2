@@ -4,6 +4,9 @@ Engine.LoadLibrary("rmgen/raster");
 Engine.LoadLibrary("rmgen-common");
 Engine.LoadLibrary("rmbiome");
 
+export function* generateMap(mapSettings)
+{
+
 setBiome(mapSettings.Biome);
 
 const tMainTerrain = g_Terrains.mainTerrain;
@@ -399,4 +402,5 @@ createStragglerTrees(
 
 placePlayersNomad(clPlayer, avoidClasses(clForest, 1, clMetal, 4, clRock, 4, clHill, 4, clFood, 2));
 
-g_Map.ExportMap();
+return g_Map;
+}
