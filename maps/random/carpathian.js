@@ -1701,7 +1701,7 @@ if (enabled)
 	catch {
 		g_Map.log("Exception creating the map ");
 	}
-	Engine.SetProgress(2);
+	yield 2;
 
 	if (testMap < 3)
 	{
@@ -1714,7 +1714,7 @@ if (enabled)
 		// depression, swamps
 		setPattern2(margin_depression, size_depression, setForest1, 0.8);
 	}
-	Engine.SetProgress(5);
+	yield 5;
 
 	if (enabled)
 	{
@@ -1787,7 +1787,7 @@ if (enabled)
 			// g_Map.log("safety: moveDistance" + moveDistance);
 		}
 
-		Engine.SetProgress(15);
+		yield 15;
 
 		if (([0, 1, 4, 5].includes(testMap)) && createTopo)
 		{
@@ -1811,7 +1811,7 @@ if (enabled)
 						var progressHill = Math.round((85 - 15) * mcTotali / mcTotal + 15);
 						if (progressHill > progressLastValue)
 						{
-							Engine.SetProgress(progressHill);
+							yield progressHill;
 							progressLastValue = progressHill;
 						}
 					}
@@ -1838,7 +1838,7 @@ if (enabled)
 	}
 
 	// render pass 2 (slopes)
-	Engine.SetProgress(85);
+	yield 85;
 	g_Map.log("calculating slopes");
 	for (let i = 0; i < dd; i++)
 	{
@@ -1874,7 +1874,7 @@ if (enabled)
 			}
 		}
 	}
-	Engine.SetProgress(95);
+	yield 95;
 
 	// rendering pass 3 (textures and objects)
 	g_Map.log("generating textures and objects");

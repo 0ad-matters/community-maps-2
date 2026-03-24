@@ -1,7 +1,7 @@
+import { initTileClasses } from "maps/random/rmgen2/setup.js";
 Engine.LoadLibrary("rmgen");
 Engine.LoadLibrary("rmgen/raster");
 Engine.LoadLibrary("rmgen-common");
-Engine.LoadLibrary("rmgen2");
 Engine.LoadLibrary("rmbiome");
 
 setBiome(mapSettings.Biome);
@@ -244,7 +244,7 @@ placePlayerBases({
 	}
 });
 
-Engine.SetProgress(20);
+yield 20;
 
 for (let n = 0; n < 2; ++n)
 	createBumps(avoidClasses(clPlayer, 20));
@@ -261,7 +261,7 @@ createForests(
 	clForest,
 	forestTrees * 5);
 
-// Engine.SetProgress(50);
+// yield 50;
 
 g_Map.log("Creating dirt patches");
 createLayeredPatches(
@@ -285,7 +285,7 @@ createPatches(
 	],
 	scaleByMapSize(15, 45),
 	clDirt);
-Engine.SetProgress(55);
+yield 55;
 
 g_Map.log("Creating stone mines");
 createMines(
@@ -311,7 +311,7 @@ createMines(
 	clMetal
 );
 
-Engine.SetProgress(65);
+yield 65;
 
 var planetm = 1;
 
@@ -339,7 +339,7 @@ createDecoration(
 	]
 );
 
-Engine.SetProgress(70);
+yield 70;
 
 createFood(
 	[
@@ -354,7 +354,7 @@ createFood(
 	],
 	clFood);
 
-Engine.SetProgress(75);
+yield 75;
 
 createFood(
 	[
@@ -369,7 +369,7 @@ createFood(
 	],
 	clFood);
 
-Engine.SetProgress(85);
+yield 85;
 
 g_Map.log("Creating decorative rocks");
 createObjectGroupsDeprecated(

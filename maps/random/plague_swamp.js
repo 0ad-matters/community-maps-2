@@ -79,7 +79,7 @@ for (const position of playerPosition)
 			new TerrainPainter("red")
 		]);
 
-Engine.SetProgress(15);
+yield 15;
 
 g_Map.log("Creating marshes");
 createAreas(
@@ -99,7 +99,7 @@ createObjectGroups(
 	stayClasses(clWater, 1),
 	scaleByMapSize(400, 2000), 100);
 
-Engine.SetProgress(40);
+yield 40;
 
 g_Map.log("Creating bumps");
 createAreas(
@@ -115,7 +115,7 @@ createForests(
 	clForest,
 	forestTrees);
 
-Engine.SetProgress(50);
+yield 50;
 
 g_Map.log("Creating mud patches");
 for (const size of [scaleByMapSize(3, 6), scaleByMapSize(5, 10), scaleByMapSize(8, 21)])
@@ -128,7 +128,7 @@ for (const size of [scaleByMapSize(3, 6), scaleByMapSize(5, 10), scaleByMapSize(
 		avoidClasses(clWater, 1, clForest, 0, clHill, 0, clDirt, 5, clPlayer, 8),
 		scaleByMapSize(15, 45));
 
-Engine.SetProgress(55);
+yield 55;
 
 g_Map.log("Creating stone mines");
 createObjectGroups(
@@ -150,7 +150,7 @@ createObjectGroups(
 	[avoidClasses(clWater, 0, clForest, 1, clPlayer, 20, clMetal, 10, clRock, 5, clHill, 1)],
 	scaleByMapSize(4, 16), 100);
 
-Engine.SetProgress(70);
+yield 70;
 
 g_Map.log("Creating decorative plants");
 createObjectGroups(
@@ -185,7 +185,7 @@ createObjectGroups(
 	avoidClasses(clWater, 0, clForest, 0, clPlayer, 0, clHill, 0),
 	scaleByMapSize(8, 131), 50);
 
-Engine.SetProgress(80);
+yield 80;
 
 g_Map.log("Creating deer");
 createObjectGroups(
@@ -214,7 +214,7 @@ createStragglerTrees(
 	clForest,
 	stragglerTrees);
 
-Engine.SetProgress(90);
+yield 90;
 
 g_Map.log("Creating rain drops");
 createObjectGroups(
@@ -237,7 +237,7 @@ createObjectGroups(
 	avoidClasses(clWater, 3, clHill, 2, clPlayer, 13, clDirt, 1, clForest, 0),
 	scaleByMapSize(13, 200));
 
-Engine.SetProgress(95);
+yield 95;
 
 g_Map.log("Creating bushes");
 createObjectGroups(
