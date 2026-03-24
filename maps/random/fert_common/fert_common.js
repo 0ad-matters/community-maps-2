@@ -1,5 +1,5 @@
 Engine.LoadLibrary("rmgen/raster");
-const genMapFertWithMountain = function(isMountain, mapSettings)
+const genMapFertWithMountain = function*(isMountain, mapSettings)
 {
     setBiome(mapSettings.Biome);
 
