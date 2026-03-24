@@ -5,6 +5,9 @@ Engine.LoadLibrary("rmgen-common");
 Engine.LoadLibrary("rmbiome");
 Engine.LoadLibrary("heightmap");
 
+export function* generateMap(mapSettings)
+{
+
 setBiome(mapSettings.Biome);
 
 const tMainTerrain = g_Terrains.mainTerrain;
@@ -448,4 +451,5 @@ g_Camera = {
 	"Declination": 0.523599
 };
 yield 100;
-g_Map.ExportMap();
+return g_Map;
+}
