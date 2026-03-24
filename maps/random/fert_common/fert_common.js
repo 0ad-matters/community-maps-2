@@ -1,5 +1,6 @@
+import { getRandomDeviation } from "maps/random/rmgen2/gaia.js";
 Engine.LoadLibrary("rmgen/raster");
-const genMapFertWithMountain = function*(isMountain, mapSettings)
+export function* genMapFertWithMountain(isMountain, mapSettings)
 {
     setBiome(mapSettings.Biome);
 
@@ -493,4 +494,4 @@ const genMapFertWithMountain = function*(isMountain, mapSettings)
     setSunElevation(getRandomDeviation(Math.PI / 2, Math.PI / 2 * 0.7));
 
     yield 100;
-};
+}
