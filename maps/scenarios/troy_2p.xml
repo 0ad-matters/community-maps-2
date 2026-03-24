@@ -1453,7 +1453,7 @@
 			<Actor seed="34054"/>
 		</Entity>
 		<Entity uid="9256">
-			<Template>units/spart/ship_bireme</Template>
+			<Template>units/spart/ship_scout</Template>
 			<Player>1</Player>
 			<Position x="1158.07313" z="237.91047"/>
 			<Orientation y="2.35621"/>
@@ -11929,7 +11929,7 @@
 			<Actor seed="4426"/>
 		</Entity>
 		<Entity uid="11293">
-			<Template>units/spart/ship_bireme</Template>
+			<Template>units/spart/ship_scout</Template>
 			<Player>1</Player>
 			<Position x="1193.1803" z="261.13477"/>
 			<Orientation y="-3.23089"/>

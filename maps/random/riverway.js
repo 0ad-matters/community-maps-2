@@ -1,8 +1,12 @@
+import { addAnimals, addBerries, addBluffs, addDecoration, addHills, addLayeredPatches, addPlateaus, addProps, addStragglerTrees } from "maps/random/rmgen2/gaia.js";
+import { initTileClasses } from "maps/random/rmgen2/setup.js";
 Engine.LoadLibrary("rmgen");
-Engine.LoadLibrary("rmgen2");
 Engine.LoadLibrary("rmgen-common");
 Engine.LoadLibrary("rmbiome");
 Engine.LoadLibrary("heightmap");
+
+export function* generateMap(mapSettings)
+{
 
 setBiome(mapSettings.Biome);
 
@@ -238,7 +242,7 @@ var metalMineral = new SimpleGroup([
 	new SimpleObject(oMetalSmall, 2, 4, 1, 3)
 ]);
 
-Engine.SetProgress(10);
+yield 10;
 g_Map.log("Making river");
 const river = {};
 river.width = 26;
@@ -254,11 +258,11 @@ const riverArea = createArea(
 	]
 );
 
-Engine.SetProgress(15);
+yield 15;
 g_Map.log("Making bumps");
 createBumps(new HeightConstraint(-Infinity, 0), 100, undefined, undefined, undefined, 0, -river.depth);
 
-Engine.SetProgress(20);
+yield 20;
 g_Map.log("Making passage");
 const riverDis = new Vector2D(river.width / 2, 0).mult(0.6);
 const passageArea = new createArea(
@@ -271,7 +275,7 @@ const passageArea = new createArea(
 		new HeightConstraint(-0.2, Infinity)
 	]);
 
-Engine.SetProgress(25);
+yield 25;
 g_Map.log("Making bluffs");
 const bluffs = {};
 bluffs.constraints = [
@@ -286,7 +290,7 @@ bluffs.baseHeight = 0;
 
 addBluffs(bluffs.constraints, bluffs.size, bluffs.sizeDeviation, bluffs.areaFill, bluffs.baseHeight);
 
-Engine.SetProgress(40);
+yield 40;
 g_Map.log("Making bluffs");
 const riverTrees = {};
 riverTrees.width = 40 * scaleByMapSize(1, 3);
@@ -304,7 +308,7 @@ riverTrees.constraints = [
 	new AvoidAreasConstraint([passageArea])
 ];
 
-Engine.SetProgress(45);
+yield 45;
 g_Map.log("Making trees left side");
 const treesLeftArea = new createArea(
 	riverTrees.placerLeft,
@@ -319,7 +323,7 @@ const treesLeftArea = new createArea(
 	]
 );
 
-Engine.SetProgress(50);
+yield 50;
 g_Map.log("Making trees right side");
 const treesRightArea = new createArea(
 	riverTrees.placerRight,
@@ -336,7 +340,7 @@ const treesRightArea = new createArea(
 
 const treesAreas = [treesLeftArea, treesRightArea];
 
-Engine.SetProgress(55);
+yield 55;
 g_Map.log("Painting water and shoreline");
 createArea(
 	new MapBoundsPlacer(),
@@ -352,7 +356,7 @@ createArea(
 		new SlopeConstraint(0, 1)
 	]);
 
-Engine.SetProgress(60);
+yield 60;
 g_Map.log("Placing minerals");
 
 createObjectGroupsByAreas(stonesGroup, 0, [], 40, 20, [riverArea]);
@@ -367,7 +371,7 @@ createObjectGroupsByAreas(metalMineral, 0, [
 	new SlopeConstraint(0, 2)
 ], scaleByMapSize(5, 35), 200, treesAreas);
 
-Engine.SetProgress(70);
+yield 70;
 g_Map.log("Calculating areas");
 const noRiverForestArea = new createArea(
 	new MapBoundsPlacer(), [], [
@@ -387,39 +391,39 @@ gaia.settings = [
 	0.4 * scaleByMapSize(1, 1.4)
 ];
 
-Engine.SetProgress(70);
+yield 70;
 g_Map.log("Adding addHills");
 addHills(gaia.constraints, ...gaia.settings);
 
-Engine.SetProgress(73);
+yield 73;
 g_Map.log("Adding addLayeredPatches");
 addLayeredPatches(gaia.constraints, 1.3, 0.15, 0.4);
 
-Engine.SetProgress(76);
+yield 76;
 g_Map.log("Adding addDecoration");
 addDecoration(gaia.constraints, ...gaia.settings);
 
-Engine.SetProgress(79);
+yield 79;
 g_Map.log("Adding addProps");
 addProps(gaia.constraints, 0.2, 0.05, 0.1);
 
-Engine.SetProgress(82);
+yield 82;
 g_Map.log("Adding addPlateaus");
 addPlateaus(gaia.constraints, 0.6, 0.05, 0.4);
 
-Engine.SetProgress(85);
+yield 85;
 g_Map.log("Adding addStragglerTrees");
 addStragglerTrees(gaia.constraints, ...gaia.settings);
 
-Engine.SetProgress(89);
+yield 89;
 g_Map.log("Adding addAnimals");
 addAnimals(gaia.constraints, 1, 0.2, 0.3);
 
-Engine.SetProgress(92);
+yield 92;
 g_Map.log("Adding addBerries");
 addBerries(gaia.constraints, 1, 0, 0.2);
 
-Engine.SetProgress(95);
+yield 95;
 g_Map.log("Adding treasures and gaia rituals");
 const treasuresSettings = {};
 treasuresSettings.radius = 10;
@@ -429,7 +433,7 @@ treasuresSettings.posBottom = new Vector2D(mapSize / 2, mapSize - treasuresSetti
 addGaiaRitual(treasuresSettings.posTop, treasuresSettings.radius);
 addGaiaRitual(treasuresSettings.posBottom, treasuresSettings.radius);
 
-Engine.SetProgress(98);
+yield 98;
 g_Map.log("Finishing");
 placePlayersNomad(g_Map.createTileClass());
 
@@ -446,5 +450,6 @@ g_Camera = {
 	"Rotation": 0,
 	"Declination": 0.523599
 };
-Engine.SetProgress(100);
-g_Map.ExportMap();
+yield 100;
+return g_Map;
+}

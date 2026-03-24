@@ -1,5 +1,5 @@
 Engine.LoadLibrary("rmgen/raster");
-const genMapFertWithMountain = function(isMountain, mapSettings)
+export function* genMapFertWithMountain(isMountain, mapSettings)
 {
     setBiome(mapSettings.Biome);
 
@@ -75,7 +75,7 @@ const genMapFertWithMountain = function(isMountain, mapSettings)
     var clFood = g_Map.createTileClass();
     var clBaseResource = g_Map.createTileClass();
 
-    Engine.SetProgress(10);
+    yield 10;
 
     g_Map.placeEntityPassable("undeletable|disableHealthReplaceResistance|disableGarrisonHolder|structures/brit/wonder", 0, new Vector2D(g_Map.size / 2, g_Map.size / 2), 0);
 
@@ -137,7 +137,7 @@ const genMapFertWithMountain = function(isMountain, mapSettings)
         arcRast(baseCenter, baseRadius - 20, baseRadius + 2, anglemaxh - 6 / baseRadius, anglemaxh, shaper3);
     }
 
-    Engine.SetProgress(40);
+    yield 40;
     g_Map.log("Creating plateau");
     createArea(
         new ClumpPlacer(diskArea(isMountain ? mountain.minRadius : mountain.maxRadius), 1, 0, Infinity, g_Map.getCenter()),
@@ -153,7 +153,7 @@ const genMapFertWithMountain = function(isMountain, mapSettings)
 
     createBumps(avoidClasses(clPlayer, 20), 100);
 
-    Engine.SetProgress(50);
+    yield 50;
     // Custom player placement
     function playerPlacementCircleCustom(radius, startingAngle = undefined, center = undefined)
     {
@@ -162,7 +162,7 @@ const genMapFertWithMountain = function(isMountain, mapSettings)
         return [sortAllPlayers(), playerPosition.map(p => p.round()), playerAngle, startAngle];
     }
 
-    Engine.SetProgress(55);
+    yield 55;
     // Players placement
     var civsPlacement = playerPlacementCircleCustom(fractionToTiles(0.37) * scaleByMapSize(1.2, 0.6));
     var civsPos = civsPlacement[1];
@@ -200,7 +200,7 @@ const genMapFertWithMountain = function(isMountain, mapSettings)
         }
     );
 
-    Engine.SetProgress(60);
+    yield 60;
     var pathAreas = [];
 
     // Get slope area
@@ -278,7 +278,7 @@ const genMapFertWithMountain = function(isMountain, mapSettings)
         forestTrees
     );
 
-    Engine.SetProgress(65);
+    yield 65;
     g_Map.log("Creating dirt patches");
     createLayeredPatches(
         [
@@ -301,7 +301,7 @@ const genMapFertWithMountain = function(isMountain, mapSettings)
         clDirt
     );
 
-    Engine.SetProgress(70);
+    yield 70;
     g_Map.log("Creating grass patches");
     createPatches(
         [
@@ -331,7 +331,7 @@ const genMapFertWithMountain = function(isMountain, mapSettings)
 
     var constraintHeightBase = isMountain ? new HeightConstraint(1, 17) : new HeightConstraint(1, Infinity);
 
-    Engine.SetProgress(75);
+    yield 75;
     g_Map.log("Creating stone mines");
     createMines(
         [
@@ -349,7 +349,7 @@ const genMapFertWithMountain = function(isMountain, mapSettings)
         10
     );
 
-    Engine.SetProgress(77);
+    yield 77;
     g_Map.log("Creating metal mines");
     createMines(
         [
@@ -364,7 +364,7 @@ const genMapFertWithMountain = function(isMountain, mapSettings)
         10
     );
 
-    Engine.SetProgress(80);
+    yield 80;
     var planetm = currentBiome() == "generic/tropic" ? 8 : 1;
 
     g_Map.log("Creating stones decoration");
@@ -424,7 +424,7 @@ const genMapFertWithMountain = function(isMountain, mapSettings)
         ]
     );
 
-    Engine.SetProgress(85);
+    yield 85;
     g_Map.log("Creating hunt");
     createFood(
         [
@@ -442,7 +442,7 @@ const genMapFertWithMountain = function(isMountain, mapSettings)
         clFood
     );
 
-    Engine.SetProgress(90);
+    yield 90;
     g_Map.log("Creating fruit bush");
     createFood(
         [
@@ -456,7 +456,7 @@ const genMapFertWithMountain = function(isMountain, mapSettings)
         clFood
     );
 
-    Engine.SetProgress(95);
+    yield 95;
     g_Map.log("Creating even more random trees");
     {
         const constraints = [
@@ -490,7 +490,7 @@ const genMapFertWithMountain = function(isMountain, mapSettings)
     );
 
     placePlayersNomad(clPlayer, [avoidClasses(clForest, 1, clMetal, 4, clRock, 4, clHill, 4, clFood, 2), new HeightConstraint(1, 17)]);
-    setSunElevation(getRandomDeviation(Math.PI / 2, Math.PI / 2 * 0.7));
+    setSunElevation(Math.PI / 2 + randFloat(-1, 1) * Math.min(Math.PI / 2, Math.PI / 2 * 0.7));
 
-    Engine.SetProgress(100);
-};
+    yield 100;
+}

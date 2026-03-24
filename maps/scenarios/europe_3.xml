@@ -18737,14 +18737,14 @@
 			<Actor seed="2848"/>
 		</Entity>
 		<Entity uid="3462">
-			<Template>units/cart/ship_trireme</Template>
+			<Template>units/cart/ship_ram</Template>
 			<Player>2</Player>
 			<Position x="784.38471" z="206.0196"/>
 			<Orientation y="2.35621"/>
 			<Actor seed="13612"/>
 		</Entity>
 		<Entity uid="3463">
-			<Template>units/cart/ship_trireme</Template>
+			<Template>units/cart/ship_ram</Template>
 			<Player>2</Player>
 			<Position x="1011.51032" z="90.5467"/>
 			<Orientation y="2.07988"/>

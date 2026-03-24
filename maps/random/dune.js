@@ -104,7 +104,7 @@ export function* generateMap(mapSettings)
 		undefined
 	);
 	var pw2a = new createArea(
-		new ClumpPlacer(diskArea(8) * scaleByMapSize(1, 2), 0.1, 0.3, Infinity, new Vector2D(centerPos.x, centerPos.y + getRandomDeviation(10, 5))), [
+		new ClumpPlacer(diskArea(8) * scaleByMapSize(1, 2), 0.1, 0.3, Infinity, new Vector2D(centerPos.x, centerPos.y + 10 + randFloat(-1, 1) * Math.min(10, 5))), [
 			new SmoothElevationPainter(ELEVATION_SET, -10, 5),
 			new TileClassPainter(clWater)
 		],

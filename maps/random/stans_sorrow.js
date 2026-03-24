@@ -126,14 +126,13 @@ export function* generateMap(mapSettings)
   var playerPosition = [];
   if (!mapSettings.Nomad)
   {
-    var [playerIDs, playerPosition] = createBasesRandomHeights(
-      ...playerPlacementByPattern(
-        mapSettings.PlayerPlacement,
-        fractionToTiles(0.35),
-        fractionToTiles(0.1),
-        randomAngle(),
-        undefined),
-      false);
+    const { playerIDs: _pids, playerPosition: _ppos } = playerPlacementByPattern(
+      mapSettings.PlayerPlacement,
+      fractionToTiles(0.35),
+      fractionToTiles(0.1),
+      randomAngle(),
+      undefined);
+    var [playerIDs, playerPosition] = createBasesRandomHeights(_pids, _ppos, false);
   }
 
   yield 20;

@@ -1,11 +1,10 @@
+import { genMapFertWithMountain } from "maps/random/fert_common/fert_common.js";
 Engine.LoadLibrary("rmgen");
-Engine.LoadLibrary("rmgen2");
 Engine.LoadLibrary("rmgen-common");
 Engine.LoadLibrary("rmbiome");
-Engine.LoadLibrary("fert_common");
 
 export function* generateMap(mapSettings)
 {
-  genMapFertWithMountain(false, mapSettings);
+  yield* genMapFertWithMountain(false, mapSettings);
   return g_Map;
 }
