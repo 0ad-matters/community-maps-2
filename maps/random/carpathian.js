@@ -1,6 +1,9 @@
 Engine.LoadLibrary("rmgen");
 Engine.LoadLibrary("rmgen-common");
 
+export function* generateMap(mapSettings)
+{
+
 TILE_CENTERED_HEIGHT_MAP = true;
 const enabled = true;
 
@@ -2147,4 +2150,5 @@ function fractalLine(x0, y0, x1, y1, parameter)
 
 g_Map.log("maxVoronoiDistance:" + maxVoronoiDistance);
 // g_Environment.victoryConditions="conquest";
-g_Map.ExportMap();
+return g_Map;
+}
