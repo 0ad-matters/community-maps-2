@@ -1,9 +1,9 @@
 // License: GPL2
 // Authors: MirceaKitsune, James Sherratt (based on code written by the 0AD project)
 
-import { addAnimals, addBerries, addBluffs, addDecoration, addForests, addHills, addLakes, addMetal,
-	addMountains, addLayeredPatches, addPlateaus, addStone, addStragglerTrees, addValleys,
-	markPlayerAvoidanceArea } from
+import { addAnimals, addBerries, addBluffs, addDecoration, addFish, addForests, addHills, addLakes,
+	addMetal, addMountains, addLayeredPatches, addPlateaus, addProps, addStone, addStragglerTrees,
+	addValleys, markPlayerAvoidanceArea } from
 	"maps/random/rmgen2/gaia.js";
 import { addElements, allAmounts, allMixes, allSizes, createBases, playerbaseTypes, initTileClasses } from
 	"maps/random/rmgen2/setup.js";
