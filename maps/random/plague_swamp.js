@@ -1,6 +1,9 @@
 Engine.LoadLibrary("rmgen");
 Engine.LoadLibrary("rmgen-common");
 
+export function* generateMap(mapSettings)
+{
+
 var tPrimary = ["tropic_plants_c", "temp_mud_a"];
 var tGrass = ["tropic_swamp_a", "tropic_grass_c", "tropic_grass_plants"];
 var tForestFloor = "temp_plants_bog";
@@ -264,4 +267,5 @@ setPPEffect("hdr");
 setPPSaturation(0.44);
 setPPBloom(0.3);
 
-g_Map.ExportMap();
+return g_Map;
+}
