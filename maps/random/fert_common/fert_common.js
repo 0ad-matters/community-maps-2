@@ -1,4 +1,3 @@
-import { getRandomDeviation } from "maps/random/rmgen2/gaia.js";
 Engine.LoadLibrary("rmgen/raster");
 export function* genMapFertWithMountain(isMountain, mapSettings)
 {
@@ -491,7 +490,7 @@ export function* genMapFertWithMountain(isMountain, mapSettings)
     );
 
     placePlayersNomad(clPlayer, [avoidClasses(clForest, 1, clMetal, 4, clRock, 4, clHill, 4, clFood, 2), new HeightConstraint(1, 17)]);
-    setSunElevation(getRandomDeviation(Math.PI / 2, Math.PI / 2 * 0.7));
+    setSunElevation(Math.PI / 2 + randFloat(-1, 1) * Math.min(Math.PI / 2, Math.PI / 2 * 0.7));
 
     yield 100;
 }
