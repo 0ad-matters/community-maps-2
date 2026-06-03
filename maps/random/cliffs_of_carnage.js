@@ -373,6 +373,23 @@ export function* generateMap(mapSettings)
     return [playerIDs, playerPosition];
   }
 
+  // resource_water: gatherable water "wells" (waterfall springs) on steep
+  // cliff faces near the shore. Same placement logic the particle-waterfall
+  // experiment used, but these are real gaia ResourceSupply entities you
+  // gather fresh water from (gaia/water_well, provided by the resource_water mod).
+  g_Map.log("Placing waterfall springs (water wells)");
+  const clWell = g_Map.createTileClass();
+  const wellGroup = new SimpleGroup(
+    [new SimpleObject("gaia/water_well", 1, 1, 0, 2)], true, clWell);
+  createObjectGroups(wellGroup, 0,
+    [
+      avoidClasses(clWell, 8, clPlayer, 10),
+      new SlopeConstraint(2, Infinity),
+      borderClasses(clWater, 0, 6),
+    ],
+    scaleByMapSize(6, 24),
+    40);
+
   placePlayersNomad_cm2(clPlayer, avoidClasses(clWater, 5, clForest, 1, clMetal, 4, clRock, 4, clHill, 4, clFood, 2));
 
   setWaterHeight(heightWaterLevel + SEA_LEVEL);
