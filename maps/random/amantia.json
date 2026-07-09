@@ -1,0 +1,12 @@
+{
+	"settings" : {
+		"Name" : "Amantia",
+		"Script" : "amantia.js",
+		"Description" : "resembles the jagged area on the balkans, with lot of narrow passages and high Terrains",
+		"BaseTerrain" : ["central europe"],
+		"BaseHeight" : 10,
+		"Keywords": ["multiplayer", "community"],
+		"Preview" : "amantia.png",
+		"CircularMap" : true
+	}
+}
